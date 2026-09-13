@@ -1,5 +1,7 @@
 # Sideloading NuvioTV
 
+> These instructions apply when this fork publishes an IPA. For the currently available source build, follow [BUILDING.md](BUILDING.md). Upstream releases do not contain this fork's changes.
+
 This guide walks you through installing NuvioTV on your Apple TV using a free Apple ID. No paid developer account needed, just a computer, your Apple TV, and about 10 minutes.
 
 ## What You Need
@@ -8,7 +10,7 @@ This guide walks you through installing NuvioTV on your Apple TV using a free Ap
 - A **Mac or Windows** computer
 - A **free Apple ID** (your normal one works; some people prefer a separate one just for sideloading. Create one at [account.apple.com](https://account.apple.com))
 - **Sideloadly**, the tool that installs the app ([download here](https://sideloadly.io/))
-- **NuvioTV.ipa**, downloaded from the [latest release](https://github.com/youngchris29-art/NuvioTV/releases/latest)
+- **NuvioTV.ipa**, downloaded from the [latest release](https://github.com/dotjarden/NuvioTV/releases)
 - **WiFi**, with your computer and Apple TV on the same network
 
 ## Quick Start with Sideloadly
