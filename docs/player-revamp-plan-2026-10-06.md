@@ -388,3 +388,8 @@ Christian: 1 pass, 2 pass ("no black preview card, only the chapter title shows"
 
 `tvos-shared-extraction` fast-forwarded `0c10ca4a4` → `11944d02e` (30 commits: agents A/B/C, review fixes r1 `3116fb279`…`30663c734`, r2 `7d48faad6`…`1822c18e9`, r3 `b9e94b25e`, BUG-154 `11944d02e`), pushed; `claude/player-p2` deleted in the submodule (it was never on `origin`; the clone keeps it until P3 branches off). Outer pointer `2b9bded`, merged over the four quiet sweeps since 10-06 and pushed as `4865023`. Not cut (single-rc model). Gates on the tip: NuvioTVTests 1568/0, every P2 leg + P1's six regression legs PASS on FA87 (`testHarvestGrows` device-only), Debug + Release sim, device Debug; device pass 11/11 in the Test profile with BUG-154 fixed in-pass. Carried to P3/P4: baked-bar aspect handling (a Zoom that crops, or a black-bar probe), 1080p `took=` still unmeasured, the Chapters-tab default focus proven only on the device walk, the P3 decoder replacing the 30 s harvest spacing on 4K files.
 
+### P3 started (2026-10-08, on Christian's go "go ahead with P3")
+
+- Same clone, branch `claude/player-p3` off `11944d02e` (`git branch` + `git symbolic-ref HEAD`; `claude/player-p2` deleted in the clone).
+- **Spike first (main session):** `EXT-X-I-FRAMES-ONLY` media playlist from `SegmentMap` + `EXT-X-I-FRAME-STREAM-INF` in the master, served by `LocalHLSServer`, played through the native engine on the Living Room ATV: do AVKit's scrub previews appear, and does it tolerate the playlist growing with the remux frontier? Code map in progress.
+
