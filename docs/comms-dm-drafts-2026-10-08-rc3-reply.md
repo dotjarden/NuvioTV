@@ -5,11 +5,10 @@ Context: his rc3 verdict (DM 2026-10-06 2:11 + 2:20 PM ET, two videos), the Wako
 Triage: `docs/steven-beta19-rc3-verdict-2026-10-06.md`. Nothing built yet; the "next build" lines are the
 mechanical items from the record's batch order (D1, S8, S7, C1, S3, the folder logo collision, BUG-154's
 folder line, FEAT-62). The design calls (wash shape, speed, add-on name, logo placement) are told as
-"looking at it". Reply via Reddit chat, two bubbles. SlopMonster: lint 5/5 (707 words); Codex cleanse SKIPPED (refresh token expired 10-08, `codex login` needed). NOT SENT.
+"looking at it". Reply via Reddit chat, ONE bubble (Christian dropped the bubble split). SlopMonster: lint 5/5 (707 words); Codex cleanse SKIPPED (refresh token expired 10-08, `codex login` needed). **SENT 2026-10-08 ~11:35 AM ET** (one message, 3,154 chars, verified in the room: starts "Hey Steven, thanks for the videos", ends "Talk soon.", composer empty). First attempt sent nothing: an empty body file + a covered Send button; the resend used a correct body and the button click worked.
 
 ---
 
-Bubble 1:
 
 Hey Steven, thanks for the videos. Both were worth the download: the first one showed me three things I could not have found from the description alone.
 
@@ -29,7 +28,6 @@ What I found, in your order:
 
 The flicker with Fade on is the known cost of that mode. It dropped frames on my Apple TV too, which is why it ships off. Leave it off.
 
-Bubble 2:
 
 On the old Home: the no-bounce part is the new Home's structure, so it does not carry over. The longer synopsis is what you found yourself this morning. With Show Hero off, the panel gives you four lines and the source count. With Show Hero on, the hero has to leave room for the row under it, so the text gets two lines, one with zoom. I will add the source count to the hero version. The line count stays tied to that room.
 
