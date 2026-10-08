@@ -15,7 +15,10 @@ run to read this file first, so a change here reaches both sweeps on their next 
 edit.) **New 2026-08-24: every sweep now merges its branch into `main` as it lands — see §6.** As of 2026-08-21 the sweep
 covers **two sources**: the Reddit beta thread *and* the GitHub repo (issues + pull requests).
 GitHub was added after issue #1 sat 27 days without a reply while the Reddit thread got all the
-attention (see `docs/issue-triage-plan-2026-08-21.md` §6.3).
+attention (see `docs/issue-triage-plan-2026-08-21.md` §6.3). **As of 2026-10-08 there is a third
+source, Christian's Reddit DMs (chat rooms + the legacy inbox) — see §1b.** It is the one source
+the cloud sweeps cannot read themselves: it needs the logged-in ego lite session on Christian's
+Mac, so a local scheduled task does the fetch and the cloud sweeps report its freshness.
 
 ## 1. Reddit thread check
 
@@ -32,6 +35,106 @@ attention (see `docs/issue-triage-plan-2026-08-21.md` §6.3).
 3. Compare against the watermark (newest comment id + timestamp) recorded in
    `docs/beta-feedback-tracker.md`'s header. Comments at or before the watermark are already
    processed.
+
+## 1b. Reddit DM check (chat rooms + legacy inbox)
+
+Testers write to Christian directly as often as they post in the thread — Steven's whole
+beta.17/18/19 cycle ran over Reddit chat, and u/marcomez18 and u/napes22 both asked for things
+in DMs that never reached the thread. Those messages are feedback like any other and belong on
+the tracker, so the sweep reads them. Two facts shape how:
+
+- **Reddit chat has no public feed and no API the fork can register for.** The chat is a
+  Matrix backend (`matrix.redditspace.com`); the only credential is the short-lived chat token
+  the logged-in web app keeps in `localStorage`, and the only logged-in Reddit session is the
+  ego lite browser on Christian's Mac. **The cloud sweeps therefore never fetch DMs.** They
+  read the tracker's DM line (below) and report its age. Do not try the Matrix API, the chat
+  page, or any credential from a cloud run; do not ask Christian to paste a token.
+- **The fetch is a script, local only:** `scripts/reddit/fetch-dms.sh` (wrapper) runs
+  `scripts/reddit/fetch-dms.mjs` inside the ego-browser runtime. It lists every joined chat
+  room via the Matrix API (so a *new* tester's first DM is seen without anyone knowing the room
+  id), reads the messages newer than the watermark with the sender's display name and the
+  exact timestamp, flags image/video attachments as `[image mxc://…]`, and reads the legacy
+  inbox (`/message/inbox.json`: private messages, comment replies, username mentions) with the
+  session cookies. The token stays inside that process; nothing secret is written to disk.
+  Known rules are in the wrapper's header and in memory `reddit-dm-sweep` — the short version:
+  ego lite must be running and signed in to reddit.com, calls need stdin on `/dev/null`, ego
+  prints its output on stderr, and the task space is resolved by numeric id (by-name creation
+  hangs now and then).
+
+### 1b.1 Who runs it
+
+- **Local scheduled task `nuviotv-reddit-dm-check`** (desktop app, `~/.claude/scheduled-tasks/`,
+  fires 8:40 AM and 7:40 PM local, i.e. ~40 min after each cloud sweep so their `main` merge
+  has landed). It pulls `main`, runs the fetch against the DM watermark, applies §1b.2–1b.3,
+  commits on `main`, pushes. It only runs while the desktop app is open; a missed firing runs
+  at the next launch.
+- **An interactive session** that is already reading DMs for other reasons (a Steven verdict,
+  a tester repro) applies the same steps and moves the watermark, so the scheduled task finds
+  nothing new.
+- **Cloud sweeps (morning / evening):** read the DM line, compute its age, and put a mandatory
+  `DMs:` line in the digest (§1b.4). Nothing else.
+
+### 1b.2 Running the fetch
+
+```
+scripts/reddit/fetch-dms.sh --since <DM_WATERMARK> --summary
+```
+
+`<DM_WATERMARK>` is the ISO timestamp on the tracker header's **`Reddit DMs (chat + inbox)`**
+line. The digest prints, per room with new messages, every message newer than the watermark
+(`sender (me)` marks Christian's own), then the new inbox items, then
+`Newest event overall (next watermark): <ISO>` — that value becomes the new watermark. Drop
+`--summary` for JSON. Exit codes: `3` = no or expired chat token (tell Christian to open
+`reddit.com/chat` in ego lite and sign in; leave the watermark alone), `4` = ego-browser not
+reachable or wedged (same: leave the watermark, log the miss). **Never move the watermark on a
+failed fetch, and never fabricate DM content** — a blocked DM check is reported, not papered
+over, exactly like a blocked thread fetch.
+
+### 1b.3 Classifying DMs
+
+Same rules as thread comments (§3 and the tracker's own header: 8-field rows, `\|` inside
+cells, ` — *Prior:* ` between dated notes), with these DM specifics:
+
+- **Row link:** a chat message has no permalink. Write `DM (Reddit chat, u/<name>, <ISO ts>)`
+  in the link position; an inbox item uses its `context` permalink when it has one.
+- **Christian's own messages** (`(me)`) are context, never items — except when they state that a
+  fix shipped or a question was answered, which updates the matching row's status, the same
+  exception the thread check makes for `isSubmitter`.
+- **Inbox comment replies on the beta thread duplicate §1.** Dedupe by comment id against the
+  thread watermark; only inbox items from *other* subs, mentions, and private messages (`pm`)
+  are new information.
+- **Steven's room (u/mrStevenx3) is usually already handled** by the interactive session that
+  read his verdict the same day — CLAUDE.md's open-items list names the verdict record
+  (`docs/steven-*-verdict-*.md`) and the tracker rows it created. Check there first; if the
+  message is already recorded, note "already triaged in <doc>" in the digest and do not add a
+  row. If it is *not* recorded, it is an unread verdict: add the rows, and list the message as
+  a **comms-owed item** (his DMs always get a reply).
+- **Attachments** (`[image …]`, `[video …]`, Smash links) cannot be read by the script. Note
+  them in the row as "N photos attached, unread" so the next interactive session pulls them
+  (recipe in memory `reddit-chat-smash-fetch`). Never record what a photo "probably shows".
+- **A DM awaiting Christian's reply is a comms-owed item** and stays in the digest until a reply
+  is sent. The sweep **never sends a DM**: replies go through the copy rule (CLAUDE.md,
+  SlopMonster loop) and Christian's go, in an interactive session.
+- **Privacy:** rows carry the reporter's Reddit handle and a one-line paraphrase of the ask,
+  the same as thread comments. Do not paste whole private conversations into the tracker or
+  the dashboard; link the room id only in the update log if a later session needs it.
+
+### 1b.4 What the tracker and the digest carry
+
+- Tracker header line (keep it one line, directly under **Newest comment seen (watermark)**):
+  `**Reddit DMs (chat + inbox):** last checked <YYYY-MM-DD HH:MMZ> (<local task|interactive|by hand>) — watermark <ISO ts> (<who/what that newest event was>); <n> rooms, <k> new messages, <m> inbox items; <one-line outcome>`
+  The watermark is the newest chat or inbox event the run *processed*, usually Christian's own
+  last reply.
+- Update-log line per DM run, like any sweep: `**YYYY-MM-DD (DM check, local task)** — …`.
+  A run with nothing new logs `DMs: quiet` and still refreshes the header line's "last checked".
+- **The digest's `DMs:` line is mandatory for every sweep, cloud or local.** A cloud sweep
+  writes `DMs: last checked <when> by <whom>, <age>h ago — <outcome>` and, when the age passes
+  **36 h**, prefixes it with ⚠️ and names the cause it can see (desktop app closed, ego lite
+  signed out per the last update-log entry, …). A local run writes the fetch outcome. As with
+  GitHub, omission is indistinguishable from not looking.
+- A DM-only change (new row, status change, comms-owed) makes the run a **normal run** for §3
+  and §4 — dashboard ITEMS, digest and lanes updated, artifact republished. DM-sourced rows
+  live in the same tables and the same ITEMS array; `DM` in the link cell is what marks them.
 
 ## 2. GitHub check (issues + pull requests)
 
@@ -77,8 +180,10 @@ if the tool asks; keep the 📺 favicon). **Never publish without the url.**
 
 ## 5. Quiet run
 
-A run is quiet only when **both** sources held still: Reddit watermark unchanged **and** no new
-GitHub issue/PR activity. Then: update only the last-checked lines in both files, commit
+A run is quiet only when **every** source it reads held still: Reddit watermark unchanged **and** no new
+GitHub issue/PR activity (a cloud sweep does not read DMs, so a stale-but-unchanged DM line
+does not make it a normal run — it makes it a ⚠️ line in the digest; a local DM run is quiet
+when the DM watermark holds). Then: update only the last-checked lines in both files, commit
 `sweep: quiet run YYYY-MM-DD`, skip the republish. Activity on either source makes it a normal
 run for both files. **A quiet run still merges to `main` per §6** — the republish is what a quiet
 run skips, never the merge.
