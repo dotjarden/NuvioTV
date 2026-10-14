@@ -1,6 +1,6 @@
 # DM draft: reply to Steven's 10-08/09 follow-ups (2026-10-14)
 
-Covers BUG-155/156/157/158, FEAT-64/65, BUG-147 pointer. Talking points: `docs/master-plan-2026-10-14.md` §5. One bubble, same register as `docs/comms-dm-drafts-2026-10-08-rc3-reply.md`. "Next build" = rc4, within the week. SlopMonster: lint 5/5 (338 words). Codex cleanse skipped: plain bullet list, one lint hit (a literal term) fixed by hand. **NOT SENT**: waits for Christian's go. After sending, move the DM watermark.
+Covers BUG-155/156/157/158, FEAT-64/65, BUG-147 pointer. Talking points: `docs/master-plan-2026-10-14.md` §5. One bubble, same register as `docs/comms-dm-drafts-2026-10-08-rc3-reply.md`. "Next build" = rc4, within the week. SlopMonster: lint 5/5 (338 words). Codex cleanse skipped: plain bullet list, one lint hit (a literal term) fixed by hand. **SENT 2026-10-14 19:55Z** on Christian's go, verified in the room; watermark moved.
 
 ---
 

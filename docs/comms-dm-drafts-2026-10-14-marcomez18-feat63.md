@@ -1,6 +1,6 @@
 # DM draft: reply to u/marcomez18 on FEAT-63 (2026-10-14)
 
-Decision D5 in `docs/master-plan-2026-10-14.md`: decline for this app. Answers Christian's 2026-10-01 "I will look into this and I will let you know". If Christian overrides D5, drop this draft. SlopMonster: lint 5/5 (135 words); Codex cleanse skipped (short, zero hits). **NOT SENT**: waits for Christian's go.
+Decision D5 in `docs/master-plan-2026-10-14.md`: decline for this app. Answers Christian's 2026-10-01 "I will look into this and I will let you know". If Christian overrides D5, drop this draft. SlopMonster: lint 5/5 (135 words); Codex cleanse skipped (short, zero hits). **SENT 2026-10-14 19:55Z** on Christian's go, verified in the room; watermark moved.
 
 ---
 
