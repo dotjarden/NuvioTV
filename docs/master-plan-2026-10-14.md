@@ -20,7 +20,7 @@ This plan supersedes the 10-08 draft's sequencing; its per-item fix shapes still
 | Player P3 | BUILT + reviewed (`claude/player-p3`, 25 commits, tip `0673f73c2`, backed up on `origin`), **device pass OWED**. The free-team provisioning profile expired **2026-10-14 12:07Z**: the dev build must be re-signed (`-allowProvisioningUpdates`, delete the stale `youngchris29` profiles) before the pass. |
 | Checkpoint rule (10-06) | "If P3 has not merged within ten days of P1 starting (10-06), cut an interim rc with Search & Discover + P1 + P2." That date is **10-16**. |
 | P4 / P5 | Not started. P5's B19 (automatic subtitle sync) collides with the 10-13 upstream finding (see D3). |
-| Comms owed | **Steven's reply DM** for his 10-08 afternoon + 10-09 reports (BUG-155/156/157/158, FEAT-64/65; photos now read). u/marcomez18 FEAT-63 answer once there is a decision. GitHub #4 (`mikeyunk`) and #5 (`4rtz1z`) wait on the reporters. Public promises: BUG-130 ("I'll look at carrying the position across"), FEAT-56 SenPlayer ("in a coming build"). |
+| Comms owed | ~~Steven's reply DM for his 10-08/09 reports~~ **SENT 10-14 19:55Z** (with the FEAT-63 decline to u/marcomez18). Steven answered 20:24Z (BUG-155/156/158 corrected, five new asks BUG-160/161, FEAT-66/67/68, his add-on URL in confidence, **he no longer has the app installed**: another fork overwrote it, so rc4 is also his reinstall). **Reply 2 drafted, NOT SENT:** `docs/comms-dm-drafts-2026-10-14-steven-reply2.md`. u/marcomez18 FEAT-63 answer once there is a decision. GitHub #4 (`mikeyunk`) and #5 (`4rtz1z`) wait on the reporters. Public promises: BUG-130 ("I'll look at carrying the position across"), FEAT-56 SenPlayer ("in a coming build"). |
 | Reddit thread | Quiet since 10-02 (`pdgfqap`). DMs quiet since 10-10. |
 | Upstream | `779c145a5` (0.5.10-beta). Open ports: CW dismissed-restore (#2244, small), TorBox mylist pagination (10-10, medium), MDBList release-date sort (10-08, medium), ytId streams (10-08, low-med). Declined/parked: subtitle AutoSync (10-13, HIGH), Jellyfin/Emby (10-08, product call), iOS PiP (N/A). |
 | Review | Codex quota resets 10-29; Opus read-only rounds until then. |
@@ -43,8 +43,12 @@ means "on every focused card, always", which is exactly what **No Zoom on Focus 
 draws a 4 pt `Color.white.opacity(0.85)` stroke on the focused card whenever the accent ring is off (`PosterCard.swift:616-633`),
 and the expanded trailer card adds its own focus ring (`InlineTrailerCard.swift:1823-1830`), hence the double outline. With
 No Zoom OFF and the ring off, the card gets `.systemLift` (`hoverEffect(.highlight)`) and no stroke, which is his "nothing
-appears". So: photo 2 = No Zoom ON (still stroke), photo 1 = the trailer card's own ring + a thinner still edge, or the
-reverse; **ask him which photo is which state** in the reply DM. Fix shape in Batch A (A10).
+appears". **Corrected by his 4:24 PM ET answer (same day):** photo 1 = **Zoom ENABLED** (No Zoom on Focus OFF) *with* the
+outline, photo 2 = no outline. So the box belongs to the zoom state: with No Zoom off and the ring off the card is
+`.borderless` + `hoverEffect(.highlight)` (`.systemLift`, `PosterCard.swift:782-788`), and the BUG-54 note already records
+that system effect drawing a standing platter edge, focused or not; on the expanded trailer card it reads as the thin
+doubled outline. Fix shape (A8): `.focusEffectDisabled()` or `RingCardButtonStyle` on the systemLift branch of the
+morphed trailer card, verified in both states on the device before the DM claims it.
 
 ### 1b. u/an_angry_Moose's BUG-128 video (`docs/research/bug128-moose-glitch-video-2026-10-02/`)
 
@@ -98,11 +102,16 @@ Sizes: S ≤ ½ day, M 1–2 days, L more. "Shape" cites the survey facts; the 1
 | BUG-144 | P3 | Classic folder grid: tab bar drawn over the grid after Back | Same immersive pair on `FolderDetailView` (`CollectionsUI.swift:1271-1367`). Fallback: re-link the grid's scroll view on reappear. | S | A |
 | BUG-146 | P3 | Stage row headings too high | `StripGeometry.catalogRowHeight`: heading + md + sm; test + probe sweep. | S | A |
 | BUG-156 | P2 | **Home position not restored after leaving a folder (Stage and Classic)** | Both layouts rely on native focus restoration only. Stage: in `StageStripHome.syncCover` on pushed → false, call `stage.requestFocus(rowKey: stage.currentRowKey, itemId: stage.memory.itemId(for:))` (the rail route already does this). Classic: it keeps no focused-card id; record it in the focus `onChange` (or install `StripFocusMemory`) and on `homePath.count → 0` issue `PinnedRowFocusRequest(rowKey: upInput.lastOwnedRowKey, itemId:)`; also check `PinnedRowSettle.setCovered(false)`'s re-armed `scrollTo` is not undoing the landing. Clarify with him whether "also in old home page" means Home or the folder page after Back from Detail (UX-14). | M | A |
-| BUG-158 | P2 | White box on the focused card with No Zoom ON, nothing with it OFF | The still-mode white stroke (`PosterCard.swift:616-633`, 0.85 white, 4 pt) is the box; the expanded trailer card stacks its own ring (`InlineTrailerCard.swift:1823`). Fix: one ring on the morphed trailer card (drop the still stroke when the card is playing, or draw only the trailer ring), and consider the FEAT-46 poster-colour ring in still mode instead of flat white. Ask which photo is which state. | S | A |
+| BUG-158 | P2 | White outline on the playing trailer card with **Zoom ON** (his 4:24 PM answer), none with No Zoom | The system `.borderless` + `hoverEffect(.highlight)` branch (`.systemLift`, `PosterCard.swift:782-788`) draws a standing edge on the expanded trailer card (BUG-54 class), stacked on the card's own ring (`InlineTrailerCard.swift:1823`). Fix: `.focusEffectDisabled()` / `RingCardButtonStyle` on that branch for the morphed card; one outline. Device-verify both states. | S | A |
 | BUG-157 | P3 | Add-on catalog with `posterShape: "landscape"` draws portrait cards | Shared parses it per item (`HomeCatalogParser.kt:54`), no Swift reader. Upstream: per item, width = base × 180/110, image stays `item.poster`. tvOS: derive a per-section flag (majority / first item landscape) and apply `.environment(\.posterStyle, style.withLandscapeRows(true))` on that `CatalogRowView` so metrics + `baseCard` follow (Classic, Stage, Discover, folder Rows, Search all route through `CatalogRowView`). Ask him for the add-on so a fixture carries it. | S–M | A |
 | BUG-154 (Classic hero-ON folder line) → **renumber BUG-159** | P3 | Classic Show Hero ON: no "Genres · N sources" line on folders, 1–2 synopsis lines | `folderHeroDescription` under the CTA in the hero-ON panel (`HomeView.swift:6442`), 1 line; the synopsis budget stays (rt4). The number BUG-154 is taken by the P2 arbiter fix; BUG-155 is now Search, so this becomes **BUG-159**. | S | A |
 | FEAT-62 | P3 | Rail Hidden mode (reveal on Left from the first card / Menu) | `RailVisibility.hidden`; rule table + Appearance row; default stays Always Visible. | S | A |
 | FEAT-65 | P3 | Open straight into a profile at launch | **Shared already has it**: `StoredProfilePayload.rememberLastProfileEnabled` + `activeProfileIndex` + `hasEverSelectedProfile` (`ProfileRepository.kt:33-59`), upstream's "Remember Last Profile" (default off, PIN profiles never auto-entered, single non-PIN profile auto-enters regardless). tvOS never reads it. Add: Settings › You row calling `setRememberLastProfileEnabled`; in `ContentView` on first `.main`, after `loadCachedProfiles()`, if remember + everSelected + target has no PIN → `select`, `reseedNow`, `entered = true`, once per cold launch; Switch Profile keeps the picker. | S | A |
+| BUG-160 | P3 | App opens on the Streaming Services row (new, 10-14 PM) | Repro first; asked fresh launch vs return. BUG-156/113 class. | S | A if reproduced |
+| BUG-161 | P3 | Rail stays visible at launch / entering a collection (new, 10-14 PM) | Asked his rail mode. Always Visible → by design, FEAT-62 answers it; Hide While Browsing → A3 immersive folders + first-move hide. | S | A |
+| FEAT-66 | P3 | Collection title top-right (new, 10-14 PM) | Placement call (the 10-08 draft kept top-left); no date promised. | S | B or later |
+| FEAT-67 | P3 | Hide source counts on headings as well as add-on names (new, 10-14 PM) | One "Show catalog details" switch covering BUG-145's suffix and BUG-159's folder line, or two toggles. | S | B |
+| FEAT-68 | P3 | "Netflix-style detail scrolling" (new, 10-14 PM, unclear) | Asked for the screen + a video. Nothing until answered. | — | — |
 | BUG-145 | P3 | Add-on name on every Stage heading | Gate `StageCopy.headingAddon` on "Show catalog type in title" (D2 in the 10-08 draft, promised in the DM). | S | B |
 | UX-16 (1) | P3 | Stage feels slow | Device A/B on the knobs (`-debug.stripPageSeconds 0.35`, `-debug.stageSwapPause 0.3`), then defaults. | S | B |
 | UX-16 (2) | P3 | Ambient wash too foggy at the sides | Mask below the stage art + opacity A/B (new knob `-debug.washBelowArt`). | S–M | B |
@@ -121,7 +130,7 @@ Sizes: S ≤ ½ day, M 1–2 days, L more. "Shape" cites the survey facts; the 1
 
 | ID | Pri | Item | Shape | Size | Batch |
 |---|---|---|---|---|---|
-| BUG-155 | P2 | Search-as-you-type: cursor lags the selected letter; results slow | Survey §1: a 350 ms Swift debounce exists, but **a superseded query never cancels its HTTP calls** (`deduplicatedHttpGetText` launches in `inflightRequestScope`, `CatalogData.kt:33-63`, 60 s timeout), one request per search-capable catalog with no cap or per-request timeout, `isLoading` waits for the slowest, `buildSearchResultsSnapshot` rebuilds everything on every arrival (O(N²)), and `SearchContent` re-evaluates its whole body on every keystroke because it binds `query` directly. Fix: (a) ref-count + cancel the inflight fetch when the last waiter leaves (or bypass the dedupe for search); (b) `withTimeoutOrNull(8–10 s)` per catalog → Failed/Empty; (c) hand `SearchContent` the debounced query, not the live binding; (d) debounce 450 ms and skip 1-char queries. Measure main-thread time per keystroke on FA87 with his add-on count before and after. | M | B (or A if the DM promises it) |
+| BUG-155 | P2 | Search-as-you-type: **the cursor sits on B while A is displayed** (a visual offset, his 4:24 PM answer) and results are slow | Survey §1: a 350 ms Swift debounce exists, but **a superseded query never cancels its HTTP calls** (`deduplicatedHttpGetText` launches in `inflightRequestScope`, `CatalogData.kt:33-63`, 60 s timeout), one request per search-capable catalog with no cap or per-request timeout, `isLoading` waits for the slowest, `buildSearchResultsSnapshot` rebuilds everything on every arrival (O(N²)), and `SearchContent` re-evaluates its whole body on every keystroke because it binds `query` directly. Fix: (a) ref-count + cancel the inflight fetch when the last waiter leaves (or bypass the dedupe for search); (b) `withTimeoutOrNull(8–10 s)` per catalog → Failed/Empty; (c) hand `SearchContent` the debounced query, not the live binding; (d) debounce 450 ms and skip 1-char queries. Measure main-thread time per keystroke on FA87 with his add-on count before and after. | M | B (or A if the DM promises it) |
 
 ### 2c. Detail and trailers
 
@@ -257,7 +266,7 @@ Full regression pass (the player plan's list + every batch's device list), build
 
 ---
 
-## 5. Steven's reply DM (owed now; draft points, SlopMonster before showing)
+## 5. Steven's reply DM (SENT 2026-10-14 19:55Z as drafted; reply 2 to his answers is drafted and waits for the go)
 
 One message, bubbles by area, no new build yet:
 
