@@ -1,6 +1,6 @@
 # Batch A: Steven's rc3 verdict + follow-ups (2026-10-15)
 
-**Status: MERGED 2026-10-15 on Christian's go: `tvos-shared-extraction` fast-forwarded `b768e6339` → `943030ea4` (7 commits), pushed, branch deleted locally and on `origin`, outer pointer `1e94fc0`. CUT 2026-10-15 as beta.19-rc4: build 136 `975a7010`, tag pushed, outer `df54aa1`, IPA on filebin (until 10-22) + gofile; Steven's DM drafted at `docs/comms-dm-drafts-2026-10-15-beta19-rc4.md` (5/5), not sent.** Master plan `docs/master-plan-2026-10-14.md` §4.1, decisions D1/D2/D9. Fix shapes from
+**Status: MERGED 2026-10-15 on Christian's go: `tvos-shared-extraction` fast-forwarded `b768e6339` → `943030ea4` (7 commits), pushed, branch deleted locally and on `origin`, outer pointer `1e94fc0`. CUT 2026-10-15 as beta.19-rc4: build 136 `975a7010`, tag pushed, outer `df54aa1`, IPA on filebin (until 10-22) + gofile; Steven's DM SENT 22:04Z + 22:10Z on Christian's go (`docs/comms-dm-drafts-2026-10-15-beta19-rc4.md`, 5/5); his rc4 verdict owed.** Master plan `docs/master-plan-2026-10-14.md` §4.1, decisions D1/D2/D9. Fix shapes from
 `docs/post-player-revamp-batch-plan-2026-10-08.md` (Batch A table) and the rc3 record
 `docs/steven-beta19-rc3-verdict-2026-10-06.md`. Clone `~/Claude/Projects/NuvioMobile-rc3-a`, branch
 `claude/steven-rc3-a` off `b768e6339` (`tvos-shared-extraction` after P3 + fix-ups). Not merged, not cut: rc4

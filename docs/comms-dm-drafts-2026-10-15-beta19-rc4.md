@@ -1,4 +1,4 @@
-# DM draft: Steven, beta.19-rc4 (2026-10-15)
+# DM: Steven, beta.19-rc4 (2026-10-15) — SENT 22:04Z + 22:10Z on Christian's go (ego-browser space 18, both bubbles verified in the room)
 
 Build 136, tag `tvos-v0.3.0-beta.19-rc4`, from `tvos-shared-extraction` at `943030ea4` (+ the bump). Carries Search & Discover, player P1–P3 and Batch A (his rc3 items and the 10-08/09/14 follow-ups). Two bubbles. Link filled from the cut: filebin until 2026-10-22, gofile backup https://gofile.io/d/NvIR1ioT, IPA 29,224,927 B. SlopMonster: lint 5/5 (below), Codex cleanse skipped (quota).
 
