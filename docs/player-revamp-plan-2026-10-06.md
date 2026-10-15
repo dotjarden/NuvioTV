@@ -318,6 +318,14 @@ Play any mpv-routed title (an MKV without Dolby Vision, or Settings → Playback
 
 Record results in the plan's OUTCOME; new bugs get BUG rows.
 
+#### Round 1 record (2026-10-15, console streamed to `docs/research/player-p3-device-pass-2026-10-15/console-2026-10-15.log`)
+
+- **Step 1 PASS (4K + 1080p), after two detours.** Detour 1: the first two runs of the 4K title routed **native** (DV P8.1, then an SDR source), so no decoder ran; the native I-frame scan served `iframe-00027…00042` at 200 in trim mode on the way (step 8 SDR + DV legs). Detour 2: on mpv the decoder still never opened because the device defaults had no `debug.seekPreviewMode` key (the setting was still Harvest Only; pulled the prefs plist over devicectl to prove it); harvest worked meanwhile (4K 3840×1600: 405.8 ms first → 30 s interval, then 89.7 / 135.5 ms; 1080p 1920×800: 176 / 74.5 ms). With Harvest + Decode set:
+  - **4K** (matroska, 5,929 MB, 1,597 keyframes, DV profile 7 on mpv; the thumbnailer labels it `hdr=sdr` yet charges `tm=` 12–32 ms per frame — label vs. tone-map cost to reconcile, not a defect): `open took=3374ms read=2402KB range=1024KB budget=118.6MB`; pre-warm on the 60 s grid (780, 660, 480, 420, 1380, 1440, 360, 1500, 1560, 300) `took=` 462–546 ms, `dec=` 34–74 ms; **37 scrub decodes in ~22 s at `took=` 461–539 ms each (`dec=` 30–53 ms, `tm=` ~13 ms, `charged=` ~1.2 MB a frame)**, every one `stored`; frames landed in the card inside the 300 ms–1 s window, playhead never blocked. mpv cache 46→76 s, `dropped=vo:8` at start then 0, no underrun.
+  - **1080p** (matroska, 501 MB, 664 keyframes): `open took=5896ms read=6020KB range=256KB budget=16.0MB` (slower than the 4K open: the priming read 6 MB of the 16 MB budget); 28 scrub decodes `took=` 271–419 ms (`dec=` 12–26 ms, `tm=` 0, ~290 KB a frame), then **`stop reason=byteBudget decoded=28 read=7.1MB charged=16.6MB`** after ~20 s of scrubbing; four more scrub frames decoded past the stop (the spec's 50 MB scrub headroom).
+  - **Finding P3-F1 (not a blocker, Christian's call):** on a ~500 MB 1080p file the 16 MB floor is spent by the open (6 MB priming) plus ~28 frames, so decoded previews stop after the first scrub session and only harvest frames remain. Options: raise the floor to 32 MB, charge the priming read outside the budget, or cap the priming read on Cue-rich files. Logged for the P3 record; no code change in this pass.
+  - Both titles exited clean (`[Failover] viewWillDisappear isLeavingPlayer=true`, Vulkan device destroyed).
+
 #### Device pass round 1 (2026-10-06 evening, Living Room ATV, Test profile, build 135 from `907d72002`)
 
 **Christian: all 15 pass except 4, 9 and 14; 6 was reported as a fail, then corrected to a pass.** Console was streamed to `iosApp/build/logs/device/p1-pass-215217.log` (4,054 lines; the `[Transport] cache-state` JSON read works on hardware too).
