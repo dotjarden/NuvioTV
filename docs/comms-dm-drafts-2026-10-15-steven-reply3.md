@@ -1,6 +1,6 @@
 # DM draft: reply 3 to Steven (2026-10-15)
 
-Answers his 23:49Z and 06:40Z / 07:28Z messages: search both halves real; sidebar = Hide While Browsing (bug); Streaming Services start = cold launch only (~85 %); Netflix-style scrolling = Wako fixed-slot row; reinstall question (hedged: bundle-id overlap with the other fork is unknown); Orivio v0.13 view (video watched, frames in `docs/research/orivio-v0.13-steven-2026-10-15/`); owns the repeats. SlopMonster: lint 5/5 (340 words); Codex cleanse skipped. **NOT SENT**: waits for Christian's go; DM watermark NOT moved (still 2026-10-14T21:28:42.911Z).
+Answers his 23:49Z and 06:40Z / 07:28Z messages: search both halves real; sidebar = Hide While Browsing (bug); Streaming Services start = cold launch only (~85 %); Netflix-style scrolling = Wako fixed-slot row; reinstall question (hedged: bundle-id overlap with the other fork is unknown); Orivio v0.13 view (video watched and re-read against the Detail pass: scrolled compact logo header = FEAT-60; frames in `docs/research/orivio-v0.13-steven-2026-10-15/`); owns the repeats. SlopMonster: lint 5/5 (435 words); Codex cleanse skipped. **NOT SENT**: waits for Christian's go; DM watermark NOT moved (still 2026-10-14T21:28:42.911Z).
 
 ---
 
@@ -17,6 +17,8 @@ What your answers settled:
 
 On reinstalling: I can't tell for sure. If the other fork uses the same bundle ID as mine, installing mine will replace it, which is probably what happened to you. If the IDs differ, both will sit side by side. If mine doesn't install cleanly, delete the other one first. I'll check how it behaves when the build is out.
 
-The Orivio view is noted: a title page open full screen, where Left and Right slide to the next title's page. I watched your clip and read their release notes. I think the title changes you mean are the large logo at the lower left with the details right under it, but tell me if you meant something else.
+I watched your Orivio clip and read their release notes. The notes never mention titles, but the clip does. When you scroll down the description page, the big logo fades into a small centred one at the top, and the backdrop goes blurred and darker behind the trailers, cast and sources. That's the Apple TV app effect you showed me before, and I think it's what you mean. It is already on my list for the description page, along with the darker area behind the synopsis, and comes after the next build. Their Home row headings are also plain, with no add-on name or source count, which matches what you asked for on ours.
+
+Their full-screen view is a description page where Left and Right slide to the next title's page, with no trip back to the row in between. That is a bigger change than the rest, so it's noted and not scheduled.
 
 The next build is still due within the week, and I'll send the link as soon as it's cut.

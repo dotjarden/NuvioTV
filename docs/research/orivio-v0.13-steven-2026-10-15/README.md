@@ -4,7 +4,7 @@ Source: Steven's DMs 2026-10-15 07:28Z (release link + Smash video https://froms
 Release: https://github.com/prehakanson-art/OrivioTVAppleTV/releases/tag/v0.13 (published 2026-10-15 05:12Z; prehakanson-art, the same author as the app compared in `docs/orivio-feature-comparison-2026-10-01.md`).
 
 ## Video (IMG_8958.mov, 22 s, a phone filming an Apple TV; pulled 2026-10-15 on Christian's go, file in ~/Downloads, not in the repo)
-Frames (TV area cropped): `01-home-row-detail-hero.jpg`, `02-flip-slide-between-titles.jpg`, `03-detail-page-housemaid.jpg`, `04-detail-page-at-rest.jpg`.
+Frames (TV area cropped): `01-home-row-detail-hero.jpg`, `02-flip-slide-between-titles.jpg`, `03-detail-page-housemaid.jpg`, `04-detail-page-at-rest.jpg`, `05-scrolled-compact-logo-header.jpg`.
 What it shows, in order:
 1. A title page ("Doing Life") open full screen with a "< Home" pill top-left. Under the hero a shelf of posters ("Dramas to Watch After Midsommar", more shelves below) is the set you flip through.
 2. Pressing Left/Right moves to the neighbouring title: the whole page slides sideways as a rounded full-screen card, the next page entering beside it with a thin gap and the old one leaving (frame 02, two pages on screen at once). No return to the shelf between titles. The ambient colour behind the screen follows each poster.
@@ -12,8 +12,10 @@ What it shows, in order:
 4. Down scrolls the page to Trailers, Cast & Crew and info tiles; Up returns it to the full-screen hero.
 So the "full-screen poster browse view" is a Detail page you can page sideways through, seeded by the row you opened it from. It is not a separate poster grid.
 
-## Which "title changes" Steven means (best reading, not certain)
-The notes never say. The video suggests the title treatment on that page: logo art large at the lower left over the artwork, meta and synopsis directly under it, badges inline, text-title fallback in a serif face. That matches his earlier asks about the description page's title effect (Apple TV style) and FEAT-60. Ask him to confirm.
+## Which "title changes" Steven means (re-read against the Detail pass, 2026-10-15)
+Frame `05-scrolled-compact-logo-header.jpg` (about 18.4 s): when the Detail page scrolls down from the hero, the title logo cross-fades into a **compact centred logo at the top of the scrolled page**, with Trailers, Cast & Crew and Sources below on a blurred, tinted copy of the artwork. That is his FEAT-60 ask (the Apple TV app / Fusion logo that fades in on the first scroll; `docs/steven-beta19-rc3-verdict-2026-10-06.md` line 57 and 112) plus the "blur effect" and darker-area asks. So the likeliest meaning of "titles" is FEAT-60, not the hero layout. It is also a second data point that the release notes do not mention it.
+Home row headings (frame 01): plain, small, directly under the hero ("Dramas to Watch After Midsommar"), with no add-on name and no source count. That matches his FEAT-67 / BUG-146 asks; he may mean this too.
+Our current hero (logo slot lower left, meta line, 4-line teaser, Play + icon buttons, cast right) already resembles the hero in frames 03/04. The gap is the scrolled state and the sideways flip.
 
 ## What the release notes say (read in full)
 - A full rebuild, aimed at fast scrolling on older Apple TVs (HD, first 4K): smooth Home rows, lighter row-to-row moves, startup faster.
