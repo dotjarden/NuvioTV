@@ -10,3 +10,4 @@
 # Claude Code — session-generated preview launcher (points at ephemeral scratchpad paths)
 .claude/launch.json
 __pycache__/
+scripts/device/.venv/
