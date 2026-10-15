@@ -195,6 +195,16 @@ Harvest Only (the default)**.
 - Step 8's HDR10 and DV P8.1 legs ran through the rig (record in the P3 plan OUTCOME round 3), plus
   finding P3-F7 (a DV profile 5 MP4 fails native with CoreMediaErrorDomain -12927 and falls over to mpv).
 
+- ⚠️ **HDR output kills screenshots.** While the panel is in HDR/DV output mode (Match Content →
+  Dynamic Range on), `devicectl … capture screenshot` fails with "connection was invalidated"
+  (Mercury 1001) on every attempt (10+ over 80 s during a 4K HDR10 stream on mpv) and succeeds a
+  second after the title is left; during native HDR10/DV legs it was intermittent. Plan HDR legs
+  around console evidence, and read UI-only values (the Info tab's RSS) on SDR titles or log them.
+- The mpv Info panel opens on a FAST vertical swipe (`swipe=500,100,500,900,80`); a 200 ms one is a
+  pan, not a swipe, and is ignored. Menu closes the panel; a Down press keeps it.
+- `play_pause` over Companion did not pause the mpv player once (position kept advancing); the native
+  player paused fine. Verify a pause from the console position, not from the press.
+
 ## Next
 
 - Give `shot.sh` a JPEG mode and keep evidence folders under ~10 MB (today's 4K PNGs ran 20–34 MB
