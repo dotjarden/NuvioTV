@@ -205,6 +205,18 @@ Harvest Only (the default)**.
 - `play_pause` over Companion did not pause the mpv player once (position kept advancing); the native
   player paused fine. Verify a pause from the console position, not from the press.
 
+- `console.sh start <log> -- <app args>` works (the `--` is passed to devicectl); `-debug.mpvSmokeURL
+  <url>` presents the mpv player over the root on a DEBUG build, profile gate or not, which makes any
+  file on the Mac a test title (a Range-capable server is needed: `python3 -m http.server` has none).
+- The Seek Preview Frames picker opens with **Off** focused, not the current value: Off = select,
+  Harvest Only = down ×1, Harvest + Decode = down ×2.
+- ⚠️ **Leaving the mpv player ejected the app twice** (once with a 0 ms press, once with 150 ms), and
+  the next blind presses ran in whatever tvOS showed (Infuse, which started a film from Christian's
+  library). After every player exit, screenshot before the next press; `preflight.sh` catches the
+  profile but not the foreground app. P3-F8 in the plan.
+- A walk that starts inside a player is the worst case: Left/Up/Down/Select become seeks, pauses and
+  bar actions. Never chain a navigation walk after an exit without a screenshot in between.
+
 ## Next
 
 - Give `shot.sh` a JPEG mode and keep evidence folders under ~10 MB (today's 4K PNGs ran 20–34 MB

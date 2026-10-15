@@ -21,7 +21,8 @@ case "$cmd" in
     [[ "${1:-}" == "--" ]] && shift
     if [[ -z "$log" ]]; then d="$ROOT/docs/research/device-rig-$(date +%F)"; mkdir -p "$d"; log="$d/console-$(date +%H%M%S).log"; fi
     mkdir -p "$(dirname "$log")"; echo "$log" > "$PIDFILE.path"
-    nohup xcrun devicectl device process launch --device "$ATV_UDID" --terminate-existing --console "$BUNDLE" "$@" > "$log" 2>&1 &
+    # devicectl needs `--` before the app's own arguments (otherwise it parses them as its own flags)
+    nohup xcrun devicectl device process launch --device "$ATV_UDID" --terminate-existing --console "$BUNDLE" ${1:+--} "$@" > "$log" 2>&1 &
     echo $! > "$PIDFILE"; echo "console → $log (pid $(cat "$PIDFILE"))" ;;
   stop)
     [[ -f "$PIDFILE" ]] && { kill "$(cat "$PIDFILE")" 2>/dev/null || true; rm -f "$PIDFILE"; }
