@@ -423,6 +423,8 @@ Christian: 1 pass, 2 pass ("no black preview card, only the chapter title shows"
 
 ### P3 device pass (owed; Living Room Apple TV, **Test profile**, dev build `com.youngchris29.NuvioTV`; the free-team profile expires 2026-10-14 12:07Z)
 
+- **Re-signed + reinstalled 2026-10-15 (Batch 0 of `docs/master-plan-2026-10-14.md`):** the 10-07 profile had expired 10-14 12:07Z; both `youngchris29` profiles deleted, rebuilt from `0673f73c2` in the player clone (`iosApp/build/DerivedDataDevice`, `-allowProvisioningUpdates`, per-target bundle-id override), new profile expires **2026-10-22 04:23Z**, dylib UUID `10562099-436A-3BCA-9615-6F5AD997AB75`, 136 MB, installed over devicectl as build 135 `com.youngchris29.NuvioTV`. Checklist below unchanged.
+
 Default mode is **Harvest Only**: the mpv decoder only runs after Settings › Developer › Seek Preview Frames (A/B) = **Harvest + Decode**, and the native picture track (FF/RW scan) is on in Harvest Only and Harvest + Decode, off in Off. Attach the console where marked (`[Thumbs]`, `[Harvest]`, `[HLS]` lines). Items the simulator could not prove at all are marked ★.
 
 1. ★ **Decode on 4K HEVC (console).** Developer › Seek Preview Frames = Harvest + Decode. Play a 4K HEVC title from a debrid link for 30 s: `[Thumbs] open` within ~25 s (lazy open after 20 s of healthy play), then decode lines about every 10 s. Report the open `took=`, a typical `dec=`/`took=` per frame, and `charged=` per frame. Then pause and scrub into UNWATCHED ground: a frame in the card within 300 ms to 1 s, the card never blocks the playhead; frames keep appearing as you move. Same on a 1080p title: both `took=` medians go in the record.
