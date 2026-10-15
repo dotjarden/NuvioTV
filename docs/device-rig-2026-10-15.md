@@ -220,8 +220,9 @@ Harvest Only (the default)**.
 - Swipe scrub commits with a touch `click` right after the swipe (`swipe=150,500,850,500,120 sleep=1 click`);
   without the click the scrub cancels on idle. One stroke ≈ 10 min on a 45 min episode, 17 min on a film.
 - Timing-critical presses (the up-next card's ~8 s window) need ONE held Companion session: a
-  per-call connect costs 3.7 s and a dropped press loses the window. Pattern: connect once, poll the
-  console log, send the HID press (`/tmp/claude-501/chipwatch.py` shape; worth folding into atvctl).
+  per-call connect costs 3.7 s and a dropped press loses the window. `atvctl.py` has it as a step:
+  `atv.sh seq 'waitlog=[UpNext] search begin|<console log>|600|1.5' menu` blocks on the console line,
+  settles 1.5 s and presses Menu over the same connection (exit 3 on timeout).
 - The Companion port can change mid-session (49153 → 59539 at ~12:05); `atv.sh` re-resolves it, but
   anything that caches `ATV_COMPANION_PORT` must re-read Bonjour. `dns-sd -L` parsing in zsh: use
   `sed -E 's/.*:([0-9]+) \(interface.*/\1/'`, not a bash `=~`.
@@ -233,6 +234,15 @@ Harvest Only (the default)**.
 - **The Menu eject is Companion-only.** Five quick Back taps on the real remote out of the mpv player
   never backgrounded the app (12:32–12:38); the three ejects today were all rig input. Keep the
   screenshot-after-exit rule, and treat P3-F8 as a rig caveat unless a remote ever shows it.
+
+## P3 fix-ups built with the rig's findings (branch `claude/p3-fixups` in the player clone)
+
+- `[Mem] +Ns rss=… MB mode=… store=… harvest=… decode=…` once a minute for the whole mpv playback
+  (DEBUG), so the Seek Preview mode comparison no longer needs the Info row; the row itself stays
+  visible in Off mode in DEBUG ("off · RSS …").
+- The engine router sends a DV profile 5 file in an MP4/MOV container to mpv (P3-F7) with the reason
+  "DV P5 in MP4 (remux unsupported)"; P5 in Matroska and P8.1 in MP4 are unchanged; two self-check
+  expectations added.
 
 ## Next
 

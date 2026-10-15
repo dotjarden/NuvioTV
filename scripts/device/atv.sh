@@ -4,6 +4,7 @@
 #   atv.sh press up|down|left|right|select|menu|home|play_pause [repeat] [gap_s]
 #   atv.sh hold  <button> [seconds]         # press-and-hold for N seconds (FF/RW scan, hold menus)
 #   atv.sh seq   <step>…                    # several inputs over one connection, see atvctl.py
+#                                            # e.g. seq 'waitlog=[UpNext] search begin|<log>|600' menu
 #   atv.sh swipe x0 y0 x1 y1 [ms]           # Siri Remote swipe on the 0..1000 touch surface
 #   atv.sh click [0|1|2]                    # touch click: single / double / hold
 #   atv.sh touch x y 1|3|4                  # raw touch press / hold / release at x,y

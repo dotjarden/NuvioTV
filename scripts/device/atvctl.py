@@ -8,6 +8,7 @@
       click[=0|1|2]                     touch click: single / double / hold
       text=<string>                     type into the focused text field
       sleep=<seconds>                   pause between steps
+      waitlog=<pattern>|<log>|<timeout>[|<settle>]   wait for a console line, then run the next step at once
       app                               print the foreground app
       wake | sleep_tv
 
@@ -93,6 +94,23 @@ async def run(steps):
                 await atv.keyboard.text_set(arg)
             elif name == "sleep":
                 await asyncio.sleep(float(arg))
+            elif name == "waitlog":
+                # waitlog=<pattern>|<log path>|<timeout s>[|<settle s>]: block until the console log
+                # grows a line containing <pattern> (literal), then wait <settle> (default 1.5) and go
+                # on with the NEXT step over the SAME connection. The up-next card's ~8 s window was
+                # lost twice to a per-call connect (3.7 s) plus a dropped press; one held session won.
+                pat, path, tmo, *rest = arg.split("|"); settle = float(rest[0]) if rest else 1.5
+                start = os.path.getsize(path); deadline = time.time() + float(tmo); hit = False
+                while time.time() < deadline:
+                    with open(path, "rb") as f:
+                        f.seek(start); chunk = f.read().decode("utf-8", "replace")
+                    if pat in chunk:
+                        hit = True; break
+                    await asyncio.sleep(0.3)
+                print(f"WAITLOG {'hit' if hit else 'TIMEOUT'} {pat!r} at +{time.monotonic() - t0:6.2f}s", flush=True)
+                if not hit:
+                    return 3
+                await asyncio.sleep(settle)
             elif name == "app":
                 try:
                     print(f"APP {atv.metadata.app}", flush=True)
