@@ -1,6 +1,6 @@
 # DM draft: reply 3 to Steven (2026-10-15)
 
-Answers his 23:49Z and 06:40Z / 07:28Z messages: search both halves real; sidebar = Hide While Browsing (bug); Streaming Services start = cold launch only (~85 %); Netflix-style scrolling = Wako fixed-slot row; reinstall question (hedged: bundle-id overlap with the other fork is unknown); Orivio v0.13 view (video watched and re-read against the Detail pass: scrolled compact logo header = FEAT-60; frames in `docs/research/orivio-v0.13-steven-2026-10-15/`); owns the repeats. SlopMonster: lint 5/5 (435 words); Codex cleanse skipped. **NOT SENT**: waits for Christian's go; DM watermark NOT moved (still 2026-10-14T21:28:42.911Z).
+Answers his 23:49Z and 06:40Z / 07:28Z messages: search both halves real; sidebar = Hide While Browsing (bug); Streaming Services start = cold launch only (~85 %); Netflix-style scrolling = Wako fixed-slot row; reinstall question (hedged: bundle-id overlap with the other fork is unknown); Orivio v0.13 view (video watched and re-read against the Detail pass: scrolled compact logo header = FEAT-60; frames in `docs/research/orivio-v0.13-steven-2026-10-15/`); owns the repeats. SlopMonster: lint 5/5 (435 words); Codex cleanse skipped. **SENT 2026-10-15 14:07Z** on Christian's go, verified in the room; watermark moved to 2026-10-15T14:07:24.785Z.
 
 ---
 
