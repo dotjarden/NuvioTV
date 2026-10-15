@@ -1,6 +1,6 @@
 # Batch A: Steven's rc3 verdict + follow-ups (2026-10-15)
 
-**Status: BUILT, REVIEWED (2 Opus rounds), DEVICE-PASSED on the rig; READY TO MERGE on Christian's go (final gate on `943030ea4` recorded below).** Master plan `docs/master-plan-2026-10-14.md` §4.1, decisions D1/D2/D9. Fix shapes from
+**Status: MERGED 2026-10-15 on Christian's go: `tvos-shared-extraction` fast-forwarded `b768e6339` → `943030ea4` (7 commits), pushed, branch deleted locally and on `origin`, outer pointer `1e94fc0`. NOT cut: rc4 (build 136) is the next go.** Master plan `docs/master-plan-2026-10-14.md` §4.1, decisions D1/D2/D9. Fix shapes from
 `docs/post-player-revamp-batch-plan-2026-10-08.md` (Batch A table) and the rc3 record
 `docs/steven-beta19-rc3-verdict-2026-10-06.md`. Clone `~/Claude/Projects/NuvioMobile-rc3-a`, branch
 `claude/steven-rc3-a` off `b768e6339` (`tvos-shared-extraction` after P3 + fix-ups). Not merged, not cut: rc4
@@ -245,7 +245,7 @@ Launch ON (a cold launch lands in Test 2 until it is switched off in Account & P
 Trailers on Focus ON. Dev build `943030ea4` installed under `com.youngchris29.NuvioTV` (free-team profile until
 2026-10-22 04:23Z). Console stream stopped.
 
-### Merge recipe (on Christian's go; not done)
+### Merge recipe (DONE 2026-10-15 ~17:15 ET, as written)
 
 ```
 cd "~/Claude/Projects/Nuvio tvOS/NuvioMobile"
