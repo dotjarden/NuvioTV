@@ -217,6 +217,19 @@ Harvest Only (the default)**.
 - A walk that starts inside a player is the worst case: Left/Up/Down/Select become seeks, pauses and
   bar actions. Never chain a navigation walk after an exit without a screenshot in between.
 
+- Swipe scrub commits with a touch `click` right after the swipe (`swipe=150,500,850,500,120 sleep=1 click`);
+  without the click the scrub cancels on idle. One stroke ≈ 10 min on a 45 min episode, 17 min on a film.
+- Timing-critical presses (the up-next card's ~8 s window) need ONE held Companion session: a
+  per-call connect costs 3.7 s and a dropped press loses the window. Pattern: connect once, poll the
+  console log, send the HID press (`/tmp/claude-501/chipwatch.py` shape; worth folding into atvctl).
+- The Companion port can change mid-session (49153 → 59539 at ~12:05); `atv.sh` re-resolves it, but
+  anything that caches `ATV_COMPANION_PORT` must re-read Bonjour. `dns-sd -L` parsing in zsh: use
+  `sed -E 's/.*:([0-9]+) \(interface.*/\1/'`, not a bash `=~`.
+- In Off mode the mpv Info tab hides the Seek Previews row (and with it the RSS), so an Off-mode RSS
+  control is not readable until RSS is logged.
+- A `--console` stream can go quiet while the app lives (11:31–11:42); when the log stops moving under
+  playback, relaunch through `console.sh start`.
+
 ## Next
 
 - Give `shot.sh` a JPEG mode and keep evidence folders under ~10 MB (today's 4K PNGs ran 20–34 MB
