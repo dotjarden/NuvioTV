@@ -230,6 +230,10 @@ Harvest Only (the default)**.
 - A `--console` stream can go quiet while the app lives (11:31–11:42); when the log stops moving under
   playback, relaunch through `console.sh start`.
 
+- **The Menu eject is Companion-only.** Five quick Back taps on the real remote out of the mpv player
+  never backgrounded the app (12:32–12:38); the three ejects today were all rig input. Keep the
+  screenshot-after-exit rule, and treat P3-F8 as a rig caveat unless a remote ever shows it.
+
 ## Next
 
 - Give `shot.sh` a JPEG mode and keep evidence folders under ~10 MB (today's 4K PNGs ran 20–34 MB
