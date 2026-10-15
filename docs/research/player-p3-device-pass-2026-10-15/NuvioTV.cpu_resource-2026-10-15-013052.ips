@@ -1,0 +1,116 @@
+{"app_name":"NuvioTV","timestamp":"2026-10-15 01:30:52.00 -0400","app_version":"0.3.0","slice_uuid":"67B49D8D-DE41-34D4-845E-E4DB02BB62BC","build_version":"135","bundleID":"com.youngchris29.NuvioTV","duration_ms":"133221","share_with_app_devs":0,"is_first_party":0,"bug_type":"202","os_version":"Apple TVOS 27.2 (24K5103f)","roots_installed":0,"name":"NuvioTV","incident_id":"BB429C2D-F733-4842-91D5-4F313204BA8C"}
+Date/Time:        2026-10-15 01:28:39.230 -0400
+End time:         2026-10-15 01:30:52.452 -0400
+OS Version:       Apple TVOS 27.2 (Build 24K5103f)
+Architecture:     arm64e
+Report Version:   73
+Incident Identifier: BB429C2D-F733-4842-91D5-4F313204BA8C
+
+Data Source:      Microstackshots
+Shared Cache:     671D434B-E4AD-3887-8FF0-03DE850F83B7 slid base address 0x197400000
+
+Command:          NuvioTV
+Path:             /private/var/containers/Bundle/Application/5C834F80-421A-4C63-A73D-00170CD6074A/NuvioTV.app/NuvioTV
+Identifier:       com.youngchris29.NuvioTV
+Version:          0.3.0 (135)
+Is First Party:   No
+Beta Identifier:  C9D7DAC9-422B-4A6E-8780-7579A7A9669D
+Resource Coalition: 915
+Architecture:     arm64
+PID:              1100
+
+Event:            cpu usage
+Action taken:     none
+CPU:              90 seconds cpu time over 133 seconds (68% cpu average), exceeding limit of 50% cpu over 180 seconds
+CPU limit:        90s
+Limit duration:   180s
+CPU used:         90s
+CPU duration:     133s
+Duration:         133.22s
+Duration Sampled: 9.62s (event starts 123.29s before samples, event ends 0.31s after samples)
+Steps:            2 (10 gigacycles/step, 2 samples lost)
+
+Hardware model:   AppleTV14,1
+Active cpus:      5
+Memory size:      3.88 GB
+HW page size:     16384
+VM page size:     16384
+
+Models:           UNKNOWN
+
+
+Heaviest stack for the target process:
+  2  ??? (libsystem_pthread.dylib + 2320) [0x1c6f26910]
+  2  ??? (libsystem_pthread.dylib + 2736) [0x1c6f26ab0]
+  2  ??? (libdispatch.dylib + 83980) [0x25c25780c]
+  2  ??? (libdispatch.dylib + 85772) [0x25c257f0c]
+  2  ??? (libdispatch.dylib + 43624) [0x25c24da68]
+  2  ??? (libdispatch.dylib + 40796) [0x25c24cf5c]
+  2  ??? (libdispatch.dylib + 111432) [0x25c25e348]
+  2  ??? (libdispatch.dylib + 6580) [0x25c2449b4]
+  2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 3141888) [0x1049e7100]
+  2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 13044876) [0x105358c8c]
+  2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 48854084) [0x10757f444]
+  2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 61424852) [0x10817c4d4]
+  2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 61399292) [0x1081760fc]
+  2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 61405928) [0x108177ae8]
+  2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 61438228) [0x10817f914]
+  2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 61439760) [0x10817ff10]
+  2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 61884916) [0x1081ec9f4]
+  2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 61885408) [0x1081ecbe0]
+  2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 63029100) [0x108303f6c]
+  2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 63030472) [0x1083044c8]
+  2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 61196388) [0x108144864]
+  2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 61195176) [0x1081443a8]
+  1  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 61193804) [0x108143e4c]
+
+
+Powerstats for:   NuvioTV [1100]
+UUID:             67B49D8D-DE41-34D4-845E-E4DB02BB62BC
+Path:             /private/var/containers/Bundle/Application/5C834F80-421A-4C63-A73D-00170CD6074A/NuvioTV.app/NuvioTV
+Identifier:       com.youngchris29.NuvioTV
+Version:          0.3.0 (135)
+Is First Party:   No
+Beta Identifier:  C9D7DAC9-422B-4A6E-8780-7579A7A9669D
+Resource Coalition: 2 samples 915
+Architecture:     arm64
+Footprint:        493.41 MB
+Pageins:          2645 pages
+Start time:       2026-10-15 01:30:42.520 -0400
+End time:         2026-10-15 01:30:52.138 -0400
+Num samples:      2 (100%)
+Energy:           3616.46 uWh
+Num threads:      1
+Primary state:    2 samples Frontmost App, Non-Suppressed, User mode, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated, Override Thread QoS Unspecified, p-core
+User Activity:    0 samples Idle, 0 samples Active, 2 samples Unknown
+Power Source:     0 samples on Battery, 0 samples on AC, 2 samples Unknown
+  2  ??? (libsystem_pthread.dylib + 2320) [0x1c6f26910]
+    2  ??? (libsystem_pthread.dylib + 2736) [0x1c6f26ab0]
+      2  ??? (libdispatch.dylib + 83980) [0x25c25780c]
+        2  ??? (libdispatch.dylib + 85772) [0x25c257f0c]
+          2  ??? (libdispatch.dylib + 43624) [0x25c24da68]
+            2  ??? (libdispatch.dylib + 40796) [0x25c24cf5c]
+              2  ??? (libdispatch.dylib + 111432) [0x25c25e348]
+                2  ??? (libdispatch.dylib + 6580) [0x25c2449b4]
+                  2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 3141888) [0x1049e7100]
+                    2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 13044876) [0x105358c8c]
+                      2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 48854084) [0x10757f444]
+                        2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 61424852) [0x10817c4d4]
+                          2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 61399292) [0x1081760fc]
+                            2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 61405928) [0x108177ae8]
+                              2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 61438228) [0x10817f914]
+                                2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 61439760) [0x10817ff10]
+                                  2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 61884916) [0x1081ec9f4]
+                                    2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 61885408) [0x1081ecbe0]
+                                      2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 63029100) [0x108303f6c]
+                                        2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 63030472) [0x1083044c8]
+                                          2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 61196388) [0x108144864]
+                                            2  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 61195176) [0x1081443a8]
+                                              1  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 61193804) [0x108143e4c]
+                                              1  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 61193684) [0x108143dd4]
+
+  Binary Images:
+           0x1043f4000 -                ???  com.youngchris29.NuvioTV 0.3.0 (135) <67B49D8D-DE41-34D4-845E-E4DB02BB62BC>  /private/var/containers/Bundle/Application/5C834F80-421A-4C63-A73D-00170CD6074A/NuvioTV.app/NuvioTV
+           0x1046e8000 -                ???  ???                                  <10562099-436A-3BCA-9615-6F5AD997AB75>
+           0x1c6f26000 -        0x1c6f317f3  libsystem_pthread.dylib              <4275BC12-0B97-3087-8C82-B417B3445CB9>  /usr/lib/system/libsystem_pthread.dylib
+           0x25c243000 -        0x25c28859f  libdispatch.dylib                    <1BFC4666-9F60-3802-A2D2-CFDCB6B93EB8>  /usr/lib/system/libdispatch.dylib
