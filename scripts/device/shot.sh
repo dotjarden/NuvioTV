@@ -15,6 +15,11 @@ elif [[ "$arg" == */* || "$arg" == *.png ]]; then
 else
   dir="$ROOT/docs/research/device-rig-$(date +%F)"; mkdir -p "$dir"; out="$dir/$arg.png"
 fi
-xcrun devicectl device capture screenshot --device "$ATV_UDID" --destination "$out" >/dev/null
+# The CoreDevice tunnel drops now and then ("connection was invalidated", Mercury 1001) and is back
+# within ~20 s: retry up to SHOT_TRIES (default 4) before giving up.
+tries="${SHOT_TRIES:-4}"; n=0
+until xcrun devicectl device capture screenshot --device "$ATV_UDID" --destination "$out" >/dev/null 2>"$out.err"; do
+  n=$((n + 1)); if (( n >= tries )); then cat "$out.err" >&2; rm -f "$out.err"; exit 1; fi; sleep 6
+done; rm -f "$out.err"
 if [[ "${SHOT_SMALL:-0}" == 1 ]]; then sips -Z 960 "$out" --out "${out%.png}.small.png" >/dev/null; fi
 echo "$out"

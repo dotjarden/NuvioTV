@@ -176,6 +176,25 @@ Harvest Only (the default)**.
   MKV on the box), step 5's Harvest Only control run (20 min, RSS row read by a human), the step 3
   post-play-card leg.
 
+## Round 3 additions (10:21–10:50 ET)
+
+- `scripts/device/preflight.sh`: refuses a walk unless the tunnel is up, the console stream follows the
+  CURRENT app pid, and that process's last `[ProfileSelect] selecting profile N` is the Test profile
+  (`TEST_PROFILE_INDEX`, default 3). Born of a real miss: tvOS had relaunched the app cold overnight,
+  the first blind Select of the morning picked Chris on the fresh picker, and three minutes of
+  navigation ran in his profile before the rail avatar gave it away. **Never start a walk with a
+  Select; screenshot first; never trust yesterday's console stream.**
+- Normalizing walks: `left ×8` always arms the rail from any row; `up ×12` always reaches the top of
+  the Settings root or a pane; count down from there. Panes open at the top; the root remembers.
+- `hold` releases in a `finally`; a pyatv protocol error mid-hold once left Right held on the TV (the
+  native scan ran on for 20 s, two Menus were swallowed) until a plain Right press released it. After
+  any `ProtocolError` during a hold, send `atv.sh press <button>`.
+- `text=<string>` types into the Search field over Companion (`.searchable` keyboard focused).
+- Select on a Detail whose hero trailer is already playing enters the full-screen trailer; press Play
+  within ~2 s of the Detail appearing, or Menu out and reopen.
+- Step 8's HDR10 and DV P8.1 legs ran through the rig (record in the P3 plan OUTCOME round 3), plus
+  finding P3-F7 (a DV profile 5 MP4 fails native with CoreMediaErrorDomain -12927 and falls over to mpv).
+
 ## Next
 
 - Give `shot.sh` a JPEG mode and keep evidence folders under ~10 MB (today's 4K PNGs ran 20–34 MB

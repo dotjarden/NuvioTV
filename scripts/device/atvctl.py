@@ -71,7 +71,18 @@ async def run(steps):
                 await api.hid_command(True, BUTTONS[name]); await asyncio.sleep(PRESS_MS / 1000); await api.hid_command(False, BUTTONS[name])
             elif name == "hold":
                 btn, secs = arg.split(","); secs = float(secs)
-                await api.hid_command(True, BUTTONS[btn]); await asyncio.sleep(secs); await api.hid_command(False, BUTTONS[btn])
+                # Always release: a connection error mid-hold once left Right held on the TV (the
+                # native FF scan ran on for 20 s and the next Menus were swallowed). If the release
+                # itself fails, the caller must send a plain press of the same button.
+                await api.hid_command(True, BUTTONS[btn])
+                try:
+                    await asyncio.sleep(secs)
+                finally:
+                    try:
+                        await api.hid_command(False, BUTTONS[btn])
+                    except Exception as exc:  # noqa: BLE001
+                        print(f"RELEASE_FAILED {btn}: {exc} — send `atv.sh press {btn}` to release", file=sys.stderr)
+                        raise
             elif name == "swipe":
                 p = [int(x) for x in arg.split(",")]
                 ms = p[4] if len(p) > 4 else 200
