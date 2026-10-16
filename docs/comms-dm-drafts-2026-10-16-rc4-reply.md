@@ -1,7 +1,6 @@
 # DM draft — reply to Steven's beta.19-rc4 verdict (2026-10-16)
 
-Status: DRAFT, NOT SENT. Lint: see the bottom. Send only on Christian's go, through the chat recipe in memory
-`reddit-chat-smash-fetch` (one process, CSS locators, log to `~/Library/Logs/`). One bubble.
+Status: **SENT 2026-10-16 21:06:03Z** on Christian's go ("Send it"), one bubble, verified in the room (bubble 39, youngchris2989) and by `fetch-dms.sh` (event 2026-10-16T21:06:03.762Z = the new DM watermark). Sent through the chat recipe in memory `reddit-chat-smash-fetch` (one process, CSS locators, duplicate guard, log `~/Library/Logs/nuviotv-dm-send-2026-10-16.log`). Lint: see the bottom.
 
 Context: his DM 2026-10-16 20:09Z + two videos (`docs/steven-beta19-rc4-verdict-2026-10-16.md`). What this
 says: thanks; owns the BUG-159 misread; the player answer with settings for his setup (native player ON,
