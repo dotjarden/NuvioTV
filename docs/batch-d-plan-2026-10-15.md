@@ -1,6 +1,6 @@
 # Batch D: upstream ports + SenPlayer (2026-10-15)
 
-**Status: BUILT, REVIEWED (two Opus rounds), DEVICE-SMOKED, READY TO MERGE on Christian's go; NOT merged, NOT cut, nothing posted.** Branch `claude/batch-d` tip `14f5991ce` (11 commits on `975a70109`), pushed to `origin` as a backup. Master plan `docs/master-plan-2026-10-14.md` §4.3 / §2e. Branch NuvioMobile
+**Status: MERGED 2026-10-16 ~01:20 ET on Christian's go ("merge it"): `tvos-shared-extraction` fast-forwarded `975a70109` → `14f5991ce`, pushed; feature branch deleted (local + origin); outer pointer bumped on `main`; clone deleted. NOT cut (rides into rc5), nothing posted.** Branch `claude/batch-d` tip `14f5991ce` (11 commits on `975a70109`), pushed to `origin` as a backup. Master plan `docs/master-plan-2026-10-14.md` §4.3 / §2e. Branch NuvioMobile
 `claude/batch-d` off `tvos-shared-extraction` `975a7010` (beta.19-rc4, build 136), built in the clone
 `~/Claude/Projects/NuvioMobile-batch-d` (MPVKit symlinked over the gitlink; stage by explicit paths).
 Runs beside the player P4 session (its own clone); the two touch disjoint files (this batch: `shared/`
