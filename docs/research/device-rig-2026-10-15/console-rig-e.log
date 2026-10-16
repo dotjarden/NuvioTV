@@ -1,0 +1,1972 @@
+[LaunchTrace] +0ms app_init
+[ExtPlayerProbe] canOpenURL(infuse://) = true
+2026-10-15 11:43:38.829 NuvioTV[1658:893772] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-15 11:43:38.832 NuvioTV[1658:893772] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-15 11:43:38.833 NuvioTV[1658:893772] -canOpenURL: failed for URL: "vidhub://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ExtPlayerProbe] canOpenURL(vlc-x-callback://) = false
+[ExtPlayerProbe] canOpenURL(outplayer://) = false
+[ExtPlayerProbe] canOpenURL(open-vidhub://) = true
+[ExtPlayerProbe] canOpenURL(vidhub://) = false
+2026-10-15 11:43:38.834 NuvioTV[1658:893772] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-15 11:43:38.834 NuvioTV[1658:893772] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ExtPlayerProbe] availablePlayers = ["infuse:Infuse", "vidhub:VidHub"]
+[LaunchTrace] +573ms artwork #1: mem=0 disk=1 net=0 fail=0
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-15 11:44:44.194 NuvioTV[1658:893772] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+[LaunchTrace] +65566ms home_appear
+2026-10-15 11:44:44.228 NuvioTV[1658:893772] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-15 11:44:44.228 NuvioTV[1658:893772] [TrailerPipeline] trailerLocation stage=row
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +66879ms artwork #10: mem=0 disk=9 net=1 fail=0
+[LaunchTrace] +66888ms first_rows n=5 hero=8
+[LaunchTrace] +66888ms first_hero n=8
+2026-10-15 11:44:45.570 NuvioTV[1658:893772] [TrailerPipeline] gates inlineTrailersEnabled=YES systemAutoplay=YES
+[LaunchTrace] +66958ms rows n=9
+2026-10-15 11:44:45.641 NuvioTV[1658:893772] [AmbientWash] render id=movie:tt3118958 src=768x432 ms=11.1 lum=0.17
+2026-10-15 11:44:45.641 NuvioTV[1658:893772] [AmbientWash] show id=movie:tt3118958 gen=1 late=0 ms=11.1 lum=0.17
+[LaunchTrace] +66989ms artwork #25: mem=3 disk=21 net=1 fail=0
+[LaunchTrace] +67027ms artwork #50: mem=3 disk=46 net=1 fail=0
+2026-10-15 11:45:03.781 NuvioTV[1658:893772] [NavRail] arm reason=left origin=UIKitFocusableViewResponderItem tab=0
+2026-10-15 11:45:03.809 NuvioTV[1658:893772] [Rail] gate=on mode=uikit
+2026-10-15 11:45:04.192 NuvioTV[1658:893772] [NavRail] contained heading=left
+2026-10-15 11:45:04.622 NuvioTV[1658:893772] [NavRail] contained heading=left
+2026-10-15 11:45:05.036 NuvioTV[1658:893772] [NavRail] contained heading=left
+2026-10-15 11:45:05.465 NuvioTV[1658:893772] [NavRail] contained heading=left
+2026-10-15 11:45:05.897 NuvioTV[1658:893772] [NavRail] contained heading=left
+2026-10-15 11:45:06.321 NuvioTV[1658:893772] [NavRail] contained heading=left
+2026-10-15 11:45:06.745 NuvioTV[1658:893772] [NavRail] contained heading=left
+2026-10-15 11:45:07.173 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 11:45:07.512 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 11:45:07.861 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 11:45:08.203 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 11:45:08.561 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 11:45:08.914 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 11:45:09.263 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 11:45:09.603 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 11:45:09.949 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 11:45:10.290 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 11:45:10.631 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 11:45:10.986 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 11:45:13.878 NuvioTV[1658:893772] [NavRail] select tab=4 from=0
+2026-10-15 11:45:13.879 NuvioTV[1658:893772] [Rail] gate=off mode=uikit
+2026-10-15 11:45:14.019 NuvioTV[1658:893772] [NavRail] exit via=select route=settings result=fallback
+2026-10-15 11:46:00.097 NuvioTV[1658:893772] [NavRail] arm reason=left origin=ListTableViewCell tab=4
+2026-10-15 11:46:00.141 NuvioTV[1658:893772] [Rail] gate=on mode=uikit
+2026-10-15 11:46:00.516 NuvioTV[1658:893772] [NavRail] contained heading=left
+2026-10-15 11:46:00.949 NuvioTV[1658:893772] [NavRail] contained heading=left
+2026-10-15 11:46:01.362 NuvioTV[1658:893772] [NavRail] contained heading=left
+2026-10-15 11:46:01.788 NuvioTV[1658:893772] [NavRail] contained heading=left
+2026-10-15 11:46:02.209 NuvioTV[1658:893772] [NavRail] contained heading=left
+2026-10-15 11:46:02.633 NuvioTV[1658:893772] [NavRail] contained heading=left
+2026-10-15 11:46:03.069 NuvioTV[1658:893772] [NavRail] contained heading=left
+2026-10-15 11:46:05.210 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 11:46:05.558 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 11:46:05.902 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 11:46:06.319 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 11:46:06.663 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 11:46:07.011 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 11:46:07.355 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 11:46:07.814 NuvioTV[1658:893772] [NavRail] select tab=0 from=4
+2026-10-15 11:46:07.815 NuvioTV[1658:893772] [Rail] gate=off mode=uikit
+[LaunchTrace] +149233ms home_appear
+2026-10-15 11:46:07.895 NuvioTV[1658:893772] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-15 11:46:07.895 NuvioTV[1658:893772] [TrailerPipeline] trailerLocation stage=row
+2026-10-15 11:46:07.922 NuvioTV[1658:893772] [NavRail] exit via=select route=home result=focus
+[LaunchTrace] +149264ms first_hero n=8
+2026-10-15 11:46:11.061 NuvioTV[1658:893772] [HomeHero] logoInk sync-sample ms=0.93
+2026-10-15 11:46:11.233 NuvioTV[1658:893772] [AmbientWash] render id=movie:tt6933238 src=768x432 ms=20.3 lum=0.12
+2026-10-15 11:46:11.873 NuvioTV[1658:893772] [AmbientWash] render id=series:tt30459041 src=768x432 ms=30.6 lum=0.26
+2026-10-15 11:46:11.930 NuvioTV[1658:893772] [AmbientWash] show id=series:tt30459041 gen=2 late=0 ms=30.6 lum=0.26
+2026-10-15 11:46:12.514 NuvioTV[1658:893772] [AmbientWash] render id=series:tt36118374 src=768x432 ms=21.5 lum=0.26
+2026-10-15 11:46:12.743 NuvioTV[1658:893772] [AmbientWash] show id=series:tt36118374 gen=3 late=0 ms=21.5 lum=0.26
+2026-10-15 11:46:23.178 NuvioTV[1658:893772] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[SubtitleRepo] Fetching subtitles type=series id=tt36118374:1:1 across 9 enabled addons
+2026-10-15 11:46:23.179 NuvioTV[1658:893772] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[SubtitleRepo] Skip Comet: no subtitles resource
+[SubtitleRepo] Skip Torrentio: no subtitles resource
+[SubtitleRepo] Skip AIO Streams: no subtitles resource
+[SubtitleRepo] Skip Cinemeta: no subtitles resource
+[SubtitleRepo] Skip BetterPosters: no subtitles resource
+[SubtitleRepo] Querying AIO Metadata 2: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/series/tt36118374%3A1%3A1.json
+[SubtitleRepo] Querying AIO Metadata 1: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/series/tt36118374%3A1%3A1.json
+[SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/series/tt36118374%3A1%3A1.json
+[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/<redacted>%3A1%3A1.json
+[SubtitleRepo] AIO Metadata 2: 0 subtitles in 146.343375ms
+[SubtitleRepo] AIO Metadata 1: 0 subtitles in 158.110833ms
+[SubtitleRepo] OpenSubtitles v3: 3 subtitles in 480.383792ms
+[SubtitleRepo] Duck Streams (AIOStreams): 3 subtitles in 1.050146875s
+[SubtitleRepo] Subtitle fetch done: 6 total in 1.051930416s
+[PlayerRouter] self-check passed
+[Failover] mpv start watchdog armed: 25 s
+[mvk-info] MoltenVK version 1.4.1, supporting Vulkan version 1.4.334.
+	The following 152 Vulkan extensions are supported:
+	VK_KHR_16bit_storage v1
+	VK_KHR_8bit_storage v1
+	VK_KHR_bind_memory2 v1
+	VK_KHR_buffer_device_address v1
+	VK_KHR_calibrated_timestamps v1
+	VK_KHR_copy_commands2 v1
+	VK_KHR_create_renderpass2 v1
+	VK_KHR_dedicated_allocation v3
+	VK_KHR_deferred_host_operations v4
+	VK_KHR_depth_stencil_resolve v1
+	VK_KHR_descriptor_update_template v1
+	VK_KHR_device_group v4
+	VK_KHR_device_group_creation v1
+	VK_KHR_driver_properties v1
+	VK_KHR_dynamic_rendering v1
+	VK_KHR_dynamic_rendering_local_read v1
+	VK_KHR_external_fence v1
+	VK_KHR_external_fence_capabilities v1
+	VK_KHR_external_memory v1
+	VK_KHR_external_memory_capabilities v1
+	VK_KHR_external_semaphore v1
+	VK_KHR_external_semaphore_capabilities v1
+	VK_KHR_format_feature_flags2 v2
+	VK_KHR_fragment_shader_barycentric v1
+	VK_KHR_get_memory_requirements2 v1
+	VK_KHR_get_physical_device_properties2 v2
+	VK_KHR_get_surface_capabilities2 v1
+	VK_KHR_global_priority v1
+	VK_KHR_image_format_list v1
+	VK_KHR_imageless_framebuffer v1
+	VK_KHR_incremental_present v2
+	VK_KHR_index_type_uint8 v1
+	VK_KHR_line_rasterization v1
+	VK_KHR_load_store_op_none v1
+	VK_KHR_maintenance1 v2
+	VK_KHR_maintenance2 v1
+	VK_KHR_maintenance3 v1
+	VK_KHR_maintenance4 v2
+	VK_KHR_maintenance5 v1
+	VK_KHR_maintenance6 v1
+	VK_KHR_maintenance7 v1
+	VK_KHR_maintenance8 v1
+	VK_KHR_maintenance9 v1
+	VK_KHR_map_memory2 v1
+	VK_KHR_multiview v1
+	VK_KHR_portability_subset v1
+	VK_KHR_present_id v1
+	VK_KHR_present_id2 v1
+	VK_KHR_present_wait v1
+	VK_KHR_present_wait2 v1
+	VK_KHR_push_descriptor v2
+	VK_KHR_relaxed_block_layout v1
+	VK_KHR_robustness2 v1
+	VK_KHR_sampler_mirror_clamp_to_edge v3
+	VK_KHR_sampler_ycbcr_conversion v14
+	VK_KHR_separate_depth_stencil_layouts v1
+	VK_KHR_shader_draw_parameters v1
+	VK_KHR_shader_expect_assume v1
+	VK_KHR_shader_float_controls v4
+	VK_KHR_shader_float_controls2 v1
+	VK_KHR_shader_float16_int8 v1
+	VK_KHR_shader_fma v1
+	VK_KHR_shader_integer_dot_product v1
+	VK_KHR_shader_maximal_reconvergence v1
+	VK_KHR_shader_non_semantic_info v1
+	VK_KHR_shader_quad_control v1
+	VK_KHR_shader_relaxed_extended_instruction v1
+	VK_KHR_shader_subgroup_extended_types v1
+	VK_KHR_shader_subgroup_rotate v2
+	VK_KHR_shader_subgroup_uniform_control_flow v1
+	VK_KHR_shader_terminate_invocation v1
+	VK_KHR_spirv_1_4 v1
+	VK_KHR_storage_buffer_storage_class v1
+	VK_KHR_surface v25
+	VK_KHR_surface_maintenance1 v1
+	VK_KHR_surface_protected_capabilities v1
+	VK_KHR_swapchain v70
+	VK_KHR_swapchain_maintenance1 v1
+	VK_KHR_swapchain_mutable_format v1
+	VK_KHR_synchronization2 v1
+	VK_KHR_timeline_semaphore v2
+	VK_KHR_uniform_buffer_standard_layout v1
+	VK_KHR_variable_pointers v1
+	VK_KHR_vertex_attribute_divisor v1
+	VK_KHR_vulkan_memory_model v3
+	VK_KHR_zero_initialize_workgroup_memory v1
+	VK_EXT_4444_formats v1
+	VK_EXT_buffer_device_address v2
+	VK_EXT_calibrated_timestamps v2
+	VK_EXT_debug_marker v4
+	VK_EXT_debug_report v10
+	VK_EXT_debug_utils v2
+	VK_EXT_depth_clip_control v1
+	VK_EXT_descriptor_indexing v2
+	VK_EXT_extended_dynamic_state v1
+	VK_EXT_extended_dynamic_state2 v1
+	VK_EXT_extended_dynamic_state3 v2
+	VK_EXT_external_memory_host v1
+	VK_EXT_external_memory_metal v1
+	VK_EXT_fragment_shader_interlock v1
+	VK_EXT_global_priority v2
+	VK_EXT_global_priority_query v1
+	VK_EXT_headless_surface v1
+	VK_EXT_host_image_copy v1
+	VK_EXT_host_query_reset v1
+	VK_EXT_image_2d_view_of_3d v1
+	VK_EXT_image_robustness v1
+	VK_EXT_index_type_uint8 v1
+	VK_EXT_inline_uniform_block v1
+	VK_EXT_layer_settings v2
+	VK_EXT_legacy_dithering v2
+	VK_EXT_line_rasterization v1
+	VK_EXT_load_store_op_none v1
+	VK_EXT_memory_budget v1
+	VK_EXT_metal_objects v2
+	VK_EXT_metal_surface v1
+	VK_EXT_non_seamless_cube_map v1
+	VK_EXT_pipeline_creation_cache_control v3
+	VK_EXT_pipeline_creation_feedback v1
+	VK_EXT_pipeline_robustness v1
+	VK_EXT_post_depth_coverage v1
+	VK_EXT_primitive_topology_list_restart v1
+	VK_EXT_private_data v1
+	VK_EXT_provoking_vertex v1
+	VK_EXT_robustness2 v1
+	VK_EXT_sample_locations v1
+	VK_EXT_scalar_block_layout v1
+	VK_EXT_separate_stencil_usage v1
+	VK_EXT_shader_atomic_float v1
+	VK_EXT_shader_demote_to_helper_invocation v1
+	VK_EXT_shader_stencil_export v1
+	VK_EXT_shader_subgroup_ballot v1
+	VK_EXT_shader_subgroup_vote v1
+	VK_EXT_shader_viewport_index_layer v1
+	VK_EXT_subgroup_size_control v2
+	VK_EXT_surface_maintenance1 v1
+	VK_EXT_swapchain_colorspace v5
+	VK_EXT_swapchain_maintenance1 v1
+	VK_EXT_texel_buffer_alignment v1
+	VK_EXT_texture_compression_astc_hdr v1
+	VK_EXT_tooling_info v1
+	VK_EXT_vertex_attribute_divisor v3
+	VK_AMD_gpu_shader_half_float v2
+	VK_AMD_negative_viewport_height v1
+	VK_AMD_shader_image_load_store_lod v1
+	VK_AMD_shader_trinary_minmax v1
+	VK_GOOGLE_display_timing v1
+	VK_IMG_format_pvrtc v1
+	VK_INTEL_shader_integer_functions2 v1
+	VK_MVK_ios_surface v3
+	VK_MVK_moltenvk v37
+	VK_NV_fragment_shader_barycentric v1
+[mvk-info] GPU device:
+	model: Apple A15 GPU
+	type: Integrated
+	vendorID: 0x106b
+	deviceID: 0x1b020008
+	pipelineCacheUUID: DB445FF2-1B02-0008-0000-000100000000
+	GPU memory available: 2730 MB
+	GPU memory used: 0 MB
+	Metal Shading Language 3.1
+	supports the following GPU Features:
+		GPU Family Metal 3
+		GPU Family Apple 8
+		Read-Write Texture Tier 2
+[mvk-info] Created VkInstance for Vulkan version 1.4.334, as requested by app, with the following 6 Vulkan extensions enabled:
+	VK_KHR_get_surface_capabilities2 v1
+	VK_KHR_surface v25
+	VK_KHR_surface_maintenance1 v1
+	VK_EXT_metal_surface v1
+	VK_EXT_surface_maintenance1 v1
+	VK_EXT_swapchain_colorspace v5
+[mvk-info] Vulkan semaphores using MTLEvent.
+[mvk-info] Descriptor sets binding resources using Metal3 argument buffers.
+[mvk-info] Created VkDevice to run on GPU Apple A15 GPU with the following 12 Vulkan extensions enabled:
+	VK_KHR_dynamic_rendering v1
+	VK_KHR_portability_subset v1
+	VK_KHR_shader_expect_assume v1
+	VK_KHR_shader_relaxed_extended_instruction v1
+	VK_KHR_shader_subgroup_rotate v2
+	VK_KHR_swapchain v70
+	VK_KHR_swapchain_maintenance1 v1
+	VK_KHR_zero_initialize_workgroup_memory v1
+	VK_EXT_external_memory_host v1
+	VK_EXT_metal_objects v2
+	VK_EXT_shader_atomic_float v1
+	VK_EXT_swapchain_maintenance1 v1
+2026-10-15 11:47:25.428 NuvioTV[1658:894949] [Chapters] n=0 dropped=0 dur=2702.5 src=json raw=[]
+2026-10-15 11:47:25.428 NuvioTV[1658:894949] [SeekProbe] seek gen=1 args=1208.957 absolute status=0
+[mvk-info] Created 3 swapchain images with size (3840, 2160) and contents scale 2.0 in layer (null) (0x13346a530) on screen Main Screen.
+[mvk-info] Created 3 swapchain images with size (3840, 2160) and contents scale 2.0 in layer (null) (0x13346a530) on screen Main Screen.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+2026-10-15 11:47:27.884 NuvioTV[1658:894949] [SeekProbe] restart gen=1 landed=1210.140
+[Transport] cache-state raw={"cache-end":1419.860667,"reader-pts":1213.759667,"cache-duration":206.101000,"eof":false,"underrun":false,"idle":false,"total-bytes":52072256,"fw-bytes":51159024,"raw-input-rate":14273099,"debug-low-level-seeks":2,"debug-byte-level-seeks":3,"debug-ts-last":1419.860667,"ts-per-stream":[{"type":"vide ranges=1 fallback=0 +2s
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-15 11:47:27.886 NuvioTV[1658:893772] [Aspect] fit override=-1 panscan=0.00 zoom=0.00 read=-1.000000
+2026-10-15 11:47:27.914 NuvioTV[1658:894853] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 11:47:27.914 NuvioTV[1658:894853] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+2026-10-15 11:47:29.340 NuvioTV[1658:895330] [Harvest] took=74.7ms size=1920x816 fmt=bgr0 at=1211.5 src=mpv
+2026-10-15 11:47:29.350 NuvioTV[1658:893772] [Harvest] slow (74.7ms > 60ms): interval now 30s for this file
+2026-10-15 11:47:29.360 NuvioTV[1658:893772] [Harvest] stored n=1 bytes=9376 outcome=stored
+[MPVStats] +5s cache=602.0s net=31.5 MB/s dropped=vo:20 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +10s cache=601.8s net=0.2 MB/s dropped=vo:20 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +15s cache=600.3s net=0.1 MB/s dropped=vo:20 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +21s cache=599.6s net=0.1 MB/s dropped=vo:20 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:47:49.281 NuvioTV[1658:894853] [Thumbs] swscale 9.5.102 test_transfer(pq,in)=1
+2026-10-15 11:47:50.750 NuvioTV[1658:894853] [Thumbs] open took=1469ms container=matroska,webm index=642 size=548MB budget=16.0MB hdr=sdr read=345KB range=256KB reopen=0
+2026-10-15 11:47:51.307 NuvioTV[1658:893772] [Thumbs] decode at=1259.6 kf=1259.6 took=533ms dec=24ms tm=0.0ms charged=325KB job=prewarm outcome=stored
+2026-10-15 11:47:51.661 NuvioTV[1658:893772] [Thumbs] decode at=1318.7 kf=1318.7 took=350ms dec=21ms tm=0.0ms charged=317KB job=prewarm outcome=stored
+[MPVStats] +26s cache=598.6s net=0.1 MB/s dropped=vo:20 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:47:51.999 NuvioTV[1658:893772] [Thumbs] decode at=1374.8 kf=1374.8 took=336ms dec=19ms tm=0.0ms charged=340KB job=prewarm outcome=stored
+2026-10-15 11:47:52.394 NuvioTV[1658:893772] [Thumbs] decode at=1137.0 kf=1137.0 took=389ms dec=16ms tm=0.0ms charged=319KB job=prewarm outcome=stored
+2026-10-15 11:47:52.801 NuvioTV[1658:893772] [Thumbs] decode at=1434.2 kf=1434.2 took=402ms dec=24ms tm=0.0ms charged=403KB job=prewarm outcome=stored
+2026-10-15 11:47:53.150 NuvioTV[1658:893772] [Thumbs] decode at=1492.7 kf=1492.7 took=348ms dec=14ms tm=0.0ms charged=319KB job=prewarm outcome=stored
+2026-10-15 11:47:53.548 NuvioTV[1658:893772] [Thumbs] decode at=1079.6 kf=1079.6 took=393ms dec=22ms tm=0.0ms charged=315KB job=prewarm outcome=stored
+2026-10-15 11:47:53.917 NuvioTV[1658:893772] [Thumbs] decode at=1559.0 kf=1559.0 took=364ms dec=17ms tm=0.0ms charged=315KB job=prewarm outcome=stored
+[MPVStats] +31s cache=597.8s net=0.2 MB/s dropped=vo:21 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:47:59.326 NuvioTV[1658:894949] [Harvest] took=59.9ms size=1920x816 fmt=bgr0 at=1241.5 src=mpv
+2026-10-15 11:47:59.350 NuvioTV[1658:893772] [Harvest] stored n=10 bytes=85174 outcome=stored
+[Transport] cache-state raw={"cache-end":1842.687667,"reader-pts":1246.762667,"cache-duration":595.925000,"eof":false,"underrun":false,"idle":true,"total-bytes":165505472,"fw-bytes":157289808,"raw-input-rate":130844,"debug-low-level-seeks":2,"debug-byte-level-seeks":3,"debug-ts-last":1842.800000,"ts-per-stream":[{"type":"video ranges=1 fallback=0 +35s
+2026-10-15 11:48:00.784 NuvioTV[1658:895331] [SeekProbe] seek gen=2 args=10.000 relative status=0
+2026-10-15 11:48:00.879 NuvioTV[1658:894853] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-15 11:48:00.879 NuvioTV[1658:894853] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-15 11:48:00.903 NuvioTV[1658:895331] [SeekProbe] restart gen=2 landed=1259.580
+[MPVStats] +37s cache=587.8s net=1.4 MB/s dropped=vo:0 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +42s cache=587.7s net=0.2 MB/s dropped=vo:0 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:48:08.804 NuvioTV[1658:894853] [SeekProbe] seek gen=3 args=10.000 relative status=0
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 11:48:08.886 NuvioTV[1658:894949] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 11:48:08.886 NuvioTV[1658:894949] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-15 11:48:08.901 NuvioTV[1658:894853] [SeekProbe] restart gen=3 landed=1277.520
+[MPVStats] +47s cache=586.0s net=0.2 MB/s dropped=vo:0 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:48:14.627 NuvioTV[1658:893772] [Thumbs] decode at=1619.1 kf=1619.1 took=344ms dec=20ms tm=0.0ms charged=320KB job=prewarm outcome=stored
+2026-10-15 11:48:15.014 NuvioTV[1658:893772] [Thumbs] decode at=1678.6 kf=1678.6 took=382ms dec=17ms tm=0.0ms charged=300KB job=prewarm outcome=stored
+2026-10-15 11:48:15.361 NuvioTV[1658:893772] [Thumbs] decode at=1739.3 kf=1739.3 took=343ms dec=19ms tm=0.0ms charged=335KB job=prewarm outcome=stored
+2026-10-15 11:48:15.751 NuvioTV[1658:893772] [Thumbs] decode at=1799.2 kf=1799.2 took=388ms dec=15ms tm=0.0ms charged=343KB job=prewarm outcome=stored
+2026-10-15 11:48:16.122 NuvioTV[1658:893772] [Thumbs] decode at=1017.7 kf=1017.7 took=363ms dec=18ms tm=0.0ms charged=340KB job=prewarm outcome=stored
+2026-10-15 11:48:16.456 NuvioTV[1658:893772] [Thumbs] decode at=1859.9 kf=1859.9 took=333ms dec=19ms tm=0.0ms charged=320KB job=prewarm outcome=stored
+2026-10-15 11:48:16.784 NuvioTV[1658:893772] [Thumbs] decode at=1918.6 kf=1918.6 took=323ms dec=12ms tm=0.0ms charged=304KB job=prewarm outcome=stored
+2026-10-15 11:48:17.197 NuvioTV[1658:893772] [Thumbs] decode at=954.8 kf=954.8 took=407ms dec=16ms tm=0.0ms charged=316KB job=prewarm outcome=stored
+[MPVStats] +52s cache=587.1s net=0.3 MB/s dropped=vo:3 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +58s cache=589.2s net=0.3 MB/s dropped=vo:31 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:48:25.204 NuvioTV[1658:893772] [Thumbs] decode at=1978.2 kf=1978.2 took=362ms dec=19ms tm=0.0ms charged=320KB job=prewarm outcome=stored
+2026-10-15 11:48:25.531 NuvioTV[1658:893772] [Thumbs] decode at=2038.6 kf=2038.6 took=316ms dec=13ms tm=0.0ms charged=312KB job=prewarm outcome=stored
+2026-10-15 11:48:25.917 NuvioTV[1658:893772] [Thumbs] decode at=893.5 kf=893.5 took=372ms dec=12ms tm=0.0ms charged=316KB job=prewarm outcome=stored
+2026-10-15 11:48:26.282 NuvioTV[1658:893772] [Thumbs] decode at=2094.6 kf=2090.7 took=363ms dec=11ms tm=0.0ms charged=308KB job=prewarm outcome=stored
+2026-10-15 11:48:26.633 NuvioTV[1658:893772] [Thumbs] decode at=2160.0 kf=2160.0 took=339ms dec=8ms tm=0.0ms charged=276KB job=prewarm outcome=stored
+2026-10-15 11:48:27.026 NuvioTV[1658:893772] [Thumbs] decode at=838.6 kf=838.6 took=376ms dec=12ms tm=0.0ms charged=312KB job=prewarm outcome=stored
+2026-10-15 11:48:27.395 NuvioTV[1658:893772] [Thumbs] decode at=2212.4 kf=2212.4 took=356ms dec=12ms tm=0.0ms charged=292KB job=prewarm outcome=stored
+2026-10-15 11:48:27.785 NuvioTV[1658:893772] [Thumbs] decode at=2279.8 kf=2279.8 took=365ms dec=15ms tm=0.0ms charged=300KB job=prewarm outcome=stored
+[MPVStats] +63s cache=588.5s net=0.3 MB/s dropped=vo:90 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +69s cache=586.9s net=0.2 MB/s dropped=vo:144 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:48:35.362 NuvioTV[1658:895330] [Harvest] took=96.6ms size=1920x816 fmt=bgr0 at=1303.9 src=mpv
+2026-10-15 11:48:35.388 NuvioTV[1658:893772] [Harvest] stored n=27 bytes=212479 outcome=stored
+[MPVStats] +74s cache=584.7s net=0.2 MB/s dropped=vo:204 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +79s cache=584.1s net=0.3 MB/s dropped=vo:235 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:48:47.784 NuvioTV[1658:893772] [Thumbs] decode at=2338.8 kf=2338.8 took=482ms dec=27ms tm=0.0ms charged=363KB job=prewarm outcome=stored
+2026-10-15 11:48:48.158 NuvioTV[1658:893772] [Thumbs] decode at=2397.7 kf=2397.7 took=360ms dec=16ms tm=0.0ms charged=312KB job=prewarm outcome=stored
+2026-10-15 11:48:48.550 NuvioTV[1658:893772] [Thumbs] decode at=774.7 kf=774.7 took=374ms dec=17ms tm=0.0ms charged=308KB job=prewarm outcome=stored
+[MPVStats] +85s cache=583.9s net=0.2 MB/s dropped=vo:272 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +90s cache=581.6s net=0.2 MB/s dropped=vo:302 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:49:05.894 NuvioTV[1658:894853] [Harvest] took=129.6ms size=1920x816 fmt=bgr0 at=1334.4 src=mpv
+2026-10-15 11:49:05.912 NuvioTV[1658:893772] [Harvest] stored n=31 bytes=243090 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:49:08.153 NuvioTV[1658:893772] [Thumbs] decode at=2456.3 kf=2456.3 took=357ms dec=18ms tm=0.0ms charged=297KB job=prewarm outcome=stored
+2026-10-15 11:49:08.513 NuvioTV[1658:893772] [Thumbs] decode at=2514.9 kf=2514.9 took=343ms dec=15ms tm=0.0ms charged=296KB job=prewarm outcome=stored
+2026-10-15 11:49:08.869 NuvioTV[1658:893772] [Thumbs] decode at=718.0 kf=718.0 took=339ms dec=14ms tm=0.0ms charged=292KB job=prewarm outcome=stored
+2026-10-15 11:49:09.231 NuvioTV[1658:893772] [Thumbs] decode at=2574.5 kf=2574.5 took=344ms dec=16ms tm=0.0ms charged=291KB job=prewarm outcome=stored
+2026-10-15 11:49:09.599 NuvioTV[1658:893772] [Thumbs] decode at=2637.5 kf=2637.5 took=349ms dec=16ms tm=0.0ms charged=307KB job=prewarm outcome=stored
+2026-10-15 11:49:10.103 NuvioTV[1658:893772] [Thumbs] decode at=658.5 kf=658.5 took=488ms dec=18ms tm=0.0ms charged=343KB job=prewarm outcome=stored
+2026-10-15 11:49:11.062 NuvioTV[1658:893772] [Thumbs] decode at=2698.7 kf=2698.7 took=943ms dec=9ms tm=0.0ms charged=584KB job=prewarm outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:49:11.438 NuvioTV[1658:893772] [Thumbs] decode at=597.9 kf=597.9 took=352ms dec=20ms tm=0.0ms charged=343KB job=prewarm outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:49:18.159 NuvioTV[1658:893772] [Thumbs] decode at=539.6 kf=539.6 took=379ms dec=21ms tm=0.0ms charged=327KB job=prewarm outcome=stored
+2026-10-15 11:49:18.948 NuvioTV[1658:893772] [Thumbs] decode at=475.7 kf=475.7 took=787ms dec=46ms tm=0.0ms charged=696KB job=prewarm outcome=stored
+2026-10-15 11:49:19.314 NuvioTV[1658:893772] [Thumbs] decode at=415.3 kf=415.3 took=362ms dec=14ms tm=0.0ms charged=316KB job=prewarm outcome=stored
+2026-10-15 11:49:19.693 NuvioTV[1658:893772] [Thumbs] decode at=357.4 kf=357.4 took=373ms dec=17ms tm=0.0ms charged=347KB job=prewarm outcome=stored
+2026-10-15 11:49:20.117 NuvioTV[1658:893772] [Thumbs] decode at=294.2 kf=294.2 took=418ms dec=22ms tm=0.0ms charged=403KB job=prewarm outcome=stored
+2026-10-15 11:49:20.117 NuvioTV[1658:893772] [Thumbs] idle close reason=byteBudget leftOpen=0 charged=16.0MB
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:49:35.828 NuvioTV[1658:895330] [Harvest] took=61.8ms size=1920x816 fmt=bgr0 at=1364.4 src=mpv
+2026-10-15 11:49:35.851 NuvioTV[1658:893772] [Harvest] stored n=45 bytes=364583 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:49:40.746 NuvioTV[1658:893772] [Scrub] begin base=1369.36 thr=160 curve=orivio
+2026-10-15 11:49:40.863 NuvioTV[1658:893772] [Scrub] stroke end intent=h travel=1241 vx=13458
+2026-10-15 11:49:41.090 NuvioTV[1658:895872] [Thumbs] open took=274ms container=matroska,webm index=642 size=548MB budget=16.0MB hdr=sdr read=4KB range=256KB reopen=1
+2026-10-15 11:49:41.859 NuvioTV[1658:893772] [Scrub] commit target=1953.10 from=1369.36 stages=e
+2026-10-15 11:49:41.859 NuvioTV[1658:895705] [SeekProbe] seek gen=4 args=1953.099 absolute+exact status=0
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 11:49:41.954 NuvioTV[1658:895705] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-15 11:49:41.954 NuvioTV[1658:895705] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-15 11:49:41.974 NuvioTV[1658:893772] [Thumbs] decode at=1945.3 kf=1945.3 took=882ms dec=14ms tm=0.0ms charged=873KB job=scrub outcome=stored
+2026-10-15 11:49:41.974 NuvioTV[1658:893772] [Thumbs] stop reason=byteBudget decoded=41 read=0.1MB charged=17.4MB
+2026-10-15 11:49:42.273 NuvioTV[1658:895705] [SeekProbe] restart gen=4 landed=1953.120
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:50:09.320 NuvioTV[1658:895872] [Harvest] took=54.0ms size=1920x816 fmt=bgr0 at=1980.1 src=mpv
+2026-10-15 11:50:09.344 NuvioTV[1658:893772] [Harvest] stored n=47 bytes=378914 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:50:16.784 NuvioTV[1658:893772] [Scrub] begin base=1987.62 thr=160 curve=orivio
+2026-10-15 11:50:16.903 NuvioTV[1658:893772] [Scrub] stroke end intent=h travel=1241 vx=10499
+2026-10-15 11:50:17.309 NuvioTV[1658:893772] [Thumbs] decode at=1987.4 kf=1987.4 took=449ms dec=15ms tm=0.0ms charged=319KB job=scrub outcome=stored
+2026-10-15 11:50:17.755 NuvioTV[1658:893772] [Thumbs] decode at=2546.7 kf=2546.7 took=442ms dec=16ms tm=0.0ms charged=304KB job=scrub outcome=stored
+2026-10-15 11:50:17.938 NuvioTV[1658:893772] [Scrub] commit target=2547.57 from=1987.62 stages=e
+2026-10-15 11:50:17.938 NuvioTV[1658:894853] [SeekProbe] seek gen=5 args=2547.573 absolute+exact status=0
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 11:50:18.042 NuvioTV[1658:895872] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 11:50:18.042 NuvioTV[1658:895872] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-15 11:50:18.090 NuvioTV[1658:895330] [SeekProbe] restart gen=5 landed=2547.580
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:50:41.832 NuvioTV[1658:895331] [Harvest] took=65.9ms size=1920x816 fmt=bgr0 at=2571.3 src=mpv
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:50:41.853 NuvioTV[1658:893772] [Harvest] stored n=50 bytes=397682 outcome=stored
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:51:11.834 NuvioTV[1658:895705] [Harvest] took=67.5ms size=1920x816 fmt=bgr0 at=2601.3 src=mpv
+2026-10-15 11:51:11.848 NuvioTV[1658:893772] [Harvest] stored n=51 bytes=404009 outcome=stored
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:51:18.267 NuvioTV[1658:893772] [Thumbs] idle close reason=byteBudget leftOpen=0 charged=18.0MB
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:51:42.334 NuvioTV[1658:894853] [Harvest] took=67.1ms size=1920x816 fmt=bgr0 at=2631.8 src=mpv
+2026-10-15 11:51:42.348 NuvioTV[1658:893772] [Harvest] stored n=52 bytes=410641 outcome=stored
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:52:12.333 NuvioTV[1658:894853] [Harvest] took=66.4ms size=1920x816 fmt=bgr0 at=2661.8 src=mpv
+2026-10-15 11:52:12.348 NuvioTV[1658:893772] [Harvest] stored n=53 bytes=416760 outcome=stored
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[UpNext] search begin — tt36118374:1:2 s1e2 preloaded=false
+[SubtitleRepo] Fetching subtitles type=series id=tt36118374:1:2 across 9 enabled addons
+[SubtitleRepo] Skip Comet: no subtitles resource
+[SubtitleRepo] Skip Torrentio: no subtitles resource
+[SubtitleRepo] Skip AIO Streams: no subtitles resource
+[SubtitleRepo] Skip Cinemeta: no subtitles resource
+[SubtitleRepo] Skip BetterPosters: no subtitles resource
+[SubtitleRepo] Querying AIO Metadata 1: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/series/tt36118374%3A1%3A2.json
+[SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/series/tt36118374%3A1%3A2.json
+[SubtitleRepo] Querying AIO Metadata 2: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/series/tt36118374%3A1%3A2.json
+[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/<redacted>%3A1%3A2.json
+[UpNext] streams: groups=4 playable=0 loading=true
+[SubtitleRepo] AIO Metadata 1: 0 subtitles in 551.798250ms
+[SubtitleRepo] AIO Metadata 2: 0 subtitles in 550.224667ms
+[UpNext] streams: groups=4 playable=4 loading=true
+[SubtitleRepo] OpenSubtitles v3: 3 subtitles in 780.439292ms
+[UpNext] streams: groups=4 playable=15 loading=true
+[SubtitleRepo] Duck Streams (AIOStreams): 3 subtitles in 1.065859792s
+[SubtitleRepo] Subtitle fetch done: 6 total in 1.070223958s
+[UpNext] streams: groups=4 playable=20 loading=true
+[UpNext] selected — Comet: 1080p TB Instant
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[UpNext] resolving debrid stream — Comet
+[UpNext] resolved — playing next episode
+[Failover] viewWillDisappear isLeavingPlayer=true
+[PlayerRouter] self-check passed
+[PlayerRouter] self-check passed
+[mvk-info] Destroyed VkDevice on GPU Apple A15 GPU with 12 Vulkan extensions enabled.
+[mvk-info] Destroyed VkPhysicalDevice for GPU Apple A15 GPU with 127 MB of GPU memory still allocated.
+[mvk-info] Destroying VkInstance for Vulkan version 1.4.334 with 6 Vulkan extensions enabled.
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Failover] mpv start watchdog armed: 25 s
+[mvk-info] MoltenVK version 1.4.1, supporting Vulkan version 1.4.334.
+	The following 152 Vulkan extensions are supported:
+	VK_KHR_16bit_storage v1
+	VK_KHR_8bit_storage v1
+	VK_KHR_bind_memory2 v1
+	VK_KHR_buffer_device_address v1
+	VK_KHR_calibrated_timestamps v1
+	VK_KHR_copy_commands2 v1
+	VK_KHR_create_renderpass2 v1
+	VK_KHR_dedicated_allocation v3
+	VK_KHR_deferred_host_operations v4
+	VK_KHR_depth_stencil_resolve v1
+	VK_KHR_descriptor_update_template v1
+	VK_KHR_device_group v4
+	VK_KHR_device_group_creation v1
+	VK_KHR_driver_properties v1
+	VK_KHR_dynamic_rendering v1
+	VK_KHR_dynamic_rendering_local_read v1
+	VK_KHR_external_fence v1
+	VK_KHR_external_fence_capabilities v1
+	VK_KHR_external_memory v1
+	VK_KHR_external_memory_capabilities v1
+	VK_KHR_external_semaphore v1
+	VK_KHR_external_semaphore_capabilities v1
+	VK_KHR_format_feature_flags2 v2
+	VK_KHR_fragment_shader_barycentric v1
+	VK_KHR_get_memory_requirements2 v1
+	VK_KHR_get_physical_device_properties2 v2
+	VK_KHR_get_surface_capabilit[SubtitleRepo] Fetching subtitles type=series id=tt36118374:1:2 across 9 enabled addons
+[SubtitleRepo] Skip Comet: no subtitles resource
+[SubtitleRepo] Skip Torrentio: no subtitles resource
+ies2 v1
+	VK_KHR_global_priority v1
+	VK_KHR_image_format_list v1
+	VK_KHR_imageless_framebuffer v1
+	VK_KHR_incremental_present v2
+	VK_KHR_index_type_uint8 v1
+	VK_KHR_line_rasterization v1
+	VK_KHR_load_store_op_none v1
+	VK_KHR_maintenance1 v2
+	VK_KHR_maintenance2 v1
+	VK_KHR_maintenance3 v1
+	VK_KHR_maintenance4 v2
+	VK_KHR_maintenance5 v1
+	VK_KHR_maintenance6 v1
+	VK_KHR_maintenance7 v1
+	VK_KHR_maintenance8 v1
+	VK_KHR_maintenance9 v1
+	VK_KHR_map_memory2 v1
+	VK_KHR_multiview v1
+	VK_KHR_portability_subset v1
+	VK_KHR_present_id v1
+	VK_KHR_present_id2 v1
+	VK_KHR_present_wait v1
+	VK_KHR_present_wait2 v1
+	VK_KHR_push_descriptor v2
+	VK_KHR_relaxed_block_layout v1
+	VK_KHR_robustness2 v1
+	VK_KHR_sampler_mirror_clamp_to_edge v3
+	VK_KHR_sampler_ycbcr_conversion v14
+	VK_KHR_separate_depth_stencil_layouts v1
+	VK_KHR_shader_draw_parameters v1
+	VK_KHR_shader_expect_assume v1
+	VK_KHR_shader_float_controls v4
+	VK_KHR_shader_float_controls2 v1
+	VK_KHR_shader_float16_int8 v1
+	VK_KHR_shader_fma v1
+	VK_KHR_shader_integer_dot_product v1
+	VK_KHR_shader_maximal_reconvergence v1
+	VK_KHR_shader_non_semantic_info v1
+	VK_KHR_shader_quad_control v1
+	VK_KHR_shader_relaxed_extended_instruction v1
+	VK_KHR_shader_subgroup_extended_types v1
+	VK_KHR_shader_subgroup_rotate v2
+	VK_KHR_shader_subgroup_uniform_control_flow v1
+	VK_KHR_shader_terminate_invocation v1
+	VK_KHR_spirv_1_4 v1
+	VK_KHR_storage_buffer_storage_class v1
+	VK_KHR_surface v25
+	VK_KHR_surface_maintenance1 v1
+	VK_KHR_surface_protected_capabilities v1
+	VK_KHR_swapchain v70
+	VK_KHR_swapchain_maintenance1 v1
+	VK_KHR_swapchain_mutable_format v1
+	VK_KHR_synchronization2 v1
+	VK_KHR_timeline_semaphore v2
+	VK_KHR_uniform_buffer_standard_layout v1
+	VK_KHR_variable_pointers v1
+	VK_KHR_vertex_attribute_divisor v1
+	VK_KHR_vulkan_memory_model v3
+	VK_KHR_zero_initialize_workgroup_memory v1
+	VK_EXT_4444_formats v1
+	VK_EXT_buffer_device_address v2
+	VK_EXT_calibrated_timestamps v2
+	VK_EXT_debug_marker v4
+	VK_EXT_debug_report v10
+	VK_EXT_debug_utils v2
+	VK_EXT_depth_clip_control v1
+	VK_EXT_descriptor_indexing v2
+	VK_EXT_extended_dynamic_state v1
+	VK_EXT_extended_dynamic_state2 v1
+	VK_EXT_extended_dynamic_state3 v2
+	VK_EXT_external_memory_host v1
+	VK_EXT_external_memory_metal v1
+	VK_EXT_fragment_shader_interlock v1
+	VK_EXT_global_priority v2
+	VK_EXT_global_priority_query v1
+	VK_EXT_headless_surface v1
+	VK_EXT_host_image_copy v1
+	VK_EXT_host_query_reset v1
+	VK_EXT_image_2d_view_of_3d v1
+	VK_EXT_image_robustness v1
+	VK_EXT_index_type_uint8 v1
+	VK_EXT_inline_uniform_block v1
+	VK_EXT_layer_settings v2
+	VK_EXT_legacy_dithering v2
+	VK_EXT_line_rasterization v1
+	VK_EXT_load_store_op_none v1
+	VK_EXT_memory_budget v1
+	VK_EXT_metal_objects v2
+	VK_EXT_metal_surface v1
+	VK_EXT_non_seamless_cube_map v1
+	VK_EXT_pipeline_creation_cache_control v3
+	VK_EXT_pipeline_creation_feedback v1
+	VK_EXT_pipeline_robustness v1
+	VK_EXT_post_depth_coverage v1
+	VK_EXT_primitive_topology_list_restart v1
+	VK_EXT_private_data v1
+	VK_EXT_provoking_vertex v1
+	VK_EXT_robustness2 v1
+	VK_EXT_sample_locations v1
+	VK_EXT_scalar_block_layout v1
+	VK_EXT_separate_stencil_usage v1
+	VK_EXT_shader_atomic_float v1
+	VK_EXT_shader_demote_to_helper_invocation v1
+	VK_EXT_shader_stencil_export v1
+	VK_EXT_shader_subgroup_ballot v1
+	VK_EXT_shader_subgroup_vote v1
+	VK_EXT_shader_viewport_index_layer v1
+	VK_EXT_subgroup_size_control v2
+	VK_EXT_surface_maintenance1 v1
+	VK_EXT_swapchain_colorspace v5
+	VK_EXT_swapchain_maintenance1 v1
+	VK_EXT_texel_buffer_alignment v1
+	VK_EXT_texture_compression_astc_hdr v1
+	VK_EXT_tooling_info v1
+	VK_EXT_vertex_attribute_divisor v3
+	VK_AMD_gpu_shader_half_float v2
+	VK_AMD_negative_viewport_height v1
+	VK_AMD_shader_image_load_store_lod v1
+	VK_AMD_shader_trinary_minmax v1
+	VK_GOOGLE_display_timing v1
+	VK_IMG_format_pvrtc v1
+	VK_INTEL_shader_integer_functions2 v1
+	VK_MVK_ios_surface v3
+	VK_MVK_moltenvk v37
+	VK_NV_fragment_shader_barycentric v1
+[mvk-info] GPU device:
+	model: Apple A15 GPU
+	type: Integrated
+	vendorID: 0x106b
+	deviceID: 0x1b020008
+	pipelineCacheUUID: DB445FF2-1B02-0008-0000-000100000000
+	GPU memory available: 2730 MB
+	GPU memory used: 1 MB
+	Metal Shading Language 3.1
+	supports the following GPU Features:
+		GPU Family Metal 3
+		GPU Family Apple 8
+		Read-Write Texture Tier 2
+[mvk-info] Created VkInstance for Vulkan version 1.4.334, as requested by app, with the following 6 Vulkan extensions enabled:
+	VK_KHR_get_surface_capabilities2 v1
+	VK_KHR_surface v25
+	VK_KHR_surface_maintenance1 v1
+	VK_EXT_metal_surface v1
+	VK_EXT_surface_maintenance1 v1
+	VK_EXT_swapchain_colorspace v5
+[mvk-info] Vulkan semaphores using MTLEvent.
+[mvk-info] Descriptor sets binding resources using Metal3 argument buffers.
+[mvk-info] Created VkDevice to run on GPU Apple A15 GPU with the following 12 Vulkan extensions enabled:
+	VK_KHR_dynamic_rendering v1
+	VK_KHR_portability_subset v1
+	VK_KHR_shader_expect_assume v1
+	VK_KHR_shader_relaxed_extended_instruction v1
+	VK_KHR_shader_subgroup_rotate v2
+	VK_KHR_swapchain v70
+	VK_KHR_swapchain_maintenance1 v1
+	VK_KHR_zero_initialize_workgroup_memory v1
+	VK_EXT_external_memory_host v1
+	VK_EXT_metal_objects v2
+	VK_EXT_shader_atomic_float v1
+	VK_EXT_swapchain_maintenance1 v1
+2026-10-15 11:52:33.590 NuvioTV[1658:895705] [Chapters] n=0 dropped=0 dur=2636.7 src=json raw=[]
+2026-10-15 11:52:33.596 NuvioTV[1658:893772] [Aspect] fit override=-1 panscan=0.00 zoom=0.00 read=-1.000000
+[SubtitleRepo] Skip AIO Streams: no subtitles resource
+[SubtitleRepo] Skip Cinemeta: no subtitles resource
+[SubtitleRepo] Skip BetterPosters: no subtitles resource
+[SubtitleRepo] Querying AIO Metadata 2: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/series/tt36118374%3A1%3A2.json
+[SubtitleRepo] Querying AIO Metadata 1: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/series/tt36118374%3A1%3A2.json
+[SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/series/tt36118374%3A1%3A2.json
+[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/<redacted>%3A1%3A2.json
+[SubtitleRepo] OpenSubtitles v3: 3 subtitles in 61.842542ms
+[SubtitleRepo] Duck Streams (AIOStreams): 3 subtitles in 170.882458ms
+[SubtitleRepo] AIO Metadata 2: 0 subtitles in 371.970833ms
+[SubtitleRepo] AIO Metadata 1: 0 subtitles in 373.541583ms
+[SubtitleRepo] Subtitle fetch done: 6 total in 375.464417ms
+[mvk-info] Created 3 swapchain images with size (3840, 2160) and contents scale 2.0 in layer (null) (0x133c0d2c0) on screen Main Screen.
+[mvk-info] Created 3 swapchain images with size (3840, 2160) and contents scale 2.0 in layer (null) (0x133c0d2c0) on screen Main Screen.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[Transport] cache-state raw={"cache-end":52.863667,"reader-pts":3.796667,"cache-duration":49.067000,"eof":false,"underrun":false,"idle":false,"total-bytes":12347504,"fw-bytes":12068272,"raw-input-rate":3376534,"debug-low-level-seeks":1,"debug-byte-level-seeks":2,"debug-ts-last":52.863667,"ts-per-stream":[{"type":"video","cache ranges=1 fallback=0 +1s
+[MPVStats] +0s cache=49.2s net=3.4 MB/s dropped=vo:0 dec:0 underruns=0
+2026-10-15 11:52:34.667 NuvioTV[1658:895872] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 11:52:34.667 NuvioTV[1658:895872] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+[MPVStats] +5s cache=544.4s net=24.8 MB/s dropped=vo:17 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +10s cache=564.3s net=0.2 MB/s dropped=vo:17 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[1;34m[swscaler @ 0x13571c000] [0musing unscaled rgba -> bgra special converter
+2026-10-15 11:52:44.268 NuvioTV[1658:894853] [Harvest] took=69.3ms size=1920x816 fmt=bgr0 at=9.8 src=mpv
+2026-10-15 11:52:44.280 NuvioTV[1658:893772] [Harvest] slow (69.3ms > 60ms): interval now 30s for this file
+2026-10-15 11:52:44.289 NuvioTV[1658:893772] [Harvest] stored n=1 bytes=8060 outcome=stored
+[MPVStats] +16s cache=561.3s net=0.2 MB/s dropped=vo:18 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +21s cache=561.0s net=0.5 MB/s dropped=vo:18 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +26s cache=558.3s net=0.1 MB/s dropped=vo:18 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +32s cache=554.4s net=0.1 MB/s dropped=vo:18 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +37s cache=552.1s net=0.2 MB/s dropped=vo:18 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[1;34m[swscaler @ 0x14cf1c000] [0musing unscaled rgba -> bgra special converter
+2026-10-15 11:53:14.262 NuvioTV[1658:895331] [Harvest] took=63.5ms size=1920x816 fmt=bgr0 at=39.8 src=mpv
+2026-10-15 11:53:14.288 NuvioTV[1658:893772] [Harvest] stored n=2 bytes=20953 outcome=stored
+[MPVStats] +42s cache=550.8s net=0.3 MB/s dropped=vo:18 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +47s cache=549.6s net=0.2 MB/s dropped=vo:18 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +52s cache=547.0s net=0.1 MB/s dropped=vo:18 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +58s cache=546.5s net=0.3 MB/s dropped=vo:18 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +63s cache=548.5s net=0.3 MB/s dropped=vo:18 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:53:37.119 NuvioTV[1658:895872] [Thumbs] open took=1404ms container=matroska,webm index=580 size=520MB budget=16.0MB hdr=sdr read=327KB range=256KB reopen=0
+2026-10-15 11:53:37.499 NuvioTV[1658:893772] [Thumbs] decode at=119.0 kf=119.0 took=363ms dec=18ms tm=0.0ms charged=308KB job=prewarm outcome=stored
+2026-10-15 11:53:37.847 NuvioTV[1658:893772] [Thumbs] decode at=178.5 kf=178.5 took=347ms dec=16ms tm=0.0ms charged=328KB job=prewarm outcome=stored
+2026-10-15 11:53:38.205 NuvioTV[1658:893772] [Thumbs] decode at=239.0 kf=239.0 took=354ms dec=14ms tm=0.0ms charged=316KB job=prewarm outcome=stored
+2026-10-15 11:53:38.562 NuvioTV[1658:893772] [Thumbs] decode at=296.9 kf=296.9 took=355ms dec=14ms tm=0.0ms charged=328KB job=prewarm outcome=stored
+2026-10-15 11:53:38.923 NuvioTV[1658:893772] [Thumbs] decode at=358.9 kf=358.9 took=356ms dec=18ms tm=0.0ms charged=336KB job=prewarm outcome=stored
+2026-10-15 11:53:39.284 NuvioTV[1658:893772] [Thumbs] decode at=419.0 kf=419.0 took=356ms dec=14ms tm=0.0ms charged=316KB job=prewarm outcome=stored
+2026-10-15 11:53:39.675 NuvioTV[1658:893772] [Thumbs] decode at=474.5 kf=474.5 took=385ms dec=16ms tm=0.0ms charged=304KB job=prewarm outcome=stored
+2026-10-15 11:53:40.090 NuvioTV[1658:893772] [Thumbs] decode at=531.3 kf=531.3 took=410ms dec=15ms tm=0.0ms charged=348KB job=prewarm outcome=stored
+[MPVStats] +69s cache=550.3s net=0.2 MB/s dropped=vo:18 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[1;34m[swscaler @ 0x14c848000] [0musing unscaled rgba -> bgra special converter
+2026-10-15 11:53:44.760 NuvioTV[1658:896804] [Harvest] took=61.2ms size=1920x816 fmt=bgr0 at=70.3 src=mpv
+2026-10-15 11:53:44.782 NuvioTV[1658:893772] [Harvest] stored n=11 bytes=113550 outcome=stored
+[MPVStats] +74s cache=547.6s net=0.1 MB/s dropped=vo:18 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:53:47.671 NuvioTV[1658:893772] [Thumbs] decode at=597.4 kf=597.4 took=443ms dec=21ms tm=0.0ms charged=367KB job=prewarm outcome=stored
+2026-10-15 11:53:48.073 NuvioTV[1658:893772] [Thumbs] decode at=659.1 kf=659.1 took=396ms dec=16ms tm=0.0ms charged=316KB job=prewarm outcome=stored
+2026-10-15 11:53:48.503 NuvioTV[1658:893772] [Thumbs] decode at=714.1 kf=714.1 took=424ms dec=14ms tm=0.0ms charged=316KB job=prewarm outcome=stored
+2026-10-15 11:53:48.872 NuvioTV[1658:893772] [Thumbs] decode at=778.5 kf=778.5 took=364ms dec=19ms tm=0.0ms charged=315KB job=prewarm outcome=stored
+2026-10-15 11:53:49.235 NuvioTV[1658:893772] [Thumbs] decode at=838.0 kf=838.0 took=358ms dec=16ms tm=0.0ms charged=296KB job=prewarm outcome=stored
+2026-10-15 11:53:49.596 NuvioTV[1658:893772] [Thumbs] decode at=890.6 kf=890.6 took=356ms dec=17ms tm=0.0ms charged=331KB job=prewarm outcome=stored
+2026-10-15 11:53:49.974 NuvioTV[1658:893772] [Thumbs] decode at=953.9 kf=953.9 took=373ms dec=19ms tm=0.0ms charged=356KB job=prewarm outcome=stored
+[MPVStats] +79s cache=546.3s net=0.2 MB/s dropped=vo:18 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +85s cache=546.3s net=0.2 MB/s dropped=vo:19 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:53:59.248 NuvioTV[1658:893772] [Thumbs] decode at=1019.8 kf=1019.8 took=531ms dec=17ms tm=0.0ms charged=315KB job=prewarm outcome=stored
+2026-10-15 11:53:59.649 NuvioTV[1658:893772] [Thumbs] decode at=1077.6 kf=1077.6 took=396ms dec=16ms tm=0.0ms charged=348KB job=prewarm outcome=stored
+2026-10-15 11:54:00.099 NuvioTV[1658:893772] [Thumbs] decode at=1138.7 kf=1138.7 took=445ms dec=17ms tm=0.0ms charged=343KB job=prewarm outcome=stored
+2026-10-15 11:54:00.469 NuvioTV[1658:893772] [Thumbs] decode at=1194.9 kf=1194.9 took=368ms dec=15ms tm=0.0ms charged=328KB job=prewarm outcome=stored
+2026-10-15 11:54:00.937 NuvioTV[1658:893772] [Thumbs] decode at=1259.2 kf=1259.2 took=463ms dec=17ms tm=0.0ms charged=316KB job=prewarm outcome=stored
+2026-10-15 11:54:01.316 NuvioTV[1658:893772] [Thumbs] decode at=1317.1 kf=1317.1 took=373ms dec=16ms tm=0.0ms charged=284KB job=prewarm outcome=stored
+2026-10-15 11:54:01.719 NuvioTV[1658:893772] [Thumbs] decode at=1374.2 kf=1374.2 took=397ms dec=20ms tm=0.0ms charged=299KB job=prewarm outcome=stored
+2026-10-15 11:54:02.218 NuvioTV[1658:893772] [Thumbs] decode at=1439.0 kf=1439.0 took=497ms dec=21ms tm=0.0ms charged=300KB job=prewarm outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:54:09.072 NuvioTV[1658:893772] [Thumbs] decode at=1496.2 kf=1496.2 took=344ms dec=17ms tm=0.0ms charged=288KB job=prewarm outcome=stored
+2026-10-15 11:54:09.486 NuvioTV[1658:893772] [Thumbs] decode at=1558.4 kf=1558.4 took=409ms dec=14ms tm=0.0ms charged=299KB job=prewarm outcome=stored
+2026-10-15 11:54:09.890 NuvioTV[1658:893772] [Thumbs] decode at=1615.6 kf=1615.6 took=398ms dec=14ms tm=0.0ms charged=272KB job=prewarm outcome=stored
+2026-10-15 11:54:10.281 NuvioTV[1658:893772] [Thumbs] decode at=1679.7 kf=1679.7 took=384ms dec=17ms tm=0.0ms charged=312KB job=prewarm outcome=stored
+2026-10-15 11:54:10.816 NuvioTV[1658:893772] [Thumbs] decode at=1738.8 kf=1738.8 took=529ms dec=17ms tm=0.0ms charged=308KB job=prewarm outcome=stored
+2026-10-15 11:54:11.182 NuvioTV[1658:893772] [Thumbs] decode at=1798.4 kf=1798.4 took=360ms dec=13ms tm=0.0ms charged=295KB job=prewarm outcome=stored
+2026-10-15 11:54:11.621 NuvioTV[1658:893772] [Thumbs] decode at=1858.5 kf=1858.5 took=433ms dec=14ms tm=0.0ms charged=280KB job=prewarm outcome=stored
+2026-10-15 11:54:12.032 NuvioTV[1658:893772] [Thumbs] decode at=1916.3 kf=1916.3 took=404ms dec=21ms tm=0.0ms charged=359KB job=prewarm outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[1;34m[swscaler @ 0x154c2c000] [0musing unscaled rgba -> bgra special converter
+2026-10-15 11:54:15.274 NuvioTV[1658:896804] [Harvest] took=74.4ms size=1920x816 fmt=bgr0 at=100.8 src=mpv
+2026-10-15 11:54:15.288 NuvioTV[1658:893772] [Harvest] stored n=35 bytes=373753 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:54:35.588 NuvioTV[1658:893772] [Thumbs] decode at=1972.7 kf=1972.7 took=368ms dec=18ms tm=0.0ms charged=339KB job=prewarm outcome=stored
+2026-10-15 11:54:36.016 NuvioTV[1658:893772] [Thumbs] decode at=2034.9 kf=2034.9 took=423ms dec=16ms tm=0.0ms charged=327KB job=prewarm outcome=stored
+2026-10-15 11:54:36.509 NuvioTV[1658:893772] [Thumbs] decode at=2099.1 kf=2099.1 took=488ms dec=15ms tm=0.0ms charged=284KB job=prewarm outcome=stored
+2026-10-15 11:54:36.907 NuvioTV[1658:893772] [Thumbs] decode at=2154.9 kf=2154.9 took=392ms dec=18ms tm=0.0ms charged=380KB job=prewarm outcome=stored
+2026-10-15 11:54:37.331 NuvioTV[1658:893772] [Thumbs] decode at=2217.6 kf=2217.6 took=419ms dec=16ms tm=0.0ms charged=292KB job=prewarm outcome=stored
+2026-10-15 11:54:37.736 NuvioTV[1658:893772] [Thumbs] decode at=2279.6 kf=2279.6 took=399ms dec=16ms tm=0.0ms charged=283KB job=prewarm outcome=stored
+2026-10-15 11:54:38.126 NuvioTV[1658:893772] [Thumbs] decode at=2339.2 kf=2339.2 took=385ms dec=13ms tm=0.0ms charged=280KB job=prewarm outcome=stored
+2026-10-15 11:54:38.525 NuvioTV[1658:893772] [Thumbs] decode at=2399.1 kf=2399.1 took=394ms dec=15ms tm=0.0ms charged=316KB job=prewarm outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[1;34m[swscaler @ 0x14cb48000] [0musing unscaled rgba -> bgra special converter
+2026-10-15 11:54:45.771 NuvioTV[1658:896804] [Harvest] took=72.7ms size=1920x816 fmt=bgr0 at=131.3 src=mpv
+2026-10-15 11:54:45.784 NuvioTV[1658:893772] [Harvest] stored n=44 bytes=452872 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:54:46.591 NuvioTV[1658:893772] [Thumbs] decode at=2451.2 kf=2451.2 took=361ms dec=18ms tm=0.0ms charged=348KB job=prewarm outcome=stored
+2026-10-15 11:54:47.014 NuvioTV[1658:893772] [Thumbs] decode at=2519.3 kf=2519.3 took=417ms dec=16ms tm=0.0ms charged=308KB job=prewarm outcome=stored
+2026-10-15 11:54:47.415 NuvioTV[1658:893772] [Thumbs] decode at=2573.4 kf=2573.4 took=396ms dec=16ms tm=0.0ms charged=319KB job=prewarm outcome=stored
+2026-10-15 11:54:47.856 NuvioTV[1658:893772] [Thumbs] decode at=147.9 kf=147.9 took=435ms dec=16ms tm=0.0ms charged=319KB job=prewarm outcome=stored
+2026-10-15 11:54:47.856 NuvioTV[1658:893772] [Thumbs] idle close reason=byteBudget leftOpen=0 charged=16.1MB
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[1;34m[swscaler @ 0x154e78000] [0musing unscaled rgba -> bgra special converter
+2026-10-15 11:55:15.757 NuvioTV[1658:895331] [Harvest] took=57.8ms size=1920x816 fmt=bgr0 at=161.3 src=mpv
+2026-10-15 11:55:15.783 NuvioTV[1658:893772] [Harvest] stored n=49 bytes=492486 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[1;34m[swscaler @ 0x14f968000] [0musing unscaled rgba -> bgra special converter
+2026-10-15 11:55:46.273 NuvioTV[1658:895330] [Harvest] took=73.7ms size=1920x816 fmt=bgr0 at=191.8 src=mpv
+2026-10-15 11:55:46.286 NuvioTV[1658:893772] [Harvest] stored n=50 bytes=503206 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[1;34m[swscaler @ 0x14c93c000] [0musing unscaled rgba -> bgra special converter
+2026-10-15 11:56:16.257 NuvioTV[1658:895331] [Harvest] took=57.1ms size=1920x816 fmt=bgr0 at=221.8 src=mpv
+2026-10-15 11:56:16.285 NuvioTV[1658:893772] [Harvest] stored n=51 bytes=510364 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[1;34m[swscaler @ 0x15098c000] [0musing unscaled rgba -> bgra special converter
+2026-10-15 11:56:46.761 NuvioTV[1658:895331] [Harvest] took=60.6ms size=1920x816 fmt=bgr0 at=252.3 src=mpv
+2026-10-15 11:56:46.792 NuvioTV[1658:893772] [Harvest] stored n=52 bytes=524452 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[1;34m[swscaler @ 0x1443e0000] [0musing unscaled rgba -> bgra special converter
+2026-10-15 11:57:17.271 NuvioTV[1658:894853] [Harvest] took=70.6ms size=1920x816 fmt=bgr0 at=282.8 src=mpv
+2026-10-15 11:57:17.285 NuvioTV[1658:893772] [Harvest] stored n=53 bytes=536723 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Failover] mpv healthy after 303 s
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[1;34m[swscaler @ 0x110604000] [0musing unscaled rgba -> bgra special converter
+2026-10-15 11:57:47.771 NuvioTV[1658:894853] [Harvest] took=70.8ms size=1920x816 fmt=bgr0 at=313.3 src=mpv
+2026-10-15 11:57:47.784 NuvioTV[1658:893772] [Harvest] stored n=54 bytes=543316 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[1;34m[swscaler @ 0x146f4c000] [0musing unscaled rgba -> bgra special converter
+2026-10-15 11:58:17.757 NuvioTV[1658:895330] [Harvest] took=56.8ms size=1920x816 fmt=bgr0 at=343.3 src=mpv
+2026-10-15 11:58:17.783 NuvioTV[1658:893772] [Harvest] stored n=55 bytes=554060 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:58:40.503 NuvioTV[1658:893772] [Scrub] begin base=366.12 thr=160 curve=orivio
+2026-10-15 11:58:40.636 NuvioTV[1658:893772] [Scrub] stroke end intent=h travel=1243 vx=13240
+[Transport] cache-state raw={"cache-end":919.978667,"reader-pts":369.983667,"cache-duration":549.995000,"eof":false,"underrun":false,"idle":true,"total-bytes":223489296,"fw-bytes":157301616,"raw-input-rate":259679,"debug-low-level-seeks":1,"debug-byte-level-seeks":2,"debug-ts-last":920.080000,"ts-per-stream":[{"type":"video"," ranges=1 fallback=0 +367s
+2026-10-15 11:58:40.824 NuvioTV[1658:896804] [Thumbs] open took=295ms container=matroska,webm index=580 size=520MB budget=16.0MB hdr=sdr read=4KB range=256KB reopen=1
+2026-10-15 11:58:41.624 NuvioTV[1658:893772] [Scrub] commit target=1065.37 from=366.12 stages=ke
+2026-10-15 11:58:41.629 NuvioTV[1658:896804] [SeekProbe] seek gen=1 args=1065.370 absolute+keyframes status=0
+2026-10-15 11:58:41.699 NuvioTV[1658:893772] [Thumbs] decode at=1062.2 kf=1062.2 took=872ms dec=10ms tm=0.0ms charged=819KB job=scrub outcome=stored
+2026-10-15 11:58:41.699 NuvioTV[1658:893772] [Thumbs] stop reason=byteBudget decoded=44 read=0.1MB charged=17.4MB
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 11:58:41.912 NuvioTV[1658:896804] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 11:58:41.912 NuvioTV[1658:896804] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-15 11:58:42.009 NuvioTV[1658:896804] [SeekProbe] restart gen=1 landed=1062.180
+2026-10-15 11:58:42.165 NuvioTV[1658:896804] [SeekProbe] seek gen=2 args=1065.370 absolute+exact status=0
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 11:58:42.249 NuvioTV[1658:895872] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 11:58:42.249 NuvioTV[1658:895872] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-15 11:58:42.383 NuvioTV[1658:895872] [SeekProbe] restart gen=2 landed=1065.400
+2026-10-15 11:58:44.696 NuvioTV[1658:893772] [Scrub] begin base=1067.72 thr=45 curve=orivio
+2026-10-15 11:58:44.816 NuvioTV[1658:893772] [Scrub] stroke end intent=h travel=1241 vx=13537
+2026-10-15 11:58:45.024 NuvioTV[1658:893772] [Thumbs] decode at=1067.6 kf=1067.6 took=263ms dec=6ms tm=0.0ms charged=284KB job=scrub outcome=stored
+2026-10-15 11:58:45.348 NuvioTV[1658:893772] [Thumbs] decode at=1763.5 kf=1763.5 took=322ms dec=5ms tm=0.0ms charged=302KB job=scrub outcome=stored
+2026-10-15 11:58:45.803 NuvioTV[1658:893772] [Scrub] commit target=1765.91 from=1067.72 stages=ke
+2026-10-15 11:58:45.803 NuvioTV[1658:895872] [SeekProbe] seek gen=3 args=1765.908 absolute+keyframes status=0
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 11:58:46.084 NuvioTV[1658:894853] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-15 11:58:46.084 NuvioTV[1658:894853] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-15 11:58:46.214 NuvioTV[1658:895331] [SeekProbe] restart gen=3 landed=1763.520
+2026-10-15 11:58:46.371 NuvioTV[1658:895330] [SeekProbe] seek gen=4 args=1765.908 absolute+exact status=0
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 11:58:46.450 NuvioTV[1658:895330] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 11:58:46.450 NuvioTV[1658:895330] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-15 11:58:46.554 NuvioTV[1658:895872] [SeekProbe] restart gen=4 landed=1765.920
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:58:48.876 NuvioTV[1658:893772] [Scrub] begin base=1768.26 thr=45 curve=orivio
+2026-10-15 11:58:48.996 NuvioTV[1658:893772] [Scrub] stroke end intent=h travel=1241 vx=11747
+2026-10-15 11:58:49.379 NuvioTV[1658:893772] [Thumbs] decode at=2070.3 kf=2070.3 took=377ms dec=10ms tm=0.0ms charged=312KB job=scrub outcome=stored
+2026-10-15 11:58:49.654 NuvioTV[1658:893772] [Thumbs] decode at=2330.3 kf=2330.3 took=272ms dec=7ms tm=0.0ms charged=300KB job=scrub outcome=stored
+2026-10-15 11:58:49.979 NuvioTV[1658:893772] [Scrub] commit target=2332.49 from=1768.26 stages=ke
+2026-10-15 11:58:49.980 NuvioTV[1658:896804] [SeekProbe] seek gen=5 args=2332.491 absolute+keyframes status=0
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 11:58:50.442 NuvioTV[1658:895330] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-15 11:58:50.442 NuvioTV[1658:895330] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-15 11:58:50.466 NuvioTV[1658:894853] [SeekProbe] restart gen=5 landed=2330.320
+2026-10-15 11:58:50.620 NuvioTV[1658:895872] [SeekProbe] seek gen=6 args=2332.491 absolute+exact status=0
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-15 11:58:50.698 NuvioTV[1658:894853] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 11:58:50.698 NuvioTV[1658:894853] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-15 11:58:50.793 NuvioTV[1658:896804] [SeekProbe] restart gen=6 landed=2332.500
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[1;34m[swscaler @ 0x154c1c000] [0musing unscaled rgba -> bgra special converter
+2026-10-15 11:58:56.254 NuvioTV[1658:894853] [Harvest] took=54.1ms size=1920x816 fmt=bgr0 at=2337.9 src=mpv
+2026-10-15 11:58:56.279 NuvioTV[1658:893772] [Harvest] stored n=61 bytes=603280 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[1;34m[swscaler @ 0x1564b8000] [0musing unscaled rgba -> bgra special converter
+2026-10-15 11:59:26.256 NuvioTV[1658:899243] [Harvest] took=55.0ms size=1920x816 fmt=bgr0 at=2367.9 src=mpv
+2026-10-15 11:59:26.284 NuvioTV[1658:893772] [Harvest] stored n=62 bytes=608841 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 11:59:50.201 NuvioTV[1658:893772] [Thumbs] idle close reason=byteBudget leftOpen=0 charged=18.6MB
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[1;34m[swscaler @ 0x1564a8000] [0musing unscaled rgba -> bgra special converter
+2026-10-15 11:59:56.769 NuvioTV[1658:895872] [Harvest] took=68.0ms size=1920x816 fmt=bgr0 at=2398.4 src=mpv
+2026-10-15 11:59:56.781 NuvioTV[1658:893772] [Harvest] stored n=62 bytes=607014 outcome=replaced
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[1;34m[swscaler @ 0x155820000] [0musing unscaled rgba -> bgra special converter
+2026-10-15 12:00:27.269 NuvioTV[1658:895331] [Harvest] took=68.3ms size=1920x816 fmt=bgr0 at=2428.9 src=mpv
+2026-10-15 12:00:27.281 NuvioTV[1658:893772] [Harvest] stored n=63 bytes=614207 outcome=stored
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[1;34m[swscaler @ 0x155970000] [0musing unscaled rgba -> bgra special converter
+2026-10-15 12:00:57.251 NuvioTV[1658:896804] [Harvest] took=50.2ms size=1920x816 fmt=bgr0 at=2458.9 src=mpv
+2026-10-15 12:00:57.272 NuvioTV[1658:893772] [Harvest] stored n=64 bytes=621574 outcome=stored
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[1;34m[swscaler @ 0x157268000] [0musing unscaled rgba -> bgra special converter
+2026-10-15 12:01:27.254 NuvioTV[1658:899340] [Harvest] took=53.2ms size=1920x816 fmt=bgr0 at=2488.9 src=mpv
+2026-10-15 12:01:27.280 NuvioTV[1658:893772] [Harvest] stored n=65 bytes=628516 outcome=stored
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[1;34m[swscaler @ 0x155970000] [0musing unscaled rgba -> bgra special converter
+2026-10-15 12:01:57.773 NuvioTV[1658:896804] [Harvest] took=65.1ms size=1920x816 fmt=bgr0 at=2519.4 src=mpv
+2026-10-15 12:01:57.786 NuvioTV[1658:893772] [Harvest] stored n=65 bytes=628823 outcome=replaced
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[1;34m[swscaler @ 0x155970000] [0musing unscaled rgba -> bgra special converter
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:02:27.788 NuvioTV[1658:895872] [Harvest] took=68.4ms size=1920x816 fmt=bgr0 at=2549.4 src=mpv
+2026-10-15 12:02:27.814 NuvioTV[1658:893772] [Harvest] stored n=66 bytes=634916 outcome=stored
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[1;34m[swscaler @ 0x155800000] [0musing unscaled rgba -> bgra special converter
+2026-10-15 12:02:58.273 NuvioTV[1658:895872] [Harvest] took=51.6ms size=1920x816 fmt=bgr0 at=2579.9 src=mpv
+2026-10-15 12:02:58.301 NuvioTV[1658:893772] [Harvest] stored n=67 bytes=641696 outcome=stored
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[1;34m[swscaler @ 0x1558b0000] [0musing unscaled rgba -> bgra special converter
+2026-10-15 12:03:28.273 NuvioTV[1658:899340] [Harvest] took=50.9ms size=1920x816 fmt=bgr0 at=2609.9 src=mpv
+2026-10-15 12:03:28.298 NuvioTV[1658:893772] [Harvest] stored n=68 bytes=643540 outcome=stored
+[UpNext] search begin — tt36118374:1:3 s1e3 preloaded=false
+[SubtitleRepo] Fetching subtitles type=series id=tt36118374:1:3 across 9 enabled addons
+[SubtitleRepo] Skip Comet: no subtitles resource
+[SubtitleRepo] Skip Torrentio: no subtitles resource
+[SubtitleRepo] Skip AIO Streams: no subtitles resource
+[SubtitleRepo] Skip Cinemeta: no subtitles resource
+[SubtitleRepo] Skip BetterPosters: no subtitles resource
+[SubtitleRepo] Querying AIO Metadata 1: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/series/tt36118374%3A1%3A3.json
+[SubtitleRepo] Querying AIO Metadata 2: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/series/tt36118374%3A1%3A3.json
+[SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/series/tt36118374%3A1%3A3.json
+[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/<redacted>%3A1%3A3.json
+[UpNext] streams: groups=4 playable=0 loading=true
+[SubtitleRepo] AIO Metadata 2: 0 subtitles in 307.510042ms[SubtitleRepo] AIO Metadata 1: 0 subtitles in 308.008792ms
+
+[SubtitleRepo] OpenSubtitles v3: 3 subtitles in 442.359208ms
+[UpNext] streams: groups=4 playable=6 loading=true
+[UpNext] selected — Comet: 1080p TB Instant
+[SubtitleRepo] Duck Streams (AIOStreams): 3 subtitles in 1.059648667s
+[SubtitleRepo] Subtitle fetch done: 6 total in 1.063835625s
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[UpNext] resolving debrid stream — Comet
+[UpNext] resolved — playing next episode
+[Failover] viewWillDisappear isLeavingPlayer=true
+[PlayerRouter] self-check passed
+[PlayerRouter] self-check passed
+[mvk-info] Destroyed VkDevice on GPU Apple A15 GPU with 12 Vulkan extensions enabled.
+[mvk-info] Destroyed VkPhysicalDevice for GPU Apple A15 GPU with 127 MB of GPU memory still allocated.
+[mvk-info] Destroying VkInstance for Vulkan version 1.4.334 with 6 Vulkan extensions enabled.
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Failover] mpv start watchdog armed: 25 s
+[mvk-info] MoltenVK version 1.4.1, supporting Vulkan version 1.4.334.
+	The following 152 Vulkan extensions are supported:
+	VK_KHR_16bit_storage v1
+	VK_KHR_8bit_storage v1
+	VK_KHR_bind_memory2 v1
+	VK_KHR_buffer_device_address v1
+	VK_KHR_calibrated_timestamps v1
+	VK_KHR_copy_commands2 v1
+	VK_KHR_create_renderpass2 v1
+	VK_KHR_dedicated_allocation v3
+	VK_KHR_deferred_host_operations v4
+	VK_KHR_depth_stencil_resolve v1
+	VK_KHR_descriptor_update_template v1
+	VK_KHR_device_group v4
+	VK_KHR_device_group_creation v1
+	VK_KHR_driver_properties v1
+	VK_KHR_dynamic_rendering v1
+	VK_KHR_dynamic_rendering_local_read v1
+	VK_KHR_external_fence v1
+	VK_KHR_external_fence_capabilities v1
+	VK_KHR_external_memory v1
+	VK_KHR_external_memory_capabilities v1
+	VK_KHR_external_semaphore v1
+	VK_KHR_external_semaphore_capabilities v1
+	VK_KHR_format_feature_flags2 v2
+	VK_KHR_fragment_shader_barycentric v1
+	VK_KHR_get_memory_requirements2 v1
+	VK_KHR_get_physical_device_properties2 v2
+	VK_KHR_get_surface_capabilities2 v1
+	VK_KHR_global_priority v1
+	VK_KHR_image_format_list v1
+	VK_KHR_imageless_framebuffer v1
+	VK_KHR_incremental_present v2
+	VK_KHR_index_type_uint8 v1
+	VK_KHR_line_rasterization v1
+	VK_KHR_load_store_op_none v1
+	VK_KHR_maintenance1 v2
+	VK_KHR_maintenance2 v1
+	VK_KHR_maintenance3 v1
+	VK_KHR_maintenance4 v2
+	VK_KHR_maintenance5 v1
+	VK_KHR_maintenance6 v1
+	VK_KHR_maintenance7 v1
+	VK_KHR_maintenance8 v1
+	VK_KHR_maintenance9 v1
+	VK_KHR_map_memory2 v1
+	VK_KHR_multiview v1
+	VK_KHR_portability_subset v1
+	VK_KHR_present_id v1
+	VK_KHR_present_id2 v1
+	VK_KHR_present_wait v1
+	VK_KHR_present_wait2 v1
+	VK_KHR_push_descriptor v2
+	VK_KHR_relaxed_block_layout v1
+	VK_KHR_robustness2 v1
+	VK_KHR_sampler_mirror_clamp_to_edge v3
+	VK_KHR_sampler_ycbcr_conversion v14
+	VK_KHR_separate_depth_stencil_layouts v1
+	VK_KHR_shader_draw_parameters v1
+	VK_KHR_shader_expect_assume v1
+	VK_KHR_shader_float_controls v4
+	VK_KHR_shader_float_controls2 v1
+	VK_KHR_shader_float16_int8 v1
+	VK_KHR_shader_fma v1
+	VK_KHR_shader_integer_dot_product v1
+	VK_KHR_shader_maximal_reconvergence v1
+	VK_KHR_shader_non_semantic_info v1
+	VK_KHR_shader_quad_control v1
+	VK_KHR_shader_relaxed_extended_instruction v1
+	VK_KHR_shader_subgroup_extended_types v1
+	VK_KHR_shader_subgroup_rotate v2
+	VK_KHR_shader_subgroup_uniform_control_flow v1
+	VK_KHR_shader_terminate_invocation v1
+	VK_KHR_spirv_1_4 v1
+	VK_KHR_storage_buffer_storage_class v1
+	VK_KHR_surface v25
+	VK_KHR_surface_maintenance1 v1
+	VK_KHR_surface_protected_capabilities v1
+	VK_KHR_swapchain v70
+	VK_KHR_swapchain_maintenance1 v1
+	VK_KHR_swapchain_mutable_format v1
+	VK_KHR_synchronization2 v1
+	VK_KHR_timeline_semaphore v2
+	VK_KHR_uniform_buffer_standard_layout v1
+	VK_KHR_variable_pointers v1
+	VK_KHR_vertex_attribute_divisor v1
+	VK_KHR_vulkan_memory_model v3
+	VK_KHR_zero_initialize_workgroup_memory v1
+	VK_EXT_4444_formats v1
+	VK_EXT_buffer_device_address v2
+	VK_EXT_calibrated_timestamps v2
+	VK_EXT_debug_marker v4
+	VK_EXT_debug_report v10
+	VK_EXT_debug_utils v2
+	VK_EXT_depth_clip_control v1
+	VK_EXT_descriptor_indexing v2
+	VK_EXT_extended_dynamic_state v1
+	VK_EXT_extended_dynamic_state2 v1
+	VK_EXT_extended_dynamic_state3 v2
+	VK_EXT_external_memory_host v1
+	VK_EXT_external_memory_metal v1
+	VK_EXT_fragment_shader_interlock v1
+	VK_EXT_global_priority v2
+	VK_EXT_global_priority_query v1
+	VK_EXT_headless_surface v1
+	VK_EXT_host_image_copy v1
+	VK_EXT_host_query_reset v1
+	VK_EXT_image_2d_view_of_3d v1
+	VK_EXT_image_robustness v1
+	VK_EXT_index_type_uint8 v1
+	VK_EXT_inline_uniform_block v1
+	VK_EXT_layer_settings v2
+	VK_EXT_legacy_dithering v2
+	VK_EXT_line_rasterization v1
+	VK_EXT_load_store_op_none v1
+	VK_EXT_memory_budget v1
+	VK_EXT_metal_objects v2
+	VK_EXT_metal_surface v1
+	VK_EXT_non_seamless_cube_map v1
+	VK_EXT_pipeline_creation_cache_control v3
+	VK_EXT_pipeline_creation_feedback v1
+	VK_EXT_pipeline_robustness v1
+	VK_EXT_post_depth_coverage v1
+	VK_EXT_primitive_topology_list_restart v1
+	VK_EXT_private_data v1
+	VK_EXT_provoking_vertex v1
+	VK_EXT_robustness2 v1
+	VK_EXT_sample_locations v1
+	VK_EXT_scalar_block_layout v1
+	VK_EXT_separate_stencil_usage v1
+	VK_EXT_shader_atomic_float v1
+	VK_EXT_shader_demote_to_helper_invocation v1
+	VK_EXT_shader_stencil_export v1
+	VK_EXT_shader_subgroup_ballot v1
+	VK_EXT_shader_subgroup_vote v1
+	VK_EXT_shader_viewport_index_layer v1
+	VK_EXT_subgroup_size_control v2
+	VK_EXT_surface_maintenance1 v1
+	VK_EXT_swapchain_colorspace v5
+	VK_EXT_swapchain_maintenance1 v1
+	VK_EXT_texel_buffer_alignment v1
+	VK_EXT_texture_compression_astc_hdr v1
+	VK_EXT_tooling_info v1
+	VK_EXT_vertex_attribute_divisor v3
+	VK_AMD_gpu_shader_half_float v2
+	VK_AMD_negative_viewport_height v1
+	VK_AMD_shader_image_load_store_lod v1
+	VK_AMD_shader_trinary_minmax v1
+	VK_GOOGLE_display_timing v1
+	VK_IMG_format_pvrtc v1
+	VK_INTEL_shader_integer_functions2 v1
+	VK_MVK_ios_surface v3
+	VK_MVK_moltenvk v37
+	VK_NV_fragment_shader_barycentric v1
+[mvk-info] GPU device:
+	model: Apple A15 GPU
+	type: Integrated
+	vendorID: 0x106b
+	deviceID: 0x1b020008
+	pipelineCacheUUID: DB445FF2-1B02-0008-0000-000100000000
+	GPU memory available: 2730 MB
+	GPU memory used: 1 MB
+	Metal Shading Language 3.1
+	supports the following GPU Features:
+		GPU Family Metal 3
+		GPU Family Apple 8
+		Read-Write Texture Tier 2
+[mvk-info] Created VkInstance for Vulkan version 1.4.334, as requested by app, with the following 6 Vulkan extensions enabled:
+	VK_KHR_get_surface_capabilities2 v1
+	VK_KHR_surface v25
+	VK_KHR_surface_maintenance1 v1
+	VK_EXT_metal_surface v1
+	VK_EXT_surface_maintenance1 v1
+	VK_EXT_swapchain_colorspace v5
+[mvk-info] Vulkan semaphores using MTLEvent.
+[mvk-info] Descriptor sets binding resources using Metal3 argument buffers.
+[mvk-info] Created VkDevice to run on GPU Apple A15 GPU with the following 12 Vulkan extensions enabled:
+	VK_KHR_dynamic_rendering v1
+	VK_KHR_portability_subset v1
+	VK_KHR_shader_expect_assume v1
+	VK_KHR_shader_relaxed_extended_instruction v1
+	VK_KHR_shader_subgroup_rotate v2
+	VK_KHR_swapchain v70
+	VK_KHR_swapchain_maintenance1 v1
+	VK_KHR_zero_initialize_workgroup_memory v1
+	VK_EXT_external_memory_host v1
+	VK_EXT_metal_objects v2
+	VK_EXT_shader_atomic_float v1
+	VK_EXT_swapchain_maintenance1 v1
+[SubtitleRepo] Fetching subtitles type=series id=tt36118374:1:3 across 9 enabled addons
+[SubtitleRepo] Skip Comet: no subtitles resource
+[SubtitleRepo] Skip Torrentio: no subtitles resource
+[SubtitleRepo] Skip AIO Streams: no subtitles resource
+[SubtitleRepo] Skip Cinemeta: no subtitles resource
+[SubtitleRepo] Skip BetterPosters: no subtitles resource
+[SubtitleRepo] Querying AIO Metadata 1: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/series/tt36118374%3A1%3A3.json
+[SubtitleRepo] Querying AIO Metadata 2: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/series/tt36118374%3A1%3A3.json
+[SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/series/tt36118374%3A1%3A3.json
+[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/<redacted>%3A1%3A3.json
+2026-10-15 12:03:35.348 NuvioTV[1658:896804] [Chapters] n=0 dropped=0 dur=2680.2 src=json raw=[]
+2026-10-15 12:03:35.353 NuvioTV[1658:893772] [Aspect] fit override=-1 panscan=0.00 zoom=0.00 read=-1.000000
+[SubtitleRepo] OpenSubtitles v3: 3 subtitles in 61.281292ms
+[SubtitleRepo] AIO Metadata 1: 0 subtitles in 157.423167ms
+[SubtitleRepo] AIO Metadata 2: 0 subtitles in 158.625292ms
+[SubtitleRepo] Duck Streams (AIOStreams): 3 subtitles in 177.328375ms
+[SubtitleRepo] Subtitle fetch done: 6 total in 180.548792ms
+[mvk-info] Created 3 swapchain images with size (3840, 2160) and contents scale 2.0 in layer (null) (0x1343d2030) on screen Main Screen.
+[mvk-info] Created 3 swapchain images with size (3840, 2160) and contents scale 2.0 in layer (null) (0x1343d2030) on screen Main Screen.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 12:03:36.149 NuvioTV[1658:895331] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 12:03:36.149 NuvioTV[1658:895331] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+[Transport] cache-state raw={"cache-end":7.103667,"reader-pts":3.796667,"cache-duration":3.307000,"eof":false,"underrun":false,"idle":false,"total-bytes":1767040,"fw-bytes":1590704,"raw-input-rate":22,"debug-low-level-seeks":1,"debug-byte-level-seeks":2,"debug-ts-last":7.103667,"ts-per-stream":[{"type":"video","cache-duration" ranges=1 fallback=0 +0s
+[MPVStats] +5s cache=552.1s net=23.4 MB/s dropped=vo:16 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+2026-10-15 12:03:46.313 NuvioTV[1658:899340] [Harvest] took=65.2ms size=1920x816 fmt=bgr0 at=10.2 src=mpv
+[MPVStats] +11s cache=587.4s net=0.2 MB/s dropped=vo:16 dec:0 underruns=0
+2026-10-15 12:03:46.325 NuvioTV[1658:893772] [Harvest] slow (65.2ms > 60ms): interval now 30s for this file
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:03:46.334 NuvioTV[1658:893772] [Harvest] stored n=1 bytes=12356 outcome=stored
+[MPVStats] +16s cache=587.6s net=0.3 MB/s dropped=vo:16 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +21s cache=588.1s net=0.1 MB/s dropped=vo:16 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:03:59.709 NuvioTV[1658:899340] [Thumbs] open took=1448ms container=matroska,webm index=585 size=542MB budget=16.0MB hdr=sdr read=341KB range=256KB reopen=0
+2026-10-15 12:04:00.068 NuvioTV[1658:893772] [Thumbs] decode at=51.8 kf=51.8 took=350ms dec=16ms tm=0.0ms charged=315KB job=prewarm outcome=stored
+2026-10-15 12:04:00.552 NuvioTV[1658:893772] [Thumbs] decode at=117.3 kf=117.3 took=482ms dec=15ms tm=0.0ms charged=332KB job=prewarm outcome=stored
+2026-10-15 12:04:00.968 NuvioTV[1658:893772] [Thumbs] decode at=179.5 kf=179.5 took=411ms dec=16ms tm=0.0ms charged=300KB job=prewarm outcome=stored
+2026-10-15 12:04:01.329 NuvioTV[1658:893772] [Thumbs] decode at=238.7 kf=238.7 took=355ms dec=15ms tm=0.0ms charged=306KB job=prewarm outcome=stored
+2026-10-15 12:04:01.744 NuvioTV[1658:893772] [Thumbs] decode at=293.3 kf=293.3 took=410ms dec=22ms tm=0.0ms charged=363KB job=prewarm outcome=stored
+[MPVStats] +26s cache=591.1s net=0.1 MB/s dropped=vo:16 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:04:02.246 NuvioTV[1658:893772] [Thumbs] decode at=358.0 kf=358.0 took=491ms dec=16ms tm=0.0ms charged=326KB job=prewarm outcome=stored
+2026-10-15 12:04:02.611 NuvioTV[1658:893772] [Thumbs] decode at=416.5 kf=416.5 took=359ms dec=17ms tm=0.0ms charged=290KB job=prewarm outcome=stored
+2026-10-15 12:04:02.959 NuvioTV[1658:893772] [Thumbs] decode at=478.8 kf=478.8 took=343ms dec=14ms tm=0.0ms charged=332KB job=prewarm outcome=stored
+[MPVStats] +32s cache=595.5s net=0.3 MB/s dropped=vo:16 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:04:10.119 NuvioTV[1658:893772] [Thumbs] decode at=533.4 kf=533.4 took=353ms dec=19ms tm=0.0ms charged=296KB job=prewarm outcome=stored
+2026-10-15 12:04:10.528 NuvioTV[1658:893772] [Thumbs] decode at=595.9 kf=595.9 took=402ms dec=23ms tm=0.0ms charged=407KB job=prewarm outcome=stored
+2026-10-15 12:04:10.901 NuvioTV[1658:893772] [Thumbs] decode at=658.2 kf=658.2 took=368ms dec=18ms tm=0.0ms charged=316KB job=prewarm outcome=stored
+2026-10-15 12:04:11.353 NuvioTV[1658:893772] [Thumbs] decode at=714.6 kf=714.6 took=446ms dec=19ms tm=0.0ms charged=371KB job=prewarm outcome=stored
+2026-10-15 12:04:11.752 NuvioTV[1658:893772] [Thumbs] decode at=773.8 kf=773.8 took=391ms dec=16ms tm=0.0ms charged=310KB job=prewarm outcome=stored
+2026-10-15 12:04:12.185 NuvioTV[1658:893772] [Thumbs] decode at=836.5 kf=836.5 took=430ms dec=15ms tm=0.0ms charged=327KB job=prewarm outcome=stored
+2026-10-15 12:04:12.595 NuvioTV[1658:893772] [Thumbs] decode at=899.7 kf=899.7 took=405ms dec=21ms tm=0.0ms charged=423KB job=prewarm outcome=stored
+[MPVStats] +37s cache=593.7s net=0.1 MB/s dropped=vo:16 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:04:12.979 NuvioTV[1658:893772] [Thumbs] decode at=959.6 kf=959.6 took=379ms dec=20ms tm=0.0ms charged=371KB job=prewarm outcome=stored
+2026-10-15 12:04:16.297 NuvioTV[1658:895872] [Harvest] took=49.3ms size=1920x816 fmt=bgr0 at=40.2 src=mpv
+2026-10-15 12:04:16.322 NuvioTV[1658:893772] [Harvest] stored n=18 bytes=187472 outcome=stored
+[MPVStats] +42s cache=591.4s net=0.0 MB/s dropped=vo:17 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +47s cache=592.5s net=0.2 MB/s dropped=vo:17 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:04:23.103 NuvioTV[1658:893772] [Thumbs] decode at=1014.5 kf=1014.5 took=326ms dec=14ms tm=0.0ms charged=287KB job=prewarm outcome=stored
+2026-10-15 12:04:23.481 NuvioTV[1658:893772] [Thumbs] decode at=1077.4 kf=1077.4 took=373ms dec=19ms tm=0.0ms charged=374KB job=prewarm outcome=stored
+2026-10-15 12:04:23.820 NuvioTV[1658:893772] [Thumbs] decode at=1133.7 kf=1133.7 took=335ms dec=12ms tm=0.0ms charged=312KB job=prewarm outcome=stored
+2026-10-15 12:04:24.217 NuvioTV[1658:893772] [Thumbs] decode at=1195.7 kf=1195.7 took=392ms dec=21ms tm=0.0ms charged=376KB job=prewarm outcome=stored
+2026-10-15 12:04:24.778 NuvioTV[1658:893772] [Thumbs] decode at=1253.5 kf=1253.5 took=559ms dec=17ms tm=0.0ms charged=313KB job=prewarm outcome=stored
+2026-10-15 12:04:25.157 NuvioTV[1658:893772] [Thumbs] decode at=1311.4 kf=1311.4 took=374ms dec=18ms tm=0.0ms charged=320KB job=prewarm outcome=stored
+2026-10-15 12:04:25.537 NuvioTV[1658:893772] [Thumbs] decode at=1379.3 kf=1379.3 took=378ms dec=17ms tm=0.0ms charged=303KB job=prewarm outcome=stored
+2026-10-15 12:04:25.917 NuvioTV[1658:893772] [Thumbs] decode at=1438.0 kf=1438.0 took=379ms dec=18ms tm=0.0ms charged=348KB job=prewarm outcome=stored
+[MPVStats] +53s cache=592.4s net=0.2 MB/s dropped=vo:17 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +58s cache=592.4s net=0.2 MB/s dropped=vo:17 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:04:33.636 NuvioTV[1658:893772] [Thumbs] decode at=1497.6 kf=1497.6 took=359ms dec=18ms tm=0.0ms charged=296KB job=prewarm outcome=stored
+2026-10-15 12:04:33.996 NuvioTV[1658:893772] [Thumbs] decode at=1558.8 kf=1558.8 took=358ms dec=16ms tm=0.0ms charged=284KB job=prewarm outcome=stored
+2026-10-15 12:04:34.362 NuvioTV[1658:893772] [Thumbs] decode at=1617.5 kf=1617.5 took=364ms dec=14ms tm=0.0ms charged=315KB job=prewarm outcome=stored
+2026-10-15 12:04:34.747 NuvioTV[1658:893772] [Thumbs] decode at=1677.6 kf=1677.6 took=379ms dec=18ms tm=0.0ms charged=304KB job=prewarm outcome=stored
+2026-10-15 12:04:35.535 NuvioTV[1658:893772] [Thumbs] decode at=1739.5 kf=1739.5 took=783ms dec=18ms tm=0.0ms charged=299KB job=prewarm outcome=stored
+2026-10-15 12:04:35.963 NuvioTV[1658:893772] [Thumbs] decode at=1798.3 kf=1798.3 took=426ms dec=15ms tm=0.0ms charged=308KB job=prewarm outcome=stored
+2026-10-15 12:04:36.331 NuvioTV[1658:893772] [Thumbs] decode at=1859.3 kf=1859.3 took=363ms dec=16ms tm=0.0ms charged=339KB job=prewarm outcome=stored
+2026-10-15 12:04:36.754 NuvioTV[1658:893772] [Thumbs] decode at=1918.6 kf=1918.6 took=416ms dec=17ms tm=0.0ms charged=300KB job=prewarm outcome=stored
+[MPVStats] +63s cache=593.6s net=0.2 MB/s dropped=vo:17 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:04:43.664 NuvioTV[1658:893772] [Thumbs] decode at=1978.2 kf=1978.2 took=396ms dec=17ms tm=0.0ms charged=307KB job=prewarm outcome=stored
+2026-10-15 12:04:44.025 NuvioTV[1658:893772] [Thumbs] decode at=2037.7 kf=2037.7 took=356ms dec=15ms tm=0.0ms charged=323KB job=prewarm outcome=stored
+[MPVStats] +69s cache=596.1s net=0.2 MB/s dropped=vo:17 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:04:44.386 NuvioTV[1658:893772] [Thumbs] decode at=2098.2 kf=2098.2 took=356ms dec=15ms tm=0.0ms charged=325KB job=prewarm outcome=stored
+2026-10-15 12:04:44.858 NuvioTV[1658:893772] [Thumbs] decode at=2157.8 kf=2157.8 took=467ms dec=17ms tm=0.0ms charged=311KB job=prewarm outcome=stored
+2026-10-15 12:04:45.279 NuvioTV[1658:893772] [Thumbs] decode at=2218.1 kf=2218.1 took=414ms dec=19ms tm=0.0ms charged=338KB job=prewarm outcome=stored
+2026-10-15 12:04:45.779 NuvioTV[1658:893772] [Thumbs] decode at=2278.2 kf=2278.2 took=495ms dec=20ms tm=0.0ms charged=327KB job=prewarm outcome=stored
+2026-10-15 12:04:46.271 NuvioTV[1658:893772] [Thumbs] decode at=2339.6 kf=2339.6 took=486ms dec=23ms tm=0.0ms charged=310KB job=prewarm outcome=stored
+2026-10-15 12:04:46.676 NuvioTV[1658:893772] [Thumbs] decode at=2395.4 kf=2395.4 took=400ms dec=18ms tm=0.0ms charged=301KB job=prewarm outcome=stored
+2026-10-15 12:04:46.810 NuvioTV[1658:899340] [Harvest] took=62.2ms size=1920x816 fmt=bgr0 at=70.7 src=mpv
+2026-10-15 12:04:46.830 NuvioTV[1658:893772] [Harvest] stored n=43 bytes=427620 outcome=stored
+[MPVStats] +74s cache=597.1s net=0.3 MB/s dropped=vo:17 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:04:54.242 NuvioTV[1658:893772] [Thumbs] decode at=2456.7 kf=2456.7 took=476ms dec=20ms tm=0.0ms charged=308KB job=prewarm outcome=stored
+2026-10-15 12:04:54.663 NuvioTV[1658:893772] [Thumbs] decode at=2517.9 kf=2517.9 took=415ms dec=22ms tm=0.0ms charged=284KB job=prewarm outcome=stored
+2026-10-15 12:04:54.663 NuvioTV[1658:893772] [Thumbs] idle close reason=byteBudget leftOpen=0 charged=16.1MB
+[MPVStats] +79s cache=593.9s net=0.2 MB/s dropped=vo:17 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:04:59.009 NuvioTV[1658:893772] [Scrub] begin base=82.96 thr=160 curve=orivio
+2026-10-15 12:04:59.139 NuvioTV[1658:893772] [Scrub] stroke end intent=h travel=1243 vx=13772
+[Transport] cache-state raw={"cache-end":677.012667,"reader-pts":86.890667,"cache-duration":590.122000,"eof":false,"underrun":false,"idle":true,"total-bytes":178396848,"fw-bytes":157321088,"raw-input-rate":64049,"debug-low-level-seeks":1,"debug-byte-level-seeks":2,"debug-ts-last":677.120000,"ts-per-stream":[{"type":"video","ca ranges=1 fallback=0 +83s
+2026-10-15 12:04:59.286 NuvioTV[1658:900674] [Thumbs] open took=249ms container=matroska,webm index=585 size=542MB budget=16.0MB hdr=sdr read=4KB range=256KB reopen=1
+[MPVStats] +84s cache=589.7s net=0.1 MB/s dropped=vo:17 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:05:00.093 NuvioTV[1658:893772] [Thumbs] decode at=783.8 kf=783.8 took=805ms dec=15ms tm=0.0ms charged=863KB job=scrub outcome=stored
+2026-10-15 12:05:00.093 NuvioTV[1658:893772] [Thumbs] stop reason=byteBudget decoded=43 read=0.1MB charged=17.5MB
+2026-10-15 12:05:00.130 NuvioTV[1658:893772] [Scrub] commit target=793.76 from=82.96 stages=ke
+2026-10-15 12:05:00.130 NuvioTV[1658:895872] [SeekProbe] seek gen=1 args=793.763 absolute+keyframes status=0
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 12:05:00.578 NuvioTV[1658:895872] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 12:05:00.578 NuvioTV[1658:895872] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-15 12:05:00.607 NuvioTV[1658:896804] [SeekProbe] restart gen=1 landed=783.840
+2026-10-15 12:05:00.762 NuvioTV[1658:900676] [SeekProbe] seek gen=2 args=793.763 absolute+exact status=0
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-15 12:05:00.836 NuvioTV[1658:900674] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 12:05:00.836 NuvioTV[1658:900674] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-15 12:05:01.215 NuvioTV[1658:895872] [SeekProbe] restart gen=2 landed=793.780
+2026-10-15 12:05:03.198 NuvioTV[1658:893772] [Scrub] begin base=795.78 thr=45 curve=orivio
+2026-10-15 12:05:03.297 NuvioTV[1658:893772] [Scrub] stroke end intent=h travel=1241 vx=13290
+2026-10-15 12:05:03.625 NuvioTV[1658:893772] [Thumbs] decode at=793.8 kf=793.8 took=364ms dec=8ms tm=0.0ms charged=314KB job=scrub outcome=stored
+2026-10-15 12:05:04.005 NuvioTV[1658:893772] [Thumbs] decode at=1356.2 kf=1356.2 took=378ms dec=11ms tm=0.0ms charged=387KB job=scrub outcome=stored
+2026-10-15 12:05:04.295 NuvioTV[1658:893772] [Scrub] commit target=1362.90 from=795.78 stages=ke
+2026-10-15 12:05:04.295 NuvioTV[1658:896804] [SeekProbe] seek gen=3 args=1362.904 absolute+keyframes status=0
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 12:05:04.782 NuvioTV[1658:896804] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-15 12:05:04.782 NuvioTV[1658:896804] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-15 12:05:04.812 NuvioTV[1658:896804] [SeekProbe] restart gen=3 landed=1356.160
+2026-10-15 12:05:04.964 NuvioTV[1658:900676] [SeekProbe] seek gen=4 args=1362.904 absolute+exact status=0
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 12:05:05.038 NuvioTV[1658:900676] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 12:05:05.038 NuvioTV[1658:900676] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+[MPVStats] +90s cache=50.0s net=23.0 MB/s dropped=vo:0 dec:0 underruns=0
+2026-10-15 12:05:05.310 NuvioTV[1658:896804] [SeekProbe] restart gen=4 landed=1362.920
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:05:07.458 NuvioTV[1658:893772] [Scrub] begin base=1365.08 thr=45 curve=orivio
+2026-10-15 12:05:07.577 NuvioTV[1658:893772] [Scrub] stroke end intent=h travel=1241 vx=11980
+2026-10-15 12:05:08.264 NuvioTV[1658:893772] [Thumbs] decode at=1904.2 kf=1904.2 took=610ms dec=7ms tm=0.0ms charged=283KB job=scrub outcome=stored
+2026-10-15 12:05:08.563 NuvioTV[1658:893772] [Scrub] commit target=1910.76 from=1365.08 stages=ke
+2026-10-15 12:05:08.565 NuvioTV[1658:900674] [SeekProbe] seek gen=5 args=1910.758 absolute+keyframes status=0
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 12:05:08.946 NuvioTV[1658:896804] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-15 12:05:08.946 NuvioTV[1658:896804] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-15 12:05:09.004 NuvioTV[1658:900676] [SeekProbe] restart gen=5 landed=1904.240
+2026-10-15 12:05:09.159 NuvioTV[1658:900674] [SeekProbe] seek gen=6 args=1910.758 absolute+exact status=0
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 12:05:09.239 NuvioTV[1658:895872] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 12:05:09.239 NuvioTV[1658:895872] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-15 12:05:09.496 NuvioTV[1658:896804] [SeekProbe] restart gen=6 landed=1910.780
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:05:11.838 NuvioTV[1658:893772] [Scrub] begin base=1913.14 thr=45 curve=orivio
+2026-10-15 12:05:11.839 NuvioTV[1658:893772] [Scrub] stroke end intent=h travel=247 vx=0
+2026-10-15 12:05:12.170 NuvioTV[1658:893772] [Thumbs] decode at=1911.9 kf=1911.9 took=269ms dec=8ms tm=0.0ms charged=304KB job=scrub outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:05:27.799 NuvioTV[1658:895872] [Harvest] took=51.3ms size=1920x816 fmt=bgr0 at=1929.0 src=mpv
+2026-10-15 12:05:27.824 NuvioTV[1658:893772] [Harvest] stored n=51 bytes=492939 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:05:57.809 NuvioTV[1658:896804] [Harvest] took=60.6ms size=1920x816 fmt=bgr0 at=1959.0 src=mpv
+2026-10-15 12:05:57.821 NuvioTV[1658:893772] [Harvest] stored n=52 bytes=503388 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:06:13.249 NuvioTV[1658:893772] [Thumbs] idle close reason=byteBudget leftOpen=0 charged=18.7MB
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:06:28.315 NuvioTV[1658:899340] [Harvest] took=65.7ms size=1920x816 fmt=bgr0 at=1989.5 src=mpv
+2026-10-15 12:06:28.339 NuvioTV[1658:893772] [Harvest] stored n=53 bytes=516919 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:06:58.815 NuvioTV[1658:900674] [Harvest] took=65.7ms size=1920x816 fmt=bgr0 at=2020.0 src=mpv
+2026-10-15 12:06:58.838 NuvioTV[1658:893772] [Harvest] stored n=54 bytes=527714 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:07:28.800 NuvioTV[1658:895872] [Harvest] took=50.4ms size=1920x816 fmt=bgr0 at=2050.0 src=mpv
+2026-10-15 12:07:28.826 NuvioTV[1658:893772] [Harvest] stored n=55 bytes=537787 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:07:59.309 NuvioTV[1658:895331] [Harvest] took=57.6ms size=1920x816 fmt=bgr0 at=2080.5 src=mpv
+2026-10-15 12:07:59.352 NuvioTV[1658:893772] [Harvest] stored n=56 bytes=540797 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:08:29.834 NuvioTV[1658:895872] [Harvest] took=84.4ms size=1920x816 fmt=bgr0 at=2111.0 src=mpv
+2026-10-15 12:08:29.850 NuvioTV[1658:893772] [Harvest] stored n=57 bytes=552733 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Failover] mpv healthy after 302 s
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:08:59.818 NuvioTV[1658:901853] [Harvest] took=67.0ms size=1920x816 fmt=bgr0 at=2141.0 src=mpv
+2026-10-15 12:08:59.842 NuvioTV[1658:893772] [Harvest] stored n=58 bytes=567199 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:09:30.304 NuvioTV[1658:895872] [Harvest] took=52.4ms size=1920x816 fmt=bgr0 at=2171.5 src=mpv
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:09:30.330 NuvioTV[1658:893772] [Harvest] stored n=59 bytes=576145 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:10:00.816 NuvioTV[1658:901853] [Harvest] took=64.5ms size=1920x816 fmt=bgr0 at=2202.0 src=mpv
+2026-10-15 12:10:00.843 NuvioTV[1658:893772] [Harvest] stored n=60 bytes=587347 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:10:30.826 NuvioTV[1658:896804] [Harvest] took=73.7ms size=1920x816 fmt=bgr0 at=2232.0 src=mpv
+2026-10-15 12:10:30.839 NuvioTV[1658:893772] [Harvest] stored n=61 bytes=593588 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:11:01.326 NuvioTV[1658:901853] [Harvest] took=74.4ms size=1920x816 fmt=bgr0 at=2262.5 src=mpv
+2026-10-15 12:11:01.338 NuvioTV[1658:893772] [Harvest] stored n=62 bytes=600579 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:11:31.311 NuvioTV[1658:900674] [Harvest] took=58.8ms size=1920x816 fmt=bgr0 at=2292.5 src=mpv
+2026-10-15 12:11:31.337 NuvioTV[1658:893772] [Harvest] stored n=63 bytes=605102 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:12:01.808 NuvioTV[1658:901853] [Harvest] took=55.0ms size=1920x816 fmt=bgr0 at=2323.0 src=mpv
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:12:01.836 NuvioTV[1658:893772] [Harvest] stored n=64 bytes=612755 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:12:32.327 NuvioTV[1658:895331] [Harvest] took=74.7ms size=1920x816 fmt=bgr0 at=2353.5 src=mpv
+2026-10-15 12:12:32.343 NuvioTV[1658:893772] [Harvest] stored n=65 bytes=620190 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:13:02.824 NuvioTV[1658:895331] [Harvest] took=71.9ms size=1920x816 fmt=bgr0 at=2384.0 src=mpv
+2026-10-15 12:13:02.837 NuvioTV[1658:893772] [Harvest] stored n=66 bytes=625461 outcome=stored
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:13:32.808 NuvioTV[1658:895872] [Harvest] took=54.3ms size=1920x816 fmt=bgr0 at=2414.0 src=mpv
+2026-10-15 12:13:32.831 NuvioTV[1658:893772] [Harvest] stored n=67 bytes=630271 outcome=stored
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:14:03.321 NuvioTV[1658:896804] [Harvest] took=67.8ms size=1920x816 fmt=bgr0 at=2444.5 src=mpv
+2026-10-15 12:14:03.336 NuvioTV[1658:893772] [Harvest] stored n=68 bytes=636907 outcome=stored
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:14:33.809 NuvioTV[1658:895331] [Harvest] took=55.0ms size=1920x816 fmt=bgr0 at=2475.0 src=mpv
+2026-10-15 12:14:33.834 NuvioTV[1658:893772] [Harvest] stored n=69 bytes=643496 outcome=stored
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:15:03.821 NuvioTV[1658:904562] [Harvest] took=67.2ms size=1920x816 fmt=bgr0 at=2505.0 src=mpv
+2026-10-15 12:15:03.834 NuvioTV[1658:893772] [Harvest] stored n=70 bytes=650059 outcome=stored
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:15:33.822 NuvioTV[1658:901854] [Harvest] took=68.2ms size=1920x816 fmt=bgr0 at=2535.0 src=mpv
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:15:33.836 NuvioTV[1658:893772] [Harvest] stored n=71 bytes=655298 outcome=stored
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:16:04.322 NuvioTV[1658:904562] [Harvest] took=67.5ms size=1920x816 fmt=bgr0 at=2565.5 src=mpv
+2026-10-15 12:16:04.335 NuvioTV[1658:893772] [Harvest] stored n=72 bytes=662937 outcome=stored
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:16:34.809 NuvioTV[1658:904562] [Harvest] took=53.8ms size=1920x816 fmt=bgr0 at=2596.0 src=mpv
+2026-10-15 12:16:34.838 NuvioTV[1658:893772] [Harvest] stored n=73 bytes=669925 outcome=stored
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:17:04.844 NuvioTV[1658:895872] [Harvest] took=89.2ms size=1920x816 fmt=bgr0 at=2626.0 src=mpv
+2026-10-15 12:17:04.858 NuvioTV[1658:893772] [Harvest] stored n=74 bytes=674922 outcome=stored
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[UpNext] search begin — tt36118374:1:4 s1e4 preloaded=false
+[SubtitleRepo] Fetching subtitles type=series id=tt36118374:1:4 across 9 enabled addons
+[SubtitleRepo] Skip Comet: no subtitles resource
+[SubtitleRepo] Skip Torrentio: no subtitles resource
+[SubtitleRepo] Skip AIO Streams: no subtitles resource
+[SubtitleRepo] Skip Cinemeta: no subtitles resource
+[SubtitleRepo] Skip BetterPosters: no subtitles resource
+[SubtitleRepo] Querying AIO Metadata 1: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/series/tt36118374%3A1%3A4.json
+[SubtitleRepo] Querying AIO Metadata 2: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/series/tt36118374%3A1%3A4.json
+[SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/series/tt36118374%3A1%3A4.json
+[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/<redacted>%3A1%3A4.json
+[UpNext] streams: groups=4 playable=0 loading=true
+[SubtitleRepo] AIO Metadata 2: 0 subtitles in 522.106958ms[SubtitleRepo] AIO Metadata 1: 0 subtitles in 522.122958ms
+
+[SubtitleRepo] OpenSubtitles v3: 3 subtitles in 522.110125ms
+[UpNext] streams: groups=4 playable=2 loading=true
+[UpNext] streams: groups=4 playable=6 loading=true
+[UpNext] selected — Comet: 1080p TB Instant
+[SubtitleRepo] Duck Streams (AIOStreams): 3 subtitles in 1.113801500s
+[SubtitleRepo] Subtitle fetch done: 6 total in 1.118317209s
+2026-10-15 12:17:34.086 NuvioTV[1658:893772] [MenuProbe] perform action=dismissUpNext mode=idle
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:17:37.696 NuvioTV[1658:904562] [Harvest] took=83.4ms size=1920x816 fmt=bgr0 at=2658.9 src=mpv
+2026-10-15 12:17:37.708 NuvioTV[1658:893772] [Harvest] stored n=75 bytes=679421 outcome=stored
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[UpNext] re-armed at end of file after a dismissed card
+[UpNext] search begin — tt36118374:1:4 s1e4 preloaded=false
+[UpNext] streams: groups=4 playable=0 loading=true
+[UpNext] streams: groups=4 playable=2 loading=true
+[UpNext] streams: groups=4 playable=6 loading=true
+[UpNext] selected — Comet: 1080p TB Instant
+[UpNext] resolving debrid stream — Comet
+[UpNext] resolved — playing next episode
+[Failover] viewWillDisappear isLeavingPlayer=true
+[mvk-info] Destroyed VkDevice on GPU Apple A15 GPU with 12 Vulkan extensions enabled.
+[mvk-info] Destroyed VkPhysicalDevice for GPU Apple A15 GPU with 95 MB of GPU memory still allocated.
+[mvk-info] Destroying VkInstance for Vulkan version 1.4.334 with 6 Vulkan extensions enabled.
+[PlayerRouter] self-check passed
+[TopShelf] wrote 7 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Failover] mpv start watchdog armed: 25 s
+[mvk-info] MoltenVK version 1.4.1, supporting Vulkan version 1.4.334.
+	The following 152 Vulkan extensions are supported:
+	VK_KHR_16bit_storage v1
+	VK_KHR_8bit_storage v1
+	VK_KHR_bind_memory2 v1
+	VK_KHR_buffer_device_address v1
+	VK_KHR_calibrated_timestamps v1
+	VK_KHR_copy_commands2 v1
+	VK_KHR_create_renderpass2 v1
+	VK_KHR_dedicated_allocation v3
+	VK_KHR_deferred_host_operations v4
+	VK_KHR_depth_stencil_resolve v1
+	VK_KHR_descriptor_update_template v1
+	VK_KHR_device_group v4
+	VK_KHR_device_group_creation v1
+	VK_KHR_driver_properties v1
+	VK_KHR_dynamic_rendering v1
+	VK_KHR_dynamic_rendering_local_read v1
+	VK_KHR_external_fence v1
+	VK_KHR_external_fence_capabilities v1
+	VK_KHR_external_memory v1
+	VK_KHR_external_memory_capabilities v1
+	VK_KHR_external_semaphore v1
+	VK_KHR_external_semaphore_capabilities v1
+	VK_KHR_format_feature_flags2 v2
+	VK_KHR_fragment_shader_barycentric v1
+	VK_KHR_get_memory_requirements2 v1
+	VK_KHR_get_physical_device_properties2 v2
+	VK_KHR_get_surface_capabilities2 v1
+	VK_KHR_global_priority v1
+	VK_KHR_image_format_list v1
+	VK_KHR_imageless_framebuffer v1
+	VK_KHR_incremental_present v2
+	VK_KHR_index_type_uint8 v1
+	VK_KHR_line_rasterization v1
+	VK_KHR_load_store_op_none v1
+	VK_KHR_maintenance1 v2
+	VK_KHR_maintenance2 v1
+	VK_KHR_maintenance3 v1
+	VK_KHR_maintenance4 v2
+	VK_KHR_maintenance5 v1
+	VK_KHR_maintenance6 v1
+	VK_KHR_maintenance7 v1
+	VK_KHR_maintenance8 v1
+	VK_KHR_maintenance9 v1
+	VK_KHR_map_memory2 v1
+	VK_KHR_multiview v1
+	VK_KHR_portability_subset v1
+	VK_KHR_present_id v1
+	VK_KHR_present_id2 v1
+	VK_KHR_present_wait v1
+	VK_KHR_present_wait2 v1
+	VK_KHR_push_descriptor v2
+	VK_KHR_relaxed_block_layout v1
+	VK_KHR_robustness2 v1
+	VK_KHR_sampler_mirror_clamp_to_edge v3
+	VK_KHR_sampler_ycbcr_conversion v14
+	VK_KHR_separate_depth_stencil_layouts v1
+	VK_KHR_shader_draw_parameters v1
+	VK_KHR_shader_expect_assume v1
+	VK_KHR_shader_float_controls v4
+	VK_KHR_shader_float_controls2 v1
+	VK_KHR_shader_float16_int8 v1
+	VK_KHR_shader_fma v1
+	VK_KHR_shader_integer_dot_product v1
+	VK_KHR_shader_maximal_reconvergence v1
+	VK_KHR_shader_non_semantic_info v1
+	VK_KHR_shader_quad_control v1
+	VK_KHR_shader_relaxed_extended_instruction v1
+	VK_KHR_shader_subgroup_extended_types v1
+	VK_KHR_shader_subgroup_rotate v2
+	VK_KHR_shader_subgroup_uniform_control_flow v1
+	VK_KHR_shader_terminate_invocation v1
+	VK_KHR_spirv_1_4 v1
+	VK_KHR_storage_buffer_storage_class v1
+	VK_KHR_surface v25
+	VK_KHR_surface_maintenance1 v1
+	VK_KHR_surface_protected_capabilities v1
+	VK_KHR_swapchain v70
+	VK_KHR_swapchain_maintenance1 v1
+	VK_KHR_swapchain_mutable_format v1
+	VK_KHR_synchronization2 v1
+	VK_KHR_timeline_semaphore v2
+	VK_KHR_uniform_buffer_standard_layout v1
+	VK_KHR_variable_pointers v1
+	VK_KHR_vertex_attribute_divisor v1
+	VK_KHR_vulkan_memory_model v3
+	VK_KHR_zero_initialize_workgroup_memory v1
+	VK_EXT_4444_formats v1
+	VK_EXT_buffer_device_address v2
+	VK_EXT_calibrated_timestamps v2
+	VK_EXT_debug_marker v4
+	VK_EXT_debug_report v10
+	VK_EXT_debug_utils v2
+	VK_EXT_depth_clip_control v1
+	VK_EXT_descriptor_indexing v2
+	VK_EXT_extended_dynamic_state v1
+	VK_EXT_extended_dynamic_state2 v1
+	VK_EXT_extended_dynamic_state3 v2
+	VK_EXT_external_memory_host v1
+	VK_EXT_external_memory_metal v1
+	VK_EXT_fragment_shader_interlock v1
+	VK_EXT_global_priority v2
+	VK_EXT_global_priority_query v1
+	VK_EXT_headless_surface v1
+	VK_EXT_host_image_copy v1
+	VK_EXT_host_query_reset v1
+	VK_EXT_image_2d_view_of_3d v1
+	VK_EXT_image_robustness v1
+	VK_EXT_index_type_uint8 v1
+	VK_EXT_inline_uniform_block v1
+	VK_EXT_layer_settings v2
+	VK_EXT_legacy_dithering v2
+	VK_EXT_line_rasterization v1
+	VK_EXT_load_store_op_none v1
+	VK_EXT_memory_budget v1
+	VK_EXT_metal_objects v2
+	VK_EXT_metal_surface v1
+	VK_EXT_non_seamless_cube_map v1
+	VK_EXT_pipeline_creation_cache_control v3
+	VK_EXT_pipeline_creation_feedback v1
+	VK_EXT_pipeline_robustness v1
+	VK_EXT_post_depth_coverage v1
+	VK_EXT_primitive_topology_list_restart v1
+	VK_EXT_private_data v1
+	VK_EXT_provoking_vertex v1
+	VK_EXT_robustness2 v1
+	VK_EXT_sample_locations v1
+	VK_EXT_scalar_block_layout v1
+	VK_EXT_separate_stencil_usage v1
+	VK_EXT_shader_atomic_float v1
+	VK_EXT_shader_demote_to_helper_invocation v1
+	VK_EXT_shader_stencil_export v1
+	VK_EXT_shader_subgroup_ballot v1
+	VK_EXT_shader_subgroup_vote v1
+	VK_EXT_shader_viewport_index_layer v1
+	VK_EXT_subgroup_size_control v2
+	VK_EXT_surface_maintenance1 v1
+	VK_EXT_swapchain_colorspace v5
+	VK_EXT_swapchain_maintenance1 v1
+	VK_EXT_texel_buffer_alignment v1
+	VK_EXT_texture_compression_astc_hdr v1
+	VK_EXT_tooling_info v1
+	VK_EXT_vertex_attribute_divisor v3
+	VK_AMD_gpu_shader_half_float v2
+	VK_AMD_negative_viewport_height v1
+	VK_AMD_shader_image_load_store_lod v1
+	VK_AMD_shader_trinary_minmax v1
+	VK_GOOGLE_display_timing v1
+	VK_IMG_format_pvrtc v1
+	VK_INTEL_shader_integer_functions2 v1
+	VK_MVK_ios_surface v3
+	VK_MVK_moltenvk v37
+	VK_NV_fragment_shader_barycentric v1
+[mvk-info] GPU device:
+	model: Apple A15 GPU
+	type: Integrated
+	vendorID: 0x106b
+	deviceID: 0x1b020008
+	pipelineCacheUUID: DB445FF2-1B02-0008-0000-000100000000
+	GPU memory available: 2730 MB
+	GPU memory used: 1 MB
+	Metal Shading Language 3.1
+	supports the following GPU Features:
+		GPU Family Metal 3
+		GPU Family Apple 8
+		Read-Write Texture Tier 2
+[mvk-info] Created VkInstance for Vulkan version 1.4.334, as requested by app, with the following 6 Vulkan extensions enabled:
+	VK_KHR_get_surface_capabilities2 v1
+	VK_KHR_surface v25
+	VK_KHR_surface_maintenance1 v1
+	VK_EXT_metal_surface v1
+	VK_EXT_surface_maintenance1 v1
+	VK_EXT_swapchain_colorspace v5
+[mvk-info] Vulkan semaphores using MTLEvent.
+[mvk-info] Descriptor sets binding resources using Metal3 argument buffers.
+[mvk-info] Created VkDevice to run on GPU Apple A15 GPU with the following 12 Vulkan extensions enabled:
+	VK_KHR_dynamic_rendering v1
+	VK_KHR_portability_subset v1
+	VK_KHR_shader_expect_assume v1
+	VK_KHR_shader_relaxed_extended_instruction v1
+	VK_KHR_shader_subgroup_rotate v2
+	VK_KHR_swapchain v70
+	VK_KHR_swapchain_maintenance1 v1
+	VK_KHR_zero_initialize_workgroup_memory v1
+	VK_EXT_external_memory_host v1
+	VK_EXT_metal_objects v2
+	VK_EXT_shader_atomic_float v1
+	VK_EXT_swapchain_maintenance1 v1
+[SubtitleRepo] Fetching subtitles type=series id=tt36118374:1:4 across 9 enabled addons
+[SubtitleRepo] Skip Comet: no subtitles resource
+[SubtitleRepo] Skip Torrentio: no subtitles resource
+[SubtitleRepo] Skip AIO Streams: no subtitles resource
+[SubtitleRepo] Skip Cinemeta: no subtitles resource
+[SubtitleRepo] Skip BetterPosters: no subtitles resource
+[SubtitleRepo] Querying AIO Metadata 1: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/series/tt36118374%3A1%3A4.json
+[SubtitleRepo] Querying AIO Metadata 2: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/series/tt36118374%3A1%3A4.json
+[SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/series/tt36118374%3A1%3A4.json
+[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/<redacted> 12:18:04.943 NuvioTV[1658:901854] [Chapters] n=0 dropped=0 dur=2666.7 src=json raw=[]
+2026-10-15 12:18:04.948 NuvioTV[1658:893772] [Aspect] fit override=-1 panscan=0.00 zoom=0.00 read=-1.000000
+Gt3ZCtVdWJFMW5VTjg9IiwidCI6ImEifQ/subtitles/series/tt36118374%3A1%3A4.json
+[SubtitleRepo] AIO Metadata 1: 0 subtitles in 151.600791ms
+[SubtitleRepo] AIO Metadata 2: 0 subtitles in 152.554958ms
+[SubtitleRepo] OpenSubtitles v3: 3 subtitles in 165.514667ms
+[SubtitleRepo] Duck Streams (AIOStreams): 3 subtitles in 166.970959ms
+[SubtitleRepo] Subtitle fetch done: 6 total in 170.890583ms
+[mvk-info] Created 3 swapchain images with size (3840, 2160) and contents scale 2.0 in layer (null) (0x1343d3160) on screen Main Screen.
+[mvk-info] Created 3 swapchain images with size (3840, 2160) and contents scale 2.0 in layer (null) (0x1343d3160) on screen Main Screen.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 12:18:06.123 NuvioTV[1658:901854] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-15 12:18:06.123 NuvioTV[1658:901854] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+[Transport] cache-state raw={"cache-end":39.338667,"reader-pts":3.796667,"cache-duration":35.542000,"eof":false,"underrun":false,"idle":false,"total-bytes":12185280,"fw-bytes":11937680,"raw-input-rate":2202705,"debug-low-level-seeks":1,"debug-byte-level-seeks":2,"debug-ts-last":39.338667,"ts-per-stream":[{"type":"video","cache ranges=1 fallback=0 +1s
+[MPVStats] +5s cache=600.8s net=27.7 MB/s dropped=vo:18 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +11s cache=600.6s net=0.1 MB/s dropped=vo:18 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[1;34m[swscaler @ 0x14cc28000] [0musing unscaled rgba -> bgra special converter
+2026-10-15 12:18:15.984 NuvioTV[1658:901854] [Harvest] took=48.5ms size=1920x816 fmt=bgr0 at=10.2 src=mpv
+2026-10-15 12:18:16.006 NuvioTV[1658:893772] [Harvest] stored n=1 bytes=4692 outcome=stored
+[MPVStats] +16s cache=601.6s net=0.3 MB/s dropped=vo:18 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[1;34m[swscaler @ 0x1330bc000] [0musing unscaled rgba -> bgra special converter
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:18:26.007 NuvioTV[1658:896804] [Harvest] took=71.2ms size=1920x816 fmt=bgr0 at=20.2 src=mpv
+[MPVStats] +21s cache=599.8s net=0.3 MB/s dropped=vo:18 dec:0 underruns=0
+2026-10-15 12:18:26.019 NuvioTV[1658:893772] [Harvest] slow (71.2ms > 60ms): interval now 30s for this file
+2026-10-15 12:18:26.032 NuvioTV[1658:893772] [Harvest] stored n=2 bytes=9933 outcome=stored
+2026-10-15 12:18:27.452 NuvioTV[1658:895872] [Thumbs] open took=1469ms container=matroska,webm index=624 size=546MB budget=16.0MB hdr=sdr read=438KB range=256KB reopen=0
+2026-10-15 12:18:27.811 NuvioTV[1658:893772] [Thumbs] decode at=58.4 kf=58.4 took=352ms dec=16ms tm=0.0ms charged=319KB job=prewarm outcome=stored
+2026-10-15 12:18:28.167 NuvioTV[1658:893772] [Thumbs] decode at=118.0 kf=118.0 took=350ms dec=20ms tm=0.0ms charged=288KB job=prewarm outcome=stored
+2026-10-15 12:18:28.576 NuvioTV[1658:893772] [Thumbs] decode at=176.6 kf=176.6 took=403ms dec=18ms tm=0.0ms charged=315KB job=prewarm outcome=stored
+2026-10-15 12:18:28.994 NuvioTV[1658:893772] [Thumbs] decode at=239.4 kf=239.4 took=413ms dec=15ms tm=0.0ms charged=319KB job=prewarm outcome=stored
+[MPVStats] +27s cache=596.0s net=0.1 MB/s dropped=vo:18 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +32s cache=592.2s net=0.1 MB/s dropped=vo:18 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +37s cache=595.2s net=0.6 MB/s dropped=vo:18 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:18:41.798 NuvioTV[1658:893772] [Thumbs] decode at=295.6 kf=295.6 took=337ms dec=17ms tm=0.0ms charged=287KB job=prewarm outcome=stored
+2026-10-15 12:18:42.142 NuvioTV[1658:893772] [Thumbs] decode at=358.8 kf=358.8 took=339ms dec=17ms tm=0.0ms charged=295KB job=prewarm outcome=stored
+2026-10-15 12:18:42.491 NuvioTV[1658:893772] [Thumbs] decode at=417.0 kf=417.0 took=347ms dec=11ms tm=0.0ms charged=291KB job=prewarm outcome=stored
+2026-10-15 12:18:42.861 NuvioTV[1658:893772] [Thumbs] decode at=479.6 kf=479.6 took=365ms dec=18ms tm=0.0ms charged=300KB job=prewarm outcome=stored
+2026-10-15 12:18:43.208 NuvioTV[1658:893772] [Thumbs] decode at=539.8 kf=539.8 took=340ms dec=14ms tm=0.0ms charged=332KB job=prewarm outcome=stored
+2026-10-15 12:18:43.559 NuvioTV[1658:893772] [Thumbs] decode at=595.3 kf=595.3 took=346ms dec=16ms tm=0.0ms charged=311KB job=prewarm outcome=stored
+2026-10-15 12:18:43.932 NuvioTV[1658:893772] [Thumbs] decode at=651.2 kf=651.2 took=371ms dec=16ms tm=0.0ms charged=342KB job=prewarm outcome=stored
+2026-10-15 12:18:44.300 NuvioTV[1658:893772] [Thumbs] decode at=716.8 kf=716.8 took=363ms dec=19ms tm=0.0ms charged=347KB job=prewarm outcome=stored
+[Failover] viewWillDisappear isLeavingPlayer=true
+[MPVStats] +42s cache=597.3s net=0.2 MB/s dropped=vo:18 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[mvk-info] Destroyed VkDevice on GPU Apple A15 GPU with 12 Vulkan extensions enabled.
+[mvk-info] Destroyed VkPhysicalDevice for GPU Apple A15 GPU with 127 MB of GPU memory still allocated.
+[mvk-info] Destroying VkInstance for Vulkan version 1.4.334 with 6 Vulkan extensions enabled.
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 12:19:45.032 NuvioTV[1658:893772] [NavRail] arm reason=left origin=UIKitFocusableViewResponderItem tab=0
+2026-10-15 12:19:45.060 NuvioTV[1658:893772] [Rail] gate=on mode=uikit
+2026-10-15 12:19:45.445 NuvioTV[1658:893772] [NavRail] contained heading=left
+2026-10-15 12:19:45.858 NuvioTV[1658:893772] [NavRail] contained heading=left
+2026-10-15 12:19:46.312 NuvioTV[1658:893772] [NavRail] contained heading=left
+2026-10-15 12:19:46.732 NuvioTV[1658:893772] [NavRail] contained heading=left
+2026-10-15 12:19:47.151 NuvioTV[1658:893772] [NavRail] contained heading=left
+2026-10-15 12:19:47.579 NuvioTV[1658:893772] [NavRail] contained heading=left
+2026-10-15 12:19:48.002 NuvioTV[1658:893772] [NavRail] contained heading=left
+2026-10-15 12:19:48.434 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 12:19:48.787 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 12:19:49.133 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 12:19:49.481 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 12:19:49.826 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 12:19:50.183 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 12:19:50.532 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 12:19:50.879 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 12:19:51.233 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 12:19:51.636 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 12:19:51.983 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 12:19:52.326 NuvioTV[1658:893772] [NavRail] contained heading=up
+2026-10-15 12:19:55.198 NuvioTV[1658:893772] [NavRail] select tab=4 from=0
+2026-10-15 12:19:55.199 NuvioTV[1658:893772] [Rail] gate=off mode=uikit
+2026-10-15 12:19:55.292 NuvioTV[1658:893772] [NavRail] exit via=select route=settings result=fallback
+2026-10-15 12:20:04.109 NuvioTV[1658:893772] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-15 12:20:04.109 NuvioTV[1658:893772] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-15 12:20:11.529 NuvioTV[1658:893772] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-15 12:20:11.530 NuvioTV[1658:893772] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"

@@ -1,0 +1,58 @@
+[LaunchTrace] +0ms app_init
+[ExtPlayerProbe] canOpenURL(infuse://) = true
+2026-10-16 01:02:57.919 NuvioTV[2149:1148050] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ExtPlayerProbe] canOpenURL(vlc-x-callback://) = false
+[ExtPlayerProbe] canOpenURL(outplayer://) = false
+[ExtPlayerProbe] canOpenURL(open-vidhub://) = true
+[ExtPlayerProbe] canOpenURL(vidhub://) = false
+[ExtPlayerProbe] canOpenURL(senplayer://) = false
+[ExtPlayerProbe] availablePlayers = ["infuse:Infuse", "vidhub:VidHub"]
+2026-10-16 01:02:57.919 NuvioTV[2149:1148050] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-16 01:02:57.920 NuvioTV[2149:1148050] -canOpenURL: failed for URL: "vidhub://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-16 01:02:57.920 NuvioTV[2149:1148050] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-16 01:02:57.921 NuvioTV[2149:1148050] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-16 01:02:57.921 NuvioTV[2149:1148050] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-16 01:02:57.921 NuvioTV[2149:1148050] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ProfileSelect] auto-enter profile 3
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-16 01:02:58.294 NuvioTV[2149:1148050] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+[LaunchTrace] +618ms home_appear
+2026-10-16 01:02:58.322 NuvioTV[2149:1148050] [TrailerPipeline] trailerLocation heroMode=NO
+[TopShelf] wrote 0 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 01:02:58.362 NuvioTV[2149:1148050] [HomeScrollProbe] REGIME-CHANGE from=M330c1p1r0z1t37h1rt4 to=L403c1p1r0z1t37h1rt4 fits=1
+[TopShelf] wrote 0 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 0 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +1071ms artwork #1: mem=0 disk=1 net=0 fail=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +2600ms artwork #10: mem=0 disk=10 net=0 fail=0
+[LaunchTrace] +2601ms first_rows n=5 hero=8
+[LaunchTrace] +2601ms first_hero n=8
+2026-10-16 01:03:00.321 NuvioTV[2149:1148050] [HomeHero] logoInk sync-sample ms=0.39
+2026-10-16 01:03:00.322 NuvioTV[2149:1148050] [HomeScrollProbe] REGIME-CHANGE from=L403c1p1r0z1t37h1rt4 to=L403c1p0r0z1t37h1rt4 fits=0
+[LaunchTrace] +2674ms artwork #25: mem=0 disk=25 net=0 fail=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +2724ms artwork #50: mem=0 disk=50 net=0 fail=0
+[LaunchTrace] +2752ms rows n=9
+2026-10-16 01:03:29.879 NuvioTV[2149:1148050] [NavRail] arm reason=menu origin=request tab=0
+2026-10-16 01:03:29.927 NuvioTV[2149:1148050] [Rail] gate=on mode=uikit
+2026-10-16 01:03:32.779 NuvioTV[2149:1148050] [NavRail] select tab=2 from=0
+2026-10-16 01:03:32.779 NuvioTV[2149:1148050] [Rail] gate=off mode=uikit
+2026-10-16 01:03:32.872 NuvioTV[2149:1148050] [NavRail] exit via=select route=none result=fallback
+2026-10-16 01:05:30.314 NuvioTV[2149:1148050] [NavRail] arm reason=menu origin=request tab=2
+2026-10-16 01:05:30.362 NuvioTV[2149:1148050] [Rail] gate=on mode=uikit
+2026-10-16 01:05:54.935 NuvioTV[2149:1148050] [NavRail] select tab=0 from=2
+2026-10-16 01:05:54.936 NuvioTV[2149:1148050] [Rail] gate=off mode=uikit
+[LaunchTrace] +177288ms home_appear
+2026-10-16 01:05:54.992 NuvioTV[2149:1148050] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-16 01:05:55.013 NuvioTV[2149:1148050] [NavRail] exit via=select route=home result=focus
+[LaunchTrace] +177314ms first_hero n=8
