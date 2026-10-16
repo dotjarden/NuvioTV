@@ -19,7 +19,7 @@ First, the "Genre · 8 sources" line on the old Home: my mistake. Your photos sh
 
 The return position: both cases are real. Coming back from a film inside a collection was never wired on the new Home, so that one is a plain fix. Coming back to Home from a collection has a fix in rc4 that misses on your box, so I will widen it. If it still jumps after the next build I will ask for a screenshot of the Row Settle pane.
 
-Wide posters from your add-on: the cards use a fixed size that ignores your poster size, and the row keeps the height of a portrait row, which is why the heading floats. Next build sizes the card from your poster setting and the row from the card. The trailer playing with sound and no picture is the same code path; it is on the list with those two.
+Wide posters from your add-on: the cards use a fixed size that ignores your poster size, and the row keeps the height of a portrait row, which is why the heading floats. Next build sizes the card from your poster setting and the row from the card. The trailer playing with sound and no picture sits in the same code path, so I expect it to go with those two, but I want to see it on a test row first before I call it fixed.
 
 The far-left poster being cut: thanks for the edit, that was the key. With "No Zoom on Focus" on, the row leaves less room at its left edge than the playing trailer card needs, so the card and its outline get clipped. Fix in the next build.
 
@@ -29,7 +29,7 @@ Collections: the layout switch leaves the page and goes into Settings. Opening a
 
 Best Result: the card keeps the title and the year plus film or series. The "found in" line and the rating move to the row below.
 
-Discover: agreed. A grid with a type and genre picker over one general catalog is the shape I will build; the per-genre rows become a secondary view.
+Discover: agreed on the direction. A grid with a type and genre picker over one general catalog is where I want to take it; you will see a first version once the Home work above is in, and the per-genre rows would become a secondary view.
 
 The player, with your setup:
 
@@ -43,7 +43,7 @@ The exit that leaves the app: I saw it in your video at 6:20, the app went to th
 
 Two small asks: which sidebar mode are you on now (Hidden, from your message), and once the wide row changes size, a photo of that row at rest.
 
-Next build: the heading switch, the two return fixes, the wide row and its trailer, the left-edge clip, the heading step, the layout switch move, Best Result, and the renderer pick for profile 5 files. Later: the Discover grid, the collection opening on its first film, the start time, and the thumbnail cadence.
+Next build: the heading switch, the return from a film inside a collection, the wide row size, the left-edge clip, the heading step, the layout switch move, Best Result, and the renderer pick for profile 5 files. Being worked on with no date yet: the return to Home from a collection on your box, the wide-row trailer, the exit that leaves the app, the Discover grid, the collection opening on its first film, the start time, and the thumbnail cadence.
 
 Chris
 
@@ -51,4 +51,4 @@ Chris
 
 ## Lint
 
-`python3 scripts/deslop/deslop.py <body>` → **5/5 CLEAN** (744 words; a first pass scored 3/5 on "landscape" ×3 and one rule-of-three list, both rewritten). **Codex cleanse SKIPPED:** `codex exec` fails with "refresh token has expired, log out and sign in again" (`codex login` needed; the review quota reset is 10-29 anyway). Re-lint after any edit.
+`python3 scripts/deslop/deslop.py <body>` → **5/5 CLEAN** (re-linted after the 10-16 softening pass: Discover, the wide-row trailer and the closing list downgraded from promises to intent; was 744 words; a first pass scored 3/5 on "landscape" ×3 and one rule-of-three list, both rewritten). **Codex cleanse SKIPPED:** `codex exec` fails with "refresh token has expired, log out and sign in again" (`codex login` needed; the review quota reset is 10-29 anyway). Re-lint after any edit.
