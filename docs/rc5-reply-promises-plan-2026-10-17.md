@@ -215,7 +215,7 @@ inside a collection.
 BUG-156 two-move return (B13), BUG-170 HDR timing (P5 player, after his engine answer), BUG-168 mpv Animals (its
 own repro card), FEAT-76 per-collection layout (D17), FEAT-77 loading animation (D18).
 
-## OUTCOME (2026-10-17, built + reviewed + device-passed; NOT merged, NOT cut)
+## OUTCOME (2026-10-17, built + reviewed + device-passed; MERGED 2026-10-17 on Christian's go: `tvos-shared-extraction` `9ee8597d4` → `523ad97db`, pushed, branch + clone deleted, outer pointer bumped; NOT cut)
 
 Branch `claude/rc5-promises` in the clone `~/Claude/Projects/NuvioMobile-rc5-promises`, off `9ee8597d4`, local only
 (not pushed): `aa617f2dc` wave 1 (agents α = P1, β = P3/P4/P5) + `523ad97db` review r1 fixes.
@@ -241,4 +241,4 @@ Seen on the way, not in scope: the Stage's Continue Watching and Upcoming headin
 in a different row view (`UpcomingRow.swift`, the CW row in `HomeView`); a cheap follow-up if Steven names it.
 For the next DM: the heading gap fell from ≈64 to ≈30 pt in his config (the row alignment, not a spacing change);
 the native player shows the time only while scrubbing, and FF/RW scan pictures are behind the Developer row.
-Next: Christian's go to fast-forward `claude/rc5-promises` into `tvos-shared-extraction`, then rc6.
+Next: rc6 (`scripts/cut-rc.sh`) on Christian's go; the notes carry the four items above and the Developer row's default (off).
