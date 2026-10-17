@@ -1,6 +1,6 @@
 # SwiftUI performance review + focus consistency pass (2026-10-17)
 
-Submodule branch `claude/focus-consistency` (tip `aa66d8bab`: `a802e41f8` + `f78fe7ea8` + the Home split merged from `claude/home-split`; local only), cut from `tvos-shared-extraction` `523ad97db`. Not merged.
+Submodule branch `claude/focus-consistency` (tip `2353a5e9b`: `a802e41f8` + `f78fe7ea8` + the Home split `f96acfdc0` / `9b4f4963d` merged + `25ce9bde9`; local only), cut from `tvos-shared-extraction` `523ad97db`. Not merged.
 
 Method: three read-only review agents (Home/browse performance, the rest of the app's performance, focus across every screen). They used the `swiftui-performance-audit` and `swiftui-ui-patterns` skills. All performance findings come from reading the code: there is no Instruments trace yet.
 
@@ -99,7 +99,7 @@ Built in a separate session and clone, branched off `a802e41f8`. It shares no fi
 
 Suggested next step: an Instruments SwiftUI trace on the Apple TV (View Body counts for `CatalogRowView`, `InlineTrailerCard`, `PosterCard`, `EpisodesSection`), resting ~0.3 s per card across a Home row and walking a long series' episodes, before and after #1-#3.
 
-## Device pass 2026-10-17 (Living Room Apple TV, Test 2, dev build of `aa66d8bab` + `25ce9bde9`)
+## Device pass 2026-10-17 (Living Room Apple TV, Test 2, dev builds of `aa66d8bab` + `25ce9bde9`, then `2353a5e9b`)
 
 Driven from the Mac with the remote rig. Screenshots are in `docs/research/focus-perf-device-2026-10-17/`.
 
@@ -110,7 +110,7 @@ Driven from the Mac with the remote rig. Screenshots are in `docs/research/focus
 | Continue Watching hold menu (after the Home split's actions rework) | PASS |
 | Classic collection folder: Up from the fifth grid card reaches the chips | PASS (no TMDB source on Test 2, so the Edit Filters button wasn't checked) |
 | Folder return lands on the folder tile | PASS |
-| **Home: after opening a collection folder and coming back, Up from that row** | **FAIL, regression from the Home split.** Focus jumps into the banner, the rows don't scroll back, and Upcoming / Continue Watching can't be reached. The base `f78fe7ea8` gets it right (Up → Upcoming). Without the folder visit, the split build is correct. Sent back to the Home split session for a fix |
+| Home: after opening a collection folder and coming back, Up from that row | **Pre-existing, intermittent; not caused by this work.** Focus can jump into the banner without the rows scrolling back, which strands Upcoming / Continue Watching. It first looked like a Home split regression (split build 2 of 2 failed, base passed once). A second base walk failed the same way (`n04-up.jpg`), and the simulator's base takes the banner 3/3 in the pinned case. Merged `9b4f4963d` anyway: it restores the base's row re-renders around push/pop and focus requests, at the same body counts. On it, the first Up landed on Upcoming but the second skipped Continue Watching (`g04`/`g05`); the log shows `upFallback … declined reason=staleInput` / `reason=rail`. Logged as a separate bug for its own fix |
 | Detail (series): Resume → studio chips → seasons → episodes; Season 2 switch updates the list | PASS |
 | Stream picker: an add-on without a logo shows no placeholder | PASS |
 | Player subtitle-delay Reset | Not walked (needs a playback session) |
