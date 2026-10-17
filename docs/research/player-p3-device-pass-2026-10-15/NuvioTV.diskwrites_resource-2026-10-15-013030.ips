@@ -1,0 +1,107 @@
+{"app_name":"NuvioTV","timestamp":"2026-10-15 01:30:30.00 -0400","app_version":"0.3.0","slice_uuid":"67B49D8D-DE41-34D4-845E-E4DB02BB62BC","build_version":"135","bundleID":"com.youngchris29.NuvioTV","duration_ms":"3544047","share_with_app_devs":0,"is_first_party":0,"bug_type":"145","os_version":"Apple TVOS 27.2 (24K5103f)","roots_installed":0,"name":"NuvioTV","incident_id":"87215B9E-37DC-4B7A-BB50-1F140FADBA15"}
+Date/Time:        2026-10-15 00:31:26.236 -0400
+End time:         2026-10-15 01:30:30.282 -0400
+OS Version:       Apple TVOS 27.2 (Build 24K5103f)
+Architecture:     arm64e
+Report Version:   73
+Incident Identifier: 87215B9E-37DC-4B7A-BB50-1F140FADBA15
+
+Data Source:      Microstackshots
+Shared Cache:     671D434B-E4AD-3887-8FF0-03DE850F83B7 slid base address 0x197400000
+
+Command:          NuvioTV
+Path:             /private/var/containers/Bundle/Application/5C834F80-421A-4C63-A73D-00170CD6074A/NuvioTV.app/NuvioTV
+Identifier:       com.youngchris29.NuvioTV
+Version:          0.3.0 (135)
+Is First Party:   No
+Beta Identifier:  C9D7DAC9-422B-4A6E-8780-7579A7A9669D
+Resource Coalition: 915
+Architecture:     arm64
+PID:              1100
+
+Event:            disk writes
+Action taken:     none
+Writes:           4297.91 MB of file backed memory dirtied over 3544 seconds (1212.71 KB per second average), exceeding limit of 49.71 KB per second over 86400 seconds
+Writes limit:     4294.97 MB
+Limit duration:   86400s
+Writes caused:    4297.91 MB
+Writes duration:  3544s
+Duration:         3544.05s
+Duration Sampled: 7.25s (event starts 3535.71s before samples, event ends 1.09s after samples)
+Steps:            11 (2 samples lost, 10.49 MB/step)
+
+Hardware model:   AppleTV14,1
+Active cpus:      5
+Memory size:      3.88 GB
+HW page size:     16384
+VM page size:     16384
+
+Models:           UNKNOWN
+
+
+Heaviest stack for the target process:
+  11  ??? (libsystem_pthread.dylib + 2320) [0x1c6f26910]
+  11  ??? (libsystem_pthread.dylib + 2736) [0x1c6f26ab0]
+  11  ??? (libdispatch.dylib + 83980) [0x25c25780c]
+  11  ??? (libdispatch.dylib + 85772) [0x25c257f0c]
+  11  ??? (libdispatch.dylib + 43624) [0x25c24da68]
+  11  ??? (libdispatch.dylib + 40796) [0x25c24cf5c]
+  11  ??? (libdispatch.dylib + 111432) [0x25c25e348]
+  11  ??? (libdispatch.dylib + 6580) [0x25c2449b4]
+  11  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 3141888) [0x1049e7100]
+  11  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 13044876) [0x105358c8c]
+  11  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 13083204) [0x105362244]
+  9   ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 13131820) [0x10536e02c]
+  9   ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 13133508) [0x10536e6c4]
+  9   ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 13148492) [0x10537214c]
+  9   ??? (Foundation + 881404) [0x197a572fc]
+  9   ??? (libsystem_kernel.dylib + 5268) [0x1c8532494]
+
+
+Powerstats for:   NuvioTV [1100]
+UUID:             67B49D8D-DE41-34D4-845E-E4DB02BB62BC
+Path:             /private/var/containers/Bundle/Application/5C834F80-421A-4C63-A73D-00170CD6074A/NuvioTV.app/NuvioTV
+Identifier:       com.youngchris29.NuvioTV
+Version:          0.3.0 (135)
+Is First Party:   No
+Beta Identifier:  C9D7DAC9-422B-4A6E-8780-7579A7A9669D
+Resource Coalition: 11 samples 915
+Architecture:     arm64
+Footprint:        514.12 MB
+Pageins:          1502 pages
+Start time:       2026-10-15 01:30:21.950 -0400
+End time:         2026-10-15 01:30:29.196 -0400
+Num samples:      11 (100%)
+Energy:           4065.13 uWh
+Num threads:      1
+Primary state:    11 samples Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS User Initiated, Requested Thread QoS User Initiated, Override Thread QoS Unspecified, p-core
+User Activity:    0 samples Idle, 0 samples Active, 11 samples Unknown
+Power Source:     0 samples on Battery, 0 samples on AC, 11 samples Unknown
+  11  ??? (libsystem_pthread.dylib + 2320) [0x1c6f26910]
+    11  ??? (libsystem_pthread.dylib + 2736) [0x1c6f26ab0]
+      11  ??? (libdispatch.dylib + 83980) [0x25c25780c]
+        11  ??? (libdispatch.dylib + 85772) [0x25c257f0c]
+          11  ??? (libdispatch.dylib + 43624) [0x25c24da68]
+            11  ??? (libdispatch.dylib + 40796) [0x25c24cf5c]
+              11  ??? (libdispatch.dylib + 111432) [0x25c25e348]
+                11  ??? (libdispatch.dylib + 6580) [0x25c2449b4]
+                  11  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 3141888) [0x1049e7100]
+                    11  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 13044876) [0x105358c8c]
+                      11  ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 13083204) [0x105362244]
+                        9   ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 13131820) [0x10536e02c]
+                          9   ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 13133508) [0x10536e6c4]
+                            9   ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 13148492) [0x10537214c]
+                              9   ??? (Foundation + 881404) [0x197a572fc]
+                                9   ??? (libsystem_kernel.dylib + 5268) [0x1c8532494]
+                        2   ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 13132820) [0x10536e414]
+                          2   ??? (<10562099-436A-3BCA-9615-6F5AD997AB75> + 8137220) [0x104eaaa04]
+                            2   ??? (Foundation + 881404) [0x197a572fc]
+                              2   ??? (libsystem_kernel.dylib + 5268) [0x1c8532494]
+
+  Binary Images:
+           0x1043f4000 -                ???  com.youngchris29.NuvioTV 0.3.0 (135) <67B49D8D-DE41-34D4-845E-E4DB02BB62BC>  /private/var/containers/Bundle/Application/5C834F80-421A-4C63-A73D-00170CD6074A/NuvioTV.app/NuvioTV
+           0x1046e8000 -                ???  ???                                  <10562099-436A-3BCA-9615-6F5AD997AB75>
+           0x197980000 -        0x198a76a03  Foundation                           <72A7E6B1-7875-32BA-B960-B8C20F7C1532>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x1c6f26000 -        0x1c6f317f3  libsystem_pthread.dylib              <4275BC12-0B97-3087-8C82-B417B3445CB9>  /usr/lib/system/libsystem_pthread.dylib
+           0x1c8531000 -        0x1c856deab  libsystem_kernel.dylib               <C36A9D26-913A-3FBD-AB22-53777DEEEFC6>  /usr/lib/system/libsystem_kernel.dylib
+           0x25c243000 -        0x25c28859f  libdispatch.dylib                    <1BFC4666-9F60-3802-A2D2-CFDCB6B93EB8>  /usr/lib/system/libdispatch.dylib

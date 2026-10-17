@@ -1,0 +1,1525 @@
+[LaunchTrace] +0ms app_init
+[ExtPlayerProbe] canOpenURL(infuse://) = true
+2026-10-16 18:04:06.422 NuvioTV[2531:1449400] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ExtPlayerProbe] canOpenURL(vlc-x-callback://) = false
+[ExtPlayerProbe] canOpenURL(outplayer://) = false
+[ExtPlayerProbe] canOpenURL(open-vidhub://) = true
+[ExtPlayerProbe] canOpenURL(vidhub://) = false
+[ExtPlayerProbe] canOpenURL(senplayer://) = false
+[ExtPlayerProbe] availablePlayers = ["infuse:Infuse", "vidhub:VidHub"]
+2026-10-16 18:04:06.423 NuvioTV[2531:1449400] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-16 18:04:06.423 NuvioTV[2531:1449400] -canOpenURL: failed for URL: "vidhub://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-16 18:04:06.423 NuvioTV[2531:1449400] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-16 18:04:06.424 NuvioTV[2531:1449400] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-16 18:04:06.424 NuvioTV[2531:1449400] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-16 18:04:06.425 NuvioTV[2531:1449400] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ProfileSelect] auto-enter profile 3
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-16 18:04:06.827 NuvioTV[2531:1449400] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+[LaunchTrace] +612ms home_appear
+2026-10-16 18:04:06.856 NuvioTV[2531:1449400] [TrailerPipeline] trailerLocation heroMode=NO
+[TopShelf] wrote 0 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 18:04:06.901 NuvioTV[2531:1449400] [HomeScrollProbe] REGIME-CHANGE from=M330c1p1r0z1t37h1rt4 to=L403c1p1r0z1t37h1rt4 fits=1
+[TopShelf] wrote 0 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 0 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +1117ms artwork #1: mem=0 disk=1 net=0 fail=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +2019ms artwork #10: mem=0 disk=10 net=0 fail=0
+[LaunchTrace] +2020ms first_rows n=5 hero=8
+[LaunchTrace] +2020ms first_hero n=8
+2026-10-16 18:04:08.286 NuvioTV[2531:1449400] [HomeHero] logoInk sync-sample ms=0.33
+2026-10-16 18:04:08.287 NuvioTV[2531:1449400] [HomeScrollProbe] REGIME-CHANGE from=L403c1p1r0z1t37h1rt4 to=L403c1p0r0z1t37h1rt4 fits=0
+[LaunchTrace] +2100ms artwork #25: mem=0 disk=25 net=0 fail=0
+[LaunchTrace] +2133ms rows n=9
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +2160ms artwork #50: mem=0 disk=50 net=0 fail=0
+2026-10-16 18:04:35.279 NuvioTV[2531:1449400] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[SubtitleRepo] Fetching subtitles type=movie id=tt3118958 across 9 enabled addons
+[SubtitleRepo] Skip Comet: no subtitles resource
+[SubtitleRepo] Skip Torrentio: no subtitles resource
+[SubtitleRepo] Skip AIO Streams: no subtitles resource
+[SubtitleRepo] Skip Cinemeta: no subtitles resource
+[SubtitleRepo] Skip BetterPosters: no subtitles resource
+[SubtitleRepo] Querying AIO Metadata 1: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/movie/tt3118958.json
+[SubtitleRepo] Querying AIO Metadata 2: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/movie/tt3118958.json
+[SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/movie/tt3118958.json
+[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/eyJpIjoiTjN5UFFXNDhwaUNuTFZqeDdLSForQT09IiwiZSI6Ijhzc3lwUUhoNjJRQmhvdGx1bTI4VEVaNVVYMGcyOGt3ZCtVdWJFMW5VTjg9IiwidCI6ImEifQ/su2026-10-16 18:04:35.280 NuvioTV[2531:1449400] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-16 18:04:35.280 NuvioTV[2531:1449400] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+btitles/movie/tt3118958.json
+[SubtitleRepo] OpenSubtitles v3: 54 subtitles in 54.191417ms
+[SubtitleRepo] AIO Metadata 1: 0 subtitles in 139.858250ms
+[SubtitleRepo] AIO Metadata 2: 0 subtitles in 139.823209ms
+[SubtitleRepo] Duck Streams (AIOStreams): 54 subtitles in 654.837417ms
+[SubtitleRepo] Subtitle fetch done: 108 total in 657.102792ms
+[PlayerRouter] self-check passed
+[Loading] engine=mpv stage=connecting t=+0.58s
+[Failover] mpv start watchdog armed: 25 s
+[mvk-info] MoltenVK version 1.4.1, supporting Vulkan version 1.4.334.
+	The following 152 Vulkan extensions are supported:
+	VK_KHR_16bit_storage v1
+	VK_KHR_8bit_storage v1
+	VK_KHR_bind_memory2 v1
+	VK_KHR_buffer_device_address v1
+	VK_KHR_calibrated_timestamps v1
+	VK_KHR_copy_commands2 v1
+	VK_KHR_create_renderpass2 v1
+	VK_KHR_dedicated_allocation v3
+	VK_KHR_deferred_host_operations v4
+	VK_KHR_depth_stencil_resolve v1
+	VK_KHR_descriptor_update_template v1
+	VK_KHR_device_group v4
+	VK_KHR_device_group_creation v1
+	VK_KHR_driver_properties v1
+	VK_KHR_dynamic_rendering v1
+	VK_KHR_dynamic_rendering_local_read v1
+	VK_KHR_external_fence v1
+	VK_KHR_external_fence_capabilities v1
+	VK_KHR_external_memory v1
+	VK_KHR_external_memory_capabilities v1
+	VK_KHR_external_semaphore v1
+	VK_KHR_external_semaphore_capabilities v1
+	VK_KHR_format_feature_flags2 v2
+	VK_KHR_fragment_shader_barycentric v1
+	VK_KHR_get_memory_requirements2 v1
+	VK_KHR_get_physical_device_properties2 v2
+	VK_KHR_get_surface_capabilities2 v1
+	VK_KHR_global_priority v1
+	VK_KHR_image_format_list v1
+	VK_KHR_imageless_framebuffer v1
+	VK_KHR_incremental_present v2
+	VK_KHR_index_type_uint8 v1
+	VK_KHR_line_rasterization v1
+	VK_KHR_load_store_op_none v1
+	VK_KHR_maintenance1 v2
+	VK_KHR_maintenance2 v1
+	VK_KHR_maintenance3 v1
+	VK_KHR_maintenance4 v2
+	VK_KHR_maintenance5 v1
+	VK_KHR_maintenance6 v1
+	VK_KHR_maintenance7 v1
+	VK_KHR_maintenance8 v1
+	VK_KHR_maintenance9 v1
+	VK_KHR_map_memory2 v1
+	VK_KHR_multiview v1
+	VK_KHR_portability_subset v1
+	VK_KHR_present_id v1
+	VK_KHR_present_id2 v1
+	VK_KHR_present_wait v1
+	VK_KHR_present_wait2 v1
+	VK_KHR_push_descriptor v2
+	VK_KHR_relaxed_block_layout v1
+	VK_KHR_robustness2 v1
+	VK_KHR_sampler_mirror_clamp_to_edge v3
+	VK_KHR_sampler_ycbcr_conversion v14
+	VK_KHR_separate_depth_stencil_layouts v1
+	VK_KHR_shader_draw_parameters v1
+	VK_KHR_shader_expect_assume v1
+	VK_KHR_shader_float_controls v4
+	VK_KHR_shader_float_controls2 v1
+	VK_KHR_shader_float16_int8 v1
+	VK_KHR_shader_fma v1
+	VK_KHR_shader_integer_dot_product v1
+	VK_KHR_shader_maximal_reconvergence v1
+	VK_KHR_shader_non_semantic_info v1
+	VK_KHR_shader_quad_control v1
+	VK_KHR_shader_relaxed_extended_instruction v1
+	VK_KHR_shader_subgroup_extended_types v1
+	VK_KHR_shader_subgroup_rotate v2
+	VK_KHR_shader_subgroup_uniform_control_flow v1
+	VK_KHR_shader_terminate_invocation v1
+	VK_KHR_spirv_1_4 v1
+	VK_KHR_storage_buffer_storage_class v1
+	VK_KHR_surface v25
+	VK_KHR_surface_maintenance1 v1
+	VK_KHR_surface_protected_capabilities v1
+	VK_KHR_swapchain v70
+	VK_KHR_swapchain_maintenance1 v1
+	VK_KHR_swapchain_mutable_format v1
+	VK_KHR_synchronization2 v1
+	VK_KHR_timeline_semaphore v2
+	VK_KHR_uniform_buffer_standard_layout v1
+	VK_KHR_variable_pointers v1
+	VK_KHR_vertex_attribute_divisor v1
+	VK_KHR_vulkan_memory_model v3
+	VK_KHR_zero_initialize_workgroup_memory v1
+	VK_EXT_4444_formats v1
+	VK_EXT_buffer_device_address v2
+	VK_EXT_calibrated_timestamps v2
+	VK_EXT_debug_marker v4
+	VK_EXT_debug_report v10
+	VK_EXT_debug_utils v2
+	VK_EXT_depth_clip_control v1
+	VK_EXT_descriptor_indexing v2
+	VK_EXT_extended_dynamic_state v1
+	VK_EXT_extended_dynamic_state2 v1
+	VK_EXT_extended_dynamic_state3 v2
+	VK_EXT_external_memory_host v1
+	VK_EXT_external_memory_metal v1
+	VK_EXT_fragment_shader_interlock v1
+	VK_EXT_global_priority v2
+	VK_EXT_global_priority_query v1
+	VK_EXT_headless_surface v1
+	VK_EXT_host_image_copy v1
+	VK_EXT_host_query_reset v1
+	VK_EXT_image_2d_view_of_3d v1
+	VK_EXT_image_robustness v1
+	VK_EXT_index_type_uint8 v1
+	VK_EXT_inline_uniform_block v1
+	VK_EXT_layer_settings v2
+	VK_EXT_legacy_dithering v2
+	VK_EXT_line_rasterization v1
+	VK_EXT_load_store_op_none v1
+	VK_EXT_memory_budget v1
+	VK_EXT_metal_objects v2
+	VK_EXT_metal_surface v1
+	VK_EXT_non_seamless_cube_map v1
+	VK_EXT_pipeline_creation_cache_control v3
+	VK_EXT_pipeline_creation_feedback v1
+	VK_EXT_pipeline_robustness v1
+	VK_EXT_post_depth_coverage v1
+	VK_EXT_primitive_topology_list_restart v1
+	VK_EXT_private_data v1
+	VK_EXT_provoking_vertex v1
+	VK_EXT_robustness2 v1
+	VK_EXT_sample_locations v1
+	VK_EXT_scalar_block_layout v1
+	VK_EXT_separate_stencil_usage v1
+	VK_EXT_shader_atomic_float v1
+	VK_EXT_shader_demote_to_helper_invocation v1
+	VK_EXT_shader_stencil_export v1
+	VK_EXT_shader_subgroup_ballot v1
+	VK_EXT_shader_subgroup_vote v1
+	VK_EXT_shader_viewport_index_layer v1
+	VK_EXT_subgroup_size_control v2
+	VK_EXT_surface_maintenance1 v1
+	VK_EXT_swapchain_colorspace v5
+	VK_EXT_swapchain_maintenance1 v1
+	VK_EXT_texel_buffer_alignment v1
+	VK_EXT_texture_compression_astc_hdr v1
+	VK_EXT_tooling_info v1
+	VK_EXT_vertex_attribute_divisor v3
+	VK_AMD_gpu_shader_half_float v2
+	VK_AMD_negative_viewport_height v1
+	VK_AMD_shader_image_load_store_lod v1
+	VK_AMD_shader_trinary_minmax v1
+	VK_GOOGLE_display_timing v1
+	VK_IMG_format_pvrtc v1
+	VK_INTEL_shader_integer_functions2 v1
+	VK_MVK_ios_surface v3
+	VK_MVK_moltenvk v37
+	VK_NV_fragment_shader_barycentric v1
+[mvk-info] GPU device:
+	model: Apple A15 GPU
+	type: Integrated
+	vendorID: 0x106b
+	deviceID: 0x1b020008
+	pipelineCacheUUID: DB445FF2-1B02-0008-0000-000100000000
+	GPU memory available: 2730 MB
+	GPU memory used: 0 MB
+	Metal Shading Language 3.1
+	supports the following GPU Features:
+		GPU Family Metal 3
+		GPU Family Apple 8
+		Read-Write Texture Tier 2
+[mvk-info] Created VkInstance for Vulkan version 1.4.334, as requested by app, with the following 6 Vulkan extensions enabled:
+	VK_KHR_get_surface_capabilities2 v1
+	VK_KHR_surface v25
+	VK_KHR_surface_maintenance1 v1
+	VK_EXT_metal_surface v1
+	VK_EXT_surface_maintenance1 v1
+	VK_EXT_swapchain_colorspace v5
+[mvk-info] Vulkan semaphores using MTLEvent.
+[mvk-info] Descriptor sets binding resources using Metal3 argument buffers.
+[mvk-info] Created VkDevice to run on GPU Apple A15 GPU with the following 12 Vulkan extensions enabled:
+	VK_KHR_dynamic_rendering v1
+	VK_KHR_portability_subset v1
+	VK_KHR_shader_expect_assume v1
+	VK_KHR_shader_relaxed_extended_instruction v1
+	VK_KHR_shader_subgroup_rotate v2
+	VK_KHR_swapchain v70
+	VK_KHR_swapchain_maintenance1 v1
+	VK_KHR_zero_initialize_workgroup_memory v1
+	VK_EXT_external_memory_host v1
+	VK_EXT_metal_objects v2
+	VK_EXT_shader_atomic_float v1
+	VK_EXT_swapchain_maintenance1 v1
+[Loading] engine=mpv stage=buffering t=+1.28s
+[mvk-info] Created 3 swapchain images with size (3840, 2160) and contents scale 2.0 in layer (null) (0x118c6d9f0) on screen Main Screen.
+[mvk-info] Created 3 swapchain images with size (3840, 2160) and contents scale 2.0 in layer (null) (0x118c6d9f0) on screen Main Screen.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+2026-10-16 18:04:58.282 NuvioTV[2531:1449723] [Chapters] n=0 dropped=0 dur=5227.4 src=json raw=[]
+2026-10-16 18:04:58.283 NuvioTV[2531:1449723] [SeekProbe] seek gen=1 args=89.000 absolute status=0
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[Loading] engine=mpv stage=started t=+2.58s
+2026-10-16 18:04:59.847 NuvioTV[2531:1449723] [SeekProbe] restart gen=1 landed=89.428
+[Mem] +5s rss=505 MB mode=harvest store=0 harvest=0 decode=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Transport] cache-state raw={"cache-end":238.880000,"reader-pts":107.808000,"cache-duration":131.072000,"eof":false,"underrun":false,"idle":true,"total-bytes":178113536,"fw-bytes":157304832,"raw-input-rate":1208267,"debug-low-level-seeks":1,"debug-byte-level-seeks":2,"debug-ts-last":238.910000,"ts-per-stream":[{"type":"video", ranges=2 fallback=0 +16s
+2026-10-16 18:05:14.378 NuvioTV[2531:1449400] [Aspect] fit override=-1 panscan=0.00 zoom=0.00 read=-1.000000
+[Harvest] path=vo gamma=bt.1886 matrix=bt.709 switch=vo
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-16 18:05:14.421 NuvioTV[2531:1449723] [Harvest] took=48.6ms size=1920x1080 fmt=bgr0 at=103.9 src=mpv
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+[MPVStats] vo=gpu-next
+[MPVStats] +5s cache=131.1s net=1.2 MB/s dropped=vo:0 dec:0 underruns=0
+[MPVStats] +10s cache=131.1s net=1.2 MB/s dropped=vo:0 dec:0 underruns=0
+[MPVStats] +16s cache=131.1s net=1.2 MB/s dropped=vo:0 dec:0 underruns=0
+2026-10-16 18:05:14.423 NuvioTV[2531:1449723] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-16 18:05:14.423 NuvioTV[2531:1449723] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-16 18:05:14.429 NuvioTV[2531:1449400] [Harvest] stored n=1 bytes=7630 outcome=stored rss=562
+[MPVStats] +21s cache=131.0s net=1.3 MB/s dropped=vo:8 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 18:05:24.526 NuvioTV[2531:1449600] [Harvest] took=108.9ms size=1920x1080 fmt=bgr0 at=114.0 src=mpv
+2026-10-16 18:05:24.535 NuvioTV[2531:1449400] [Harvest] slow (108.9ms > 60ms): interval now 30s for this file
+2026-10-16 18:05:24.536 NuvioTV[2531:1449400] [Harvest] stored n=2 bytes=18282 outcome=stored rss=636
+[MPVStats] +27s cache=131.4s net=1.3 MB/s dropped=vo:8 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +32s cache=131.0s net=1.1 MB/s dropped=vo:8 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +38s cache=131.4s net=1.1 MB/s dropped=vo:8 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Transport] cache-state raw={"cache-end":265.472000,"reader-pts":134.304000,"cache-duration":131.168000,"eof":false,"underrun":false,"idle":true,"total-bytes":208777120,"fw-bytes":157303920,"raw-input-rate":1129386,"debug-low-level-seeks":1,"debug-byte-level-seeks":2,"debug-ts-last":265.479000,"ts-per-stream":[{"type":"video", ranges=2 fallback=0 +42s
+2026-10-16 18:05:47.005 NuvioTV[2531:1449400] [Scrub] begin base=130.43 thr=45 curve=orivio
+2026-10-16 18:05:47.168 NuvioTV[2531:1449400] [Scrub] stroke end intent=h travel=1253 vx=7715
+2026-10-16 18:05:48.141 NuvioTV[2531:1449400] [Scrub] commit target=1150.83 from=130.43 stages=ke
+2026-10-16 18:05:48.141 NuvioTV[2531:1449722] [SeekProbe] seek gen=2 args=1150.834 absolute+keyframes status=0
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-16 18:05:48.634 NuvioTV[2531:1449722] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-16 18:05:48.634 NuvioTV[2531:1449722] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-16 18:05:48.806 NuvioTV[2531:1449722] [SeekProbe] restart gen=2 landed=1150.112
+2026-10-16 18:05:48.961 NuvioTV[2531:1449722] [SeekProbe] seek gen=3 args=1150.834 absolute+exact status=0
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-16 18:05:48.972 NuvioTV[2531:1449722] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-16 18:05:48.972 NuvioTV[2531:1449722] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-16 18:05:49.012 NuvioTV[2531:1450107] [SeekProbe] restart gen=3 landed=1150.863
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-16 18:05:51.423 NuvioTV[2531:1449400] [MenuProbe] perform action=hideBar mode=idle
+[Failover] viewWillDisappear isLeavingPlayer=true
+[mvk-info] Destroyed VkDevice on GPU Apple A15 GPU with 12 Vulkan extensions enabled.
+[mvk-info] Destroyed VkPhysicalDevice for GPU Apple A15 GPU with 95 MB of GPU memory still allocated.
+[mvk-info] Destroying VkInstance for Vulkan version 1.4.334 with 6 Vulkan extensions enabled.
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[PlayerRouter] self-check passed
+[Loading] engine=mpv stage=connecting t=+0.55s
+[Failover] mpv start watchdog armed: 25 s
+[mvk-info] MoltenVK version 1.4.1, supporting Vulkan version 1.4.334.
+	The following 152 Vulkan extensions are supported:
+	VK_KHR_16bit_storage v1
+	VK_KHR_8bit_storage v1
+	VK_KHR_bind_memory2 v1
+	VK_KHR_buffer_device_address v1
+	VK_KHR_calibrated_timestamps v1
+	VK_KHR_copy_commands2 v1
+	VK_KHR_create_renderpass2 v1
+	VK_KHR_dedicated_allocation v3
+	VK_KHR_deferred_host_operations v4
+	VK_KHR_depth_stencil_resolve v1
+	VK_KHR_descriptor_update_template v1
+	VK_KHR_device_group v4
+	VK_KHR_device_group_creation v1
+	VK_KHR_driver_properties v1
+	VK_KHR_dynamic_rendering v1
+	VK_KHR_dynamic_rendering_local_read v1
+	VK_KHR_external_fence v1
+	VK_KHR_external_fence_capabilities v1
+	VK_KHR_external_memory v1
+	VK_KHR_external_memory_capabilities v1
+	VK_KHR_external_semaphore v1
+	VK_KHR_external_semaphore_capabilities v1
+	VK_KHR_format_feature_flags2 v2
+	VK_KHR_fragment_shader_barycentric v1
+	VK_KHR_get_memory_requirements2 v1
+	VK_KHR_get_physical_device_properties2 v2
+	VK_KHR_get_surface_capabilities2 v1
+	VK_KHR_global_priority v1
+	VK_KHR_image_format_list v1
+	VK_KHR_imageless_framebuffer v1
+	VK_KHR_incremental_present v2
+	VK_KHR_index_type_uint8 v1
+	VK_KHR_line_rasterization v1
+	VK_KHR_load_store_op_none v1
+	VK_KHR_maintenance1 v2
+	VK_KHR_maintenance2 v1
+	VK_KHR_maintenance3 v1
+	VK_KHR_maintenance4 v2
+	VK_KHR_maintenance5 v1
+	VK_KHR_maintenance6 v1
+	VK_KHR_maintenance7 v1
+	VK_KHR_maintenance8 v1
+	VK_KHR_maintenance9 v1
+	VK_KHR_map_memory2 v1
+	VK_KHR_multiview v1
+	VK_KHR_portability_subset v1
+	VK_KHR_present_id v1
+	VK_KHR_present_id2 v1
+	VK_KHR_present_wait v1
+	VK_KHR_present_wait2 v1
+	VK_KHR_push_descriptor v2
+	VK_KHR_relaxed_block_layout v1
+	VK_KHR_robustness2 v1
+	VK_KHR_sampler_mirror_clamp_to_edge v3
+	VK_KHR_sampler_ycbcr_conversion v14
+	VK_KHR_separate_depth_stencil_layouts v1
+	VK_KHR_shader_draw_parameters v1
+	VK_KHR_shader_expect_assume v1
+	VK_KHR_shader_float_controls v4
+	VK_KHR_shader_float_controls2 v1
+	VK_KHR_shader_float16_int8 v1
+	VK_KHR_shader_fma v1
+	VK_KHR_shader_integer_dot_product v1
+	VK_KHR_shader_maximal_reconvergence v1
+	VK_KHR_shader_non_semantic_info v1
+	VK_KHR_shader_quad_control v1
+	VK_KHR_shader_relaxed_extended_instruction v1
+	VK_KHR_shader_subgroup_extended_types v1
+	VK_KHR_shader_subgroup_rotate v2
+	VK_KHR_shader_subgroup_uniform_control_flow v1
+	VK_KHR_shader_terminate_invocation v1
+	VK_KHR_spirv_1_4 v1
+	VK_KHR_storage_buffer_storage_class v1
+	VK_KHR_surface v25
+	VK_KHR_surface_maintenance1 v1
+	VK_KHR_surface_protected_capabilities v1
+	VK_KHR_swapchain v70
+	VK_KHR_swapchain_maintenance1 v1
+	VK_KHR_swapchain_mutable_format v1
+	VK_KHR_synchronization2 v1
+	VK_KHR_timeline_semaphore v2
+	VK_KHR_uniform_buffer_standard_layout v1
+	VK_KHR_variable_pointers v1
+	VK_KHR_vertex_attribute_divisor v1
+	VK_KHR_vulkan_memory_model v3
+	VK_KHR_zero_initialize_workgroup_memory v1
+	VK_EXT_4444_formats v1
+	VK_EXT_buffer_device_address v2
+	VK_EXT_calibrated_timestamps v2
+	VK_EXT_debug_marker v4
+	VK_EXT_debug_report v10
+	VK_EXT_debug_utils v2
+	VK_EXT_depth_clip_control v1
+	VK_EXT_descriptor_indexing v2
+	VK_EXT_extended_dynamic_state v1
+	VK_EXT_extended_dynamic_state2 v1
+	VK_EXT_extended_dynamic_state3 v2
+	VK_EXT_external_memory_host v1
+	VK_EXT_external_memory_metal v1
+	VK_EXT_fragment_shader_interlock v1
+	VK_EXT_global_priority v2
+	VK_EXT_global_priority_query v1
+	VK_EXT_headless_surface v1
+	VK_EXT_host_image_copy v1
+	VK_EXT_host_query_reset v1
+	VK_EXT_image_2d_view_of_3d v1
+	VK_EXT_image_robustness v1
+	VK_EXT_index_type_uint8 v1
+	VK_EXT_inline_uniform_block v1
+	VK_EXT_layer_settings v2
+	VK_EXT_legacy_dithering v2
+	VK_EXT_line_rasterization v1
+	VK_EXT_load_store_op_none v1
+	VK_EXT_memory_budget v1
+	VK_EXT_metal_objects v2
+	VK_EXT_metal_surface v1
+	VK_EXT_non_seamless_cube_map v1
+	VK_EXT_pipeline_creation_cache_control v3
+	VK_EXT_pipeline_creation_feedback v1
+	VK_EXT_pipeline_robustness v1
+	VK_EXT_post_depth_coverage v1
+	VK_EXT_primitive_topology_list_restart v1
+	VK_EXT_private_data v1
+	VK_EXT_provoking_vertex v1
+	VK_EXT_robustness2 v1
+	VK_EXT_sample_locations v1
+	VK_EXT_scalar_block_layout v1
+	VK_EXT_separate_stencil_usage v1
+	VK_EXT_shader_atomic_float v1
+	VK_EXT_shader_demote_to_helper_invocation v1
+	VK_EXT_shader_stencil_export v1
+	VK_EXT_shader_subgroup_ballot v1
+	VK_EXT_shader_subgroup_vote v1
+	VK_EXT_shader_viewport_index_layer v1
+	VK_EXT_subgroup_size_control v2
+	VK_EXT_surface_maintenance1 v1
+	VK_EXT_swapchain_colorspace v5
+	VK_EXT_swapchain_maintenance1 v1
+	VK_EXT_texel_buffer_alignment v1
+	VK_EXT_texture_compression_astc_hdr v1
+	VK_EXT_tooling_info v1
+	VK_EXT_vertex_attribute_divisor v3
+	VK_AMD_gpu_shader_half_float v2
+	VK_AMD_negative_viewport_height v1
+	VK_AMD_shader_image_load_store_lod v1
+	VK_AMD_shader_trinary_minmax v1
+	VK_GOOGLE_display_timing v1
+	VK_IMG_format_pvrtc v1
+	VK_INTEL_shader_integer_functions2 v1
+	VK_MVK_ios_surface v3
+	VK_MVK_moltenvk v37
+	VK_NV_fragment_shader_barycentric v1
+[mvk-info] GPU device:
+	model: Apple A15 GPU
+	type: Integrated
+	vendorID: 0x106b
+	deviceID: 0x1b020008
+	pipelineCacheUUID: DB445FF2-1B02-0008-0000-000100000000
+	GPU memory available: 2730 MB
+	GPU memory used: 0 MB
+	Metal Shading Language 3.1
+	supports the following GPU Features:
+		GPU Family Metal 3
+		GPU Family Apple 8
+		Read-Write Texture Tier 2
+[mvk-info] Created VkInstance for Vulkan version 1.4.334, as requested by app, with the following 6 Vulkan extensions enabled:
+	VK_KHR_get_surface_capabilities2 v1
+	VK_KHR_surface v25
+	VK_KHR_surface_maintenance1 v1
+	VK_EXT_metal_surface v1
+	VK_EXT_surface_maintenance1 v1
+	VK_EXT_swapchain_colorspace v5
+[mvk-info] Vulkan semaphores using MTLEvent.
+[mvk-info] Descriptor sets binding resources using Metal3 argument buffers.
+[mvk-info] Created VkDevice to run on GPU Apple A15 GPU with the following 12 Vulkan extensions enabled:
+	VK_KHR_dynamic_rendering v1
+	VK_KHR_portability_subset v1
+	VK_KHR_shader_expect_assume v1
+	VK_KHR_shader_relaxed_extended_instruction v1
+	VK_KHR_shader_subgroup_rotate v2
+	VK_KHR_swapchain v70
+	VK_KHR_swapchain_maintenance1 v1
+	VK_KHR_zero_initialize_workgroup_memory v1
+	VK_EXT_external_memory_host v1
+	VK_EXT_metal_objects v2
+	VK_EXT_shader_atomic_float v1
+	VK_EXT_swapchain_maintenance1 v1
+[Loading] engine=mpv stage=buffering t=+0.97s
+2026-10-16 18:07:05.075 NuvioTV[2531:1450265] [Chapters] n=0 dropped=0 dur=5227.4 src=json raw=[]
+[SubtitleRepo] Fetching subtitles type=movie id=tt3118958 across 9 enabled addons
+[SubtitleRepo] Skip Comet: no subtitles resource
+[SubtitleRepo] Skip Torrentio: no subtitles resource
+[SubtitleRepo] Skip AIO Streams: no subtitles resource
+[SubtitleRepo] Skip Cinemeta: no subtitles resource
+[SubtitleRepo] Skip BetterPosters: no subtitles resource
+[SubtitleRepo] Querying AIO Metadata 2: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/movie/tt3118958.json[SubtitleRepo] Querying AIO Metadata 1: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/movie/tt3118958.json
+
+[SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/movie/tt3118958.json
+[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/eyJpIjoiTjN5UFFXNDhwaUNuTFZqeDdLSForQT09IiwiZSI6Ijhzc3lwUUhoNjJRQmhvdGx1bTI4VEVaNVVYMGcyOGt3ZCtVdWJFMW5VTjg9IiwidCI6ImEifQ/subtitles/movie/tt3118958.json
+[mvk-info] Created 3 swapchain images with size (3840, 2160) and contents scale 2.0 in layer (null) (0x118957070) on screen Main Screen.
+[mvk-info] Created 3 swapchain images with size (3840, 2160) and contents scale 2.0 in layer (null) (0x118957070) on screen Main Screen.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[Transport] cache-state raw={"cache-duration":0.000000,"eof":false,"underrun":true,"idle":false,"total-bytes":1336352,"fw-bytes":0,"raw-input-rate":734,"debug-low-level-seeks":0,"debug-byte-level-seeks":0,"debug-ts-last":2.080000,"ts-per-stream":[],"bof-cached":true,"eof-cached":false,"seekable-ranges":[{"start":0.000000,"end" ranges=1 fallback=0 +0s
+2026-10-16 18:07:05.209 NuvioTV[2531:1450265] [SeekProbe] seek gen=1 args=1150.863 absolute status=0
+2026-10-16 18:07:05.219 NuvioTV[2531:1449400] [Aspect] fit override=-1 panscan=0.00 zoom=0.00 read=-1.000000
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[SubtitleRepo] AIO Metadata 2: 0 subtitles in 152.832917ms
+[Mem] +0s rss=274 MB mode=harvest store=0 harvest=0 decode=0
+[MPVStats] vo=gpu-next
+[MPVStats] +0s cache=0.0s net=0.0 MB/s dropped=vo:0 dec:0 underruns=0
+[SubtitleRepo] AIO Metadata 1: 0 subtitles in 158.598958ms
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[SubtitleRepo] OpenSubtitles v3: 54 subtitles in 169.784917ms
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[SubtitleRepo] Duck Streams (AIOStreams): 54 subtitles in 1.026163125s
+2026-10-16 18:07:06.105 NuvioTV[2531:1450107] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+[SubtitleRepo] Subtitle fetch done: 108 total in 1.028781959s
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-16 18:07:06.105 NuvioTV[2531:1450107] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-16 18:07:06.437 NuvioTV[2531:1450107] [SeekProbe] restart gen=1 landed=1151.030
+[Loading] engine=mpv stage=started t=+2.34s
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Transport] cache-state raw={"cache-end":1300.608000,"reader-pts":1169.664000,"cache-duration":130.944000,"eof":false,"underrun":false,"idle":true,"total-bytes":177676592,"fw-bytes":157325760,"raw-input-rate":1112877,"debug-low-level-seeks":1,"debug-byte-level-seeks":2,"debug-ts-last":1300.638000,"ts-per-stream":[{"type":"vide ranges=2 fallback=0 +16s
+[Harvest] path=vo gamma=bt.1886 matrix=bt.709 switch=vo
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+2026-10-16 18:07:21.410 NuvioTV[2531:1450107] [Harvest] took=61.6ms size=1920x1080 fmt=bgr0 at=1166.0 src=mpv
+[MPVStats] +6s cache=130.9s net=1.1 MB/s dropped=vo:0 dec:0 underruns=0
+[MPVStats] +11s cache=130.9s net=1.1 MB/s dropped=vo:0 dec:0 underruns=0
+[MPVStats] +16s cache=130.9s net=1.1 MB/s dropped=vo:0 dec:0 underruns=0
+2026-10-16 18:07:21.418 NuvioTV[2531:1449400] [Harvest] slow (61.6ms > 60ms): interval now 30s for this file
+2026-10-16 18:07:21.419 NuvioTV[2531:1449400] [Harvest] stored n=1 bytes=7835 outcome=stored rss=442
+[MPVStats] +22s cache=130.6s net=1.1 MB/s dropped=vo:0 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +27s cache=130.8s net=1.1 MB/s dropped=vo:0 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Failover] viewWillDisappear isLeavingPlayer=true
+[mvk-info] Destroyed VkDevice on GPU Apple A15 GPU with 12 Vulkan extensions enabled.
+[mvk-info] Destroyed VkPhysicalDevice for GPU Apple A15 GPU with 126 MB of GPU memory still allocated.
+[mvk-info] Destroying VkInstance for Vulkan version 1.4.334 with 6 Vulkan extensions enabled.
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[PlayerRouter] self-check passed
+[Loading] engine=mpv stage=connecting t=+0.55s
+[Failover] mpv start watchdog armed: 25 s
+[mvk-info] MoltenVK version 1.4.1, supporting Vulkan version 1.4.334.
+	The following 152 Vulkan extensions are supported:
+	VK_KHR_16bit_storage v1
+	VK_KHR_8bit_storage v1
+	VK_KHR_bind_memory2 v1
+	VK_KHR_buffer_device_address v1
+	VK_KHR_calibrated_timestamps v1
+	VK_KHR_copy_commands2 v1
+	VK_KHR_create_renderpass2 v1
+	VK_KHR_dedicated_allocation v3
+	VK_KHR_deferred_host_operations v4
+	VK_KHR_depth_stencil_resolve v1
+	VK_KHR_descriptor_update_template v1
+	VK_KHR_device_group v4
+	VK_KHR_device_group_creation v1
+	VK_KHR_driver_properties v1
+	VK_KHR_dynamic_rendering v1
+	VK_KHR_dynamic_rendering_local_read v1
+	VK_KHR_external_fence v1
+	VK_KHR_external_fence_capabilities v1
+	VK_KHR_external_memory v1
+	VK_KHR_external_memory_capabilities v1
+	VK_KHR_external_semaphore v1
+	VK_KHR_external_semaphore_capabilities v1
+	VK_KHR_format_feature_flags2 v2
+	VK_KHR_fragment_shader_barycentric v1
+	VK_KHR_get_memory_requirements2 v1
+	VK_KHR_get_physical_device_properties2 v2
+	VK_KHR_get_surface_capabilities2 v1
+	VK_KHR_global_priority v1
+	VK_KHR_image_format_list v1
+	VK_KHR_imageless_framebuffer v1
+	VK_KHR_incremental_present v2
+	VK_KHR_index_type_uint8 v1
+	VK_KHR_line_rasterization v1
+	VK_KHR_load_store_op_none v1
+	VK_KHR_maintenance1 v2
+	VK_KHR_maintenance2 v1
+	VK_KHR_maintenance3 v1
+	VK_KHR_maintenance4 v2
+	VK_KHR_maintenance5 v1
+	VK_KHR_maintenance6 v1
+	VK_KHR_maintenance7 v1
+	VK_KHR_maintenance8 v1
+	VK_KHR_maintenance9 v1
+	VK_KHR_map_memory2 v1
+	VK_KHR_multiview v1
+	VK_KHR_portability_subset v1
+	VK_KHR_present_id v1
+	VK_KHR_present_id2 v1
+	VK_KHR_present_wait v1
+	VK_KHR_present_wait2 v1
+	VK_KHR_push_descriptor v2
+	VK_KHR_relaxed_block_layout v1
+	VK_KHR_robustness2 v1
+	VK_KHR_sampler_mirror_clamp_to_edge v3
+	VK_KHR_sampler_ycbcr_conversion v14
+	VK_KHR_separate_depth_stencil_layouts v1
+	VK_KHR_shader_draw_parameters v1
+	VK_KHR_shader_expect_assume v1
+	VK_KHR_shader_float_controls v4
+	VK_KHR_shader_float_controls2 v1
+	VK_KHR_shader_float16_int8 v1
+	VK_KHR_shader_fma v1
+	VK_KHR_shader_integer_dot_product v1
+	VK_KHR_shader_maximal_reconvergence v1
+	VK_KHR_shader_non_semantic_info v1
+	VK_KHR_shader_quad_control v1
+	VK_KHR_shader_relaxed_extended_instruction v1
+	VK_KHR_shader_subgroup_extended_types v1
+	VK_KHR_shader_subgroup_rotate v2
+	VK_KHR_shader_subgroup_uniform_control_flow v1
+	VK_KHR_shader_terminate_invocation v1
+	VK_KHR_spirv_1_4 v1
+	VK_KHR_storage_buffer_storage_class v1
+	VK_KHR_surface v25
+	VK_KHR_surface_maintenance1 v1
+	VK_KHR_surface_protected_capabilities v1
+	VK_KHR_swapchain v70
+	VK_KHR_swapchain_maintenance1 v1
+	VK_KHR_swapchain_mutable_format v1
+	VK_KHR_synchronization2 v1
+	VK_KHR_timeline_semaphore v2
+	VK_KHR_uniform_buffer_standard_layout v1
+	VK_KHR_variable_pointers v1
+	VK_KHR_vertex_attribute_divisor v1
+	VK_KHR_vulkan_memory_model v3
+	VK_KHR_zero_initialize_workgroup_memory v1
+	VK_EXT_4444_formats v1
+	VK_EXT_buffer_device_address v2
+	VK_EXT_calibrated_timestamps v2
+	VK_EXT_debug_marker v4
+	VK_EXT_debug_report v10
+	VK_EXT_debug_utils v2
+	VK_EXT_depth_clip_control v1
+	VK_EXT_descriptor_indexing v2
+	VK_EXT_extended_dynamic_state v1
+	VK_EXT_extended_dynamic_state2 v1
+	VK_EXT_extended_dynamic_state3 v2
+	VK_EXT_external_memory_host v1
+	VK_EXT_external_memory_metal v1
+	VK_EXT_fragment_shader_interlock v1
+	VK_EXT_global_priority v2
+	VK_EXT_global_priority_query v1
+	VK_EXT_headless_surface v1
+	VK_EXT_host_image_copy v1
+	VK_EXT_host_query_reset v1
+	VK_EXT_image_2d_view_of_3d v1
+	VK_EXT_image_robustness v1
+	VK_EXT_index_type_uint8 v1
+	VK_EXT_inline_uniform_block v1
+	VK_EXT_layer_settings v2
+	VK_EXT_legacy_dithering v2
+	VK_EXT_line_rasterization v1
+	VK_EXT_load_store_op_none v1
+	VK_EXT_memory_budget v1
+	VK_EXT_metal_objects v2
+	VK_EXT_metal_surface v1
+	VK_EXT_non_seamless_cube_map v1
+	VK_EXT_pipeline_creation_cache_control v3
+	VK_EXT_pipeline_creation_feedback v1
+	VK_EXT_pipeline_robustness v1
+	VK_EXT_post_depth_coverage v1
+	VK_EXT_primitive_topology_list_restart v1
+	VK_EXT_private_data v1
+	VK_EXT_provoking_vertex v1
+	VK_EXT_robustness2 v1
+	VK_EXT_sample_locations v1
+	VK_EXT_scalar_block_layout v1
+	VK_EXT_separate_stencil_usage v1
+	VK_EXT_shader_atomic_float v1
+	VK_EXT_shader_demote_to_helper_invocation v1
+	VK_EXT_shader_stencil_export v1
+	VK_EXT_shader_subgroup_ballot v1
+	VK_EXT_shader_subgroup_vote v1
+	VK_EXT_shader_viewport_index_layer v1
+	VK_EXT_subgroup_size_control v2
+	VK_EXT_surface_maintenance1 v1
+	VK_EXT_swapchain_colorspace v5
+	VK_EXT_swapchain_maintenance1 v1
+	VK_EXT_texel_buffer_alignment v1
+	VK_EXT_texture_compression_astc_hdr v1
+	VK_EXT_tooling_info v1
+	VK_EXT_vertex_attribute_divisor v3
+	VK_AMD_gpu_shader_half_float v2
+	VK_AMD_negative_viewport_height v1
+	VK_AMD_shader_image_load_store_lod v1
+	VK_AMD_shader_trinary_minmax v1
+	VK_GOOGLE_display_timing v1
+	VK_IMG_format_pvrtc v1
+	VK_INTEL_shader_integer_functions2 v1
+	VK_MVK_ios_surface v3
+	VK_MVK_moltenvk v37
+	VK_NV_fragment_shader_barycentric v1
+[mvk-info] GPU device:
+	model: Apple A15 GPU
+	type: Integrated
+	vendorID: 0x106b
+	deviceID: 0x1b020008
+	pipelineCacheUUID: DB445FF2-1B02-0008-0000-000100000000
+	GPU memory available: 2730 MB
+	GPU memory used: 0 MB
+	Metal Shading Language 3.1
+	supports the following GPU Features:
+		GPU Family Metal 3
+		GPU Family Apple 8
+		Read-Write Texture Tier 2
+[mvk-info] Created VkInstance for Vulkan version 1.4.334, as requested by app, with the following 6 Vulkan extensions enabled:
+	VK_KHR_get_surface_capabilities2 v1
+	VK_KHR_surface v25
+	VK_KHR_surface_maintenance1 v1
+	VK_EXT_metal_surface v1
+	VK_EXT_surface_maintenance1 v1
+	VK_EXT_swapchain_colorspace v5
+[mvk-info] Vulkan semaphores using MTLEvent.
+[mvk-info] Descriptor sets binding resources using Metal3 argument buffers.
+[mvk-info] Created VkDevice to run on GPU Apple A15 GPU with the following 12 Vulkan extensions enabled:
+	VK_KHR_dynamic_rendering v1
+	VK_KHR_portability_subset v1
+	VK_KHR_shader_expect_assume v1
+	VK_KHR_shader_relaxed_extended_instruction v1
+	VK_KHR_shader_subgroup_rotate v2
+	VK_KHR_swapchain v70
+	VK_KHR_swapchain_maintenance1 v1
+	VK_KHR_zero_initialize_workgroup_memory v1
+	VK_EXT_external_memory_host v1
+	VK_EXT_metal_objects v2
+	VK_EXT_shader_atomic_float v1
+	VK_EXT_swapchain_maintenance1 v1
+[Loading] engine=mpv stage=buffering t=+0.91s
+[SubtitleRepo] Fetching subtitles type=movie id=tt3118958 across 9 enabled addons
+[SubtitleRepo] Skip Comet: no subtitles resource
+[SubtitleRepo] Skip Torrentio: no subtitles resource
+[SubtitleRepo] Skip AIO Streams: no subtitles resource
+[SubtitleRepo] Skip Cinemeta: no subtitles resource
+[SubtitleRepo] Skip BetterPosters: no subtitles resource
+[SubtitleRepo] Querying AIO Metadata 1: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/movie/tt3118958.json
+[SubtitleRepo] Querying AIO Metadata 2: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/movie/tt3118958.json
+[SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/movie/tt3118958.json
+[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/eyJpIjoiTjN5UFFXNDhwaUNuTFZqeDdLSForQT09IiwiZSI6Ijhzc3lwUUhoNjJRQmhvdGx1bTI4VEVaNVVYMGcyOGt3ZCtVdWJFMW5VTjg9IiwidCI6ImEifQ/subtitles/movie/tt3118958.json
+[mvk-info] Created 3 swapchain images with size (3840, 2160) and contents scale 2.0 in layer (null) (0x123c44870) on screen Main Screen.
+[mvk-info] Created 3 swapchain images with size (3840, 2160) and contents scale 2.0 in layer (null) (0x123c44870) on screen Main Screen.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[SubtitleRepo] AIO Metadata 2: 0 subtitles in 135.193750ms
+[SubtitleRepo] AIO Metadata 1: 0 subtitles in 140.828375ms
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[Mem] +0s rss=261 MB mode=harvest store=0 harvest=0 decode=0
+[Transport] cache-state raw={"cache-duration":0.000000,"eof":false,"underrun":true,"idle":false,"total-bytes":1336352,"fw-bytes":0,"raw-input-rate":482,"debug-low-level-seeks":0,"debug-byte-level-seeks":0,"debug-ts-last":2.080000,"ts-per-stream":[],"bof-cached":true,"eof-cached":false,"seekable-ranges":[{"start":0.000000,"end" ranges=1 fallback=0 +0s
+[MPVStats] vo=gpu-next
+[MPVStats] +0s cache=0.0s net=0.0 MB/s dropped=vo:0 dec:0 underruns=0
+2026-10-16 18:08:12.207 NuvioTV[2531:1450266] [Chapters] n=0 dropped=0 dur=5227.4 src=json raw=[]
+2026-10-16 18:08:12.207 NuvioTV[2531:1450266] [SeekProbe] seek gen=1 args=1180.226 absolute status=0
+2026-10-16 18:08:12.216 NuvioTV[2531:1449400] [Aspect] fit override=-1 panscan=0.00 zoom=0.00 read=-1.000000
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[SubtitleRepo] OpenSubtitles v3: 54 subtitles in 188.902375ms
+[SubtitleRepo] Duck Streams (AIOStreams): 54 subtitles in 327.346375ms
+[SubtitleRepo] Subtitle fetch done: 108 total in 328.934083ms
+[Loading] engine=mpv stage=started t=+1.55s
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-16 18:08:13.078 NuvioTV[2531:1450266] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-16 18:08:13.078 NuvioTV[2531:1450266] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-16 18:08:13.413 NuvioTV[2531:1450266] [SeekProbe] restart gen=1 landed=1180.434
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Transport] cache-state raw={"cache-end":1329.984000,"reader-pts":1198.528000,"cache-duration":131.456000,"eof":false,"underrun":false,"idle":true,"total-bytes":177567872,"fw-bytes":157313952,"raw-input-rate":1121643,"debug-low-level-seeks":1,"debug-byte-level-seeks":2,"debug-ts-last":1330.000000,"ts-per-stream":[{"type":"vide ranges=2 fallback=0 +15s
+[Harvest] path=vo gamma=bt.1886 matrix=bt.709 switch=vo
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+2026-10-16 18:08:28.023 NuvioTV[2531:1450266] [Harvest] took=57.0ms size=1920x1080 fmt=bgr0 at=1195.0 src=mpv
+[MPVStats] +6s cache=131.5s net=1.1 MB/s dropped=vo:0 dec:0 underruns=0
+[MPVStats] +11s cache=131.5s net=1.1 MB/s dropped=vo:0 dec:0 underruns=0
+[MPVStats] +16s cache=131.5s net=1.1 MB/s dropped=vo:0 dec:0 underruns=0
+2026-10-16 18:08:28.026 NuvioTV[2531:1449400] [Harvest] stored n=1 bytes=9065 outcome=stored rss=399
+[MPVStats] +21s cache=131.3s net=1.1 MB/s dropped=vo:0 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 18:08:38.405 NuvioTV[2531:1450266] [Harvest] took=208.6ms size=1920x1080 fmt=bgr0 at=1205.0 src=mpv
+2026-10-16 18:08:38.408 NuvioTV[2531:1449400] [Harvest] slow (208.6ms > 60ms): interval now 30s for this file
+2026-10-16 18:08:38.419 NuvioTV[2531:1449400] [Harvest] stored n=2 bytes=19703 outcome=stored rss=406
+[MPVStats] +27s cache=131.1s net=0.9 MB/s dropped=vo:11 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: h264: Failed to decode frame (invalid session, -12903)
+2026-10-16 18:08:39.041 NuvioTV[2531:1451297] [MPV] error: h264: Failed to decode frame (invalid session, -12903)
+[MPV] error: h264: hardware accelerator failed to decode picture
+[MPV] warn: h264: vt decoder cb: output image buffer is null: -12909, reconfig 1
+[MPV] error: h264: hardware accelerator failed to decode picture
+2026-10-16 18:08:39.041 NuvioTV[2531:1451297] [MPV] error: h264: hardware accelerator failed to decode picture
+2026-10-16 18:08:39.048 NuvioTV[2531:1450689] [MPV] warn: h264: vt decoder cb: output image buffer is null: -12909, reconfig 1
+2026-10-16 18:08:39.048 NuvioTV[2531:1451305] [MPV] error: h264: hardware accelerator failed to decode picture
+[MPV] warn: h264: vt decoder cb: output image buffer is null: -12909, reconfig 1
+2026-10-16 18:08:39.131 NuvioTV[2531:1450266] [MPV] warn: h264: vt decoder cb: output image buffer is null: -12909, reconfig 1
+2026-10-16 18:08:39.131 NuvioTV[2531:1450266] [MPV] error: h264: hardware accelerator failed to decode picture
+[MPV] error: h264: hardware accelerator failed to decode picture
+[MPV] warn: h264: vt decoder cb: output image buffer is null: -12909, reconfig 1
+[MPV] error: h264: hardware accelerator failed to decode picture
+[MPV] warn: Error while decoding frame (hardware decoding)!
+[MPV] warn: Error while decoding frame (hardware decoding)!
+2026-10-16 18:08:39.134 NuvioTV[2531:1450266] [MPV] warn: h264: vt decoder cb: output image buffer is null: -12909, reconfig 1
+2026-10-16 18:08:39.135 NuvioTV[2531:1451297] [MPV] error: h264: hardware accelerator failed to decode picture
+2026-10-16 18:08:39.135 NuvioTV[2531:1451297] [MPV] warn: Error while decoding frame (hardware decoding)!
+2026-10-16 18:08:39.135 NuvioTV[2531:1451297] [MPV] warn: Error while decoding frame (hardware decoding)!
+2026-10-16 18:08:39.143 NuvioTV[2531:1450266] [MPV] warn: Error while decoding frame (hardware decoding)!
+[MPV] warn: Error while decoding frame (hardware decoding)!
+[MPV] warn: Attempting next decoding method after failure of h264-videotoolbox.
+2026-10-16 18:08:39.147 NuvioTV[2531:1450266] [MPV] warn: Attempting next decoding method after failure of h264-videotoolbox.
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-16 18:08:39.307 NuvioTV[2531:1450266] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-16 18:08:39.308 NuvioTV[2531:1450266] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+[LaunchTrace] +273790ms artwork #100: mem=2 disk=92 net=6 fail=0
+[mvk-error] VK_ERROR_DEVICE_LOST: Lost VkDevice after MTLCommandBuffer "vkAcquireNextImageKHR MTLCommandBuffer on Queue 0-0" execution failed (code 7): Insufficient Permission (to submit GPU work from background) (00000006:kIOGPUCommandBufferCallbackErrorBackgroundExecutionNotPermitted)
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[MPV] error: vkQueueSubmit2: VK_ERROR_DEVICE_LOST (../../../../libplacebo-v7.360.1/src/vulkan/command.c:533)
+2026-10-16 18:08:40.479 NuvioTV[2531:1450689] [MPV] error: vkQueueSubmit2: VK_ERROR_DEVICE_LOST (../../../../libplacebo-v7.360.1/src/vulkan/command.c:533)
+2026-10-16 18:08:40.479 NuvioTV[2531:1450689] [MPV] error: Retrieving query pool results: VK_ERROR_DEVICE_LOST (../../../../libplacebo-v7.360.1/src/vulkan/gpu.c:105)
+2026-10-16 18:08:40.480 NuvioTV[2531:1450689] [MPV] error: vkQueueSubmit2: VK_ERROR_DEVICE_LOST (../../../../libplacebo-v7.360.1/src/vulkan/command.c:533)
+2026-10-16 18:08:40.480 NuvioTV[2531:1450689] [MPV] error: Retrieving query pool results: VK_ERROR_DEVICE_LOST (../../../../libplacebo-v7.360.1/src/vulkan/gpu.c:105)
+[MPV] error: Retrieving query pool results: VK_ERROR_DEVICE_LOST (../../../../libplacebo-v7.360.1/src/vulkan/gpu.c:105)
+[MPV] error: vkQueueSubmit2: VK_ERROR_DEVICE_LOST (../../../../libplacebo-v7.360.1/src/vulkan/command.c:533)
+[MPV] error: Retrieving query pool results: VK_ERROR_DEVICE_LOST (../../../../libplacebo-v7.360.1/src/vulkan/gpu.c:105)
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[MPV] error: vkQueueSubmit2: VK_ERROR_DEVICE_LOST (../../../../libplacebo-v7.360.1/src/vulkan/command.c:533)
+2026-10-16 18:08:40.528 NuvioTV[2531:1451297] [MPV] error: vkQueueSubmit2: VK_ERROR_DEVICE_LOST (../../../../libplacebo-v7.360.1/src/vulkan/command.c:533)
+2026-10-16 18:08:40.529 NuvioTV[2531:1451297] [MPV] error: Retrieving query pool results: VK_ERROR_DEVICE_LOST (../../../../libplacebo-v7.360.1/src/vulkan/gpu.c:105)
+2026-10-16 18:08:40.529 NuvioTV[2531:1451297] [MPV] error: vkQueueSubmit2: VK_ERROR_DEVICE_LOST (../../../../libplacebo-v7.360.1/src/vulkan/command.c:533)
+2026-10-16 18:08:40.529 NuvioTV[2531:1451297] [MPV] error: Retrieving query pool results: VK_ERROR_DEVICE_LOST (../../../../libplacebo-v7.360.1/src/vulkan/gpu.c:105)
+[MPV] error: Retrieving query pool results: VK_ERROR_DEVICE_LOST (../../../../libplacebo-v7.360.1/src/vulkan/gpu.c:105)
+[MPV] error: vkQueueSubmit2: VK_ERROR_DEVICE_LOST (../../../../libplacebo-v7.360.1/src/vulkan/command.c:533)
+[MPV] error: Retrieving query pool results: VK_ERROR_DEVICE_LOST (../../../../libplacebo-v7.360.1/src/vulkan/gpu.c:105)
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[MPV] error: vkQueueSubmit2: VK_ERROR_DEVICE_LOST (../../../../libplacebo-v7.360.1/src/vulkan/command.c:533)
+2026-10-16 18:08:40.572 NuvioTV[2531:1451297] [MPV] error: vkQueueSubmit2: VK_ERROR_DEVICE_LOST (../../../../libplacebo-v7.360.1/src/vulkan/command.c:533)
+2026-10-16 18:08:40.572 NuvioTV[2531:1451297] [MPV] error: Retrieving query pool results: VK_ERROR_DEVICE_LOST (../../../../libplacebo-v7.360.1/src/vulkan/gpu.c:105)
+2026-10-16 18:08:40.573 NuvioTV[2531:1451297] [MPV] error: vkQueueSubmit2: VK_ERROR_DEVICE_LOST (../../../../libplacebo-v7.360.1/src/vulkan/command.c:533)
+2026-10-16 18:08:40.573 NuvioTV[2531:1451297] [MPV] error: Failed holding swapchain image for presentation
+2026-10-16 18:08:40.573 NuvioTV[2531:1451297] [MPV] error: Failed presenting frame!
+2026-10-16 18:08:40.574 NuvioTV[2531:1451297] [MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+2026-10-16 18:08:40.574 NuvioTV[2531:1451297] [MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+[MPV] error: Retrieving query pool results: VK_ERROR_DEVICE_LOST (../../../../libplacebo-v7.360.1/src/vulkan/gpu.c:105)
+[MPV] error: vkQueueSubmit2: VK_ERROR_DEVICE_LOST (../../../../libplacebo-v7.360.1/src/vulkan/command.c:533)
+[MPV] error: Failed holding swapchain image for presentation
+[MPV] error: Failed presenting frame!
+[MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+[MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+[MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+2026-10-16 18:08:40.640 NuvioTV[2531:1451297] [MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+[MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+2026-10-16 18:08:40.641 NuvioTV[2531:1451297] [MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+[MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+2026-10-16 18:08:40.757 NuvioTV[2531:1451297] [MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+[MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+2026-10-16 18:08:40.759 NuvioTV[2531:1451297] [MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+[MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+2026-10-16 18:08:40.860 NuvioTV[2531:1450689] [MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+[MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+2026-10-16 18:08:40.861 NuvioTV[2531:1450689] [MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+[MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+2026-10-16 18:08:40.966 NuvioTV[2531:1451297] [MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+[MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+2026-10-16 18:08:40.968 NuvioTV[2531:1451297] [MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+[MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+2026-10-16 18:08:41.088 NuvioTV[2531:1451297] [MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+[MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+2026-10-16 18:08:41.089 NuvioTV[2531:1451297] [MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+[MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+2026-10-16 18:08:41.221 NuvioTV[2531:1450689] [MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+[MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+2026-10-16 18:08:41.223 NuvioTV[2531:1450689] [MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+[MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+2026-10-16 18:08:41.343 NuvioTV[2531:1450689] [MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+[MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+2026-10-16 18:08:41.344 NuvioTV[2531:1450689] [MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+[MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+2026-10-16 18:08:41.406 NuvioTV[2531:1450689] [MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+[MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+2026-10-16 18:08:41.499 NuvioTV[2531:1451297] [MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+[MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+2026-10-16 18:08:41.501 NuvioTV[2531:1451297] [MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+[MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+2026-10-16 18:08:41.615 NuvioTV[2531:1451297] [MPV] error: Failed acquiring swapchain image: VK_ERROR_DEVICE_LOST
+[MPVStats] +32s cache=133.2s net=0.3 MB/s dropped=vo:7 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +37s cache=133.2s net=0.0 MB/s dropped=vo:7 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +42s cache=133.2s net=0.0 MB/s dropped=vo:7 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +47s cache=133.2s net=0.0 MB/s dropped=vo:7 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +52s cache=133.2s net=0.0 MB/s dropped=vo:7 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:09:08.286 NuvioTV[2531:1450266] [Harvest] took=85.0ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:09:08.286 NuvioTV[2531:1450266] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:09:08.286 NuvioTV[2531:1450266] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:09:08.296 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=stored rss=353
+[MPVStats] +58s cache=133.2s net=0.0 MB/s dropped=vo:7 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Mem] +74s rss=353 MB mode=harvest store=3 harvest=3 decode=0
+[MPVStats] +74s cache=133.2s net=0.0 MB/s dropped=vo:7 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +79s cache=133.2s net=0.0 MB/s dropped=vo:7 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +84s cache=133.2s net=0.0 MB/s dropped=vo:7 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +89s cache=133.2s net=0.0 MB/s dropped=vo:7 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 18:09:52.766 NuvioTV[2531:1451745] [Harvest] took=69.9ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:09:52.766 NuvioTV[2531:1451745] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:09:52.766 NuvioTV[2531:1451745] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:09:52.772 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:10:22.760 NuvioTV[2531:1451745] [Harvest] took=64.2ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:10:22.760 NuvioTV[2531:1451745] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:10:22.761 NuvioTV[2531:1451745] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:10:22.768 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=447
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Mem] +138s rss=447 MB mode=harvest store=3 harvest=3 decode=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:10:53.259 NuvioTV[2531:1451745] [Harvest] took=63.5ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:10:53.259 NuvioTV[2531:1451745] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:10:53.259 NuvioTV[2531:1451745] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:10:53.268 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=447
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:11:23.261 NuvioTV[2531:1451745] [Harvest] took=65.1ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:11:23.261 NuvioTV[2531:1451745] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:11:23.261 NuvioTV[2531:1451745] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:11:23.269 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Mem] +201s rss=447 MB mode=harvest store=3 harvest=3 decode=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 18:11:53.742 NuvioTV[2531:1452270] [Harvest] took=46.6ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:11:53.742 NuvioTV[2531:1452270] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:11:53.742 NuvioTV[2531:1452270] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:11:53.748 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:12:23.771 NuvioTV[2531:1452270] [Harvest] took=75.8ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:12:23.771 NuvioTV[2531:1452270] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:12:23.771 NuvioTV[2531:1452270] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:12:23.777 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Mem] +265s rss=447 MB mode=harvest store=3 harvest=3 decode=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 18:12:54.265 NuvioTV[2531:1452871] [Harvest] took=70.4ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:12:54.265 NuvioTV[2531:1452871] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:12:54.265 NuvioTV[2531:1452871] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:12:54.273 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[MPV] error: Unknown error occurred while trying to take screenshot!
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Failover] mpv healthy after 300 s
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:13:24.740 NuvioTV[2531:1452269] [Harvest] took=46.0ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:13:24.740 NuvioTV[2531:1452269] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:13:24.740 NuvioTV[2531:1452269] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:13:24.746 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Mem] +329s rss=447 MB mode=harvest store=3 harvest=3 decode=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 18:13:54.759 NuvioTV[2531:1452269] [Harvest] took=64.9ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:13:54.759 NuvioTV[2531:1452269] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:13:54.759 NuvioTV[2531:1452269] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:13:54.767 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:14:25.256 NuvioTV[2531:1453253] [Harvest] took=62.9ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:14:25.257 NuvioTV[2531:1453253] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:14:25.257 NuvioTV[2531:1453253] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:14:25.266 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Mem] +393s rss=447 MB mode=harvest store=3 harvest=3 decode=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 18:14:55.764 NuvioTV[2531:1453614] [Harvest] took=71.3ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+2026-10-16 18:14:55.764 NuvioTV[2531:1453614] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:14:55.764 NuvioTV[2531:1453614] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:14:55.766 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+[MPV] error: Unknown error occurred while trying to take screenshot!
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 18:15:25.768 NuvioTV[2531:1452269] [Harvest] took=69.9ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:15:25.768 NuvioTV[2531:1452269] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:15:25.768 NuvioTV[2531:1452269] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:15:25.778 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Mem] +457s rss=447 MB mode=harvest store=3 harvest=3 decode=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:15:56.263 NuvioTV[2531:1453635] [Harvest] took=63.9ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+2026-10-16 18:15:56.263 NuvioTV[2531:1453635] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:15:56.264 NuvioTV[2531:1453635] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:15:56.264 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[MPV] error: Unknown error occurred while trying to take screenshot!
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 18:16:26.253 NuvioTV[2531:1453635] [Harvest] took=53.7ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:16:26.254 NuvioTV[2531:1453635] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:16:26.254 NuvioTV[2531:1453635] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:16:26.260 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Mem] +521s rss=447 MB mode=harvest store=3 harvest=3 decode=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:16:56.765 NuvioTV[2531:1452269] [Harvest] took=65.9ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:16:56.766 NuvioTV[2531:1452269] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:16:56.766 NuvioTV[2531:1452269] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:16:56.774 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:17:26.763 NuvioTV[2531:1453635] [Harvest] took=63.9ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:17:26.763 NuvioTV[2531:1453635] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:17:26.763 NuvioTV[2531:1453635] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:17:26.771 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Mem] +585s rss=447 MB mode=harvest store=3 harvest=3 decode=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:17:57.277 NuvioTV[2531:1454117] [Harvest] took=77.5ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+2026-10-16 18:17:57.277 NuvioTV[2531:1454117] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:17:57.277 NuvioTV[2531:1454117] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:17:57.279 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[MPV] error: Unknown error occurred while trying to take screenshot!
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 18:18:27.764 NuvioTV[2531:1453635] [Harvest] took=65.2ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:18:27.764 NuvioTV[2531:1453635] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:18:27.764 NuvioTV[2531:1453635] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:18:27.777 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 18:18:58.268 NuvioTV[2531:1454117] [Harvest] took=70.4ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:18:58.268 NuvioTV[2531:1454117] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:18:58.268 NuvioTV[2531:1454117] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:18:58.271 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[Mem] +649s rss=447 MB mode=harvest store=3 harvest=3 decode=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 18:19:28.268 NuvioTV[2531:1454117] [Harvest] took=69.9ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:19:28.268 NuvioTV[2531:1454117] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:19:28.268 NuvioTV[2531:1454117] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:19:28.269 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:19:58.273 NuvioTV[2531:1454945] [Harvest] took=75.1ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:19:58.273 NuvioTV[2531:1454945] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:19:58.273 NuvioTV[2531:1454945] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:19:58.275 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Mem] +713s rss=447 MB mode=harvest store=3 harvest=3 decode=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 18:20:28.268 NuvioTV[2531:1454946] [Harvest] took=70.5ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:20:28.268 NuvioTV[2531:1454946] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:20:28.268 NuvioTV[2531:1454946] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:20:28.274 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:20:58.767 NuvioTV[2531:1454946] [Harvest] took=70.2ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:20:58.767 NuvioTV[2531:1454946] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:20:58.767 NuvioTV[2531:1454946] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:20:58.773 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Mem] +776s rss=447 MB mode=harvest store=3 harvest=3 decode=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 18:21:28.743 NuvioTV[2531:1455106] [Harvest] took=46.6ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:21:28.744 NuvioTV[2531:1455106] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:21:28.744 NuvioTV[2531:1455106] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:21:28.750 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:21:59.263 NuvioTV[2531:1454946] [Harvest] took=66.8ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:21:59.263 NuvioTV[2531:1454946] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:21:59.263 NuvioTV[2531:1454946] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:21:59.270 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Mem] +839s rss=447 MB mode=harvest store=3 harvest=3 decode=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:22:29.760 NuvioTV[2531:1454946] [Harvest] took=63.9ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:22:29.760 NuvioTV[2531:1454946] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:22:29.760 NuvioTV[2531:1454946] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:22:29.769 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:22:59.762 NuvioTV[2531:1453635] [Harvest] took=65.8ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:22:59.762 NuvioTV[2531:1453635] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:22:59.762 NuvioTV[2531:1453635] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:22:59.769 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Mem] +902s rss=447 MB mode=harvest store=3 harvest=3 decode=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:23:29.748 NuvioTV[2531:1455879] [Harvest] took=52.6ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:23:29.748 NuvioTV[2531:1455879] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:23:29.748 NuvioTV[2531:1455879] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:23:29.754 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:23:59.759 NuvioTV[2531:1455879] [Harvest] took=64.0ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:23:59.759 NuvioTV[2531:1455879] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:23:59.760 NuvioTV[2531:1455879] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:23:59.772 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Mem] +966s rss=447 MB mode=harvest store=3 harvest=3 decode=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:24:30.259 NuvioTV[2531:1455879] [Harvest] took=64.2ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:24:30.259 NuvioTV[2531:1455879] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:24:30.259 NuvioTV[2531:1455879] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:24:30.268 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:25:00.242 NuvioTV[2531:1456352] [Harvest] took=47.2ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:25:00.242 NuvioTV[2531:1456352] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:25:00.242 NuvioTV[2531:1456352] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:25:00.248 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Mem] +1029s rss=447 MB mode=harvest store=3 harvest=3 decode=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 18:25:30.258 NuvioTV[2531:1455879] [Harvest] took=63.2ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:25:30.258 NuvioTV[2531:1455879] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:25:30.258 NuvioTV[2531:1455879] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:25:30.265 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 18:26:00.257 NuvioTV[2531:1456521] [Harvest] took=62.9ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:26:00.257 NuvioTV[2531:1456521] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:26:00.257 NuvioTV[2531:1456521] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:26:00.270 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Mem] +1092s rss=447 MB mode=harvest store=3 harvest=3 decode=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:26:30.765 NuvioTV[2531:1456639] [Harvest] took=71.0ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:26:30.765 NuvioTV[2531:1456639] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:26:30.765 NuvioTV[2531:1456639] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:26:30.771 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 18:27:01.242 NuvioTV[2531:1456639] [Harvest] took=48.1ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:27:01.242 NuvioTV[2531:1456639] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:27:01.242 NuvioTV[2531:1456639] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:27:01.248 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Mem] +1155s rss=448 MB mode=harvest store=3 harvest=3 decode=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 18:27:31.765 NuvioTV[2531:1456949] [Harvest] took=72.2ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+2026-10-16 18:27:31.766 NuvioTV[2531:1456949] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:27:31.766 NuvioTV[2531:1456949] [MPV] error: Unknown error occurred while trying to take screenshot!
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:27:31.772 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 18:28:02.265 NuvioTV[2531:1457113] [Harvest] took=71.9ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+2026-10-16 18:28:02.265 NuvioTV[2531:1457113] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:28:02.265 NuvioTV[2531:1457113] [MPV] error: Unknown error occurred while trying to take screenshot!
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:28:02.271 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Mem] +1219s rss=447 MB mode=harvest store=3 harvest=3 decode=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 18:28:32.257 NuvioTV[2531:1457113] [Harvest] took=64.5ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:28:32.257 NuvioTV[2531:1457113] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:28:32.257 NuvioTV[2531:1457113] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:28:32.265 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:29:02.755 NuvioTV[2531:1457113] [Harvest] took=64.0ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:29:02.755 NuvioTV[2531:1457113] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:29:02.756 NuvioTV[2531:1457113] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:29:02.764 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 18:29:32.756 NuvioTV[2531:1457497] [Harvest] took=63.6ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:29:32.756 NuvioTV[2531:1457497] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:29:32.756 NuvioTV[2531:1457497] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:29:32.765 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[Mem] +1281s rss=447 MB mode=harvest store=3 harvest=3 decode=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:30:02.762 NuvioTV[2531:1457245] [Harvest] took=70.2ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:30:02.762 NuvioTV[2531:1457245] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:30:02.762 NuvioTV[2531:1457245] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:30:02.769 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 18:30:33.257 NuvioTV[2531:1457656] [Harvest] took=65.5ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:30:33.257 NuvioTV[2531:1457656] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:30:33.257 NuvioTV[2531:1457656] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:30:33.269 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[Mem] +1345s rss=447 MB mode=harvest store=3 harvest=3 decode=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 18:31:03.754 NuvioTV[2531:1457656] [Harvest] took=63.6ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:31:03.755 NuvioTV[2531:1457656] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:31:03.755 NuvioTV[2531:1457656] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:31:03.763 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:31:33.755 NuvioTV[2531:1458056] [Harvest] took=64.2ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:31:33.755 NuvioTV[2531:1458056] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:31:33.755 NuvioTV[2531:1458056] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:31:33.764 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Mem] +1409s rss=448 MB mode=harvest store=3 harvest=3 decode=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:32:03.757 NuvioTV[2531:1458335] [Harvest] took=66.7ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:32:03.758 NuvioTV[2531:1458335] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:32:03.758 NuvioTV[2531:1458335] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:32:03.765 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-16 18:32:33.760 NuvioTV[2531:1457113] [Harvest] took=70.1ms size=1920x1080 fmt=bgr0 at=1208.5 src=mpv
+[MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+[MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:32:33.760 NuvioTV[2531:1457113] [MPV] error: Requested PTS 1207.461000 is lower than the oldest frame PTS 1208.546000. This is not supported, PTS must be monotonically increasing! Please use `pl_queue_reset` to reset the frame queue on discontinuous PTS jumps.
+2026-10-16 18:32:33.760 NuvioTV[2531:1457113] [MPV] error: Unknown error occurred while trying to take screenshot!
+2026-10-16 18:32:33.762 NuvioTV[2531:1449400] [Harvest] stored n=3 bytes=27786 outcome=replaced rss=448
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Mem] +1471s rss=447 MB mode=harvest store=3 harvest=3 decode=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+Launched application with com.youngchris29.NuvioTV bundle identifier.
+Waiting for the application to terminate...
+App terminated due to signal 9.
