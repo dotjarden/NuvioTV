@@ -1,6 +1,6 @@
 # SwiftUI performance review + focus consistency pass (2026-10-17)
 
-Submodule branch `claude/focus-consistency` (commits `a802e41f8` + `f78fe7ea8`, local only), cut from `tvos-shared-extraction` `523ad97db`. Not merged.
+Submodule branch `claude/focus-consistency` (tip `aa66d8bab`: `a802e41f8` + `f78fe7ea8` + the Home split merged from `claude/home-split`; local only), cut from `tvos-shared-extraction` `523ad97db`. Not merged.
 
 Method: three read-only review agents (Home/browse performance, the rest of the app's performance, focus across every screen). They used the `swiftui-performance-audit` and `swiftui-ui-patterns` skills. All performance findings come from reading the code: there is no Instruments trace yet.
 
@@ -66,22 +66,34 @@ Taken from the lists below, avoiding the Home files (the HomeView split runs in 
 - Gates: Debug + Release, NuvioTVTests 1838/0, FocusRowUITests PASS.
 - Held back because they change behaviour and need a device judgement: Episodes `.defaultFocus` on the next unwatched episode, cast row keyed by person id, a lazy stack for Search results.
 
+## Home split (`claude/home-split` `f96acfdc0`, merged as `aa66d8bab`)
+
+Built in a separate session and clone, branched off `a802e41f8`. It shares no files with batch 2, and the merge was clean.
+
+- Perf #1: the rows region (`Home/HomeRowsList.swift`) observes only `HomeViewModel`. The hero header, backdrop and debug labels are leaf views (`Home/HomeHeroLeaves.swift`) that observe the focus models themselves. The per-row closures are replaced by one stable actions object.
+- Also done there: #4 (posterStyle / trailer gate once per row body), #10 (`rowsByKey` for the Stage strip) and #11 (`pinnedPlan` once per body).
+- Measured with a new DEBUG body counter (`HomeBodyCounter`, `HomeBodyCountUITests`). Over six hero commits, HomeView body evaluations went from 12 to 0 and CatalogRowView from 30 to 6.
+- Reviewed by one Opus round in that session; its findings were fixed.
+- Stage UI leg S11 fails identically on the base, so the failure predates this change.
+- Gates after the merge: Debug + Release (FA87), NuvioTVTests 1838/0 (5 skipped), FocusRowUITests PASS.
+- Device pass owed (Test profile): walk Home rows in Classic and Stage. Check the hero swap, the pinned-row settle, Up into the hero, and Continue Watching / Upcoming actions, and confirm nothing in the tuned Home behaviour moved.
+
 ## Performance: found, not fixed (ranked)
 
 | # | Severity | Where | Issue | Fix | Effort |
 |---|---|---|---|---|---|
-| 1 | High | HomeView (5 observed objects) | Every hero focus commit (0.2 s dwell) re-runs the 600-line body and every visible row. Fresh closures mean no row can be skipped | split the rows region into a view that observes only `HomeViewModel`; hero/backdrop leaves observe the focus models; one stable `HomeRowActions` reference instead of per-row closures | L |
-| 2 | High | `DetailViewModel.refreshFlags` | 7 watchers write every flag unconditionally; `computeWatchedEpisodeKeys` makes 2 Kotlin calls per episode (1,000+ on long shows) on main | equality-gate; recompute keys only on watched/progress emissions for this id; coalesce | M |
-| 3 | High | `EpisodesSection` body | groups and sorts every episode (Kotlin reads in the comparator) on every D-pad move | group once per `meta`; move the focus state into a child view | M |
-| 4 | Medium | `CatalogRowView` | `posterStyle`, `inlineTrailersActive` (UIAccessibility read + probe) recomputed per card | hoist to one `let` per body | S |
+| 1 | High (DONE, Home split) | HomeView (5 observed objects) | Every hero focus commit (0.2 s dwell) re-runs the 600-line body and every visible row. Fresh closures mean no row can be skipped | split the rows region into a view that observes only `HomeViewModel`; hero/backdrop leaves observe the focus models; one stable `HomeRowActions` reference instead of per-row closures | L |
+| 2 | High (DONE, batch 2) | `DetailViewModel.refreshFlags` | 7 watchers write every flag unconditionally; `computeWatchedEpisodeKeys` makes 2 Kotlin calls per episode (1,000+ on long shows) on main | equality-gate; recompute keys only on watched/progress emissions for this id; coalesce | M |
+| 3 | High (grouping DONE, batch 2) | `EpisodesSection` body | groups and sorts every episode (Kotlin reads in the comparator) on every D-pad move | group once per `meta`; move the focus state into a child view | M |
+| 4 | Medium (DONE, Home split) | `CatalogRowView` | `posterStyle`, `inlineTrailersActive` (UIAccessibility read + probe) recomputed per card | hoist to one `let` per body | S |
 | 5 | Medium | `InlineTrailerCard`/`PosterCard` | ~10 `@AppStorage` observers + a `@StateObject` per realized card | one `FocusAppearance` value in the environment; build the trailer model only when enabled | M |
 | 6 | Medium | `CachedAsyncImage` | memory-cache hits still draw a shimmer frame + start a repeatForever animation on mount | seed the loader from the cache in `init` | S-M |
 | 7 | Medium | Stream picker | row-level `@FocusState` re-renders every row per move; `ViewThatFits` with up to 9 badge candidates; rows keyed by offset | `StreamRow` subview reading `isFocused`; a custom `Layout` for the badges; key by `playbackStreamKey` | M |
-| 8 | Medium | ContentView / ProfilesViewModel | app root re-renders on every profile/auth emission | equality-gate writes; don't observe at the root | S-M |
+| 8 | Medium (gating DONE, batch 2) | ContentView / ProfilesViewModel | app root re-renders on every profile/auth emission | equality-gate writes; don't observe at the root | S-M |
 | 9 | Medium | Search results | non-lazy `VStack`; fresh footnote closure per body | `LazyVStack`; stable footnote provider | S-M |
-| 10 | Medium | StageStripHome | linear Kotlin-bridged row lookup per mounted row | publish `rowsByKey` from the VM | S |
-| 11 | Low-Med | HomeView | `pinnedPlan` (4 UserDefaults reads + math) evaluated 10+ times per body; `heroItems` reallocated per access | compute once per body | S |
-| 12 | Low | Episodes thumbnails, profile avatars | decoded at the 1920 px default; live 28 pt blur on spoiler stills | pass `.points(...)` decode sizes | S |
+| 10 | Medium (DONE, Home split) | StageStripHome | linear Kotlin-bridged row lookup per mounted row | publish `rowsByKey` from the VM | S |
+| 11 | Low-Med (pinnedPlan DONE, Home split) | HomeView | `pinnedPlan` (4 UserDefaults reads + math) evaluated 10+ times per body; `heroItems` reallocated per access | compute once per body | S |
+| 12 | Low (DONE, batch 2) | Episodes thumbnails, profile avatars | decoded at the 1920 px default; live 28 pt blur on spoiler stills | pass `.points(...)` decode sizes | S |
 | 13 | Low | Settings | ~15 watchers replay on open, each writing unconditionally | equality-gate | M |
 | 14 | Low | transport bar, Detail cast, chapters | `ForEach` keyed by offset | stable ids | S |
 
