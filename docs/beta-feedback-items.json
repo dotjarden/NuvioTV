@@ -1,6 +1,6 @@
 {
  "_about": "Machine-readable mirror of docs/beta-feedback-tracker.md for the NuvioTV Tester Feedback dashboard. One row per tracker ID. Maintained by the beta-feedback sweep (see docs/beta-feedback-sweep-instructions.md §3). Allowed values: stage = Open | Released | Closed, no fix; tester (when stage=Open) = Not started | Waiting on reporter | Reopened after fix | Researched, not built; tester (when stage=Released) = Confirmed by tester | Partly confirmed | Awaiting tester | In-house only | Closed unconfirmed; tester (when stage=Closed, no fix) = Not a bug / declined / superseded | Duplicate of <ID>.",
- "generated": "2026-10-17T06:04:08Z",
+ "generated": "2026-10-17T06:12:58Z",
  "source": "docs/beta-feedback-tracker.md",
  "rows": [
   {
@@ -825,7 +825,7 @@
    "tester": "In-house only",
    "build": "beta.15",
    "reporter": "In-house",
-   "first_seen": "",
+   "first_seen": "2026-08-27",
    "summary": "Theme swatch focus state hard to see (device pass finding)."
   },
   {
@@ -935,7 +935,7 @@
    "tester": "Partly confirmed",
    "build": "beta.19-rc2",
    "reporter": "u/mrStevenx3",
-   "first_seen": "u/mrSteven",
+   "first_seen": "2026-08-28",
    "summary": "Doubled Home hero, and the collection background resizes."
   },
   {
@@ -1287,7 +1287,7 @@
    "tester": "Waiting on reporter",
    "build": "",
    "reporter": "GitHub (mikeyunk)",
-   "first_seen": "",
+   "first_seen": "2026-09-29",
    "summary": "The Xperience addon does not work."
   },
   {
@@ -1298,7 +1298,7 @@
    "tester": "In-house only",
    "build": "beta.19-rc3",
    "reporter": "In-house",
-   "first_seen": "",
+   "first_seen": "2026-09-30",
    "summary": "Late-content rows park too deep (device walk logs)."
   },
   {
@@ -1309,7 +1309,7 @@
    "tester": "In-house only",
    "build": "beta.19-rc3",
    "reporter": "In-house",
-   "first_seen": "",
+   "first_seen": "2026-09-30",
    "summary": "Short top rows park low, leaving a visible jump."
   },
   {
@@ -1320,7 +1320,7 @@
    "tester": "In-house only",
    "build": "beta.18",
    "reporter": "In-house",
-   "first_seen": "",
+   "first_seen": "2026-09-30",
    "summary": "Last row's idle title fade flickers (seen in device walk logs)."
   },
   {
@@ -1474,7 +1474,7 @@
    "tester": "In-house only",
    "build": "beta.18",
    "reporter": "In-house",
-   "first_seen": "",
+   "first_seen": "2026-10-01",
    "summary": "Hold menu lost once a poster had morphed into the playing trailer card."
   },
   {
@@ -1485,7 +1485,7 @@
    "tester": "Awaiting tester",
    "build": "beta.19-rc3",
    "reporter": "u/mrStevenx3",
-   "first_seen": "",
+   "first_seen": "2026-10-01",
    "summary": "Steven, DM"
   },
   {
@@ -2321,7 +2321,7 @@
    "tester": "In-house only",
    "build": "beta.18",
    "reporter": "In-house",
-   "first_seen": "",
+   "first_seen": "2026-10-01",
    "summary": "Auto-Play Best Source, next-link failover, hold menus, source filters, Infuse return (Orivio parity)."
   },
   {
@@ -2332,7 +2332,7 @@
    "tester": "Awaiting tester",
    "build": "beta.19-rc1",
    "reporter": "u/mrStevenx3",
-   "first_seen": "",
+   "first_seen": "2026-10-01",
    "summary": "Steven, DM"
   },
   {
@@ -2420,7 +2420,7 @@
    "tester": "Awaiting tester",
    "build": "beta.19-rc5",
    "reporter": "Reddit thread",
-   "first_seen": "",
+   "first_seen": "2026-10-05",
    "summary": "GitHub issue #5, 4rtz1z"
   },
   {
@@ -2431,7 +2431,7 @@
    "tester": "In-house only",
    "build": "beta.19-rc4",
    "reporter": "In-house",
-   "first_seen": "",
+   "first_seen": "2026-10-05",
    "summary": "Board docs/research/search-discover-revamp-2026-10-05.html; Christian's calls 2026-10-06"
   },
   {
@@ -2442,7 +2442,7 @@
    "tester": "In-house only",
    "build": "beta.19-rc4",
    "reporter": "In-house",
-   "first_seen": "",
+   "first_seen": "2026-10-04",
    "summary": "Board O1 + S1 plan's S1-b outline; Christian's calls 2026-10-06"
   },
   {
@@ -2453,7 +2453,7 @@
    "tester": "In-house only",
    "build": "beta.19-rc4",
    "reporter": "In-house",
-   "first_seen": "",
+   "first_seen": "2026-10-05",
    "summary": "docs/upstream-port-plan-2026-10-05.md"
   },
   {
@@ -2893,7 +2893,7 @@
    "tester": "Confirmed by tester",
    "build": "beta.2",
    "reporter": "u/Physical-Lab-9203",
-   "first_seen": "",
+   "first_seen": "2026-07-20",
    "summary": "App crashes after adding Nuvio account, then crash-loops at the profile selector on every launch."
   }
  ]
