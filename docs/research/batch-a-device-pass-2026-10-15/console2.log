@@ -1,0 +1,273 @@
+[LaunchTrace] +0ms app_init
+[ExtPlayerProbe] canOpenURL(infuse://) = true
+2026-10-15 16:27:39.808 NuvioTV[1859:989941] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ExtPlayerProbe] canOpenURL(vlc-x-callback://) = false
+[ExtPlayerProbe] canOpenURL(outplayer://) = false
+[ExtPlayerProbe] canOpenURL(open-vidhub://) = true
+[ExtPlayerProbe] canOpenURL(vidhub://) = false
+[ExtPlayerProbe] availablePlayers = ["infuse:Infuse", "vidhub:VidHub"]
+2026-10-15 16:27:39.809 NuvioTV[1859:989941] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-15 16:27:39.809 NuvioTV[1859:989941] -canOpenURL: failed for URL: "vidhub://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-15 16:27:39.810 NuvioTV[1859:989941] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-15 16:27:39.810 NuvioTV[1859:989941] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[LaunchTrace] +643ms artwork #1: mem=0 disk=1 net=0 fail=0
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-15 16:27:54.080 NuvioTV[1859:989941] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+2026-10-15 16:27:54.095 NuvioTV[1859:989941] [HomeScrollProbe] plan regime=M330c1p1r0z0t37hzrt4 linkFrame=506 viewport=493 fits=0 CAPPED — rows still short, belt remains in play
+[LaunchTrace] +14548ms home_appear
+2026-10-15 16:27:54.111 NuvioTV[1859:989941] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-15 16:27:54.111 NuvioTV[1859:989941] [TrailerPipeline] trailerLocation stage=row
+2026-10-15 16:27:54.111 NuvioTV[1859:989941] [StageStrip] geometry rowH=462.5 P=502.5 H=545.5 stage=534.5 logo=150 synL=5 fits=1 posterH=330.0 font=system
+2026-10-15 16:27:54.172 NuvioTV[1859:989941] [StageStrip] geometry rowH=536.0 P=576.0 H=619.0 stage=461.0 logo=110 synL=5 fits=1 posterH=403.3 font=system
+2026-10-15 16:27:54.172 NuvioTV[1859:989941] [StageStrip] config P=576.0 H=619.0 rows=1 pageSeconds=0.5
+2026-10-15 16:27:54.181 NuvioTV[1859:989941] [StageStrip] observers started
+2026-10-15 16:27:54.181 NuvioTV[1859:989941] [StageStrip] marker attached
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-15 16:27:54.305 NuvioTV[1859:989941] [StageStrip] baseline y=461.0 P=576.0 H=619.0 rows=1
+[LaunchTrace] +15951ms artwork #10: mem=0 disk=10 net=0 fail=0
+[LaunchTrace] +15953ms first_rows n=9 hero=8
+[LaunchTrace] +15953ms first_hero n=8
+2026-10-15 16:27:55.530 NuvioTV[1859:989941] [TrailerPipeline] gates inlineTrailersEnabled=YES systemAutoplay=YES
+2026-10-15 16:27:55.562 NuvioTV[1859:989941] [StageStrip] config P=576.0 H=619.0 rows=10 pageSeconds=0.5
+2026-10-15 16:27:55.563 NuvioTV[1859:989941] [StageStrip] seed id=movie:tt3118958 fallback=0
+[LaunchTrace] +16029ms artwork #25: mem=4 disk=21 net=0 fail=0
+2026-10-15 16:27:55.598 NuvioTV[1859:989941] [AmbientWash] render id=movie:tt3118958 src=768x432 ms=20.0 lum=0.17
+2026-10-15 16:27:55.598 NuvioTV[1859:989941] [AmbientWash] show id=movie:tt3118958 gen=1 late=0 ms=20.0 lum=0.17
+[LaunchTrace] +16087ms artwork #50: mem=4 disk=46 net=0 fail=0
+2026-10-15 16:27:58.103 NuvioTV[1859:989941] [StageStrip] config P=576.0 H=619.0 rows=11 pageSeconds=0.5
+2026-10-15 16:27:58.122 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,647,360,247 label=- id=-
+2026-10-15 16:28:37.200 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1223,360,247 label=- id=-
+2026-10-15 16:28:37.213 NuvioTV[1859:989941] [StageStrip] page to=1 key=upcoming seconds=0.5 gen=1
+2026-10-15 16:28:37.488 NuvioTV[1859:989941] [HomeHero] logoInk sync-sample ms=1.96
+2026-10-15 16:28:37.663 NuvioTV[1859:989941] [AmbientWash] render id=series:tt32268630 src=1280x720 ms=17.4 lum=0.26
+2026-10-15 16:28:37.835 NuvioTV[1859:989941] [StageStrip] swap phase=out id=series:tt32268630 sinceAct=595 pageEnd=553
+2026-10-15 16:28:37.898 NuvioTV[1859:989941] [StageStrip] seg p=1 k=1 start=+97 dur=500 from=461.0 to=-115.0 travel=-576.0
+2026-10-15 16:28:37.988 NuvioTV[1859:989941] [StageStrip] swap phase=in id=series:tt32268630 sinceAct=748 pageEnd=706
+2026-10-15 16:28:37.989 NuvioTV[1859:989941] [AmbientWash] show id=series:tt32268630 gen=2 late=0 ms=17.4 lum=0.26
+2026-10-15 16:28:38.198 NuvioTV[1859:989941] [StageStrip] swap phase=idle id=series:tt32268630 sinceAct=958 pageEnd=916
+2026-10-15 16:28:38.836 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1130,269,443 label=- id=-
+2026-10-15 16:28:38.848 NuvioTV[1859:989941] [StageStrip] page to=2 key=test-collection-1004 seconds=0.5 gen=2
+2026-10-15 16:28:38.848 NuvioTV[1859:989941] [StageStrip] PRESS #1 0→1 moves=1 settle=597 travel=-576.0 afterRest=0 residual=0.0 src=vfocus-down key=upcoming close=row
+2026-10-15 16:28:39.309 NuvioTV[1859:989941] [AmbientWash] render id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 src=1920x1080 ms=19.1 lum=0.26
+2026-10-15 16:28:39.472 NuvioTV[1859:989941] [StageStrip] swap phase=out id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 sinceAct=593 pageEnd=552
+2026-10-15 16:28:39.533 NuvioTV[1859:989941] [StageStrip] seg p=2 k=1 start=+74 dur=511 from=-115.0 to=-691.0 travel=-576.0
+2026-10-15 16:28:39.629 NuvioTV[1859:989941] [StageStrip] swap phase=in id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 sinceAct=750 pageEnd=709
+2026-10-15 16:28:39.630 NuvioTV[1859:989941] [AmbientWash] show id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 gen=3 late=0 ms=19.1 lum=0.26
+2026-10-15 16:28:39.834 NuvioTV[1859:989941] [StageStrip] swap phase=idle id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 sinceAct=955 pageEnd=914
+2026-10-15 16:28:40.462 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1122,269,447 label=- id=-
+2026-10-15 16:28:40.477 NuvioTV[1859:989941] [StageStrip] page to=3 key=aio-metadata:New Streaming Releases: Movies:mdblist.86934 seconds=0.5 gen=3
+2026-10-15 16:28:40.478 NuvioTV[1859:989941] [StageStrip] PRESS #2 1→2 moves=1 settle=584 travel=-576.0 afterRest=0 residual=0.0 src=row key=test-collection-1004 close=row
+[LaunchTrace] +61017ms artwork #100: mem=6 disk=90 net=4 fail=0
+2026-10-15 16:28:40.938 NuvioTV[1859:989941] [AmbientWash] render id=movie:tt27977862 src=1280x720 ms=18.6 lum=0.26
+2026-10-15 16:28:41.108 NuvioTV[1859:989941] [StageStrip] swap phase=out id=movie:tt27977862 sinceAct=595 pageEnd=563
+2026-10-15 16:28:41.168 NuvioTV[1859:989941] [StageStrip] seg p=3 k=1 start=+69 dur=521 from=-691.0 to=-1267.0 travel=-576.0
+2026-10-15 16:28:41.264 NuvioTV[1859:989941] [StageStrip] swap phase=in id=movie:tt27977862 sinceAct=751 pageEnd=718
+2026-10-15 16:28:41.265 NuvioTV[1859:989941] [AmbientWash] show id=movie:tt27977862 gen=4 late=0 ms=18.6 lum=0.26
+2026-10-15 16:28:41.468 NuvioTV[1859:989941] [StageStrip] swap phase=idle id=movie:tt27977862 sinceAct=955 pageEnd=923
+2026-10-15 16:28:42.089 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=437,546,269,447 label=- id=-
+2026-10-15 16:28:42.090 NuvioTV[1859:989941] [StageStrip] PRESS #3 2→3 moves=1 settle=590 travel=-576.0 afterRest=0 residual=0.0 src=row key=aio-metadata:New Streaming Releases: Movies:mdblist.86934 close=press
+2026-10-15 16:28:42.514 NuvioTV[1859:989941] [AmbientWash] render id=movie:tt32588798 src=1280x720 ms=28.6 lum=0.15
+2026-10-15 16:28:42.573 NuvioTV[1859:989941] [StageStrip] swap phase=out id=movie:tt32588798 sinceAct=457 pageEnd=2028
+2026-10-15 16:28:42.731 NuvioTV[1859:989941] [StageStrip] swap phase=in id=movie:tt32588798 sinceAct=615 pageEnd=2186
+2026-10-15 16:28:42.732 NuvioTV[1859:989941] [AmbientWash] show id=movie:tt32588798 gen=5 late=0 ms=28.6 lum=0.15
+2026-10-15 16:28:42.937 NuvioTV[1859:989941] [StageStrip] swap phase=idle id=movie:tt32588798 sinceAct=820 pageEnd=2391
+2026-10-15 16:28:43.604 NuvioTV[1859:989941] [StageStrip] PRESS #4 3→3 moves=0 settle=0 travel=0.0 afterRest=0 residual=0.0 src=vfocus-up key=- close=idle
+2026-10-15 16:28:44.532 NuvioTV[1859:989941] [StageStrip] focus → nil
+2026-10-15 16:28:44.537 NuvioTV[1859:989941] [StageStrip] marker detached
+2026-10-15 16:28:44.591 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=60,763,190,72 label=- id=-
+2026-10-15 16:28:44.607 NuvioTV[1859:989941] [StageStrip] focus left the strip from row=aio-metadata:New Streaming Releases: Movies:mdblist.86934
+2026-10-15 16:28:44.607 NuvioTV[1859:989941] [StageStrip] strip focus lost row=aio-metadata:New Streaming Releases: Movies:mdblist.86934
+2026-10-15 16:28:46.560 NuvioTV[1859:990335] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-15 16:28:46.560 NuvioTV[1859:990335] [TrailerExtract] client=visionos video=Ho10_4IX1jE hls=true formats=0 adaptive=27 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+2026-10-15 16:28:46.565 NuvioTV[1859:990335] [TrailerExtract] client=android video=Ho10_4IX1jE hls=false formats=1 adaptive=29 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl,metadataFormats
+2026-10-15 16:28:46.569 NuvioTV[1859:990335] [TrailerExtract] client=ios video=Ho10_4IX1jE hls=false formats=0 adaptive=27 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl,metadataFormats
+2026-10-15 16:28:46.748 NuvioTV[1859:990335] [TrailerExtract] manifest client=visionos top variant 3840x2160
+2026-10-15 16:28:46.748 NuvioTV[1859:990335] [TrailerExtract] selection: manifest=2160 progressive=360 (manifests collected=1)
+2026-10-15 16:28:46.749 NuvioTV[1859:990335] [TrailerExtract] repack candidates: avcVideo=1080p avc1.640028 (visionos) m4aAudio=mp4a.40.2 (visionos) maxFps=0
+2026-10-15 16:28:47.083 NuvioTV[1859:990119] [TrailerExtract] repack decision: avc=1080p vs progressive=2160p -> skip (progressive is not worse)
+2026-10-15 16:28:51.244 NuvioTV[1859:989941] [TrailerQuality] presentationSize=1920x1080
+2026-10-15 16:28:51.674 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=60,763,190,72 label=- id=-
+2026-10-15 16:28:52.490 NuvioTV[1859:989941] [StageStrip] focus → nil
+2026-10-15 16:28:58.861 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=60,763,190,72 label=- id=-
+2026-10-15 16:29:02.056 NuvioTV[1859:989941] [TrailerQuality] presentationSize=1920x1080
+2026-10-15 16:29:26.371 NuvioTV[1859:989941] [StageStrip] marker attached
+2026-10-15 16:29:26.409 NuvioTV[1859:989941] [TrailerPipeline] trailerLocation stage=row
+2026-10-15 16:29:26.433 NuvioTV[1859:989941] [HomeScrollProbe] settle uncover no-scheduler
+2026-10-15 16:29:26.460 NuvioTV[1859:989941] [StageStrip] restore row=aio-metadata:New Streaming Releases: Movies:mdblist.86934 item=tt32588798 rung=1 landed=0 reason=uncover
+2026-10-15 16:29:26.775 NuvioTV[1859:989941] [StageStrip] restore row=aio-metadata:New Streaming Releases: Movies:mdblist.86934 item=tt32588798 rung=2 landed=0 reason=uncover
+2026-10-15 16:29:26.978 NuvioTV[1859:989941] [StageStrip] focus → nil
+2026-10-15 16:29:27.028 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=437,546,269,447 label=- id=-
+2026-10-15 16:29:27.087 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,-22,269,443 label=- id=-
+2026-10-15 16:29:27.105 NuvioTV[1859:989941] [StageStrip] page to=2 key=test-collection-1004 seconds=0.5 gen=4
+2026-10-15 16:29:27.137 NuvioTV[1859:989941] [StageStrip] restore regrab row=aio-metadata:New Streaming Releases: Movies:mdblist.86934 item=tt32588798 from=test-collection-1004 age=676 reason=uncover
+2026-10-15 16:29:27.137 NuvioTV[1859:989941] [StageStrip] page to=3 key=aio-metadata:New Streaming Releases: Movies:mdblist.86934 seconds=0.5 gen=5
+2026-10-15 16:29:27.167 NuvioTV[1859:989941] [StageStrip] restore row=aio-metadata:New Streaming Releases: Movies:mdblist.86934 item=tt32588798 rung=1 landed=0 reason=uncover-regrab
+2026-10-15 16:29:27.185 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=437,546,269,447 label=- id=-
+2026-10-15 16:29:27.194 NuvioTV[1859:989941] [StageStrip] PRESS #5 3→2 moves=0 settle=0 travel=0.0 afterRest=0 residual=-576.0 src=vfocus-up key=test-collection-1004 close=row
+2026-10-15 16:29:28.698 NuvioTV[1859:989941] [StageStrip] PRESS #6 2→3 moves=0 settle=0 travel=0.0 afterRest=0 residual=0.0 src=row key=aio-metadata:New Streaming Releases: Movies:mdblist.86934 close=idle
+2026-10-15 16:29:30.425 NuvioTV[1859:990755] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-15 16:29:30.425 NuvioTV[1859:990755] [TrailerExtract] client=visionos video=Ho10_4IX1jE hls=true formats=0 adaptive=27 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+2026-10-15 16:29:30.430 NuvioTV[1859:990755] [TrailerExtract] client=android video=Ho10_4IX1jE hls=false formats=1 adaptive=29 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl,metadataFormats
+2026-10-15 16:29:30.436 NuvioTV[1859:990755] [TrailerExtract] client=ios video=Ho10_4IX1jE hls=false formats=0 adaptive=27 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl,metadataFormats
+2026-10-15 16:29:30.514 NuvioTV[1859:990372] [TrailerExtract] manifest client=visionos top variant 3840x2160
+2026-10-15 16:29:30.514 NuvioTV[1859:990372] [TrailerExtract] selection: manifest=2160 progressive=360 (manifests collected=1)
+2026-10-15 16:29:30.514 NuvioTV[1859:990372] [TrailerExtract] repack candidates: avcVideo=1080p avc1.640028 (visionos) m4aAudio=mp4a.40.2 (visionos) maxFps=0
+2026-10-15 16:29:30.820 NuvioTV[1859:990625] [TrailerExtract] repack decision: avc=1080p vs progressive=2160p -> skip (progressive is not worse)
+2026-10-15 16:29:32.735 NuvioTV[1859:989941] [TrailerQuality] presentationSize=1920x1080
+2026-10-15 16:29:34.855 NuvioTV[1859:989941] [TrailerQuality] presentationSize=1920x1080
+2026-10-15 16:30:17.117 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,546,269,447 label=- id=-
+2026-10-15 16:30:17.597 NuvioTV[1859:989941] [StageStrip] swap phase=out id=movie:tt27977862 sinceAct=454 pageEnd=50384
+2026-10-15 16:30:17.630 NuvioTV[1859:989941] [NavRail] arm reason=left origin=UIKitFocusableViewResponderItem tab=0
+2026-10-15 16:30:17.630 NuvioTV[1859:989941] [StageStrip] moveFail heading=left
+2026-10-15 16:30:17.650 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=-72,279,60,60 label=- id=-
+2026-10-15 16:30:17.655 NuvioTV[1859:989941] [Rail] gate=on mode=uikit
+2026-10-15 16:30:17.667 NuvioTV[1859:989941] [StageStrip] swap phase=cancel id=movie:tt27977862 sinceAct=0 pageEnd=50454
+2026-10-15 16:30:17.672 NuvioTV[1859:989941] [StageStrip] focus left the strip from row=aio-metadata:New Streaming Releases: Movies:mdblist.86934
+2026-10-15 16:30:17.672 NuvioTV[1859:989941] [StageStrip] strip focus lost row=aio-metadata:New Streaming Releases: Movies:mdblist.86934
+2026-10-15 16:30:18.137 NuvioTV[1859:989941] [StageStrip] swap phase=in id=movie:tt27977862 sinceAct=470 pageEnd=50924
+2026-10-15 16:30:18.139 NuvioTV[1859:989941] [AmbientWash] show id=movie:tt27977862 gen=6 late=0 ms=18.6 lum=0.26
+2026-10-15 16:30:18.164 NuvioTV[1859:989941] [NavRail] contained heading=left
+2026-10-15 16:30:18.164 NuvioTV[1859:989941] [StageStrip] moveFail heading=left
+2026-10-15 16:30:18.347 NuvioTV[1859:989941] [StageStrip] swap phase=idle id=movie:tt27977862 sinceAct=680 pageEnd=51135
+2026-10-15 16:30:18.673 NuvioTV[1859:989941] [NavRail] contained heading=left
+2026-10-15 16:30:18.673 NuvioTV[1859:989941] [StageStrip] moveFail heading=left
+2026-10-15 16:30:19.165 NuvioTV[1859:989941] [StageStrip] PRESS #7 3→3 moves=0 settle=0 travel=0.0 afterRest=0 residual=0.0 src=vfocus-up key=- close=idle
+2026-10-15 16:30:19.186 NuvioTV[1859:989941] [NavRail] contained heading=left
+2026-10-15 16:30:19.186 NuvioTV[1859:989941] [StageStrip] moveFail heading=left
+2026-10-15 16:30:19.723 NuvioTV[1859:989941] [NavRail] contained heading=left
+2026-10-15 16:30:19.723 NuvioTV[1859:989941] [StageStrip] moveFail heading=left
+2026-10-15 16:30:20.239 NuvioTV[1859:989941] [NavRail] contained heading=left
+2026-10-15 16:30:20.239 NuvioTV[1859:989941] [StageStrip] moveFail heading=left
+2026-10-15 16:30:20.757 NuvioTV[1859:989941] [NavRail] contained heading=left
+2026-10-15 16:30:20.757 NuvioTV[1859:989941] [StageStrip] moveFail heading=left
+2026-10-15 16:30:22.093 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=28,353,276,60 label=- id=-
+2026-10-15 16:30:22.710 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=28,427,276,60 label=- id=-
+2026-10-15 16:30:23.327 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=28,501,276,60 label=- id=-
+2026-10-15 16:30:23.944 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=28,575,276,60 label=- id=-
+2026-10-15 16:30:24.579 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=28,649,276,60 label=- id=-
+2026-10-15 16:30:25.606 NuvioTV[1859:989941] [NavRail] select tab=4 from=0
+2026-10-15 16:30:25.607 NuvioTV[1859:989941] [Rail] gate=off mode=uikit
+2026-10-15 16:30:25.760 NuvioTV[1859:989941] [NavRail] exit via=select route=settings result=fallback
+2026-10-15 16:30:25.796 NuvioTV[1859:989941] [StageStrip] focus → nil
+2026-10-15 16:30:25.820 NuvioTV[1859:989941] [StageStrip] focus → ListTableViewCell frame=767,294,1074,109 label=Account & Profiles id=-
+2026-10-15 16:30:26.695 NuvioTV[1859:989941] [StageStrip] marker detached
+2026-10-15 16:30:26.810 NuvioTV[1859:989941] [StageStrip] config P=576.0 H=619.0 rows=10 pageSeconds=0.5
+2026-10-15 16:30:49.914 NuvioTV[1859:989941] [StageStrip] focus → nil
+2026-10-15 16:30:49.965 NuvioTV[1859:989941] [StageStrip] focus → ListTableViewCell frame=767,294,1074,109 label=Sign Out, Signed in as <redacted-email>. Local data o… id=-
+2026-10-15 16:31:10.669 NuvioTV[1859:989941] [StageStrip] focus → ListTableViewCell frame=767,457,1074,141 label=Open Last Profile at Launch, Skips the profile picker and op… id=-
+[ProfileSelect] remember last profile -> true
+2026-10-15 16:31:47.026 NuvioTV[1859:989941] [StageStrip] focus → nil
+2026-10-15 16:31:47.060 NuvioTV[1859:989941] [StageStrip] focus → ListTableViewCell frame=767,294,1074,109 label=Account & Profiles id=-
+2026-10-15 16:31:48.500 NuvioTV[1859:989941] [StageStrip] focus → ListTableViewCell frame=767,417,1074,109 label=Services id=-
+2026-10-15 16:31:49.227 NuvioTV[1859:989941] [StageStrip] focus → ListTableViewCell frame=767,580,1074,109 label=Appearance id=-
+2026-10-15 16:31:50.896 NuvioTV[1859:989941] [StageStrip] focus → nil
+2026-10-15 16:31:50.942 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=787,392,110,116 label=- id=-
+2026-10-15 16:32:16.165 NuvioTV[1859:989941] [StageStrip] focus → ListTableViewCell frame=767,540,1074,109 label=Accent Focus Ring, Focused artwork shows a ring in your acce… id=-
+2026-10-15 16:32:16.892 NuvioTV[1859:989941] [StageStrip] focus → ListTableViewCell frame=767,663,1074,109 label=No Zoom on Focus, Focused cards keep their size — highlight … id=-
+2026-10-15 16:32:18.061 NuvioTV[1859:989941] [StageStrip] geometry changed - baseline reset
+2026-10-15 16:32:18.061 NuvioTV[1859:989941] [StageStrip] config P=536.0 H=579.0 rows=10 pageSeconds=0.5
+2026-10-15 16:32:18.062 NuvioTV[1859:989941] [StageStrip] geometry rowH=536.0 P=536.0 H=579.0 stage=501.0 logo=150 synL=5 fits=1 posterH=403.3 font=system
+2026-10-15 16:32:26.424 NuvioTV[1859:989941] [StageStrip] focus → TVMenuButtonControl<ControlContent> frame=787,915,1034,66 label=- id=-
+2026-10-15 16:32:27.052 NuvioTV[1859:989941] [StageStrip] focus → ListTableViewCell frame=767,922,1074,109 label=OLED True Black, Pure black background for OLED screens id=-
+2026-10-15 16:32:27.683 NuvioTV[1859:989941] [StageStrip] focus → TVMenuButtonControl<ControlContent> frame=787,923,1034,66 label=- id=-
+2026-10-15 16:32:28.302 NuvioTV[1859:989941] [StageStrip] focus → TVMenuButtonControl<ControlContent> frame=787,928,1034,99 label=- id=-
+2026-10-15 16:32:28.919 NuvioTV[1859:989941] [StageStrip] focus → TVMenuButtonControl<ControlContent> frame=787,929,1034,66 label=- id=-
+2026-10-15 16:32:54.032 NuvioTV[1859:989941] [StageStrip] focus → _UIContextMenuCell frame=1391,602,408,66 label=- id=-
+2026-10-15 16:32:54.032 NuvioTV[1859:989941] [StageStrip] PRESS #8 3→3 moves=0 settle=0 travel=0.0 afterRest=0 residual=n/a src=vfocus-up key=- close=press
+2026-10-15 16:32:54.047 NuvioTV[1859:989941] [StageStrip] focus → _UIContextMenuCell frame=1391,602,408,66 label=- id=-
+2026-10-15 16:33:14.846 NuvioTV[1859:989941] [StageStrip] focus → _UIContextMenuCell frame=1391,668,408,66 label=- id=-
+2026-10-15 16:33:15.467 NuvioTV[1859:989941] [StageStrip] focus → _UIContextMenuCell frame=1391,734,408,66 label=- id=-
+2026-10-15 16:33:16.617 NuvioTV[1859:989941] [NavRail] hidden tab bar made unfocusable (hidden=1 alpha=1.00 frame={{0, 0}, {1920, 68}})
+2026-10-15 16:33:17.516 NuvioTV[1859:989941] [StageStrip] focus → nil
+2026-10-15 16:33:17.547 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=787,392,110,116 label=- id=-
+2026-10-15 16:33:17.548 NuvioTV[1859:989941] [StageStrip] PRESS #9 3→3 moves=0 settle=0 travel=0.0 afterRest=0 residual=n/a src=vfocus-down key=- close=press
+2026-10-15 16:33:23.845 NuvioTV[1859:989941] [StageStrip] moveFail heading=up
+2026-10-15 16:33:24.374 NuvioTV[1859:989941] [StageStrip] moveFail heading=up
+2026-10-15 16:33:24.900 NuvioTV[1859:989941] [StageStrip] moveFail heading=up
+2026-10-15 16:33:25.425 NuvioTV[1859:989941] [StageStrip] moveFail heading=up
+2026-10-15 16:33:25.950 NuvioTV[1859:989941] [StageStrip] moveFail heading=up
+2026-10-15 16:33:53.965 NuvioTV[1859:989941] [StageStrip] focus → ListTableViewCell frame=767,540,1074,109 label=Accent Focus Ring, Focused artwork shows a ring in your acce… id=-
+2026-10-15 16:33:54.706 NuvioTV[1859:989941] [StageStrip] focus → ListTableViewCell frame=767,663,1074,109 label=Ring Takes Poster Color, The focus ring uses the focused pos… id=-
+2026-10-15 16:34:05.280 NuvioTV[1859:989941] [StageStrip] focus → ListTableViewCell frame=767,786,1074,109 label=No Zoom on Focus, Focused cards keep their size — highlight … id=-
+2026-10-15 16:34:05.896 NuvioTV[1859:989941] [StageStrip] focus → TVMenuButtonControl<ControlContent> frame=787,915,1034,66 label=- id=-
+2026-10-15 16:34:06.434 NuvioTV[1859:989941] [StageStrip] focus → ListTableViewCell frame=767,924,1074,109 label=OLED True Black, Pure black background for OLED screens id=-
+2026-10-15 16:34:06.948 NuvioTV[1859:989941] [StageStrip] focus → TVMenuButtonControl<ControlContent> frame=787,926,1034,66 label=- id=-
+2026-10-15 16:34:07.465 NuvioTV[1859:989941] [StageStrip] focus → TVMenuButtonControl<ControlContent> frame=787,930,1034,99 label=- id=-
+2026-10-15 16:34:47.567 NuvioTV[1859:989941] [StageStrip] focus → nil
+2026-10-15 16:34:47.606 NuvioTV[1859:989941] [StageStrip] focus → ListTableViewCell frame=767,580,1074,109 label=Appearance id=-
+2026-10-15 16:34:55.407 NuvioTV[1859:989941] [NavRail] arm reason=menu origin=request tab=4
+2026-10-15 16:34:55.450 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=-72,649,60,60 label=- id=-
+2026-10-15 16:34:55.450 NuvioTV[1859:989941] [StageStrip] PRESS #10 3→3 moves=0 settle=0 travel=0.0 afterRest=0 residual=n/a src=vfocus-up key=- close=press
+2026-10-15 16:34:55.462 NuvioTV[1859:989941] [Rail] gate=on mode=uikit
+2026-10-15 16:35:14.617 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=28,575,276,60 label=- id=-
+2026-10-15 16:35:15.151 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=28,501,276,60 label=- id=-
+2026-10-15 16:35:15.682 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=28,427,276,60 label=- id=-
+2026-10-15 16:35:16.215 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=28,353,276,60 label=- id=-
+2026-10-15 16:35:16.771 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=28,279,276,60 label=- id=-
+2026-10-15 16:35:17.812 NuvioTV[1859:989941] [NavRail] select tab=0 from=4
+2026-10-15 16:35:17.812 NuvioTV[1859:989941] [Rail] gate=off mode=uikit
+[LaunchTrace] +458316ms home_appear
+2026-10-15 16:35:17.878 NuvioTV[1859:989941] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-15 16:35:17.878 NuvioTV[1859:989941] [TrailerPipeline] trailerLocation stage=row
+2026-10-15 16:35:17.923 NuvioTV[1859:989941] [StageStrip] marker attached
+2026-10-15 16:35:17.934 NuvioTV[1859:989941] [NavRail] exit via=select route=home result=fallback
+[LaunchTrace] +458375ms first_hero n=8
+2026-10-15 16:35:17.961 NuvioTV[1859:989941] [StageStrip] config P=536.0 H=579.0 rows=11 pageSeconds=0.5
+2026-10-15 16:35:17.961 NuvioTV[1859:989941] [StageStrip] seed id=movie:tt3118958 fallback=0
+2026-10-15 16:35:17.964 NuvioTV[1859:989941] [StageStrip] focus → nil
+2026-10-15 16:35:17.989 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,667,360,247 label=- id=-
+2026-10-15 16:35:17.989 NuvioTV[1859:989941] [StageStrip] PRESS #11 3→3 moves=0 settle=0 travel=0.0 afterRest=0 residual=n/a src=vfocus-down key=- close=press
+2026-10-15 16:35:18.004 NuvioTV[1859:989941] [AmbientWash] show id=movie:tt3118958 gen=1 late=0 ms=20.0 lum=0.17
+2026-10-15 16:35:19.495 NuvioTV[1859:989941] [StageStrip] PRESS #12 3→3 moves=0 settle=0 travel=0.0 afterRest=0 residual=n/a src=vfocus-down key=- close=idle
+2026-10-15 16:35:31.150 NuvioTV[1859:989941] [StageStrip] moveFail heading=left
+2026-10-15 16:35:31.150 NuvioTV[1859:989941] [NavRail] arm reason=left origin=UIKitFocusableViewResponderItem tab=0
+2026-10-15 16:35:31.175 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=-72,279,60,60 label=- id=-
+2026-10-15 16:35:31.181 NuvioTV[1859:989941] [Rail] gate=on mode=uikit
+2026-10-15 16:35:31.194 NuvioTV[1859:989941] [StageStrip] focus left the strip from row=continue-watching
+2026-10-15 16:35:31.194 NuvioTV[1859:989941] [StageStrip] strip focus lost row=continue-watching
+2026-10-15 16:35:32.692 NuvioTV[1859:989941] [StageStrip] PRESS #13 3→3 moves=0 settle=0 travel=0.0 afterRest=0 residual=n/a src=vfocus-up key=- close=idle
+2026-10-15 16:35:37.771 NuvioTV[1859:989941] [StageStrip] moveFail heading=right
+2026-10-15 16:35:37.771 NuvioTV[1859:989941] [Rail] gate=off mode=uikit
+2026-10-15 16:35:37.782 NuvioTV[1859:989941] [NavRail] exit via=right route=home result=focus
+2026-10-15 16:35:37.783 NuvioTV[1859:989941] [StageStrip] restore row=continue-watching item=tt3118958 rung=1 landed=0 reason=external
+2026-10-15 16:35:37.802 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,667,360,247 label=- id=-
+2026-10-15 16:35:39.315 NuvioTV[1859:989941] [StageStrip] PRESS #14 3→3 moves=0 settle=0 travel=0.0 afterRest=0 residual=n/a src=vfocus-down key=- close=idle
+2026-10-15 16:36:06.912 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1203,360,247 label=- id=-
+2026-10-15 16:36:06.921 NuvioTV[1859:989941] [StageStrip] page to=1 key=upcoming seconds=0.5 gen=1
+2026-10-15 16:36:07.532 NuvioTV[1859:989941] [StageStrip] swap phase=out id=series:tt32268630 sinceAct=592 pageEnd=563
+2026-10-15 16:36:07.594 NuvioTV[1859:989941] [StageStrip] seg p=15 k=1 start=+56 dur=525 from=501.0 to=-35.0 travel=-536.0
+2026-10-15 16:36:07.689 NuvioTV[1859:989941] [StageStrip] swap phase=in id=series:tt32268630 sinceAct=749 pageEnd=721
+2026-10-15 16:36:07.691 NuvioTV[1859:989941] [AmbientWash] show id=series:tt32268630 gen=2 late=0 ms=17.4 lum=0.26
+2026-10-15 16:36:07.894 NuvioTV[1859:989941] [StageStrip] swap phase=idle id=series:tt32268630 sinceAct=954 pageEnd=926
+2026-10-15 16:36:08.552 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1110,269,443 label=- id=-
+2026-10-15 16:36:08.560 NuvioTV[1859:989941] [StageStrip] page to=2 key=test-collection-1004 seconds=0.5 gen=2
+2026-10-15 16:36:08.560 NuvioTV[1859:989941] [StageStrip] PRESS #15 0→1 moves=1 settle=581 travel=-536.0 afterRest=0 residual=n/a src=vfocus-down key=upcoming close=row
+2026-10-15 16:36:09.150 NuvioTV[1859:989941] [StageStrip] swap phase=out id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 sinceAct=568 pageEnd=550
+2026-10-15 16:36:09.212 NuvioTV[1859:989941] [StageStrip] seg p=16 k=1 start=+40 dur=511 from=-35.0 to=-571.0 travel=-536.0
+2026-10-15 16:36:09.308 NuvioTV[1859:989941] [StageStrip] swap phase=in id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 sinceAct=726 pageEnd=707
+2026-10-15 16:36:09.309 NuvioTV[1859:989941] [AmbientWash] show id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 gen=3 late=0 ms=19.1 lum=0.26
+2026-10-15 16:36:09.513 NuvioTV[1859:989941] [StageStrip] swap phase=idle id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 sinceAct=931 pageEnd=913
+2026-10-15 16:36:10.174 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1102,269,447 label=- id=-
+2026-10-15 16:36:10.185 NuvioTV[1859:989941] [StageStrip] page to=3 key=aio-metadata:New Streaming Releases: Movies:mdblist.86934 seconds=0.5 gen=3
+2026-10-15 16:36:10.185 NuvioTV[1859:989941] [StageStrip] PRESS #16 1→2 moves=1 settle=551 travel=-536.0 afterRest=0 residual=n/a src=row key=test-collection-1004 close=row
+2026-10-15 16:36:10.786 NuvioTV[1859:989941] [StageStrip] swap phase=out id=movie:tt27977862 sinceAct=577 pageEnd=555
+2026-10-15 16:36:10.847 NuvioTV[1859:989941] [StageStrip] seg p=17 k=1 start=+44 dur=517 from=-571.0 to=-1107.0 travel=-536.0
+2026-10-15 16:36:10.943 NuvioTV[1859:989941] [StageStrip] swap phase=in id=movie:tt27977862 sinceAct=734 pageEnd=712
+2026-10-15 16:36:10.944 NuvioTV[1859:989941] [AmbientWash] show id=movie:tt27977862 gen=4 late=0 ms=18.6 lum=0.26
+2026-10-15 16:36:11.148 NuvioTV[1859:989941] [StageStrip] swap phase=idle id=movie:tt27977862 sinceAct=939 pageEnd=917
+2026-10-15 16:36:11.784 NuvioTV[1859:989941] [StageStrip] focus → UIKitFocusableViewResponderItem frame=437,566,269,447 label=- id=-
+2026-10-15 16:36:11.785 NuvioTV[1859:989941] [StageStrip] PRESS #17 2→3 moves=1 settle=561 travel=-536.0 afterRest=0 residual=n/a src=row key=aio-metadata:New Streaming Releases: Movies:mdblist.86934 close=press
+2026-10-15 16:36:12.248 NuvioTV[1859:989941] [StageStrip] swap phase=out id=movie:tt32588798 sinceAct=452 pageEnd=2017
+2026-10-15 16:36:12.400 NuvioTV[1859:989941] [StageStrip] swap phase=in id=movie:tt32588798 sinceAct=603 pageEnd=2169
+2026-10-15 16:36:12.402 NuvioTV[1859:989941] [AmbientWash] show id=movie:tt32588798 gen=5 late=0 ms=28.6 lum=0.15
+2026-10-15 16:36:12.604 NuvioTV[1859:989941] [StageStrip] swap phase=idle id=movie:tt32588798 sinceAct=808 pageEnd=2373
+2026-10-15 16:36:13.299 NuvioTV[1859:989941] [StageStrip] PRESS #18 3→3 moves=0 settle=0 travel=0.0 afterRest=0 residual=n/a src=vfocus-up key=- close=idle
+2026-10-15 16:36:15.387 NuvioTV[1859:989941] [TrailerQuality] presentationSize=1920x1080
+2026-10-15 16:36:17.036 NuvioTV[1859:989941] [TrailerQuality] presentationSize=1920x1080
+Launched application with com.youngchris29.NuvioTV bundle identifier.
+Waiting for the application to terminate...
+App terminated due to signal 9.
