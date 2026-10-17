@@ -338,6 +338,8 @@ rc4's hero-ON line is the toggle's ON state.
 
 #### 4.4b Batch B second half (re-sequenced 2026-10-17 from his rc5 verdict)
 
+The items the rc5 reply promised (B11 P1+P2, B12, B14, B15) have their own build plan: `docs/rc5-reply-promises-plan-2026-10-17.md`.
+
 B1–B10 shipped in rc5 (build 137). What is left, his rc5 items first:
 
 | # | Item | Shape / files |
