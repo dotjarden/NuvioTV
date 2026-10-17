@@ -214,3 +214,31 @@ inside a collection.
 
 BUG-156 two-move return (B13), BUG-170 HDR timing (P5 player, after his engine answer), BUG-168 mpv Animals (its
 own repro card), FEAT-76 per-collection layout (D17), FEAT-77 loading animation (D18).
+
+## OUTCOME (2026-10-17, built + reviewed + device-passed; NOT merged, NOT cut)
+
+Branch `claude/rc5-promises` in the clone `~/Claude/Projects/NuvioMobile-rc5-promises`, off `9ee8597d4`, local only
+(not pushed): `aa617f2dc` wave 1 (agents α = P1, β = P3/P4/P5) + `523ad97db` review r1 fixes.
+
+| Item | Result |
+|---|---|
+| P1 BUG-162 (D16) | `PosterStyle` shape rest = `width×16/9 × width` (416×234 at Medium+), `expandedCardWidth/Height` = `height×16/9 × height`, `artworkSize(expanded:)`; `InlineTrailerCard` grows at `.wide` inside a poster-height slot (`shapeSlotSizer`, trailers on or off); morph scroll + `rowArtworkHeight` read the new sizes. **Device PASS** (Test 2, stub add-on, his config): rest cards ≈412×230 pt, heading right above (`f1-down11`), the trailer picture on the grown tile (`f2-trailer`), a third card grows on screen with the row following (`f3-third-grown`). |
+| P2 BUG-146 | **No constant change.** The A/B on the box (same config: Medium+, Hide Titles ON, zoom ON, Card Depth ON) found rc5's gap from heading baseline to the unfocused posters ≈64 pt (`g1-base-catalog-row`, `g2-base-folder`), matching Steven's photo, and this build's ≈30 pt (`b3-catalog-row`, `c1-folder-open`). Cause: `CatalogRowView`'s shelf `LazyHStack` centred its cards, and the focused trailer card lays out taller, so every other card sank ~34 pt. Fix: `.top` on every row (wave 1). That is the "halved" gap without trimming the 24 pt band, so the zoom lift still clears the heading. The rejected trim (24 → 12) would have put the lifted tile into the heading's descenders. |
+| P3 BUG-173 | `StageCopy.make(rowHeading:)` + headings recorded per shown item in `StageCopySource`. **Device PASS:** "Test Folder" alone on the stage above the "Test Collection" heading (`b2-test-collection`; rc5 read "Test Folder / Test Collection"). |
+| P4 BUG-168 native | `SeekPreviewMode.allowsNativeIFrames`, Developer "Native I-frame Scan (A/B)" off by default. **Device PASS:** native route (`[PlayerRouter] native — SDR`), `[HLS] master iframes=0`, a paused scrub 02:08 → 03:43 shows the time only, no box (`h5-scrub2`). |
+| P5 FEAT-64 | `WatchedBadgeIndex` (@Observable, two FlowWatchers) + `WatchedBadgeReader` per card; `LandscapeCard` gains `watchBadge`. Tick on every `CatalogRowView` row (Home, Classic, folder pages, Search, Discover rows); CW / Upcoming / grid pages none. **Device PASS:** Mark as Watched → tick on Spider-Man with no refresh (`d3-rest-tick`), survives a reinstall + relaunch (`i2`), Mark as Unwatched removes it (`i3`). |
+
+Reviews: Opus r1 1 P1 (the morph-scroll guard still skipped every landscape row, so a growing wide card never
+scrolled) + 4 P3; fixed (guard on `landscapeRowGeometry`, `ensureLoaded()` on every shell appearance, comment);
+the stale-heading P3 left (self-heals on the next focus report). r2 CLEAN (one optional P3: `InlineTrailerCard.expandedWidth`
+is now test-only). Gates: NuvioTVTests 1838/0 (5 skipped) on wave 1, the touched classes 49/0 after r1, Release sim
+green, UI leg `testLandscapeShapeCatalogDrawsLandscapeCards` PASS (rest 415.9×234, grown 623.9×351 from the same
+top). Device evidence `docs/research/rc5-promises-device-2026-10-17/` (960 px shots + crops; consoles redacted).
+Test 2 cleaned: watched mark undone, fixture add-on removed, app relaunched plain, TV asleep.
+
+Seen on the way, not in scope: the Stage's Continue Watching and Upcoming headings still float ~100 pt above their
+203 pt cards (`a1-launch`, `b1-collection-row`, the pre-existing Batch B observation), the same centring class as P2
+in a different row view (`UpcomingRow.swift`, the CW row in `HomeView`); a cheap follow-up if Steven names it.
+For the next DM: the heading gap fell from ≈64 to ≈30 pt in his config (the row alignment, not a spacing change);
+the native player shows the time only while scrubbing, and FF/RW scan pictures are behind the Developer row.
+Next: Christian's go to fast-forward `claude/rc5-promises` into `tvos-shared-extraction`, then rc6.

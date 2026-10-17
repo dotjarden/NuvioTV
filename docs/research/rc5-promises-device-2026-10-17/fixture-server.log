@@ -1,0 +1,16 @@
+[landscape-addon] serving on 0.0.0.0:8766, 8 landscape metas
+[landscape-addon] "GET /manifest.json HTTP/1.1" 200 -
+[landscape-addon] "GET /manifest.json HTTP/1.1" 200 -
+[landscape-addon] "GET /catalog/movie/zzland.json HTTP/1.1" 200 -
+[landscape-addon] "GET /meta/movie/zzland-dune.json HTTP/1.1" 200 -
+[landscape-addon] "GET /meta/movie/zzland-oppenheimer.json HTTP/1.1" 200 -
+[landscape-addon] "GET /meta/movie/zzland-interstellar.json HTTP/1.1" 200 -
+[landscape-addon] "GET /manifest.json HTTP/1.1" 200 -
+[landscape-addon] "GET /catalog/movie/zzland.json HTTP/1.1" 200 -
+[landscape-addon] "GET /catalog/movie/zzland.json HTTP/1.1" 200 -
+[landscape-addon] "GET /catalog/movie/zzland.json HTTP/1.1" 200 -
+[landscape-addon] "GET /catalog/movie/zzland.json HTTP/1.1" 200 -
+[landscape-addon] "GET /manifest.json HTTP/1.1" 200 -
+[landscape-addon] "GET /catalog/movie/zzland.json HTTP/1.1" 200 -
+[landscape-addon] "GET /catalog/movie/zzland.json HTTP/1.1" 200 -
+[landscape-addon] "GET /catalog/movie/zzland.json HTTP/1.1" 200 -
