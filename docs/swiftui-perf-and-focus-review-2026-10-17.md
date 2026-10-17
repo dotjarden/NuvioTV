@@ -1,6 +1,6 @@
 # SwiftUI performance review + focus consistency pass (2026-10-17)
 
-Submodule branch `claude/focus-consistency` (commit `a802e41f8`, local only), cut from `tvos-shared-extraction` `523ad97db`. Not merged.
+Submodule branch `claude/focus-consistency` (commits `a802e41f8` + `f78fe7ea8`, local only), cut from `tvos-shared-extraction` `523ad97db`. Not merged.
 
 Method: three read-only review agents (Home/browse performance, the rest of the app's performance, focus across every screen). They used the `swiftui-performance-audit` and `swiftui-ui-patterns` skills. All performance findings come from reading the code: there is no Instruments trace yet.
 
@@ -50,6 +50,21 @@ Proposed convention:
 2. mpv player tick (`MPVPlayerView.refreshState`, every 0.5 s): position, duration, pause, buffering and the transport mirror are written only when they change. A paused player no longer re-renders the overlay and transport bar twice a second.
 3. `HomeViewModel`: `isLoading`, `errorMessage`, `continueWatching` and `upcoming` are written only when they change. Kotlin data classes bridge `equals` as `isEqual`, so the compare is structural. The progress flow emits on every playback save while Home sits under the player.
 4. Stream picker add-on logo: `AsyncImage` (no cache, full decode on every row) → `CachedAsyncImage` decoded at 44 pt.
+
+## Batch 2 (`f78fe7ea8`, same day)
+
+Taken from the lists below, avoiding the Home files (the HomeView split runs in its own session).
+
+- Perf #2 (Detail flags): `refreshFlags` writes only on change, and library, add-on, continue-watching-prefs and shuffle emissions skip the per-episode watched scan.
+- Perf #3 (Episodes): the grouping, season order and posters are cached per `MetaDetails` object, so a Left/Right press no longer re-sorts every episode. Moving the focus state into a child view is not done.
+- Perf #8 (profiles): `ProfilesViewModel` writes only on change.
+- Perf #12 (decode sizes): episode stills and profile avatars decode at 1.2× their drawn size, which covers the focus lift.
+- Focus "never disable the pressed control": Add-ons Install, Save Key, Import Badge Pack, Install Repository, Clear Pattern, MDBList Connect/Disconnect and profile Save. The phase-swap hand-offs (Connect → activation card, Remote Setup Start ↔ Stop, the shuffle sheet) are still open.
+- Opus review r1: 0 P1 / 1 P2 / 4 P3, all fixed except the Home hold-route note.
+  - The P2: the stream-picker logo now stays clear while loading and when it fails, where it had shown a shimmer and then a grey tile.
+  - The open note: Home no longer republishes `isLoading` during the hero hold; nothing found reads a stale field, but give it a device look.
+- Gates: Debug + Release, NuvioTVTests 1838/0, FocusRowUITests PASS.
+- Held back because they change behaviour and need a device judgement: Episodes `.defaultFocus` on the next unwatched episode, cast row keyed by person id, a lazy stack for Search results.
 
 ## Performance: found, not fixed (ranked)
 
