@@ -1,6 +1,6 @@
 # Batch B: the mechanical half (B1–B10), 2026-10-16
 
-**Status: BUILT + REVIEWED + DEVICE-PASSED 2026-10-16, branch `claude/batch-b` pushed to `origin` as a backup, READY TO MERGE on Christian's go (NOT merged, NOT cut).** Master plan `docs/master-plan-2026-10-14.md` §4.4 (re-sequenced 2026-10-16 from
+**Status: MERGED 2026-10-17 00:1xZ on Christian's go ("merge, no cut yet"): `tvos-shared-extraction` fast-forwarded `8e8090806` → `d5dd6aec1` (5 commits), pushed, `claude/batch-b` deleted on `origin`; outer pointer bumped; NOT cut (rc5 is the next go).** Was: BUILT + REVIEWED + DEVICE-PASSED 2026-10-16, READY TO MERGE. Master plan `docs/master-plan-2026-10-14.md` §4.4 (re-sequenced 2026-10-16 from
 Steven's rc4 verdict, `docs/steven-beta19-rc4-verdict-2026-10-16.md`), decisions D11–D15 accepted as written.
 Clone `~/Claude/Projects/NuvioMobile-batch-b`, branch `claude/batch-b` off `tvos-shared-extraction`
 `8e8090806` (Batch D + P4 merged, uncut). Not merged, not cut: rc5 (build 137) is cut on Christian's go
