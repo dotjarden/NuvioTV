@@ -1,0 +1,75 @@
+[LaunchTrace] +0ms app_init
+[ExtPlayerProbe] canOpenURL(infuse://) = true
+2026-10-17 08:31:07.877 NuvioTV[3067:1720850] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ExtPlayerProbe] canOpenURL(vlc-x-callback://) = false
+[ExtPlayerProbe] canOpenURL(outplayer://) = false
+[ExtPlayerProbe] canOpenURL(open-vidhub://) = true
+[ExtPlayerProbe] canOpenURL(vidhub://) = false
+[ExtPlayerProbe] canOpenURL(senplayer://) = false
+[ExtPlayerProbe] availablePlayers = ["infuse:Infuse", "vidhub:VidHub"]
+2026-10-17 08:31:07.877 NuvioTV[3067:1720850] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-17 08:31:07.877 NuvioTV[3067:1720850] -canOpenURL: failed for URL: "vidhub://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-17 08:31:07.878 NuvioTV[3067:1720850] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-17 08:31:07.878 NuvioTV[3067:1720850] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-17 08:31:07.879 NuvioTV[3067:1720850] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-17 08:31:07.879 NuvioTV[3067:1720850] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ProfileSelect] auto-enter profile 3
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-17 08:31:08.211 NuvioTV[3067:1720850] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+[LaunchTrace] +480ms home_appear
+2026-10-17 08:31:08.233 NuvioTV[3067:1720850] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-17 08:31:08.271 NuvioTV[3067:1720850] [HomeScrollProbe] REGIME-CHANGE from=M330c1p1r0z1t37h1rt4 to=L403c1p1r0z1t37h1rt4 fits=1
+[TopShelf] wrote 0 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 0 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 0 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +1040ms artwork #1: mem=0 disk=1 net=0 fail=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +1742ms artwork #10: mem=0 disk=10 net=0 fail=0
+[LaunchTrace] +1749ms first_rows n=5 hero=8
+[LaunchTrace] +1749ms first_hero n=8
+2026-10-17 08:31:09.521 NuvioTV[3067:1720850] [HomeHero] logoInk sync-sample ms=0.33
+2026-10-17 08:31:09.522 NuvioTV[3067:1720850] [HomeScrollProbe] REGIME-CHANGE from=L403c1p1r0z1t37h1rt4 to=L403c1p0r0z1t37h1rt4 fits=0
+[LaunchTrace] +1830ms artwork #25: mem=0 disk=25 net=0 fail=0
+[LaunchTrace] +1872ms artwork #50: mem=0 disk=50 net=0 fail=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +1972ms rows n=9
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-17 08:31:49.662 NuvioTV[3067:1720850] [HomeScrollProbe] settle REARM-DIRECTION dir=1 row=upcoming pull=0 rearm=0 released=0 y=356 — the walk reversed; the pull-back brake belongs to the other direction
+2026-10-17 08:31:49.974 NuvioTV[3067:1720850] [TrailerPipeline] gates inlineTrailersEnabled=YES systemAutoplay=YES
+2026-10-17 08:31:51.126 NuvioTV[3067:1720850] [HomeScrollProbe] settle VOID expected=905 landed=905 contentH=4702→4727
+[LaunchTrace] +56910ms artwork #100: mem=0 disk=97 net=3 fail=0
+2026-10-17 08:32:08.891 NuvioTV[3067:1720850] [HomeScrollProbe] settle VOID expected=2773 landed=2774 contentH=5823→5831
+2026-10-17 08:32:11.424 NuvioTV[3067:1721342] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-17 08:32:11.424 NuvioTV[3067:1721342] [TrailerExtract] client=visionos video=P3uI5sLosKU hls=true formats=0 adaptive=27 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+2026-10-17 08:32:11.428 NuvioTV[3067:1721342] [TrailerExtract] client=android video=P3uI5sLosKU hls=false formats=1 adaptive=29 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl,metadataFormats
+2026-10-17 08:32:11.432 NuvioTV[3067:1721342] [TrailerExtract] client=ios video=P3uI5sLosKU hls=false formats=0 adaptive=27 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl,metadataFormats
+2026-10-17 08:32:11.573 NuvioTV[3067:1721256] [TrailerExtract] manifest client=visionos top variant 3840x2160
+2026-10-17 08:32:11.573 NuvioTV[3067:1721256] [TrailerExtract] selection: manifest=2160 progressive=360 (manifests collected=1)
+2026-10-17 08:32:11.573 NuvioTV[3067:1721256] [TrailerExtract] repack candidates: avcVideo=1080p avc1.640028 (visionos) m4aAudio=mp4a.40.2 (visionos) maxFps=0
+2026-10-17 08:32:11.917 NuvioTV[3067:1721339] [TrailerExtract] repack decision: avc=1080p vs progressive=2160p -> skip (progressive is not worse)
+2026-10-17 08:32:14.057 NuvioTV[3067:1720850] [TrailerQuality] presentationSize=1920x1080
+2026-10-17 08:32:18.695 NuvioTV[3067:1721149] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-17 08:32:18.695 NuvioTV[3067:1721149] [TrailerExtract] client=visionos video=7xfqITrMDcI hls=true formats=0 adaptive=23 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+2026-10-17 08:32:18.698 NuvioTV[3067:1721149] [TrailerExtract] client=android video=7xfqITrMDcI hls=false formats=1 adaptive=25 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl,metadataFormats
+2026-10-17 08:32:18.702 NuvioTV[3067:1721149] [TrailerExtract] client=ios video=7xfqITrMDcI hls=false formats=0 adaptive=23 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl,metadataFormats
+2026-10-17 08:32:18.778 NuvioTV[3067:1721338] [TrailerExtract] manifest client=visionos top variant 1920x1080
+2026-10-17 08:32:18.778 NuvioTV[3067:1721338] [TrailerExtract] selection: manifest=1080 progressive=360 (manifests collected=1)
+2026-10-17 08:32:18.778 NuvioTV[3067:1721338] [TrailerExtract] repack candidates: avcVideo=1080p avc1.640028 (visionos) m4aAudio=mp4a.40.2 (visionos) maxFps=0
+2026-10-17 08:32:19.181 NuvioTV[3067:1721338] [TrailerExtract] repack decision: avc=1080p vs progressive=1080p -> ELIGIBLE
+2026-10-17 08:32:19.587 NuvioTV[3067:1721149] [TrailerRepack] listener start port=8230 prefer=- gen=1 conns=0
+2026-10-17 08:32:19.588 NuvioTV[3067:1721149] [TrailerRepack] listener ready port=8230 waiters=1 gen=1 conns=0
+2026-10-17 08:32:19.588 NuvioTV[3067:1721149] [TrailerRepack] serving 1920x1080 avc1+mp4a (34+18 segments) at http://127.0.0.1:8230/d5fdcd7a15697cf6a12c7482e3122142/master.m3u8 fps=24 itag=137 n=0
+2026-10-17 08:32:21.481 NuvioTV[3067:1720850] [TrailerQuality] presentationSize=1920x1080
+2026-10-17 08:32:24.424 NuvioTV[3067:1720850] [HomeScrollProbe] settle REARM-DIRECTION dir=-1 row=aio-metadata:New Streaming Releases: Series:mdblist.2194 pull=0 rearm=0 released=0 y=2126 — the walk reversed; the pull-back brake belongs to the other direction
+Launched application with com.youngchris29.NuvioTV bundle identifier.
+Waiting for the application to terminate...
+App terminated due to signal 15.

@@ -1,0 +1,141 @@
+[LaunchTrace] +0ms app_init
+[ExtPlayerProbe] canOpenURL(infuse://) = true
+2026-10-17 11:12:37.507 NuvioTV[3339:1780962] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ExtPlayerProbe] canOpenURL(vlc-x-callback://) = false
+[ExtPlayerProbe] canOpenURL(outplayer://) = false
+[ExtPlayerProbe] canOpenURL(open-vidhub://) = true
+[ExtPlayerProbe] canOpenURL(vidhub://) = false
+[ExtPlayerProbe] canOpenURL(senplayer://) = false
+[ExtPlayerProbe] availablePlayers = ["infuse:Infuse", "vidhub:VidHub"]
+2026-10-17 11:12:37.507 NuvioTV[3339:1780962] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-17 11:12:37.508 NuvioTV[3339:1780962] -canOpenURL: failed for URL: "vidhub://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-17 11:12:37.508 NuvioTV[3339:1780962] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-17 11:12:37.508 NuvioTV[3339:1780962] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-17 11:12:37.509 NuvioTV[3339:1780962] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-17 11:12:37.509 NuvioTV[3339:1780962] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ProfileSelect] auto-enter profile 3
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-17 11:12:37.901 NuvioTV[3339:1780962] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+2026-10-17 11:12:37.908 NuvioTV[3339:1780962] [HomeScrollProbe] plan regime=M330c1p1r0z1t37h1rt4 linkFrame=506 viewport=493 fits=0 CAPPED — rows still short, belt remains in play
+2026-10-17 11:12:37.922 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport live=0 expected=493
+[LaunchTrace] +670ms home_appear
+2026-10-17 11:12:37.922 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport BUDGET MISMATCH live=0 expected=493 (budget 493 + compression 0 showsCTA=0)
+2026-10-17 11:12:37.922 NuvioTV[3339:1780962] [HomeScrollProbe] classic y=0 inset=0 residual=0
+2026-10-17 11:12:37.923 NuvioTV[3339:1780962] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-17 11:12:37.934 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport live=718 expected=493
+2026-10-17 11:12:37.934 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport BUDGET MISMATCH live=718 expected=493 (budget 493 + compression 0 showsCTA=0)
+2026-10-17 11:12:37.939 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport live=863 expected=493
+2026-10-17 11:12:37.939 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport BUDGET MISMATCH live=863 expected=493 (budget 493 + compression 0 showsCTA=0)
+2026-10-17 11:12:37.939 NuvioTV[3339:1780962] [HomeScrollProbe] settle INSET-NONZERO inset=302
+2026-10-17 11:12:37.939 NuvioTV[3339:1780962] [HomeScrollProbe] classic y=-302 inset=302 residual=0
+2026-10-17 11:12:37.940 NuvioTV[3339:1780962] [HomeScrollProbe] classic y=-157 inset=157 residual=0
+[TopShelf] wrote 0 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-17 11:12:37.966 NuvioTV[3339:1780962] [HomeScrollProbe] REGIME-CHANGE from=M330c1p1r0z1t37h1rt4 to=L403c1p1r0z1t37h1rt4 fits=1
+[TopShelf] wrote 0 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 0 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-17 11:12:38.352 NuvioTV[3339:1780962] [HomeScrollProbe] REST classic y=-157 inset=157 residual=0
+2026-10-17 11:12:38.455 NuvioTV[3339:1780962] [HomeScrollProbe] settle decided reason=nofocus released=0
+[LaunchTrace] +1291ms artwork #1: mem=0 disk=1 net=0 fail=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +2101ms artwork #10: mem=0 disk=10 net=0 fail=0
+[LaunchTrace] +2114ms first_rows n=5 hero=8
+[LaunchTrace] +2114ms first_hero n=8
+2026-10-17 11:12:39.382 NuvioTV[3339:1780962] [HomeScrollProbe] plan regime=L403c1p0r0z1t37h1rt4 linkFrame=579 viewport=523 fits=0 CAPPED — rows still short, belt remains in play
+2026-10-17 11:12:39.393 NuvioTV[3339:1780962] [HomeScrollProbe] settle still-ignored — a motionless geometry pass no longer arms a correction (further occurrences not logged)
+2026-10-17 11:12:39.394 NuvioTV[3339:1780962] [HomeHero] logoInk sync-sample ms=0.38
+2026-10-17 11:12:39.399 NuvioTV[3339:1780962] [HomeScrollProbe] settle clearance-changed rearm row=continue-watching
+2026-10-17 11:12:39.399 NuvioTV[3339:1780962] [HomeScrollProbe] REGIME-CHANGE from=L403c1p1r0z1t37h1rt4 to=L403c1p0r0z1t37h1rt4 fits=0
+2026-10-17 11:12:39.427 NuvioTV[3339:1780962] [HomeScrollProbe] focusUpdate gen=1 prev=- next=UIKitFocusableViewResponderItem
+2026-10-17 11:12:39.433 NuvioTV[3339:1780962] [HomeReturn] own row=continue-watching from=-
+[LaunchTrace] +2190ms rows n=9
+[LaunchTrace] +2201ms artwork #25: mem=0 disk=25 net=0 fail=0
+[LaunchTrace] +2239ms artwork #50: mem=0 disk=50 net=0 fail=0
+2026-10-17 11:12:39.469 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport live=859 expected=523
+2026-10-17 11:12:39.469 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport BUDGET MISMATCH live=859 expected=523 (budget 455 + compression 68 showsCTA=1)
+2026-10-17 11:12:39.486 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport live=850 expected=523
+2026-10-17 11:12:39.486 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport BUDGET MISMATCH live=850 expected=523 (budget 455 + compression 68 showsCTA=1)
+2026-10-17 11:12:39.503 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport live=836 expected=523
+2026-10-17 11:12:39.503 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport BUDGET MISMATCH live=836 expected=523 (budget 455 + compression 68 showsCTA=1)
+2026-10-17 11:12:39.519 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport live=817 expected=523
+2026-10-17 11:12:39.519 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport BUDGET MISMATCH live=817 expected=523 (budget 455 + compression 68 showsCTA=1)
+2026-10-17 11:12:39.537 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport live=793 expected=523
+2026-10-17 11:12:39.537 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport BUDGET MISMATCH live=793 expected=523 (budget 455 + compression 68 showsCTA=1)
+2026-10-17 11:12:39.553 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport live=765 expected=523
+2026-10-17 11:12:39.553 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport BUDGET MISMATCH live=765 expected=523 (budget 455 + compression 68 showsCTA=1)
+2026-10-17 11:12:39.569 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport live=734 expected=523
+2026-10-17 11:12:39.569 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport BUDGET MISMATCH live=734 expected=523 (budget 455 + compression 68 showsCTA=1)
+2026-10-17 11:12:39.586 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport live=702 expected=523
+2026-10-17 11:12:39.586 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport BUDGET MISMATCH live=702 expected=523 (budget 455 + compression 68 showsCTA=1)
+2026-10-17 11:12:39.602 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport live=669 expected=523
+2026-10-17 11:12:39.602 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport BUDGET MISMATCH live=669 expected=523 (budget 455 + compression 68 showsCTA=1)
+2026-10-17 11:12:39.619 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport live=638 expected=523
+2026-10-17 11:12:39.619 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport BUDGET MISMATCH live=638 expected=523 (budget 455 + compression 68 showsCTA=1)
+2026-10-17 11:12:39.636 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport live=610 expected=523
+2026-10-17 11:12:39.636 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport BUDGET MISMATCH live=610 expected=523 (budget 455 + compression 68 showsCTA=1)
+2026-10-17 11:12:39.652 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport live=585 expected=523
+2026-10-17 11:12:39.652 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport BUDGET MISMATCH live=585 expected=523 (budget 455 + compression 68 showsCTA=1)
+2026-10-17 11:12:39.669 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport live=565 expected=523
+2026-10-17 11:12:39.669 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport BUDGET MISMATCH live=565 expected=523 (budget 455 + compression 68 showsCTA=1)
+2026-10-17 11:12:39.686 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport live=549 expected=523
+2026-10-17 11:12:39.686 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport BUDGET MISMATCH live=549 expected=523 (budget 455 + compression 68 showsCTA=1)
+2026-10-17 11:12:39.702 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport live=537 expected=523
+2026-10-17 11:12:39.702 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport BUDGET MISMATCH live=537 expected=523 (budget 455 + compression 68 showsCTA=1)
+2026-10-17 11:12:39.719 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport live=529 expected=523
+2026-10-17 11:12:39.719 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport BUDGET MISMATCH live=529 expected=523 (budget 455 + compression 68 showsCTA=1)
+2026-10-17 11:12:39.736 NuvioTV[3339:1780962] [HomeScrollProbe] hero viewport live=524 expected=523
+2026-10-17 11:12:40.073 NuvioTV[3339:1780962] [HomeScrollProbe] settle row=continue-watching margin=55 net=55 vh=524 rowB=434 protB=366 y=1 inset=0 beltFaded=0 beltFadeReason=- rowH=427 last=0 lastRowShaped=0 shortShaped=0 prevHidden=0 corrN=0 pull=0 pbDisarm=0 seq=2 armSrc=scroll regime=L403c1p0r0z1t37h1rt4 fits=0 dir=0 rearm=0 restPred=-78.0 restErr=133.0 clearance=27 clearanceLift=27 clearanceLiftRaw=27 lift=0 intr=-27 intrLifted=-27 err=11 deficit=11 bandLo=-27 bandHi=48 inBand=0 nudge=-11 bound=158 roomUp=3414 n=1
+2026-10-17 11:12:41.797 NuvioTV[3339:1780962] [HomeScrollProbe] settle clearance-changed rearm row=upcoming
+2026-10-17 11:12:42.058 NuvioTV[3339:1780962] [HomeScrollProbe] settle VOID expected=12 landed=12 contentH=3938→4162
+2026-10-17 11:12:42.058 NuvioTV[3339:1780962] [HomeScrollProbe] settle row=continue-watching margin=44 net=44 vh=524 rowB=423 protB=355 y=12 inset=0 beltFaded=0 beltFadeReason=- rowH=427 last=0 lastRowShaped=0 shortShaped=0 prevHidden=1 corrN=1 pull=0 pbDisarm=0 seq=3 armSrc=clearance regime=L403c1p0r0z1t37h1rt4 fits=0 dir=0 rearm=0 restPred=-78.0 restErr=122.0 clearance=27 clearanceLift=27 clearanceLiftRaw=27 lift=0 intr=-27 intrLifted=-27 err=0 deficit=0 bandLo=-27 bandHi=48 inBand=1 nudge=0
+2026-10-17 11:12:42.058 NuvioTV[3339:1780962] [HomeScrollProbe] settle decided reason=clean released=2
+2026-10-17 11:13:16.458 NuvioTV[3339:1780962] [HomeScrollProbe] focusUpdate gen=2 prev=UIKitFocusableViewResponderItem next=UIKitFocusableViewResponderItem
+2026-10-17 11:13:16.459 NuvioTV[3339:1780962] [Focus] next=PlatformGroupContainer frame={{140, 919}, {360, 426.5}} label=- heading=2
+2026-10-17 11:13:16.467 NuvioTV[3339:1780962] [HomeReturn] own row=upcoming from=continue-watching
+2026-10-17 11:13:16.538 NuvioTV[3339:1780962] [HomeScrollProbe] belt arm row=continue-watching slide=45 intr=18 clearance=27 clearanceLift=27
+2026-10-17 11:13:17.459 NuvioTV[3339:1780962] [HomeScrollProbe] settle REARM-DIRECTION dir=1 row=upcoming pull=0 rearm=0 released=0 y=355 — the walk reversed; the pull-back brake belongs to the other direction
+2026-10-17 11:13:17.460 NuvioTV[3339:1780962] [HomeScrollProbe] settle row=upcoming margin=128 net=128 vh=524 rowB=506 protB=438 y=355 inset=0 beltFaded=0 beltFadeReason=- rowH=427 last=0 lastRowShaped=0 shortShaped=0 prevHidden=0 corrN=0 pull=0 pbDisarm=0 seq=4 armSrc=scroll regime=L403c1p0r0z1t37h1rt4 fits=0 dir=1 rearm=0 restPred=-78.0 restErr=205.5 clearance=27 clearanceLift=27 clearanceLiftRaw=27 lift=0 intr=-27 intrLifted=-27 err=84 deficit=84 bandLo=-27 bandHi=48 inBand=0 nudge=-84 bound=86 roomUp=3589 n=1
+2026-10-17 11:13:17.776 NuvioTV[3339:1780962] [HomeScrollProbe] focusUpdate gen=3 prev=UIKitFocusableViewResponderItem next=UIKitFocusableViewResponderItem
+2026-10-17 11:13:17.777 NuvioTV[3339:1780962] [Focus] next=PlatformGroupContainer frame={{140, 1001.5}, {269, 611.5}} label=- heading=2
+2026-10-17 11:13:17.785 NuvioTV[3339:1780962] [HomeReturn] own row=test-collection-1004 from=upcoming
+2026-10-17 11:13:17.876 NuvioTV[3339:1780962] [HomeScrollProbe] belt arm row=upcoming slide=61 intr=34 clearance=27 clearanceLift=27
+2026-10-17 11:13:18.014 NuvioTV[3339:1780962] [TrailerPipeline] gates inlineTrailersEnabled=YES systemAutoplay=YES
+2026-10-17 11:13:18.870 NuvioTV[3339:1780962] [HomeScrollProbe] settle row=test-collection-1004 margin=21 net=21 vh=524 rowB=584 protB=528 y=889 inset=0 beltFaded=0 beltFadeReason=- rowH=611 last=0 lastRowShaped=0 shortShaped=0 prevHidden=1 corrN=0 pull=0 pbDisarm=0 seq=5 armSrc=scroll regime=L403c1p0r0z1t37h1rt4 fits=0 dir=1 rearm=0 restPred=-5.5 restErr=26.0 clearance=27 clearanceLift=27 clearanceLiftRaw=27 lift=0 intr=-27 intrLifted=-27 err=16 deficit=16 bandLo=-27 bandHi=8 inBand=0 nudge=-16 bound=-4 roomUp=3101 n=1
+2026-10-17 11:13:18.910 NuvioTV[3339:1780962] [HomeScrollProbe] settle clearance-changed rearm row=aio-metadata:New Streaming Releases: Movies:mdblist.86934
+2026-10-17 11:13:19.170 NuvioTV[3339:1780962] [HomeScrollProbe] settle VOID expected=905 landed=905 contentH=4513→5008
+2026-10-17 11:13:19.170 NuvioTV[3339:1780962] [HomeScrollProbe] settle row=test-collection-1004 margin=4 net=4 vh=524 rowB=567 protB=511 y=905 inset=0 beltFaded=0 beltFadeReason=- rowH=611 last=0 lastRowShaped=0 shortShaped=0 prevHidden=1 corrN=1 pull=0 pbDisarm=0 seq=6 armSrc=clearance regime=L403c1p0r0z1t37h1rt4 fits=0 dir=1 rearm=0 restPred=-5.5 restErr=9.5 clearance=27 clearanceLift=27 clearanceLiftRaw=27 lift=0 intr=-27 intrLifted=-27 err=0 deficit=0 bandLo=-27 bandHi=8 inBand=1 nudge=0
+2026-10-17 11:13:19.170 NuvioTV[3339:1780962] [HomeScrollProbe] settle decided reason=clean released=2
+2026-10-17 11:13:23.751 NuvioTV[3339:1780962] [HomeReturn] push row=test-collection-1004 item=test-folder-1004
+2026-10-17 11:13:24.265 NuvioTV[3339:1780962] [HomeScrollProbe] focusUpdate gen=4 prev=UIKitFocusableViewResponderItem next=-
+2026-10-17 11:13:24.265 NuvioTV[3339:1780962] [Focus] next=nil frame={{0, 0}, {0, 0}} label=- heading=0
+2026-10-17 11:13:24.290 NuvioTV[3339:1780962] [Focus] next=PlatformGroupContainer frame={{140, 355}, {632.5, 83}} label=- heading=0
+[LaunchTrace] +47046ms artwork #100: mem=0 disk=96 net=4 fail=0
+2026-10-17 11:13:27.939 NuvioTV[3339:1780962] [HomeReturn] restore row=test-collection-1004 item=test-folder-1004 rung=1 landed=0 from=-
+2026-10-17 11:13:28.070 NuvioTV[3339:1780962] [HomeReturn] apply row=test-collection-1004 gen=1 before=nil after=nil
+2026-10-17 11:13:28.183 NuvioTV[3339:1780962] [HomeScrollProbe] settle decided reason=nofocus released=2
+2026-10-17 11:13:28.246 NuvioTV[3339:1780962] [HomeReturn] restore row=test-collection-1004 item=test-folder-1004 rung=2 landed=0 from=-
+2026-10-17 11:13:28.394 NuvioTV[3339:1780962] [HomeReturn] apply row=test-collection-1004 gen=2 before=nil after=nil
+2026-10-17 11:13:28.475 NuvioTV[3339:1780962] [Focus] next=nil frame={{0, 0}, {0, 0}} label=- heading=0
+2026-10-17 11:13:28.475 NuvioTV[3339:1780962] [HomeScrollProbe] focusUpdate gen=5 prev=UIKitFocusableViewResponderItem next=-
+2026-10-17 11:13:28.507 NuvioTV[3339:1780962] [Focus] next=PlatformGroupContainer frame={{140, 452.5}, {269, 611.5}} label=- heading=0
+2026-10-17 11:13:28.507 NuvioTV[3339:1780962] [HomeScrollProbe] focusUpdate gen=6 prev=- next=UIKitFocusableViewResponderItem
+2026-10-17 11:13:28.511 NuvioTV[3339:1780962] [HomeReturn] own row=test-collection-1004 from=-
+2026-10-17 11:13:28.535 NuvioTV[3339:1780962] [HomeReturn] remount rows=continue-watching,upcoming
+2026-10-17 11:13:28.635 NuvioTV[3339:1780962] [HomeReturn] restore row=test-collection-1004 item=test-folder-1004 rung=3 landed=1
+2026-10-17 11:13:28.768 NuvioTV[3339:1780962] [HomeScrollProbe] settle row=test-collection-1004 margin=17 net=17 vh=524 rowB=580 protB=524 y=893 inset=0 beltFaded=0 beltFadeReason=- rowH=611 last=0 lastRowShaped=0 shortShaped=0 prevHidden=1 corrN=0 pull=0 pbDisarm=0 seq=8 armSrc=epoch regime=L403c1p0r0z1t37h1rt4 fits=0 dir=1 rearm=0 restPred=-5.5 restErr=22.0 clearance=27 clearanceLift=27 clearanceLiftRaw=27 lift=0 intr=-27 intrLifted=-27 err=12 deficit=12 bandLo=-27 bandHi=8 inBand=0 nudge=-12 bound=0 roomUp=3703 n=1
+2026-10-17 11:13:29.489 NuvioTV[3339:1780962] [HomeReturn] restore row=test-collection-1004 landed=1 late
+2026-10-17 11:13:30.393 NuvioTV[3339:1780962] [Focus] next=PlatformGroupContainer frame={{0, -408.5}, {1840, 5127}} label=- heading=1
+2026-10-17 11:13:30.394 NuvioTV[3339:1780962] [HomeScrollProbe] focusUpdate gen=7 prev=UIKitFocusableViewResponderItem next=UIKitFocusableFillerItem
+Launched application with com.youngchris29.NuvioTV bundle identifier.
+Waiting for the application to terminate...
+App terminated due to signal 9.
