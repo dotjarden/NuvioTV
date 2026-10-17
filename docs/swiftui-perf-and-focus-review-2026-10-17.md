@@ -99,6 +99,23 @@ Built in a separate session and clone, branched off `a802e41f8`. It shares no fi
 
 Suggested next step: an Instruments SwiftUI trace on the Apple TV (View Body counts for `CatalogRowView`, `InlineTrailerCard`, `PosterCard`, `EpisodesSection`), resting ~0.3 s per card across a Home row and walking a long series' episodes, before and after #1-#3.
 
+## Device pass 2026-10-17 (Living Room Apple TV, Test 2, dev build of `aa66d8bab` + `25ce9bde9`)
+
+Driven from the Mac with the remote rig. Screenshots are in `docs/research/focus-perf-device-2026-10-17/`.
+
+| Check | Result |
+|---|---|
+| Edit Profile (Test 2, cloud account: avatar strip, swatches, Set PIN Lock, Save, Delete) | PASS after an in-pass fix. Every row is reachable Up/Down, including Down from the far-right avatar and Up from Delete. Finding: the colour swatches had **no visible focus** (`.borderless` lifts only images). Fixed in `25ce9bde9` (`SwatchFocusLift`) and confirmed on the TV |
+| Classic Home: banner swap, row settle, Matchbox card grows into its trailer, Up ×6 into the banner | PASS |
+| Continue Watching hold menu (after the Home split's actions rework) | PASS |
+| Classic collection folder: Up from the fifth grid card reaches the chips | PASS (no TMDB source on Test 2, so the Edit Filters button wasn't checked) |
+| Folder return lands on the folder tile | PASS |
+| **Home: after opening a collection folder and coming back, Up from that row** | **FAIL, regression from the Home split.** Focus jumps into the banner, the rows don't scroll back, and Upcoming / Continue Watching can't be reached. The base `f78fe7ea8` gets it right (Up → Upcoming). Without the folder visit, the split build is correct. Sent back to the Home split session for a fix |
+| Detail (series): Resume → studio chips → seasons → episodes; Season 2 switch updates the list | PASS |
+| Stream picker: an add-on without a logo shows no placeholder | PASS |
+| Player subtitle-delay Reset | Not walked (needs a playback session) |
+| Welcome, PIN prompt, email sign-in | Not walked (they need a signed-out app or a PIN profile) |
+
 ## Device pass owed (Test profile)
 
 - Edit Profile: from every swatch, Down reaches PIN / Save; Up from Save reaches the swatches; the avatar strip (cloud account) is reachable from the name field and from the swatches.
