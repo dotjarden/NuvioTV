@@ -21,7 +21,7 @@ This plan supersedes the 10-08 draft's sequencing; its per-item fix shapes still
 | Checkpoint rule (10-06) | "If P3 has not merged within ten days of P1 starting (10-06), cut an interim rc with Search & Discover + P1 + P2." That date is **10-16**. |
 | P4 / P5 | Not started. P5's B19 (automatic subtitle sync) collides with the 10-13 upstream finding (see D3). |
 | Comms owed | ~~Steven's reply DM for his 10-08/09 reports~~ **SENT 10-14 19:55Z** (with the FEAT-63 decline to u/marcomez18). Steven answered 20:24Z (BUG-155/156/158 corrected, five new asks BUG-160/161, FEAT-66/67/68, his add-on URL in confidence, **he no longer has the app installed**: another fork overwrote it, so rc4 is also his reinstall). **Reply 2 drafted, NOT SENT:** `docs/comms-dm-drafts-2026-10-14-steven-reply2.md`. u/marcomez18 FEAT-63 answer once there is a decision. GitHub #4 (`mikeyunk`) and #5 (`4rtz1z`) wait on the reporters. Public promises: BUG-130 ("I'll look at carrying the position across"), FEAT-56 SenPlayer ("in a coming build"). |
-| Reddit thread | Quiet since 10-02 (`pdgfqap`). DMs: **Steven's rc4 verdict 10-16 20:09Z** (§1e); reply **SENT 21:06Z** (`docs/comms-dm-drafts-2026-10-16-rc4-reply.md`); his answers owed on BUG-165 (engine + press), rail mode, wide-row photo. |
+| Reddit thread | Quiet since 10-02 (`pdgfqap`). DMs: **Steven's rc4 verdict 10-16 20:09Z** (§1e); reply **SENT 21:06Z** (`docs/comms-dm-drafts-2026-10-16-rc4-reply.md`); his answers owed on BUG-165 (engine + press), rail mode, wide-row photo. **rc5 verdict 10-17 03:05Z** (§1f, record `docs/steven-beta19-rc5-verdict-2026-10-17.md`); reply drafted `docs/comms-dm-drafts-2026-10-17-rc5-reply.md`, NOT sent. |
 | Upstream | `779c145a5` (0.5.10-beta). Open ports: CW dismissed-restore (#2244, small), TorBox mylist pagination (10-10, medium), MDBList release-date sort (10-08, medium), ytId streams (10-08, low-med). Declined/parked: subtitle AutoSync (10-13, HIGH), Jellyfin/Emby (10-08, product call), iOS PiP (N/A). |
 | Review | Codex quota resets 10-29; Opus read-only rounds until then. |
 | Repo hygiene | Untracked on `main`: `docs/upstream-port-plan-2026-10-13/14.md`, the CLAUDE.md status lines, the 10-08 draft plan (taken from `origin/claude/sweet-hopper-47y3l2`), today's evidence dirs. Committed with this plan. The tracker's dashboard ITEMS array lags BUG-131+ (reconciliation still owed). |
@@ -115,6 +115,27 @@ Rail = Hide While Browsing (and now Hidden), Medium+, No Zoom ON, native player 
   Browsing (he uses Hidden now), zoom-mode focus edge.
 - **Player facts for his setup:** rc4 = P1–P3 only; P4 merged after the cut. The DV source that went wrong is
   a "DV"-only WEB-DL (P5); the "DV · HDR10" (P8) ones beside it would have played native.
+
+### 1f. Steven's beta.19-rc5 verdict (added 2026-10-17)
+
+Read 2026-10-17 (DM 03:05Z + 3 photos + a 03:15Z add-on; record `docs/steven-beta19-rc5-verdict-2026-10-17.md`,
+photos `docs/research/steven-beta19-rc5-photos-2026-10-17/`). He runs the Stage Home, Medium+, Hide Titles ON,
+No Zoom OFF with Card Depth ON, Collections Layout Rows, Infuse Pro as external player. "Things are moving in the
+right direction."
+
+- **Confirmed:** BUG-145 / BUG-159 / FEAT-67 (heading details gone), FEAT-70 (folder opens on the first film),
+  FEAT-71 (Collections Layout), FEAT-72 (Best Result "perfect"), BUG-164 (No Zoom far-left), BUG-166 (no green
+  picture), BUG-158 (the white outline with Card Depth ON is gone, cause unverified).
+- **Still open:** BUG-146 (B6 moved the heading 4 pt; "no difference", much too high on landscape rows),
+  BUG-162 (B4's 624 × 351 is now "much too large"; he wants the collection-poster size at rest and the big size
+  only while the trailer plays), BUG-156 (both returns land right but after a visible glide to the engine's
+  default and back), BUG-168 (mpv none on Animals; native shows a transparent box = P3's AVKit limit), BUG-170
+  (HDR ~10 s in), FEAT-64 (watched tick: he thought it shipped; it did not).
+- **New:** BUG-173 collection title twice on Home (the folder's stage meta line is `collection.title`, the row
+  heading below is the same; B1 gated only the synopsis), FEAT-76 per-collection Rows / Grid (D17), FEAT-77
+  Nuvio/Stremio pulsing-title loading animation (D18).
+- **Not his:** BUG-143 (rc5's player notes listed it; it came from a device session). **No tester:** FEAT-56
+  SenPlayer (neither he nor Christian has it).
 
 ## 2. Inventory: everything open, by area
 
@@ -228,6 +249,9 @@ Sizes: S ≤ ½ day, M 1–2 days, L more. "Shape" cites the survey facts; the 1
 | **D13** | Heading details toggle (BUG-145 + BUG-159 revert + FEAT-67): one Appearance switch "Show catalog details in headings" covering the Stage heading's add-on name AND the folder line on both Homes. Default? | **One toggle, default OFF** (his no-go; the add-on name never helped a viewer). The hero-ON line A5 added goes under it, so the rc4 behaviour is reachable. S. |
 | **D14** | FEAT-70: seed the Stage folder page with the first item's art + synopsis on open, or keep the folder intro (logo, "Netflix · 6 sources", cover)? | **First item once row 0 lands**, folder logo stays docked; the intro only until the row arrives. S. |
 | **D15** | BUG-165 exit eject: hotfix rc (rc4.1) or ride rc5? | **Repro first** (Test profile, CW hold menu → play → pause card → scrub → Menu once, both engines). If it reproduces, fix it at the head of Batch B and cut rc5 as soon as B's mechanical half is in; no separate hotfix build unless rc5 slips past 10-24. |
+| **D16** | BUG-162 landscape rest size (rc5 verdict: 624 × 351 "much too large", rc4's 360 × 203 "much too small"). | **Rest at the landscape folder tile's size, `width × 16/9` × `width` (416 × 234 at Medium+), morph to `height × 16/9` × `height` (624 × 351) when the trailer reveals**, the portrait row's morph. His words: "the same size as the collection posters normally, and only enlarge them when the trailer starts". Heading right above the 234 pt card; the page keeps the portrait height so the tile can grow. M. |
+| **D17** | FEAT-76 per-collection layout (Genres as a grid, the rest as rows). | **Yes, as an override on the collection**: Default / Rows / Grid in the folder's hold menu, stored and synced with the collection, Default = Settings › Collections Layout. Not the pre-B7 device-local store (nothing could undo it). S–M, after Batch B's first group. |
+| **D18** | FEAT-77 loading animation: the official apps' centred title pulse. | **Yes, as the loading overlay's look** (title logo centred, slow 1.0 ↔ 1.08 scale loop, stage text under it), no setting; with P5's start-time work (BUG-167/170). S. |
 
 The 10-08 draft's D2 (gate the heading suffix on "Show catalog type in title"), D3/D4 (wash and speed A/Bs), D5 (collision only), D7 (localized copy on both surfaces), D8 (rail Hidden mode, default Always Visible), D9 (Detail pass Cinematic only), D11 (toast in C), D12 (ytId port) stand as recommended there.
 
@@ -311,6 +335,27 @@ Order is his: the no-go first, then what Batch A missed on his box, then the pol
 card at rest and with the trailer + his landscape fixture row at Medium+ + folder ← Detail restore + the
 BUG-165 repro leg + Best Result card. Release notes must say the heading details are OFF by default and that
 rc4's hero-ON line is the toggle's ON state.
+
+#### 4.4b Batch B second half (re-sequenced 2026-10-17 from his rc5 verdict)
+
+B1–B10 shipped in rc5 (build 137). What is left, his rc5 items first:
+
+| # | Item | Shape / files |
+|---|---|---|
+| B11 | **BUG-162 landscape rest size (D16) + BUG-146 heading → art** | `PosterStyle.cardWidth/cardHeight` (shape-landscape rest = folder-tile size), `InlineTrailerCard` portrait morph stages for shape-landscape rows; `StripShelfPadding` top 12 → 0 on the strip, `StripGeometryTests` re-derived (clearance against the heading glyphs, not its line box). Rig check in HIS config (Medium+, Hide Titles ON, No Zoom OFF, Card Depth ON, his landscape add-on or `scripts/device/fixtures/landscape-addon.py`), a measured frame before the reply claims it. |
+| B12 | **BUG-173 title once on Home** | `StageCopy.make` / `HomeRowPreviews.swift:55`: on Home's strip a folder preview's stage copy drops the collection title; `StageCopyTests`. S. |
+| B13 | **BUG-156 hold the engine's first move** | `StripPager`: while an uncover restore is pending a non-target row change does not move `positionId`; the remembered card is the only default candidate during the window (`StageController`, `FolderRowsPage`, `StageStripHome`). Fix the `retired why=expired` logging gap. UI legs + rig with his flags. M. |
+| B14 | **FEAT-64 watched tick on Home + folder rows** | `PosterCard.watchBadge` (Library today) on catalog rows, CW excluded; hide toggle (D4) later. S–M. |
+| B15 | BUG-168 native half: no empty preview frame on AVPlayer | Native transport: time card only when the engine cannot give a frame. S. mpv half waits for the BUG-165/168 repro card. |
+| B16 | UX-16 (1) Stage + Discover speed A/B | Was B11. |
+| B17 | FEAT-73 Discover grid-first (D11) | Was B12. |
+| B18 | BUG-155 (b)+(d) search fan-out | Was B13. |
+| B19 | Wash, BUG-147, BUG-151, BUG-150, black poster, FEAT-61 (b), BUG-153 | Was B14 minus FEAT-64. |
+| B20 | FEAT-76 per-collection layout (D17) | After B11–B15. |
+
+BUG-170 (HDR before the first frame), BUG-167 (start time) and FEAT-77 (D18) go to P5. The device pass adds: his
+config's heading measurement, a landscape row at rest + with the trailer, Home ← folder and folder ← Detail with
+no visible detour, a watched film's tick on Home.
 
 ### 4.5 Batch C ∥ P5
 
