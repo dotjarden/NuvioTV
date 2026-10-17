@@ -1,6 +1,6 @@
 {
  "_about": "Machine-readable mirror of docs/beta-feedback-tracker.md for the NuvioTV Tester Feedback dashboard. One row per tracker ID. Maintained by the beta-feedback sweep (see docs/beta-feedback-sweep-instructions.md §3). Allowed values: stage = Open | Released | Closed, no fix; tester (when stage=Open) = Not started | Waiting on reporter | Reopened after fix | Researched, not built; tester (when stage=Released) = Confirmed by tester | Partly confirmed | Awaiting tester | In-house only | Closed unconfirmed; tester (when stage=Closed, no fix) = Not a bug / declined / superseded | Duplicate of <ID>.",
- "generated": "2026-10-17T06:12:58Z",
+ "generated": "2026-10-17T23:45:00Z",
  "source": "docs/beta-feedback-tracker.md",
  "rows": [
   {
@@ -2663,7 +2663,7 @@
    "build": "",
    "reporter": "u/mrStevenx3",
    "first_seen": "2026-10-17",
-   "summary": "Per-source player choice."
+   "summary": "Per-source player choice; he says the HDR issue is with the mpv player."
   },
   {
    "id": "FEAT-75",
@@ -2895,6 +2895,17 @@
    "reporter": "u/Physical-Lab-9203",
    "first_seen": "2026-07-20",
    "summary": "App crashes after adding Nuvio account, then crash-loops at the profile selector on every launch."
+  },
+  {
+   "id": "FEAT-78",
+   "kind": "Feature request",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-17",
+   "summary": "Add Native Player (plays TrueHD 7.1 as Atmos) to the external players."
   }
  ]
 }
