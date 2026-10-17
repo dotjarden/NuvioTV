@@ -144,4 +144,4 @@ BUG-163 (landscape trailer picture, implicitly fine: he describes the trailer en
 
 ## Reply DM
 
-Draft: `docs/comms-dm-drafts-2026-10-17-rc5-reply.md` (SlopMonster 5/5; NOT sent).
+Draft: `docs/comms-dm-drafts-2026-10-17-rc5-reply.md` (SlopMonster 5/5); SENT 2026-10-17 06:08:08Z on Christian's go.

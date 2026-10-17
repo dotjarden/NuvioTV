@@ -1,6 +1,6 @@
 # DM draft — reply to Steven's beta.19-rc5 verdict (2026-10-17)
 
-**Status: DRAFT, NOT SENT.** SlopMonster 5/5 on the body (one hit, "landscape", rewritten to "wide posters"); Codex cleanse SKIPPED: `cleanse.sh` exited 1 with no output although `codex login status` reports logged in. Answers his 03:05Z verdict + 3 photos and the 03:15Z add-on (record
+**Status: SENT 2026-10-17 06:08:08Z** as one bubble on Christian's go ("send it"; pre-send fetch found nothing newer than 03:15:17Z; ego-browser space 5; verified in the room, start + end of the bubble; DM watermark now `2026-10-17T06:08:08.214Z`). Was: DRAFT, NOT SENT. SlopMonster 5/5 on the body (one hit, "landscape", rewritten to "wide posters"); Codex cleanse SKIPPED: `cleanse.sh` exited 1 with no output although `codex login status` reports logged in. Answers his 03:05Z verdict + 3 photos and the 03:15Z add-on (record
 `docs/steven-beta19-rc5-verdict-2026-10-17.md`). One bubble. Fetch the room against the watermark
 (`2026-10-17T03:15:17.266Z`) right before sending; amend if he wrote again.
 
