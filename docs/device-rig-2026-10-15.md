@@ -235,6 +235,19 @@ Harvest Only (the default)**.
   never backgrounded the app (12:32–12:38); the three ejects today were all rig input. Keep the
   screenshot-after-exit rule, and treat P3-F8 as a rig caveat unless a remote ever shows it.
 
+- (2026-10-16, Batch B round 2) `console.sh stop` waits for the stream process to exit: a devicectl
+  stream killed mid-write prints "App terminated due to signal 15" at its OLD offset, which punched
+  90 NULs into a log that the next `start` had already truncated and reused; `preflight.sh` greps
+  with `-a` so such a log no longer reads as "binary" (its pid check used to fail on it).
+- Installing a fixture add-on in Test 2 goes through Add-ons › Install from manifest URL with
+  `text=` over Companion (Select on the field → `text=<url>` → Down ×3 → Select on done → Down →
+  Select on Install); the DEBUG `-debug.addonManifestUrls` seed refuses a signed-in account. Removal:
+  walk to the row, `hold=select,0.9` → Remove Add-on → Right → Select on the alert's Remove.
+  Fixtures: `scripts/device/fixtures/ytid-addon.py` (one ytId stream), `landscape-addon.py` (a
+  `posterShape: landscape` catalog with trailers).
+- A devicectl screenshot can succeed in the first ~10 s of an HDR/DV title (the panel has not
+  re-synced yet) and then fail for the rest of the play; shoot early.
+
 ## P3 fix-ups built with the rig's findings (branch `claude/p3-fixups` in the player clone)
 
 - `[Mem] +Ns rss=… MB mode=… store=… harvest=… decode=…` once a minute for the whole mpv playback

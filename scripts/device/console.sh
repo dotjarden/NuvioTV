@@ -25,7 +25,10 @@ case "$cmd" in
     nohup xcrun devicectl device process launch --device "$ATV_UDID" --terminate-existing --console "$BUNDLE" ${1:+--} "$@" > "$log" 2>&1 &
     echo $! > "$PIDFILE"; echo "console → $log (pid $(cat "$PIDFILE"))" ;;
   stop)
-    [[ -f "$PIDFILE" ]] && { kill "$(cat "$PIDFILE")" 2>/dev/null || true; rm -f "$PIDFILE"; }
+    # Wait for the stream process to exit: a devicectl stream killed mid-write prints its last
+    # "App terminated due to signal 15" lines at its OLD offset, which punches NULs into a log
+    # that a following `start` has already truncated and reused (seen 2026-10-16).
+    [[ -f "$PIDFILE" ]] && { p="$(cat "$PIDFILE")"; kill "$p" 2>/dev/null || true; for _ in $(seq 1 40); do kill -0 "$p" 2>/dev/null || break; sleep 0.25; done; rm -f "$PIDFILE"; }
     [[ -f "$PIDFILE.path" ]] && { cat "$PIDFILE.path"; rm -f "$PIDFILE.path"; } ;;
   tail) tail -n "${1:-40}" "$(cat "$PIDFILE.path")" ;;
   grep) grep -n -E "${1:?pattern}" "$(cat "$PIDFILE.path")" ;;
