@@ -1,6 +1,6 @@
 # SwiftUI performance review + focus consistency pass (2026-10-17)
 
-Submodule branch `claude/focus-consistency` (tip `2353a5e9b`: `a802e41f8` + `f78fe7ea8` + the Home split `f96acfdc0` / `9b4f4963d` merged + `25ce9bde9`; local only), cut from `tvos-shared-extraction` `523ad97db`. Not merged.
+**MERGED 2026-10-17:** `tvos-shared-extraction` fast-forwarded `523ad97db` → `2353a5e9b` and pushed, with the outer pointer bumped. Not cut. It carries `a802e41f8` + `f78fe7ea8` + the Home split (`f96acfdc0` / `9b4f4963d`) + `25ce9bde9`. Final gates on the tip: Release (FA87), NuvioTVTests 1838/0 (5 skipped), FocusRowUITests PASS.
 
 Method: three read-only review agents (Home/browse performance, the rest of the app's performance, focus across every screen). They used the `swiftui-performance-audit` and `swiftui-ui-patterns` skills. All performance findings come from reading the code: there is no Instruments trace yet.
 
