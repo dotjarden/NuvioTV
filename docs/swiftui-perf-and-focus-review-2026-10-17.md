@@ -120,6 +120,35 @@ Driven from the Mac with the remote rig. Screenshots are in `docs/research/focus
 
 **New performance finding from the playback log:** during native playback the app rewrites the Top Shelf file (`[TopShelf] wrote 8 items`) about 3 times per 11-second segment, roughly every 4 s; the 10-15 log shows about 5 per segment. It predates this work. Throttle `TopShelfUpdater` to write only when the item list changes, or at most once a minute while playing.
 
+## Follow-up batch (`claude/followup-batch`, `964c36c59` + `265b3f6c8`, off `2353a5e9b`, NOT merged)
+
+| Change | Device (Test 2) |
+|---|---|
+| Top Shelf: writes debounced 0.5 s and skipped when unchanged (progress compared to the whole percent); serial write queue; `clearForSignOut()` writes an empty snapshot when the auth gate leaves `.main` | 0 writes in 150 s of native playback (was ~3 per 11 s segment). Local playback saves carry no `progressPercent`, so the snapshot really is unchanged |
+| Stream picker rows keyed by the add-on's own text + torrent hash, not position (stable through debrid preparation) | Focus stayed on its group while four add-ons loaded and re-sorted |
+| `claimsFocusAfterSwap`: Connect → activation card Cancel and back, Start ↔ Stop Remote Setup, Include Watched → Play Episode | PASS after in-pass fixes: Stop moved above the QR (below it, the lazy List never built the row); each activation card split into a text row and a Cancel row (as one row, focusing Cancel turned the instructions white-on-white, an older bug); Cancel hands focus back to its Connect row |
+| Episodes: `.defaultFocus(.userInitiated)` on the next unwatched episode, scrolled into view | Lands on E1 when all are unwatched (correct). Not shown with watched episodes: Test 2 had none in that show |
+
+Reviews: Opus r1 2 P1 / 3 P2 / 5 P3, r2 0 P1 / 1 P2 / 3 P3, all fixed except two documented edges (streams with identical text are keyed by order; a disabled Play Episode uses up the hand-off). Gates: Debug + Release, NuvioTVTests 1838/0, FocusRowUITests PASS.
+
+**New, pre-existing finding:** the Top Shelf shows no progress bar for titles played on this Apple TV. `upsertPlaybackProgress` never sets `progressPercent`, and the snapshot carries only that field; only Trakt/Simkl percentage entries get a bar. Fix: compute it from `lastPositionMs`/`durationMs` in `TopShelfUpdater`. Writes would then land about once a minute while playing, as designed.
+
+## FEAT-78: Native Player as an external player (research 2026-10-17)
+
+**Feasible now.** Native Player by Native IT (App Store id6760623926, tvOS 26+, free) documents an Infuse-compatible deep link from v1.1.3:
+- Template: `nativeplayer://x-callback-url/play?url=<enc>&filename=<enc>&position=<sec>&sub=<enc srt>…&x-success=<enc>&x-error=<enc>`.
+- `x-success` returns `position` and `progress`; `x-error` returns an error code.
+- Limits: `url` must be http/https (no `.mpd`), and subtitles are SRT only (up to 8).
+- Deep-linked titles don't go into its library.
+- Developer reference: the public Google Doc linked from the App Store "What's New".
+
+Another fork shipped it already (bobsupra/NuvioTVOS PR #158).
+
+Work here:
+- add `nativeplayer` to `LSApplicationQueriesSchemes`;
+- add a player entry modelled on Infuse in `ExternalPlayerPlatform.apple.kt`;
+- add it to `returnReportingPlayerIds` in `StreamPickerView.swift` and check the return parsing.
+
 ## Device pass owed (Test profile)
 
 - Edit Profile: from every swatch, Down reaches PIN / Save; Up from Save reaches the swatches; the avatar strip (cloud account) is reachable from the name field and from the swatches.

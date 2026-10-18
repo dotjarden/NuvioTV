@@ -1,0 +1,93 @@
+[LaunchTrace] +0ms app_init
+[ExtPlayerProbe] canOpenURL(infuse://) = true
+2026-10-17 22:23:44.783 NuvioTV[4235:2018797] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ExtPlayerProbe] canOpenURL(vlc-x-callback://) = false
+[ExtPlayerProbe] canOpenURL(outplayer://) = false
+[ExtPlayerProbe] canOpenURL(open-vidhub://) = true
+[ExtPlayerProbe] canOpenURL(vidhub://) = false
+[ExtPlayerProbe] canOpenURL(senplayer://) = false
+[ExtPlayerProbe] availablePlayers = ["infuse:Infuse", "vidhub:VidHub"]
+2026-10-17 22:23:44.783 NuvioTV[4235:2018797] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-17 22:23:44.784 NuvioTV[4235:2018797] -canOpenURL: failed for URL: "vidhub://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-17 22:23:44.785 NuvioTV[4235:2018797] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-17 22:23:44.786 NuvioTV[4235:2018797] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-17 22:23:44.786 NuvioTV[4235:2018797] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-17 22:23:44.786 NuvioTV[4235:2018797] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ProfileSelect] auto-enter profile 3
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-17 22:23:45.288 NuvioTV[4235:2018797] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+[LaunchTrace] +1008ms home_appear
+2026-10-17 22:23:45.326 NuvioTV[4235:2018797] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-17 22:23:45.326 NuvioTV[4235:2018797] [TrailerPipeline] trailerLocation stage=row
+[LaunchTrace] +1385ms artwork #1: mem=0 disk=1 net=0 fail=0
+[LaunchTrace] +1495ms artwork #10: mem=0 disk=10 net=0 fail=0
+2026-10-17 22:23:45.823 NuvioTV[4235:2018797] [HomeHero] logoInk sync-sample ms=0.47
+2026-10-17 22:23:45.866 NuvioTV[4235:2018797] [AmbientWash] render id=movie:tt3118958 src=1920x1080 ms=37.3 lum=0.17
+2026-10-17 22:23:45.866 NuvioTV[4235:2018797] [AmbientWash] show id=movie:tt3118958 gen=1 late=0 ms=37.3 lum=0.17
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +2448ms artwork #25: mem=1 disk=20 net=4 fail=0
+[LaunchTrace] +2456ms first_rows n=5 hero=8
+[LaunchTrace] +2456ms first_hero n=8
+2026-10-17 22:23:46.778 NuvioTV[4235:2018797] [TrailerPipeline] gates inlineTrailersEnabled=YES systemAutoplay=YES
+[LaunchTrace] +2609ms artwork #50: mem=3 disk=43 net=4 fail=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +3276ms rows n=9
+[LaunchTrace] +3822ms rows n=17
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +4182ms rows n=25
+[LaunchTrace] +4512ms rows n=33
+[LaunchTrace] +4827ms rows n=41
+[LaunchTrace] +6124ms rows n=49
+[LaunchTrace] +8443ms rows n=57
+[LaunchTrace] +11778ms rows n=65
+[LaunchTrace] +15291ms rows n=73
+[LaunchTrace] +17301ms rows n=81
+[LaunchTrace] +20129ms rows n=89
+[LaunchTrace] +22016ms rows n=97
+[LaunchTrace] +23875ms rows n=105
+[LaunchTrace] +26251ms rows n=113
+[LaunchTrace] +26986ms rows n=116
+2026-10-17 22:24:21.134 NuvioTV[4235:2018797] [AmbientWash] render id=movie:tt6933238 src=768x432 ms=28.2 lum=0.22
+2026-10-17 22:24:21.352 NuvioTV[4235:2018797] [AmbientWash] show id=movie:tt6933238 gen=2 late=0 ms=28.2 lum=0.22
+2026-10-17 22:24:21.832 NuvioTV[4235:2018797] [AmbientWash] render id=series:tt30459041 src=768x432 ms=19.0 lum=0.26
+2026-10-17 22:24:22.075 NuvioTV[4235:2018797] [AmbientWash] show id=series:tt30459041 gen=3 late=0 ms=19.0 lum=0.26
+[LaunchTrace] +41975ms artwork #100: mem=5 disk=91 net=4 fail=0
+2026-10-17 22:24:27.198 NuvioTV[4235:2018819] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-17 22:24:27.198 NuvioTV[4235:2018819] [TrailerExtract] client=visionos video=iVRFMd6dEOE hls=true formats=0 adaptive=28 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+2026-10-17 22:24:27.203 NuvioTV[4235:2018819] [TrailerExtract] client=android video=iVRFMd6dEOE hls=false formats=1 adaptive=37 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl,metadataFormats
+2026-10-17 22:24:27.209 NuvioTV[4235:2018819] [TrailerExtract] client=ios video=iVRFMd6dEOE hls=false formats=0 adaptive=33 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl,metadataFormats
+2026-10-17 22:24:27.407 NuvioTV[4235:2019217] [TrailerExtract] manifest client=visionos top variant 1920x1080
+2026-10-17 22:24:27.407 NuvioTV[4235:2019217] [TrailerExtract] selection: manifest=1080 progressive=360 (manifests collected=1)
+2026-10-17 22:24:27.408 NuvioTV[4235:2019217] [TrailerExtract] repack candidates: avcVideo=1080p avc1.640028 (visionos) m4aAudio=mp4a.40.2 (visionos) maxFps=0
+2026-10-17 22:24:28.319 NuvioTV[4235:2018838] [TrailerExtract] repack decision: avc=1080p vs progressive=1080p -> ELIGIBLE
+2026-10-17 22:24:28.717 NuvioTV[4235:2019216] [TrailerRepack] listener start port=8230 prefer=- gen=1 conns=0
+2026-10-17 22:24:28.719 NuvioTV[4235:2018838] [TrailerRepack] listener ready port=8230 waiters=1 gen=1 conns=0
+2026-10-17 22:24:28.719 NuvioTV[4235:2018838] [TrailerRepack] serving 1920x1080 avc1+mp4a (29+16 segments) at http://127.0.0.1:8230/7efe0a1bef77aa8de26ba949c2c4c564/master.m3u8 fps=24 itag=137 n=0
+2026-10-17 22:24:32.841 NuvioTV[4235:2018797] [TrailerQuality] presentationSize=1920x1080
+2026-10-17 22:25:38.391 NuvioTV[4235:2018797] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[SubtitleRepo] Fetching subtitles type=series id=tt30459041:1:1 across 8 enabled addons
+[SubtitleRepo] Skip Comet: no subtitles resource
+[SubtitleRepo] Skip Torrentio: no subtitles resource
+[SubtitleRepo] Skip AIOMetadata: no subtitles resource
+[SubtitleRepo] Skip AIO Streams: no subtitles resource
+[SubtitleRepo] Skip Cinemeta: no subtitles resource
+[SubtitleRepo] Skip Better Posters: no subtitles resource
+[SubtitleRepo] Querying Duck Streams: https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/eyJpIjoiQ3VUTklMeU1xTFpPazE5M0p5WHRwdz09IiwiZSI6InRFM3JzMHNpOU1FQ1QzSGhGbXowZnIvTjFBd0NtMnNTZ1dqS1gvNERmdXc9IiwidCI6ImEifQ/subtitles/series/tt30459041%3A1%3A1.json
+2026-10-17 22:25:38.391 NuvioTV[4235:2018797] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-17 22:25:38.392 NuvioTV[4235:2018797] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/series/tt30459041%3A1%3A1.json
+[SubtitleRepo] OpenSubtitles v3: 34 subtitles in 452.089416ms
+[SubtitleRepo] Duck Streams: 1 subtitles in 1.833148917s
+[SubtitleRepo] Subtitle fetch done: 35 total in 1.834369542s
+2026-10-17 22:26:15.472 NuvioTV[4235:2018797] [TrailerPipeline] trailerLocation stage=row
+2026-10-17 22:26:16.740 NuvioTV[4235:2018797] [AmbientWash] show id=movie:tt3118958 gen=4 late=0 ms=37.3 lum=0.17
+2026-10-17 22:26:17.597 NuvioTV[4235:2018797] [NavRail] arm reason=menu origin=request tab=0
+2026-10-17 22:26:17.654 NuvioTV[4235:2018797] [Rail] gate=on mode=uikit
+2026-10-17 22:26:34.977 NuvioTV[4235:2018797] [NavRail] select tab=4 from=0
+2026-10-17 22:26:34.978 NuvioTV[4235:2018797] [Rail] gate=off mode=uikit
+2026-10-17 22:26:35.127 NuvioTV[4235:2018797] [NavRail] exit via=select route=settings result=fallback
+Launched application with com.youngchris29.NuvioTV bundle identifier.
+Waiting for the application to terminate...
+App terminated due to signal 9.
