@@ -89,6 +89,8 @@ Facts that shape a walk (all seen on 2026-10-15):
 - Per-call cost: `atv.sh seq` ≈ 3.7 s connection + the steps; `shot.sh` 1.3–4 s. Budget ~10 s per
   "move, look" cycle.
 
+- ⚠️ **Companion Menu does not exit the native (AVKit) player** (2026-10-17). Six 150 ms Menu presses with the top panel closed never left playback and logged nothing, while Select paused and resumed. A physical Siri Remote exits normally. AVKit's system transport bar isn't in screenshots either. To leave native playback from the rig, relaunch with `console.sh start` (playback progress is saved).
+
 ## What the rig can and cannot judge
 
 Can: focus position and row paging (screenshots), every console-visible fact (engine route, `[Thumbs]`

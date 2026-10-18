@@ -115,7 +115,7 @@ Driven from the Mac with the remote rig. Screenshots are in `docs/research/focus
 | Stream picker: an add-on without a logo shows no placeholder | PASS |
 | Player subtitle-delay Reset (native player, add-on subtitle, merged build `2353a5e9b`) | PASS: +1 s, then Reset → +0.00 s with focus kept on Reset (`y15`/`y16`). The Timing row only appears for an add-on subtitle on the native engine (by design: only add-on WebVTT can be re-timed) |
 | Stage Home (merged build) | PASS: one row per page, art and synopsis follow focus, the wide card grows into its trailer, Up pages back (`x04`–`x08`) |
-| Native player exit with Menu (rig) | **Not confirmed.** Six 150 ms Menu presses with the panel closed never left the player, and the log shows nothing; Select did pause and resume. Likely a rig limitation with AVKit's system bar (it isn't in screenshots), but check once on the Siri Remote |
+| Native player exit with Menu | PASS on the Siri Remote (Christian, 2026-10-17). The rig's Companion Menu presses never exited the native player (no log line; Select did pause/resume), which is a rig limitation, now noted in the rig doc |
 | Welcome, PIN prompt, email sign-in | Not walked (they need a signed-out app or a PIN profile) |
 
 **New performance finding from the playback log:** during native playback the app rewrites the Top Shelf file (`[TopShelf] wrote 8 items`) about 3 times per 11-second segment, roughly every 4 s; the 10-15 log shows about 5 per segment. It predates this work. Throttle `TopShelfUpdater` to write only when the item list changes, or at most once a minute while playing.
