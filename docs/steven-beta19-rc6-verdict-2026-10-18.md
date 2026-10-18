@@ -43,5 +43,5 @@ Photo 5 (Classic Home, Continue Watching with Spider-Man: Brand New Day) and pho
 
 ## Next
 
-- Reply DM owed. Draft through SlopMonster at 5/5 and send on Christian's go.
+- Reply DM SENT 2026-10-18 19:39:59Z (`docs/comms-dm-drafts-2026-10-18-rc6-reply.md`).
 - The next build (rc7) can carry Batch E, BUG-170, the mpv queue stall fix and BUG-171. Item 1 (z-order) and item 2 (row gap) are small enough to fold in first.

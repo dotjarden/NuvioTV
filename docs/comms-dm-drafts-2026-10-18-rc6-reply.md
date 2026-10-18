@@ -1,6 +1,6 @@
 # DM draft: reply to Steven's beta.19-rc6 verdict (2026-10-18)
 
-**Status: DRAFT, NOT SENT.** SlopMonster lint 5/5. Codex cleanse skipped: Codex is out of quota until 10-29. Answers his 14:16Z verdict, its five photos and his 17:30Z request (record `docs/steven-beta19-rc6-verdict-2026-10-18.md`). Before sending, fetch the room against the watermark `2026-10-18T17:30:57.957Z` and amend the draft if he wrote again.
+**Status: SENT 2026-10-18 19:39:59.706Z** as one bubble on Christian's go, as drafted. The pre-send fetch found nothing newer than his 17:30:57Z message. Verified in the room (the bubble starts and ends as drafted, 1,779 chars) and by `fetch-dms.sh` (one copy). DM watermark now `2026-10-18T19:39:59.706Z`. Was: DRAFT, NOT SENT. SlopMonster lint 5/5. Codex cleanse skipped: Codex is out of quota until 10-29. Answers his 14:16Z verdict, its five photos and his 17:30Z request (record `docs/steven-beta19-rc6-verdict-2026-10-18.md`). Before sending, fetch the room against the watermark `2026-10-18T17:30:57.957Z` and amend the draft if he wrote again.
 
 Facts behind it:
 - Merged since rc6, so in the next build, none of it cut yet:
