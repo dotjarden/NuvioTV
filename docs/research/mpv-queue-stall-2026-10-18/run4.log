@@ -1,0 +1,520 @@
+[LaunchTrace] +0ms app_init
+[RemuxJanitor] removed 1 orphaned session dir(s), reclaimed 188 MB
+[ExtPlayerProbe] canOpenURL(infuse://) = true
+2026-10-18 13:06:04.700 NuvioTV[4733:2305361] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ExtPlayerProbe] canOpenURL(vlc-x-callback://) = false
+[ExtPlayerProbe] canOpenURL(outplayer://) = false
+[ExtPlayerProbe] canOpenURL(open-vidhub://) = true
+[ExtPlayerProbe] canOpenURL(vidhub://) = false
+[ExtPlayerProbe] canOpenURL(senplayer://) = false
+[ExtPlayerProbe] canOpenURL(nativeplayer://) = false
+[ExtPlayerProbe] availablePlayers = ["infuse:Infuse", "vidhub:VidHub"]
+2026-10-18 13:06:04.701 NuvioTV[4733:2305361] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 13:06:04.701 NuvioTV[4733:2305361] -canOpenURL: failed for URL: "vidhub://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 13:06:04.701 NuvioTV[4733:2305361] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 13:06:04.702 NuvioTV[4733:2305361] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 13:06:04.702 NuvioTV[4733:2305361] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 13:06:04.703 NuvioTV[4733:2305361] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 13:06:04.703 NuvioTV[4733:2305361] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 13:06:04.703 NuvioTV[4733:2305361] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ProfileSelect] auto-enter profile 3
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-18 13:06:05.048 NuvioTV[4733:2305361] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+[LaunchTrace] +545ms home_appear
+2026-10-18 13:06:05.073 NuvioTV[4733:2305361] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-18 13:06:05.073 NuvioTV[4733:2305361] [TrailerPipeline] trailerLocation stage=row
+[LaunchTrace] +947ms artwork #1: mem=0 disk=1 net=0 fail=0
+[LaunchTrace] +1045ms artwork #10: mem=0 disk=10 net=0 fail=0
+2026-10-18 13:06:05.635 NuvioTV[4733:2305361] [HomeHero] logoInk sync-sample ms=0.45
+2026-10-18 13:06:05.672 NuvioTV[4733:2305361] [AmbientWash] render id=movie:tt3118958 src=1920x1080 ms=33.5 lum=0.17
+2026-10-18 13:06:05.673 NuvioTV[4733:2305361] [AmbientWash] show id=movie:tt3118958 gen=1 late=0 ms=33.5 lum=0.17
+[LaunchTrace] +2056ms artwork #25: mem=1 disk=20 net=4 fail=0
+2026-10-18 13:06:06.593 NuvioTV[4733:2305361] [TrailerPipeline] gates inlineTrailersEnabled=YES systemAutoplay=YES
+[LaunchTrace] +2061ms first_rows n=5 hero=8
+[LaunchTrace] +2061ms first_hero n=8
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +2196ms artwork #50: mem=4 disk=42 net=4 fail=0
+[LaunchTrace] +2233ms rows n=9
+[LaunchTrace] +4172ms rows n=17
+[LaunchTrace] +6501ms rows n=25
+[LaunchTrace] +7036ms rows n=33
+[LaunchTrace] +7364ms rows n=41
+[LaunchTrace] +8512ms rows n=49
+[LaunchTrace] +8956ms rows n=57
+[LaunchTrace] +9322ms rows n=65
+[LaunchTrace] +10301ms rows n=73
+[LaunchTrace] +11621ms rows n=81
+[LaunchTrace] +12186ms rows n=89
+[LaunchTrace] +12603ms rows n=97
+[LaunchTrace] +13212ms rows n=105
+[LaunchTrace] +13543ms rows n=113
+[LaunchTrace] +13721ms rows n=116
+2026-10-18 13:06:18.512 NuvioTV[4733:2305361] [NavRail] arm reason=menu origin=request tab=0
+2026-10-18 13:06:18.563 NuvioTV[4733:2305361] [Rail] gate=on mode=uikit
+2026-10-18 13:06:20.545 NuvioTV[4733:2305361] [NavRail] select tab=1 from=0
+2026-10-18 13:06:20.545 NuvioTV[4733:2305361] [Rail] gate=off mode=uikit
+2026-10-18 13:06:20.656 NuvioTV[4733:2305361] [NavRail] exit via=select route=none result=fallback
+2026-10-18 13:06:21.689 NuvioTV[4733:2305361] [KBFocus] chain=UIKeyboard→_UIKBCompatInputView→UIView→UIKBFocusVCView→_UISearchControllerTVKeyboardContainerView→_UISearchControllerView→UITransitionView→UIView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<SearchContainerRepresentable<ModifiedContent<ModifiedContent<_ViewModifier_Content<SearchModifier<TextField<EmptyView>>>, SubmitScopeModifier>, _PreferenceTransformModifier<ContentScrollViewPreferenceKey>>>>>→HostingView→UIViewControllerWrapperView→UINavigationTransitionView→UILayoutContainerView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<NavigationStackRepresentable>>→_UIHostingView<RootView>→UIViewControllerWrapperView→UITransitionView→UILayoutContainerView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<TVTabView<LazyMapSequence<_VariadicView_Children, TabItem>>>>→_UIHostingView<ModifiedContent<LazyView<ModifiedContent<ModifiedContent<ContentView, ProvidesFocusAppearance>, _PreferenceWritingModifier<PreferredColorSchemeKey>>>, RootModifier>>→UIDropShadowView→UITransitionView→UIWindow
+2026-10-18 13:06:21.689 NuvioTV[4733:2305361] [KBFocus] keyboard=1
+2026-10-18 13:06:22.584 NuvioTV[4733:2305361] [KBFocus] chain=UIKitFocusableViewResponderItem→PlatformGroupContainer→HostingScrollView→PlatformContainer→PlatformGroupContainer→HostingScrollView→PlatformContainer→_UIHostingView<ModifiedContent<ModifiedContent<_ViewModifier_Content<SearchModifier<TextField<EmptyView>>>, SubmitScopeModifier>, _PreferenceTransformModifier<ContentScrollViewPreferenceKey>>>→UIView→UIView→_UISearchControllerView→UITransitionView→UIView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<SearchContainerRepresentable<ModifiedContent<ModifiedContent<_ViewModifier_Content<SearchModifier<TextField<EmptyView>>>, SubmitScopeModifier>, _PreferenceTransformModifier<ContentScrollViewPreferenceKey>>>>>→HostingView→UIViewControllerWrapperView→UINavigationTransitionView→UILayoutContainerView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<NavigationStackRepresentable>>→_UIHostingView<RootView>→UIViewControllerWrapperView→UITransitionView→UILayoutContainerView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<TVTabView<LazyMapSequence<_VariadicView_Children, TabItem>>>>→_UIHostingView<ModifiedContent<LazyView<ModifiedContent<ModifiedContent<ContentView, ProvidesFocusAppearance>, _PreferenceWritingModifier<PreferredColorSchemeKey>>>, RootModifier>>→UIDropShadowView→UITransitionView→UIWindow
+2026-10-18 13:06:22.584 NuvioTV[4733:2305361] [KBFocus] keyboard=0
+2026-10-18 13:06:23.460 NuvioTV[4733:2305361] [KBFocus] chain=UIKeyboard→_UIKBCompatInputView→UIView→UIKBFocusVCView→_UISearchControllerTVKeyboardContainerView→_UISearchControllerView→UITransitionView→UIView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<SearchContainerRepresentable<ModifiedContent<ModifiedContent<_ViewModifier_Content<SearchModifier<TextField<EmptyView>>>, SubmitScopeModifier>, _PreferenceTransformModifier<ContentScrollViewPreferenceKey>>>>>→HostingView→UIViewControllerWrapperView→UINavigationTransitionView→UILayoutContainerView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<NavigationStackRepresentable>>→_UIHostingView<RootView>→UIViewControllerWrapperView→UITransitionView→UILayoutContainerView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<TVTabView<LazyMapSequence<_VariadicView_Children, TabItem>>>>→_UIHostingView<ModifiedContent<LazyView<ModifiedContent<ModifiedContent<ContentView, ProvidesFocusAppearance>, _PreferenceWritingModifier<PreferredColorSchemeKey>>>, RootModifier>>→UIDropShadowView→UITransitionView→UIWindow
+2026-10-18 13:06:23.460 NuvioTV[4733:2305361] [KBFocus] keyboard=1
+[SearchPerf] fire q="Dune Part One" inflight=0 keys=0 maxBody=0
+[SearchPerf] results q="Dune Part One" first=88 last=249 cancelledFetches=0 legacy=0
+2026-10-18 13:06:24.212 NuvioTV[4733:2305361] [AmbientWash] render id=movie:tt1160419 src=256x144 ms=6.7 lum=0.26
+2026-10-18 13:06:24.463 NuvioTV[4733:2305361] [AmbientWash] show id=movie:tt1160419 gen=1 late=0 ms=6.7 lum=0.26
+2026-10-18 13:06:27.923 NuvioTV[4733:2305361] [KBFocus] chain=UIKitFocusableViewResponderItem→PlatformGroupContainer→HostingScrollView→PlatformContainer→PlatformGroupContainer→HostingScrollView→PlatformContainer→_UIHostingView<ModifiedContent<ModifiedContent<_ViewModifier_Content<SearchModifier<TextField<EmptyView>>>, SubmitScopeModifier>, _PreferenceTransformModifier<ContentScrollViewPreferenceKey>>>→UIView→UIView→_UISearchControllerView→UITransitionView→UIView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<SearchContainerRepresentable<ModifiedContent<ModifiedContent<_ViewModifier_Content<SearchModifier<TextField<EmptyView>>>, SubmitScopeModifier>, _PreferenceTransformModifier<ContentScrollViewPreferenceKey>>>>>→HostingView→UIViewControllerWrapperView→UINavigationTransitionView→UILayoutContainerView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<NavigationStackRepresentable>>→_UIHostingView<RootView>→UIViewControllerWrapperView→UITransitionView→UILayoutContainerView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<TVTabView<LazyMapSequence<_VariadicView_Children, TabItem>>>>→_UIHostingView<ModifiedContent<LazyView<ModifiedContent<ModifiedContent<ContentView, ProvidesFocusAppearance>, _PreferenceWritingModifier<PreferredColorSchemeKey>>>, RootModifier>>→UIDropShadowView→UITransitionView→UIWindow
+2026-10-18 13:06:27.923 NuvioTV[4733:2305361] [KBFocus] keyboard=0
+[LaunchTrace] +25502ms artwork #100: mem=4 disk=92 net=4 fail=0
+2026-10-18 13:06:30.741 NuvioTV[4733:2305472] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 13:06:30.741 NuvioTV[4733:2305472] [TrailerExtract] client=visionos NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 13:06:30.742 NuvioTV[4733:2305472] [TrailerExtract] client=android NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 13:06:30.742 NuvioTV[4733:2305472] [TrailerExtract] client=ios NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 13:06:31.616 NuvioTV[4733:2305365] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 13:06:31.616 NuvioTV[4733:2305365] [TrailerExtract] client=visionos NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 13:06:31.616 NuvioTV[4733:2305365] [TrailerExtract] client=android NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 13:06:31.617 NuvioTV[4733:2305365] [TrailerExtract] client=ios NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 13:06:32.470 NuvioTV[4733:2305365] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 13:06:32.470 NuvioTV[4733:2305365] [TrailerExtract] client=visionos NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 13:06:32.470 NuvioTV[4733:2305365] [TrailerExtract] client=android NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 13:06:32.471 NuvioTV[4733:2305365] [TrailerExtract] client=ios NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 13:06:34.153 NuvioTV[4733:2305361] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[SubtitleRepo] Fetching subtitles type=movie id=tt1160419 across 8 enabled addons
+[SubtitleRepo] Skip Comet: no subtitles resource
+[SubtitleRepo] Skip Torrentio: no subtitles resource
+2026-10-18 13:06:34.153 NuvioTV[4733:2305361] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 13:06:34.154 NuvioTV[4733:2305361] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 13:06:34.154 NuvioTV[4733:2305361] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[SubtitleRepo] Skip AIOMetadata: no subtitles resource
+[SubtitleRepo] Skip AIO Streams: no subtitles resource
+[SubtitleRepo] Skip Cinemeta: no subtitles resource
+[SubtitleRepo] Skip Better Posters: no subtitles resource
+[SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/movie/tt1160419.json
+[SubtitleRepo] Querying Duck Streams: https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/eyJpIjoiQ3VUTklMeU1xTFpPazE5M0p5WHRwdz09IiwiZSI6InRFM3JzMHNpOU1FQ1QzSGhGbXowZnIvTjFBd0NtMnNTZ1dqS1gvNERmdXc9IiwidCI6ImEifQ/subtitles/movie/tt1160419.json
+[SubtitleRepo] OpenSubtitles v3: 95 subtitles in 84.721583ms
+[SubtitleRepo] Duck Streams: 17 subtitles in 175.471667ms
+[SubtitleRepo] Subtitle fetch done: 112 total in 176.746625ms
+[PlayerRouter] self-check passed
+[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x119da4600] [0m[0;33mstream 0, timescale not set
+[0m[PlayerRouter] mpv — DV P5 in MP4 (remux unsupported) — Dune
+[Loading] engine=mpv stage=connecting t=+0.05s
+[Failover] mpv start watchdog armed: 25 s
+[MPV] warn: mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-10-18 13:07:49.252 NuvioTV[4733:2305694] [MPV] warn: mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+[mvk-info] MoltenVK version 1.4.1, supporting Vulkan version 1.4.334.
+	The following 152 Vulkan extensions are supported:
+	VK_KHR_16bit_storage v1
+	VK_KHR_8bit_storage v1
+	VK_KHR_bind_memory2 v1
+	VK_KHR_buffer_device_address v1
+	VK_KHR_calibrated_timestamps v1
+	VK_KHR_copy_commands2 v1
+	VK_KHR_create_renderpass2 v1
+	VK_KHR_dedicated_allocation v3
+	VK_KHR_deferred_host_operations v4
+	VK_KHR_depth_stencil_resolve v1
+	VK_KHR_descriptor_update_template v1
+	VK_KHR_device_group v4
+	VK_KHR_device_group_creation v1
+	VK_KHR_driver_properties v1
+	VK_KHR_dynamic_rendering v1
+	VK_KHR_dynamic_rendering_local_read v1
+	VK_KHR_external_fence v1
+	VK_KHR_external_fence_capabilities v1
+	VK_KHR_external_memory v1
+	VK_KHR_external_memory_capabilities v1
+	VK_KHR_external_semaphore v1
+	VK_KHR_external_semaphore_capabilities v1
+	VK_KHR_format_feature_flags2 v2
+	VK_KHR_fragment_shader_barycentric v1
+	VK_KHR_get_memory_requirements2 v1
+	VK_KHR_get_physical_device_properties2 v2
+	VK_KHR_get_surface_capabilit[Loading] engine=mpv stage=buffering t=+1.55s
+ies2 v1
+	VK_KHR_global_priority v1
+	VK_KHR_image_format_list v1
+	VK_KHR_imageless_framebuffer v1
+	VK_KHR_incremental_present v2
+	VK_KHR_index_type_uint8 v1
+	VK_KHR_line_rasterization v1
+	VK_KHR_load_store_op_none v1
+	VK_KHR_maintenance1 v2
+	VK_KHR_maintenance2 v1
+	VK_KHR_maintenance3 v1
+	VK_KHR_maintenance4 v2
+	VK_KHR_maintenance5 v1
+	VK_KHR_maintenance6 v1
+	VK_KHR_maintenance7 v1
+	VK_KHR_maintenance8 v1
+	VK_KHR_maintenance9 v1
+	VK_KHR_map_memory2 v1
+	VK_KHR_multiview v1
+	VK_KHR_portability_subset v1
+	VK_KHR_present_id v1
+	VK_KHR_present_id2 v1
+	VK_KHR_present_wait v1
+	VK_KHR_present_wait2 v1
+	VK_KHR_push_descriptor v2
+	VK_KHR_relaxed_block_layout v1
+	VK_KHR_robustness2 v1
+	VK_KHR_sampler_mirror_clamp_to_edge v3
+	VK_KHR_sampler_ycbcr_conversion v14
+	VK_KHR_separate_depth_stencil_layouts v1
+	VK_KHR_shader_draw_parameters v1
+	VK_KHR_shader_expect_assume v1
+	VK_KHR_shader_float_controls v4
+	VK_KHR_shader_float_controls2 v1
+	VK_KHR_shader_float16_int8 v1
+	VK_KHR_shader_fma v1
+	VK_KHR_shader_integer_dot_product v1
+	VK_KHR_shader_maximal_reconvergence v1
+	VK_KHR_shader_non_semantic_info v1
+	VK_KHR_shader_quad_control v1
+	VK_KHR_shader_relaxed_extended_instruction v1
+	VK_KHR_shader_subgroup_extended_types v1
+	VK_KHR_shader_subgroup_rotate v2
+	VK_KHR_shader_subgroup_uniform_control_flow v1
+	VK_KHR_shader_terminate_invocation v1
+	VK_KHR_spirv_1_4 v1
+	VK_KHR_storage_buffer_storage_class v1
+	VK_KHR_surface v25
+	VK_KHR_surface_maintenance1 v1
+	VK_KHR_surface_protected_capabilities v1
+	VK_KHR_swapchain v70
+	VK_KHR_swapchain_maintenance1 v1
+	VK_KHR_swapchain_mutable_format v1
+	VK_KHR_synchronization2 v1
+	VK_KHR_timeline_semaphore v2
+	VK_KHR_uniform_buffer_standard_layout v1
+	VK_KHR_variable_pointers v1
+	VK_KHR_vertex_attribute_divisor v1
+	VK_KHR_vulkan_memory_model v3
+	VK_KHR_zero_initialize_workgroup_memory v1
+	VK_EXT_4444_formats v1
+	VK_EXT_buffer_device_address v2
+	VK_EXT_calibrated_timestamps v2
+	VK_EXT_debug_marker v4
+	VK_EXT_debug_report v10
+	VK_EXT_debug_utils v2
+	VK_EXT_depth_clip_control v1
+	VK_EXT_descriptor_indexing v2
+	VK_EXT_extended_dynamic_state v1
+	VK_EXT_extended_dynamic_state2 v1
+	VK_EXT_extended_dynamic_state3 v2
+	VK_EXT_external_memory_host v1
+	VK_EXT_external_memory_metal v1
+	VK_EXT_fragment_shader_interlock v1
+	VK_EXT_global_priority v2
+	VK_EXT_global_priority_query v1
+	VK_EXT_headless_surface v1
+	VK_EXT_host_image_copy v1
+	VK_EXT_host_query_reset v1
+	VK_EXT_image_2d_view_of_3d v1
+	VK_EXT_image_robustness v1
+	VK_EXT_index_type_uint8 v1
+	VK_EXT_inline_uniform_block v1
+	VK_EXT_layer_settings v2
+	VK_EXT_legacy_dithering v2
+	VK_EXT_line_rasterization v1
+	VK_EXT_load_store_op_none v1
+	VK_EXT_memory_budget v1
+	VK_EXT_metal_objects v2
+	VK_EXT_metal_surface v1
+	VK_EXT_non_seamless_cube_map v1
+	VK_EXT_pipeline_creation_cache_control v3
+	VK_EXT_pipeline_creation_feedback v1
+	VK_EXT_pipeline_robustness v1
+	VK_EXT_post_depth_coverage v1
+	VK_EXT_primitive_topology_list_restart v1
+	VK_EXT_private_data v1
+	VK_EXT_provoking_vertex v1
+	VK_EXT_robustness2 v1
+	VK_EXT_sample_locations v1
+	VK_EXT_scalar_block_layout v1
+	VK_EXT_separate_stencil_usage v1
+	VK_EXT_shader_atomic_float v1
+	VK_EXT_shader_demote_to_helper_invocation v1
+	VK_EXT_shader_stencil_export v1
+	VK_EXT_shader_subgroup_ballot v1
+	VK_EXT_shader_subgroup_vote v1
+	VK_EXT_shader_viewport_index_layer v1
+	VK_EXT_subgroup_size_control v2
+	VK_EXT_surface_maintenance1 v1
+	VK_EXT_swapchain_colorspace v5
+	VK_EXT_swapchain_maintenance1 v1
+	VK_EXT_texel_buffer_alignment v1
+	VK_EXT_texture_compression_astc_hdr v1
+	VK_EXT_tooling_info v1
+	VK_EXT_vertex_attribute_divisor v3
+	VK_AMD_gpu_shader_half_float v2
+	VK_AMD_negative_viewport_height v1
+	VK_AMD_shader_image_load_store_lod v1
+	VK_AMD_shader_trinary_minmax v1
+	VK_GOOGLE_display_timing v1
+	VK_IMG_format_pvrtc v1
+	VK_INTEL_shader_integer_functions2 v1
+	VK_MVK_ios_surface v3
+	VK_MVK_moltenvk v37
+	VK_NV_fragment_shader_barycentric v1
+[mvk-info] GPU device:
+	model: Apple A15 GPU
+	type: Integrated
+	vendorID: 0x106b
+	deviceID: 0x1b020008
+	pipelineCacheUUID: DB445FF2-1B02-0008-0000-000100000000
+	GPU memory available: 2730 MB
+	GPU memory used: 0 MB
+	Metal Shading Language 3.1
+	supports the following GPU Features:
+		GPU Family Metal 3
+		GPU Family Apple 8
+		Read-Write Texture Tier 2
+[mvk-info] Created VkInstance for Vulkan version 1.4.334, as requested by app, with the following 6 Vulkan extensions enabled:
+	VK_KHR_get_surface_capabilities2 v1
+	VK_KHR_surface v25
+	VK_KHR_surface_maintenance1 v1
+	VK_EXT_metal_surface v1
+	VK_EXT_surface_maintenance1 v1
+	VK_EXT_swapchain_colorspace v5
+[mvk-info] Vulkan semaphores using MTLEvent.
+[mvk-info] Descriptor sets binding resources using Metal3 argument buffers.
+[mvk-info] Created VkDevice to run on GPU Apple A15 GPU with the following 12 Vulkan extensions enabled:
+	VK_KHR_dynamic_rendering v1
+	VK_KHR_portability_subset v1
+	VK_KHR_shader_expect_assume v1
+	VK_KHR_shader_relaxed_extended_instruction v1
+	VK_KHR_shader_subgroup_rotate v2
+	VK_KHR_swapchain v70
+	VK_KHR_swapchain_maintenance1 v1
+	VK_KHR_zero_initialize_workgroup_memory v1
+	VK_EXT_external_memory_host v1
+	VK_EXT_metal_objects v2
+	VK_EXT_shader_atomic_float v1
+	VK_EXT_swapchain_maintenance1 v1
+2026-10-18 13:07:49.612 NuvioTV[4733:2306130] [Chapters] n=0 dropped=0 dur=9325.0 src=json raw=[]
+2026-10-18 13:07:49.616 NuvioTV[4733:2306130] [SubLoad] start n=1 pref=0 pending=111 status=0
+[Transport] cache-state raw={"cache-duration":0.000000,"eof":false,"underrun":true,"idle":false,"total-bytes":0,"fw-bytes":0,"raw-input-rate":1711832,"debug-low-level-seeks":0,"debug-byte-level-seeks":1,"ts-per-stream":[],"bof-cached":false,"eof-cached":false,"seekable-ranges":[]} ranges=0 fallback=1 +0s
+2026-10-18 13:07:49.621 NuvioTV[4733:2305361] [Aspect] fit override=-1 panscan=0.00 zoom=0.00 read=-1.000000
+2026-10-18 13:07:49.722 NuvioTV[4733:2306130] [MPVQueue] params poll tick
+2026-10-18 13:07:49.722 NuvioTV[4733:2306130] [MPVQueue] params poll read w=3840 gamma=
+2026-10-18 13:07:49.827 NuvioTV[4733:2306129] [MPVQueue] params poll tick
+2026-10-18 13:07:49.828 NuvioTV[4733:2306129] [MPVQueue] params poll read w=3840 gamma=
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-18 13:07:49.894 NuvioTV[4733:2306130] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-18 13:07:49.894 NuvioTV[4733:2306130] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-18 13:07:49.894 NuvioTV[4733:2306130] [SubLoad] done n=1 pref=0 took=278ms err=0 pending=111
+2026-10-18 13:07:49.894 NuvioTV[4733:2306130] [SubLoad] start n=2 pref=0 pending=110 status=0
+[mvk-info] Created 3 swapchain images with size (3840, 2160) and contents scale 2.0 in layer (null) (0x11d745270) on screen Main Screen.
+[mvk-info] Created 3 swapchain images with size (3840, 2160) and contents scale 2.0 in layer (null) (0x11d745270) on screen Main Screen.
+2026-10-18 13:07:49.931 NuvioTV[4733:2306131] [MPVQueue] params poll tick
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+2026-10-18 13:07:50.014 NuvioTV[4733:2306131] [MPVQueue] params poll read w=3840 gamma=pq
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+2026-10-18 13:07:50.499 NuvioTV[4733:2306131] [SubLoad] done n=2 pref=0 took=604ms err=0 pending=110
+[DisplayMode] criteria fps=23.976 3840x1608 codec=h.265 / hevc (high efficiency video coding) primaries=bt.2020 gamma=pq
+2026-10-18 13:07:50.499 NuvioTV[4733:2306131] [SubLoad] start n=3 pref=0 pending=109 status=0
+[Loading] engine=mpv stage=started t=+2.44s
+2026-10-18 13:07:50.800 NuvioTV[4733:2306129] [SubLoad] done n=3 pref=0 took=301ms err=0 pending=109
+2026-10-18 13:07:52.294 NuvioTV[4733:2306130] [SubLoad] start n=10 pref=0 pending=102 status=0
+2026-10-18 13:07:52.567 NuvioTV[4733:2306130] [SubLoad] done n=10 pref=0 took=273ms err=0 pending=102
+[Mem] +4s rss=816 MB mode=harvest store=0 harvest=0 decode=0
+2026-10-18 13:07:53.624 NuvioTV[4733:2305361] [MPVQueue] stats queued +4s
+2026-10-18 13:07:53.624 NuvioTV[4733:2306130] [MPVQueue] stats ran lag=0ms
+2026-10-18 13:07:53.624 NuvioTV[4733:2306130] [MPVQueue] stats read cache done
+2026-10-18 13:07:53.624 NuvioTV[4733:2306130] [MPVQueue] stats read drops done
+[MPVStats] vo=gpu-next
+[MPVStats] +4s cache=16.4s net=13.4 MB/s dropped=vo:8 dec:0 underruns=0
+[MPV] warn: hevc: vt decoder cb: output image buffer is null: -12909, reconfig 1
+2026-10-18 13:07:54.153 NuvioTV[4733:2305383] [MPV] warn: hevc: vt decoder cb: output image buffer is null: -12909, reconfig 1
+[MPV] error: hevc: hardware accelerator failed to decode picture
+2026-10-18 13:07:54.153 NuvioTV[4733:2306129] [MPV] error: hevc: hardware accelerator failed to decode picture
+[TopShelf] wrote 9 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPV] warn: Error while decoding frame (hardware decoding)!
+2026-10-18 13:07:54.278 NuvioTV[4733:2305472] [MPV] warn: Error while decoding frame (hardware decoding)!
+[MPV] error: hevc: No frame decoded?
+[MPV] warn: Error while decoding frame (hardware decoding)!
+2026-10-18 13:07:54.285 NuvioTV[4733:2305472] [MPV] error: hevc: No frame decoded?
+2026-10-18 13:07:54.285 NuvioTV[4733:2305472] [MPV] warn: Error while decoding frame (hardware decoding)!
+[MPV] warn: Invalid video timestamp: 4.004000 -> 3.878875
+2026-10-18 13:07:54.481 NuvioTV[4733:2306130] [MPV] warn: Invalid video timestamp: 4.004000 -> 3.878875
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+2026-10-18 13:07:54.855 NuvioTV[4733:2305472] [SubLoad] start n=20 pref=0 pending=92 status=0
+2026-10-18 13:07:55.088 NuvioTV[4733:2305472] [SubLoad] done n=20 pref=0 took=232ms err=0 pending=92
+2026-10-18 13:07:57.463 NuvioTV[4733:2305694] [SubLoad] start n=30 pref=0 pending=82 status=0
+2026-10-18 13:07:57.720 NuvioTV[4733:2306129] [SubLoad] done n=30 pref=0 took=256ms err=0 pending=82
+[MPV] warn: hevc: vt decoder cb: output image buffer is null: -12909, reconfig 1
+2026-10-18 13:07:58.196 NuvioTV[4733:2306129] [MPV] warn: hevc: vt decoder cb: output image buffer is null: -12909, reconfig 1
+[MPV] error: hevc: hardware accelerator failed to decode picture
+2026-10-18 13:07:58.196 NuvioTV[4733:2306129] [MPV] error: hevc: hardware accelerator failed to decode picture
+[MPV] warn: Error while decoding frame (hardware decoding)!
+2026-10-18 13:07:58.323 NuvioTV[4733:2306129] [MPV] warn: Error while decoding frame (hardware decoding)!
+2026-10-18 13:07:58.323 NuvioTV[4733:2306129] [MPV] error: hevc: No frame decoded?
+[MPV] error: hevc: No frame decoded?
+[MPV] warn: Error while decoding frame (hardware decoding)!
+2026-10-18 13:07:58.323 NuvioTV[4733:2306129] [MPV] warn: Error while decoding frame (hardware decoding)!
+[MPV] warn: Invalid video timestamp: 8.008000 -> 7.882875
+2026-10-18 13:07:58.485 NuvioTV[4733:2306130] [MPV] warn: Invalid video timestamp: 8.008000 -> 7.882875
+2026-10-18 13:07:58.630 NuvioTV[4733:2305361] [MPVQueue] stats queued +9s
+2026-10-18 13:07:58.630 NuvioTV[4733:2305694] [MPVQueue] stats ran lag=0ms
+2026-10-18 13:07:58.630 NuvioTV[4733:2305694] [MPVQueue] stats read cache done
+2026-10-18 13:07:58.630 NuvioTV[4733:2305694] [MPVQueue] stats read drops done
+[MPVStats] +9s cache=30.8s net=15.9 MB/s dropped=vo:9 dec:0 underruns=0
+[Harvest] path=vo gamma=pq matrix=dolbyvision switch=vo
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+2026-10-18 13:08:00.287 NuvioTV[4733:2305472] [Harvest] took=168.5ms size=3840x1608 fmt=bgr0 at=9.6 src=mpv
+2026-10-18 13:08:00.305 NuvioTV[4733:2305361] [Harvest] slow (168.5ms > 60ms): interval now 30s for this file
+2026-10-18 13:08:00.308 NuvioTV[4733:2305361] [Harvest] stored n=1 bytes=1530 outcome=stored rss=886
+2026-10-18 13:08:00.325 NuvioTV[4733:2305472] [SubLoad] start n=40 pref=0 pending=72 status=0
+2026-10-18 13:08:01.082 NuvioTV[4733:2306129] [SubLoad] done n=40 pref=0 took=756ms err=0 pending=72
+[MPV] warn: hevc: vt decoder cb: output image buffer is null: -12909, reconfig 1
+2026-10-18 13:08:02.180 NuvioTV[4733:2306129] [MPV] warn: hevc: vt decoder cb: output image buffer is null: -12909, reconfig 1
+[MPV] error: hevc: hardware accelerator failed to decode picture
+2026-10-18 13:08:02.180 NuvioTV[4733:2306131] [MPV] error: hevc: hardware accelerator failed to decode picture
+[MPV] warn: Error while decoding frame (hardware decoding)!
+2026-10-18 13:08:02.307 NuvioTV[4733:2305694] [MPV] warn: Error while decoding frame (hardware decoding)!
+[MPV] error: hevc: No frame decoded?
+[MPV] warn: Error while decoding frame (hardware decoding)!
+2026-10-18 13:08:02.313 NuvioTV[4733:2306129] [MPV] error: hevc: No frame decoded?
+2026-10-18 13:08:02.313 NuvioTV[4733:2306129] [MPV] warn: Error while decoding frame (hardware decoding)!
+[MPV] warn: Invalid video timestamp: 12.012000 -> 11.886875
+2026-10-18 13:08:02.489 NuvioTV[4733:2306129] [MPV] warn: Invalid video timestamp: 12.012000 -> 11.886875
+2026-10-18 13:08:03.518 NuvioTV[4733:2306129] [SubLoad] start n=50 pref=0 pending=62 status=0
+2026-10-18 13:08:04.125 NuvioTV[4733:2305361] [MPVQueue] stats queued +15s
+[MPVStats] +15s cache=55.1s net=15.3 MB/s dropped=vo:11 dec:0 underruns=0
+2026-10-18 13:08:04.125 NuvioTV[4733:2305472] [MPVQueue] stats ran lag=0ms
+2026-10-18 13:08:04.125 NuvioTV[4733:2305472] [MPVQueue] stats read cache done
+2026-10-18 13:08:04.125 NuvioTV[4733:2305472] [MPVQueue] stats read drops done
+2026-10-18 13:08:04.154 NuvioTV[4733:2306129] [SubLoad] done n=50 pref=0 took=636ms err=0 pending=62
+[MPV] warn: hevc: vt decoder cb: output image buffer is null: -12909, reconfig 1
+2026-10-18 13:08:06.208 NuvioTV[4733:2305694] [MPV] warn: hevc: vt decoder cb: output image buffer is null: -12909, reconfig 1
+[MPV] error: hevc: hardware accelerator failed to decode picture
+2026-10-18 13:08:06.208 NuvioTV[4733:2306131] [MPV] error: hevc: hardware accelerator failed to decode picture
+[MPV] warn: Error while decoding frame (hardware decoding)!
+2026-10-18 13:08:06.320 NuvioTV[4733:2306129] [MPV] warn: Error while decoding frame (hardware decoding)!
+[MPV] error: hevc: No frame decoded?
+[MPV] warn: Error while decoding frame (hardware decoding)!
+2026-10-18 13:08:06.328 NuvioTV[4733:2306129] [MPV] error: hevc: No frame decoded?
+2026-10-18 13:08:06.328 NuvioTV[4733:2306129] [MPV] warn: Error while decoding frame (hardware decoding)!
+[MPV] warn: Invalid video timestamp: 16.016000 -> 15.890875
+2026-10-18 13:08:06.484 NuvioTV[4733:2305694] [MPV] warn: Invalid video timestamp: 16.016000 -> 15.890875
+2026-10-18 13:08:06.647 NuvioTV[4733:2306129] [SubLoad] start n=60 pref=0 pending=52 status=0
+2026-10-18 13:08:06.895 NuvioTV[4733:2306129] [SubLoad] done n=60 pref=0 took=247ms err=0 pending=52
+2026-10-18 13:08:09.124 NuvioTV[4733:2305361] [MPVQueue] stats queued +20s
+[MPVStats] +20s cache=66.6s net=10.4 MB/s dropped=vo:13 dec:0 underruns=0
+2026-10-18 13:08:09.124 NuvioTV[4733:2305694] [MPVQueue] stats ran lag=0ms
+2026-10-18 13:08:09.124 NuvioTV[4733:2305694] [MPVQueue] stats read cache done
+2026-10-18 13:08:09.124 NuvioTV[4733:2305694] [MPVQueue] stats read drops done
+2026-10-18 13:08:09.340 NuvioTV[4733:2306131] [SubLoad] start n=70 pref=0 pending=42 status=0
+2026-10-18 13:08:09.615 NuvioTV[4733:2305694] [SubLoad] done n=70 pref=0 took=274ms err=0 pending=42
+[MPV] warn: hevc: vt decoder cb: output image buffer is null: -12909, reconfig 1
+2026-10-18 13:08:10.213 NuvioTV[4733:2306129] [MPV] warn: hevc: vt decoder cb: output image buffer is null: -12909, reconfig 1
+[MPV] error: hevc: hardware accelerator failed to decode picture
+2026-10-18 13:08:10.213 NuvioTV[4733:2305472] [MPV] error: hevc: hardware accelerator failed to decode picture
+[MPV] warn: Error while decoding frame (hardware decoding)!
+2026-10-18 13:08:10.327 NuvioTV[4733:2306129] [MPV] warn: Error while decoding frame (hardware decoding)!
+[MPV] error: hevc: No frame decoded?
+2026-10-18 13:08:10.336 NuvioTV[4733:2305694] [MPV] error: hevc: No frame decoded?
+2026-10-18 13:08:10.336 NuvioTV[4733:2305694] [MPV] warn: Error while decoding frame (hardware decoding)!
+[MPV] warn: Error while decoding frame (hardware decoding)!
+[MPV] warn: Invalid video timestamp: 20.020000 -> 19.894875
+2026-10-18 13:08:10.495 NuvioTV[4733:2306129] [MPV] warn: Invalid video timestamp: 20.020000 -> 19.894875
+2026-10-18 13:08:11.941 NuvioTV[4733:2305472] [SubLoad] start n=80 pref=0 pending=32 status=0
+2026-10-18 13:08:12.214 NuvioTV[4733:2306131] [SubLoad] done n=80 pref=0 took=272ms err=0 pending=32
+[MPV] warn: hevc: vt decoder cb: output image buffer is null: -12909, reconfig 1
+2026-10-18 13:08:14.216 NuvioTV[4733:2306131] [MPV] warn: hevc: vt decoder cb: output image buffer is null: -12909, reconfig 1
+[MPV] error: hevc: hardware accelerator failed to decode picture
+2026-10-18 13:08:14.216 NuvioTV[4733:2305472] [MPV] error: hevc: hardware accelerator failed to decode picture
+[MPV] warn: Error while decoding frame (hardware decoding)!
+2026-10-18 13:08:14.322 NuvioTV[4733:2306129] [MPV] warn: Error while decoding frame (hardware decoding)!
+[MPV] error: hevc: No frame decoded?
+[MPV] warn: Error while decoding frame (hardware decoding)!
+2026-10-18 13:08:14.329 NuvioTV[4733:2306129] [MPV] error: hevc: No frame decoded?
+2026-10-18 13:08:14.329 NuvioTV[4733:2306129] [MPV] warn: Error while decoding frame (hardware decoding)!
+[MPV] warn: Invalid video timestamp: 24.024000 -> 23.898875
+2026-10-18 13:08:14.501 NuvioTV[4733:2305472] [MPV] warn: Invalid video timestamp: 24.024000 -> 23.898875
+2026-10-18 13:08:14.572 NuvioTV[4733:2306129] [SubLoad] start n=90 pref=0 pending=22 status=0
+2026-10-18 13:08:14.631 NuvioTV[4733:2305361] [MPVQueue] stats queued +25s
+2026-10-18 13:08:14.632 NuvioTV[4733:2305472] [MPVQueue] stats ran lag=0ms
+2026-10-18 13:08:14.632 NuvioTV[4733:2305472] [MPVQueue] stats read cache done
+2026-10-18 13:08:14.632 NuvioTV[4733:2305472] [MPVQueue] stats read drops done
+[MPVStats] +25s cache=67.3s net=5.2 MB/s dropped=vo:14 dec:0 underruns=0
+2026-10-18 13:08:14.828 NuvioTV[4733:2306131] [SubLoad] done n=90 pref=0 took=256ms err=0 pending=22
+[MPV] warn: hevc: vt decoder cb: output image buffer is null: -12909, reconfig 1
+2026-10-18 13:08:18.221 NuvioTV[4733:2306129] [MPV] warn: hevc: vt decoder cb: output image buffer is null: -12909, reconfig 1
+[MPV] error: hevc: hardware accelerator failed to decode picture
+2026-10-18 13:08:18.221 NuvioTV[4733:2305694] [MPV] error: hevc: hardware accelerator failed to decode picture
+[MPV] warn: Error while decoding frame (hardware decoding)!
+2026-10-18 13:08:18.327 NuvioTV[4733:2306129] [MPV] warn: Error while decoding frame (hardware decoding)!
+[MPV] error: hevc: No frame decoded?
+[MPV] warn: Error while decoding frame (hardware decoding)!
+2026-10-18 13:08:18.333 NuvioTV[4733:2306129] [MPV] error: hevc: No frame decoded?
+2026-10-18 13:08:18.333 NuvioTV[4733:2306129] [MPV] warn: Error while decoding frame (hardware decoding)!
+[MPV] warn: Invalid video timestamp: 28.028000 -> 27.902875
+2026-10-18 13:08:18.503 NuvioTV[4733:2306131] [MPV] warn: Invalid video timestamp: 28.028000 -> 27.902875
+2026-10-18 13:08:20.130 NuvioTV[4733:2305361] [MPVQueue] stats queued +31s
+2026-10-18 13:08:20.131 NuvioTV[4733:2306129] [MPVQueue] stats ran lag=0ms
+2026-10-18 13:08:20.131 NuvioTV[4733:2306129] [MPVQueue] stats read cache done
+2026-10-18 13:08:20.131 NuvioTV[4733:2306129] [MPVQueue] stats read drops done
+[MPVStats] +31s cache=67.1s net=4.0 MB/s dropped=vo:15 dec:0 underruns=0
+[MPV] warn: hevc: vt decoder cb: output image buffer is null: -12909, reconfig 1
+2026-10-18 13:08:22.225 NuvioTV[4733:2306129] [MPV] warn: hevc: vt decoder cb: output image buffer is null: -12909, reconfig 1
+[MPV] error: hevc: hardware accelerator failed to decode picture
+2026-10-18 13:08:22.226 NuvioTV[4733:2306129] [MPV] error: hevc: hardware accelerator failed to decode picture
+[MPV] warn: Error while decoding frame (hardware decoding)!
+2026-10-18 13:08:22.317 NuvioTV[4733:2305472] [MPV] warn: Error while decoding frame (hardware decoding)!
+[MPV] error: hevc: No frame decoded?
+2026-10-18 13:08:22.381 NuvioTV[4733:2305694] [MPV] error: hevc: No frame decoded?
+[MPV] warn: Error while decoding frame (hardware decoding)!
+2026-10-18 13:08:22.381 NuvioTV[4733:2305694] [MPV] warn: Error while decoding frame (hardware decoding)!
+[MPV] warn: Invalid video timestamp: 32.032000 -> 31.906875
+2026-10-18 13:08:22.499 NuvioTV[4733:2305694] [MPV] warn: Invalid video timestamp: 32.032000 -> 31.906875
+2026-10-18 13:08:25.124 NuvioTV[4733:2305361] [MPVQueue] stats queued +36s
+[MPVStats] +36s cache=67.1s net=3.8 MB/s dropped=vo:17 dec:0 underruns=0
+2026-10-18 13:08:25.124 NuvioTV[4733:2306129] [MPVQueue] stats ran lag=0ms
+2026-10-18 13:08:25.124 NuvioTV[4733:2306129] [MPVQueue] stats read cache done
+2026-10-18 13:08:25.124 NuvioTV[4733:2306129] [MPVQueue] stats read drops done
+[MPV] warn: hevc: vt decoder cb: output image buffer is null: -12909, reconfig 1
+2026-10-18 13:08:26.227 NuvioTV[4733:2305383] [MPV] warn: hevc: vt decoder cb: output image buffer is null: -12909, reconfig 1
+[MPV] error: hevc: hardware accelerator failed to decode picture
+2026-10-18 13:08:26.228 NuvioTV[4733:2305694] [MPV] error: hevc: hardware accelerator failed to decode picture
+[MPV] warn: Error while decoding frame (hardware decoding)!
+2026-10-18 13:08:26.329 NuvioTV[4733:2306131] [MPV] warn: Error while decoding frame (hardware decoding)!
+[MPV] error: hevc: No frame decoded?
+[MPV] warn: Error while decoding frame (hardware decoding)!
+2026-10-18 13:08:26.336 NuvioTV[4733:2305694] [MPV] error: hevc: No frame decoded?
+2026-10-18 13:08:26.336 NuvioTV[4733:2305694] [MPV] warn: Error while decoding frame (hardware decoding)!
+[MPV] warn: Invalid video timestamp: 36.036000 -> 35.910875
+2026-10-18 13:08:26.513 NuvioTV[4733:2306131] [MPV] warn: Invalid video timestamp: 36.036000 -> 35.910875
+2026-10-18 13:08:30.130 NuvioTV[4733:2305361] [MPVQueue] stats queued +41s
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+2026-10-18 13:08:30.259 NuvioTV[4733:2305383] [Harvest] took=140.2ms size=3840x1608 fmt=bgr0 at=39.6 src=mpv
+[MPVStats] +41s cache=67.6s net=4.5 MB/s dropped=vo:19 dec:0 underruns=0
+[MPV] warn: hevc: vt decoder cb: output image buffer is null: -12909, reconfig 1
+2026-10-18 13:08:30.259 NuvioTV[4733:2305383] [MPVQueue] stats ran lag=128ms
+2026-10-18 13:08:30.259 NuvioTV[4733:2305383] [MPVQueue] stats read cache done
+2026-10-18 13:08:30.259 NuvioTV[4733:2305383] [MPVQueue] stats read drops done
+2026-10-18 13:08:30.259 NuvioTV[4733:2305383] [MPV] warn: hevc: vt decoder cb: output image buffer is null: -12909, reconfig 1
+2026-10-18 13:08:30.259 NuvioTV[4733:2305383] [MPV] error: hevc: hardware accelerator failed to decode picture
+[MPV] error: hevc: hardware accelerator failed to decode picture
+2026-10-18 13:08:30.286 NuvioTV[4733:2305361] [Harvest] stored n=2 bytes=6700 outcome=stored rss=996
+[MPV] warn: Error while decoding frame (hardware decoding)!
+2026-10-18 13:08:30.316 NuvioTV[4733:2305383] [MPV] warn: Error while decoding frame (hardware decoding)!
+[MPV] error: hevc: No frame decoded?
+2026-10-18 13:08:30.347 NuvioTV[4733:2305694] [MPV] error: hevc: No frame decoded?
+2026-10-18 13:08:30.347 NuvioTV[4733:2305694] [MPV] warn: Error while decoding frame (hardware decoding)!
+[MPV] warn: Error while decoding frame (hardware decoding)!
+[MPV] warn: Invalid video timestamp: 40.040000 -> 39.914875
+2026-10-18 13:08:30.506 NuvioTV[4733:2305383] [MPV] warn: Invalid video timestamp: 40.040000 -> 39.914875
+[MPV] warn: hevc: vt decoder cb: output image buffer is null: -12909, reconfig 1
+2026-10-18 13:08:34.230 NuvioTV[4733:2305383] [MPV] warn: hevc: vt decoder cb: output image buffer is null: -12909, reconfig 1
+[MPV] error: hevc: hardware accelerator failed to decode picture
+2026-10-18 13:08:34.231 NuvioTV[4733:2305472] [MPV] error: hevc: hardware accelerator failed to decode picture
+Launched application with com.youngchris29.NuvioTV bundle identifier.
+Waiting for the application to terminate...
+App terminated due to signal 15.
