@@ -2906,6 +2906,138 @@
    "reporter": "u/mrStevenx3",
    "first_seen": "2026-10-17",
    "summary": "Add Native Player (plays TrueHD 7.1 as Atmos) to the external players."
+  },
+  {
+   "id": "BUG-174",
+   "kind": "Bug",
+   "priority": "P2",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-18",
+   "summary": "Back from player lands on stream list"
+  },
+  {
+   "id": "BUG-175",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-18",
+   "summary": "Wide-poster trailer missing in Continue Watching"
+  },
+  {
+   "id": "BUG-176",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-18",
+   "summary": "Back from collection to Home takes two moves (Stage)"
+  },
+  {
+   "id": "BUG-177",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-18",
+   "summary": "No focus ring/depth on Detail trailers, episodes, season posters"
+  },
+  {
+   "id": "BUG-178",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-18",
+   "summary": "Detail scroll-up shadow moves with content"
+  },
+  {
+   "id": "BUG-179",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-18",
+   "summary": "Actor biography truncated, no way to read it"
+  },
+  {
+   "id": "BUG-180",
+   "kind": "Bug",
+   "priority": "P2",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-18",
+   "summary": "Film runs ~10 fps behind open player menus"
+  },
+  {
+   "id": "BUG-181",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-18",
+   "summary": "Animals thumbnails late; Atmos still missing"
+  },
+  {
+   "id": "BUG-182",
+   "kind": "Bug",
+   "priority": "P4",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-18",
+   "summary": "Loading title restarts each step"
+  },
+  {
+   "id": "BUG-183",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-18",
+   "summary": "Stream list flashes before auto-play"
+  },
+  {
+   "id": "FEAT-79",
+   "kind": "Feature request",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-18",
+   "summary": "Classic look inside collections"
+  },
+  {
+   "id": "FEAT-80",
+   "kind": "Feature request",
+   "priority": "P4",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-18",
+   "summary": "Sidebar top-left + icons-only option"
   }
  ]
 }
