@@ -113,8 +113,12 @@ Driven from the Mac with the remote rig. Screenshots are in `docs/research/focus
 | Home: after opening a collection folder and coming back, Up from that row | **Pre-existing, intermittent; not caused by this work.** Focus can jump into the banner without the rows scrolling back, which strands Upcoming / Continue Watching. It first looked like a Home split regression (split build 2 of 2 failed, base passed once). A second base walk failed the same way (`n04-up.jpg`), and the simulator's base takes the banner 3/3 in the pinned case. Merged `9b4f4963d` anyway: it restores the base's row re-renders around push/pop and focus requests, at the same body counts. On it, the first Up landed on Upcoming but the second skipped Continue Watching (`g04`/`g05`); the log shows `upFallback … declined reason=staleInput` / `reason=rail`. Logged as a separate bug for its own fix |
 | Detail (series): Resume → studio chips → seasons → episodes; Season 2 switch updates the list | PASS |
 | Stream picker: an add-on without a logo shows no placeholder | PASS |
-| Player subtitle-delay Reset | Not walked (needs a playback session) |
+| Player subtitle-delay Reset (native player, add-on subtitle, merged build `2353a5e9b`) | PASS: +1 s, then Reset → +0.00 s with focus kept on Reset (`y15`/`y16`). The Timing row only appears for an add-on subtitle on the native engine (by design: only add-on WebVTT can be re-timed) |
+| Stage Home (merged build) | PASS: one row per page, art and synopsis follow focus, the wide card grows into its trailer, Up pages back (`x04`–`x08`) |
+| Native player exit with Menu (rig) | **Not confirmed.** Six 150 ms Menu presses with the panel closed never left the player, and the log shows nothing; Select did pause and resume. Likely a rig limitation with AVKit's system bar (it isn't in screenshots), but check once on the Siri Remote |
 | Welcome, PIN prompt, email sign-in | Not walked (they need a signed-out app or a PIN profile) |
+
+**New performance finding from the playback log:** during native playback the app rewrites the Top Shelf file (`[TopShelf] wrote 8 items`) about 3 times per 11-second segment, roughly every 4 s; the 10-15 log shows about 5 per segment. It predates this work. Throttle `TopShelfUpdater` to write only when the item list changes, or at most once a minute while playing.
 
 ## Device pass owed (Test profile)
 
