@@ -1,6 +1,6 @@
 # DM draft: beta.19-rc6 to Steven (2026-10-18)
 
-**Status: DRAFT, NOT SENT.** SlopMonster lint 5/5 on the body. Codex cleanse skipped: Codex is out of quota until 10-29. IPA link: litterbox, 72 h (until about 2026-10-21 12:15Z), size-checked at 29,513,577 B. Before sending, fetch the room against the watermark `2026-10-17T11:33:35.807Z` and amend the draft if he wrote again. It answers his rc5 verdict follow-ups (the 06:08Z reply's promises) and his 11:33Z message (HDR is on mpv; add Native Player).
+**Status: SENT 2026-10-18 12:40:40Z** as one bubble on Christian's go, with his added line saying the navigation items weren't from Steven's list. The pre-send fetch found nothing newer than 11:33:35Z. Verified in the room: start, link and end of the bubble, one copy. DM watermark now `2026-10-18T12:40:40.401Z`. Was: DRAFT, NOT SENT. SlopMonster lint 5/5 on the body. Codex cleanse skipped: Codex is out of quota until 10-29. IPA link: litterbox, 72 h (until about 2026-10-21 12:15Z), size-checked at 29,513,577 B. Before sending, fetch the room against the watermark `2026-10-17T11:33:35.807Z` and amend the draft if he wrote again. It answers his rc5 verdict follow-ups (the 06:08Z reply's promises) and his 11:33Z message (HDR is on mpv; add Native Player).
 
 Facts behind it:
 - rc6 = build 138, tag `tvos-v0.3.0-beta.19-rc6`, from `tvos-shared-extraction` `f2718d7bc`.
@@ -29,7 +29,7 @@ Native Player is in. If you have version 1.1.3 or newer, pick it under Settings 
 
 HDR on mpv: thanks, that narrows it down. mpv only asks the TV for HDR once the first frame is decoded, which explains the late switch. The fix is to ask for HDR from the stream info before playback starts and wait for the TV to switch. That's next, not in rc6.
 
-Also in rc6, a pass on remote navigation and smoothness:
+Also in rc6, a pass on remote navigation and smoothness. These weren't on your list, they're things I noticed myself:
 - Every button on the profile editor is now reachable with up and down.
 - The colour swatches show focus.
 - Search, collection pages and Settings no longer strand focus.
