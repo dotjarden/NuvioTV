@@ -1,0 +1,6 @@
+(lldb) command source -s 0 '/tmp/lldb-bt.txt'
+Executing commands in '/tmp/lldb-bt.txt'.
+(lldb) settings set target.process.stop-on-exec false
+(lldb) device select 00008110-001A6DCE0AF2201E
+(lldb) device process attach --pid  --waitfor false
+error: invalid process ID '--waitfor'

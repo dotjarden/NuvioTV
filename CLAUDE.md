@@ -2,6 +2,8 @@
 
 ## Upstream sync status (auto-checked daily against NuvioMedia/NuvioMobile)
 
+**NuvioTV (Android TV) check 2026-10-17** (`docs/nuviotv-android-upstream-port-plan-2026-10-17.md`): `NuvioMedia/NuvioTV` HEAD `f7e2a78ad`, 2,213 commits since the 07-03 gap analysis. Fork is near parity. Recommended small ports: filename-based binge-group matching (MEDIUM), Trakt CW-on-failure (MEDIUM), no profile-settings push on profile switch (MEDIUM, verify), subtitle language aliases spn/sp/esp + HBS, JS plugin series type, shuffle-on-profile-switch, Top Shelf custom posters, add-on remove confirm. Defer: Watch Party, Jellyfin/Emby, Ambient Mode. Next NuvioTV check baseline: `f7e2a78ad`.
+
 **Latest run 2026-10-16** (`docs/upstream-port-plan-2026-10-16.md`): upstream `779c145a5` → `63afb73c0` (0.6.0-beta). Recommended MEDIUM: MDBList external/dynamic/liked lists (shared `mdblist/*` + tests + Settings list-visibility UI; do with 10-08 sort item). Product call: experimental Watch Party (HIGH, recommend defer). iOS PiP/CallKit N/A. 10-10 TorBox pagination and 10-08 MDBList sort/ytId remain open.
 **Latest run 2026-10-14** (`docs/upstream-port-plan-2026-10-14.md`): upstream `dac3f3141` → `779c145a5` (0.5.10-beta). Recommended LOW-MED: restore dismissed Continue Watching on mark-watched (shared `WatchedRepository` + `ContinueWatchingPreferencesRepository`, #2244). Optional LOW: next-episode preload/heuristic post-credits (Swift), poster-resolver perf, Episode N i18n. iOS PiP N/A. 10-10 TorBox pagination and 10-08 MDBList sort/ytId remain open.
 
