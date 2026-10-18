@@ -4,6 +4,8 @@
 
 Method: three read-only review agents (Home/browse performance, the rest of the app's performance, focus across every screen). They used the `swiftui-performance-audit` and `swiftui-ui-patterns` skills. All performance findings come from reading the code: there is no Instruments trace yet.
 
+**CUT 2026-10-18 in beta.19-rc6:** build 138, tag `tvos-v0.3.0-beta.19-rc6` (`7c50126f`), outer pointer `2a475ed`. IPA (29,513,577 B): https://litter.catbox.moe/83imiz.ipa (litterbox, 72 h). Steven's DM: `docs/comms-dm-drafts-2026-10-18-beta19-rc6.md` (drafted, not sent).
+
 ## Gates
 
 - Debug and Release builds on the FA87 simulator: green.
