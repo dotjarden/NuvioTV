@@ -1,6 +1,6 @@
 # DM draft: beta.19-rc7 to Steven (2026-10-18)
 
-**Status: DRAFT, NOT SENT.** SlopMonster lint 5/5; Codex cleanse skipped (out of quota until 10-29). IPA: litterbox, 72 h (until about 2026-10-21 21:40Z), 29,562,852 B. Cut 2026-10-18: build 139 `21f618df`, tag `tvos-v0.3.0-beta.19-rc7` pushed, outer pointer `b3f52cd`. Before sending, fetch the room against the watermark `2026-10-18T19:39:59.706Z` and amend the draft if he wrote again.
+**Status: SENT 2026-10-18 21:34:10.534Z** as one bubble on Christian's go, with one line added for his 19:47Z message. Verified in the room and by `fetch-dms.sh` (one copy). DM watermark now `2026-10-18T21:34:10.534Z`. Was: DRAFT, NOT SENT. SlopMonster lint 5/5; Codex cleanse skipped (out of quota until 10-29). IPA: litterbox, 72 h (until about 2026-10-21 21:40Z), 29,562,852 B. Cut 2026-10-18: build 139 `21f618df`, tag `tvos-v0.3.0-beta.19-rc7` pushed, outer pointer `b3f52cd`. Pre-send fetch 21:33Z found his 19:47:29Z message (wide posters: don't enlarge when the trailer starts, the focus lift is enough); one line added acknowledging it.
 
 Facts behind it:
 - rc7 = build 139, tag `tvos-v0.3.0-beta.19-rc7`, from `tvos-shared-extraction` (Batch F tip `b11140ecd` + the build bump).
@@ -36,7 +36,7 @@ Everything I said was coming last time is in:
 
 From your rc6 list:
 - A focused wide poster now sits on top of its neighbour instead of sliding behind it.
-- The gap under rows: each row is now only as tall as its cards, so the next heading sits right under wide posters, Continue Watching and collections. A wide poster's row grows only while its trailer plays, then shrinks back. If you prefer the old spacing, it's under Settings › Developer › Short Rows Fit (on by default).
+- The gap under rows: each row is now only as tall as its cards, so the next heading sits right under wide posters, Continue Watching and collections. A wide poster's row grows only while its trailer plays, then shrinks back. If you prefer the old spacing, it's under Settings › Developer › Short Rows Fit (on by default). I just saw your note about the trailer not enlarging the poster: rc7 was already built, so it still grows here. I'll look at keeping it at the poster's size for the next build.
 - The loading screen in Nuvio's own player now shows the title logo in the middle, slowly pulsing, like the official apps.
 - Native Player's grey screen: once Nuvio hands the film over, Native Player draws everything until it starts playing, so I can't put our loading animation on top of it, sorry.
 - Home smoothness: Settings › Developer › Home Speed has Standard, Faster and Fastest. Pick one, then close and reopen the app. Tell me which feels best and I'll make it the default.

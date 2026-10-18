@@ -45,3 +45,7 @@ Photo 5 (Classic Home, Continue Watching with Spider-Man: Brand New Day) and pho
 
 - Reply DM SENT 2026-10-18 19:39:59Z (`docs/comms-dm-drafts-2026-10-18-rc6-reply.md`).
 - The next build (rc7) can carry Batch E, BUG-170, the mpv queue stall fix and BUG-171. Item 1 (z-order) and item 2 (row gap) are small enough to fold in first.
+
+## Follow-up 2026-10-18 19:47Z
+
+On the wide-poster trailer: he prefers the poster **not** enlarging when the trailer starts. The Apple TV focus lift already enlarges the focused poster (his second photo), which he finds enough: simpler, no risk of shifting or bouncing, and better looking. rc7 (built before this message) still grows the card; the rc7 DM says we'll look at keeping it at the poster's size for the next build (D16 reversal: play the trailer at the rest size on shape-landscape rows).
