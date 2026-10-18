@@ -1,13 +1,13 @@
 # Steven's beta.19-rc7 verdict, 2026-10-18
 
-Source: Reddit chat with u/mrStevenx3, read 2026-10-18 23:42Z by the local task `nuviotv-reddit-dm-check` (`fetch-dms.sh --since 2026-10-18T21:34:10.534Z`). Messages 22:53Z-23:37Z; 4 photos (22:53Z) unread. New DM watermark `2026-10-18T23:37:01.151Z`.
+Source: Reddit chat with u/mrStevenx3, read 2026-10-18 23:42Z by the local task `nuviotv-reddit-dm-check` (`fetch-dms.sh --since 2026-10-18T21:34:10.534Z`). Messages 22:53Z-23:37Z; 4 photos (22:53Z), read in the interactive session 23:55Z and saved in `docs/research/steven-beta19-rc7-photos-2026-10-18/` (`*.small.jpg` = 1400 px copies). New DM watermark `2026-10-18T23:37:01.151Z`.
 
 ## Confirmed working
 HDR on from the start of the film; subtitles (two films); progress bar (had it already); landscape row gap fine; New Home speed Intermediate and Standard both fine (slight preference Standard); Rows/Grid for collections; Detail pages much smoother; Search no issues; loading screen with pulsing logo "very clean". Native Player limits understood.
 
 ## New items
 - **BUG-174** (P2): Going back from a player (external or built-in) returns to the stream selection instead of the app's Home/Detail he came from.
-- **BUG-175** (P3): Wide poster on top (landscape card + trailer) works in his collection but not in the Continue Watching section.
+- **BUG-175** (P3): Wide poster on top (landscape card + trailer) works in his collection but not in the Continue Watching section. His next line, "Continue Watching section: it doesn't work on Classic, only on the new Home", places it: photo 1 is Classic Home, Continue Watching, the focused Spider-Man card (gold ring) with its right edge under the next card. Batch F's `zIndex` fix covers the shared row (`BrowseComponents`), so Classic's Continue Watching row is drawn by another view.
 - **BUG-176** (P3): Going back from a collection to Home takes two moves on the new Home (Classic is fine).
 - **BUG-177** (P3): Detail page: depth effect and focus ring don't apply to trailers, episodes or season posters.
 - **BUG-178** (P3): Detail page: scrolling back up, the shadow that appears going down moves up with the content (video offered).
@@ -20,8 +20,14 @@ HDR on from the start of the film; subtitles (two films); progress bar (had it a
 - **FEAT-80** (P4): Sidebar placed top-left instead of middle-left, plus an icons-only option (no text).
 
 ## Reinforced
-- Landscape trailer enlargement: keep the Apple TV default focus size and play the trailer inside it (same as his 19:47Z rc6 follow-up).
+- Landscape trailer enlargement: keep the Apple TV default focus size and play the trailer inside it (same as his 19:47Z rc6 follow-up). Photo 3 shows rc7's grown card in his Prime Video row. **Already fixed after rc7**: wide-poster trailers play at the resting size, merged `457a38d34` (not cut).
 - Home still less smooth than Classic (varies, stutters sometimes): UX-16 / B16.
 
 ## Question owed
 Do the subtitle and language preferences set in the app apply to films played in an external player?
+
+## Photos
+1. Classic Home, Continue Watching: the focused card's right edge sits under its neighbour (BUG-175).
+2. Animals on mpv, scrubbing at 46:31: no thumbnail over the bar yet (BUG-181).
+3. His Prime Video add-on, "Nouveaux films": rc7 grows the playing wide card (fixed after rc7, see above).
+4. Animals, same position a moment later: the thumbnail has arrived (BUG-181).
