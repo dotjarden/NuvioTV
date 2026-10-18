@@ -120,7 +120,7 @@ Driven from the Mac with the remote rig. Screenshots are in `docs/research/focus
 
 **New performance finding from the playback log:** during native playback the app rewrites the Top Shelf file (`[TopShelf] wrote 8 items`) about 3 times per 11-second segment, roughly every 4 s; the 10-15 log shows about 5 per segment. It predates this work. Throttle `TopShelfUpdater` to write only when the item list changes, or at most once a minute while playing.
 
-## Follow-up batch (`claude/followup-batch`, `964c36c59` + `265b3f6c8`, off `2353a5e9b`, NOT merged)
+## Follow-up batch (`964c36c59` + `265b3f6c8` + FEAT-78 `f2718d7bc`; **MERGED 2026-10-18**: `tvos-shared-extraction` `2353a5e9b` → `f2718d7bc`, pushed, outer pointer `de4d185`; not cut)
 
 | Change | Device (Test 2) |
 |---|---|
@@ -133,7 +133,15 @@ Reviews: Opus r1 2 P1 / 3 P2 / 5 P3, r2 0 P1 / 1 P2 / 3 P3, all fixed except two
 
 **New, pre-existing finding:** the Top Shelf shows no progress bar for titles played on this Apple TV. `upsertPlaybackProgress` never sets `progressPercent`, and the snapshot carries only that field; only Trakt/Simkl percentage entries get a bar. Fix: compute it from `lastPositionMs`/`durationMs` in `TopShelfUpdater`. Writes would then land about once a minute while playing, as designed.
 
-## FEAT-78: Native Player as an external player (research 2026-10-17)
+## FEAT-78: Native Player as an external player (research 2026-10-17, **BUILT `f2718d7bc`**)
+
+Built as specified below:
+- non-http(s) and `.mpd` sources are refused, so the default-player route falls back to the built-in player;
+- subtitles: up to 8, known non-SRT extensions dropped;
+- position is returned through `ExternalPlaybackReturn`.
+
+Opus review: 0 P1 / 0 P2 / 6 P3. Gates: jvm 1491/0, K/N 1513/0, Release, NuvioTVTests 1838/0. **Not device-tested**: Native Player isn't installed on the test Apple TV, so Steven's install is the first real run. Known gaps (documented in code): DASH manifests without `.mpd` in the path, VTT links with no extension or a query-only format, header-protected sources (same as Infuse).
+
 
 **Feasible now.** Native Player by Native IT (App Store id6760623926, tvOS 26+, free) documents an Infuse-compatible deep link from v1.1.3:
 - Template: `nativeplayer://x-callback-url/play?url=<enc>&filename=<enc>&position=<sec>&sub=<enc srt>…&x-success=<enc>&x-error=<enc>`.
