@@ -1,0 +1,390 @@
+[LaunchTrace] +0ms app_init
+[ExtPlayerProbe] canOpenURL(infuse://) = true
+2026-10-18 17:08:09.683 NuvioTV[4986:2390371] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ExtPlayerProbe] canOpenURL(vlc-x-callback://) = false
+[ExtPlayerProbe] canOpenURL(outplayer://) = false
+[ExtPlayerProbe] canOpenURL(open-vidhub://) = true
+[ExtPlayerProbe] canOpenURL(vidhub://) = false
+[ExtPlayerProbe] canOpenURL(senplayer://) = false
+[ExtPlayerProbe] canOpenURL(nativeplayer://) = false
+[ExtPlayerProbe] availablePlayers = ["infuse:Infuse", "vidhub:VidHub"]
+2026-10-18 17:08:09.684 NuvioTV[4986:2390371] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 17:08:09.684 NuvioTV[4986:2390371] -canOpenURL: failed for URL: "vidhub://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 17:08:09.685 NuvioTV[4986:2390371] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 17:08:09.685 NuvioTV[4986:2390371] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 17:08:09.686 NuvioTV[4986:2390371] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 17:08:09.686 NuvioTV[4986:2390371] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 17:08:09.686 NuvioTV[4986:2390371] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 17:08:09.686 NuvioTV[4986:2390371] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ProfileSelect] auto-enter profile 3
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-18 17:08:10.063 NuvioTV[4986:2390371] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+2026-10-18 17:08:10.071 NuvioTV[4986:2390371] [HomeScrollProbe] plan regime=M330c1p1r0z0t37hzrt4 linkFrame=506 viewport=493 fits=0 CAPPED — rows still short, belt remains in play
+[LaunchTrace] +526ms home_appear
+2026-10-18 17:08:10.087 NuvioTV[4986:2390371] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-18 17:08:10.087 NuvioTV[4986:2390371] [TrailerPipeline] trailerLocation stage=row
+2026-10-18 17:08:10.087 NuvioTV[4986:2390371] [StageStrip] geometry rowH=458.5 P=498.5 H=541.5 stage=538.5 logo=150 synL=5 fits=1 posterH=330.0 font=system
+2026-10-18 17:08:10.125 NuvioTV[4986:2390371] [StageStrip] geometry rowH=532.0 P=572.0 H=615.0 stage=465.0 logo=110 synL=5 fits=1 posterH=403.3 font=system
+2026-10-18 17:08:10.356 NuvioTV[4986:2390371] [StageStrip] config P=572.0 H=615.0 rows=1 pageSeconds=0.5 fitRows=1
+2026-10-18 17:08:10.356 NuvioTV[4986:2390371] [StageStrip] fit row=continue-watching h=332
+2026-10-18 17:08:10.362 NuvioTV[4986:2390371] [StageStrip] observers started
+2026-10-18 17:08:10.362 NuvioTV[4986:2390371] [StageStrip] marker attached
+2026-10-18 17:08:10.374 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,526,360,247 label=- id=-
+[LaunchTrace] +838ms artwork #1: mem=0 disk=1 net=0 fail=0
+[LaunchTrace] +876ms artwork #10: mem=0 disk=10 net=0 fail=0
+2026-10-18 17:08:10.493 NuvioTV[4986:2390371] [StageStrip] baseline y=465.0 P=572.0 H=615.0 rows=1
+2026-10-18 17:08:10.592 NuvioTV[4986:2390371] [HomeHero] logoInk sync-sample ms=0.42
+2026-10-18 17:08:10.679 NuvioTV[4986:2390371] [AmbientWash] render id=movie:tt3118958 src=1920x1080 ms=46.9 lum=0.17
+2026-10-18 17:08:10.680 NuvioTV[4986:2390371] [AmbientWash] show id=movie:tt3118958 gen=1 late=0 ms=46.9 lum=0.17
+[LaunchTrace] +1964ms artwork #25: mem=1 disk=20 net=4 fail=0
+2026-10-18 17:08:11.529 NuvioTV[4986:2390371] [TrailerPipeline] gates inlineTrailersEnabled=YES systemAutoplay=YES
+[LaunchTrace] +1966ms first_rows n=5 hero=8
+[LaunchTrace] +1966ms first_hero n=8
+2026-10-18 17:08:11.585 NuvioTV[4986:2390371] [StageStrip] config P=572.0 H=615.0 rows=6 pageSeconds=0.5 fitRows=1
+2026-10-18 17:08:11.585 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:movie:trakt-trending h=532
+2026-10-18 17:08:11.595 NuvioTV[4986:2390371] [StageStrip] fit row=test-collection-1004 h=517
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +2127ms artwork #50: mem=4 disk=42 net=4 fail=0
+[LaunchTrace] +2450ms rows n=9
+2026-10-18 17:08:12.042 NuvioTV[4986:2390371] [StageStrip] config P=572.0 H=615.0 rows=10 pageSeconds=0.5 fitRows=1
+[LaunchTrace] +2885ms rows n=17
+2026-10-18 17:08:12.475 NuvioTV[4986:2390371] [StageStrip] config P=572.0 H=615.0 rows=18 pageSeconds=0.5 fitRows=1
+[LaunchTrace] +3218ms rows n=25
+2026-10-18 17:08:12.809 NuvioTV[4986:2390371] [StageStrip] config P=572.0 H=615.0 rows=26 pageSeconds=0.5 fitRows=1
+[LaunchTrace] +3527ms rows n=33
+2026-10-18 17:08:13.107 NuvioTV[4986:2390371] [StageStrip] config P=572.0 H=615.0 rows=34 pageSeconds=0.5 fitRows=1
+[LaunchTrace] +3792ms rows n=41
+2026-10-18 17:08:13.377 NuvioTV[4986:2390371] [StageStrip] config P=572.0 H=615.0 rows=42 pageSeconds=0.5 fitRows=1
+2026-10-18 17:08:13.447 NuvioTV[4986:2390371] [StageStrip] config P=572.0 H=615.0 rows=43 pageSeconds=0.5 fitRows=1
+2026-10-18 17:08:13.448 NuvioTV[4986:2390371] [StageStrip] fit row=upcoming h=332
+[LaunchTrace] +4833ms rows n=49
+2026-10-18 17:08:14.416 NuvioTV[4986:2390371] [StageStrip] config P=572.0 H=615.0 rows=51 pageSeconds=0.5 fitRows=1
+[LaunchTrace] +5263ms rows n=57
+2026-10-18 17:08:14.845 NuvioTV[4986:2390371] [StageStrip] config P=572.0 H=615.0 rows=59 pageSeconds=0.5 fitRows=1
+[LaunchTrace] +5631ms rows n=65
+2026-10-18 17:08:15.215 NuvioTV[4986:2390371] [StageStrip] config P=572.0 H=615.0 rows=67 pageSeconds=0.5 fitRows=1
+[LaunchTrace] +6000ms rows n=73
+2026-10-18 17:08:15.580 NuvioTV[4986:2390371] [StageStrip] config P=572.0 H=615.0 rows=75 pageSeconds=0.5 fitRows=1
+[LaunchTrace] +6356ms rows n=81
+2026-10-18 17:08:15.935 NuvioTV[4986:2390371] [StageStrip] config P=572.0 H=615.0 rows=83 pageSeconds=0.5 fitRows=1
+[LaunchTrace] +6701ms rows n=89
+2026-10-18 17:08:16.285 NuvioTV[4986:2390371] [StageStrip] config P=572.0 H=615.0 rows=91 pageSeconds=0.5 fitRows=1
+[LaunchTrace] +7351ms rows n=97
+2026-10-18 17:08:16.937 NuvioTV[4986:2390371] [StageStrip] config P=572.0 H=615.0 rows=99 pageSeconds=0.5 fitRows=1
+[LaunchTrace] +8309ms rows n=105
+2026-10-18 17:08:17.896 NuvioTV[4986:2390371] [StageStrip] config P=572.0 H=615.0 rows=107 pageSeconds=0.5 fitRows=1
+[LaunchTrace] +8655ms rows n=113
+2026-10-18 17:08:18.243 NuvioTV[4986:2390371] [StageStrip] config P=572.0 H=615.0 rows=115 pageSeconds=0.5 fitRows=1
+[LaunchTrace] +8811ms rows n=116
+2026-10-18 17:08:18.394 NuvioTV[4986:2390371] [StageStrip] config P=572.0 H=615.0 rows=118 pageSeconds=0.5 fitRows=1
+2026-10-18 17:08:37.063 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,898,360,247 label=- id=-
+2026-10-18 17:08:37.081 NuvioTV[4986:2390371] [StageStrip] page to=1 key=upcoming seconds=0.5 gen=1
+2026-10-18 17:08:37.113 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:movie:trakt-trending h=532
+2026-10-18 17:08:37.542 NuvioTV[4986:2390371] [AmbientWash] render id=series:tt32268630 src=1280x720 ms=10.0 lum=0.26
+2026-10-18 17:08:37.711 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=series:tt32268630 sinceAct=598 pageEnd=548
+2026-10-18 17:08:37.770 NuvioTV[4986:2390371] [StageStrip] seg p=1 k=1 start=+101 dur=506 from=465.0 to=93.0 travel=-372.0
+2026-10-18 17:08:37.866 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=series:tt32268630 sinceAct=753 pageEnd=703
+2026-10-18 17:08:37.868 NuvioTV[4986:2390371] [AmbientWash] show id=series:tt32268630 gen=2 late=0 ms=10.0 lum=0.26
+2026-10-18 17:08:38.093 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,899,269,443 label=- id=-
+2026-10-18 17:08:38.118 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=series:tt32268630 sinceAct=0 pageEnd=955
+2026-10-18 17:08:38.119 NuvioTV[4986:2390371] [StageStrip] page to=2 key=test-collection-1004 seconds=0.5 gen=2
+2026-10-18 17:08:38.119 NuvioTV[4986:2390371] [StageStrip] PRESS #1 0→1 moves=1 settle=606 travel=-372.0 afterRest=0 residual=200.0 src=vfocus-down key=upcoming close=row
+2026-10-18 17:08:38.161 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:series:trakt-trending h=532
+2026-10-18 17:08:38.585 NuvioTV[4986:2390371] [AmbientWash] render id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 src=1920x1080 ms=11.1 lum=0.26
+2026-10-18 17:08:38.763 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 sinceAct=602 pageEnd=557
+2026-10-18 17:08:38.822 NuvioTV[4986:2390371] [StageStrip] seg p=2 k=1 start=+102 dur=500 from=93.0 to=-279.0 travel=-372.0
+2026-10-18 17:08:38.918 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 sinceAct=756 pageEnd=712
+2026-10-18 17:08:38.919 NuvioTV[4986:2390371] [AmbientWash] show id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 gen=3 late=0 ms=11.1 lum=0.26
+2026-10-18 17:08:39.111 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1083,269,447 label=- id=-
+2026-10-18 17:08:39.111 NuvioTV[4986:2390371] [StageStrip] PRESS #2 1→2 moves=1 settle=602 travel=-372.0 afterRest=0 residual=400.0 src=row key=test-collection-1004 close=press
+2026-10-18 17:08:39.133 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 sinceAct=972 pageEnd=928
+2026-10-18 17:08:39.133 NuvioTV[4986:2390371] [StageStrip] page to=3 key=community.betterposters:movie:trakt-trending seconds=0.5 gen=3
+2026-10-18 17:08:39.174 NuvioTV[4986:2390371] [StageStrip] fit row=com.linvo.cinemeta:movie:top h=532
+2026-10-18 17:08:39.588 NuvioTV[4986:2390371] [AmbientWash] render id=movie:tt22084616 src=1280x720 ms=8.0 lum=0.26
+2026-10-18 17:08:39.780 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=movie:tt22084616 sinceAct=607 pageEnd=557
+2026-10-18 17:08:39.839 NuvioTV[4986:2390371] [StageStrip] seg p=3 k=1 start=+127 dur=500 from=-279.0 to=-836.0 travel=-557.0
+2026-10-18 17:08:39.935 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=movie:tt22084616 sinceAct=762 pageEnd=713
+2026-10-18 17:08:39.937 NuvioTV[4986:2390371] [AmbientWash] show id=movie:tt22084616 gen=4 late=0 ms=8.0 lum=0.26
+2026-10-18 17:08:40.136 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,269,447 label=- id=-
+2026-10-18 17:08:40.174 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=movie:tt22084616 sinceAct=1001 pageEnd=951
+2026-10-18 17:08:40.174 NuvioTV[4986:2390371] [StageStrip] page to=4 key=community.betterposters:series:trakt-trending seconds=0.5 gen=4
+2026-10-18 17:08:40.174 NuvioTV[4986:2390371] [StageStrip] PRESS #3 2→3 moves=1 settle=628 travel=-557.0 afterRest=0 residual=415.0 src=vfocus-down key=community.betterposters:movie:trakt-trending close=row
+2026-10-18 17:08:40.224 NuvioTV[4986:2390371] [StageStrip] fit row=com.linvo.cinemeta:series:top h=532
+[LaunchTrace] +30778ms artwork #100: mem=7 disk=89 net=4 fail=0
+2026-10-18 17:08:40.666 NuvioTV[4986:2390371] [AmbientWash] render id=series:tt31510819 src=1280x720 ms=14.2 lum=0.22
+2026-10-18 17:08:40.831 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=series:tt31510819 sinceAct=607 pageEnd=552
+2026-10-18 17:08:40.890 NuvioTV[4986:2390371] [StageStrip] seg p=4 k=1 start=+109 dur=506 from=-836.0 to=-1408.0 travel=-572.0
+2026-10-18 17:08:40.986 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=series:tt31510819 sinceAct=762 pageEnd=707
+2026-10-18 17:08:40.987 NuvioTV[4986:2390371] [AmbientWash] show id=series:tt31510819 gen=5 late=0 ms=14.2 lum=0.22
+2026-10-18 17:08:41.171 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,269,447 label=- id=-
+2026-10-18 17:08:41.213 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=series:tt31510819 sinceAct=0 pageEnd=934
+2026-10-18 17:08:41.215 NuvioTV[4986:2390371] [StageStrip] page to=5 key=com.linvo.cinemeta:movie:top seconds=0.5 gen=5
+2026-10-18 17:08:41.215 NuvioTV[4986:2390371] [StageStrip] PRESS #4 3→4 moves=1 settle=615 travel=-572.0 afterRest=0 residual=415.0 src=row key=community.betterposters:series:trakt-trending close=row
+2026-10-18 17:08:41.267 NuvioTV[4986:2390371] [StageStrip] fit row=com.linvo.cinemeta:movie:imdbRating h=532
+2026-10-18 17:08:41.899 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=movie:tt22084616 sinceAct=685 pageEnd=559
+2026-10-18 17:08:41.958 NuvioTV[4986:2390371] [StageStrip] seg p=5 k=1 start=+125 dur=517 from=-1408.0 to=-1980.0 travel=-572.0
+2026-10-18 17:08:42.050 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=movie:tt22084616 sinceAct=836 pageEnd=710
+2026-10-18 17:08:42.057 NuvioTV[4986:2390371] [AmbientWash] show id=movie:tt22084616 gen=6 late=0 ms=8.0 lum=0.26
+2026-10-18 17:08:42.174 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,269,447 label=- id=-
+2026-10-18 17:08:42.210 NuvioTV[4986:2390371] [StageStrip] page to=6 key=com.linvo.cinemeta:series:top seconds=0.5 gen=6
+2026-10-18 17:08:42.210 NuvioTV[4986:2390371] [StageStrip] PRESS #5 4→5 moves=1 settle=643 travel=-572.0 afterRest=0 residual=415.0 src=row key=com.linvo.cinemeta:movie:top close=row
+2026-10-18 17:08:42.264 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=movie:tt22084616 sinceAct=0 pageEnd=924
+2026-10-18 17:08:42.265 NuvioTV[4986:2390371] [StageStrip] fit row=com.linvo.cinemeta:series:imdbRating h=532
+2026-10-18 17:08:42.722 NuvioTV[4986:2390371] [AmbientWash] render id=series:tt11540908 src=1280x720 ms=10.0 lum=0.25
+2026-10-18 17:08:42.900 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=series:tt11540908 sinceAct=637 pageEnd=557
+2026-10-18 17:08:42.959 NuvioTV[4986:2390371] [StageStrip] seg p=6 k=1 start=+254 dur=394 from=-1980.0 to=-2552.0 travel=-572.0
+2026-10-18 17:08:43.055 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=series:tt11540908 sinceAct=791 pageEnd=711
+2026-10-18 17:08:43.055 NuvioTV[4986:2390371] [AmbientWash] show id=series:tt11540908 gen=7 late=0 ms=10.0 lum=0.25
+2026-10-18 17:08:43.224 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,269,447 label=- id=-
+2026-10-18 17:08:43.264 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=series:tt11540908 sinceAct=0 pageEnd=921
+2026-10-18 17:08:43.265 NuvioTV[4986:2390371] [StageStrip] page to=7 key=com.linvo.cinemeta:movie:imdbRating seconds=0.5 gen=7
+2026-10-18 17:08:43.265 NuvioTV[4986:2390371] [StageStrip] PRESS #6 5→6 moves=1 settle=648 travel=-572.0 afterRest=0 residual=415.0 src=row key=com.linvo.cinemeta:series:top close=row
+2026-10-18 17:08:43.311 NuvioTV[4986:2390371] [StageStrip] fit row=com.aiostreams.viren070.e35de967-5c3:library:ae7791b.aiostreams::library.torbox h=398
+2026-10-18 17:08:43.740 NuvioTV[4986:2390371] [AmbientWash] render id=movie:tt22526100 src=1280x720 ms=7.8 lum=0.26
+2026-10-18 17:08:43.918 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=movie:tt22526100 sinceAct=653 pageEnd=554
+2026-10-18 17:08:43.977 NuvioTV[4986:2390371] [StageStrip] seg p=7 k=1 start=+100 dur=511 from=-2552.0 to=-3124.0 travel=-572.0
+2026-10-18 17:08:44.072 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=movie:tt22526100 sinceAct=808 pageEnd=708
+2026-10-18 17:08:44.074 NuvioTV[4986:2390371] [AmbientWash] show id=movie:tt22526100 gen=8 late=0 ms=7.8 lum=0.26
+2026-10-18 17:08:44.241 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,269,447 label=- id=-
+2026-10-18 17:08:44.279 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=movie:tt22526100 sinceAct=0 pageEnd=915
+2026-10-18 17:08:44.280 NuvioTV[4986:2390371] [StageStrip] page to=8 key=com.linvo.cinemeta:series:imdbRating seconds=0.5 gen=8
+2026-10-18 17:08:44.280 NuvioTV[4986:2390371] [StageStrip] PRESS #7 6→7 moves=1 settle=611 travel=-572.0 afterRest=0 residual=415.0 src=row key=com.linvo.cinemeta:movie:imdbRating close=row
+2026-10-18 17:08:44.332 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:series:mdblist-pub:2194 h=532
+2026-10-18 17:08:44.793 NuvioTV[4986:2390371] [AmbientWash] render id=series:tt0096563 src=1280x720 ms=8.7 lum=0.24
+2026-10-18 17:08:44.968 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=series:tt0096563 sinceAct=689 pageEnd=560
+2026-10-18 17:08:45.078 NuvioTV[4986:2390371] [StageStrip] seg p=8 k=1 start=+129 dur=518 from=-3124.0 to=-3696.0 travel=-572.0
+2026-10-18 17:08:45.123 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=series:tt0096563 sinceAct=844 pageEnd=716
+2026-10-18 17:08:45.124 NuvioTV[4986:2390371] [AmbientWash] show id=series:tt0096563 gen=9 late=0 ms=8.7 lum=0.24
+2026-10-18 17:08:45.261 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,478,313 label=- id=-
+2026-10-18 17:08:45.288 NuvioTV[4986:2390371] [StageStrip] page to=9 key=com.aiostreams.viren070.e35de967-5c3:library:ae7791b.aiostreams::library.torbox seconds=0.5 gen=9
+2026-10-18 17:08:45.288 NuvioTV[4986:2390371] [StageStrip] PRESS #8 7→8 moves=1 settle=647 travel=-572.0 afterRest=0 residual=415.0 src=row key=com.linvo.cinemeta:series:imdbRating close=row
+2026-10-18 17:08:45.336 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:series:mdblist-pub:3082 h=532
+2026-10-18 17:08:45.411 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=series:tt0096563 sinceAct=124 pageEnd=0
+[LaunchTrace] +36049ms artwork #200: mem=11 disk=122 net=67 fail=0
+2026-10-18 17:08:45.968 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=library:aiostreams::library.torbox.torrent.122059206 sinceAct=681 pageEnd=557
+2026-10-18 17:08:46.029 NuvioTV[4986:2390371] [StageStrip] seg p=9 k=1 start=+140 dur=500 from=-3696.0 to=-4268.0 travel=-572.0
+2026-10-18 17:08:46.119 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=library:aiostreams::library.torbox.torrent.122059206 sinceAct=831 pageEnd=707
+2026-10-18 17:08:46.289 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,964,269,447 label=- id=-
+2026-10-18 17:08:46.330 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=library:aiostreams::library.torbox.torrent.122059206 sinceAct=0 pageEnd=919
+2026-10-18 17:08:46.332 NuvioTV[4986:2390371] [StageStrip] page to=10 key=community.betterposters:series:mdblist-pub:2194 seconds=0.5 gen=10
+2026-10-18 17:08:46.332 NuvioTV[4986:2390371] [StageStrip] PRESS #9 8→9 moves=1 settle=640 travel=-572.0 afterRest=0 residual=415.0 src=row key=com.aiostreams.viren070.e35de967-5c3:library:ae7791b.aiostreams::library.torbox close=row
+2026-10-18 17:08:46.385 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:movie:mdblist-pub:2236 h=532
+2026-10-18 17:08:46.887 NuvioTV[4986:2390371] [AmbientWash] render id=series:tt23148340 src=1280x720 ms=7.8 lum=0.20
+2026-10-18 17:08:47.021 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=series:tt23148340 sinceAct=691 pageEnd=562
+2026-10-18 17:08:47.080 NuvioTV[4986:2390371] [StageStrip] seg p=10 k=1 start=+129 dur=519 from=-4268.0 to=-4706.0 travel=-438.0
+2026-10-18 17:08:47.175 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=series:tt23148340 sinceAct=845 pageEnd=717
+2026-10-18 17:08:47.176 NuvioTV[4986:2390371] [AmbientWash] show id=series:tt23148340 gen=10 late=0 ms=7.8 lum=0.20
+2026-10-18 17:08:47.327 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,269,447 label=- id=-
+2026-10-18 17:08:47.363 NuvioTV[4986:2390371] [StageStrip] page to=11 key=community.betterposters:series:mdblist-pub:3082 seconds=0.5 gen=11
+2026-10-18 17:08:47.363 NuvioTV[4986:2390371] [StageStrip] PRESS #10 9→10 moves=1 settle=647 travel=-438.0 afterRest=0 residual=549.0 src=row key=community.betterposters:series:mdblist-pub:2194 close=row
+2026-10-18 17:08:47.417 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=series:tt23148340 sinceAct=0 pageEnd=959
+2026-10-18 17:08:47.418 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:movie:mdblist-pub:3093 h=532
+2026-10-18 17:08:47.889 NuvioTV[4986:2390371] [AmbientWash] render id=series:tt37737331 src=1280x720 ms=11.8 lum=0.26
+2026-10-18 17:08:48.058 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=series:tt37737331 sinceAct=640 pageEnd=568
+2026-10-18 17:08:48.114 NuvioTV[4986:2390371] [StageStrip] seg p=11 k=1 start=+129 dur=522 from=-4706.0 to=-5278.0 travel=-572.0
+2026-10-18 17:08:48.214 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=series:tt37737331 sinceAct=797 pageEnd=725
+2026-10-18 17:08:48.215 NuvioTV[4986:2390371] [AmbientWash] show id=series:tt37737331 gen=11 late=0 ms=11.8 lum=0.26
+2026-10-18 17:08:48.337 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,269,447 label=- id=-
+2026-10-18 17:08:48.365 NuvioTV[4986:2390371] [StageStrip] page to=12 key=community.betterposters:movie:mdblist-pub:2236 seconds=0.5 gen=12
+2026-10-18 17:08:48.365 NuvioTV[4986:2390371] [StageStrip] PRESS #11 10→11 moves=1 settle=650 travel=-572.0 afterRest=0 residual=549.0 src=row key=community.betterposters:series:mdblist-pub:3082 close=row
+2026-10-18 17:08:48.429 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:series:mdblist-pub:3086 h=532
+2026-10-18 17:08:48.491 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=series:tt37737331 sinceAct=127 pageEnd=0
+2026-10-18 17:08:48.880 NuvioTV[4986:2390371] [AmbientWash] render id=movie:tt31049299 src=1280x720 ms=8.5 lum=0.16
+2026-10-18 17:08:49.055 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=movie:tt31049299 sinceAct=691 pageEnd=565
+2026-10-18 17:08:49.115 NuvioTV[4986:2390371] [StageStrip] seg p=12 k=1 start=+201 dur=448 from=-5278.0 to=-5850.0 travel=-572.0
+2026-10-18 17:08:49.211 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=movie:tt31049299 sinceAct=847 pageEnd=720
+2026-10-18 17:08:49.211 NuvioTV[4986:2390371] [AmbientWash] show id=movie:tt31049299 gen=12 late=0 ms=8.5 lum=0.16
+2026-10-18 17:08:49.359 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,269,447 label=- id=-
+2026-10-18 17:08:49.403 NuvioTV[4986:2390371] [StageStrip] page to=13 key=community.betterposters:movie:mdblist-pub:3093 seconds=0.5 gen=13
+2026-10-18 17:08:49.403 NuvioTV[4986:2390371] [StageStrip] PRESS #12 11→12 moves=1 settle=649 travel=-572.0 afterRest=0 residual=549.0 src=row key=community.betterposters:movie:mdblist-pub:2236 close=row
+2026-10-18 17:08:49.456 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:series:mdblist-pub:3090 h=532
+2026-10-18 17:08:49.530 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=movie:tt31049299 sinceAct=128 pageEnd=1039
+2026-10-18 17:08:50.149 NuvioTV[4986:2390371] [StageStrip] seg p=13 k=1 start=+128 dur=518 from=-5850.0 to=-6422.0 travel=-572.0
+2026-10-18 17:08:50.401 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,269,447 label=- id=-
+2026-10-18 17:08:50.427 NuvioTV[4986:2390371] [StageStrip] page to=14 key=community.betterposters:series:mdblist-pub:3086 seconds=0.5 gen=14
+2026-10-18 17:08:50.427 NuvioTV[4986:2390371] [StageStrip] PRESS #13 12→13 moves=1 settle=646 travel=-572.0 afterRest=0 residual=549.0 src=row key=community.betterposters:movie:mdblist-pub:3093 close=row
+2026-10-18 17:08:50.475 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:series:mdblist-pub:3088 h=532
+2026-10-18 17:08:50.931 NuvioTV[4986:2390371] [AmbientWash] render id=series:tt46683025 src=1280x720 ms=7.3 lum=0.20
+2026-10-18 17:08:51.107 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=series:tt46683025 sinceAct=681 pageEnd=550
+2026-10-18 17:08:51.172 NuvioTV[4986:2390371] [StageStrip] seg p=14 k=1 start=+132 dur=508 from=-6422.0 to=-6994.0 travel=-572.0
+2026-10-18 17:08:51.258 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=series:tt46683025 sinceAct=832 pageEnd=701
+2026-10-18 17:08:51.259 NuvioTV[4986:2390371] [AmbientWash] show id=series:tt46683025 gen=13 late=0 ms=7.3 lum=0.20
+2026-10-18 17:08:51.413 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,269,447 label=- id=-
+2026-10-18 17:08:51.457 NuvioTV[4986:2390371] [StageStrip] page to=15 key=community.betterposters:series:mdblist-pub:3090 seconds=0.5 gen=15
+2026-10-18 17:08:51.457 NuvioTV[4986:2390371] [StageStrip] PRESS #14 13→14 moves=1 settle=640 travel=-572.0 afterRest=0 residual=549.0 src=row key=community.betterposters:series:mdblist-pub:3086 close=row
+2026-10-18 17:08:51.514 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:movie:mdblist-pub:3095 h=532
+2026-10-18 17:08:51.575 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=series:tt46683025 sinceAct=120 pageEnd=1018
+2026-10-18 17:08:51.906 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1210,269,447 label=- id=-
+2026-10-18 17:08:51.944 NuvioTV[4986:2390371] [StageStrip] page to=16 key=community.betterposters:series:mdblist-pub:3088 seconds=0.5 gen=16
+2026-10-18 17:08:51.944 NuvioTV[4986:2390371] [StageStrip] PRESS #15 14→15 moves=1 settle=moving travel=-460.0 afterRest=0 residual=moving src=row key=community.betterposters:series:mdblist-pub:3090 close=row
+2026-10-18 17:08:52.004 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:series:mdblist-pub:86710 h=532
+2026-10-18 17:08:52.153 NuvioTV[4986:2390371] [AmbientWash] render id=series:tt23112594 src=1280x720 ms=12.7 lum=0.16
+2026-10-18 17:08:52.626 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=series:tt33270224 sinceAct=623 pageEnd=557
+2026-10-18 17:08:52.688 NuvioTV[4986:2390371] [StageStrip] seg p=15 k=1 start=+120 dur=1008 from=-6994.0 to=-8138.0 travel=-1144.0
+2026-10-18 17:08:52.762 NuvioTV[4986:2390371] [AmbientWash] render id=series:tt33270224 src=1280x720 ms=11.8 lum=0.26
+2026-10-18 17:08:52.780 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=series:tt33270224 sinceAct=777 pageEnd=711
+2026-10-18 17:08:52.780 NuvioTV[4986:2390371] [AmbientWash] show id=series:tt33270224 gen=14 late=0 ms=11.8 lum=0.26
+2026-10-18 17:08:52.909 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,269,447 label=- id=-
+2026-10-18 17:08:52.946 NuvioTV[4986:2390371] [StageStrip] page to=17 key=community.betterposters:movie:mdblist-pub:3095 seconds=0.5 gen=17
+2026-10-18 17:08:52.946 NuvioTV[4986:2390371] [StageStrip] PRESS #16 15→16 moves=0 settle=0 travel=0.0 afterRest=0 residual=549.0 src=row key=community.betterposters:series:mdblist-pub:3088 close=row
+2026-10-18 17:08:53.001 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:movie:mdblist-pub:86752 h=532
+2026-10-18 17:08:53.069 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=series:tt33270224 sinceAct=123 pageEnd=0
+2026-10-18 17:08:53.466 NuvioTV[4986:2390371] [AmbientWash] render id=movie:tt36150957 src=1280x720 ms=10.3 lum=0.26
+2026-10-18 17:08:53.628 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=movie:tt36150957 sinceAct=682 pageEnd=559
+2026-10-18 17:08:53.686 NuvioTV[4986:2390371] [StageStrip] seg p=17 k=1 start=+139 dur=500 from=-8138.0 to=-8710.0 travel=-572.0
+2026-10-18 17:08:53.779 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=movie:tt36150957 sinceAct=833 pageEnd=710
+2026-10-18 17:08:53.786 NuvioTV[4986:2390371] [AmbientWash] show id=movie:tt36150957 gen=15 late=0 ms=10.3 lum=0.26
+2026-10-18 17:08:53.953 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,269,447 label=- id=-
+2026-10-18 17:08:53.992 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=movie:tt36150957 sinceAct=0 pageEnd=923
+2026-10-18 17:08:53.993 NuvioTV[4986:2390371] [StageStrip] page to=18 key=community.betterposters:series:mdblist-pub:86710 seconds=0.5 gen=18
+2026-10-18 17:08:53.993 NuvioTV[4986:2390371] [StageStrip] PRESS #17 16→17 moves=1 settle=639 travel=-572.0 afterRest=0 residual=549.0 src=row key=community.betterposters:movie:mdblist-pub:3095 close=row
+2026-10-18 17:08:54.046 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:series:mdblist-pub:86751 h=532
+[LaunchTrace] +44590ms artwork #400: mem=18 disk=171 net=211 fail=0
+2026-10-18 17:08:54.677 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=series:tt23148340 sinceAct=685 pageEnd=555
+2026-10-18 17:08:54.737 NuvioTV[4986:2390371] [StageStrip] seg p=18 k=1 start=+131 dur=513 from=-8710.0 to=-9282.0 travel=-572.0
+2026-10-18 17:08:54.833 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=series:tt23148340 sinceAct=841 pageEnd=711
+2026-10-18 17:08:54.834 NuvioTV[4986:2390371] [AmbientWash] show id=series:tt23148340 gen=16 late=0 ms=7.8 lum=0.20
+2026-10-18 17:08:54.985 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,269,447 label=- id=-
+2026-10-18 17:08:55.022 NuvioTV[4986:2390371] [StageStrip] page to=19 key=community.betterposters:movie:mdblist-pub:86752 seconds=0.5 gen=19
+2026-10-18 17:08:55.022 NuvioTV[4986:2390371] [StageStrip] PRESS #18 17→18 moves=1 settle=644 travel=-572.0 afterRest=0 residual=549.0 src=row key=community.betterposters:series:mdblist-pub:86710 close=row
+2026-10-18 17:08:55.081 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:movie:mdblist-pub:86755 h=532
+2026-10-18 17:08:55.143 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=series:tt23148340 sinceAct=123 pageEnd=0
+2026-10-18 17:08:55.696 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=movie:tt31049299 sinceAct=675 pageEnd=552
+2026-10-18 17:08:55.755 NuvioTV[4986:2390371] [StageStrip] seg p=19 k=1 start=+125 dur=508 from=-9282.0 to=-9854.0 travel=-572.0
+2026-10-18 17:08:55.851 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=movie:tt31049299 sinceAct=830 pageEnd=707
+2026-10-18 17:08:55.852 NuvioTV[4986:2390371] [AmbientWash] show id=movie:tt31049299 gen=17 late=0 ms=8.5 lum=0.16
+2026-10-18 17:08:56.003 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,269,447 label=- id=-
+2026-10-18 17:08:56.045 NuvioTV[4986:2390371] [StageStrip] page to=20 key=community.betterposters:series:mdblist-pub:86751 seconds=0.5 gen=20
+2026-10-18 17:08:56.045 NuvioTV[4986:2390371] [StageStrip] PRESS #19 18→19 moves=1 settle=632 travel=-572.0 afterRest=0 residual=549.0 src=row key=community.betterposters:movie:mdblist-pub:86752 close=row
+2026-10-18 17:08:56.099 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:series:mdblist-pub:86753 h=532
+2026-10-18 17:08:56.164 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=movie:tt31049299 sinceAct=120 pageEnd=1021
+2026-10-18 17:08:56.537 NuvioTV[4986:2390371] [AmbientWash] render id=series:tt36470958 src=1280x720 ms=7.8 lum=0.26
+2026-10-18 17:08:56.730 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=series:tt36470958 sinceAct=686 pageEnd=566
+2026-10-18 17:08:56.789 NuvioTV[4986:2390371] [StageStrip] seg p=20 k=1 start=+122 dur=521 from=-9854.0 to=-10426.0 travel=-572.0
+2026-10-18 17:08:56.885 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=series:tt36470958 sinceAct=841 pageEnd=721
+2026-10-18 17:08:56.886 NuvioTV[4986:2390371] [AmbientWash] show id=series:tt36470958 gen=18 late=0 ms=7.8 lum=0.26
+2026-10-18 17:08:57.037 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,269,447 label=- id=-
+2026-10-18 17:08:57.074 NuvioTV[4986:2390371] [StageStrip] page to=21 key=community.betterposters:movie:mdblist-pub:86755 seconds=0.5 gen=21
+2026-10-18 17:08:57.074 NuvioTV[4986:2390371] [StageStrip] PRESS #20 19→20 moves=1 settle=644 travel=-572.0 afterRest=0 residual=549.0 src=row key=community.betterposters:series:mdblist-pub:86751 close=row
+2026-10-18 17:08:57.133 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=series:tt36470958 sinceAct=0 pageEnd=969
+2026-10-18 17:08:57.134 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:movie:mdblist-pub:86757 h=532
+2026-10-18 17:08:57.581 NuvioTV[4986:2390371] [AmbientWash] render id=movie:tt34384900 src=1280x720 ms=9.2 lum=0.26
+2026-10-18 17:08:57.765 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=movie:tt34384900 sinceAct=632 pageEnd=566
+2026-10-18 17:08:57.827 NuvioTV[4986:2390371] [StageStrip] seg p=21 k=1 start=+127 dur=522 from=-10426.0 to=-10998.0 travel=-572.0
+2026-10-18 17:08:57.919 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=movie:tt34384900 sinceAct=787 pageEnd=720
+2026-10-18 17:08:57.920 NuvioTV[4986:2390371] [AmbientWash] show id=movie:tt34384900 gen=19 late=0 ms=9.2 lum=0.26
+2026-10-18 17:08:58.089 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,269,447 label=- id=-
+2026-10-18 17:08:58.130 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=movie:tt34384900 sinceAct=0 pageEnd=931
+2026-10-18 17:08:58.131 NuvioTV[4986:2390371] [StageStrip] page to=22 key=community.betterposters:series:mdblist-pub:86753 seconds=0.5 gen=22
+2026-10-18 17:08:58.131 NuvioTV[4986:2390371] [StageStrip] PRESS #21 20→21 moves=1 settle=649 travel=-572.0 afterRest=0 residual=549.0 src=row key=community.betterposters:movie:mdblist-pub:86755 close=row
+2026-10-18 17:08:58.184 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:series:mdblist-pub:86756 h=532
+2026-10-18 17:08:58.815 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=series:tt11540908 sinceAct=685 pageEnd=557
+2026-10-18 17:08:58.875 NuvioTV[4986:2390371] [StageStrip] seg p=22 k=1 start=+143 dur=500 from=-10998.0 to=-11570.0 travel=-572.0
+2026-10-18 17:08:58.990 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=series:tt11540908 sinceAct=860 pageEnd=732
+2026-10-18 17:08:58.990 NuvioTV[4986:2390371] [AmbientWash] show id=series:tt11540908 gen=20 late=0 ms=10.0 lum=0.25
+2026-10-18 17:08:59.082 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,269,447 label=- id=-
+2026-10-18 17:08:59.108 NuvioTV[4986:2390371] [StageStrip] page to=23 key=community.betterposters:movie:mdblist-pub:86757 seconds=0.5 gen=23
+2026-10-18 17:08:59.108 NuvioTV[4986:2390371] [StageStrip] PRESS #22 21→22 moves=1 settle=643 travel=-572.0 afterRest=0 residual=549.0 src=row key=community.betterposters:series:mdblist-pub:86753 close=row
+2026-10-18 17:08:59.163 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:movie:mdblist-pub:86759 h=532
+2026-10-18 17:08:59.239 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=series:tt11540908 sinceAct=132 pageEnd=0
+2026-10-18 17:08:59.623 NuvioTV[4986:2390371] [AmbientWash] render id=movie:tt28498219 src=1279x719 ms=7.8 lum=0.26
+2026-10-18 17:08:59.801 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=movie:tt28498219 sinceAct=694 pageEnd=562
+2026-10-18 17:08:59.859 NuvioTV[4986:2390371] [StageStrip] seg p=23 k=1 start=+134 dur=516 from=-11570.0 to=-12142.0 travel=-572.0
+2026-10-18 17:08:59.953 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=movie:tt28498219 sinceAct=846 pageEnd=715
+2026-10-18 17:08:59.954 NuvioTV[4986:2390371] [AmbientWash] show id=movie:tt28498219 gen=21 late=0 ms=7.8 lum=0.26
+2026-10-18 17:09:00.147 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,269,447 label=- id=-
+2026-10-18 17:09:00.174 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=movie:tt28498219 sinceAct=0 pageEnd=936
+2026-10-18 17:09:00.175 NuvioTV[4986:2390371] [StageStrip] page to=24 key=community.betterposters:series:mdblist-pub:86756 seconds=0.5 gen=24
+2026-10-18 17:09:00.175 NuvioTV[4986:2390371] [StageStrip] PRESS #23 22→23 moves=1 settle=651 travel=-572.0 afterRest=0 residual=549.0 src=row key=community.betterposters:movie:mdblist-pub:86757 close=row
+2026-10-18 17:09:00.224 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:series:mdblist-pub:86758 h=532
+2026-10-18 17:09:00.683 NuvioTV[4986:2390371] [AmbientWash] render id=series:tt6773088 src=1280x720 ms=7.8 lum=0.26
+2026-10-18 17:09:00.867 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=series:tt6773088 sinceAct=693 pageEnd=561
+2026-10-18 17:09:00.931 NuvioTV[4986:2390371] [StageStrip] seg p=24 k=1 start=+151 dur=500 from=-12142.0 to=-12714.0 travel=-572.0
+2026-10-18 17:09:01.022 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=series:tt6773088 sinceAct=848 pageEnd=716
+2026-10-18 17:09:01.023 NuvioTV[4986:2390371] [AmbientWash] show id=series:tt6773088 gen=22 late=0 ms=7.8 lum=0.26
+2026-10-18 17:09:01.142 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,269,447 label=- id=-
+2026-10-18 17:09:01.170 NuvioTV[4986:2390371] [StageStrip] page to=25 key=community.betterposters:movie:mdblist-pub:86759 seconds=0.5 gen=25
+2026-10-18 17:09:01.170 NuvioTV[4986:2390371] [StageStrip] PRESS #24 23→24 moves=1 settle=651 travel=-572.0 afterRest=0 residual=549.0 src=row key=community.betterposters:series:mdblist-pub:86756 close=row
+2026-10-18 17:09:01.219 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:movie:mdblist-pub:86762 h=532
+2026-10-18 17:09:01.298 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=series:tt6773088 sinceAct=128 pageEnd=0
+2026-10-18 17:09:01.670 NuvioTV[4986:2390371] [AmbientWash] render id=movie:tt43679852 src=1280x720 ms=8.9 lum=0.26
+2026-10-18 17:09:01.908 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=movie:tt43679852 sinceAct=738 pageEnd=610
+2026-10-18 17:09:01.961 NuvioTV[4986:2390371] [StageStrip] seg p=25 k=1 start=+132 dur=508 from=-12714.0 to=-13286.0 travel=-572.0
+2026-10-18 17:09:02.062 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=movie:tt43679852 sinceAct=892 pageEnd=764
+2026-10-18 17:09:02.062 NuvioTV[4986:2390371] [AmbientWash] show id=movie:tt43679852 gen=23 late=0 ms=8.9 lum=0.26
+2026-10-18 17:09:02.203 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,269,447 label=- id=-
+2026-10-18 17:09:02.227 NuvioTV[4986:2390371] [StageStrip] page to=26 key=community.betterposters:series:mdblist-pub:86758 seconds=0.5 gen=26
+2026-10-18 17:09:02.227 NuvioTV[4986:2390371] [StageStrip] PRESS #25 24→25 moves=1 settle=640 travel=-572.0 afterRest=0 residual=549.0 src=row key=community.betterposters:movie:mdblist-pub:86759 close=row
+2026-10-18 17:09:02.279 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=movie:tt43679852 sinceAct=0 pageEnd=981
+2026-10-18 17:09:02.280 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:series:mdblist-pub:86761 h=532
+2026-10-18 17:09:02.902 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=series:tt23112594 sinceAct=623 pageEnd=554
+2026-10-18 17:09:02.962 NuvioTV[4986:2390371] [StageStrip] seg p=26 k=1 start=+123 dur=511 from=-13286.0 to=-13858.0 travel=-572.0
+2026-10-18 17:09:03.058 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=series:tt23112594 sinceAct=779 pageEnd=710
+2026-10-18 17:09:03.059 NuvioTV[4986:2390371] [AmbientWash] show id=series:tt23112594 gen=24 late=0 ms=12.7 lum=0.16
+2026-10-18 17:09:03.209 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,269,447 label=- id=-
+2026-10-18 17:09:03.249 NuvioTV[4986:2390371] [StageStrip] page to=27 key=community.betterposters:movie:mdblist-pub:86762 seconds=0.5 gen=27
+2026-10-18 17:09:03.249 NuvioTV[4986:2390371] [StageStrip] PRESS #26 25→26 moves=1 settle=634 travel=-572.0 afterRest=0 residual=549.0 src=row key=community.betterposters:series:mdblist-pub:86758 close=row
+2026-10-18 17:09:03.305 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:movie:mdblist-pub:89647 h=532
+2026-10-18 17:09:03.372 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=series:tt23112594 sinceAct=124 pageEnd=1024
+2026-10-18 17:09:03.756 NuvioTV[4986:2390371] [AmbientWash] render id=movie:tt37752275 src=1280x720 ms=9.6 lum=0.22
+2026-10-18 17:09:03.937 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=movie:tt37752275 sinceAct=689 pageEnd=565
+2026-10-18 17:09:03.996 NuvioTV[4986:2390371] [StageStrip] seg p=27 k=1 start=+126 dur=521 from=-13858.0 to=-14430.0 travel=-572.0
+2026-10-18 17:09:04.092 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=movie:tt37752275 sinceAct=844 pageEnd=720
+2026-10-18 17:09:04.112 NuvioTV[4986:2390371] [AmbientWash] show id=movie:tt37752275 gen=25 late=0 ms=9.6 lum=0.22
+2026-10-18 17:09:04.209 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,269,447 label=- id=-
+2026-10-18 17:09:04.255 NuvioTV[4986:2390371] [StageStrip] page to=28 key=community.betterposters:series:mdblist-pub:86761 seconds=0.5 gen=28
+2026-10-18 17:09:04.255 NuvioTV[4986:2390371] [StageStrip] PRESS #27 26→27 moves=1 settle=647 travel=-572.0 afterRest=0 residual=549.0 src=row key=community.betterposters:movie:mdblist-pub:86762 close=row
+2026-10-18 17:09:04.312 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:series:mdblist-pub:89649 h=532
+2026-10-18 17:09:04.377 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=movie:tt37752275 sinceAct=123 pageEnd=0
+2026-10-18 17:09:04.755 NuvioTV[4986:2390371] [AmbientWash] render id=series:tt35854736 src=1280x720 ms=9.9 lum=0.26
+2026-10-18 17:09:04.941 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=series:tt35854736 sinceAct=686 pageEnd=564
+2026-10-18 17:09:04.997 NuvioTV[4986:2390371] [StageStrip] seg p=28 k=1 start=+203 dur=439 from=-14430.0 to=-15002.0 travel=-572.0
+2026-10-18 17:09:05.098 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=series:tt35854736 sinceAct=844 pageEnd=721
+2026-10-18 17:09:05.098 NuvioTV[4986:2390371] [AmbientWash] show id=series:tt35854736 gen=26 late=0 ms=9.9 lum=0.26
+2026-10-18 17:09:05.233 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,269,447 label=- id=-
+2026-10-18 17:09:05.256 NuvioTV[4986:2390371] [StageStrip] page to=29 key=community.betterposters:movie:mdblist-pub:89647 seconds=0.5 gen=29
+2026-10-18 17:09:05.256 NuvioTV[4986:2390371] [StageStrip] PRESS #28 27→28 moves=1 settle=642 travel=-572.0 afterRest=0 residual=549.0 src=row key=community.betterposters:series:mdblist-pub:86761 close=row
+2026-10-18 17:09:05.305 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:movie:mdblist-pub:128027 h=532
+2026-10-18 17:09:05.377 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=series:tt35854736 sinceAct=121 pageEnd=0
+2026-10-18 17:09:05.756 NuvioTV[4986:2390371] [AmbientWash] render id=movie:tt33510831 src=1280x720 ms=10.7 lum=0.26
+2026-10-18 17:09:06.037 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=movie:tt33510831 sinceAct=782 pageEnd=660
+2026-10-18 17:09:06.098 NuvioTV[4986:2390371] [StageStrip] seg p=29 k=1 start=+124 dur=568 from=-15002.0 to=-15574.0 travel=-572.0
+2026-10-18 17:09:06.193 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=movie:tt33510831 sinceAct=938 pageEnd=817
+2026-10-18 17:09:06.194 NuvioTV[4986:2390371] [AmbientWash] show id=movie:tt33510831 gen=27 late=0 ms=10.7 lum=0.26
+2026-10-18 17:09:06.265 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,269,447 label=- id=-
+2026-10-18 17:09:06.292 NuvioTV[4986:2390371] [StageStrip] page to=30 key=community.betterposters:series:mdblist-pub:89649 seconds=0.5 gen=30
+2026-10-18 17:09:06.292 NuvioTV[4986:2390371] [StageStrip] PRESS #29 28→29 moves=1 settle=692 travel=-572.0 afterRest=0 residual=549.0 src=row key=community.betterposters:movie:mdblist-pub:89647 close=row
+2026-10-18 17:09:06.346 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:series:mdblist-pub:128028 h=532
+2026-10-18 17:09:06.427 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=movie:tt33510831 sinceAct=136 pageEnd=0
+2026-10-18 17:09:06.806 NuvioTV[4986:2390371] [AmbientWash] render id=series:tt37972251 src=1280x720 ms=7.7 lum=0.26
+2026-10-18 17:09:06.991 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=series:tt37972251 sinceAct=699 pageEnd=563
+2026-10-18 17:09:07.049 NuvioTV[4986:2390371] [StageStrip] seg p=30 k=1 start=+139 dur=517 from=-15574.0 to=-16146.0 travel=-572.0
+2026-10-18 17:09:07.145 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=series:tt37972251 sinceAct=854 pageEnd=718
+2026-10-18 17:09:07.146 NuvioTV[4986:2390371] [AmbientWash] show id=series:tt37972251 gen=28 late=0 ms=7.7 lum=0.26
+2026-10-18 17:09:07.298 NuvioTV[4986:2390371] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1098,269,447 label=- id=-
+2026-10-18 17:09:07.335 NuvioTV[4986:2390371] [StageStrip] page to=31 key=community.betterposters:movie:mdblist-pub:128027 seconds=0.5 gen=31
+2026-10-18 17:09:07.335 NuvioTV[4986:2390371] [StageStrip] PRESS #30 29→30 moves=1 settle=656 travel=-572.0 afterRest=0 residual=549.0 src=row key=community.betterposters:series:mdblist-pub:89649 close=row
+2026-10-18 17:09:07.389 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=series:tt37972251 sinceAct=0 pageEnd=962
+2026-10-18 17:09:07.390 NuvioTV[4986:2390371] [StageStrip] fit row=community.betterposters:movie:mdblist-pub:215303 h=532
+2026-10-18 17:09:07.861 NuvioTV[4986:2390371] [AmbientWash] render id=movie:tt39150288 src=1280x720 ms=9.5 lum=0.26
+2026-10-18 17:09:08.023 NuvioTV[4986:2390371] [StageStrip] swap phase=out id=movie:tt39150288 sinceAct=634 pageEnd=555
+2026-10-18 17:09:08.084 NuvioTV[4986:2390371] [StageStrip] seg p=31 k=1 start=+135 dur=513 from=-16146.0 to=-16718.0 travel=-572.0
+2026-10-18 17:09:08.180 NuvioTV[4986:2390371] [StageStrip] swap phase=in id=movie:tt39150288 sinceAct=790 pageEnd=711
+2026-10-18 17:09:08.180 NuvioTV[4986:2390371] [AmbientWash] show id=movie:tt39150288 gen=29 late=0 ms=9.5 lum=0.26
+2026-10-18 17:09:08.383 NuvioTV[4986:2390371] [StageStrip] swap phase=idle id=movie:tt39150288 sinceAct=993 pageEnd=914
+2026-10-18 17:09:09.486 NuvioTV[4986:2390371] [StageStrip] PRESS #31 30→31 moves=1 settle=648 travel=-572.0 afterRest=0 residual=549.0 src=row key=community.betterposters:movie:mdblist-pub:128027 close=idle
+2026-10-18 17:09:10.831 NuvioTV[4986:2390495] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 17:09:10.831 NuvioTV[4986:2390495] [TrailerExtract] client=visionos video=zgGpyr5MFK8 hls=true formats=0 adaptive=27 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+2026-10-18 17:09:10.839 NuvioTV[4986:2390495] [TrailerExtract] client=android video=zgGpyr5MFK8 hls=false formats=1 adaptive=29 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl
+2026-10-18 17:09:10.845 NuvioTV[4986:2390495] [TrailerExtract] client=ios video=zgGpyr5MFK8 hls=false formats=0 adaptive=27 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl
+2026-10-18 17:09:11.026 NuvioTV[4986:2390485] [TrailerExtract] manifest client=visionos top variant 3840x2160
+2026-10-18 17:09:11.026 NuvioTV[4986:2390485] [TrailerExtract] selection: manifest=2160 progressive=360 (manifests collected=1)
+2026-10-18 17:09:11.027 NuvioTV[4986:2390485] [TrailerExtract] repack candidates: avcVideo=1080p avc1.640028 (visionos) m4aAudio=mp4a.40.2 (visionos) maxFps=0
+2026-10-18 17:09:11.509 NuvioTV[4986:2390713] [TrailerExtract] repack decision: avc=1080p vs progressive=2160p -> skip (progressive is not worse)
+2026-10-18 17:09:13.740 NuvioTV[4986:2390371] [TrailerQuality] presentationSize=1920x1080
+2026-10-18 17:09:15.608 NuvioTV[4986:2390371] [TrailerQuality] presentationSize=1920x1080
+Launched application with com.youngchris29.NuvioTV bundle identifier.
+Waiting for the application to terminate...
+App terminated due to signal 9.

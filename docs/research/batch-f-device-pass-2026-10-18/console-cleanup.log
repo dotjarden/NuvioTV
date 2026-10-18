@@ -1,0 +1,158 @@
+[LaunchTrace] +0ms app_init
+[ExtPlayerProbe] canOpenURL(infuse://) = true
+2026-10-18 17:20:48.458 NuvioTV[5035:2396707] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ExtPlayerProbe] canOpenURL(vlc-x-callback://) = false
+[ExtPlayerProbe] canOpenURL(outplayer://) = false
+[ExtPlayerProbe] canOpenURL(open-vidhub://) = true
+[ExtPlayerProbe] canOpenURL(vidhub://) = false
+[ExtPlayerProbe] canOpenURL(senplayer://) = false
+[ExtPlayerProbe] canOpenURL(nativeplayer://) = false
+[ExtPlayerProbe] availablePlayers = ["infuse:Infuse", "vidhub:VidHub"]
+2026-10-18 17:20:48.459 NuvioTV[5035:2396707] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 17:20:48.459 NuvioTV[5035:2396707] -canOpenURL: failed for URL: "vidhub://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 17:20:48.459 NuvioTV[5035:2396707] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 17:20:48.460 NuvioTV[5035:2396707] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 17:20:48.460 NuvioTV[5035:2396707] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 17:20:48.460 NuvioTV[5035:2396707] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 17:20:48.461 NuvioTV[5035:2396707] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 17:20:48.461 NuvioTV[5035:2396707] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ProfileSelect] auto-enter profile 3
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-18 17:20:48.934 NuvioTV[5035:2396707] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+[LaunchTrace] +713ms home_appear
+2026-10-18 17:20:48.964 NuvioTV[5035:2396707] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-18 17:20:48.964 NuvioTV[5035:2396707] [TrailerPipeline] trailerLocation stage=row
+[LaunchTrace] +1236ms artwork #1: mem=0 disk=0 net=1 fail=0
+[LaunchTrace] +1532ms artwork #10: mem=0 disk=0 net=10 fail=0
+2026-10-18 17:20:49.959 NuvioTV[5035:2396707] [HomeHero] logoInk sync-sample ms=0.39
+2026-10-18 17:20:50.038 NuvioTV[5035:2396707] [AmbientWash] render id=movie:tt3118958 src=768x432 ms=9.6 lum=0.23
+2026-10-18 17:20:50.038 NuvioTV[5035:2396707] [AmbientWash] show id=movie:tt3118958 gen=1 late=0 ms=9.6 lum=0.23
+[LaunchTrace] +2088ms first_rows n=6 hero=8
+[LaunchTrace] +2088ms first_hero n=8
+2026-10-18 17:20:50.342 NuvioTV[5035:2396707] [TrailerPipeline] gates inlineTrailersEnabled=YES systemAutoplay=YES
+[LaunchTrace] +2211ms artwork #25: mem=0 disk=3 net=22 fail=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +2617ms artwork #50: mem=0 disk=5 net=45 fail=0
+[LaunchTrace] +3014ms rows n=10
+[LaunchTrace] +3833ms rows n=18
+[LaunchTrace] +5116ms rows n=26
+[LaunchTrace] +5828ms rows n=34
+[LaunchTrace] +6157ms rows n=42
+[LaunchTrace] +7663ms rows n=50
+[LaunchTrace] +8081ms rows n=58
+[LaunchTrace] +8429ms rows n=66
+[LaunchTrace] +8875ms rows n=74
+[LaunchTrace] +9250ms rows n=82
+[LaunchTrace] +9691ms rows n=90
+[LaunchTrace] +10064ms rows n=98
+[LaunchTrace] +10585ms rows n=106
+[LaunchTrace] +11660ms rows n=114
+[LaunchTrace] +11900ms rows n=117
+2026-10-18 17:21:09.236 NuvioTV[5035:2396707] [NavRail] arm reason=menu origin=request tab=0
+2026-10-18 17:21:09.288 NuvioTV[5035:2396707] [Rail] gate=on mode=uikit
+2026-10-18 17:21:13.757 NuvioTV[5035:2396707] [NavRail] select tab=3 from=0
+2026-10-18 17:21:13.758 NuvioTV[5035:2396707] [Rail] gate=off mode=uikit
+2026-10-18 17:21:13.892 NuvioTV[5035:2396707] [NavRail] exit via=select route=none result=fallback
+2026-10-18 17:29:15.371 NuvioTV[5035:2396707] [NavRail] arm reason=menu origin=request tab=3
+2026-10-18 17:29:15.407 NuvioTV[5035:2396707] [Rail] gate=on mode=uikit
+2026-10-18 17:29:17.972 NuvioTV[5035:2396707] [NavRail] select tab=4 from=3
+2026-10-18 17:29:17.973 NuvioTV[5035:2396707] [Rail] gate=off mode=uikit
+2026-10-18 17:29:18.120 NuvioTV[5035:2396707] [NavRail] exit via=select route=settings result=fallback
+2026-10-18 17:32:01.368 NuvioTV[5035:2396707] [NavRail] arm reason=menu origin=request tab=4
+2026-10-18 17:32:01.422 NuvioTV[5035:2396707] [Rail] gate=on mode=uikit
+2026-10-18 17:32:04.586 NuvioTV[5035:2396707] [NavRail] select tab=0 from=4
+2026-10-18 17:32:04.587 NuvioTV[5035:2396707] [Rail] gate=off mode=uikit
+[LaunchTrace] +676425ms home_appear
+2026-10-18 17:32:04.675 NuvioTV[5035:2396707] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-18 17:32:04.675 NuvioTV[5035:2396707] [TrailerPipeline] trailerLocation stage=row
+2026-10-18 17:32:04.703 NuvioTV[5035:2396707] [NavRail] exit via=select route=home result=focus
+[LaunchTrace] +676563ms rows n=41
+[LaunchTrace] +676563ms first_hero n=8
+2026-10-18 17:32:08.034 NuvioTV[5035:2396707] [AmbientWash] render id=series:tt32268630 src=1280x720 ms=12.6 lum=0.26
+2026-10-18 17:32:08.155 NuvioTV[5035:2396707] [AmbientWash] show id=series:tt32268630 gen=2 late=0 ms=12.6 lum=0.26
+2026-10-18 17:32:09.415 NuvioTV[5035:2396707] [AmbientWash] render id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 src=1920x1080 ms=10.4 lum=0.26
+2026-10-18 17:32:09.780 NuvioTV[5035:2396707] [AmbientWash] show id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 gen=3 late=0 ms=10.4 lum=0.26
+[LaunchTrace] +682145ms artwork #100: mem=2 disk=17 net=81 fail=0
+2026-10-18 17:32:10.596 NuvioTV[5035:2396707] [AmbientWash] render id=movie:tt22084616 src=1280x720 ms=8.0 lum=0.26
+2026-10-18 17:32:10.957 NuvioTV[5035:2396707] [AmbientWash] show id=movie:tt22084616 gen=4 late=0 ms=8.0 lum=0.26
+2026-10-18 17:32:13.003 NuvioTV[5035:2399850] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 17:32:13.003 NuvioTV[5035:2399850] [TrailerExtract] client=visionos video=P3uI5sLosKU hls=true formats=0 adaptive=27 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+2026-10-18 17:32:13.011 NuvioTV[5035:2399850] [TrailerExtract] client=android video=P3uI5sLosKU hls=false formats=1 adaptive=29 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl,metadataFormats
+2026-10-18 17:32:13.014 NuvioTV[5035:2399850] [TrailerExtract] client=ios video=P3uI5sLosKU hls=false formats=0 adaptive=27 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl,metadataFormats
+2026-10-18 17:32:13.154 NuvioTV[5035:2399850] [TrailerExtract] manifest client=visionos top variant 3840x2160
+2026-10-18 17:32:13.154 NuvioTV[5035:2399850] [TrailerExtract] selection: manifest=2160 progressive=360 (manifests collected=1)
+2026-10-18 17:32:13.154 NuvioTV[5035:2399850] [TrailerExtract] repack candidates: avcVideo=1080p avc1.640028 (visionos) m4aAudio=mp4a.40.2 (visionos) maxFps=0
+2026-10-18 17:32:13.490 NuvioTV[5035:2400479] [TrailerExtract] repack decision: avc=1080p vs progressive=2160p -> skip (progressive is not worse)
+2026-10-18 17:32:15.754 NuvioTV[5035:2396707] [AmbientWash] render id=series:tt31510819 src=1280x720 ms=9.0 lum=0.22
+2026-10-18 17:32:16.410 NuvioTV[5035:2396707] [AmbientWash] render id=series:tt23148340 src=1280x720 ms=7.9 lum=0.20
+2026-10-18 17:32:16.794 NuvioTV[5035:2396707] [AmbientWash] show id=series:tt23148340 gen=5 late=0 ms=7.9 lum=0.20
+2026-10-18 17:32:18.903 NuvioTV[5035:2400481] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 17:32:18.903 NuvioTV[5035:2400481] [TrailerExtract] client=visionos video=Rs49eRHFD9c hls=true formats=0 adaptive=23 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+2026-10-18 17:32:18.907 NuvioTV[5035:2400481] [TrailerExtract] client=android video=Rs49eRHFD9c hls=false formats=1 adaptive=25 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl,metadataFormats
+2026-10-18 17:32:18.912 NuvioTV[5035:2400481] [TrailerExtract] client=ios video=Rs49eRHFD9c hls=false formats=0 adaptive=23 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl,metadataFormats
+2026-10-18 17:32:18.975 NuvioTV[5035:2400090] [TrailerExtract] manifest client=visionos top variant 1920x1080
+2026-10-18 17:32:18.975 NuvioTV[5035:2400090] [TrailerExtract] selection: manifest=1080 progressive=360 (manifests collected=1)
+2026-10-18 17:32:18.975 NuvioTV[5035:2400090] [TrailerExtract] repack candidates: avcVideo=1080p avc1.640028 (visionos) m4aAudio=mp4a.40.2 (visionos) maxFps=0
+2026-10-18 17:32:19.513 NuvioTV[5035:2400480] [TrailerExtract] repack decision: avc=1080p vs progressive=1080p -> ELIGIBLE
+2026-10-18 17:32:20.022 NuvioTV[5035:2400481] [TrailerRepack] listener start port=8230 prefer=- gen=1 conns=0
+2026-10-18 17:32:20.024 NuvioTV[5035:2400205] [TrailerRepack] listener ready port=8230 waiters=1 gen=1 conns=0
+2026-10-18 17:32:20.024 NuvioTV[5035:2400205] [TrailerRepack] serving 1920x1080 avc1+mp4a (32+17 segments) at http://127.0.0.1:8230/9698008d8fb01ada6659e0afa5347a28/master.m3u8 fps=24 itag=137 n=0
+2026-10-18 17:32:21.638 NuvioTV[5035:2396707] [AmbientWash] render id=series:tt23112594 src=1280x720 ms=14.6 lum=0.16
+2026-10-18 17:32:21.924 NuvioTV[5035:2396707] [AmbientWash] render id=series:tt35051210 src=1280x720 ms=9.7 lum=0.20
+2026-10-18 17:32:22.222 NuvioTV[5035:2396707] [AmbientWash] render id=series:tt40385667 src=1280x720 ms=10.1 lum=0.26
+2026-10-18 17:32:22.598 NuvioTV[5035:2396707] [AmbientWash] render id=series:tt35854736 src=1280x720 ms=14.4 lum=0.26
+2026-10-18 17:32:23.883 NuvioTV[5035:2396707] [AmbientWash] render id=series:tt33406999 src=1280x720 ms=10.5 lum=0.25
+2026-10-18 17:32:24.123 NuvioTV[5035:2396707] [AmbientWash] render id=series:tt37350966 src=1280x720 ms=7.4 lum=0.26
+2026-10-18 17:32:24.544 NuvioTV[5035:2396707] [AmbientWash] render id=series:tt37972251 src=1280x720 ms=13.4 lum=0.26
+2026-10-18 17:32:24.926 NuvioTV[5035:2396707] [AmbientWash] render id=series:tt21097264 src=1280x720 ms=13.5 lum=0.26
+2026-10-18 17:32:25.369 NuvioTV[5035:2396707] [AmbientWash] render id=series:tt36064406 src=1280x720 ms=8.4 lum=0.19
+2026-10-18 17:32:25.937 NuvioTV[5035:2396707] [AmbientWash] render id=series:tt39101592 src=1280x720 ms=13.9 lum=0.26
+2026-10-18 17:32:26.287 NuvioTV[5035:2396707] [AmbientWash] render id=series:tt41538904 src=1280x720 ms=11.0 lum=0.26
+2026-10-18 17:32:26.840 NuvioTV[5035:2396707] [AmbientWash] show id=series:tt41538904 gen=6 late=0 ms=11.0 lum=0.26
+2026-10-18 17:32:28.261 NuvioTV[5035:2396707] [AmbientWash] render id=series:tt36984433 src=1280x720 ms=18.3 lum=0.26
+2026-10-18 17:32:28.735 NuvioTV[5035:2396707] [AmbientWash] render id=series:tt33081352 src=1280x721 ms=13.4 lum=0.26
+2026-10-18 17:32:29.237 NuvioTV[5035:2396707] [AmbientWash] render id=series:tt6773088 src=1280x720 ms=8.1 lum=0.26
+2026-10-18 17:32:30.040 NuvioTV[5035:2396707] [AmbientWash] show id=series:tt6773088 gen=7 late=0 ms=8.1 lum=0.26
+2026-10-18 17:32:31.452 NuvioTV[5035:2396707] [AmbientWash] render id=series:tt37737331 src=1280x720 ms=11.9 lum=0.26
+2026-10-18 17:32:31.555 NuvioTV[5035:2396707] [AmbientWash] show id=series:tt37737331 gen=8 late=0 ms=11.9 lum=0.26
+2026-10-18 17:32:33.147 NuvioTV[5035:2400613] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 17:32:33.147 NuvioTV[5035:2400613] [TrailerExtract] client=visionos video=z_D5uXaDsVU hls=true formats=0 adaptive=23 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+2026-10-18 17:32:33.150 NuvioTV[5035:2400613] [TrailerExtract] client=android video=z_D5uXaDsVU hls=false formats=1 adaptive=25 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl,metadataFormats
+2026-10-18 17:32:33.154 NuvioTV[5035:2400613] [TrailerExtract] client=ios video=z_D5uXaDsVU hls=false formats=0 adaptive=23 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl,metadataFormats
+2026-10-18 17:32:33.243 NuvioTV[5035:2400706] [TrailerExtract] manifest client=visionos top variant 1920x1080
+2026-10-18 17:32:33.243 NuvioTV[5035:2400706] [TrailerExtract] selection: manifest=1080 progressive=360 (manifests collected=1)
+2026-10-18 17:32:33.243 NuvioTV[5035:2400706] [TrailerExtract] repack candidates: avcVideo=1080p avc1.640028 (visionos) m4aAudio=mp4a.40.2 (visionos) maxFps=0
+2026-10-18 17:32:33.584 NuvioTV[5035:2400613] [TrailerExtract] repack decision: avc=1080p vs progressive=1080p -> ELIGIBLE
+2026-10-18 17:32:33.955 NuvioTV[5035:2400706] [TrailerRepack] serving 1920x1080 avc1+mp4a (21+11 segments) at http://127.0.0.1:8230/1c021a19f32f434685cf53183400c8db/master.m3u8 fps=24 itag=137 n=0
+2026-10-18 17:32:36.058 NuvioTV[5035:2396707] [TrailerQuality] presentationSize=1920x1080
+2026-10-18 17:32:38.084 NuvioTV[5035:2396707] [TrailerQuality] presentationSize=1920x1080
+2026-10-18 17:32:45.257 NuvioTV[5035:2396707] [AmbientWash] render id=series:tt35934755 src=1280x720 ms=7.7 lum=0.26
+2026-10-18 17:32:45.860 NuvioTV[5035:2396707] [AmbientWash] show id=series:tt21097264 gen=9 late=0 ms=13.5 lum=0.26
+2026-10-18 17:32:47.693 NuvioTV[5035:2400480] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 17:32:47.693 NuvioTV[5035:2400480] [TrailerExtract] client=visionos video=M9NWvGZViCg hls=true formats=0 adaptive=23 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+2026-10-18 17:32:47.698 NuvioTV[5035:2400480] [TrailerExtract] client=android video=M9NWvGZViCg hls=false formats=1 adaptive=25 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl,metadataFormats
+2026-10-18 17:32:47.703 NuvioTV[5035:2400480] [TrailerExtract] client=ios video=M9NWvGZViCg hls=false formats=0 adaptive=23 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl,metadataFormats
+2026-10-18 17:32:47.782 NuvioTV[5035:2400613] [TrailerExtract] manifest client=visionos top variant 1920x1080
+2026-10-18 17:32:47.782 NuvioTV[5035:2400613] [TrailerExtract] selection: manifest=1080 progressive=360 (manifests collected=1)
+2026-10-18 17:32:47.783 NuvioTV[5035:2400613] [TrailerExtract] repack candidates: avcVideo=1080p avc1.640028 (visionos) m4aAudio=mp4a.40.2 (visionos) maxFps=0
+2026-10-18 17:32:48.102 NuvioTV[5035:2400613] [TrailerExtract] repack decision: avc=1080p vs progressive=1080p -> ELIGIBLE
+2026-10-18 17:32:49.043 NuvioTV[5035:2400835] [TrailerRepack] serving 1920x1080 avc1+mp4a (27+16 segments) at http://127.0.0.1:8230/446acd8336b11e744c1a39c0b883542b/master.m3u8 fps=24 itag=137 n=0
+2026-10-18 17:32:49.518 NuvioTV[5035:2396707] [AmbientWash] render id=series:tt36832679 src=1280x720 ms=13.0 lum=0.26
+2026-10-18 17:32:49.780 NuvioTV[5035:2396707] [AmbientWash] show id=series:tt36832679 gen=10 late=0 ms=13.0 lum=0.26
+[LaunchTrace] +722182ms artwork #200: mem=22 disk=36 net=142 fail=0
+2026-10-18 17:32:52.527 NuvioTV[5035:2400834] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 17:32:52.527 NuvioTV[5035:2400834] [TrailerExtract] client=visionos video=yLeja7kWgmU hls=true formats=0 adaptive=23 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+2026-10-18 17:32:52.535 NuvioTV[5035:2400834] [TrailerExtract] client=android video=yLeja7kWgmU hls=false formats=1 adaptive=25 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl,metadataFormats
+2026-10-18 17:32:52.541 NuvioTV[5035:2400834] [TrailerExtract] client=ios video=yLeja7kWgmU hls=false formats=0 adaptive=23 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl,metadataFormats
+2026-10-18 17:32:52.628 NuvioTV[5035:2400481] [TrailerExtract] manifest client=visionos top variant 1920x1080
+2026-10-18 17:32:52.628 NuvioTV[5035:2400481] [TrailerExtract] selection: manifest=1080 progressive=360 (manifests collected=1)
+2026-10-18 17:32:52.629 NuvioTV[5035:2400481] [TrailerExtract] repack candidates: avcVideo=1080p avc1.640028 (visionos) m4aAudio=mp4a.40.2 (visionos) maxFps=0
+2026-10-18 17:32:53.013 NuvioTV[5035:2400834] [TrailerExtract] repack decision: avc=1080p vs progressive=1080p -> ELIGIBLE
+2026-10-18 17:32:53.351 NuvioTV[5035:2400481] [TrailerRepack] serving 1920x1080 avc1+mp4a (23+12 segments) at http://127.0.0.1:8230/c2130abc7d17126d1d8280d2a8d1ccc7/master.m3u8 fps=25 itag=137 n=0
+2026-10-18 17:32:55.318 NuvioTV[5035:2396707] [TrailerQuality] presentationSize=1920x1080
+2026-10-18 17:32:57.454 NuvioTV[5035:2396707] [TrailerQuality] presentationSize=1920x1080
+Launched application with com.youngchris29.NuvioTV bundle identifier.
+Waiting for the application to terminate...
+App terminated due to signal 9.

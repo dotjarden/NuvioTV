@@ -1,0 +1,107 @@
+[LaunchTrace] +0ms app_init
+2026-10-18 18:51:13.387 NuvioTV[5115:2429912] [TrailerPipeline] tuning buffer=auto maxFps=0 probeOff=NO ladder=0
+[ExtPlayerProbe] canOpenURL(infuse://) = true
+2026-10-18 18:51:13.458 NuvioTV[5115:2429912] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ExtPlayerProbe] canOpenURL(vlc-x-callback://) = false
+[ExtPlayerProbe] canOpenURL(outplayer://) = false
+[ExtPlayerProbe] canOpenURL(open-vidhub://) = true
+[ExtPlayerProbe] canOpenURL(vidhub://) = false
+[ExtPlayerProbe] canOpenURL(senplayer://) = false
+[ExtPlayerProbe] canOpenURL(nativeplayer://) = false
+[ExtPlayerProbe] availablePlayers = ["infuse:Infuse", "vidhub:VidHub"]
+2026-10-18 18:51:13.459 NuvioTV[5115:2429912] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 18:51:13.459 NuvioTV[5115:2429912] -canOpenURL: failed for URL: "vidhub://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 18:51:13.459 NuvioTV[5115:2429912] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 18:51:13.459 NuvioTV[5115:2429912] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 18:51:13.460 NuvioTV[5115:2429912] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 18:51:13.460 NuvioTV[5115:2429912] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 18:51:13.461 NuvioTV[5115:2429912] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 18:51:13.461 NuvioTV[5115:2429912] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ProfileSelect] auto-enter profile 3
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-18 18:51:13.826 NuvioTV[5115:2429912] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+[LaunchTrace] +662ms home_appear
+2026-10-18 18:51:13.850 NuvioTV[5115:2429912] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-18 18:51:13.850 NuvioTV[5115:2429912] [TrailerPipeline] trailerLocation stage=row
+[LaunchTrace] +1001ms artwork #1: mem=0 disk=1 net=0 fail=0
+[LaunchTrace] +1059ms artwork #10: mem=0 disk=10 net=0 fail=0
+2026-10-18 18:51:14.368 NuvioTV[5115:2429912] [HomeHero] logoInk sync-sample ms=0.62
+2026-10-18 18:51:14.429 NuvioTV[5115:2429912] [AmbientWash] render id=movie:tt3118958 src=1920x1080 ms=36.5 lum=0.17
+2026-10-18 18:51:14.429 NuvioTV[5115:2429912] [AmbientWash] show id=movie:tt3118958 gen=1 late=0 ms=36.5 lum=0.17
+[LaunchTrace] +2099ms artwork #25: mem=1 disk=19 net=5 fail=0
+2026-10-18 18:51:15.290 NuvioTV[5115:2429912] [TrailerPipeline] gates inlineTrailersEnabled=YES systemAutoplay=YES
+[LaunchTrace] +2100ms first_rows n=5 hero=8
+[LaunchTrace] +2100ms first_hero n=8
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +2308ms artwork #50: mem=4 disk=41 net=5 fail=0
+[LaunchTrace] +2793ms rows n=9
+[LaunchTrace] +3465ms rows n=17
+[LaunchTrace] +4450ms rows n=25
+[LaunchTrace] +5326ms rows n=33
+[LaunchTrace] +5922ms rows n=41
+2026-10-18 18:51:34.454 NuvioTV[5115:2429912] [NavRail] arm reason=menu origin=request tab=0
+2026-10-18 18:51:34.504 NuvioTV[5115:2429912] [Rail] gate=on mode=uikit
+2026-10-18 18:51:36.999 NuvioTV[5115:2429912] [NavRail] select tab=1 from=0
+2026-10-18 18:51:36.999 NuvioTV[5115:2429912] [Rail] gate=off mode=uikit
+2026-10-18 18:51:37.106 NuvioTV[5115:2429912] [NavRail] exit via=select route=none result=fallback
+2026-10-18 18:51:38.135 NuvioTV[5115:2429912] [KBFocus] chain=UIKeyboard→_UIKBCompatInputView→UIView→UIKBFocusVCView→_UISearchControllerTVKeyboardContainerView→_UISearchControllerView→UITransitionView→UIView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<SearchContainerRepresentable<ModifiedContent<ModifiedContent<_ViewModifier_Content<SearchModifier<TextField<EmptyView>>>, SubmitScopeModifier>, _PreferenceTransformModifier<ContentScrollViewPreferenceKey>>>>>→HostingView→UIViewControllerWrapperView→UINavigationTransitionView→UILayoutContainerView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<NavigationStackRepresentable>>→_UIHostingView<RootView>→UIViewControllerWrapperView→UITransitionView→UILayoutContainerView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<TVTabView<LazyMapSequence<_VariadicView_Children, TabItem>>>>→_UIHostingView<ModifiedContent<LazyView<ModifiedContent<ModifiedContent<ContentView, ProvidesFocusAppearance>, _PreferenceWritingModifier<PreferredColorSchemeKey>>>, RootModifier>>→UIDropShadowView→UITransitionView→UIWindow
+2026-10-18 18:51:38.135 NuvioTV[5115:2429912] [KBFocus] keyboard=1
+[SearchPerf] fire q="Pinocchio" inflight=0 keys=0 maxBody=0
+2026-10-18 18:51:40.448 NuvioTV[5115:2429912] [AmbientWash] render id=movie:tt0032910 src=256x144 ms=8.0 lum=0.26
+2026-10-18 18:51:40.686 NuvioTV[5115:2429912] [AmbientWash] show id=movie:tt0032910 gen=1 late=0 ms=8.0 lum=0.26
+[SearchPerf] results q="Pinocchio" first=83 last=886 cancelledFetches=0 legacy=0
+2026-10-18 18:51:45.601 NuvioTV[5115:2429912] [KBFocus] chain=UIKitFocusableViewResponderItem→PlatformGroupContainer→HostingScrollView→PlatformContainer→PlatformGroupContainer→HostingScrollView→PlatformContainer→_UIHostingView<ModifiedContent<ModifiedContent<_ViewModifier_Content<SearchModifier<TextField<EmptyView>>>, SubmitScopeModifier>, _PreferenceTransformModifier<ContentScrollViewPreferenceKey>>>→UIView→UIView→_UISearchControllerView→UITransitionView→UIView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<SearchContainerRepresentable<ModifiedContent<ModifiedContent<_ViewModifier_Content<SearchModifier<TextField<EmptyView>>>, SubmitScopeModifier>, _PreferenceTransformModifier<ContentScrollViewPreferenceKey>>>>>→HostingView→UIViewControllerWrapperView→UINavigationTransitionView→UILayoutContainerView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<NavigationStackRepresentable>>→_UIHostingView<RootView>→UIViewControllerWrapperView→UITransitionView→UILayoutContainerView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<TVTabView<LazyMapSequence<_VariadicView_Children, TabItem>>>>→_UIHostingView<ModifiedContent<LazyView<ModifiedContent<ModifiedContent<ContentView, ProvidesFocusAppearance>, _PreferenceWritingModifier<PreferredColorSchemeKey>>>, RootModifier>>→UIDropShadowView→UITransitionView→UIWindow
+2026-10-18 18:51:45.601 NuvioTV[5115:2429912] [KBFocus] keyboard=0
+2026-10-18 18:51:47.428 NuvioTV[5115:2429912] [TrailerPipeline] focus key=movie:tt4593060
+2026-10-18 18:51:47.651 NuvioTV[5115:2429912] [AmbientWash] render id=movie:tt4593060 src=256x144 ms=11.0 lum=0.26
+2026-10-18 18:51:47.894 NuvioTV[5115:2429912] [AmbientWash] show id=movie:tt4593060 gen=2 late=0 ms=11.0 lum=0.26
+2026-10-18 18:51:49.159 NuvioTV[5115:2429912] [TrailerPipeline] hero resolve candidate=1/3 id=672ead0663b1b0e8923bd453
+[LaunchTrace] +36151ms artwork #100: mem=4 disk=90 net=6 fail=0
+2026-10-18 18:51:50.367 NuvioTV[5115:2430155] [TrailerExtract] client=android_vr NO streamingData (playability=UNPLAYABLE reason=This video is not available)
+2026-10-18 18:51:50.367 NuvioTV[5115:2430155] [TrailerExtract] client=visionos NO streamingData (playability=UNPLAYABLE reason=This video is not available)
+2026-10-18 18:51:50.367 NuvioTV[5115:2430155] [TrailerExtract] client=android video=gV_0pYoCssc hls=false formats=1 adaptive=31 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl,metadataFormats
+2026-10-18 18:51:50.375 NuvioTV[5115:2430155] [TrailerExtract] client=ios video=gV_0pYoCssc hls=false formats=0 adaptive=28 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl,metadataFormats
+2026-10-18 18:51:50.381 NuvioTV[5115:2430155] [TrailerExtract] selection: manifest=none progressive=360 (manifests collected=0)
+2026-10-18 18:51:50.381 NuvioTV[5115:2430155] [TrailerExtract] repack candidates: avcVideo=1080p avc1.640028 (android) m4aAudio=mp4a.40.2 (android) maxFps=0
+2026-10-18 18:51:50.712 NuvioTV[5115:2429967] [TrailerExtract] repack decision: avc=1080p vs progressive=360p -> ELIGIBLE
+2026-10-18 18:51:51.051 NuvioTV[5115:2430229] [TrailerRepack] token mint token=7aaed534c9376468998499a27533f0a3 stored=1 max=200
+2026-10-18 18:51:51.051 NuvioTV[5115:2430229] [TrailerRepack] listener start port=8230 prefer=- gen=1 conns=0
+2026-10-18 18:51:51.053 NuvioTV[5115:2430238] [TrailerRepack] listener ready port=8230 waiters=1 gen=1 conns=0
+2026-10-18 18:51:51.053 NuvioTV[5115:2430238] [TrailerRepack] serving 1920x1080 avc1+mp4a (24+13 segments) at http://127.0.0.1:8230/7aaed534c9376468998499a27533f0a3/master.m3u8 fps=24 itag=137 n=0
+2026-10-18 18:51:51.086 NuvioTV[5115:2429912] [TrailerPipeline] view created live=1 players=0
+2026-10-18 18:51:51.086 NuvioTV[5115:2429912] [TrailerPipeline] attach live=1 views=1 url=http://127.0.0.1
+2026-10-18 18:51:51.094 NuvioTV[5115:2429912] [TrailerZoom] attach surface=hero clip=movie:tt4593060 lang=en-us src=yt tok=yt:gV_0pYoC
+2026-10-18 18:51:51.094 NuvioTV[5115:2429912] [TrailerZoom] store loaded n=95 version=2 (dropped 0 expired)
+2026-10-18 18:51:51.094 NuvioTV[5115:2429912] [TrailerZoom] persisted-hit key=movie:tt4593060 zoom=1.080 token=match cached=yt:gV_0pYoC this=yt:gV_0pYoC surface=hero cardFrame={0,0,0,0}
+2026-10-18 18:51:51.116 NuvioTV[5115:2429912] [TrailerZoom] layer bounds=1920x1080 zoom=1.080 dx=0.00 dy=0.00
+2026-10-18 18:51:55.116 NuvioTV[5115:2429912] [TrailerQuality] presentationSize=1920x1080
+2026-10-18 18:51:55.345 NuvioTV[5115:2429912] [TrailerZoom] bridge phase=leaving
+2026-10-18 18:51:55.359 NuvioTV[5115:2429912] [TrailerPipeline] teardown live=0 views=1 url=http://127.0.0.1
+2026-10-18 18:51:55.360 NuvioTV[5115:2429912] [TrailerHealth] end surface=detail-bg src=repack 1080p24 itag=137 n=0 startup=330ms played=4.0s waits=0 waitMs=0 stalls=0 empties=1 accStalls=0 dropped=0 ind=4.3Mb obs=102.1Mb size=1920x1080 err=-12660:The_operation_couldn’t_be_completed._(CoreMediaErrorDomain_error_-12660_-_HTTP_403:_Forbidden) hitches=- maxGap=-
+2026-10-18 18:51:55.360 NuvioTV[5115:2429912] [TrailerZoom] health detail-bg repack 1080p24 n=0 start=0.3s play=4s wait=0/0.0s stall=0 drop=0 obs=99.9 ind=4.3
+2026-10-18 18:51:55.360 NuvioTV[5115:2429912] [TrailerZoom] abandoned samples=0 ticks=16 interimApplied=0 revealed=1 verify=1 surface=hero key=movie:tt4593060 — verified-cached kept, not cached
+2026-10-18 18:51:55.367 NuvioTV[5115:2429912] [TrailerPipeline] view destroyed live=0 players=0
+2026-10-18 18:51:56.003 NuvioTV[5115:2429912] [TrailerZoom] bridge phase=playing
+2026-10-18 18:51:56.045 NuvioTV[5115:2429912] [TrailerPipeline] view created live=1 players=0
+2026-10-18 18:51:56.049 NuvioTV[5115:2429912] [TrailerZoom] attach surface=full clip=movie:tt4593060 lang=en-us src=yt tok=yt:gV_0pYoC
+2026-10-18 18:51:56.049 NuvioTV[5115:2429912] [TrailerZoom] policy=uncropped surface=full zoom=1.000 key=movie:tt4593060
+2026-10-18 18:51:56.049 NuvioTV[5115:2429912] [TrailerPipeline] attach(full) live=1 views=1 url=http://127.0.0.1
+2026-10-18 18:51:56.049 NuvioTV[5115:2429912] [TrailerZoom] handoff full resume=3.79
+2026-10-18 18:51:56.062 NuvioTV[5115:2429912] [TrailerZoom] layer bounds=1920x1080 zoom=1.000 dx=0.00 dy=0.00
+2026-10-18 18:52:41.208 NuvioTV[5115:2429912] [TrailerZoom] keepup-lost surface=detail-full at=48.5s
+2026-10-18 18:52:41.208 NuvioTV[5115:2429912] [TrailerZoom] stall surface=detail-full at=48.5s
+2026-10-18 18:52:41.252 NuvioTV[5115:2429912] [TrailerZoom] wait surface=detail-full reason=AVPlayerWaitingToMinimizeStallsReason at=48.5s dur=44ms
+2026-10-18 18:52:50.449 NuvioTV[5115:2429912] [TrailerZoom] keepup-lost surface=detail-full at=51.3s
+2026-10-18 18:52:50.450 NuvioTV[5115:2429912] [TrailerZoom] stall surface=detail-full at=51.3s
+2026-10-18 18:52:50.542 NuvioTV[5115:2429912] [TrailerZoom] wait surface=detail-full reason=AVPlayerWaitingToMinimizeStallsReason at=51.3s dur=92ms
+2026-10-18 18:52:57.765 NuvioTV[5115:2429912] [TrailerZoom] keepup-lost surface=detail-full at=56.8s
+2026-10-18 18:52:57.765 NuvioTV[5115:2429912] [TrailerZoom] stall surface=detail-full at=56.8s
+2026-10-18 18:52:57.832 NuvioTV[5115:2429912] [TrailerZoom] wait surface=detail-full reason=AVPlayerWaitingToMinimizeStallsReason at=56.8s dur=67ms
+2026-10-18 18:53:05.565 NuvioTV[5115:2429912] [TrailerZoom] keepup-lost surface=detail-full at=59.8s
+2026-10-18 18:53:05.566 NuvioTV[5115:2429912] [TrailerZoom] stall surface=detail-full at=59.8s
+2026-10-18 18:53:05.631 NuvioTV[5115:2429912] [TrailerZoom] keepup-lost surface=detail-full at=58.3s
+Launched application with com.youngchris29.NuvioTV bundle identifier.
+Waiting for the application to terminate...
+App terminated due to signal 9.

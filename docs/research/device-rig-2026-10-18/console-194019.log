@@ -1,0 +1,53 @@
+[LaunchTrace] +0ms app_init
+[ExtPlayerProbe] canOpenURL(infuse://) = true
+2026-10-18 19:40:20.083 NuvioTV[5212:2451235] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ExtPlayerProbe] canOpenURL(vlc-x-callback://) = false
+[ExtPlayerProbe] canOpenURL(outplayer://) = false
+[ExtPlayerProbe] canOpenURL(open-vidhub://) = true
+[ExtPlayerProbe] canOpenURL(vidhub://) = false
+[ExtPlayerProbe] canOpenURL(senplayer://) = false
+[ExtPlayerProbe] canOpenURL(nativeplayer://) = false
+[ExtPlayerProbe] availablePlayers = ["infuse:Infuse", "vidhub:VidHub"]
+2026-10-18 19:40:20.083 NuvioTV[5212:2451235] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 19:40:20.083 NuvioTV[5212:2451235] -canOpenURL: failed for URL: "vidhub://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 19:40:20.083 NuvioTV[5212:2451235] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 19:40:20.084 NuvioTV[5212:2451235] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 19:40:20.084 NuvioTV[5212:2451235] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 19:40:20.085 NuvioTV[5212:2451235] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 19:40:20.085 NuvioTV[5212:2451235] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 19:40:20.085 NuvioTV[5212:2451235] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ProfileSelect] auto-enter profile 3
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-18 19:40:20.475 NuvioTV[5212:2451235] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+[LaunchTrace] +639ms home_appear
+2026-10-18 19:40:20.500 NuvioTV[5212:2451235] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-18 19:40:20.500 NuvioTV[5212:2451235] [TrailerPipeline] trailerLocation stage=row
+[LaunchTrace] +973ms artwork #1: mem=0 disk=1 net=0 fail=0
+[LaunchTrace] +1059ms artwork #10: mem=0 disk=10 net=0 fail=0
+2026-10-18 19:40:21.013 NuvioTV[5212:2451235] [HomeHero] logoInk sync-sample ms=0.43
+2026-10-18 19:40:21.125 NuvioTV[5212:2451235] [AmbientWash] render id=movie:tt3118958 src=1920x1080 ms=32.5 lum=0.17
+2026-10-18 19:40:21.126 NuvioTV[5212:2451235] [AmbientWash] show id=movie:tt3118958 gen=1 late=1 ms=32.5 lum=0.17
+[LaunchTrace] +1995ms artwork #25: mem=1 disk=19 net=5 fail=0
+[LaunchTrace] +1997ms first_rows n=13 hero=8
+[LaunchTrace] +1997ms first_hero n=8
+2026-10-18 19:40:21.868 NuvioTV[5212:2451235] [TrailerPipeline] gates inlineTrailersEnabled=YES systemAutoplay=YES
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +2160ms artwork #50: mem=5 disk=40 net=5 fail=0
+[LaunchTrace] +2175ms rows n=17
+[LaunchTrace] +2511ms rows n=25
+[LaunchTrace] +2803ms rows n=33
+[LaunchTrace] +3489ms rows n=41
+2026-10-18 19:40:47.705 NuvioTV[5212:2451244] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 19:40:47.705 NuvioTV[5212:2451244] [TrailerExtract] client=visionos video=yJBO66pNNf4 hls=true formats=0 adaptive=25 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+2026-10-18 19:40:47.710 NuvioTV[5212:2451244] [TrailerExtract] client=android video=yJBO66pNNf4 hls=false formats=1 adaptive=28 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl
+2026-10-18 19:40:47.715 NuvioTV[5212:2451244] [TrailerExtract] client=ios video=yJBO66pNNf4 hls=false formats=0 adaptive=25 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl
+2026-10-18 19:40:47.921 NuvioTV[5212:2451244] [TrailerExtract] manifest client=visionos top variant 1280x720
+2026-10-18 19:40:47.922 NuvioTV[5212:2451244] [TrailerExtract] selection: manifest=720 progressive=360 (manifests collected=1)
+2026-10-18 19:40:47.922 NuvioTV[5212:2451244] [TrailerExtract] repack candidates: avcVideo=720p avc1.64001F (visionos) m4aAudio=mp4a.40.2 (visionos) maxFps=0
+2026-10-18 19:40:48.433 NuvioTV[5212:2451502] [TrailerExtract] repack decision: avc=720p vs progressive=720p -> ELIGIBLE
+2026-10-18 19:40:48.949 NuvioTV[5212:2451502] [TrailerRepack] listener start port=8230 prefer=- gen=1 conns=0
+2026-10-18 19:40:48.951 NuvioTV[5212:2451244] [TrailerRepack] listener ready port=8230 waiters=1 gen=1 conns=0
+2026-10-18 19:40:48.951 NuvioTV[5212:2451244] [TrailerRepack] serving 1280x720 avc1+mp4a (10+7 segments) at http://127.0.0.1:8230/578542ac8c0f03352a7c92310abe58c1/master.m3u8 fps=30 itag=136 n=0
+2026-10-18 19:40:53.127 NuvioTV[5212:2451235] [TrailerQuality] presentationSize=1280x720

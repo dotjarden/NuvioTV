@@ -1,0 +1,51 @@
+[LaunchTrace] +0ms app_init
+[ExtPlayerProbe] canOpenURL(infuse://) = true
+2026-10-18 18:02:59.328 NuvioTV[5057:2410978] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ExtPlayerProbe] canOpenURL(vlc-x-callback://) = false
+[ExtPlayerProbe] canOpenURL(outplayer://) = false
+[ExtPlayerProbe] canOpenURL(open-vidhub://) = true
+[ExtPlayerProbe] canOpenURL(vidhub://) = false
+[ExtPlayerProbe] canOpenURL(senplayer://) = false
+[ExtPlayerProbe] canOpenURL(nativeplayer://) = false
+[ExtPlayerProbe] availablePlayers = ["infuse:Infuse", "vidhub:VidHub"]
+2026-10-18 18:02:59.328 NuvioTV[5057:2410978] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 18:02:59.329 NuvioTV[5057:2410978] -canOpenURL: failed for URL: "vidhub://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 18:02:59.329 NuvioTV[5057:2410978] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 18:02:59.329 NuvioTV[5057:2410978] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 18:02:59.330 NuvioTV[5057:2410978] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 18:02:59.330 NuvioTV[5057:2410978] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 18:02:59.331 NuvioTV[5057:2410978] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 18:02:59.331 NuvioTV[5057:2410978] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ProfileSelect] auto-enter profile 3
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-18 18:02:59.721 NuvioTV[5057:2410978] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+[LaunchTrace] +621ms home_appear
+2026-10-18 18:02:59.746 NuvioTV[5057:2410978] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-18 18:02:59.746 NuvioTV[5057:2410978] [TrailerPipeline] trailerLocation stage=row
+[LaunchTrace] +982ms artwork #1: mem=0 disk=1 net=0 fail=0
+[LaunchTrace] +1046ms artwork #10: mem=0 disk=10 net=0 fail=0
+2026-10-18 18:03:00.278 NuvioTV[5057:2410978] [HomeHero] logoInk sync-sample ms=0.62
+2026-10-18 18:03:00.334 NuvioTV[5057:2410978] [AmbientWash] render id=movie:tt3118958 src=1920x1080 ms=43.1 lum=0.17
+2026-10-18 18:03:00.334 NuvioTV[5057:2410978] [AmbientWash] show id=movie:tt3118958 gen=1 late=0 ms=43.1 lum=0.17
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +2848ms artwork #25: mem=1 disk=19 net=5 fail=0
+[LaunchTrace] +2855ms first_rows n=5 hero=8
+[LaunchTrace] +2855ms first_hero n=8
+2026-10-18 18:03:01.982 NuvioTV[5057:2410978] [TrailerPipeline] gates inlineTrailersEnabled=YES systemAutoplay=YES
+[LaunchTrace] +2974ms artwork #50: mem=4 disk=41 net=5 fail=0
+[LaunchTrace] +3260ms rows n=9
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +4973ms rows n=17
+[LaunchTrace] +6753ms rows n=25
+[LaunchTrace] +7402ms rows n=33
+[LaunchTrace] +9128ms rows n=41
+2026-10-18 18:03:20.473 NuvioTV[5057:2410978] [NavRail] arm reason=menu origin=request tab=0
+2026-10-18 18:03:20.524 NuvioTV[5057:2410978] [Rail] gate=on mode=uikit
+2026-10-18 18:03:25.029 NuvioTV[5057:2410978] [NavRail] select tab=3 from=0
+2026-10-18 18:03:25.029 NuvioTV[5057:2410978] [Rail] gate=off mode=uikit
+2026-10-18 18:03:25.151 NuvioTV[5057:2410978] [NavRail] exit via=select route=none result=fallback
+Launched application with com.youngchris29.NuvioTV bundle identifier.
+Waiting for the application to terminate...
+App terminated due to signal 9.
