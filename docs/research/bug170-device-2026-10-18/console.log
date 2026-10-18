@@ -1,0 +1,271 @@
+[LaunchTrace] +0ms app_init
+[ExtPlayerProbe] canOpenURL(infuse://) = true
+2026-10-18 09:07:40.677 NuvioTV[4461:2215225] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ExtPlayerProbe] canOpenURL(vlc-x-callback://) = false
+[ExtPlayerProbe] canOpenURL(outplayer://) = false
+[ExtPlayerProbe] canOpenURL(open-vidhub://) = true
+[ExtPlayerProbe] canOpenURL(vidhub://) = false
+[ExtPlayerProbe] canOpenURL(senplayer://) = false
+[ExtPlayerProbe] canOpenURL(nativeplayer://) = false
+[ExtPlayerProbe] availablePlayers = ["infuse:Infuse", "vidhub:VidHub"]
+2026-10-18 09:07:40.678 NuvioTV[4461:2215225] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 09:07:40.678 NuvioTV[4461:2215225] -canOpenURL: failed for URL: "vidhub://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 09:07:40.678 NuvioTV[4461:2215225] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 09:07:40.679 NuvioTV[4461:2215225] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 09:07:40.680 NuvioTV[4461:2215225] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 09:07:40.680 NuvioTV[4461:2215225] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 09:07:40.680 NuvioTV[4461:2215225] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 09:07:40.680 NuvioTV[4461:2215225] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ProfileSelect] auto-enter profile 3
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-18 09:07:41.042 NuvioTV[4461:2215225] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+[LaunchTrace] +528ms home_appear
+2026-10-18 09:07:41.066 NuvioTV[4461:2215225] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-18 09:07:41.066 NuvioTV[4461:2215225] [TrailerPipeline] trailerLocation stage=row
+[LaunchTrace] +912ms artwork #1: mem=0 disk=1 net=0 fail=0
+[LaunchTrace] +962ms artwork #10: mem=0 disk=10 net=0 fail=0
+2026-10-18 09:07:41.606 NuvioTV[4461:2215225] [HomeHero] logoInk sync-sample ms=0.62
+2026-10-18 09:07:41.689 NuvioTV[4461:2215225] [AmbientWash] render id=movie:tt3118958 src=1920x1080 ms=40.9 lum=0.17
+2026-10-18 09:07:41.689 NuvioTV[4461:2215225] [AmbientWash] show id=movie:tt3118958 gen=1 late=0 ms=40.9 lum=0.17
+[LaunchTrace] +1880ms artwork #25: mem=1 disk=20 net=4 fail=0
+[LaunchTrace] +1885ms first_rows n=5 hero=8
+[LaunchTrace] +1885ms first_hero n=8
+2026-10-18 09:07:42.426 NuvioTV[4461:2215225] [TrailerPipeline] gates inlineTrailersEnabled=YES systemAutoplay=YES
+[LaunchTrace] +2010ms artwork #50: mem=4 disk=42 net=4 fail=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +2324ms rows n=9
+[LaunchTrace] +2934ms rows n=17
+[LaunchTrace] +4282ms rows n=25
+[LaunchTrace] +5815ms rows n=33
+[LaunchTrace] +6583ms rows n=41
+[LaunchTrace] +7620ms rows n=49
+[LaunchTrace] +8190ms rows n=57
+[LaunchTrace] +8526ms rows n=65
+[LaunchTrace] +8901ms rows n=73
+[LaunchTrace] +9274ms rows n=81
+[LaunchTrace] +9703ms rows n=89
+[LaunchTrace] +10078ms rows n=97
+[LaunchTrace] +10440ms rows n=105
+[LaunchTrace] +10826ms rows n=113
+[LaunchTrace] +11019ms rows n=116
+2026-10-18 09:07:58.418 NuvioTV[4461:2215225] [AmbientWash] render id=series:tt32268630 src=1280x720 ms=10.3 lum=0.26
+2026-10-18 09:07:58.755 NuvioTV[4461:2215225] [AmbientWash] show id=series:tt32268630 gen=2 late=0 ms=10.3 lum=0.26
+2026-10-18 09:07:59.727 NuvioTV[4461:2215225] [AmbientWash] render id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 src=1920x1080 ms=11.3 lum=0.26
+2026-10-18 09:08:00.052 NuvioTV[4461:2215225] [AmbientWash] show id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 gen=3 late=0 ms=11.3 lum=0.26
+2026-10-18 09:08:01.065 NuvioTV[4461:2215225] [AmbientWash] render id=movie:tt22084616 src=1280x720 ms=10.1 lum=0.26
+2026-10-18 09:08:01.410 NuvioTV[4461:2215225] [AmbientWash] show id=movie:tt22084616 gen=4 late=0 ms=10.1 lum=0.26
+2026-10-18 09:08:02.598 NuvioTV[4461:2215225] [AmbientWash] render id=movie:tt31049299 src=1280x720 ms=17.6 lum=0.16
+2026-10-18 09:08:02.848 NuvioTV[4461:2215225] [AmbientWash] show id=movie:tt31049299 gen=5 late=0 ms=17.6 lum=0.16
+2026-10-18 09:08:03.309 NuvioTV[4461:2215225] [AmbientWash] render id=movie:tt32588798 src=1280x720 ms=17.5 lum=0.15
+2026-10-18 09:08:03.532 NuvioTV[4461:2215225] [AmbientWash] show id=movie:tt32588798 gen=6 late=0 ms=17.5 lum=0.15
+2026-10-18 09:08:05.352 NuvioTV[4461:2215414] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 09:08:05.352 NuvioTV[4461:2215414] [TrailerExtract] client=visionos video=Ho10_4IX1jE hls=true formats=0 adaptive=27 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+2026-10-18 09:08:05.357 NuvioTV[4461:2215414] [TrailerExtract] client=android video=Ho10_4IX1jE hls=false formats=1 adaptive=29 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl,metadataFormats
+2026-10-18 09:08:05.362 NuvioTV[4461:2215414] [TrailerExtract] client=ios video=Ho10_4IX1jE hls=false formats=0 adaptive=27 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl,metadataFormats
+2026-10-18 09:08:05.537 NuvioTV[4461:2215231] [TrailerExtract] manifest client=visionos top variant 3840x2160
+2026-10-18 09:08:05.537 NuvioTV[4461:2215231] [TrailerExtract] selection: manifest=2160 progressive=360 (manifests collected=1)
+2026-10-18 09:08:05.538 NuvioTV[4461:2215231] [TrailerExtract] repack candidates: avcVideo=1080p avc1.640028 (visionos) m4aAudio=mp4a.40.2 (visionos) maxFps=0
+2026-10-18 09:08:05.962 NuvioTV[4461:2215231] [TrailerExtract] repack decision: avc=1080p vs progressive=2160p -> skip (progressive is not worse)
+2026-10-18 09:08:08.310 NuvioTV[4461:2215225] [TrailerQuality] presentationSize=1920x1080
+2026-10-18 09:08:10.113 NuvioTV[4461:2215225] [TrailerQuality] presentationSize=1920x1080
+2026-10-18 09:08:21.753 NuvioTV[4461:2215225] [AmbientWash] show id=movie:tt31049299 gen=7 late=0 ms=17.6 lum=0.16
+[LaunchTrace] +41234ms artwork #100: mem=9 disk=86 net=5 fail=0
+2026-10-18 09:08:22.634 NuvioTV[4461:2215679] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 09:08:22.634 NuvioTV[4461:2215679] [TrailerExtract] client=visionos video=ZkN2M4ODdys hls=true formats=0 adaptive=23 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+2026-10-18 09:08:22.637 NuvioTV[4461:2215679] [TrailerExtract] client=android video=ZkN2M4ODdys hls=false formats=1 adaptive=25 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl,metadataFormats
+2026-10-18 09:08:22.641 NuvioTV[4461:2215679] [TrailerExtract] client=ios video=ZkN2M4ODdys hls=false formats=0 adaptive=23 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl,metadataFormats
+2026-10-18 09:08:22.691 NuvioTV[4461:2215679] [TrailerExtract] manifest client=visionos top variant 1920x1080
+2026-10-18 09:08:22.691 NuvioTV[4461:2215679] [TrailerExtract] selection: manifest=1080 progressive=360 (manifests collected=1)
+2026-10-18 09:08:22.691 NuvioTV[4461:2215679] [TrailerExtract] repack candidates: avcVideo=1080p avc1.640028 (visionos) m4aAudio=mp4a.40.2 (visionos) maxFps=0
+2026-10-18 09:08:22.873 NuvioTV[4461:2215676] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 09:08:22.873 NuvioTV[4461:2215676] [TrailerExtract] client=visionos video=ZkN2M4ODdys hls=true formats=0 adaptive=23 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+2026-10-18 09:08:22.876 NuvioTV[4461:2215676] [TrailerExtract] client=android video=ZkN2M4ODdys hls=false formats=1 adaptive=25 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl,metadataFormats
+2026-10-18 09:08:22.879 NuvioTV[4461:2215676] [TrailerExtract] client=ios video=ZkN2M4ODdys hls=false formats=0 adaptive=23 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl,metadataFormats
+2026-10-18 09:08:22.927 NuvioTV[4461:2215650] [TrailerExtract] manifest client=visionos top variant 1920x1080
+2026-10-18 09:08:22.927 NuvioTV[4461:2215650] [TrailerExtract] selection: manifest=1080 progressive=360 (manifests collected=1)
+2026-10-18 09:08:22.927 NuvioTV[4461:2215650] [TrailerExtract] repack candidates: avcVideo=1080p avc1.640028 (visionos) m4aAudio=mp4a.40.2 (visionos) maxFps=0
+2026-10-18 09:08:22.979 NuvioTV[4461:2215676] [TrailerExtract] repack decision: avc=1080p vs progressive=1080p -> ELIGIBLE
+2026-10-18 09:08:23.163 NuvioTV[4461:2215653] [TrailerExtract] repack decision: avc=1080p vs progressive=1080p -> ELIGIBLE
+2026-10-18 09:08:23.371 NuvioTV[4461:2215676] [TrailerRepack] listener start port=8230 prefer=- gen=1 conns=0
+2026-10-18 09:08:23.373 NuvioTV[4461:2215679] [TrailerRepack] listener ready port=8230 waiters=1 gen=1 conns=0
+2026-10-18 09:08:23.373 NuvioTV[4461:2215679] [TrailerRepack] serving 1920x1080 avc1+mp4a (15+8 segments) at http://127.0.0.1:8230/80af06a2674ffde4fd1e1078c8c99c0e/master.m3u8 fps=24 itag=137 n=0
+2026-10-18 09:08:23.505 NuvioTV[4461:2215624] [TrailerRepack] serving 1920x1080 avc1+mp4a (15+8 segments) at http://127.0.0.1:8230/2ba5638f02ea185f47a5b6fcfe65486f/master.m3u8 fps=24 itag=137 n=0
+2026-10-18 09:08:27.514 NuvioTV[4461:2215225] [TrailerQuality] presentationSize=1920x1080
+2026-10-18 09:08:53.134 NuvioTV[4461:2215225] [TrailerQuality] presentationSize=1920x1080
+2026-10-18 09:09:18.690 NuvioTV[4461:2215225] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[SubtitleRepo] Fetching subtitles type=movie id=tt31049299 across 8 enabled addons
+[SubtitleRepo] Skip Comet: no subtitles resource
+[SubtitleRepo] Skip Torrentio: no subtitles resource
+[SubtitleRepo] Skip AIOMetadata: no subtitles resource
+[SubtitleRepo] Skip AIO Streams: no subtitles resource
+[SubtitleRepo] Skip Cinemeta: no subtitles resource
+[SubtitleRepo] Skip Better Posters: no subtitles resource
+[SubtitleRepo] Querying Duck Streams: https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/eyJpIjoiQ3VUTklMeU1xTFpPazE5M0p5WHRwdz09IiwiZSI6InRFM3JzMHNpOU1FQ1QzSGhGbXowZnIvTjFBd0NtMnNTZ1dqS1gvNERmdXc9IiwidCI6ImEifQ/subtitles/movie/tt31049299.json
+2026-10-18 09:09:18.690 NuvioTV[4461:2215225] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 09:09:18.690 NuvioTV[4461:2215225] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 09:09:18.691 NuvioTV[4461:2215225] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/movie/tt31049299.json
+[SubtitleRepo] OpenSubtitles v3: 79 subtitles in 165.298ms
+[SubtitleRepo] Duck Streams: 2 subtitles in 2.362341666s
+[SubtitleRepo] Subtitle fetch done: 81 total in 2.362930125s
+2026-10-18 09:13:28.054 NuvioTV[4461:2215225] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 09:13:28.055 NuvioTV[4461:2215225] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 09:13:28.055 NuvioTV[4461:2215225] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 09:13:28.056 NuvioTV[4461:2215225] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[PlayerRouter] self-check passed
+[PlayerRouter] native — DV P8.1 — Animals
+[Loading] engine=native stage=connecting t=+0.01s
+[NativePlayer] language plan: audio=["en-us", "en"] subs=off
+[NativePlayer] addon subtitles updated: 81
+[NativePlayer] artwork attached (498 KB)
+[NativePlayer] skip segments: 0 (none in intro DB for this title)
+[Remux] subtitle streams (77): #2 subrip [eng], #3 subrip [eng], #4 subrip [eng], #5 subrip [eng], #6 subrip [ara], #7 subrip [cat], #8 subrip [cze], #9 subrip [cze], #10 subrip [cze], #11 subrip [cze], #12 subrip [dan], #13 subrip [ger], #14 subrip [ger], #15 subrip [ger], #16 subrip [ger], #17 subrip [gre], #18 subrip [spa], #19 subrip [spa], #20 subrip [spa], #21 subrip [spa], #22 subrip [spa], #23 subrip [spa], #24 subrip [spa], #25 subrip [spa], #26 subrip [baq], #27 subrip [fin], #28 subrip [fil], #29 subrip [fil], #30 subrip [fre], #31 subrip [fre], #32 subrip [fre], #33 subrip [fre], #34 subrip [fre], #35 subrip [fre], #36 subrip [glg], #37 subrip [heb], #38 subrip [hin], #39 subrip [hrv], #40 subrip [hun], #41 subrip [hun], #42 subrip [hun], #43 subrip [hun], #44 subrip [ind], #45 subrip [ind], #46 subrip [ita], #47 subrip [ita], #48 subrip [ita], #49 subrip [ita], #50 subrip [jpn], #51 subrip [jpn], #52 subrip [jpn], #53 subrip [jpn], #54 subrip [kor], #55 subrip [may], #56 subrip [nob], #57 subrip [dut], #58 subrip [pol], #59 subrip [pol], #60 subrip [pol], #61 subrip [pol], #62 subrip [por], #63 subrip [por], #64 subrip [por], #65 subrip [por], #66 subrip [por], #67 subrip [rum], #68 subrip [rus], #69 subrip [rus], #70 subrip [swe], #71 subrip [tha], #72 subrip [tur], #73 subrip [tur], #74 subrip [ukr], #75 subrip [ukr], #76 subrip [vie], #77 subrip [chi], #78 subrip [chi]
+[Remux] audio streams (1): #1 eac3 6ch [eng] *selected
+[Remux] signaling CODECS=hvc1.2.4.L150.90 SUPPLEMENTAL=dvh1.08.06/db1p AUDIO=ec-3
+[Loading] engine=native stage=preparing(dv) t=+0.82s
+[Remux] keyframe index: 4330 keyframes tb=1/1000 dur=6491.1s
+[Chapters] native n=2 origin=0.000 first="Part 01"@0.000 last="Credits"@6490.450
+[1;35m[mp4 @ 0x13d04fc00] [0m[0;33mtrack 0: codec frame size is not set
+[0m[Remux] segment map: 1082 segments, 6491.1s, target=6s
+[Remux] embedded subtitle sinks: 77 (#10→esub-8, #11→esub-9, #12→esub-10, #13→esub-11, #14→esub-12, #15→esub-13, #16→esub-14, #17→esub-15, #18→esub-16, #19→esub-17, #20→esub-18, #21→esub-19, #22→esub-20, #23→esub-21, #24→esub-22, #25→esub-23, #26→esub-24, #27→esub-25, #28→esub-26, #29→esub-27, #2→esub-0, #30→esub-28, #31→esub-29, #32→esub-30, #33→esub-31, #34→esub-32, #35→esub-33, #36→esub-34, #37→esub-35, #38→esub-36, #39→esub-37, #3→esub-1, #40→esub-38, #41→esub-39, #42→esub-40, #43→esub-41, #44→esub-42, #45→esub-43, #46→esub-44, #47→esub-45, #48→esub-46, #49→esub-47, #4→esub-2, #50→esub-48, #51→esub-49, #52→esub-50, #53→esub-51, #54→esub-52, #55→esub-53, #56→esub-54, #57→esub-55, #58→esub-56, #59→esub-57, #5→esub-3, #60→esub-58, #61→esub-59, #62→esub-60, #63→esub-61, #64→esub-62, #65→esub-63, #66→esub-64, #67→esub-65, #68→esub-66, #69→esub-67, #6→esub-4, #70→esub-68, #71→esub-69, #72→esub-70, #73→esub-71, #74→esub-72, #75→esub-73, #76→esub-74, #77→esub-75, #78→esub-76, #7→esub-5, #8→esub-6, #9→esub-7)
+[Remux] seg 1 done footprint=231MB
+[NativePlayer] addon subtitle fetch finished (81 found)
+[NativePlayer] subtitle renditions: 93 (77 embedded) — English (SDH), English [Stripped], English, English (Forced), Arabic, Catalan, …
+[HLS] master iframes=0 independent=0
+[NativePlayer] serving http://127.0.0.1:8190/e9f975c246104249b1d6d05950e4d095/master.m3u8
+[Subs] style rule fg=#FFFFFFFF bg=#00000000 edge=uniform bold=0 size=78%
+[Loading] engine=native stage=buffering t=+3.96s
+[HLS] 200 master.m3u8 (14090b)
+[NativePlayer] bar visible=0
+[HLS] 200 media.m3u8 (34763b)
+[NativePlayer] avpvc speeds=0.5,0.75,1,1.25,1.5,1.75,2 menu=Sources delegate=1
+[HLS] 200 init.mp4 (962b)
+[HLS] 200 seg-00001.m4s (6069320b)
+[HLS] 200 aud-1.m3u8 (36933b)
+[HLS] 200 esub-3.m3u8 (37983b)
+[HLS] 200 aud-1-00001.m4s (577644b)
+[HLS] 200 aud-1-init.mp4 (730b)
+[HLS] 200 esub-3-00001.vtt (52b)
+[HLS] 200 seg-00002.m4s (577526b)
+[HLS] 200 aud-1-00002.m4s (574572b)
+[HLS] 200 esub-3-00002.vtt (52b)
+[NativePlayer] item readyToPlay
+[HLS] 200 seg-00003.m4s (8977373b)
+[HLS] 200 aud-1-00003.m4s (577644b)
+[HLS] 200 esub-3-00003.vtt (52b)
+[NativePlayer] bar visible=1
+[Loading] engine=native stage=started t=+4.75s
+[HLS] 200 esub-3-00004.vtt (52b)
+[HLS] 200 esub-3-00005.vtt (52b)
+[HLS] 200 esub-3-00006.vtt (52b)
+[HLS] 200 esub-3-00007.vtt (52b)
+[HLS] 200 esub-3-00008.vtt (52b)
+[HLS] 200 esub-3-00009.vtt (52b)
+[HLS] 200 esub-3-00010.vtt (52b)
+[HLS] 200 seg-00004.m4s (9780031b)
+[HLS] 200 aud-1-00004.m4s (574572b)
+[TopShelf] wrote 9 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[HLS] 200 esub-3-00011.vtt (52b)
+[HLS] 200 esub-3-00012.vtt (52b)
+[HLS] 200 esub-3-00013.vtt (52b)
+[NativePlayer] bar visible=0
+[HLS] 200 esub-3-00014.vtt (52b)
+[Remux] seg 15 done footprint=270MB
+[HLS] 200 esub-3-00015.vtt (52b)
+[HLS] 200 esub-3-00016.vtt (52b)
+[HLS] 200 esub-3-00017.vtt (52b)
+[HLS] 200 esub-3-00018.vtt (52b)
+[HLS] 200 esub-3-00019.vtt (52b)
+[HLS] 200 esub-3-00020.vtt (52b)
+[HLS] 200 esub-3-00021.vtt (52b)
+[HLS] 200 esub-3-00022.vtt (52b)
+[HLS] 200 esub-3-00023.vtt (52b)
+[HLS] 200 seg-00005.m4s (12298678b)
+[HLS] 200 aud-1-00005.m4s (577644b)
+[HLS] 200 esub-3-00024.vtt (52b)
+[HLS] 200 esub-3-00025.vtt (52b)
+[HLS] 200 esub-3-00026.vtt (52b)
+[HLS] 200 esub-3-00027.vtt (52b)
+[HLS] 200 esub-3-00028.vtt (52b)
+[HLS] 200 esub-3-00029.vtt (52b)
+[Remux] seg 30 done footprint=276MB
+[HLS] 200 esub-3-00030.vtt (52b)
+[HLS] 200 esub-3-00031.vtt (52b)
+[HLS] 200 esub-3-00032.vtt (52b)
+[HLS] 200 esub-3-00033.vtt (52b)
+[HLS] 200 seg-00006.m4s (10832061b)
+[HLS] 200 aud-1-00006.m4s (574572b)
+[HLS] 200 esub-3-00034.vtt (52b)
+[HLS] 200 esub-3-00035.vtt (52b)
+[HLS] 200 esub-3-00036.vtt (52b)
+[HLS] 200 esub-3-00037.vtt (52b)
+[HLS] 200 esub-3-00038.vtt (52b)
+[HLS] 200 esub-3-00039.vtt (52b)
+[HLS] 200 esub-3-00040.vtt (52b)
+[HLS] 200 esub-3-00041.vtt (52b)
+[HLS] 200 esub-3-00042.vtt (52b)
+[HLS] 200 esub-3-00043.vtt (52b)
+[HLS] 200 esub-3-00044.vtt (52b)
+[HLS] 200 esub-3-00045.vtt (52b)
+[Remux] seg 45 done footprint=282MB
+[HLS] 200 esub-3-00046.vtt (52b)
+[HLS] 200 esub-3-00047.vtt (52b)
+[HLS] 200 seg-00007.m4s (10601216b)
+[HLS] 200 aud-1-00007.m4s (577644b)
+[HLS] 200 esub-3-00048.vtt (52b)
+[HLS] 200 esub-3-00049.vtt (52b)
+[HLS] 200 esub-3-00050.vtt (52b)
+[HLS] 200 esub-3-00051.vtt (52b)
+[HLS] 200 esub-3-00052.vtt (52b)
+[HLS] 200 esub-3-00053.vtt (52b)
+[HLS] 200 esub-3-00054.vtt (52b)
+[HLS] 200 esub-3-00055.vtt (52b)
+[HLS] 200 esub-3-00056.vtt (52b)
+[HLS] 200 esub-3-00057.vtt (52b)
+[HLS] 200 esub-3-00058.vtt (52b)
+[HLS] 200 esub-3-00059.vtt (52b)
+[HLS] 200 esub-3-00060.vtt (52b)
+[HLS] 200 seg-00008.m4s (10879382b)
+[HLS] 200 aud-1-00008.m4s (574572b)
+[Remux] seg 60 done footprint=288MB
+[HLS] 200 esub-3-00061.vtt (52b)
+[HLS] 200 esub-3-00062.vtt (52b)
+[HLS] 200 esub-3-00063.vtt (52b)
+[HLS] 200 esub-3-00064.vtt (52b)
+[HLS] 200 esub-3-00065.vtt (52b)
+[HLS] 200 esub-3-00066.vtt (52b)
+[HLS] 200 esub-3-00067.vtt (52b)
+[HLS] 200 esub-3-00068.vtt (52b)
+[HLS] 200 esub-3-00069.vtt (52b)
+[HLS] 200 esub-3-00070.vtt (52b)
+[HLS] 200 esub-3-00071.vtt (52b)
+[HLS] 200 seg-00009.m4s (13181169b)
+[HLS] 200 aud-1-00009.m4s (577644b)
+[HLS] 200 esub-3-00072.vtt (52b)
+[HLS] 200 esub-3-00073.vtt (52b)
+[HLS] 200 esub-3-00074.vtt (52b)
+[HLS] 200 esub-3-00075.vtt (52b)
+[Remux] seg 75 done footprint=293MB
+[HLS] 200 esub-3-00076.vtt (52b)
+[HLS] 200 esub-3-00077.vtt (52b)
+[HLS] 200 esub-3-00078.vtt (52b)
+[HLS] 200 esub-3-00079.vtt (52b)
+[HLS] 200 esub-3-00080.vtt (52b)
+[HLS] 200 esub-3-00081.vtt (52b)
+[HLS] 200 esub-3-00082.vtt (52b)
+[HLS] 200 esub-3-00083.vtt (52b)
+[HLS] 200 seg-00010.m4s (16574833b)
+[HLS] 200 aud-1-00010.m4s (574572b)
+[HLS] 200 esub-3-00084.vtt (52b)
+[HLS] 200 esub-3-00085.vtt (52b)
+[HLS] 200 esub-3-00086.vtt (52b)
+[HLS] 200 esub-3-00087.vtt (52b)
+[HLS] 200 esub-3-00088.vtt (52b)
+[HLS] 200 esub-3-00089.vtt (52b)
+[HLS] 200 esub-3-00090.vtt (52b)
+[Remux] seg 90 done footprint=299MB
+Launched application with com.youngchris29.NuvioTV bundle identifier.
+Waiting for the application to terminate...
+App terminated due to signal 15.
