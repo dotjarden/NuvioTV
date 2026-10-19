@@ -1,6 +1,6 @@
 # Batch L (upstream ports) and Player P5: plan, 2026-10-19
 
-**Status: PLAN, awaiting Christian's go. Nothing built.** Written from three read-only code surveys of `tvos-shared-extraction` at `2baa390f1` (rc9) and upstream `cmp-rewrite` at `324afcffb`, plus `docs/player-revamp-plan-2026-10-06.md` (P5 section), `docs/master-plan-2026-10-14.md` §4.5 / D3, `docs/upstream-port-plan-2026-10-19.md` and `docs/nuviotv-android-upstream-port-plan-2026-10-19.md`.
+**Status: APPROVED 2026-10-19 as recommended (D1–D9).** Batch L started the same day; P5 waits for Steven's rc8/rc9 verdict to be triaged. Written from three read-only code surveys of `tvos-shared-extraction` at `2baa390f1` (rc9) and upstream `cmp-rewrite` at `324afcffb`, plus `docs/player-revamp-plan-2026-10-06.md` (P5 section), `docs/master-plan-2026-10-14.md` §4.5 / D3, `docs/upstream-port-plan-2026-10-19.md` and `docs/nuviotv-android-upstream-port-plan-2026-10-19.md`.
 
 Scope as decided 2026-10-19:
 - **Batch L** = the two small NuvioMobile ports from the 10-19 check. It is its own batch, built now while Steven tests rc9.
@@ -196,3 +196,10 @@ Batch L: 1 build agent + 1 review round. P5: 1 critique, 3 build agents (A ∥ B
 - **Post-play navigation** out of a full-screen cover into Detail is a new path. Dismissing the cover first is the known-safe order (the "empty-pushed-view EJECT" class).
 - **The Sync Line mpv cue fetch** re-downloads the subtitle. Some add-on subtitle URLs are one-shot or slow, so the row shows "Cues unavailable" instead of hanging.
 - **Free-team provisioning expires 10-22 00:23 EST**; the first device build after that re-signs.
+
+---
+
+## OUTCOME
+
+### Batch L (started 2026-10-19)
+- Clone `~/Claude/Projects/NuvioMobile-batch-l`, branch `claude/batch-l` off `2baa390f1`, MPVKit symlinked (stage by explicit paths).
