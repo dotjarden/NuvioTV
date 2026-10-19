@@ -1,6 +1,6 @@
 # Batch M: Steven's rc8 + rc9 verdict → the next rc (plan, 2026-10-19)
 
-**Status: PLAN, awaiting Christian's go. Nothing built.**
+**Status: APPROVED 2026-10-19 as recommended (D1–D8).** Wave 0 started the same day; the FEAT-80 question to Steven is drafted (NOT SENT) in `docs/comms-dm-drafts-2026-10-19-feat80-question.md`.
 
 Sources:
 - `docs/steven-beta19-rc9-verdict-2026-10-19.md` (verdict, photos, video review).
@@ -152,3 +152,9 @@ Scope as decided 2026-10-19:
 - **BUG-188 and BUG-191 are hardware-timing bugs**; the simulator won't show them. Wave 0's rig logs are the spec.
 - **Removing a setting that shipped in rc9** (Synopsis Length) needs a release-notes line, because his saved value just stops applying.
 - **Free-team provisioning expires 10-22 00:23 EST**; the first device build after that re-signs.
+
+---
+
+## OUTCOME
+
+### Wave 0 (started 2026-10-19)
