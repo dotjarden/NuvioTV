@@ -53,7 +53,7 @@
 [SubtitleRepo] Querying AIO Metadata 1: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/movie/tt3118958.json
 [SubtitleRepo] Querying AIO Metadata 2: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/movie/tt3118958.json
 [SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/movie/tt3118958.json
-[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/eyJpIjoiTjN5UFFXNDhwaUNuTFZqeDdLSForQT09IiwiZSI6Ijhzc3lwUUhoNjJRQmhvdGx1bTI4VEVaNVVYMGcyOGt3ZCtVdWJFMW5VTjg9IiwidCI6ImEifQ/su2026-10-16 18:04:35.280 NuvioTV[2531:1449400] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/<redacted-config>/su2026-10-16 18:04:35.280 NuvioTV[2531:1449400] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
 2026-10-16 18:04:35.280 NuvioTV[2531:1449400] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
 btitles/movie/tt3118958.json
 [SubtitleRepo] OpenSubtitles v3: 54 subtitles in 54.191417ms
@@ -521,7 +521,7 @@ btitles/movie/tt3118958.json
 [SubtitleRepo] Querying AIO Metadata 2: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/movie/tt3118958.json[SubtitleRepo] Querying AIO Metadata 1: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/movie/tt3118958.json
 
 [SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/movie/tt3118958.json
-[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/eyJpIjoiTjN5UFFXNDhwaUNuTFZqeDdLSForQT09IiwiZSI6Ijhzc3lwUUhoNjJRQmhvdGx1bTI4VEVaNVVYMGcyOGt3ZCtVdWJFMW5VTjg9IiwidCI6ImEifQ/subtitles/movie/tt3118958.json
+[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/<redacted-config>/subtitles/movie/tt3118958.json
 [mvk-info] Created 3 swapchain images with size (3840, 2160) and contents scale 2.0 in layer (null) (0x118957070) on screen Main Screen.
 [mvk-info] Created 3 swapchain images with size (3840, 2160) and contents scale 2.0 in layer (null) (0x118957070) on screen Main Screen.
 [mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
@@ -772,7 +772,7 @@ btitles/movie/tt3118958.json
 [SubtitleRepo] Querying AIO Metadata 1: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/movie/tt3118958.json
 [SubtitleRepo] Querying AIO Metadata 2: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/movie/tt3118958.json
 [SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/movie/tt3118958.json
-[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/eyJpIjoiTjN5UFFXNDhwaUNuTFZqeDdLSForQT09IiwiZSI6Ijhzc3lwUUhoNjJRQmhvdGx1bTI4VEVaNVVYMGcyOGt3ZCtVdWJFMW5VTjg9IiwidCI6ImEifQ/subtitles/movie/tt3118958.json
+[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/<redacted-config>/subtitles/movie/tt3118958.json
 [mvk-info] Created 3 swapchain images with size (3840, 2160) and contents scale 2.0 in layer (null) (0x123c44870) on screen Main Screen.
 [mvk-info] Created 3 swapchain images with size (3840, 2160) and contents scale 2.0 in layer (null) (0x123c44870) on screen Main Screen.
 [mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.

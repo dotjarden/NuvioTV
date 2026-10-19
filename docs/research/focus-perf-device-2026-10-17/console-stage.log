@@ -92,7 +92,7 @@
 [SubtitleRepo] Skip Better Posters: no subtitles resource
 2026-10-17 21:30:44.396 NuvioTV[4163:1998442] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
 2026-10-17 21:30:44.396 NuvioTV[4163:1998442] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
-[SubtitleRepo] Querying Duck Streams: https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/eyJpIjoiQ3VUTklMeU1xTFpPazE5M0p5WHRwdz09IiwiZSI6InRFM3JzMHNpOU1FQ1QzSGhGbXowZnIvTjFBd0NtMnNTZ1dqS1gvNERmdXc9IiwidCI6ImEifQ/subtitles/movie/tt3118958.json
+[SubtitleRepo] Querying Duck Streams: https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/<redacted-config>/subtitles/movie/tt3118958.json
 [SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/movie/tt3118958.json
 [SubtitleRepo] OpenSubtitles v3: 54 subtitles in 446.684250ms
 [SubtitleRepo] Duck Streams: 6 subtitles in 980.341208ms

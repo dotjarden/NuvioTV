@@ -5737,7 +5737,7 @@
 [SubtitleRepo] Querying AIO Metadata 1: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/movie/tt6933238.json
 [SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/movie/tt6933238.json
 [SubtitleRepo] Querying AIO Metadata 2: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/movie/tt6933238.json
-[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/eyJpIjoiTjN5UFFXNDhwaUNuTFZqeDdLSForQT09IiwiZSI6Ijhzc3lwUUhoNjJRQmhvdGx1bTI4VEVaNVVYMGcyOGt3ZCtVdWJFMW5VTjg9IiwidCI6ImEifQ/subtitles/movie/tt6933238.json
+[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/<redacted-config>/subtitles/movie/tt6933238.json
 [SubtitleRepo] AIO Metadata 2: 0 subtitles in 481.315083ms
 [SubtitleRepo] AIO Metadata 1: 0 subtitles in 493.172125ms
 [SubtitleRepo] OpenSubtitles v3: 64 subtitles in 496.89ms
@@ -5822,7 +5822,7 @@
 [SubtitleRepo] Querying AIO Metadata 1: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/movie/tt3118958.json
 [SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/movie/tt3118958.json
 [SubtitleRepo] Querying AIO Metadata 2: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/movie/tt3118958.json
-[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/eyJpIjoiTjN5UFFXNDhwaUNuTFZqeDdLSForQT09IiwiZSI6Ijhzc3lwUUhoNjJRQmhvdGx1bTI4VEVaNVVYMGcyOGt3ZCtVdWJFMW5VTjg9IiwidCI6ImEifQ/subtitles/movie/tt3118958.json
+[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/<redacted-config>/subtitles/movie/tt3118958.json
 [SubtitleRepo] AIO Metadata 2: 0 subtitles in 147.282625ms
 [SubtitleRepo] AIO Metadata 1: 0 subtitles in 151.568958ms
 [SubtitleRepo] OpenSubtitles v3: 54 subtitles in 212.064583ms
@@ -6655,7 +6655,7 @@
 [SubtitleRepo] Querying AIO Metadata 2: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/movie/tt6933238.json[SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/movie/tt6933238.json
 
 [SubtitleRepo] Querying AIO Metadata 1: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/movie/tt6933238.json
-[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/eyJpIjoiTjN5UFFXNDhwaUNuTFZqeDdLSForQT09IiwiZSI6Ijhzc3lwUUhoNjJRQmhvdGx1bTI4VEVaNVVYMGcyOGt3ZCtVdWJFMW5VTjg9IiwidCI6ImEifQ/subtitles/movie/tt6933238.json
+[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/<redacted-config>/subtitles/movie/tt6933238.json
 [SubtitleRepo] AIO Metadata 1: 0 subtitles in 208.765834ms
 [SubtitleRepo] OpenSubtitles v3: 64 subtitles in 209.500042ms
 [SubtitleRepo] AIO Metadata 2: 0 subtitles in 219.615417ms

@@ -55,7 +55,7 @@
 [SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/movie/tt3118958.json
 [SubtitleRepo] Querying AIO Metadata 1: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/movie/tt3118958.json
 [SubtitleRepo] Querying AIO Metadata 2: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/movie/tt3118958.json
-[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/eyJpIjoiTjN5UFFXNDhwaUNuTFZqeDdLSForQT09IiwiZSI6Ijhzc3lwUUhoNjJRQmhvdGx1bTI4VEVaNVVYMGcyOGt3ZCtVdWJFMW5VTjg9IiwidCI6ImEifQ/subtitles/movie/tt3118958.json
+[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/<redacted-config>/subtitles/movie/tt3118958.json
 [SubtitleRepo] AIO Metadata 2: 0 subtitles in 129.857708ms
 [SubtitleRepo] AIO Metadata 1: 0 subtitles in 132.429292ms
 [SubtitleRepo] OpenSubtitles v3: 54 subtitles in 150.012291ms
@@ -589,7 +589,7 @@
 [SubtitleRepo] Querying AIO Metadata 1: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/movie/tt3118958.json
 [SubtitleRepo] Querying AIO Metadata 2: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/movie/tt3118958.json
 [SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/movie/tt3118958.json
-[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/eyJpIjoiTjN5UFFXNDhwaUNuTFZqeDdLSForQT09IiwiZSI6Ijhzc3lwUUhoNjJRQmhvdGx1bTI4VEVaNVVYMGcyOGt3ZCtVdWJFMW5VTjg9IiwidCI6ImEifQ/subtitles/movie/tt3118958.json
+[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/<redacted-config>/subtitles/movie/tt3118958.json
 2026-10-16 18:36:31.814 NuvioTV[2549:1460742] [SeekProbe] seek gen=1 args=129.045 absolute status=0
 2026-10-16 18:36:31.828 NuvioTV[2549:1459196] [Aspect] fit override=-1 panscan=0.00 zoom=0.00 read=-1.000000
 [SubtitleRepo] OpenSubtitles v3: 54 subtitles in 155.637167ms
@@ -868,7 +868,7 @@ ognizer(state=0 press=[]), UITapGestureRecognizer(state=0 press=[0]), TouchBasel
 [SubtitleRepo] Skip BetterPosters: no subtitles resource
 [SubtitleRepo] Querying AIO Metadata 1: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/movie/tt3118958.json[SubtitleRepo] Querying AIO Metadata 2: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/movie/tt3118958.json
 
-[SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/movie/tt3118958.json[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/eyJpIjoiTjN5UFFXNDhwaUNuTFZqeDdLSForQT09IiwiZSI6Ijhzc3lwUUhoNjJRQmhvdGx1bTI4VEVaNVVYMGcyOGt3ZCtVdWJFMW5VTjg9IiwidCI6ImEifQ/subtitles/movie/tt3118958.json
+[SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/movie/tt3118958.json[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/<redacted-config>/subtitles/movie/tt3118958.json
 
 2026-10-16 18:37:10.329 NuvioTV[2549:1460739] [Chapters] n=20 dropped=0 dur=5223.3 src=json raw=[{"title":"Chapter 01","time":0.000000},{"title":"Chapter 02","time":180.889022},{"title":"Chapter 03","time":514.388867},{"title":"Chapter 04","time":733.649578},{"title":"Chapter 05","time":1080.204
 2026-10-16 18:37:10.336 NuvioTV[2549:1460739] [SeekProbe] seek gen=1 args=152.944 absolute status=0
@@ -944,7 +944,7 @@ ognizer(state=0 press=[]), UITapGestureRecognizer(state=0 press=[0]), TouchBasel
 [SubtitleRepo] Skip BetterPosters: no subtitles resource
 [SubtitleRepo] Querying AIO Metadata 1: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/series/tt30459041%3A1%3A7.json
 [SubtitleRepo] Querying AIO Metadata 2: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/series/tt30459041%3A1%3A7.json
-[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/eyJpIjoiTjN5UFFXNDhwaUNuTFZqeDdLSForQT09IiwiZSI6Ijhzc3lwUUhoNjJRQmhvdGx1bTI4VEVaNVVYMGcyOGt3ZCtVdWJFMW5VTjg9IiwidCI6ImEifQ/subtitles/series/tt30459041%3A1%3A7.json
+[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/<redacted-config>/subtitles/series/tt30459041%3A1%3A7.json
 [SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/series/tt30459041%3A1%3A7.json
 [SubtitleRepo] AIO Metadata 2: 0 subtitles in 224.643667ms
 [SubtitleRepo] AIO Metadata 1: 0 subtitles in 225.439792ms

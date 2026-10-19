@@ -55,7 +55,7 @@
 [SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/series/tt32268630%3A2%3A1.json
 [SubtitleRepo] Querying AIO Metadata 1: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/series/tt32268630%3A2%3A1.json[SubtitleRepo] Querying AIO Metadata 2: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/series/tt32268630%3A2%3A1.json
 
-[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/eyJpIjoiTjN5UFFXNDhwaUNuTFZqeDdLSForQT09IiwiZSI6Ijhzc3lwUUhoNjJRQmhvdGx1bTI4VEVaNVVYMGcyOGt3ZCtVdWJFMW5VTjg9IiwidCI6ImEifQ/subtitles/series/tt32268630%3A2%3A1.json
+[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/<redacted-config>/subtitles/series/tt32268630%3A2%3A1.json
 2026-10-16 18:41:37.218 NuvioTV[2568:1463358] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
 2026-10-16 18:41:37.219 NuvioTV[2568:1463358] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
 [SubtitleRepo] AIO Metadata 1: 0 subtitles in 260.146167ms

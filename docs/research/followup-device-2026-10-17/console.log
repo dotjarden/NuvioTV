@@ -74,7 +74,7 @@
 [SubtitleRepo] Skip AIO Streams: no subtitles resource
 [SubtitleRepo] Skip Cinemeta: no subtitles resource
 [SubtitleRepo] Skip Better Posters: no subtitles resource
-[SubtitleRepo] Querying Duck Streams: https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/eyJpIjoiQ3VUTklMeU1xTFpPazE5M0p5WHRwdz09IiwiZSI6InRFM3JzMHNpOU1FQ1QzSGhGbXowZnIvTjFBd0NtMnNTZ1dqS1gvNERmdXc9IiwidCI6ImEifQ/subtitles/series/tt30459041%3A1%3A1.json
+[SubtitleRepo] Querying Duck Streams: https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/<redacted-config>/subtitles/series/tt30459041%3A1%3A1.json
 2026-10-17 22:25:38.391 NuvioTV[4235:2018797] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
 2026-10-17 22:25:38.392 NuvioTV[4235:2018797] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
 [SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/series/tt30459041%3A1%3A1.json

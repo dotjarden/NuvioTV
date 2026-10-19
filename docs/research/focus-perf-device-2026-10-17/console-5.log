@@ -71,7 +71,7 @@
 [SubtitleRepo] Querying AIO Metadata 1: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/series/tt30459041%3A2%3A1.json
 [SubtitleRepo] Querying AIO Metadata 2: https://aiometadata.viren070.me/stremio/<redacted>/subtitles/series/tt30459041%3A2%3A1.json
 [SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/series/tt30459041%3A2%3A1.json
-[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/eyJpIjoiTjN5UFFXNDhwaUNuTFZqeDdLSForQT09IiwiZSI6Ijhzc3lwUUhoNjJRQmhvdGx1bTI4VEVaNVVYMGcyOGt3ZCtVdWJFMW5VTjg9IiwidCI6ImEifQ/subtitles/series/tt30459041%3A2%3A1.json
+[SubtitleRepo] Querying Duck Streams (AIOStreams): https://aiostreams-stable.forthewizards.uk/stremio/<redacted>/<redacted-config>/subtitles/series/tt30459041%3A2%3A1.json
 [SubtitleRepo] AIO Metadata 2: 0 subtitles in 139.397375ms
 [SubtitleRepo] AIO Metadata 1: 0 subtitles in 149.553291ms
 [SubtitleRepo] OpenSubtitles v3: 29 subtitles in 399.585584ms
