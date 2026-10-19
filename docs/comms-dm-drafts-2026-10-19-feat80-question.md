@@ -1,6 +1,11 @@
 # DM draft: FEAT-80 question to Steven (2026-10-19)
 
-**Status: DRAFT, NOT SENT.** Send only on Christian's go, after a pre-send `fetch-dms.sh` check. Attach `docs/research/feat80-top-bar-mock-2026-10-19/feat80-top-bar-mock.png` (1920×1080) as an image in the same message. The ego-browser recipe has only sent text so far, so the image upload is untested; if it fails, send the text and post the image by hand.
+**Status: SENT 2026-10-19 on Christian's go** after a quiet pre-send fetch (21:00:31Z).
+- The image went first, at 21:01:41.598Z: a 1600×900 JPEG uploaded through the chat's Matrix media API (`mxc://reddit.com/bzgns2wdnhwh1`) and posted as `m.image`. This is the first image send, and the API route works.
+- The text followed at 21:02:45.018Z through the UI recipe; the room walker showed it as the newest bubble.
+- `fetch-dms.sh` confirms one copy of each. DM watermark `2026-10-19T21:02:45.018Z`.
+
+Was: DRAFT, NOT SENT. Attach `docs/research/feat80-top-bar-mock-2026-10-19/feat80-top-bar-mock.png` (1920×1080) as an image in the same message. The ego-browser recipe has only sent text so far, so the image upload is untested; if it fails, send the text and post the image by hand.
 
 Why:
 - Batch M decision D1 builds FEAT-80 as a horizontal icon strip at the top-left ("Top Bar"), replacing rc8's Top.
