@@ -24,7 +24,13 @@ ATVREMOTE="$HERE/.venv/bin/atvremote"
 resolve_port() {
   local line
   line="$(timeout 3 dns-sd -L "$ATV_NAME" _companion-link._tcp local. 2>/dev/null | grep -m1 'can be reached at' || true)"
-  if [[ "$line" =~ :([0-9]+)\ \(interface ]]; then echo "${BASH_REMATCH[1]}"; else echo "$ATV_COMPANION_PORT"; fi
+  # mDNS can keep serving the pre-restart port (2026-10-19: 61193 refused, the box listened on
+  # 49153), so use the advertised port only if it accepts a connection.
+  if [[ "$line" =~ :([0-9]+)\ \(interface ]] && nc -z -G 2 "$ATV_ADDRESS" "${BASH_REMATCH[1]}" >/dev/null 2>&1; then
+    echo "${BASH_REMATCH[1]}"
+  else
+    echo "$ATV_COMPANION_PORT"
+  fi
 }
 PORT="$(resolve_port)"
 

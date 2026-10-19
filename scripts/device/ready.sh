@@ -54,6 +54,12 @@ state() {
     index($0, id) { s = $0; sub(/.*\(UDID\)[ \t]+/, "", s); split(s, f, /[ \t][ \t]+/); print f[1]; exit }'
 }
 st="$(state)"
+# "available (paired)" is devicectl's idle state: the box is on the network but the tunnel
+# opens only on demand. One call that needs the tunnel brings it up (2026-10-19: list alone never did).
+if [[ "$st" == "available (paired)" ]]; then
+  T 60 xcrun devicectl device info apps --device "$ATV_UDID" >/dev/null 2>&1 || true
+  st="$(state)"
+fi
 if [[ "$st" != "connected" ]]; then
   if (( WAKE )); then
     echo "Apple TV '$ATV_NAME' is ${st:-not listed}; sending wake over Companion and waiting up to ${WAIT}s"
