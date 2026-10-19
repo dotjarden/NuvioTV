@@ -176,3 +176,5 @@ Scope as decided 2026-10-19:
   - It asks Steven for his row order if the fix can't be confirmed.
 - **BUG-186: not run on the rig.** Test 2's Comet DV streams route to mpv, so the native "Infos" pill check needs a native-routed source. Agent C ships the panel-host latch fix (code-level, with UI legs), and the DM asks Steven which player he was in.
 - Rig note: one `console.sh start` launch came up in the background, and 12 Downs were lost; follow it with `atv.sh launch com.youngchris29.NuvioTV`.
+- **D8 revised 2026-10-19 (Christian):** 4 synopsis lines on Classic *where they fit*; fewer at Large; the hero frame never grows (the critique found 4 lines need about 83 pt where Large has 36).
+- **Wave 1 specs:** `docs/batch-m-w1-specs-2026-10-19.md` (Opus critique). FEAT-80 is held until Steven answers. Agent C is done: `2eba98cb0` BUG-185, `dfbe51b2b` BUG-189, `f974b85ec` BUG-186.
