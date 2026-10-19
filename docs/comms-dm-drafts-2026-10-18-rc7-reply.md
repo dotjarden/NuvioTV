@@ -1,35 +1,39 @@
-# DM draft: reply to Steven's rc7 verdict (2026-10-18)
+# DM draft: reply to Steven's rc7 verdict + beta.19-rc8 (2026-10-18)
 
-**Status: DRAFT, NOT SENT.** SlopMonster lint 5/5 (BUG-176 and thumbnail lines reworded after the device pass); Codex cleanse skipped (quota until 10-29). Written against the recommended scope in `docs/batch-g-steven-rc7-plan-2026-10-18.md` (D1–D5). If Christian picks a different option, the lines on Back from a player, the loading text and the sidebar change. Nothing promised for collections on Classic (FEAT-79, next batch).
+**Status: DRAFT, NOT SENT.** SlopMonster lint 5/5 (512 words). The rc7 reply and the rc8 announcement folded into one message on Christian's call. Codex cleanse skipped (quota until 10-29).
 
 Facts behind it:
-- Already merged after rc7, not cut: wide-poster trailers play inside the normal focus size (`457a38d34`).
-- External players: only the stream's own subtitles are passed today; no language preference reaches any player; audio language has no parameter in Infuse/SenPlayer/Native Player.
-- BUG-180 likely cause: blurred glass panels over the video; BUG-181: Dolby Vision thumbnails come only from frames already played.
-- BUG-178: no app layer scrolls with the page, so his video helps.
+- rc8 = build 140, tag `tvos-v0.3.0-beta.19-rc8` (`09b901c2` on `tvos-shared-extraction`), outer pointer `934c0f2`. IPA 29,652,348 B at https://filebin.net/nuviotv-beta19-rc8-0ec9a1e5/NuvioTV-beta19-rc8.ipa (filebin, until 2026-10-26; gofile backup https://gofile.io/d/arQBG41O).
+- Over rc7: Batch G (all rc7 items, device-passed by Christian 10-18 on his remote + the rig), BUG-176 fixed, wide trailers at the resting size (`457a38d34`), BUG-130 + BUG-128 (`843f84738`), Batch C part 2 (darker Detail bottom band, FEAT-60 compact logo; `38bd6b932`), synopsis "more" + glass focus (`ea09c4ea8`).
+- External players: only the stream's own subtitles were passed before; rc8 adds add-on subtitles, preferred language first; no audio language parameter exists in Infuse/SenPlayer/Native Player.
+- BUG-178: the fix hides tvOS's own top scroll-edge effect on Detail; unconfirmed against his case, so the video is still asked for if it persists.
+- New settings: Appearance › Rail Position (Centre default) and Rail Labels (Shown default), shown in Rail mode.
+- Not in rc8: FEAT-79 (Classic look in collections), Atmos (FEAT-75).
 
 ---
 
-Thanks Steven, that's a great report, and it's nice to hear the app feels a bit like yours too. It is, a lot of what's in it came from your lists.
+Hi Steven, thanks for the great report, and it's nice to hear the app feels a bit like yours too. It is, a lot of what's in it came from your lists.
 
-Already done for the next build:
-- Wide posters now play the trailer inside the normal Apple TV focus size, no enlargement.
-
-Working on for the next build:
+rc8 is ready: https://filebin.net/nuviotv-beta19-rc8-0ec9a1e5/NuvioTV-beta19-rc8.ipa (build 140). Everything from your rc7 list is in:
 - Back from a player (built-in or external) goes back to the page you started from, not the stream list.
 - With automatic selection, Play goes straight to the loading screen, no stream list in between.
-- The loading logo will keep pulsing through every step, and the text under it goes away. For series I'd keep the episode line, unless you'd rather see only the title there too.
-- The choppy film behind the menus: the menus use a blur effect that the Apple TV redraws on every video frame. I'm swapping it for a plain dark background in the player and will measure the difference on a Dolby Vision film.
-- Thumbnails on Animals: for Dolby Vision files, thumbnails only come from parts you've already played. Instead of an empty box, the preview now shows the nearest one from the last two minutes, or a dark card with the time when there's none that close.
+- The loading logo keeps pulsing through every step, and the text under it is gone. For series the episode line stays, unless you'd rather see only the title there too.
+- The choppy film behind the menus: they used a blur effect that the Apple TV redraws on every video frame. The player now uses a plain dark background, and the film stays smooth behind it.
+- Thumbnails on Animals: for Dolby Vision files, thumbnails only come from parts you've already played. Instead of an empty box, the preview shows the nearest one from the last two minutes, or a dark card with the time when there's none that close.
 - Focus ring and depth on trailers, episodes and season posters on the details page.
-- The actor biography: clicking it will open the full text, like the synopsis.
-- Continue Watching on Classic: the focused card will sit on top of its neighbour, like in your collections.
-- Sidebar: an option to place it at the top left, and one to show icons only.
+- The actor biography: clicking it opens the full text.
+- Continue Watching: the focused card sits on top of its neighbour.
+- Going back from a collection on the new Home: the Apple TV was briefly handing focus to a placeholder in the row above, which scrolled the page up before the app pulled it back. Fixed, and a press made right after coming back now counts the first time.
+- Sidebar: Settings › Appearance has Rail Position (Centre or Top, Centre by default) and Rail Labels (Shown or Icons Only, Shown by default).
+- Wide posters play the trailer inside the normal focus size, no enlargement.
+- The shadow moving up on the details page: I removed an Apple TV scroll effect that matches what you described. If you still see it, please send the video.
 
-The shadow that moves up on the details page: yes, please send the video. I can't find anything in the app that should move like that, so seeing it will help.
+Also new in rc8:
+- The darker area behind the synopsis and at the bottom of the details page you asked for.
+- A long synopsis ends with "more", the area lights up when focused, and Select opens the full text.
+- Scrolling down the details page shows the title's logo at the top.
+- Trailers no longer freeze partway through, and going full screen picks up where the background trailer was.
 
-Collections with the Classic look when Classic is selected: good idea, but it's a bigger change, so it'll come in the build after.
+Collections with the Classic look when Classic is selected: good idea, it's a bigger change, so it'll come in the build after. Atmos is still on my list.
 
-Going back from a collection on the new Home: found it. The Apple TV briefly handed focus to a placeholder in the row above, which scrolled the page up before the app pulled it back down. That's fixed for the next build, and a press made right after coming back now counts the first time. Atmos is still on my list.
-
-Your question about external players: right now the app's subtitle and language settings don't carry over. Only the subtitles that come with the stream itself are sent. In the next build I'll also send the subtitles from your subtitle add-ons, with your preferred language first. The audio language can't be passed: Infuse, SenPlayer and Native Player don't offer a way to set it from another app, so their own settings decide that.
+Your question about external players: the app's subtitle and language settings didn't carry over before; only the subtitles that come with the stream itself were sent. rc8 also sends the subtitles from your subtitle add-ons, with your preferred language first. The audio language can't be passed: Infuse, SenPlayer and Native Player don't offer a way to set it from another app, so their own settings decide that.
