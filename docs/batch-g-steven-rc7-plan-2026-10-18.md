@@ -46,3 +46,16 @@ rc8 also carries what merged after rc7: wide-poster trailers at the resting size
 Waves 1–4 touch separate files, so they can run as parallel agents (≤ 3 at a time, no concurrent builds). Gates: NuvioTVTests, Debug + Release, the Stage/Detail/player UI legs touched, one Opus review round (Codex quota until 10-29). Device pass in Test 2: G1/G2/G3 with auto-select on and off and an external player; G5 frame drops with the panel open on a DV file; G6 scrub on DV; G7 ring on/off; G8 scroll up on a long Detail page; G9 a long biography; G10 Classic CW; G11 collection → Home on Stage, five times; G12 both settings.
 
 Release notes must name the new settings (Rail Position, Rail Labels) and their defaults, and say Back from a player now returns to the page you started from.
+
+## OUTCOME (2026-10-18 night): BUILT, NOT MERGED
+Branch `claude/batch-g` off `38bd6b932`, pushed to `origin` as a backup; tip `c769bc5b6` (4 commits). D1–D5 approved as recommended.
+
+- Waves 1–3 written by three Opus agents (edit-only, no builds), Wave 4 and integration in the main session. Compile fixes: one type-check timeout in `ExternalSubtitleHandOff.merge`, the picker's cover pulled out of `body`.
+- Opus review r1: 0 P1 / 1 P2 (double external hand-off during the subtitle wait) / 4 P3, all fixed (`4e6c45958`).
+- Gates on the tip: NuvioTVTests 1906/0, Debug + Release simulator, Debug device.
+- Extra fix found on the device: Down off the Detail hero never counted as interacting, so the 4 s auto-play trailer went full screen under a viewer scrolling the rows (`fc962bab1`).
+- **G11 BUG-176 NOT FIXED.** Rig walk, Test 2, collection → folder → Back, 4/4 runs: about 0.6 s after the pop the focus engine's late restoration lands on SwiftUI's `UIKitFocusableFillerItem` (a lazy row stand-in), which scrolls the strip up a row (`position test-collection-1004 -> upcoming`); the pop restore's regrab then glides it back. With Short Rows Fit off it happened 0/1. The pending hold, a pager state seed and an early gate were tried and did not change it; all removed (`c769bc5b6`), two DEBUG probe lines kept (`restore outside focused=`, `position a -> b`). Follow-up: stop the filler landing (focus restoration preference on the strip, or re-anchor without a glide).
+
+Device pass so far (rig, Test 2): G10 CW card on top ✓; G9 biography ⌄ + full text ✓; D2 loading screen logo only ✓; G5 panel on the solid surface, readable ✓ (native engine; the mpv frame-drop measurement on a DV file is owed); G12 Rail Top + Icons Only ✓ (launch arguments, not saved); G7 ring off unchanged ✓.
+
+Owed on Christian's remote (the rig's Menu does not exit Apple's native player, P3-F8): G1 Back from a manual pick lands on Detail; G2/G3 with Auto-Play Best Source on; an external player hand-off (G4 subtitles); G5 on mpv with a DV file, panel open; G7 with the focus ring on; G8 scroll back up on a long Detail page.

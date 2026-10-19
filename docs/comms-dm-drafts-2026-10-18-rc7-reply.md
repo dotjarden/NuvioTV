@@ -1,6 +1,6 @@
 # DM draft: reply to Steven's rc7 verdict (2026-10-18)
 
-**Status: DRAFT, NOT SENT.** SlopMonster lint 5/5 (408 words); Codex cleanse skipped (quota until 10-29). Written against the recommended scope in `docs/batch-g-steven-rc7-plan-2026-10-18.md` (D1–D5). If Christian picks a different option, the lines on Back from a player, the loading text and the sidebar change. Nothing promised for collections on Classic (FEAT-79, next batch).
+**Status: DRAFT, NOT SENT.** SlopMonster lint 5/5 (450 words, BUG-176 line reworded after the device pass); Codex cleanse skipped (quota until 10-29). Written against the recommended scope in `docs/batch-g-steven-rc7-plan-2026-10-18.md` (D1–D5). If Christian picks a different option, the lines on Back from a player, the loading text and the sidebar change. Nothing promised for collections on Classic (FEAT-79, next batch).
 
 Facts behind it:
 - Already merged after rc7, not cut: wide-poster trailers play inside the normal focus size (`457a38d34`).
@@ -24,13 +24,12 @@ Working on for the next build:
 - Focus ring and depth on trailers, episodes and season posters on the details page.
 - The actor biography: clicking it will open the full text, like the synopsis.
 - Continue Watching on Classic: the focused card will sit on top of its neighbour, like in your collections.
-- Back from a collection on the new Home in one move.
 - Sidebar: an option to place it at the top left, and one to show icons only.
 
 The shadow that moves up on the details page: yes, please send the video. I can't find anything in the app that should move like that, so seeing it will help.
 
 Collections with the Classic look when Classic is selected: good idea, but it's a bigger change, so it'll come in the build after.
 
-Atmos is still on my list.
+Going back from a collection on the new Home: I found what causes the second move. The Apple TV briefly hands focus to a placeholder above the row, which scrolls up, and the app then pulls it back down. Fixing that properly needs more work, so it may not make the next build. Atmos is still on my list too.
 
 Your question about external players: right now the app's subtitle and language settings don't carry over. Only the subtitles that come with the stream itself are sent. In the next build I'll also send the subtitles from your subtitle add-ons, with your preferred language first. The audio language can't be passed: Infuse, SenPlayer and Native Player don't offer a way to set it from another app, so their own settings decide that.
