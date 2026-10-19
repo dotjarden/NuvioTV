@@ -178,3 +178,25 @@ Scope as decided 2026-10-19:
 - Rig note: one `console.sh start` launch came up in the background, and 12 Downs were lost; follow it with `atv.sh launch com.youngchris29.NuvioTV`.
 - **D8 revised 2026-10-19 (Christian):** 4 synopsis lines on Classic *where they fit*; fewer at Large; the hero frame never grows (the critique found 4 lines need about 83 pt where Large has 36).
 - **Wave 1 specs:** `docs/batch-m-w1-specs-2026-10-19.md` (Opus critique). FEAT-80 is held until Steven answers. Agent C is done: `2eba98cb0` BUG-185, `dfbe51b2b` BUG-189, `f974b85ec` BUG-186.
+
+### Wave 1 (2026-10-19)
+- **Build:**
+  - Agent A: `12649dc93` BUG-153, `2aa6e5ae8` BUG-187, `6942c6576` BUG-192, `09de45495` FEAT-82.
+  - Agent B: `a667b80c1` FEAT-61, `3d37cff9b` BUG-191, `2d975312d` BUG-188, `0a912da0a` BUG-190.
+  - Agent C: `f974b85ec` BUG-186, `dfbe51b2b` BUG-189, `2eba98cb0` BUG-185.
+  - Main session: `TrailerThumbnail` ringNoAnim gate, the K/N `ExternalPlayerIntentResultSuccess` fix `c7fd86123`, and xcstrings `f0d7113bf` (70 keys, five locales; the fr/es/de/it rail rows use the catalog's existing sidebar word).
+- **Reviews:**
+  - r1: 9 P3s; 7 fixed in `0a313379a`. Declined: #5 (BUG-188 immediate regrab vs a viewer Up within ~100 ms of landing, which goes on the device pass) and #7 (no toast when `UIApplication.open` reports false after the picker closed; there's no page-level toast host, and the old code reported Opened there).
+  - r2: **P1** `FolderClassicHeroHost` inside `#if DEBUG` broke Release; plus a P3 child-dismiss follow-up. Both fixed in `efc382936`; the Release sim build passes.
+  - r3: **CLEAN**. Its optional P3 (a once-per-close follow-up guard) is in `86af6a69b`.
+- **BUG-153 re-measure, ring on** (Release, Test 2, the same walk; `bug153-remeasure-results.txt`). Every run landed the same way (about 1,240 frames, 30 evals), so the cells compare directly:
+
+  | Config | Mean hitches | Runs |
+  |---|---|---|
+  | rc7 | 16.9 | 8 |
+  | **Batch M tip** | **17.5** | 8 |
+  | tip + `detailTileRingNoShadow` | 16.9 | 8 |
+  | tip + `detailTileRingNoAnim` | 17.8 | 6 |
+
+  SD about 2 in every cell. The pre-Batch M tip measured 23 and 26 on deep walks with the ring on. The rule was mean ≤ rc7 + 1 (17.9); **the tip alone meets it**, so the cheaper tile ring (G7's focus state moved into child rows, colour sampling only when it's used) is the fix. Neither new knob earns a setting; they stay as launch-only knobs.
+- NuvioTVTests: 2006/0, then 2014/0 after r1.

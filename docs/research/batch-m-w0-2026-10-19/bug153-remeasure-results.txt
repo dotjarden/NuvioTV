@@ -1,0 +1,30 @@
+m-ring-1 hitches=18 frames=1265 maxGap=66.7ms detailBodyEval=30
+m-ring-2 hitches=20 frames=1283 maxGap=83.4ms detailBodyEval=30
+m-ring-3 hitches=17 frames=1228 maxGap=75.5ms detailBodyEval=30
+m-ring-4 hitches=17 frames=1227 maxGap=100.1ms detailBodyEval=30
+m-ring-5 hitches=16 frames=1230 maxGap=72.1ms detailBodyEval=30
+m-ring-6 hitches=15 frames=1286 maxGap=66.7ms detailBodyEval=30
+m-ring-7 hitches=21 frames=1234 maxGap=74.4ms detailBodyEval=40
+m-ring-8 hitches=16 frames=1235 maxGap=100.1ms detailBodyEval=30
+m-noshadow-1 hitches=17 frames=1247 maxGap=89.8ms detailBodyEval=30
+m-noshadow-2 hitches=17 frames=1237 maxGap=85.6ms detailBodyEval=30
+m-noshadow-3 hitches=21 frames=1242 maxGap=82.2ms detailBodyEval=40
+m-noshadow-4 hitches=17 frames=1255 maxGap=83.4ms detailBodyEval=30
+m-noshadow-5 hitches=17 frames=1247 maxGap=85.1ms detailBodyEval=30
+m-noshadow-6 hitches=17 frames=1241 maxGap=84.9ms detailBodyEval=30
+m-noshadow-7 hitches=15 frames=1233 maxGap=66.7ms detailBodyEval=30
+m-noshadow-8 hitches=14 frames=1234 maxGap=80.6ms detailBodyEval=30
+m-noanim-1 hitches=16 frames=1235 maxGap=89.8ms detailBodyEval=30
+m-noanim-2 hitches=18 frames=1226 maxGap=91.5ms detailBodyEval=30
+m-noanim-3 hitches=18 frames=1230 maxGap=84.9ms detailBodyEval=30
+m-noanim-4 hitches=17 frames=1230 maxGap=75.4ms detailBodyEval=30
+m-noanim-5 hitches=21 frames=1242 maxGap=87.8ms detailBodyEval=30
+m-noanim-6 hitches=17 frames=1260 maxGap=87.6ms detailBodyEval=30
+rc7-ring-b1 hitches=17 frames=1254 maxGap=79.1ms detailBodyEval=30
+rc7-ring-b2 hitches=13 frames=1243 maxGap=99.9ms detailBodyEval=30
+rc7-ring-b3 hitches=18 frames=1231 maxGap=88.1ms detailBodyEval=30
+rc7-ring-b4 hitches=19 frames=1238 maxGap=89.3ms detailBodyEval=30
+rc7-ring-b5 hitches=15 frames=1238 maxGap=79.3ms detailBodyEval=30
+rc7-ring-b6 hitches=19 frames=1236 maxGap=84.5ms detailBodyEval=30
+rc7-ring-b7 hitches=16 frames=1230 maxGap=76.7ms detailBodyEval=30
+rc7-ring-b8 hitches=18 frames=1247 maxGap=97.8ms detailBodyEval=30
