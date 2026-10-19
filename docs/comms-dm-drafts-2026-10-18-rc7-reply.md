@@ -30,6 +30,6 @@ The shadow that moves up on the details page: yes, please send the video. I can'
 
 Collections with the Classic look when Classic is selected: good idea, but it's a bigger change, so it'll come in the build after.
 
-Going back from a collection on the new Home: I found what causes the second move. The Apple TV briefly hands focus to a placeholder above the row, which scrolls up, and the app then pulls it back down. Fixing that properly needs more work, so it may not make the next build. Atmos is still on my list too.
+Going back from a collection on the new Home: found it. The Apple TV briefly handed focus to a placeholder in the row above, which scrolled the page up before the app pulled it back down. That's fixed for the next build, and a press made right after coming back now counts the first time. Atmos is still on my list.
 
 Your question about external players: right now the app's subtitle and language settings don't carry over. Only the subtitles that come with the stream itself are sent. In the next build I'll also send the subtitles from your subtitle add-ons, with your preferred language first. The audio language can't be passed: Infuse, SenPlayer and Native Player don't offer a way to set it from another app, so their own settings decide that.

@@ -1,0 +1,295 @@
+[LaunchTrace] +0ms app_init
+[ExtPlayerProbe] canOpenURL(infuse://) = true
+2026-10-18 21:48:32.311 NuvioTV[5468:2507006] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 21:48:32.312 NuvioTV[5468:2507006] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 21:48:32.312 NuvioTV[5468:2507006] -canOpenURL: failed for URL: "vidhub://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 21:48:32.313 NuvioTV[5468:2507006] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 21:48:32.313 NuvioTV[5468:2507006] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 21:48:32.314 NuvioTV[5468:2507006] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 21:48:32.314 NuvioTV[5468:2507006] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 21:48:32.314 NuvioTV[5468:2507006] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 21:48:32.314 NuvioTV[5468:2507006] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ExtPlayerProbe] canOpenURL(vlc-x-callback://) = false
+[ExtPlayerProbe] canOpenURL(outplayer://) = false
+[ExtPlayerProbe] canOpenURL(open-vidhub://) = true
+[ExtPlayerProbe] canOpenURL(vidhub://) = false
+[ExtPlayerProbe] canOpenURL(senplayer://) = false
+[ExtPlayerProbe] canOpenURL(nativeplayer://) = false
+[ExtPlayerProbe] availablePlayers = ["infuse:Infuse", "vidhub:VidHub"]
+[ProfileSelect] auto-enter profile 3
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-18 21:48:32.687 NuvioTV[5468:2507006] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+2026-10-18 21:48:32.695 NuvioTV[5468:2507006] [HomeScrollProbe] plan regime=M330c1p1r0z0t37hzrt4 linkFrame=506 viewport=493 fits=0 CAPPED — rows still short, belt remains in play
+[LaunchTrace] +624ms home_appear
+2026-10-18 21:48:32.712 NuvioTV[5468:2507006] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-18 21:48:32.712 NuvioTV[5468:2507006] [TrailerPipeline] trailerLocation stage=row
+2026-10-18 21:48:32.712 NuvioTV[5468:2507006] [StageStrip] geometry rowH=458.5 P=498.5 H=541.5 stage=538.5 logo=150 synL=5 fits=1 posterH=330.0 font=system
+2026-10-18 21:48:32.750 NuvioTV[5468:2507006] [StageStrip] geometry rowH=532.0 P=572.0 H=615.0 stage=465.0 logo=110 synL=5 fits=1 posterH=403.3 font=system
+2026-10-18 21:48:32.989 NuvioTV[5468:2507006] [StageStrip] config P=572.0 H=615.0 rows=1 pageSeconds=0.5 fitRows=1
+2026-10-18 21:48:32.989 NuvioTV[5468:2507006] [StageStrip] fit row=continue-watching h=332
+2026-10-18 21:48:32.991 NuvioTV[5468:2507006] [StageStrip] position - -> continue-watching
+2026-10-18 21:48:32.994 NuvioTV[5468:2507006] [StageStrip] observers started
+2026-10-18 21:48:32.994 NuvioTV[5468:2507006] [StageStrip] marker attached
+2026-10-18 21:48:33.008 NuvioTV[5468:2507006] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,526,360,247 label=- id=-
+[LaunchTrace] +986ms artwork #1: mem=0 disk=1 net=0 fail=0
+[LaunchTrace] +1040ms artwork #10: mem=0 disk=10 net=0 fail=0
+2026-10-18 21:48:33.168 NuvioTV[5468:2507006] [StageStrip] baseline y=465.0 P=572.0 H=615.0 rows=1
+2026-10-18 21:48:33.278 NuvioTV[5468:2507006] [HomeHero] logoInk sync-sample ms=0.81
+2026-10-18 21:48:33.365 NuvioTV[5468:2507006] [AmbientWash] render id=movie:tt3118958 src=1920x1080 ms=66.5 lum=0.17
+2026-10-18 21:48:33.365 NuvioTV[5468:2507006] [AmbientWash] show id=movie:tt3118958 gen=1 late=0 ms=66.5 lum=0.17
+[LaunchTrace] +1930ms artwork #25: mem=1 disk=19 net=5 fail=0
+[LaunchTrace] +1940ms first_rows n=5 hero=8
+[LaunchTrace] +1940ms first_hero n=8
+2026-10-18 21:48:34.031 NuvioTV[5468:2507006] [TrailerPipeline] gates inlineTrailersEnabled=YES systemAutoplay=YES
+2026-10-18 21:48:34.084 NuvioTV[5468:2507006] [StageStrip] config P=572.0 H=615.0 rows=6 pageSeconds=0.5 fitRows=1
+2026-10-18 21:48:34.084 NuvioTV[5468:2507006] [StageStrip] fit row=community.betterposters:movie:trakt-trending h=532
+2026-10-18 21:48:34.092 NuvioTV[5468:2507006] [StageStrip] fit row=test-collection-1004 h=517
+[LaunchTrace] +2071ms artwork #50: mem=2 disk=43 net=5 fail=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +2272ms rows n=9
+2026-10-18 21:48:34.377 NuvioTV[5468:2507006] [StageStrip] config P=572.0 H=615.0 rows=10 pageSeconds=0.5 fitRows=1
+2026-10-18 21:48:36.119 NuvioTV[5468:2507006] [StageStrip] config P=572.0 H=615.0 rows=11 pageSeconds=0.5 fitRows=1
+2026-10-18 21:48:36.119 NuvioTV[5468:2507006] [StageStrip] fit row=upcoming h=332
+[LaunchTrace] +4117ms rows n=17
+2026-10-18 21:48:36.226 NuvioTV[5468:2507006] [StageStrip] config P=572.0 H=615.0 rows=19 pageSeconds=0.5 fitRows=1
+[LaunchTrace] +5922ms rows n=25
+2026-10-18 21:48:38.034 NuvioTV[5468:2507006] [StageStrip] config P=572.0 H=615.0 rows=27 pageSeconds=0.5 fitRows=1
+[LaunchTrace] +6709ms rows n=33
+2026-10-18 21:48:38.824 NuvioTV[5468:2507006] [StageStrip] config P=572.0 H=615.0 rows=35 pageSeconds=0.5 fitRows=1
+[LaunchTrace] +7283ms rows n=41
+2026-10-18 21:48:39.399 NuvioTV[5468:2507006] [StageStrip] config P=572.0 H=615.0 rows=43 pageSeconds=0.5 fitRows=1
+2026-10-18 21:48:57.265 NuvioTV[5468:2507006] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,898,360,247 label=- id=-
+2026-10-18 21:48:57.278 NuvioTV[5468:2507006] [StageStrip] page to=1 key=upcoming seconds=0.5 gen=1
+2026-10-18 21:48:57.307 NuvioTV[5468:2507006] [StageStrip] position continue-watching -> upcoming
+2026-10-18 21:48:57.307 NuvioTV[5468:2507006] [StageStrip] fit row=community.betterposters:movie:trakt-trending h=532
+2026-10-18 21:48:57.745 NuvioTV[5468:2507006] [AmbientWash] render id=series:tt32268630 src=1280x720 ms=18.5 lum=0.26
+2026-10-18 21:48:57.898 NuvioTV[5468:2507006] [StageStrip] swap phase=out id=series:tt32268630 sinceAct=591 pageEnd=551
+2026-10-18 21:48:57.958 NuvioTV[5468:2507006] [StageStrip] seg p=1 k=1 start=+82 dur=511 from=465.0 to=93.0 travel=-372.0
+2026-10-18 21:48:58.054 NuvioTV[5468:2507006] [StageStrip] swap phase=in id=series:tt32268630 sinceAct=747 pageEnd=708
+2026-10-18 21:48:58.055 NuvioTV[5468:2507006] [AmbientWash] show id=series:tt32268630 gen=2 late=0 ms=18.5 lum=0.26
+2026-10-18 21:48:58.259 NuvioTV[5468:2507006] [StageStrip] swap phase=idle id=series:tt32268630 sinceAct=952 pageEnd=912
+2026-10-18 21:48:59.360 NuvioTV[5468:2507006] [StageStrip] PRESS #1 0→1 moves=1 settle=593 travel=-372.0 afterRest=0 residual=fit src=vfocus-down key=upcoming close=idle
+2026-10-18 21:49:02.836 NuvioTV[5468:2507006] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,899,269,443 label=- id=-
+2026-10-18 21:49:02.850 NuvioTV[5468:2507006] [StageStrip] page to=2 key=test-collection-1004 seconds=0.5 gen=2
+2026-10-18 21:49:02.882 NuvioTV[5468:2507006] [StageStrip] position upcoming -> test-collection-1004
+2026-10-18 21:49:02.882 NuvioTV[5468:2507006] [StageStrip] fit row=community.betterposters:series:trakt-trending h=532
+2026-10-18 21:49:03.304 NuvioTV[5468:2507006] [AmbientWash] render id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 src=1920x1080 ms=15.2 lum=0.26
+2026-10-18 21:49:03.470 NuvioTV[5468:2507006] [StageStrip] swap phase=out id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 sinceAct=588 pageEnd=553
+2026-10-18 21:49:03.530 NuvioTV[5468:2507006] [StageStrip] seg p=2 k=1 start=+68 dur=512 from=93.0 to=-279.0 travel=-372.0
+2026-10-18 21:49:03.626 NuvioTV[5468:2507006] [StageStrip] swap phase=in id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 sinceAct=744 pageEnd=709
+2026-10-18 21:49:03.627 NuvioTV[5468:2507006] [AmbientWash] show id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 gen=3 late=0 ms=15.2 lum=0.26
+2026-10-18 21:49:03.831 NuvioTV[5468:2507006] [StageStrip] swap phase=idle id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 sinceAct=948 pageEnd=914
+2026-10-18 21:49:04.932 NuvioTV[5468:2507006] [StageStrip] PRESS #2 1→2 moves=1 settle=579 travel=-372.0 afterRest=0 residual=fit src=row key=test-collection-1004 close=idle
+2026-10-18 21:49:08.813 NuvioTV[5468:2507006] [StageStrip] seed id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 fallback=0
+2026-10-18 21:49:08.825 NuvioTV[5468:2507006] [AmbientWash] show id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 gen=1 late=0 ms=15.2 lum=0.26
+2026-10-18 21:49:08.831 NuvioTV[5468:2507006] [StageStrip] fit row=folder_test-folder-1004_2 h=489
+2026-10-18 21:49:08.831 NuvioTV[5468:2507006] [StageStrip] fit row=folder_test-folder-1004_1 h=489
+2026-10-18 21:49:08.833 NuvioTV[5468:2507006] [StageStrip] position - -> folder_test-folder-1004_1
+2026-10-18 21:49:08.974 NuvioTV[5468:2507006] [StageStrip] fit row=folder_test-folder-1004_1 h=532
+2026-10-18 21:49:08.997 NuvioTV[5468:2507006] [StageStrip] folder initial focus row=folder_test-folder-1004_1 pager=1
+2026-10-18 21:49:08.998 NuvioTV[5468:2507006] [StageStrip] restore row=folder_test-folder-1004_1 item=- rung=1 landed=0 reason=external
+2026-10-18 21:49:09.035 NuvioTV[5468:2507006] [StageStrip] fit row=folder_test-folder-1004_2 h=532
+2026-10-18 21:49:09.305 NuvioTV[5468:2507006] [StageStrip] restore row=folder_test-folder-1004_1 item=- rung=2 landed=0 reason=external
+2026-10-18 21:49:09.342 NuvioTV[5468:2507006] [StageStrip] focus → nil
+2026-10-18 21:49:09.343 NuvioTV[5468:2507006] [StageStrip] marker detached
+2026-10-18 21:49:09.364 NuvioTV[5468:2507006] [StageStrip] focus left the strip from row=test-collection-1004
+2026-10-18 21:49:09.364 NuvioTV[5468:2507006] [StageStrip] strip focus lost row=test-collection-1004
+2026-10-18 21:49:09.386 NuvioTV[5468:2507006] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,526,269,447 label=- id=-
+2026-10-18 21:49:09.399 NuvioTV[5468:2507006] [StageStrip] folder initial-item card=folder_test-folder-1004_1|tt22084616 forward=1
+[LaunchTrace] +37382ms artwork #100: mem=4 disk=90 net=6 fail=0
+2026-10-18 21:49:09.817 NuvioTV[5468:2507006] [AmbientWash] render id=movie:tt22084616 src=1280x720 ms=29.3 lum=0.26
+2026-10-18 21:49:09.855 NuvioTV[5468:2507006] [StageStrip] swap phase=out id=movie:tt22084616 sinceAct=455 pageEnd=-
+2026-10-18 21:49:10.011 NuvioTV[5468:2507006] [StageStrip] swap phase=in id=movie:tt22084616 sinceAct=611 pageEnd=-
+2026-10-18 21:49:10.035 NuvioTV[5468:2507006] [AmbientWash] show id=movie:tt22084616 gen=2 late=0 ms=29.3 lum=0.26
+2026-10-18 21:49:10.220 NuvioTV[5468:2507006] [StageStrip] swap phase=idle id=movie:tt22084616 sinceAct=820 pageEnd=-
+2026-10-18 21:49:11.727 NuvioTV[5468:2507079] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 21:49:11.727 NuvioTV[5468:2507079] [TrailerExtract] client=visionos video=P3uI5sLosKU hls=true formats=0 adaptive=27 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+2026-10-18 21:49:11.733 NuvioTV[5468:2507079] [TrailerExtract] client=android video=P3uI5sLosKU hls=false formats=1 adaptive=35 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl,metadataFormats
+2026-10-18 21:49:11.739 NuvioTV[5468:2507079] [TrailerExtract] client=ios video=P3uI5sLosKU hls=false formats=0 adaptive=32 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl,metadataFormats
+2026-10-18 21:49:11.898 NuvioTV[5468:2507233] [TrailerExtract] manifest client=visionos top variant 3840x2160
+2026-10-18 21:49:11.898 NuvioTV[5468:2507233] [TrailerExtract] selection: manifest=2160 progressive=360 (manifests collected=1)
+2026-10-18 21:49:11.899 NuvioTV[5468:2507233] [TrailerExtract] repack candidates: avcVideo=1080p avc1.640028 (visionos) m4aAudio=mp4a.40.2 (visionos) maxFps=0
+2026-10-18 21:49:12.266 NuvioTV[5468:2507262] [TrailerExtract] repack decision: avc=1080p vs progressive=2160p -> skip (progressive is not worse)
+2026-10-18 21:49:14.528 NuvioTV[5468:2507006] [TrailerQuality] presentationSize=1920x1080
+2026-10-18 21:49:16.068 NuvioTV[5468:2507006] [StageStrip] marker attached
+2026-10-18 21:49:16.107 NuvioTV[5468:2507006] [TrailerPipeline] trailerLocation stage=row
+2026-10-18 21:49:16.109 NuvioTV[5468:2507006] [StageStrip] fit row=upcoming h=332
+2026-10-18 21:49:16.109 NuvioTV[5468:2507006] [StageStrip] fit row=community.betterposters:series:trakt-trending h=532
+2026-10-18 21:49:16.109 NuvioTV[5468:2507006] [StageStrip] fit row=community.betterposters:movie:trakt-trending h=532
+2026-10-18 21:49:16.110 NuvioTV[5468:2507006] [StageStrip] fit row=test-collection-1004 h=517
+2026-10-18 21:49:16.110 NuvioTV[5468:2507006] [StageStrip] fit row=continue-watching h=332
+2026-10-18 21:49:16.134 NuvioTV[5468:2507006] [StageStrip] restore pop row=test-collection-1004 item=test-folder-1004 clock=1 source=home
+2026-10-18 21:49:16.134 NuvioTV[5468:2507006] [HomeScrollProbe] settle uncover no-scheduler
+2026-10-18 21:49:16.157 NuvioTV[5468:2507006] [StageStrip] restore row=test-collection-1004 item=test-folder-1004 rung=1 landed=0 reason=uncover source=home
+2026-10-18 21:49:16.184 NuvioTV[5468:2507006] [StageStrip] PRESS #3 2→2 moves=0 settle=0 travel=0.0 afterRest=0 residual=moving src=vfocus-up key=- close=idle
+2026-10-18 21:49:16.360 NuvioTV[5468:2507006] [TrailerQuality] presentationSize=1920x1080
+2026-10-18 21:49:16.472 NuvioTV[5468:2507006] [StageStrip] restore row=test-collection-1004 item=test-folder-1004 rung=2 landed=0 reason=uncover source=home
+2026-10-18 21:49:16.674 NuvioTV[5468:2507006] [StageStrip] focus → nil
+2026-10-18 21:49:16.700 NuvioTV[5468:2507006] [StageStrip] folder push origin=folder_test-folder-1004_1/tt22084616 via=current sinceLoss=- input=- rail=0
+2026-10-18 21:49:16.716 NuvioTV[5468:2507006] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,527,269,443 label=- id=-
+2026-10-18 21:49:16.724 NuvioTV[5468:2507006] [StageStrip] restore landed row=test-collection-1004 item=test-folder-1004 after=590 via=request source=home
+2026-10-18 21:49:16.724 NuvioTV[5468:2507006] [StageStrip] restore gate row=test-collection-1004 source=home
+2026-10-18 21:49:16.783 NuvioTV[5468:2507006] [StageStrip] focus → UIKitFocusableFillerItem frame=140,-218,1780,247 label=- id=-
+2026-10-18 21:49:16.795 NuvioTV[5468:2507006] [StageStrip] focus left the strip from row=test-collection-1004
+2026-10-18 21:49:16.795 NuvioTV[5468:2507006] [StageStrip] restore outside focused=UIKitFocusableFillerItem parent=PlatformGroupContainer frame=140,-218 1780x246
+2026-10-18 21:49:16.795 NuvioTV[5468:2507006] [StageStrip] strip focus lost row=test-collection-1004
+2026-10-18 21:49:16.911 NuvioTV[5468:2507006] [StageStrip] position test-collection-1004 -> upcoming
+2026-10-18 21:49:16.950 NuvioTV[5468:2507006] [StageStrip] restore regrab row=test-collection-1004 item=test-folder-1004 from=outside age=71 since=landing n=1 reason=uncover source=home
+2026-10-18 21:49:16.950 NuvioTV[5468:2507006] [StageStrip] page to=2 key=test-collection-1004 seconds=0.5 gen=3
+2026-10-18 21:49:16.950 NuvioTV[5468:2507006] [StageStrip] restore row=test-collection-1004 item=test-folder-1004 rung=1 landed=0 reason=uncover-regrab source=home
+2026-10-18 21:49:16.976 NuvioTV[5468:2507006] [StageStrip] position upcoming -> test-collection-1004
+2026-10-18 21:49:16.985 NuvioTV[5468:2507006] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,935,269,443 label=- id=-
+2026-10-18 21:49:17.046 NuvioTV[5468:2507006] [StageStrip] position test-collection-1004 -> upcoming
+2026-10-18 21:49:17.197 NuvioTV[5468:2507006] [StageStrip] position upcoming -> test-collection-1004
+2026-10-18 21:49:18.245 NuvioTV[5468:2507006] [StageStrip] seg p=0 k=1 start=n/a dur=1335 from=-279.0 to=-279.0 travel=0.0
+2026-10-18 21:49:18.369 NuvioTV[5468:2507006] [StageStrip] restore gate open row=test-collection-1004 why=window source=home
+2026-10-18 21:49:18.495 NuvioTV[5468:2507006] [StageStrip] PRESS #4 2→2 moves=0 settle=0 travel=0.0 afterRest=0 residual=fit src=vfocus-down key=- close=idle
+2026-10-18 21:49:22.822 NuvioTV[5468:2507006] [StageStrip] restore retired row=test-collection-1004 why=expired from=- input=- source=home
+2026-10-18 21:49:22.988 NuvioTV[5468:2507006] [StageStrip] seed id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 fallback=0
+2026-10-18 21:49:23.002 NuvioTV[5468:2507006] [AmbientWash] show id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 gen=1 late=0 ms=15.2 lum=0.26
+2026-10-18 21:49:23.040 NuvioTV[5468:2507006] [StageStrip] fit row=folder_test-folder-1004_2 h=532
+2026-10-18 21:49:23.041 NuvioTV[5468:2507006] [StageStrip] fit row=folder_test-folder-1004_1 h=532
+2026-10-18 21:49:23.053 NuvioTV[5468:2507006] [StageStrip] position - -> folder_test-folder-1004_1
+2026-10-18 21:49:23.070 NuvioTV[5468:2507006] [StageStrip] folder initial focus row=folder_test-folder-1004_1 pager=1
+2026-10-18 21:49:23.070 NuvioTV[5468:2507006] [StageStrip] restore row=folder_test-folder-1004_1 item=- rung=1 landed=0 reason=external
+2026-10-18 21:49:23.384 NuvioTV[5468:2507006] [StageStrip] restore row=folder_test-folder-1004_1 item=- rung=2 landed=0 reason=external
+2026-10-18 21:49:23.511 NuvioTV[5468:2507006] [StageStrip] focus → nil
+2026-10-18 21:49:23.513 NuvioTV[5468:2507006] [StageStrip] marker detached
+2026-10-18 21:49:23.570 NuvioTV[5468:2507006] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,526,269,447 label=- id=-
+2026-10-18 21:49:23.593 NuvioTV[5468:2507006] [StageStrip] folder initial-item card=folder_test-folder-1004_1|tt22084616 forward=1
+2026-10-18 21:49:23.612 NuvioTV[5468:2507006] [StageStrip] focus left the strip from row=test-collection-1004
+2026-10-18 21:49:23.612 NuvioTV[5468:2507006] [StageStrip] strip focus lost row=test-collection-1004
+2026-10-18 21:49:24.055 NuvioTV[5468:2507006] [StageStrip] swap phase=out id=movie:tt22084616 sinceAct=461 pageEnd=-
+2026-10-18 21:49:24.211 NuvioTV[5468:2507006] [StageStrip] swap phase=in id=movie:tt22084616 sinceAct=617 pageEnd=-
+2026-10-18 21:49:24.212 NuvioTV[5468:2507006] [AmbientWash] show id=movie:tt22084616 gen=2 late=0 ms=29.3 lum=0.26
+2026-10-18 21:49:24.418 NuvioTV[5468:2507006] [StageStrip] swap phase=idle id=movie:tt22084616 sinceAct=823 pageEnd=-
+2026-10-18 21:49:26.482 NuvioTV[5468:2507006] [TrailerQuality] presentationSize=1920x1080
+2026-10-18 21:49:28.722 NuvioTV[5468:2507006] [TrailerQuality] presentationSize=1920x1080
+2026-10-18 21:49:30.263 NuvioTV[5468:2507006] [StageStrip] marker attached
+2026-10-18 21:49:30.299 NuvioTV[5468:2507006] [TrailerPipeline] trailerLocation stage=row
+2026-10-18 21:49:30.301 NuvioTV[5468:2507006] [StageStrip] fit row=upcoming h=332
+2026-10-18 21:49:30.301 NuvioTV[5468:2507006] [StageStrip] fit row=community.betterposters:series:trakt-trending h=532
+2026-10-18 21:49:30.301 NuvioTV[5468:2507006] [StageStrip] fit row=community.betterposters:movie:trakt-trending h=532
+2026-10-18 21:49:30.301 NuvioTV[5468:2507006] [StageStrip] fit row=test-collection-1004 h=517
+2026-10-18 21:49:30.301 NuvioTV[5468:2507006] [StageStrip] fit row=continue-watching h=332
+2026-10-18 21:49:30.325 NuvioTV[5468:2507006] [StageStrip] restore pop row=test-collection-1004 item=test-folder-1004 clock=1 source=home
+2026-10-18 21:49:30.325 NuvioTV[5468:2507006] [HomeScrollProbe] settle uncover no-scheduler
+2026-10-18 21:49:30.348 NuvioTV[5468:2507006] [StageStrip] restore row=test-collection-1004 item=test-folder-1004 rung=1 landed=0 reason=uncover source=home
+2026-10-18 21:49:30.374 NuvioTV[5468:2507006] [StageStrip] PRESS #5 2→2 moves=0 settle=0 travel=0.0 afterRest=0 residual=moving src=vfocus-up key=- close=idle
+2026-10-18 21:49:30.658 NuvioTV[5468:2507006] [StageStrip] restore row=test-collection-1004 item=test-folder-1004 rung=2 landed=0 reason=uncover source=home
+2026-10-18 21:49:30.871 NuvioTV[5468:2507006] [StageStrip] focus → nil
+2026-10-18 21:49:30.900 NuvioTV[5468:2507006] [StageStrip] folder push origin=folder_test-folder-1004_1/tt22084616 via=current sinceLoss=- input=- rail=0
+2026-10-18 21:49:30.916 NuvioTV[5468:2507006] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,527,269,443 label=- id=-
+2026-10-18 21:49:30.923 NuvioTV[5468:2507006] [StageStrip] restore landed row=test-collection-1004 item=test-folder-1004 after=598 via=request source=home
+2026-10-18 21:49:30.923 NuvioTV[5468:2507006] [StageStrip] restore gate row=test-collection-1004 source=home
+2026-10-18 21:49:30.985 NuvioTV[5468:2507006] [StageStrip] focus → UIKitFocusableFillerItem frame=140,-218,1780,247 label=- id=-
+2026-10-18 21:49:30.995 NuvioTV[5468:2507006] [StageStrip] focus left the strip from row=test-collection-1004
+2026-10-18 21:49:30.995 NuvioTV[5468:2507006] [StageStrip] restore outside focused=UIKitFocusableFillerItem parent=PlatformGroupContainer frame=140,-218 1780x246
+2026-10-18 21:49:30.995 NuvioTV[5468:2507006] [StageStrip] strip focus lost row=test-collection-1004
+2026-10-18 21:49:31.108 NuvioTV[5468:2507006] [StageStrip] position test-collection-1004 -> upcoming
+2026-10-18 21:49:31.155 NuvioTV[5468:2507006] [StageStrip] restore regrab row=test-collection-1004 item=test-folder-1004 from=outside age=71 since=landing n=1 reason=uncover source=home
+2026-10-18 21:49:31.155 NuvioTV[5468:2507006] [StageStrip] page to=2 key=test-collection-1004 seconds=0.5 gen=4
+2026-10-18 21:49:31.155 NuvioTV[5468:2507006] [StageStrip] restore row=test-collection-1004 item=test-folder-1004 rung=1 landed=0 reason=uncover-regrab source=home
+2026-10-18 21:49:31.181 NuvioTV[5468:2507006] [StageStrip] position upcoming -> test-collection-1004
+2026-10-18 21:49:31.190 NuvioTV[5468:2507006] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,935,269,443 label=- id=-
+2026-10-18 21:49:31.252 NuvioTV[5468:2507006] [StageStrip] position test-collection-1004 -> upcoming
+2026-10-18 21:49:31.394 NuvioTV[5468:2507006] [StageStrip] position upcoming -> test-collection-1004
+2026-10-18 21:49:32.443 NuvioTV[5468:2507006] [StageStrip] seg p=0 k=1 start=n/a dur=1345 from=-279.0 to=-279.0 travel=0.0
+2026-10-18 21:49:32.543 NuvioTV[5468:2507006] [StageStrip] restore gate open row=test-collection-1004 why=window source=home
+2026-10-18 21:49:32.692 NuvioTV[5468:2507006] [StageStrip] PRESS #6 2→2 moves=0 settle=0 travel=0.0 afterRest=0 residual=fit src=vfocus-down key=- close=idle
+2026-10-18 21:49:36.952 NuvioTV[5468:2507006] [StageStrip] restore retired row=test-collection-1004 why=expired from=- input=- source=home
+2026-10-18 21:49:37.132 NuvioTV[5468:2507006] [StageStrip] seed id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 fallback=0
+2026-10-18 21:49:37.146 NuvioTV[5468:2507006] [AmbientWash] show id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 gen=1 late=0 ms=15.2 lum=0.26
+2026-10-18 21:49:37.186 NuvioTV[5468:2507006] [StageStrip] fit row=folder_test-folder-1004_2 h=532
+2026-10-18 21:49:37.186 NuvioTV[5468:2507006] [StageStrip] fit row=folder_test-folder-1004_1 h=532
+2026-10-18 21:49:37.199 NuvioTV[5468:2507006] [StageStrip] position - -> folder_test-folder-1004_1
+2026-10-18 21:49:37.216 NuvioTV[5468:2507006] [StageStrip] folder initial focus row=folder_test-folder-1004_1 pager=1
+2026-10-18 21:49:37.216 NuvioTV[5468:2507006] [StageStrip] restore row=folder_test-folder-1004_1 item=- rung=1 landed=0 reason=external
+2026-10-18 21:49:37.531 NuvioTV[5468:2507006] [StageStrip] restore row=folder_test-folder-1004_1 item=- rung=2 landed=0 reason=external
+2026-10-18 21:49:37.658 NuvioTV[5468:2507006] [StageStrip] focus → nil
+2026-10-18 21:49:37.661 NuvioTV[5468:2507006] [StageStrip] marker detached
+2026-10-18 21:49:37.715 NuvioTV[5468:2507006] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,526,269,447 label=- id=-
+2026-10-18 21:49:37.738 NuvioTV[5468:2507006] [StageStrip] folder initial-item card=folder_test-folder-1004_1|tt22084616 forward=1
+2026-10-18 21:49:37.757 NuvioTV[5468:2507006] [StageStrip] focus left the strip from row=test-collection-1004
+2026-10-18 21:49:37.757 NuvioTV[5468:2507006] [StageStrip] strip focus lost row=test-collection-1004
+2026-10-18 21:49:38.200 NuvioTV[5468:2507006] [StageStrip] swap phase=out id=movie:tt22084616 sinceAct=461 pageEnd=-
+2026-10-18 21:49:38.357 NuvioTV[5468:2507006] [StageStrip] swap phase=in id=movie:tt22084616 sinceAct=618 pageEnd=-
+2026-10-18 21:49:38.380 NuvioTV[5468:2507006] [AmbientWash] show id=movie:tt22084616 gen=2 late=0 ms=29.3 lum=0.26
+2026-10-18 21:49:38.565 NuvioTV[5468:2507006] [StageStrip] swap phase=idle id=movie:tt22084616 sinceAct=826 pageEnd=-
+2026-10-18 21:49:40.625 NuvioTV[5468:2507006] [TrailerQuality] presentationSize=1920x1080
+2026-10-18 21:49:42.969 NuvioTV[5468:2507006] [TrailerQuality] presentationSize=1920x1080
+2026-10-18 21:49:44.406 NuvioTV[5468:2507006] [StageStrip] marker attached
+2026-10-18 21:49:44.440 NuvioTV[5468:2507006] [TrailerPipeline] trailerLocation stage=row
+2026-10-18 21:49:44.442 NuvioTV[5468:2507006] [StageStrip] fit row=upcoming h=332
+2026-10-18 21:49:44.443 NuvioTV[5468:2507006] [StageStrip] fit row=community.betterposters:series:trakt-trending h=532
+2026-10-18 21:49:44.443 NuvioTV[5468:2507006] [StageStrip] fit row=community.betterposters:movie:trakt-trending h=532
+2026-10-18 21:49:44.443 NuvioTV[5468:2507006] [StageStrip] fit row=test-collection-1004 h=517
+2026-10-18 21:49:44.443 NuvioTV[5468:2507006] [StageStrip] fit row=continue-watching h=332
+2026-10-18 21:49:44.467 NuvioTV[5468:2507006] [StageStrip] restore pop row=test-collection-1004 item=test-folder-1004 clock=1 source=home
+2026-10-18 21:49:44.467 NuvioTV[5468:2507006] [HomeScrollProbe] settle uncover no-scheduler
+2026-10-18 21:49:44.489 NuvioTV[5468:2507006] [StageStrip] restore row=test-collection-1004 item=test-folder-1004 rung=1 landed=0 reason=uncover source=home
+2026-10-18 21:49:44.505 NuvioTV[5468:2507006] [StageStrip] PRESS #7 2→2 moves=0 settle=0 travel=0.0 afterRest=0 residual=moving src=vfocus-up key=- close=idle
+2026-10-18 21:49:44.804 NuvioTV[5468:2507006] [StageStrip] restore row=test-collection-1004 item=test-folder-1004 rung=2 landed=0 reason=uncover source=home
+2026-10-18 21:49:45.003 NuvioTV[5468:2507006] [StageStrip] focus → nil
+2026-10-18 21:49:45.032 NuvioTV[5468:2507006] [StageStrip] folder push origin=folder_test-folder-1004_1/tt22084616 via=current sinceLoss=- input=- rail=0
+2026-10-18 21:49:45.049 NuvioTV[5468:2507006] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,527,269,443 label=- id=-
+2026-10-18 21:49:45.058 NuvioTV[5468:2507006] [StageStrip] restore landed row=test-collection-1004 item=test-folder-1004 after=591 via=request source=home
+2026-10-18 21:49:45.058 NuvioTV[5468:2507006] [StageStrip] restore gate row=test-collection-1004 source=home
+2026-10-18 21:49:46.652 NuvioTV[5468:2507006] [StageStrip] restore gate open row=test-collection-1004 why=window source=home
+2026-10-18 21:49:51.133 NuvioTV[5468:2507006] [StageStrip] restore retired row=test-collection-1004 why=expired from=- input=- source=home
+2026-10-18 21:49:51.311 NuvioTV[5468:2507006] [StageStrip] seed id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 fallback=0
+2026-10-18 21:49:51.325 NuvioTV[5468:2507006] [AmbientWash] show id=nuvio.folder:nuvio-folder://test-collection-1004/test-folder-1004 gen=1 late=0 ms=15.2 lum=0.26
+2026-10-18 21:49:51.366 NuvioTV[5468:2507006] [StageStrip] fit row=folder_test-folder-1004_2 h=532
+2026-10-18 21:49:51.366 NuvioTV[5468:2507006] [StageStrip] fit row=folder_test-folder-1004_1 h=532
+2026-10-18 21:49:51.379 NuvioTV[5468:2507006] [StageStrip] position - -> folder_test-folder-1004_1
+2026-10-18 21:49:51.396 NuvioTV[5468:2507006] [StageStrip] folder initial focus row=folder_test-folder-1004_1 pager=1
+2026-10-18 21:49:51.397 NuvioTV[5468:2507006] [StageStrip] restore row=folder_test-folder-1004_1 item=- rung=1 landed=0 reason=external
+2026-10-18 21:49:51.697 NuvioTV[5468:2507006] [StageStrip] restore row=folder_test-folder-1004_1 item=- rung=2 landed=0 reason=external
+2026-10-18 21:49:51.836 NuvioTV[5468:2507006] [StageStrip] focus → nil
+2026-10-18 21:49:51.838 NuvioTV[5468:2507006] [StageStrip] marker detached
+2026-10-18 21:49:51.888 NuvioTV[5468:2507006] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,526,269,447 label=- id=-
+2026-10-18 21:49:51.909 NuvioTV[5468:2507006] [StageStrip] folder initial-item card=folder_test-folder-1004_1|tt22084616 forward=1
+2026-10-18 21:49:51.927 NuvioTV[5468:2507006] [StageStrip] focus left the strip from row=test-collection-1004
+2026-10-18 21:49:51.927 NuvioTV[5468:2507006] [StageStrip] strip focus lost row=test-collection-1004
+2026-10-18 21:49:52.364 NuvioTV[5468:2507006] [StageStrip] swap phase=out id=movie:tt22084616 sinceAct=454 pageEnd=-
+2026-10-18 21:49:52.522 NuvioTV[5468:2507006] [StageStrip] swap phase=in id=movie:tt22084616 sinceAct=612 pageEnd=-
+2026-10-18 21:49:52.543 NuvioTV[5468:2507006] [AmbientWash] show id=movie:tt22084616 gen=2 late=0 ms=29.3 lum=0.26
+2026-10-18 21:49:52.729 NuvioTV[5468:2507006] [StageStrip] swap phase=idle id=movie:tt22084616 sinceAct=818 pageEnd=-
+2026-10-18 21:49:54.794 NuvioTV[5468:2507006] [TrailerQuality] presentationSize=1920x1080
+2026-10-18 21:49:57.116 NuvioTV[5468:2507006] [TrailerQuality] presentationSize=1920x1080
+2026-10-18 21:49:58.743 NuvioTV[5468:2507006] [StageStrip] marker attached
+2026-10-18 21:49:58.782 NuvioTV[5468:2507006] [TrailerPipeline] trailerLocation stage=row
+2026-10-18 21:49:58.784 NuvioTV[5468:2507006] [StageStrip] fit row=upcoming h=332
+2026-10-18 21:49:58.784 NuvioTV[5468:2507006] [StageStrip] fit row=community.betterposters:series:trakt-trending h=532
+2026-10-18 21:49:58.784 NuvioTV[5468:2507006] [StageStrip] fit row=community.betterposters:movie:trakt-trending h=532
+2026-10-18 21:49:58.784 NuvioTV[5468:2507006] [StageStrip] fit row=test-collection-1004 h=517
+2026-10-18 21:49:58.784 NuvioTV[5468:2507006] [StageStrip] fit row=continue-watching h=332
+2026-10-18 21:49:58.808 NuvioTV[5468:2507006] [StageStrip] restore pop row=test-collection-1004 item=test-folder-1004 clock=1 source=home
+2026-10-18 21:49:58.809 NuvioTV[5468:2507006] [HomeScrollProbe] settle uncover no-scheduler
+2026-10-18 21:49:58.831 NuvioTV[5468:2507006] [StageStrip] restore row=test-collection-1004 item=test-folder-1004 rung=1 landed=0 reason=uncover source=home
+2026-10-18 21:49:59.136 NuvioTV[5468:2507006] [StageStrip] restore row=test-collection-1004 item=test-folder-1004 rung=2 landed=0 reason=uncover source=home
+2026-10-18 21:49:59.349 NuvioTV[5468:2507006] [StageStrip] focus → nil
+2026-10-18 21:49:59.377 NuvioTV[5468:2507006] [StageStrip] folder push origin=folder_test-folder-1004_1/tt22084616 via=current sinceLoss=- input=- rail=0
+2026-10-18 21:49:59.393 NuvioTV[5468:2507006] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,527,269,443 label=- id=-
+2026-10-18 21:49:59.400 NuvioTV[5468:2507006] [StageStrip] restore landed row=test-collection-1004 item=test-folder-1004 after=591 via=request source=home
+2026-10-18 21:49:59.400 NuvioTV[5468:2507006] [StageStrip] restore gate row=test-collection-1004 source=home
+2026-10-18 21:49:59.458 NuvioTV[5468:2507006] [StageStrip] focus → UIKitFocusableFillerItem frame=140,-218,1780,247 label=- id=-
+2026-10-18 21:49:59.469 NuvioTV[5468:2507006] [StageStrip] focus left the strip from row=test-collection-1004
+2026-10-18 21:49:59.469 NuvioTV[5468:2507006] [StageStrip] restore outside focused=UIKitFocusableFillerItem parent=PlatformGroupContainer frame=140,-218 1780x246
+2026-10-18 21:49:59.469 NuvioTV[5468:2507006] [StageStrip] strip focus lost row=test-collection-1004
+2026-10-18 21:49:59.587 NuvioTV[5468:2507006] [StageStrip] position test-collection-1004 -> upcoming
+2026-10-18 21:49:59.628 NuvioTV[5468:2507006] [StageStrip] restore regrab row=test-collection-1004 item=test-folder-1004 from=outside age=69 since=landing n=1 reason=uncover source=home
+2026-10-18 21:49:59.628 NuvioTV[5468:2507006] [StageStrip] page to=2 key=test-collection-1004 seconds=0.5 gen=5
+2026-10-18 21:49:59.628 NuvioTV[5468:2507006] [StageStrip] restore row=test-collection-1004 item=test-folder-1004 rung=1 landed=0 reason=uncover-regrab source=home
+2026-10-18 21:49:59.654 NuvioTV[5468:2507006] [StageStrip] position upcoming -> test-collection-1004
+2026-10-18 21:49:59.664 NuvioTV[5468:2507006] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,938,269,443 label=- id=-
+2026-10-18 21:49:59.721 NuvioTV[5468:2507006] [StageStrip] position test-collection-1004 -> upcoming
+2026-10-18 21:49:59.887 NuvioTV[5468:2507006] [StageStrip] position upcoming -> test-collection-1004
+2026-10-18 21:50:00.921 NuvioTV[5468:2507006] [StageStrip] seg p=0 k=1 start=n/a dur=1335 from=-279.0 to=-279.0 travel=0.0
+2026-10-18 21:50:01.041 NuvioTV[5468:2507006] [StageStrip] restore gate open row=test-collection-1004 why=window source=home
+2026-10-18 21:50:01.171 NuvioTV[5468:2507006] [StageStrip] PRESS #8 2→2 moves=0 settle=0 travel=0.0 afterRest=0 residual=fit src=vfocus-down key=- close=idle
+Launched application with com.youngchris29.NuvioTV bundle identifier.
+Waiting for the application to terminate...
+App terminated due to signal 9.

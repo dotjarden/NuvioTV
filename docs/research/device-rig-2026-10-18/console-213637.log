@@ -481,3 +481,6 @@
 2026-10-18 21:40:36.376 NuvioTV[5451:2503166] [TrailerExtract] repack decision: avc=1080p vs progressive=2160p -> skip (progressive is not worse)
 2026-10-18 21:40:38.486 NuvioTV[5451:2501346] [TrailerQuality] presentationSize=1920x1080
 2026-10-18 21:40:40.454 NuvioTV[5451:2501346] [TrailerQuality] presentationSize=1920x1080
+Launched application with com.youngchris29.NuvioTV bundle identifier.
+Waiting for the application to terminate...
+App terminated due to signal 9.
