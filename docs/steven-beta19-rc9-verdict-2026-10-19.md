@@ -5,7 +5,7 @@ Source: Reddit chat with u/mrStevenx3, read 2026-10-19 19:23Z in the interactive
 - 17:58:15Z: 2 photos, saved in `docs/research/steven-beta19-rc9-photos-2026-10-19/`.
 - 18:04Z and 18:10Z: two follow-up suggestions.
 
-The video is not downloaded yet; it waits for Christian's go. He tested rc9 (build 141), which carries every rc8 fix.
+Video downloaded on Christian's go (2026-10-19 19:30Z) to `~/Downloads/steven-rc9-smash-2026-10-19/` (zip `~/Downloads/Smash (1).zip`, 475,126,748 B); kept out of the repo. Key frames and the 3 JPEGs are in the photos folder (see Video review). He tested rc9 (build 141), which carries every rc8 fix.
 
 ## Photos
 - **Photo 1** (`photo-1-d0v3s8rnqgwh1.jpeg`): the Classic Home's collection page in Rows layout, "Walt Disney" folder. A Studios row (Disney, Pixar, DreamWorks, Ghibli, Marvel, DC); the hero shows only the collection's own backdrop and logo, with no focused title poster or synopsis. This is his FEAT-79 "not right" (BUG-190). The tips of the Genres row show at the bottom edge.
@@ -74,3 +74,41 @@ The video is not downloaded yet; it waits for Christian's go. He tested rc9 (bui
 - **Goes into P5:** BUG-181 (the DV thumbnail path) and BUG-180's menu half (player chrome).
 - **New design batch, owed his video first:** FEAT-81 Detail redesign and UX-17 Home layout.
 - **Small fixes:** BUG-185, BUG-187, BUG-188, BUG-189, BUG-190, BUG-192, FEAT-61, FEAT-82, plus the FEAT-80 and FEAT-73 rescope.
+
+## Video review (`IMG_9025.mov`, 3:52, 4K phone video; reviewed from 3 s contact sheets)
+
+Key frames are `docs/research/steven-beta19-rc9-photos-2026-10-19/v-<seconds>s-*.jpg`. The three transfer JPEGs are `smash-IMG_902{2,3,4}.jpeg`.
+
+**Our app (0:00–2:12)**
+- **0:00–0:09 Home (Stage):** Top 10 films and series, then a Streaming Services row with the Studios row's tips at the bottom edge (`v-007s`). This is the UX-17 tips.
+- **0:09–0:24 Animals, Detail → loading screen:** the centred logo pulses on black (`v-018s`), as confirmed.
+- **0:27–0:36 Playback start:** near-black frames show two bright squares that stay fixed while the content changes (`v-031s`). These are almost certainly room-light reflections on the dark screen. **Not filed.**
+- **0:36–0:51 Animals on mpv, scrubbing:** the preview card is an empty grey box under "Part 01" at 12:42 and 27:35 (`v-045s`). BUG-181 on his DV P5 MP4. `smash-IMG_9022` shows the same grey card at 14:52 on another title.
+- **1:03–1:21 Animals Detail scrolled:**
+  - the compact "ANIMALS" logo sits over the trailers row (`v-072s`), which is FEAT-60's overlap;
+  - the source badge (Apple TV, 4K) shows top-right on the hero.
+- **1:21 Back to Home:** two "ANIMALS" logos stacked for a moment (`v-081s`). Likely the BUG-188 flicker, or the hero logo crossfading.
+- **1:24–1:51 Collections:**
+  - the Netflix, Disney+ and Prime Video folder pages;
+  - the Netflix service tile renders half red and half black when focused (~1:48). Watch for this: it may be the trailer card's morph mid-frame.
+- **1:54–2:12 Classic Home** (Crystal Lake, HOPE), then **the Walt Disney collection in Classic Rows** (`v-129s`): the hero carries only the collection art, with no title poster or synopsis (BUG-190).
+
+**References (2:15–3:24)**
+- **2:15–2:36 Apple TV app, *Lucky*** (`v-147s`):
+  - the hero has the title, the synopsis and a "Lire le premier épisode" button;
+  - one Down reveals Saison 1, Bandes-annonces, Similaires and the cast over a blurred ambient background.
+  This is the FEAT-81 reference.
+- **2:39–3:15 Official Nuvio** (English UI: Play, Trailers, Cast, Related, About):
+  - the Detail hero has Play under the title, the synopsis to the right and a blur behind it (`v-168s`);
+  - scrolling shows Trailers / Cast / Related / About over the same blur (`v-177s`);
+  - its Home rows (Elemental, Nouveaux films, Top 10) are the UX-17 size and spacing reference.
+- **3:15–3:24** the tvOS Home screen and another launcher, in passing.
+
+**Our app again (3:24–3:52)**
+- Classic and Stage Home: Crystal Lake, Walt Disney Rows, The Trap, Tenzing, missing, Friends.
+- At 3:24 and 3:39 the row heading shows twice for a frame ("Séries recommandées pour vous", "Top 10 séries"; `v-219s`) while the strip moves. That's evidence for his "lacks smoothness" (UX-16): headings crossfading or doubling mid-transition. Check against the Stage heading animation before filing anything new.
+
+**Transfer JPEGs**
+- **`smash-IMG_9022`:** the grey scrub preview, see above.
+- **`smash-IMG_9023`:** a film playing with a lone "Infos" pill at the bottom-left. This is most likely BUG-186's stuck state, where the info affordance kept focus and Menu wouldn't leave. The pill is the mpv bar's Info control with the rest of the bar gone.
+- **`smash-IMG_9024`:** Discover with the Films / Horror / Popular / Browse pills and the genre menu open. Every genre is in English except "Tout". The genre names and "Popular" likely come from the add-on's catalog `extra` options, not from our strings. So BUG-189 is partly add-on data; check which labels the app owns ("Browse", the type pill, "Tout") before fixing.
