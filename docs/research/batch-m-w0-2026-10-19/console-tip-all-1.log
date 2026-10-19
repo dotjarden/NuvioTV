@@ -1,0 +1,133 @@
+[ProfileSelect] auto-enter profile 3
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-19 16:37:33.611 NuvioTV[483:37824] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+2026-10-19 16:37:33.629 NuvioTV[483:37824] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-19 16:37:33.629 NuvioTV[483:37824] [TrailerPipeline] trailerLocation stage=row
+2026-10-19 16:37:34.152 NuvioTV[483:37824] [HomeHero] logoInk sync-sample ms=0.46
+2026-10-19 16:37:34.984 NuvioTV[483:37824] [TrailerPipeline] gates inlineTrailersEnabled=YES systemAutoplay=YES
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/<redacted-id>/Library/Caches/top-shelf.json
+2026-10-19 16:37:46.299 NuvioTV[483:37824] [NavRail] arm reason=menu origin=request tab=0
+2026-10-19 16:37:46.349 NuvioTV[483:37824] [Rail] gate=on mode=uikit
+2026-10-19 16:37:48.887 NuvioTV[483:37824] [NavRail] select tab=2 from=0
+2026-10-19 16:37:48.888 NuvioTV[483:37824] [Rail] gate=off mode=uikit
+2026-10-19 16:37:48.982 NuvioTV[483:37824] [NavRail] exit via=select route=none result=fallback
+2026-10-19 16:37:53.120 NuvioTV[483:37824] [UX6] y=0 inset=0
+2026-10-19 16:37:53.129 NuvioTV[483:37824] [UX6] y=-157 inset=157
+2026-10-19 16:37:53.702 NuvioTV[483:37824] [BUG41] detailBodyEval=10
+2026-10-19 16:37:54.322 NuvioTV[483:37877] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-19 16:37:54.322 NuvioTV[483:37877] [TrailerExtract] client=visionos video=PsvUvqXoTpE hls=true formats=0 adaptive=23 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+2026-10-19 16:37:54.324 NuvioTV[483:37877] [TrailerExtract] client=android video=PsvUvqXoTpE hls=false formats=1 adaptive=25 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl,metadataFormats
+2026-10-19 16:37:54.326 NuvioTV[483:37877] [TrailerExtract] client=ios video=PsvUvqXoTpE hls=false formats=0 adaptive=23 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl,metadataFormats
+2026-10-19 16:37:54.501 NuvioTV[483:37887] [TrailerExtract] manifest client=visionos top variant 1920x1080
+2026-10-19 16:37:54.501 NuvioTV[483:37887] [TrailerExtract] selection: manifest=1080 progressive=360 (manifests collected=1)
+2026-10-19 16:37:54.501 NuvioTV[483:37887] [TrailerExtract] repack candidates: avcVideo=1080p avc1.640028 (visionos) m4aAudio=mp4a.40.2 (visionos) maxFps=0
+2026-10-19 16:37:54.836 NuvioTV[483:37877] [TrailerExtract] repack decision: avc=1080p vs progressive=1080p -> ELIGIBLE
+2026-10-19 16:37:55.159 NuvioTV[483:37976] [TrailerRepack] listener start port=8230 prefer=- gen=1 conns=0
+2026-10-19 16:37:55.160 NuvioTV[483:37877] [TrailerRepack] listener ready port=8230 waiters=1 gen=1 conns=0
+2026-10-19 16:37:55.160 NuvioTV[483:37877] [TrailerRepack] serving 1920x1080 avc1+mp4a (31+17 segments) at http://127.0.0.1:8230/<redacted-config>/master.m3u8 fps=24 itag=137 n=0
+2026-10-19 16:37:59.565 NuvioTV[483:37824] [UX6] y=-147 inset=157
+2026-10-19 16:37:59.583 NuvioTV[483:37824] [UX6] y=-127 inset=157
+2026-10-19 16:37:59.600 NuvioTV[483:37824] [UX6] y=-97 inset=157
+2026-10-19 16:37:59.617 NuvioTV[483:37824] [UX6] y=-57 inset=157
+2026-10-19 16:37:59.633 NuvioTV[483:37824] [UX6] y=-12 inset=157
+2026-10-19 16:37:59.657 NuvioTV[483:37824] [UX6] y=35 inset=157
+2026-10-19 16:37:59.684 NuvioTV[483:37824] [UX6] y=93 inset=157
+2026-10-19 16:37:59.699 NuvioTV[483:37824] [UX6] y=125 inset=157
+2026-10-19 16:37:59.716 NuvioTV[483:37824] [UX6] y=154 inset=157
+2026-10-19 16:37:59.732 NuvioTV[483:37824] [UX6] y=180 inset=157
+2026-10-19 16:37:59.749 NuvioTV[483:37824] [UX6] y=203 inset=157
+2026-10-19 16:37:59.765 NuvioTV[483:37824] [UX6] y=224 inset=157
+2026-10-19 16:37:59.782 NuvioTV[483:37824] [UX6] y=243 inset=157
+2026-10-19 16:37:59.799 NuvioTV[483:37824] [UX6] y=260 inset=157
+2026-10-19 16:37:59.816 NuvioTV[483:37824] [UX6] y=275 inset=157
+2026-10-19 16:37:59.832 NuvioTV[483:37824] [UX6] y=289 inset=157
+2026-10-19 16:37:59.849 NuvioTV[483:37824] [UX6] y=301 inset=157
+2026-10-19 16:37:59.866 NuvioTV[483:37824] [UX6] y=313 inset=157
+2026-10-19 16:37:59.882 NuvioTV[483:37824] [UX6] y=323 inset=157
+2026-10-19 16:37:59.899 NuvioTV[483:37824] [UX6] y=332 inset=157
+2026-10-19 16:37:59.916 NuvioTV[483:37824] [UX6] y=340 inset=157
+2026-10-19 16:37:59.932 NuvioTV[483:37824] [UX6] y=347 inset=157
+2026-10-19 16:37:59.953 NuvioTV[483:37824] [UX6] y=355 inset=157
+2026-10-19 16:37:59.983 NuvioTV[483:37824] [UX6] y=365 inset=157
+2026-10-19 16:38:00.001 NuvioTV[483:37824] [UX6] y=370 inset=157
+2026-10-19 16:38:00.016 NuvioTV[483:37824] [UX6] y=374 inset=157
+2026-10-19 16:38:00.033 NuvioTV[483:37824] [UX6] y=378 inset=157
+2026-10-19 16:38:00.049 NuvioTV[483:37824] [UX6] y=381 inset=157
+2026-10-19 16:38:00.066 NuvioTV[483:37824] [UX6] y=384 inset=157
+2026-10-19 16:38:00.083 NuvioTV[483:37824] [UX6] y=387 inset=157
+2026-10-19 16:38:00.099 NuvioTV[483:37824] [UX6] y=390 inset=157
+2026-10-19 16:38:00.116 NuvioTV[483:37824] [UX6] y=392 inset=157
+2026-10-19 16:38:00.134 NuvioTV[483:37824] [UX6] y=394 inset=157
+2026-10-19 16:38:00.150 NuvioTV[483:37824] [UX6] y=396 inset=157
+2026-10-19 16:38:00.166 NuvioTV[483:37824] [UX6] y=398 inset=157
+2026-10-19 16:38:00.183 NuvioTV[483:37824] [UX6] y=399 inset=157
+2026-10-19 16:38:00.199 NuvioTV[483:37824] [UX6] y=400 inset=157
+2026-10-19 16:38:00.216 NuvioTV[483:37824] [UX6] y=402 inset=157
+2026-10-19 16:38:00.233 NuvioTV[483:37824] [UX6] y=403 inset=157
+2026-10-19 16:38:00.249 NuvioTV[483:37824] [UX6] y=404 inset=157
+2026-10-19 16:38:00.283 NuvioTV[483:37824] [UX6] y=405 inset=157
+2026-10-19 16:38:00.300 NuvioTV[483:37824] [UX6] y=406 inset=157
+2026-10-19 16:38:00.317 NuvioTV[483:37824] [UX6] y=407 inset=157
+2026-10-19 16:38:00.350 NuvioTV[483:37824] [UX6] y=408 inset=157
+2026-10-19 16:38:00.383 NuvioTV[483:37824] [UX6] y=409 inset=157
+2026-10-19 16:38:00.434 NuvioTV[483:37824] [UX6] y=410 inset=157
+2026-10-19 16:38:00.519 NuvioTV[483:37824] [UX6] y=411 inset=157
+2026-10-19 16:38:00.653 NuvioTV[483:37824] [UX6] y=412 inset=157
+2026-10-19 16:38:14.531 NuvioTV[483:37824] [BUG41] detailBodyEval=20
+2026-10-19 16:38:15.450 NuvioTV[483:37824] [UX6] y=402 inset=157
+2026-10-19 16:38:15.465 NuvioTV[483:37824] [UX6] y=382 inset=157
+2026-10-19 16:38:15.481 NuvioTV[483:37824] [UX6] y=352 inset=157
+2026-10-19 16:38:15.498 NuvioTV[483:37824] [UX6] y=312 inset=157
+2026-10-19 16:38:15.516 NuvioTV[483:37824] [UX6] y=265 inset=157
+2026-10-19 16:38:15.532 NuvioTV[483:37824] [UX6] y=223 inset=157
+2026-10-19 16:38:15.548 NuvioTV[483:37824] [UX6] y=184 inset=157
+2026-10-19 16:38:15.566 NuvioTV[483:37824] [UX6] y=150 inset=157
+2026-10-19 16:38:15.582 NuvioTV[483:37824] [UX6] y=119 inset=157
+2026-10-19 16:38:15.598 NuvioTV[483:37824] [UX6] y=91 inset=157
+2026-10-19 16:38:15.615 NuvioTV[483:37824] [UX6] y=66 inset=157
+2026-10-19 16:38:15.631 NuvioTV[483:37824] [UX6] y=44 inset=157
+2026-10-19 16:38:15.649 NuvioTV[483:37824] [UX6] y=24 inset=157
+2026-10-19 16:38:15.665 NuvioTV[483:37824] [UX6] y=5 inset=157
+2026-10-19 16:38:15.682 NuvioTV[483:37824] [UX6] y=-10 inset=157
+2026-10-19 16:38:15.698 NuvioTV[483:37824] [UX6] y=-25 inset=157
+2026-10-19 16:38:15.715 NuvioTV[483:37824] [UX6] y=-38 inset=157
+2026-10-19 16:38:15.732 NuvioTV[483:37824] [UX6] y=-50 inset=157
+2026-10-19 16:38:15.748 NuvioTV[483:37824] [UX6] y=-61 inset=157
+2026-10-19 16:38:15.765 NuvioTV[483:37824] [UX6] y=-71 inset=157
+2026-10-19 16:38:15.782 NuvioTV[483:37824] [UX6] y=-79 inset=157
+2026-10-19 16:38:15.799 NuvioTV[483:37824] [UX6] y=-87 inset=157
+2026-10-19 16:38:15.815 NuvioTV[483:37824] [UX6] y=-94 inset=157
+2026-10-19 16:38:15.832 NuvioTV[483:37824] [UX6] y=-100 inset=157
+2026-10-19 16:38:15.849 NuvioTV[483:37824] [UX6] y=-106 inset=157
+2026-10-19 16:38:15.865 NuvioTV[483:37824] [UX6] y=-111 inset=157
+2026-10-19 16:38:15.883 NuvioTV[483:37824] [UX6] y=-116 inset=157
+2026-10-19 16:38:15.899 NuvioTV[483:37824] [UX6] y=-120 inset=157
+2026-10-19 16:38:15.916 NuvioTV[483:37824] [UX6] y=-124 inset=157
+2026-10-19 16:38:15.933 NuvioTV[483:37824] [UX6] y=-127 inset=157
+2026-10-19 16:38:15.949 NuvioTV[483:37824] [UX6] y=-130 inset=157
+2026-10-19 16:38:15.966 NuvioTV[483:37824] [UX6] y=-133 inset=157
+2026-10-19 16:38:15.983 NuvioTV[483:37824] [UX6] y=-135 inset=157
+2026-10-19 16:38:16.000 NuvioTV[483:37824] [UX6] y=-137 inset=157
+2026-10-19 16:38:16.016 NuvioTV[483:37824] [UX6] y=-139 inset=157
+2026-10-19 16:38:16.033 NuvioTV[483:37824] [UX6] y=-141 inset=157
+2026-10-19 16:38:16.049 NuvioTV[483:37824] [UX6] y=-143 inset=157
+2026-10-19 16:38:16.066 NuvioTV[483:37824] [UX6] y=-144 inset=157
+2026-10-19 16:38:16.083 NuvioTV[483:37824] [UX6] y=-145 inset=157
+2026-10-19 16:38:16.099 NuvioTV[483:37824] [UX6] y=-146 inset=157
+2026-10-19 16:38:16.116 NuvioTV[483:37824] [UX6] y=-147 inset=157
+2026-10-19 16:38:16.133 NuvioTV[483:37824] [UX6] y=-148 inset=157
+2026-10-19 16:38:16.149 NuvioTV[483:37824] [UX6] y=-149 inset=157
+2026-10-19 16:38:16.166 NuvioTV[483:37824] [UX6] y=-150 inset=157
+2026-10-19 16:38:16.183 NuvioTV[483:37824] [UX6] y=-151 inset=157
+2026-10-19 16:38:16.216 NuvioTV[483:37824] [UX6] y=-152 inset=157
+2026-10-19 16:38:16.250 NuvioTV[483:37824] [UX6] y=-153 inset=157
+2026-10-19 16:38:16.283 NuvioTV[483:37824] [UX6] y=-154 inset=157
+2026-10-19 16:38:16.349 NuvioTV[483:37824] [UX6] y=-155 inset=157
+2026-10-19 16:38:16.433 NuvioTV[483:37824] [UX6] y=-156 inset=157
+2026-10-19 16:38:16.601 NuvioTV[483:37824] [UX6] y=-157 inset=157
+2026-10-19 16:38:21.028 NuvioTV[483:37824] [BUG41] hitches=19 frames=1635 maxGap=101.6ms
+Launched application with com.youngchris29.NuvioTV bundle identifier.
+Waiting for the application to terminate...
+App terminated due to signal 15.

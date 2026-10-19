@@ -166,3 +166,13 @@ Scope as decided 2026-10-19:
   - **Fix direction for Agent A:**
     - Make the tile ring cheap: no per-tile `ArtworkColorStore` sample on focus, one shared ring overlay per row, and the trailer focus state moved into a child view so a focus move doesn't re-evaluate `DetailView.body`.
     - Keep `debug.detailNoTileRing` as the A/B, and re-measure ring-on deep walks against rc7's 17/21.
+- **BUG-188, measured** (Stage Home, Test Collection → folder → Back; `debug.homeScrollProbe`; `console-bug188.log`):
+  - `restore pop` → rungs 1 and 2 miss → `restore landed … after=589` → gate.
+  - Then, **205 ms later, `restore regrab … from=outside age=53`**: the focus engine moves off the landed folder card and the restore pulls it back. That out-and-back move is the single flicker.
+  - Fix direction for Agent B: while the gate is closed, don't let the engine's late move commit a stage change. Hold the stage on the restore target until the gate opens (`why=window`, here 1.6 s), so the regrab is invisible. Also look at why rungs 1 and 2 miss (the landing took 589 ms).
+- **BUG-191, not reproduced on the rig:** Test 2's Home has no collection row above its last rows; "Test Collection" is the third row. Walking to the bottom with No Zoom on showed no bleed, and no `fit row=` lines were logged on that walk.
+  - Agent B takes it from code (the Batch F fit-page slack, `StripPager.swift:500-503`, `focusLift = 0` in No Zoom).
+  - It adds a simulator UI leg with a fixture Home order (a collection row second to last) and checks with Short Rows Fit (`-debug.stripFitRows NO`) as the A/B.
+  - It asks Steven for his row order if the fix can't be confirmed.
+- **BUG-186: not run on the rig.** Test 2's Comet DV streams route to mpv, so the native "Infos" pill check needs a native-routed source. Agent C ships the panel-host latch fix (code-level, with UI legs), and the DM asks Steven which player he was in.
+- Rig note: one `console.sh start` launch came up in the background, and 12 Downs were lost; follow it with `atv.sh launch com.youngchris29.NuvioTV`.

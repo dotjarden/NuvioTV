@@ -1,0 +1,35 @@
+[ProfileSelect] auto-enter profile 3
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-19 16:26:38.673 NuvioTV[445:30772] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+2026-10-19 16:26:38.691 NuvioTV[445:30772] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-19 16:26:38.691 NuvioTV[445:30772] [TrailerPipeline] trailerLocation stage=row
+2026-10-19 16:26:39.213 NuvioTV[445:30772] [HomeHero] logoInk sync-sample ms=0.52
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/<redacted-id>/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/<redacted-id>/Library/Caches/top-shelf.json
+2026-10-19 16:26:41.964 NuvioTV[445:30772] [TrailerPipeline] gates inlineTrailersEnabled=YES systemAutoplay=YES
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/<redacted-id>/Library/Caches/top-shelf.json
+2026-10-19 16:26:49.183 NuvioTV[445:30772] [NavRail] arm reason=menu origin=request tab=0
+2026-10-19 16:26:49.236 NuvioTV[445:30772] [Rail] gate=on mode=uikit
+2026-10-19 16:26:51.697 NuvioTV[445:30772] [NavRail] select tab=2 from=0
+2026-10-19 16:26:51.697 NuvioTV[445:30772] [Rail] gate=off mode=uikit
+2026-10-19 16:26:51.764 NuvioTV[445:30772] [NavRail] exit via=select route=none result=fallback
+2026-10-19 16:27:37.657 NuvioTV[445:30772] [UX6] y=0 inset=0
+2026-10-19 16:27:37.666 NuvioTV[445:30772] [UX6] y=-157 inset=157
+2026-10-19 16:27:38.237 NuvioTV[445:30772] [BUG41] detailBodyEval=10
+2026-10-19 16:27:39.210 NuvioTV[445:31277] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-19 16:27:39.210 NuvioTV[445:31277] [TrailerExtract] client=visionos video=PsvUvqXoTpE hls=true formats=0 adaptive=23 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+2026-10-19 16:27:39.211 NuvioTV[445:31277] [TrailerExtract] client=android video=PsvUvqXoTpE hls=false formats=1 adaptive=25 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl,metadataFormats
+2026-10-19 16:27:39.212 NuvioTV[445:31277] [TrailerExtract] client=ios video=PsvUvqXoTpE hls=false formats=0 adaptive=23 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl,metadataFormats
+2026-10-19 16:27:39.433 NuvioTV[445:31284] [TrailerExtract] manifest client=visionos top variant 1920x1080
+2026-10-19 16:27:39.433 NuvioTV[445:31284] [TrailerExtract] selection: manifest=1080 progressive=360 (manifests collected=1)
+2026-10-19 16:27:39.433 NuvioTV[445:31284] [TrailerExtract] repack candidates: avcVideo=1080p avc1.640028 (visionos) m4aAudio=mp4a.40.2 (visionos) maxFps=0
+2026-10-19 16:27:39.829 NuvioTV[445:31295] [TrailerExtract] repack decision: avc=1080p vs progressive=1080p -> ELIGIBLE
+2026-10-19 16:27:40.210 NuvioTV[445:30787] [TrailerRepack] listener start port=8230 prefer=- gen=1 conns=0
+2026-10-19 16:27:40.212 NuvioTV[445:31277] [TrailerRepack] listener ready port=8230 waiters=1 gen=1 conns=0
+2026-10-19 16:27:40.212 NuvioTV[445:31277] [TrailerRepack] serving 1920x1080 avc1+mp4a (31+17 segments) at http://127.0.0.1:8230/<redacted-config>/master.m3u8 fps=24 itag=137 n=0
+2026-10-19 16:28:51.434 NuvioTV[445:30772] [BUG41] detailBodyEval=20
+Launched application with com.youngchris29.NuvioTV bundle identifier.
+Waiting for the application to terminate...
+App terminated due to signal 15.
