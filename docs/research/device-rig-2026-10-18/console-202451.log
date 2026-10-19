@@ -1,0 +1,266 @@
+[LaunchTrace] +0ms app_init
+[ExtPlayerProbe] canOpenURL(infuse://) = true
+2026-10-18 20:24:52.785 NuvioTV[5251:2465820] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ExtPlayerProbe] canOpenURL(vlc-x-callback://) = false
+[ExtPlayerProbe] canOpenURL(outplayer://) = false
+[ExtPlayerProbe] canOpenURL(open-vidhub://) = true
+[ExtPlayerProbe] canOpenURL(vidhub://) = false
+[ExtPlayerProbe] canOpenURL(senplayer://) = false
+[ExtPlayerProbe] canOpenURL(nativeplayer://) = false
+[ExtPlayerProbe] availablePlayers = ["infuse:Infuse", "vidhub:VidHub"]
+2026-10-18 20:24:52.785 NuvioTV[5251:2465820] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 20:24:52.786 NuvioTV[5251:2465820] -canOpenURL: failed for URL: "vidhub://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 20:24:52.786 NuvioTV[5251:2465820] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 20:24:52.786 NuvioTV[5251:2465820] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 20:24:52.787 NuvioTV[5251:2465820] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 20:24:52.787 NuvioTV[5251:2465820] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 20:24:52.787 NuvioTV[5251:2465820] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 20:24:52.788 NuvioTV[5251:2465820] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ProfileSelect] auto-enter profile 3
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-18 20:24:53.215 NuvioTV[5251:2465820] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+[LaunchTrace] +687ms home_appear
+2026-10-18 20:24:53.240 NuvioTV[5251:2465820] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-18 20:24:53.240 NuvioTV[5251:2465820] [TrailerPipeline] trailerLocation stage=row
+[LaunchTrace] +1093ms artwork #1: mem=0 disk=1 net=0 fail=0
+[LaunchTrace] +1151ms artwork #10: mem=0 disk=10 net=0 fail=0
+2026-10-18 20:24:53.822 NuvioTV[5251:2465820] [HomeHero] logoInk sync-sample ms=0.58
+2026-10-18 20:24:53.968 NuvioTV[5251:2465820] [AmbientWash] render id=movie:tt3118958 src=1920x1080 ms=67.4 lum=0.17
+2026-10-18 20:24:53.968 NuvioTV[5251:2465820] [AmbientWash] show id=movie:tt3118958 gen=1 late=1 ms=67.4 lum=0.17
+[LaunchTrace] +2124ms artwork #25: mem=1 disk=19 net=5 fail=0
+2026-10-18 20:24:54.687 NuvioTV[5251:2465820] [TrailerPipeline] gates inlineTrailersEnabled=YES systemAutoplay=YES
+[LaunchTrace] +2130ms first_rows n=13 hero=8
+[LaunchTrace] +2130ms first_hero n=8
+[LaunchTrace] +2239ms rows n=17
+[LaunchTrace] +2308ms artwork #50: mem=4 disk=41 net=5 fail=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +2557ms rows n=25
+[LaunchTrace] +2888ms rows n=33
+[LaunchTrace] +3875ms rows n=41
+2026-10-18 20:25:21.384 NuvioTV[5251:2466133] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 20:25:21.385 NuvioTV[5251:2466133] [TrailerExtract] client=visionos video=yJBO66pNNf4 hls=true formats=0 adaptive=25 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+2026-10-18 20:25:21.389 NuvioTV[5251:2466133] [TrailerExtract] client=android video=yJBO66pNNf4 hls=false formats=1 adaptive=28 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl
+2026-10-18 20:25:21.395 NuvioTV[5251:2466133] [TrailerExtract] client=ios video=yJBO66pNNf4 hls=false formats=0 adaptive=25 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl
+2026-10-18 20:25:21.579 NuvioTV[5251:2466134] [TrailerExtract] manifest client=visionos top variant 1280x720
+2026-10-18 20:25:21.579 NuvioTV[5251:2466134] [TrailerExtract] selection: manifest=720 progressive=360 (manifests collected=1)
+2026-10-18 20:25:21.580 NuvioTV[5251:2466134] [TrailerExtract] repack candidates: avcVideo=720p avc1.64001F (visionos) m4aAudio=mp4a.40.2 (visionos) maxFps=0
+2026-10-18 20:25:21.977 NuvioTV[5251:2466064] [TrailerExtract] repack decision: avc=720p vs progressive=720p -> ELIGIBLE
+2026-10-18 20:25:22.390 NuvioTV[5251:2466129] [TrailerRepack] listener start port=8230 prefer=- gen=1 conns=0
+2026-10-18 20:25:22.392 NuvioTV[5251:2466129] [TrailerRepack] listener ready port=8230 waiters=1 gen=1 conns=0
+2026-10-18 20:25:22.393 NuvioTV[5251:2466129] [TrailerRepack] serving 1280x720 avc1+mp4a (10+7 segments) at http://127.0.0.1:8230/577028ddc09410d3af6e98edcb26fc58/master.m3u8 fps=30 itag=136 n=0
+[LaunchTrace] +71730ms artwork #100: mem=4 disk=80 net=16 fail=0
+2026-10-18 20:26:42.898 NuvioTV[5251:2466133] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 20:26:42.898 NuvioTV[5251:2466133] [TrailerExtract] client=visionos video=yJBO66pNNf4 hls=true formats=0 adaptive=25 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+2026-10-18 20:26:42.903 NuvioTV[5251:2466133] [TrailerExtract] client=android video=yJBO66pNNf4 hls=false formats=1 adaptive=28 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl
+2026-10-18 20:26:42.908 NuvioTV[5251:2466133] [TrailerExtract] client=ios video=yJBO66pNNf4 hls=false formats=0 adaptive=25 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl
+2026-10-18 20:26:42.980 NuvioTV[5251:2466901] [TrailerExtract] manifest client=visionos top variant 1280x720
+2026-10-18 20:26:42.980 NuvioTV[5251:2466901] [TrailerExtract] selection: manifest=720 progressive=360 (manifests collected=1)
+2026-10-18 20:26:42.981 NuvioTV[5251:2466901] [TrailerExtract] repack candidates: avcVideo=720p avc1.64001F (visionos) m4aAudio=mp4a.40.2 (visionos) maxFps=0
+2026-10-18 20:26:43.237 NuvioTV[5251:2466129] [TrailerExtract] repack decision: avc=720p vs progressive=720p -> ELIGIBLE
+2026-10-18 20:26:43.584 NuvioTV[5251:2466901] [TrailerRepack] serving 1280x720 avc1+mp4a (10+7 segments) at http://127.0.0.1:8230/6adc4701a98511a14950d056510db41f/master.m3u8 fps=30 itag=136 n=0
+2026-10-18 20:26:47.649 NuvioTV[5251:2465820] [TrailerQuality] presentationSize=1280x720
+2026-10-18 20:27:01.362 NuvioTV[5251:2465820] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[SubtitleRepo] Fetching subtitles type=movie id=tt3118958 across 8 enabled addons
+[SubtitleRepo] Skip Comet: no subtitles resource
+2026-10-18 20:27:01.362 NuvioTV[5251:2465820] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 20:27:01.363 NuvioTV[5251:2465820] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 20:27:01.363 NuvioTV[5251:2465820] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[SubtitleRepo] Skip Torrentio: no subtitles resource
+[SubtitleRepo] Skip AIOMetadata: no subtitles resource
+[SubtitleRepo] Skip AIO Streams: no subtitles resource
+[SubtitleRepo] Skip Cinemeta: no subtitles resource
+[SubtitleRepo] Skip Better Posters: no subtitles resource
+[SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/movie/tt3118958.json
+[SubtitleRepo] Querying Duck Streams: https://aiostreams-stable.forthewizards.uk/stremio/e35de967-5c32-4f10-82b8-e40e56434a94/eyJpIjoiQ3VUTklMeU1xTFpPazE5M0p5WHRwdz09IiwiZSI6InRFM3JzMHNpOU1FQ1QzSGhGbXowZnIvTjFBd0NtMnNTZ1dqS1gvNERmdXc9IiwidCI6ImEifQ/subtitles/movie/tt3118958.json
+[SubtitleRepo] OpenSubtitles v3: 54 subtitles in 360.823750ms
+[SubtitleRepo] Duck Streams: 6 subtitles in 2.688611292s
+[SubtitleRepo] Subtitle fetch done: 60 total in 2.690321625s
+[PlayerRouter] self-check passed
+[PlayerRouter] native — SDR — Lizzie Borden Took an Ax
+[Loading] engine=native stage=connecting t=+0.01s
+[NativePlayer] language plan: audio=["en-us", "en"] subs=off
+[NativePlayer] addon subtitles updated: 60
+[NativePlayer] artwork attached (45 KB)
+[NativePlayer] skip segments: 0 (none in intro DB for this title)
+[Remux] subtitle streams (2): #3 subrip [eng], #4 subrip [eng]
+[Remux] preferred-language audio pick → stream 2
+[Remux] audio streams (2): #1 ac3 6ch [rus], #2 eac3 6ch [eng] *selected
+[Remux] signaling CODECS=avc1.640028 AUDIO=ec-3
+[Remux] audio tracks: #1 ac3 6ch rus | #2* eac3 6ch eng
+[Loading] engine=native stage=preparing t=+0.81s
+[Remux] keyframe index: 1196 keyframes tb=1/1000 dur=5223.3s
+[Chapters] native n=20 origin=0.000 first="Chapter 01"@0.000 last="Chapter 20"@4894.807
+[Remux] segment map: 590 segments, 5223.3s, target=11s
+[1;35m[mp4 @ 0x1610d3900] [0m[0;33mtrack 0: codec frame size is not set
+[0m[Remux] embedded subtitle sinks: 2 (#3→esub-0, #4→esub-1)
+[Remux] seg 1 done footprint=175MB
+[NativePlayer] addon subtitle fetch finished (60 found)
+[NativePlayer] subtitle renditions: 18 (2 embedded) — English · Full, English · SDH, ENG (OpenSubtitles v3), ENG (OpenSubtitles v3) 2, ENG (OpenSubtitles v3) 3, ENG (OpenSubtitles v3) 4, …
+[HLS] master iframes=0 independent=0
+[NativePlayer] serving http://127.0.0.1:8190/800af3b64e5f4831bc7afa6f4fe20e66/master.m3u8
+[Subs] style rule fg=#FFFFFFFF bg=#00000000 edge=uniform bold=0 size=78%
+[Loading] engine=native stage=buffering t=+3.39s
+[HLS] 200 master.m3u8 (3032b)
+[NativePlayer] bar visible=0
+[HLS] 200 media.m3u8 (19180b)
+[NativePlayer] avpvc speeds=0.5,0.75,1,1.25,1.5,1.75,2 menu=Sources delegate=1
+[HLS] 200 init.mp4 (848b)
+[HLS] 200 seg-00001.m4s (12147557b)
+[HLS] 200 aud-2.m3u8 (20366b)
+[HLS] 200 aud-2-00001.m4s (798828b)
+[HLS] 200 aud-2-init.mp4 (728b)
+[NativePlayer] item readyToPlay
+[0;35m[matroska,webm @ 0x1610d2700] [0m[0;33mSeek to desired resync point failed. Seeking to earliest point available instead.
+[0m[Remux] reposition requested → segment 11
+[Remux] repositioning: abandoning segment 2, jumping to 11
+[Remux] seeking to segment 11 (pts 86920)
+[HLS] 503 aud-2-00002.m4s (10b)
+[HLS] 503 seg-00002.m4s (10b)
+[1;35m[mp4 @ 0x1613c0f00] [0m[0;33mtrack 0: codec frame size is not set
+[0m[Remux] seg 11 done footprint=182MB
+[HLS] 200 seg-00011.m4s (14992079b)
+[HLS] 200 aud-2-00011.m4s (801388b)
+[HLS] 200 seg-00012.m4s (5605043b)
+[HLS] 200 aud-2-00012.m4s (752748b)
+[NativePlayer] bar visible=1
+[HLS] 200 seg-00013.m4s (14465953b)
+[HLS] 200 aud-2-00013.m4s (801388b)
+[Loading] engine=native stage=started t=+6.68s
+[Remux] seg 15 done footprint=207MB
+[NativePlayer] bar visible=0
+[HLS] 200 aud-2-00014.m4s (801388b)
+[HLS] 200 seg-00014.m4s (16535287b)
+[Remux] seg 30 done footprint=215MB
+[Remux] seg 45 done footprint=215MB
+[HLS] 200 aud-2-00015.m4s (801388b)
+[HLS] 200 seg-00015.m4s (15894822b)
+[Remux] seg 60 done footprint=215MB
+[HLS] 200 aud-2-00016.m4s (798828b)
+[HLS] 200 seg-00016.m4s (18795115b)
+[Remux] seg 75 done footprint=266MB
+[HLS] 200 aud-2-00017.m4s (686188b)
+[HLS] 200 seg-00017.m4s (15257125b)
+[Remux] seg 90 done footprint=266MB
+[HLS] 200 aud-2-00018.m4s (798828b)
+[HLS] 200 seg-00018.m4s (18094240b)
+[Remux] seg 105 done footprint=263MB
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Remux] seg 120 done footprint=264MB
+[HLS] 200 aud-2-00019.m4s (675948b)
+[HLS] 200 seg-00019.m4s (14751335b)
+[Remux] seg 135 done footprint=264MB
+[HLS] 200 aud-2-00020.m4s (798828b)
+[HLS] 200 seg-00020.m4s (19434989b)
+[Remux] seg 150 done footprint=264MB
+[HLS] 200 aud-2-00021.m4s (801388b)
+[HLS] 200 seg-00021.m4s (18533450b)
+[Remux] seg 165 done footprint=264MB
+[HLS] 200 aud-2-00022.m4s (801388b)
+[HLS] 200 seg-00022.m4s (14092002b)
+[Remux] seg 180 done footprint=265MB
+[HLS] 200 aud-2-00023.m4s (629868b)
+[HLS] 200 seg-00023.m4s (11855846b)
+[Remux] seg 195 done footprint=265MB
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[HLS] 200 aud-2-00024.m4s (752748b)
+[HLS] 200 seg-00024.m4s (14532892b)
+[Remux] seg 210 done footprint=265MB
+[HLS] 200 aud-2-00025.m4s (714348b)
+[HLS] 200 seg-00025.m4s (15291217b)
+[Remux] seg 225 done footprint=265MB
+[Remux] seg 240 done footprint=265MB
+[HLS] 200 aud-2-00026.m4s (655468b)
+[HLS] 200 seg-00026.m4s (12723437b)
+[Remux] seg 255 done footprint=266MB
+[HLS] 200 aud-2-00027.m4s (801388b)
+[HLS] 200 seg-00027.m4s (15059151b)
+[Remux] seg 270 done footprint=266MB
+[HLS] 200 aud-2-00028.m4s (801388b)
+[HLS] 200 seg-00028.m4s (15143162b)
+[Remux] seg 285 done footprint=266MB
+[HLS] 200 aud-2-00029.m4s (624748b)
+[HLS] 200 seg-00029.m4s (12668729b)
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Remux] seg 300 done footprint=267MB
+[HLS] 200 aud-2-00030.m4s (750188b)
+[HLS] 200 seg-00030.m4s (14188810b)
+[Remux] seg 315 done footprint=267MB
+[HLS] 200 aud-2-00031.m4s (724588b)
+[HLS] 200 seg-00031.m4s (13552107b)
+[Remux] seg 330 done footprint=267MB
+[HLS] 200 aud-2-00032.m4s (729708b)
+[HLS] 200 seg-00032.m4s (13410101b)
+[Remux] seg 345 done footprint=267MB
+[HLS] 200 aud-2-00033.m4s (752748b)
+[HLS] 200 seg-00033.m4s (9152888b)
+[Remux] seg 360 done footprint=268MB
+[HLS] 200 aud-2-00034.m4s (798828b)
+[HLS] 200 seg-00034.m4s (12023830b)
+[Remux] seg 375 done footprint=268MB
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[HLS] 200 aud-2-00035.m4s (535148b)
+[HLS] 200 seg-00035.m4s (7673390b)
+[Remux] seg 390 done footprint=268MB
+[HLS] 200 aud-2-00036.m4s (624748b)
+[HLS] 200 seg-00036.m4s (10290084b)
+[Remux] seg 405 done footprint=268MB
+[HLS] 200 aud-2-00037.m4s (535148b)
+[HLS] 200 seg-00037.m4s (12275161b)
+[Remux] seg 420 done footprint=269MB
+[HLS] 200 aud-2-00038.m4s (601708b)
+[HLS] 200 seg-00038.m4s (13157791b)
+[Remux] seg 435 done footprint=269MB
+[HLS] 200 aud-2-00039.m4s (673388b)
+[HLS] 200 seg-00039.m4s (15001306b)
+[Remux] seg 450 done footprint=269MB
+[HLS] 200 aud-2-00040.m4s (632428b)
+[HLS] 200 seg-00040.m4s (8942114b)
+[Remux] seg 465 done footprint=269MB
+[HLS] 200 aud-2-00041.m4s (801388b)
+[HLS] 200 seg-00041.m4s (14059232b)
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Remux] seg 480 done footprint=270MB
+[HLS] 200 aud-2-00042.m4s (798828b)
+[HLS] 200 seg-00042.m4s (15446527b)
+[Remux] seg 495 done footprint=270MB
+[HLS] 200 aud-2-00043.m4s (632428b)
+[HLS] 200 seg-00043.m4s (7666018b)
+[Remux] seg 510 done footprint=270MB
+[HLS] 200 aud-2-00044.m4s (642668b)
+[HLS] 200 seg-00044.m4s (8769692b)
+[Remux] seg 525 done footprint=271MB
+[HLS] 200 aud-2-00045.m4s (801388b)
+[HLS] 200 seg-00045.m4s (10200640b)
+[Remux] seg 540 done footprint=271MB
+[HLS] 200 aud-2-00046.m4s (801388b)
+[HLS] 200 seg-00046.m4s (16474894b)
+[Remux] seg 555 done footprint=271MB
+[HLS] 200 aud-2-00047.m4s (801388b)
+[HLS] 200 seg-00047.m4s (16302173b)
+[Failover] native healthy after 302 s
+[Remux] seg 570 done footprint=272MB
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[HLS] 200 aud-2-00048.m4s (724588b)
+[HLS] 200 seg-00048.m4s (15089061b)
+[Remux] seg 585 done footprint=272MB
+[Remux] read error -1414092869 at segment 590
+[HLS] 200 aud-2-00049.m4s (775788b)
+[HLS] 200 seg-00049.m4s (14863070b)
+[HLS] 200 aud-2-00050.m4s (611948b)
+[HLS] 200 seg-00050.m4s (11611292b)
+[HLS] 200 aud-2-00051.m4s (801388b)
+[HLS] 200 seg-00051.m4s (17254694b)
+[HLS] 200 aud-2-00052.m4s (796268b)
+[HLS] 200 seg-00052.m4s (17885371b)
+[HLS] 200 aud-2-00053.m4s (801388b)
+[HLS] 200 seg-00053.m4s (15908667b)
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[HLS] 200 aud-2-00054.m4s (801388b)
+[HLS] 200 seg-00054.m4s (16927524b)
+[HLS] 200 aud-2-00055.m4s (650348b)
+[HLS] 200 seg-00055.m4s (14577477b)
+Launched application with com.youngchris29.NuvioTV bundle identifier.
+Waiting for the application to terminate...
+App terminated due to signal 9.

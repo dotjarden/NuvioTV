@@ -1,0 +1,483 @@
+[LaunchTrace] +0ms app_init
+[ExtPlayerProbe] canOpenURL(infuse://) = true
+2026-10-18 21:36:38.229 NuvioTV[5451:2501346] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ExtPlayerProbe] canOpenURL(vlc-x-callback://) = false
+[ExtPlayerProbe] canOpenURL(outplayer://) = false
+[ExtPlayerProbe] canOpenURL(open-vidhub://) = true
+[ExtPlayerProbe] canOpenURL(vidhub://) = false
+[ExtPlayerProbe] canOpenURL(senplayer://) = false
+[ExtPlayerProbe] canOpenURL(nativeplayer://) = false
+[ExtPlayerProbe] availablePlayers = ["infuse:Infuse", "vidhub:VidHub"]
+2026-10-18 21:36:38.229 NuvioTV[5451:2501346] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 21:36:38.230 NuvioTV[5451:2501346] -canOpenURL: failed for URL: "vidhub://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 21:36:38.231 NuvioTV[5451:2501346] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 21:36:38.231 NuvioTV[5451:2501346] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 21:36:38.234 NuvioTV[5451:2501346] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 21:36:38.235 NuvioTV[5451:2501346] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 21:36:38.235 NuvioTV[5451:2501346] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 21:36:38.236 NuvioTV[5451:2501346] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ProfileSelect] auto-enter profile 3
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-18 21:36:38.627 NuvioTV[5451:2501346] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+[LaunchTrace] +649ms home_appear
+2026-10-18 21:36:38.652 NuvioTV[5451:2501346] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-18 21:36:38.652 NuvioTV[5451:2501346] [TrailerPipeline] trailerLocation stage=row
+[LaunchTrace] +1024ms artwork #1: mem=0 disk=1 net=0 fail=0
+[LaunchTrace] +1078ms artwork #10: mem=0 disk=10 net=0 fail=0
+2026-10-18 21:36:39.158 NuvioTV[5451:2501346] [HomeHero] logoInk sync-sample ms=0.38
+2026-10-18 21:36:39.261 NuvioTV[5451:2501346] [AmbientWash] render id=movie:tt3118958 src=1920x1080 ms=40.8 lum=0.17
+2026-10-18 21:36:39.261 NuvioTV[5451:2501346] [AmbientWash] show id=movie:tt3118958 gen=1 late=1 ms=40.8 lum=0.17
+[LaunchTrace] +2055ms artwork #25: mem=1 disk=19 net=5 fail=0
+[LaunchTrace] +2060ms first_rows n=5 hero=8
+[LaunchTrace] +2060ms first_hero n=8
+2026-10-18 21:36:40.066 NuvioTV[5451:2501346] [TrailerPipeline] gates inlineTrailersEnabled=YES systemAutoplay=YES
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +2185ms artwork #50: mem=4 disk=41 net=5 fail=0
+[LaunchTrace] +2713ms rows n=9
+[LaunchTrace] +3185ms rows n=17
+[LaunchTrace] +3518ms rows n=25
+[LaunchTrace] +3853ms rows n=33
+[LaunchTrace] +4525ms rows n=41
+[LaunchTrace] +44679ms artwork #100: mem=5 disk=90 net=5 fail=0
+2026-10-18 21:37:22.693 NuvioTV[5451:2501346] [AmbientWash] render id=series:tt31510819 src=1280x720 ms=12.0 lum=0.22
+2026-10-18 21:37:23.055 NuvioTV[5451:2501346] [AmbientWash] show id=series:tt31510819 gen=2 late=1 ms=12.0 lum=0.22
+2026-10-18 21:37:23.999 NuvioTV[5451:2501346] [AmbientWash] render id=movie:tt22084616 src=1280x720 ms=10.9 lum=0.26
+2026-10-18 21:37:24.478 NuvioTV[5451:2501346] [AmbientWash] render id=movie:tt31049299 src=1280x720 ms=14.9 lum=0.16
+2026-10-18 21:37:24.711 NuvioTV[5451:2501346] [AmbientWash] show id=movie:tt31049299 gen=3 late=1 ms=14.9 lum=0.16
+2026-10-18 21:37:26.404 NuvioTV[5451:2501346] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[SubtitleRepo] Fetching subtitles type=movie id=tt31049299 across 8 enabled addons
+[SubtitleRepo] Skip Comet: no subtitles resource
+[SubtitleRepo] Skip Torrentio: no subtitles resource
+[SubtitleRepo] Skip AIOMetadata: no subtitles resource
+[SubtitleRepo] Skip AIO Streams: no subtitles resource
+[SubtitleRepo] Skip Cinemeta: no subtitles resource
+[SubtitleRepo] Skip Better Posters: no subtitles resource
+2026-10-18 21:37:26.404 NuvioTV[5451:2501346] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 21:37:26.404 NuvioTV[5451:2501346] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 21:37:26.405 NuvioTV[5451:2501346] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 21:37:26.413 NuvioTV[5451:2501712] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 21:37:26.413 NuvioTV[5451:2501712] [TrailerExtract] client=visionos video=ZkN2M4ODdys hls=true formats=0 adaptive=23 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+[SubtitleRepo] Querying Duck Streams: https://aiostreams-stable.forthewizards.uk/stremio/e35de967-5c32-4f10-82b8-e40e56434a94/eyJpIjoiQ3VUTklMeU1xTFpPazE5M0p5WHRwdz09IiwiZSI6InRFM3JzMHNpOU1FQ1QzSGhGbXowZnIvTjFBd0NtMnNTZ1dqS1gvNERmdXc9IiwidCI6ImEifQ/subtitles/movie/tt31049299.json
+[SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/movie/tt31049299.json
+2026-10-18 21:37:26.415 NuvioTV[5451:2501712] [TrailerExtract] client=android video=ZkN2M4ODdys hls=false formats=1 adaptive=25 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl,metadataFormats
+2026-10-18 21:37:26.419 NuvioTV[5451:2501712] [TrailerExtract] client=ios video=ZkN2M4ODdys hls=false formats=0 adaptive=23 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl,metadataFormats
+[SubtitleRepo] OpenSubtitles v3: 79 subtitles in 180.014875ms
+2026-10-18 21:37:26.621 NuvioTV[5451:2501715] [TrailerExtract] manifest client=visionos top variant 1920x1080
+2026-10-18 21:37:26.621 NuvioTV[5451:2501715] [TrailerExtract] selection: manifest=1080 progressive=360 (manifests collected=1)
+2026-10-18 21:37:26.621 NuvioTV[5451:2501715] [TrailerExtract] repack candidates: avcVideo=1080p avc1.640028 (visionos) m4aAudio=mp4a.40.2 (visionos) maxFps=0
+2026-10-18 21:37:26.622 NuvioTV[5451:2501715] [TrailerExtract] repack decision: avc=1080p vs progressive=1080p -> ELIGIBLE
+2026-10-18 21:37:26.782 NuvioTV[5451:2501712] [TrailerRepack] listener start port=8230 prefer=- gen=1 conns=0
+2026-10-18 21:37:26.783 NuvioTV[5451:2501715] [TrailerRepack] listener ready port=8230 waiters=1 gen=1 conns=0
+2026-10-18 21:37:26.783 NuvioTV[5451:2501715] [TrailerRepack] serving 1920x1080 avc1+mp4a (15+8 segments) at http://127.0.0.1:8230/3d2ee0449ed5285095d0f756987969b7/master.m3u8 fps=24 itag=137 n=0
+[SubtitleRepo] Duck Streams: 2 subtitles in 2.744802542s
+[SubtitleRepo] Subtitle fetch done: 81 total in 2.745646250s
+[PlayerRouter] self-check passed
+[Loading] engine=mpv stage=connecting t=+0.56s
+[Failover] mpv start watchdog armed: 25 s
+[mvk-info] MoltenVK version 1.4.1, supporting Vulkan version 1.4.334.
+	The following 152 Vulkan extensions are supported:
+	VK_KHR_16bit_storage v1
+	VK_KHR_8bit_storage v1
+	VK_KHR_bind_memory2 v1
+	VK_KHR_buffer_device_address v1
+	VK_KHR_calibrated_timestamps v1
+	VK_KHR_copy_commands2 v1
+	VK_KHR_create_renderpass2 v1
+	VK_KHR_dedicated_allocation v3
+	VK_KHR_deferred_host_operations v4
+	VK_KHR_depth_stencil_resolve v1
+	VK_KHR_descriptor_update_template v1
+	VK_KHR_device_group v4
+	VK_KHR_device_group_creation v1
+	VK_KHR_driver_properties v1
+	VK_KHR_dynamic_rendering v1
+	VK_KHR_dynamic_rendering_local_read v1
+	VK_KHR_external_fence v1
+	VK_KHR_external_fence_capabilities v1
+	VK_KHR_external_memory v1
+	VK_KHR_external_memory_capabilities v1
+	VK_KHR_external_semaphore v1
+	VK_KHR_external_semaphore_capabilities v1
+	VK_KHR_format_feature_flags2 v2
+	VK_KHR_fragment_shader_barycentric v1
+	VK_KHR_get_memory_requirements2 v1
+	VK_KHR_get_physical_device_properties2 v2
+	VK_KHR_get_surface_capabilities2 v1
+	VK_KHR_global_priority v1
+	VK_KHR_image_format_list v1
+	VK_KHR_imageless_framebuffer v1
+	VK_KHR_incremental_present v2
+	VK_KHR_index_type_uint8 v1
+	VK_KHR_line_rasterization v1
+	VK_KHR_load_store_op_none v1
+	VK_KHR_maintenance1 v2
+	VK_KHR_maintenance2 v1
+	VK_KHR_maintenance3 v1
+	VK_KHR_maintenance4 v2
+	VK_KHR_maintenance5 v1
+	VK_KHR_maintenance6 v1
+	VK_KHR_maintenance7 v1
+	VK_KHR_maintenance8 v1
+	VK_KHR_maintenance9 v1
+	VK_KHR_map_memory2 v1
+	VK_KHR_multiview v1
+	VK_KHR_portability_subset v1
+	VK_KHR_present_id v1
+	VK_KHR_present_id2 v1
+	VK_KHR_present_wait v1
+	VK_KHR_present_wait2 v1
+	VK_KHR_push_descriptor v2
+	VK_KHR_relaxed_block_layout v1
+	VK_KHR_robustness2 v1
+	VK_KHR_sampler_mirror_clamp_to_edge v3
+	VK_KHR_sampler_ycbcr_conversion v14
+	VK_KHR_separate_depth_stencil_layouts v1
+	VK_KHR_shader_draw_parameters v1
+	VK_KHR_shader_expect_assume v1
+	VK_KHR_shader_float_controls v4
+	VK_KHR_shader_float_controls2 v1
+	VK_KHR_shader_float16_int8 v1
+	VK_KHR_shader_fma v1
+	VK_KHR_shader_integer_dot_product v1
+	VK_KHR_shader_maximal_reconvergence v1
+	VK_KHR_shader_non_semantic_info v1
+	VK_KHR_shader_quad_control v1
+	VK_KHR_shader_relaxed_extended_instruction v1
+	VK_KHR_shader_subgroup_extended_types v1
+	VK_KHR_shader_subgroup_rotate v2
+	VK_KHR_shader_subgroup_uniform_control_flow v1
+	VK_KHR_shader_terminate_invocation v1
+	VK_KHR_spirv_1_4 v1
+	VK_KHR_storage_buffer_storage_class v1
+	VK_KHR_surface v25
+	VK_KHR_surface_maintenance1 v1
+	VK_KHR_surface_protected_capabilities v1
+	VK_KHR_swapchain v70
+	VK_KHR_swapchain_maintenance1 v1
+	VK_KHR_swapchain_mutable_format v1
+	VK_KHR_synchronization2 v1
+	VK_KHR_timeline_semaphore v2
+	VK_KHR_uniform_buffer_standard_layout v1
+	VK_KHR_variable_pointers v1
+	VK_KHR_vertex_attribute_divisor v1
+	VK_KHR_vulkan_memory_model v3
+	VK_KHR_zero_initialize_workgroup_memory v1
+	VK_EXT_4444_formats v1
+	VK_EXT_buffer_device_address v2
+	VK_EXT_calibrated_timestamps v2
+	VK_EXT_debug_marker v4
+	VK_EXT_debug_report v10
+	VK_EXT_debug_utils v2
+	VK_EXT_depth_clip_control v1
+	VK_EXT_descriptor_indexing v2
+	VK_EXT_extended_dynamic_state v1
+	VK_EXT_extended_dynamic_state2 v1
+	VK_EXT_extended_dynamic_state3 v2
+	VK_EXT_external_memory_host v1
+	VK_EXT_external_memory_metal v1
+	VK_EXT_fragment_shader_interlock v1
+	VK_EXT_global_priority v2
+	VK_EXT_global_priority_query v1
+	VK_EXT_headless_surface v1
+	VK_EXT_host_image_copy v1
+	VK_EXT_host_query_reset v1
+	VK_EXT_image_2d_view_of_3d v1
+	VK_EXT_image_robustness v1
+	VK_EXT_index_type_uint8 v1
+	VK_EXT_inline_uniform_block v1
+	VK_EXT_layer_settings v2
+	VK_EXT_legacy_dithering v2
+	VK_EXT_line_rasterization v1
+	VK_EXT_load_store_op_none v1
+	VK_EXT_memory_budget v1
+	VK_EXT_metal_objects v2
+	VK_EXT_metal_surface v1
+	VK_EXT_non_seamless_cube_map v1
+	VK_EXT_pipeline_creation_cache_control v3
+	VK_EXT_pipeline_creation_feedback v1
+	VK_EXT_pipeline_robustness v1
+	VK_EXT_post_depth_coverage v1
+	VK_EXT_primitive_topology_list_restart v1
+	VK_EXT_private_data v1
+	VK_EXT_provoking_vertex v1
+	VK_EXT_robustness2 v1
+	VK_EXT_sample_locations v1
+	VK_EXT_scalar_block_layout v1
+	VK_EXT_separate_stencil_usage v1
+	VK_EXT_shader_atomic_float v1
+	VK_EXT_shader_demote_to_helper_invocation v1
+	VK_EXT_shader_stencil_export v1
+	VK_EXT_shader_subgroup_ballot v1
+	VK_EXT_shader_subgroup_vote v1
+	VK_EXT_shader_viewport_index_layer v1
+	VK_EXT_subgroup_size_control v2
+	VK_EXT_surface_maintenance1 v1
+	VK_EXT_swapchain_colorspace v5
+	VK_EXT_swapchain_maintenance1 v1
+	VK_EXT_texel_buffer_alignment v1
+	VK_EXT_texture_compression_astc_hdr v1
+	VK_EXT_tooling_info v1
+	VK_EXT_vertex_attribute_divisor v3
+	VK_AMD_gpu_shader_half_float v2
+	VK_AMD_negative_viewport_height v1
+	VK_AMD_shader_image_load_store_lod v1
+	VK_AMD_shader_trinary_minmax v1
+	VK_GOOGLE_display_timing v1
+	VK_IMG_format_pvrtc v1
+	VK_INTEL_shader_integer_functions2 v1
+	VK_MVK_ios_surface v3
+	VK_MVK_moltenvk v37
+	VK_NV_fragment_shader_barycentric v1
+[mvk-info] GPU device:
+	model: Apple A15 GPU
+	type: Integrated
+	vendorID: 0x106b
+	deviceID: 0x1b020008
+	pipelineCacheUUID: DB445FF2-1B02-0008-0000-000100000000
+	GPU memory available: 2730 MB
+	GPU memory used: 1 MB
+	Metal Shading Language 3.1
+	supports the following GPU Features:
+		GPU Family Metal 3
+		GPU Family Apple 8
+		Read-Write Texture Tier 2
+[mvk-info] Created VkInstance for Vulkan version 1.4.334, as requested by app, with the following 6 Vulkan extensions enabled:
+	VK_KHR_get_surface_capabilities2 v1
+	VK_KHR_surface v25
+	VK_KHR_surface_maintenance1 v1
+	VK_EXT_metal_surface v1
+	VK_EXT_surface_maintenance1 v1
+	VK_EXT_swapchain_colorspace v5
+[mvk-info] Vulkan semaphores using MTLEvent.
+[mvk-info] Descriptor sets binding resources using Metal3 argument buffers.
+[mvk-info] Created VkDevice to run on GPU Apple A15 GPU with the following 12 Vulkan extensions enabled:
+	VK_KHR_dynamic_rendering v1
+	VK_KHR_portability_subset v1
+	VK_KHR_shader_expect_assume v1
+	VK_KHR_shader_relaxed_extended_instruction v1
+	VK_KHR_shader_subgroup_rotate v2
+	VK_KHR_swapchain v70
+	VK_KHR_swapchain_maintenance1 v1
+	VK_KHR_zero_initialize_workgroup_memory v1
+	VK_EXT_external_memory_host v1
+	VK_EXT_metal_objects v2
+	VK_EXT_shader_atomic_float v1
+	VK_EXT_swapchain_maintenance1 v1
+[Loading] engine=mpv stage=buffering t=+1.80s
+2026-10-18 21:37:34.133 NuvioTV[5451:2501734] [Chapters] n=1 dropped=1 dur=6491.1 src=json raw=[{"title":"Part 01","time":0.000000},{"title":"Credits","time":6490.450000}]
+2026-10-18 21:37:34.133 NuvioTV[5451:2501734] [SubLoad] start n=1 pref=0 pending=80 status=0
+[mvk-info] Created 3 swapchain images with size (3840, 2160) and contents scale 2.0 in layer (null) (0x13e541950) on screen Main Screen.
+[mvk-info] Created 3 swapchain images with size (3840, 2160) and contents scale 2.0 in layer (null) (0x13e541950) on screen Main Screen.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+2026-10-18 21:37:34.717 NuvioTV[5451:2501346] [Aspect] fit override=-1 panscan=0.00 zoom=0.00 read=-1.000000
+[Transport] cache-state raw={"cache-end":3.616000,"reader-pts":1.984000,"cache-duration":1.632000,"eof":false,"underrun":false,"idle":false,"total-bytes":1800576,"fw-bytes":1572288,"raw-input-rate":984427,"debug-low-level-seeks":1,"debug-byte-level-seeks":3,"debug-ts-last":3.625000,"ts-per-stream":[{"type":"video","cache-durat ranges=1 fallback=1 +0s
+2026-10-18 21:37:34.730 NuvioTV[5451:2501866] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+[Loading] engine=mpv stage=started t=+2.46s
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-18 21:37:34.730 NuvioTV[5451:2501866] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+2026-10-18 21:37:34.811 NuvioTV[5451:2501728] [MPVQueue] params poll read w=3840 gamma=pq ready=1
+[DisplayMode] criteria fps=24.000 3840x2160 codec=h.265 / hevc (high efficiency video coding) primaries=bt.2020 gamma=pq
+2026-10-18 21:37:35.056 NuvioTV[5451:2501722] [SubLoad] done n=1 pref=0 took=923ms err=0 pending=80
+2026-10-18 21:37:35.056 NuvioTV[5451:2501722] [SubLoad] start n=2 pref=0 pending=79 status=0
+2026-10-18 21:37:35.383 NuvioTV[5451:2501866] [SubLoad] done n=2 pref=0 took=326ms err=0 pending=79
+2026-10-18 21:37:35.383 NuvioTV[5451:2501866] [SubLoad] start n=3 pref=0 pending=78 status=0
+2026-10-18 21:37:35.725 NuvioTV[5451:2501715] [SubLoad] done n=3 pref=0 took=341ms err=0 pending=78
+2026-10-18 21:37:37.438 NuvioTV[5451:2501715] [SubLoad] start n=10 pref=0 pending=71 status=0
+2026-10-18 21:37:37.712 NuvioTV[5451:2501866] [SubLoad] done n=10 pref=0 took=274ms err=0 pending=71
+[Mem] +5s rss=819 MB mode=harvest store=0 harvest=0 decode=0
+2026-10-18 21:37:38.821 NuvioTV[5451:2501346] [MPVQueue] stats queued +5s
+[MPVStats] vo=gpu-next
+[MPVStats] +5s cache=52.4s net=31.0 MB/s dropped=vo:7 dec:0 underruns=0
+2026-10-18 21:37:38.824 NuvioTV[5451:2501728] [MPVQueue] stats ran lag=2ms
+2026-10-18 21:37:38.824 NuvioTV[5451:2501728] [MPVQueue] stats read cache done
+2026-10-18 21:37:38.824 NuvioTV[5451:2501728] [MPVQueue] stats read drops done
+[TopShelf] wrote 9 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-18 21:37:40.296 NuvioTV[5451:2501722] [SubLoad] start n=20 pref=0 pending=61 status=0
+2026-10-18 21:37:40.575 NuvioTV[5451:2501728] [SubLoad] done n=20 pref=0 took=278ms err=0 pending=61
+2026-10-18 21:37:43.437 NuvioTV[5451:2501728] [SubLoad] start n=30 pref=0 pending=51 status=0
+2026-10-18 21:37:43.720 NuvioTV[5451:2501715] [SubLoad] done n=30 pref=0 took=283ms err=0 pending=51
+2026-10-18 21:37:43.827 NuvioTV[5451:2501346] [MPVQueue] stats queued +10s
+2026-10-18 21:37:43.827 NuvioTV[5451:2501728] [MPVQueue] stats ran lag=0ms
+2026-10-18 21:37:43.827 NuvioTV[5451:2501728] [MPVQueue] stats read cache done
+2026-10-18 21:37:43.827 NuvioTV[5451:2501728] [MPVQueue] stats read drops done
+[MPVStats] +10s cache=74.3s net=6.1 MB/s dropped=vo:7 dec:0 underruns=0
+2026-10-18 21:37:46.510 NuvioTV[5451:2501728] [SubLoad] start n=40 pref=0 pending=41 status=0
+2026-10-18 21:37:46.768 NuvioTV[5451:2501715] [SubLoad] done n=40 pref=0 took=257ms err=0 pending=41
+[Harvest] path=vo gamma=pq matrix=dolbyvision switch=vo
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+2026-10-18 21:37:46.996 NuvioTV[5451:2501715] [Harvest] took=177.7ms size=3840x2160 fmt=bgr0 at=12.1 src=mpv
+2026-10-18 21:37:47.027 NuvioTV[5451:2501346] [Harvest] slow (177.7ms > 60ms): interval now 30s for this file
+2026-10-18 21:37:47.027 NuvioTV[5451:2501728] [Harvest] skipped dark frame at=12.1
+2026-10-18 21:37:49.328 NuvioTV[5451:2501346] [MPVQueue] stats queued +15s
+[MPVStats] +15s cache=69.5s net=0.3 MB/s dropped=vo:10 dec:0 underruns=0
+2026-10-18 21:37:49.328 NuvioTV[5451:2501728] [MPVQueue] stats ran lag=0ms
+2026-10-18 21:37:49.328 NuvioTV[5451:2501728] [MPVQueue] stats read cache done
+2026-10-18 21:37:49.328 NuvioTV[5451:2501728] [MPVQueue] stats read drops done
+2026-10-18 21:37:49.632 NuvioTV[5451:2501734] [SubLoad] start n=50 pref=0 pending=31 status=0
+2026-10-18 21:37:49.908 NuvioTV[5451:2501727] [SubLoad] done n=50 pref=0 took=276ms err=0 pending=31
+2026-10-18 21:37:52.717 NuvioTV[5451:2501727] [SubLoad] start n=60 pref=0 pending=21 status=0
+2026-10-18 21:37:53.020 NuvioTV[5451:2501734] [SubLoad] done n=60 pref=0 took=303ms err=0 pending=21
+2026-10-18 21:37:54.329 NuvioTV[5451:2501346] [MPVQueue] stats queued +20s
+2026-10-18 21:37:54.329 NuvioTV[5451:2501728] [MPVQueue] stats ran lag=0ms
+2026-10-18 21:37:54.329 NuvioTV[5451:2501728] [MPVQueue] stats read cache done
+2026-10-18 21:37:54.329 NuvioTV[5451:2501728] [MPVQueue] stats read drops done
+[MPVStats] +20s cache=70.3s net=1.5 MB/s dropped=vo:10 dec:0 underruns=0
+2026-10-18 21:37:55.801 NuvioTV[5451:2501727] [SubLoad] start n=70 pref=0 pending=11 status=0
+2026-10-18 21:37:56.096 NuvioTV[5451:2501715] [SubLoad] done n=70 pref=0 took=294ms err=0 pending=11
+2026-10-18 21:37:58.723 NuvioTV[5451:2501734] [SubLoad] start n=80 pref=0 pending=1 status=0
+2026-10-18 21:37:59.278 NuvioTV[5451:2501715] [SubLoad] done n=80 pref=0 took=555ms err=0 pending=1
+2026-10-18 21:37:59.825 NuvioTV[5451:2501346] [MPVQueue] stats queued +26s
+[MPVStats] +26s cache=69.7s net=2.1 MB/s dropped=vo:10 dec:0 underruns=0
+2026-10-18 21:37:59.825 NuvioTV[5451:2501727] [MPVQueue] stats ran lag=0ms
+2026-10-18 21:37:59.825 NuvioTV[5451:2501727] [MPVQueue] stats read cache done
+2026-10-18 21:37:59.825 NuvioTV[5451:2501727] [MPVQueue] stats read drops done
+2026-10-18 21:38:00.090 NuvioTV[5451:2501734] [SubLoad] done n=81 pref=0 took=811ms err=0 pending=0
+2026-10-18 21:38:05.327 NuvioTV[5451:2501346] [MPVQueue] stats queued +31s
+[MPVStats] +31s cache=70.1s net=2.5 MB/s dropped=vo:10 dec:0 underruns=0
+2026-10-18 21:38:05.327 NuvioTV[5451:2501728] [MPVQueue] stats ran lag=0ms
+2026-10-18 21:38:05.327 NuvioTV[5451:2501728] [MPVQueue] stats read cache done
+2026-10-18 21:38:05.327 NuvioTV[5451:2501728] [MPVQueue] stats read drops done
+2026-10-18 21:38:10.330 NuvioTV[5451:2501346] [MPVQueue] stats queued +36s
+2026-10-18 21:38:10.330 NuvioTV[5451:2501727] [MPVQueue] stats ran lag=0ms
+2026-10-18 21:38:10.330 NuvioTV[5451:2501727] [MPVQueue] stats read cache done
+2026-10-18 21:38:10.330 NuvioTV[5451:2501727] [MPVQueue] stats read drops done
+[MPVStats] +36s cache=69.2s net=1.8 MB/s dropped=vo:10 dec:0 underruns=0
+[TopShelf] wrote 9 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[MPVStats] +42s cache=68.5s net=1.7 MB/s dropped=vo:10 dec:0 underruns=0
+2026-10-18 21:38:15.828 NuvioTV[5451:2501346] [MPVQueue] stats queued +42s
+2026-10-18 21:38:15.828 NuvioTV[5451:2501722] [MPVQueue] stats ran lag=0ms
+2026-10-18 21:38:15.828 NuvioTV[5451:2501722] [MPVQueue] stats read cache done
+2026-10-18 21:38:15.828 NuvioTV[5451:2501722] [MPVQueue] stats read drops done
+2026-10-18 21:38:16.948 NuvioTV[5451:2501727] [Harvest] took=130.0ms size=3840x2160 fmt=bgr0 at=42.1 src=mpv
+2026-10-18 21:38:16.984 NuvioTV[5451:2501346] [Harvest] stored n=1 bytes=8062 outcome=stored rss=1023
+2026-10-18 21:38:21.336 NuvioTV[5451:2501346] [MPVQueue] stats queued +47s
+2026-10-18 21:38:21.336 NuvioTV[5451:2501728] [MPVQueue] stats ran lag=0ms
+2026-10-18 21:38:21.354 NuvioTV[5451:2501728] [MPVQueue] stats read cache done
+[MPVStats] +47s cache=67.5s net=1.9 MB/s dropped=vo:11 dec:0 underruns=0
+2026-10-18 21:38:21.354 NuvioTV[5451:2501728] [MPVQueue] stats read drops done
+2026-10-18 21:38:26.329 NuvioTV[5451:2501346] [MPVQueue] stats queued +52s
+2026-10-18 21:38:26.329 NuvioTV[5451:2501727] [MPVQueue] stats ran lag=0ms
+2026-10-18 21:38:26.329 NuvioTV[5451:2501727] [MPVQueue] stats read cache done
+2026-10-18 21:38:26.329 NuvioTV[5451:2501727] [MPVQueue] stats read drops done
+[MPVStats] +52s cache=67.9s net=2.5 MB/s dropped=vo:11 dec:0 underruns=0
+2026-10-18 21:38:31.332 NuvioTV[5451:2501346] [MPVQueue] stats queued +57s
+2026-10-18 21:38:31.332 NuvioTV[5451:2501728] [MPVQueue] stats ran lag=0ms
+[MPVStats] +57s cache=68.5s net=2.8 MB/s dropped=vo:11 dec:0 underruns=0
+2026-10-18 21:38:31.344 NuvioTV[5451:2501728] [MPVQueue] stats read cache done
+2026-10-18 21:38:31.344 NuvioTV[5451:2501728] [MPVQueue] stats read drops done
+2026-10-18 21:38:36.335 NuvioTV[5451:2501346] [MPVQueue] stats queued +62s
+2026-10-18 21:38:36.335 NuvioTV[5451:2501728] [MPVQueue] stats ran lag=0ms
+[MPVStats] +62s cache=69.2s net=3.0 MB/s dropped=vo:11 dec:0 underruns=0
+2026-10-18 21:38:36.350 NuvioTV[5451:2501728] [MPVQueue] stats read cache done
+2026-10-18 21:38:36.350 NuvioTV[5451:2501728] [MPVQueue] stats read drops done
+[Mem] +68s rss=984 MB mode=harvest store=1 harvest=1 decode=0
+2026-10-18 21:38:41.832 NuvioTV[5451:2501346] [MPVQueue] stats queued +68s
+2026-10-18 21:38:41.833 NuvioTV[5451:2501727] [MPVQueue] stats ran lag=0ms
+[MPVStats] +68s cache=69.7s net=2.1 MB/s dropped=vo:11 dec:0 underruns=0
+2026-10-18 21:38:41.842 NuvioTV[5451:2501727] [MPVQueue] stats read cache done
+2026-10-18 21:38:41.842 NuvioTV[5451:2501727] [MPVQueue] stats read drops done
+2026-10-18 21:38:46.836 NuvioTV[5451:2501346] [MPVQueue] stats queued +73s
+2026-10-18 21:38:46.836 NuvioTV[5451:2501727] [MPVQueue] stats ran lag=0ms
+[MPVStats] +73s cache=69.1s net=1.8 MB/s dropped=vo:11 dec:0 underruns=0
+2026-10-18 21:38:46.848 NuvioTV[5451:2501727] [MPVQueue] stats read cache done
+2026-10-18 21:38:46.848 NuvioTV[5451:2501727] [MPVQueue] stats read drops done
+2026-10-18 21:38:47.470 NuvioTV[5451:2501715] [Harvest] took=152.8ms size=3840x2160 fmt=bgr0 at=72.6 src=mpv
+2026-10-18 21:38:47.505 NuvioTV[5451:2501346] [Harvest] stored n=2 bytes=19811 outcome=stored rss=1026
+2026-10-18 21:38:52.333 NuvioTV[5451:2501346] [MPVQueue] stats queued +78s
+[MPVStats] +78s cache=68.6s net=1.9 MB/s dropped=vo:13 dec:0 underruns=0
+2026-10-18 21:38:52.333 NuvioTV[5451:2501715] [MPVQueue] stats ran lag=0ms
+2026-10-18 21:38:52.333 NuvioTV[5451:2501715] [MPVQueue] stats read cache done
+2026-10-18 21:38:52.333 NuvioTV[5451:2501715] [MPVQueue] stats read drops done
+2026-10-18 21:38:57.338 NuvioTV[5451:2501346] [MPVQueue] stats queued +83s
+2026-10-18 21:38:57.338 NuvioTV[5451:2501722] [MPVQueue] stats ran lag=0ms
+2026-10-18 21:38:57.350 NuvioTV[5451:2501722] [MPVQueue] stats read cache done
+2026-10-18 21:38:57.350 NuvioTV[5451:2501722] [MPVQueue] stats read drops done
+[MPVStats] +83s cache=69.3s net=2.6 MB/s dropped=vo:13 dec:0 underruns=0
+2026-10-18 21:39:02.337 NuvioTV[5451:2501346] [MPVQueue] stats queued +88s
+2026-10-18 21:39:02.337 NuvioTV[5451:2501728] [MPVQueue] stats ran lag=0ms
+2026-10-18 21:39:02.358 NuvioTV[5451:2501728] [MPVQueue] stats read cache done
+2026-10-18 21:39:02.358 NuvioTV[5451:2501728] [MPVQueue] stats read drops done
+[MPVStats] +88s cache=69.2s net=2.2 MB/s dropped=vo:13 dec:0 underruns=0
+[Transport] cache-state raw={"cache-end":170.368000,"reader-pts":100.800000,"cache-duration":69.568000,"eof":false,"underrun":false,"idle":true,"total-bytes":222541744,"fw-bytes":157338480,"raw-input-rate":2372512,"debug-low-level-seeks":1,"debug-byte-level-seeks":3,"debug-ts-last":170.208000,"ts-per-stream":[{"type":"video"," ranges=1 fallback=0 +97s
+[TopShelf] wrote 9 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-18 21:39:21.497 NuvioTV[5451:2501722] [Harvest] took=178.1ms size=3840x2160 fmt=bgr0 at=106.6 src=mpv
+2026-10-18 21:39:21.507 NuvioTV[5451:2501346] [Harvest] stored n=3 bytes=35954 outcome=stored rss=955
+[Mem] +131s rss=875 MB mode=harvest store=3 harvest=3 decode=0
+2026-10-18 21:39:51.466 NuvioTV[5451:2501728] [Harvest] took=146.9ms size=3840x2160 fmt=bgr0 at=136.6 src=mpv
+2026-10-18 21:39:51.502 NuvioTV[5451:2501346] [Harvest] stored n=4 bytes=46235 outcome=stored rss=923
+2026-10-18 21:40:07.954 NuvioTV[5451:2501346] [Scrub] begin base=153.21 thr=160 curve=orivio
+2026-10-18 21:40:08.416 NuvioTV[5451:2501346] [NavRail] no-arm origin=nil inContent=0 presented=1
+2026-10-18 21:40:08.955 NuvioTV[5451:2501346] [NavRail] no-arm origin=nil inContent=0 presented=1
+2026-10-18 21:40:12.414 NuvioTV[5451:2501346] [Scrub] stroke end intent=h travel=377 vx=-65
+2026-10-18 21:40:14.495 NuvioTV[5451:2501346] [Scrub] stroke end intent=h travel=822 vx=1008
+2026-10-18 21:40:15.372 NuvioTV[5451:2501346] [Scrub] stroke end intent=h travel=1280 vx=3226
+2026-10-18 21:40:16.579 NuvioTV[5451:2501346] [NavRail] no-arm origin=nil inContent=0 presented=1
+2026-10-18 21:40:16.830 NuvioTV[5451:2501346] [Scrub] stroke end intent=h travel=1207 vx=-3753
+2026-10-18 21:40:17.414 NuvioTV[5451:2501346] [NavRail] no-arm origin=nil inContent=0 presented=1
+2026-10-18 21:40:17.663 NuvioTV[5451:2501346] [Scrub] stroke end intent=h travel=1026 vx=-2930
+2026-10-18 21:40:18.206 NuvioTV[5451:2501346] [NavRail] no-arm origin=nil inContent=0 presented=1
+2026-10-18 21:40:18.455 NuvioTV[5451:2501346] [Scrub] stroke end intent=h travel=1007 vx=-3204
+2026-10-18 21:40:20.375 NuvioTV[5451:2501346] [Scrub] stroke end intent=h travel=238 vx=-86
+2026-10-18 21:40:21.303 NuvioTV[5451:2501346] [MenuProbe] menu began action=cancelMode leaving=0 window=1
+2026-10-18 21:40:21.303 NuvioTV[5451:2501346] [MenuProbe] menu ended swallow=1 sinceExit=-1ms window=1
+2026-10-18 21:40:21.303 NuvioTV[5451:2501346] [MenuProbe] perform action=cancelMode mode=scrubbing(targetSec: 203.54705924987698)
+2026-10-18 21:40:21.303 NuvioTV[5451:2501346] [Scrub] cancel why=menu
+[TopShelf] wrote 9 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-18 21:40:23.211 NuvioTV[5451:2501346] [MenuProbe] menu began action=hideBar leaving=0 window=1
+2026-10-18 21:40:23.211 NuvioTV[5451:2501346] [MenuProbe] menu ended swallow=1 sinceExit=-1ms window=1
+2026-10-18 21:40:23.211 NuvioTV[5451:2501346] [MenuProbe] perform action=hideBar mode=idle
+2026-10-18 21:40:25.009 NuvioTV[5451:2501346] [MenuProbe] menu began action=exit leaving=0 window=1
+2026-10-18 21:40:25.009 NuvioTV[5451:2501346] [MenuProbe] shield armed reason=mpv-exit installed=1
+2026-10-18 21:40:25.009 NuvioTV[5451:2501346] [MenuProbe] exit firstResponder=true
+  [0] MPVTVPlayerViewController
+  [1] UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<MPVPlayerRepresentable>>
+  [2] HostingView grs=UIKitGestureRecognizer(state=0 press=[0, 1, 2, 3, 4, 5, 6, 30, 31, 18, 504] enabled=true), UIKitSelectGestureRecognizer(state=0 press=[4] enabled=true)
+  [3] UIKitKeyPressResponder
+  [4] PresentationHostingController<AnyView>
+  [5] PresentationHostingController<AnyView>
+  [6] UIHostingController<ModifiedContent<LazyView<ModifiedContent<ModifiedContent<ContentView, ProvidesFocusAppearance>, _PreferenceWritingModifier<PreferredColorSchemeKey>>>, RootModifier>>
+  [7] UITransitionView grs=UITapGestureRecognizer(state=0 press=[5] enabled=false)
+  [8] UIWindow grs=_UIFocusEnginePanGestureRecognizer(state=0 press=[] enabled=true), _UIFocusSelectObserverGestureRecognizer(state=0 press=[4] enabled=true), _UIFocusEngineJoystickGestureRecognizer(state=0 press=[4] enabled=true), _UIFocusMovementShoulderButtonPressGestureRecognizer(state=0 press=[35, 34] enabled=true), _UIFocusMovementDirectionalPressGestureRecognizer(state=0 press=[0, 2, 1, 3] enabled=true), _UIRotaryGestureRecognizer(state=0 press=[] enabled=true), ViewerInputRecognizer(state=0 press=[0, 1, 2, 3, 4, 5, 6] enabled=true), UITapGestureRecognizer(state=0 press=[5] enabled=true)
+  [9] UIWindowScene
+  [10] SwiftUIApplication
+  [11] AppDelegate
+  window grs=_UIFocusEnginePanGestureRecognizer(state=0 press=[]), _UIFocusSelectObserverGestureRecognizer(state=0 press=[4]), _UIFocusEngineJoystickGestureRecognizer(state=0 press=[4]), _UIFocusMovementShoulderButtonPressGestureRecognizer(state=0 press=[35, 34]), _UIFocusMovementDirectionalPressGestureRecognizer(state=0 press=[0, 2, 1, 3]), _UIRotaryGestureRecognizer(state=0 press=[]), ViewerInputRecognizer(state=0 press=[0, 1, 2, 3, 4, 5, 6]), UITapGestureRecognizer(state=0 press=[5])
+2026-10-18 21:40:25.039 NuvioTV[5451:2501346] [MenuProbe] menu cancelled swallow=1 sinceExit=29ms window=1
+[Failover] viewWillDisappear isLeavingPlayer=true cover=1 sinceExit=32ms
+2026-10-18 21:40:25.039 NuvioTV[5451:2501346] [MenuProbe] pressesCancelled(menu) firstResponder=false
+  [0] MPVTVPlayerViewController
+  [1] UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<MPVPlayerRepresentable>>
+  [2] HostingView grs=UIKitGestureRecognizer(state=0 press=[0, 1, 2, 3, 4, 5, 6, 30, 31, 18, 504] enabled=true), UIKitSelectGestureRecognizer(state=0 press=[4] enabled=true)
+  [3] UIKitKeyPressResponder
+  [4] PresentationHostingController<AnyView>
+  [5] PresentationHostingController<AnyView>
+  [6] UIHostingController<ModifiedContent<LazyView<ModifiedContent<ModifiedContent<ContentView, ProvidesFocusAppearance>, _PreferenceWritingModifier<PreferredColorSchemeKey>>>, RootModifier>>
+  [7] UITransitionView grs=UITapGestureRecognizer(state=0 press=[5] enabled=false)
+  [8] UIWindow grs=_UIFocusEnginePanGestureRecognizer(state=0 press=[] enabled=true), _UIFocusSelectObserverGestureRecognizer(state=0 press=[4] enabled=true), _UIFocusEngineJoystickGestureRecognizer(state=0 press=[4] enabled=true), _UIFocusMovementShoulderButtonPressGestureRecognizer(state=0 press=[35, 34] enabled=true), _UIFocusMovementDirectionalPressGestureRecognizer(state=0 press=[0, 2, 1, 3] enabled=true), _UIRotaryGestureRecognizer(state=0 press=[] enabled=true), ViewerInputRecognizer(state=0 press=[0, 1, 2, 3, 4, 5, 6] enabled=true), UITapGestureRecognizer(state=0 press=[5] enabled=true)
+  [9] UIWindowScene
+  [10] SwiftUIApplication
+  [11] AppDelegate
+  window grs=_UIFocusEnginePanGestureRecognizer(state=0 press=[]), _UIFocusSelectObserverGestureRecognizer(state=0 press=[4]), _UIFocusEngineJoystickGestureRecognizer(state=0 press=[4]), _UIFocusMovementShoulderButtonPressGestureRecognizer(state=0 press=[35, 34]), _UIFocusMovementDirectionalPressGestureRecognizer(state=0 press=[0, 2, 1, 3]), _UIRotaryGestureRecognizer(state=0 press=[]), ViewerInputRecognizer(state=0 press=[0, 1, 2, 3, 4, 5, 6]), UITapGestureRecognizer(state=0 press=[5])
+2026-10-18 21:40:25.048 NuvioTV[5451:2501346] [MenuProbe] shield disarmed reason=player screen gone held=38ms swallowed=0
+[mvk-info] Destroyed VkDevice on GPU Apple A15 GPU with 12 Vulkan extensions enabled.
+[mvk-info] Destroyed VkPhysicalDevice for GPU Apple A15 GPU with 127 MB of GPU memory still allocated.
+[mvk-info] Destroying VkInstance for Vulkan version 1.4.334 with 6 Vulkan extensions enabled.
+2026-10-18 21:40:26.168 NuvioTV[5451:2501734] [MPV] terminate_destroy took=1118ms
+2026-10-18 21:40:32.655 NuvioTV[5451:2501346] [TrailerPipeline] trailerLocation stage=row
+2026-10-18 21:40:33.954 NuvioTV[5451:2501346] [AmbientWash] show id=movie:tt22084616 gen=4 late=1 ms=10.9 lum=0.26
+2026-10-18 21:40:35.920 NuvioTV[5451:2503271] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 21:40:35.920 NuvioTV[5451:2503271] [TrailerExtract] client=visionos video=P3uI5sLosKU hls=true formats=0 adaptive=27 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+2026-10-18 21:40:35.927 NuvioTV[5451:2503271] [TrailerExtract] client=android video=P3uI5sLosKU hls=false formats=1 adaptive=29 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl,metadataFormats
+2026-10-18 21:40:35.932 NuvioTV[5451:2503271] [TrailerExtract] client=ios video=P3uI5sLosKU hls=false formats=0 adaptive=27 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl,metadataFormats
+2026-10-18 21:40:36.040 NuvioTV[5451:2501722] [TrailerExtract] manifest client=visionos top variant 3840x2160
+2026-10-18 21:40:36.040 NuvioTV[5451:2501722] [TrailerExtract] selection: manifest=2160 progressive=360 (manifests collected=1)
+2026-10-18 21:40:36.041 NuvioTV[5451:2501722] [TrailerExtract] repack candidates: avcVideo=1080p avc1.640028 (visionos) m4aAudio=mp4a.40.2 (visionos) maxFps=0
+2026-10-18 21:40:36.376 NuvioTV[5451:2503166] [TrailerExtract] repack decision: avc=1080p vs progressive=2160p -> skip (progressive is not worse)
+2026-10-18 21:40:38.486 NuvioTV[5451:2501346] [TrailerQuality] presentationSize=1920x1080
+2026-10-18 21:40:40.454 NuvioTV[5451:2501346] [TrailerQuality] presentationSize=1920x1080
