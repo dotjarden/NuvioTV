@@ -212,3 +212,15 @@ Batch L: 1 build agent + 1 review round. P5: 1 critique, 3 build agents (A ∥ B
   - Debug device build with the `com.youngchris29.NuvioTV` bundle-ID override.
 - Gate notes: the `generic/platform=tvOS Simulator` destination fails to link (it also builds x86_64, and SharedCore is arm64-only), so the sim builds ran on the FA87 destination. Tests use the `NuvioTVTests` scheme. The device build needs the per-target bundle-ID override.
 - Device pass: **not run.** `scripts/device/ready.sh` refused at ~14:45 ET: "Apple TV 'Living Room' is unavailable after a wake and 60s". Not retried, per the standing rule. The pass waits for the box to be awake.
+- **Rig recovery (2026-10-19 ~15:00 ET)**, after Christian restarted the Apple TV:
+  - devicectl sat at "available (paired)": its tunnel opens on demand, and `ready.sh` only polled `list devices`.
+  - mDNS kept advertising the pre-restart Companion port (61193 refused; the box listened on 49153).
+  - The Companion pairing had been invalidated; re-paired with `pair.py` (PIN read off a screenshot, then deleted).
+  - Fixed in `c1d13e4`: `ready.sh` opens an idle tunnel, and `atv.sh` uses the mDNS port only if it accepts a connection. `atv.env` port set to 49153.
+  - `ready.sh`: **DEVICE READY** (tvOS 27.2, signing profile until 2026-10-22T04:23Z).
+- **Device pass (partial)**: build 141 from `c9e54872d` installed over devicectl and launched with `-AppleLanguages (fr)`. Auto-entered profile 3 = **Test 2** (confirmed in the sidebar). Console: `docs/research/batch-l-device-2026-10-19/console-fr.log` (redacted).
+  - Launch, Home, Library and the French UI: fine, no crash.
+  - **L2 step skipped:** Test 2 has no Simkl connected (no Simkl activity in the log; the Library shows the local list with no section pill). The jvm `SimklLibraryTitlesLocalizationTest` is the record.
+  - **L1 infoHash branch not exercisable here:** Test 2's torrent source is Comet via TorBox, and every listing carries the full release filename, so Up Next matches by filename before the new step runs.
+  - Up Next regression check **not reached**: Companion arrow presses and holds did not commit seeks in the mpv player (a single hold moved about 27 s), so the rig could not drive to the end of a 51-min episode.
+  - The final return to the tvOS Home screen was `console.sh stop`'s SIGTERM (`App terminated due to signal 15`), not an eject.

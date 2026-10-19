@@ -1,0 +1,484 @@
+[LaunchTrace] +0ms app_init
+[ExtPlayerProbe] canOpenURL(infuse://) = true
+2026-10-19 15:10:55.193 NuvioTV[355:8277] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "L’opération n’a pas pu s’achever. (OSStatus erreur -10814.)"
+[ExtPlayerProbe] canOpenURL(vlc-x-callback://) = false
+[ExtPlayerProbe] canOpenURL(outplayer://) = false
+[ExtPlayerProbe] canOpenURL(open-vidhub://) = true
+[ExtPlayerProbe] canOpenURL(vidhub://) = false
+[ExtPlayerProbe] canOpenURL(senplayer://) = false
+[ExtPlayerProbe] canOpenURL(nativeplayer://) = false
+[ExtPlayerProbe] availablePlayers = ["infuse:Infuse", "vidhub:VidHub"]
+2026-10-19 15:10:55.194 NuvioTV[355:8277] -canOpenURL: failed for URL: "outplayer://" - error: "L’opération n’a pas pu s’achever. (OSStatus erreur -10814.)"
+2026-10-19 15:10:55.194 NuvioTV[355:8277] -canOpenURL: failed for URL: "vidhub://" - error: "L’opération n’a pas pu s’achever. (OSStatus erreur -10814.)"
+2026-10-19 15:10:55.194 NuvioTV[355:8277] -canOpenURL: failed for URL: "senplayer://" - error: "L’opération n’a pas pu s’achever. (OSStatus erreur -10814.)"
+2026-10-19 15:10:55.195 NuvioTV[355:8277] -canOpenURL: failed for URL: "nativeplayer://" - error: "L’opération n’a pas pu s’achever. (OSStatus erreur -10814.)"
+2026-10-19 15:10:55.196 NuvioTV[355:8277] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "L’opération n’a pas pu s’achever. (OSStatus erreur -10814.)"
+2026-10-19 15:10:55.196 NuvioTV[355:8277] -canOpenURL: failed for URL: "outplayer://" - error: "L’opération n’a pas pu s’achever. (OSStatus erreur -10814.)"
+2026-10-19 15:10:55.196 NuvioTV[355:8277] -canOpenURL: failed for URL: "senplayer://" - error: "L’opération n’a pas pu s’achever. (OSStatus erreur -10814.)"
+2026-10-19 15:10:55.197 NuvioTV[355:8277] -canOpenURL: failed for URL: "nativeplayer://" - error: "L’opération n’a pas pu s’achever. (OSStatus erreur -10814.)"
+[ProfileSelect] auto-enter profile 3
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-19 15:10:55.643 NuvioTV[355:8277] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+[LaunchTrace] +799ms home_appear
+2026-10-19 15:10:55.676 NuvioTV[355:8277] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-19 15:10:55.676 NuvioTV[355:8277] [TrailerPipeline] trailerLocation stage=row
+[LaunchTrace] +1127ms artwork #1: mem=0 disk=1 net=0 fail=0
+2026-10-19 15:10:56.162 NuvioTV[355:8277] [HomeHero] logoInk sync-sample ms=0.50
+[LaunchTrace] +1306ms artwork #10: mem=1 disk=9 net=0 fail=0
+2026-10-19 15:10:56.218 NuvioTV[355:8277] [AmbientWash] render id=movie:tt3118958 src=1920x1080 ms=47.1 lum=0.17
+2026-10-19 15:10:56.218 NuvioTV[355:8277] [AmbientWash] show id=movie:tt3118958 gen=1 late=0 ms=47.1 lum=0.17
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/<redacted-id>/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/<redacted-id>/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/<redacted-id>/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/<redacted-id>/Library/Caches/top-shelf.json
+[LaunchTrace] +5027ms artwork #25: mem=1 disk=19 net=5 fail=0
+[LaunchTrace] +5032ms first_rows n=37 hero=8
+[LaunchTrace] +5032ms first_hero n=8
+2026-10-19 15:10:59.914 NuvioTV[355:8277] [TrailerPipeline] gates inlineTrailersEnabled=YES systemAutoplay=YES
+[LaunchTrace] +5172ms artwork #50: mem=3 disk=42 net=5 fail=0
+[LaunchTrace] +5307ms rows n=41
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/<redacted-id>/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/<redacted-id>/Library/Caches/top-shelf.json
+2026-10-19 15:11:20.180 NuvioTV[355:8277] [NavRail] arm reason=menu origin=request tab=0
+2026-10-19 15:11:20.234 NuvioTV[355:8277] [Rail] gate=on mode=uikit
+2026-10-19 15:11:48.669 NuvioTV[355:8277] [NavRail] select tab=2 from=0
+2026-10-19 15:11:48.669 NuvioTV[355:8277] [Rail] gate=off mode=uikit
+2026-10-19 15:11:48.817 NuvioTV[355:8277] [NavRail] exit via=select route=none result=fallback
+2026-10-19 15:12:54.507 NuvioTV[355:8277] [NavRail] arm reason=menu origin=request tab=2
+2026-10-19 15:12:54.544 NuvioTV[355:8277] [Rail] gate=on mode=uikit
+2026-10-19 15:12:56.989 NuvioTV[355:8277] [NavRail] select tab=0 from=2
+2026-10-19 15:12:56.989 NuvioTV[355:8277] [Rail] gate=off mode=uikit
+[LaunchTrace] +122187ms home_appear
+2026-10-19 15:12:57.064 NuvioTV[355:8277] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-19 15:12:57.064 NuvioTV[355:8277] [TrailerPipeline] trailerLocation stage=row
+2026-10-19 15:12:57.094 NuvioTV[355:8277] [NavRail] exit via=select route=home result=focus
+[LaunchTrace] +122228ms first_hero n=8
+2026-10-19 15:13:14.169 NuvioTV[355:8277] [AmbientWash] render id=movie:tt6933238 src=768x432 ms=26.6 lum=0.17
+2026-10-19 15:13:14.326 NuvioTV[355:8277] [AmbientWash] show id=movie:tt6933238 gen=2 late=0 ms=26.6 lum=0.17
+2026-10-19 15:13:14.814 NuvioTV[355:8277] [AmbientWash] render id=series:tt30459041 src=768x432 ms=21.0 lum=0.17
+2026-10-19 15:13:14.985 NuvioTV[355:8277] [AmbientWash] show id=series:tt30459041 gen=3 late=0 ms=21.0 lum=0.17
+2026-10-19 15:13:15.132 NuvioTV[355:8277] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "L’opération n’a pas pu s’achever. (OSStatus erreur -10814.)"
+[SubtitleRepo] Fetching subtitles type=series id=tt30459041:1:7 across 8 enabled addons
+2026-10-19 15:13:15.133 NuvioTV[355:8277] -canOpenURL: failed for URL: "outplayer://" - error: "L’opération n’a pas pu s’achever. (OSStatus erreur -10814.)"
+2026-10-19 15:13:15.133 NuvioTV[355:8277] -canOpenURL: failed for URL: "senplayer://" - error: "L’opération n’a pas pu s’achever. (OSStatus erreur -10814.)"
+2026-10-19 15:13:15.133 NuvioTV[355:8277] -canOpenURL: failed for URL: "nativeplayer://" - error: "L’opération n’a pas pu s’achever. (OSStatus erreur -10814.)"
+[SubtitleRepo] Skip Comet: no subtitles resource
+[SubtitleRepo] Skip Torrentio: no subtitles resource
+[SubtitleRepo] Skip AIOMetadata: no subtitles resource
+[SubtitleRepo] Skip AIO Streams: no subtitles resource
+[SubtitleRepo] Skip Cinemeta: no subtitles resource
+[SubtitleRepo] Skip Better Posters: no subtitles resource
+[SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/series/tt30459041%3A1%3A7.json
+[SubtitleRepo] Querying Duck Streams: https://<redacted-config>/stremio/<redacted-id>/<redacted-config>/subtitles/series/tt30459041%3A1%3A7.json
+[SubtitleRepo] OpenSubtitles v3: 32 subtitles in 379.315833ms
+[SubtitleRepo] Duck Streams: 0 subtitles in 5.273203417s
+[SubtitleRepo] Subtitle fetch done: 32 total in 5.275253292s
+[PlayerRouter] self-check passed
+[Loading] engine=mpv stage=connecting t=+0.59s
+[Failover] mpv start watchdog armed: 25 s
+[mvk-info] MoltenVK version 1.4.1, supporting Vulkan version 1.4.334.
+	The following 152 Vulkan extensions are supported:
+	VK_KHR_16bit_storage v1
+	VK_KHR_8bit_storage v1
+	VK_KHR_bind_memory2 v1
+	VK_KHR_buffer_device_address v1
+	VK_KHR_calibrated_timestamps v1
+	VK_KHR_copy_commands2 v1
+	VK_KHR_create_renderpass2 v1
+	VK_KHR_dedicated_allocation v3
+	VK_KHR_deferred_host_operations v4
+	VK_KHR_depth_stencil_resolve v1
+	VK_KHR_descriptor_update_template v1
+	VK_KHR_device_group v4
+	VK_KHR_device_group_creation v1
+	VK_KHR_driver_properties v1
+	VK_KHR_dynamic_rendering v1
+	VK_KHR_dynamic_rendering_local_read v1
+	VK_KHR_external_fence v1
+	VK_KHR_external_fence_capabilities v1
+	VK_KHR_external_memory v1
+	VK_KHR_external_memory_capabilities v1
+	VK_KHR_external_semaphore v1
+	VK_KHR_external_semaphore_capabilities v1
+	VK_KHR_format_feature_flags2 v2
+	VK_KHR_fragment_shader_barycentric v1
+	VK_KHR_get_memory_requirements2 v1
+	VK_KHR_get_physical_device_properties2 v2
+	VK_KHR_get_surface_capabilities2 v1
+	VK_KHR_global_priority v1
+	VK_KHR_image_format_list v1
+	VK_KHR_imageless_framebuffer v1
+	VK_KHR_incremental_present v2
+	VK_KHR_index_type_uint8 v1
+	VK_KHR_line_rasterization v1
+	VK_KHR_load_store_op_none v1
+	VK_KHR_maintenance1 v2
+	VK_KHR_maintenance2 v1
+	VK_KHR_maintenance3 v1
+	VK_KHR_maintenance4 v2
+	VK_KHR_maintenance5 v1
+	VK_KHR_maintenance6 v1
+	VK_KHR_maintenance7 v1
+	VK_KHR_maintenance8 v1
+	VK_KHR_maintenance9 v1
+	VK_KHR_map_memory2 v1
+	VK_KHR_multiview v1
+	VK_KHR_portability_subset v1
+	VK_KHR_present_id v1
+	VK_KHR_present_id2 v1
+	VK_KHR_present_wait v1
+	VK_KHR_present_wait2 v1
+	VK_KHR_push_descriptor v2
+	VK_KHR_relaxed_block_layout v1
+	VK_KHR_robustness2 v1
+	VK_KHR_sampler_mirror_clamp_to_edge v3
+	VK_KHR_sampler_ycbcr_conversion v14
+	VK_KHR_separate_depth_stencil_layouts v1
+	VK_KHR_shader_draw_parameters v1
+	VK_KHR_shader_expect_assume v1
+	VK_KHR_shader_float_controls v4
+	VK_KHR_shader_float_controls2 v1
+	VK_KHR_shader_float16_int8 v1
+	VK_KHR_shader_fma v1
+	VK_KHR_shader_integer_dot_product v1
+	VK_KHR_shader_maximal_reconvergence v1
+	VK_KHR_shader_non_semantic_info v1
+	VK_KHR_shader_quad_control v1
+	VK_KHR_shader_relaxed_extended_instruction v1
+	VK_KHR_shader_subgroup_extended_types v1
+	VK_KHR_shader_subgroup_rotate v2
+	VK_KHR_shader_subgroup_uniform_control_flow v1
+	VK_KHR_shader_terminate_invocation v1
+	VK_KHR_spirv_1_4 v1
+	VK_KHR_storage_buffer_storage_class v1
+	VK_KHR_surface v25
+	VK_KHR_surface_maintenance1 v1
+	VK_KHR_surface_protected_capabilities v1
+	VK_KHR_swapchain v70
+	VK_KHR_swapchain_maintenance1 v1
+	VK_KHR_swapchain_mutable_format v1
+	VK_KHR_synchronization2 v1
+	VK_KHR_timeline_semaphore v2
+	VK_KHR_uniform_buffer_standard_layout v1
+	VK_KHR_variable_pointers v1
+	VK_KHR_vertex_attribute_divisor v1
+	VK_KHR_vulkan_memory_model v3
+	VK_KHR_zero_initialize_workgroup_memory v1
+	VK_EXT_4444_formats v1
+	VK_EXT_buffer_device_address v2
+	VK_EXT_calibrated_timestamps v2
+	VK_EXT_debug_marker v4
+	VK_EXT_debug_report v10
+	VK_EXT_debug_utils v2
+	VK_EXT_depth_clip_control v1
+	VK_EXT_descriptor_indexing v2
+	VK_EXT_extended_dynamic_state v1
+	VK_EXT_extended_dynamic_state2 v1
+	VK_EXT_extended_dynamic_state3 v2
+	VK_EXT_external_memory_host v1
+	VK_EXT_external_memory_metal v1
+	VK_EXT_fragment_shader_interlock v1
+	VK_EXT_global_priority v2
+	VK_EXT_global_priority_query v1
+	VK_EXT_headless_surface v1
+	VK_EXT_host_image_copy v1
+	VK_EXT_host_query_reset v1
+	VK_EXT_image_2d_view_of_3d v1
+	VK_EXT_image_robustness v1
+	VK_EXT_index_type_uint8 v1
+	VK_EXT_inline_uniform_block v1
+	VK_EXT_layer_settings v2
+	VK_EXT_legacy_dithering v2
+	VK_EXT_line_rasterization v1
+	VK_EXT_load_store_op_none v1
+	VK_EXT_memory_budget v1
+	VK_EXT_metal_objects v2
+	VK_EXT_metal_surface v1
+	VK_EXT_non_seamless_cube_map v1
+	VK_EXT_pipeline_creation_cache_control v3
+	VK_EXT_pipeline_creation_feedback v1
+	VK_EXT_pipeline_robustness v1
+	VK_EXT_post_depth_coverage v1
+	VK_EXT_primitive_topology_list_restart v1
+	VK_EXT_private_data v1
+	VK_EXT_provoking_vertex v1
+	VK_EXT_robustness2 v1
+	VK_EXT_sample_locations v1
+	VK_EXT_scalar_block_layout v1
+	VK_EXT_separate_stencil_usage v1
+	VK_EXT_shader_atomic_float v1
+	VK_EXT_shader_demote_to_helper_invocation v1
+	VK_EXT_shader_stencil_export v1
+	VK_EXT_shader_subgroup_ballot v1
+	VK_EXT_shader_subgroup_vote v1
+	VK_EXT_shader_viewport_index_layer v1
+	VK_EXT_subgroup_size_control v2
+	VK_EXT_surface_maintenance1 v1
+	VK_EXT_swapchain_colorspace v5
+	VK_EXT_swapchain_maintenance1 v1
+	VK_EXT_texel_buffer_alignment v1
+	VK_EXT_texture_compression_astc_hdr v1
+	VK_EXT_tooling_info v1
+	VK_EXT_vertex_attribute_divisor v3
+	VK_AMD_gpu_shader_half_float v2
+	VK_AMD_negative_viewport_height v1
+	VK_AMD_shader_image_load_store_lod v1
+	VK_AMD_shader_trinary_minmax v1
+	VK_GOOGLE_display_timing v1
+	VK_IMG_format_pvrtc v1
+	VK_INTEL_shader_integer_functions2 v1
+	VK_MVK_ios_surface v3
+	VK_MVK_moltenvk v37
+	VK_NV_fragment_shader_barycentric v1
+[mvk-info] GPU device:
+	model: Apple A15 GPU
+	type: Integrated
+	vendorID: 0x106b
+	deviceID: 0x1b020008
+	pipelineCacheUUID: DB445FF2-1B02-0008-0000-000100000000
+	GPU memory available: 2730 MB
+	GPU memory used: 0 MB
+	Metal Shading Language 3.1
+	supports the following GPU Features:
+		GPU Family Metal 3
+		GPU Family Apple 8
+		Read-Write Texture Tier 2
+[mvk-info] Created VkInstance for Vulkan version 1.4.334, as requested by app, with the following 6 Vulkan extensions enabled:
+	VK_KHR_get_surface_capabilities2 v1
+	VK_KHR_surface v25
+	VK_KHR_surface_maintenance1 v1
+	VK_EXT_metal_surface v1
+	VK_EXT_surface_maintenance1 v1
+	VK_EXT_swapchain_colorspace v5
+[mvk-info] Vulkan semaphores using MTLEvent.
+[mvk-info] Descriptor sets binding resources using Metal3 argument buffers.
+[mvk-info] Created VkDevice to run on GPU Apple A15 GPU with the following 12 Vulkan extensions enabled:
+	VK_KHR_dynamic_rendering v1
+	VK_KHR_portability_subset v1
+	VK_KHR_shader_expect_assume v1
+	VK_KHR_shader_relaxed_extended_instruction v1
+	VK_KHR_shader_subgroup_rotate v2
+	VK_KHR_swapchain v70
+	VK_KHR_swapchain_maintenance1 v1
+	VK_KHR_zero_initialize_workgroup_memory v1
+	VK_EXT_external_memory_host v1
+	VK_EXT_metal_objects v2
+	VK_EXT_shader_atomic_float v1
+	VK_EXT_swapchain_maintenance1 v1
+[Loading] engine=mpv stage=buffering t=+2.35s
+2026-10-19 15:13:52.941 NuvioTV[355:8820] [Chapters] n=0 dropped=0 dur=3060.8 src=json raw=[]
+2026-10-19 15:13:53.007 NuvioTV[355:8820] [SeekProbe] seek gen=1 args=2384.185 absolute status=0
+2026-10-19 15:13:53.007 NuvioTV[355:8820] [SubLoad] start n=1 pref=0 pending=31 status=0
+[mvk-info] Created 3 swapchain images with size (3840, 2160) and contents scale 2.0 in layer (null) (0x11cdb6760) on screen Main Screen.
+[Transport] cache-state raw={"cache-duration":0.000000,"eof":false,"underrun":true,"idle":false,"total-bytes":7407024,"fw-bytes":0,"raw-input-rate":185017,"debug-seeking":2384.185000,"debug-low-level-seeks":2,"debug-byte-level-seeks":3,"ts-per-stream":[],"bof-cached":false,"eof-cached":false,"seekable-ranges":[{"start":3.50300 ranges=1 fallback=0 +0s
+[mvk-info] Created 3 swapchain images with size (3840, 2160) and contents scale 2.0 in layer (null) (0x11cdb6760) on screen Main Screen.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+2026-10-19 15:13:53.716 NuvioTV[355:8277] [Aspect] fit override=-1 panscan=0.00 zoom=0.00 read=-1.000000
+[DisplayMode] criteria fps=23.976 3840x1600 codec=h.265 / hevc (high efficiency video coding) primaries=bt.2020 gamma=pq
+2026-10-19 15:13:53.810 NuvioTV[355:9556] [MPVQueue] params poll read w=3840 gamma=pq ready=1
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+2026-10-19 15:13:53.982 NuvioTV[355:9555] [SubLoad] done n=1 pref=0 took=975ms err=0 pending=31
+2026-10-19 15:13:53.983 NuvioTV[355:9555] [SubLoad] start n=2 pref=0 pending=30 status=0
+2026-10-19 15:13:54.246 NuvioTV[355:9555] [SubLoad] done n=2 pref=0 took=263ms err=0 pending=30
+2026-10-19 15:13:54.246 NuvioTV[355:9555] [SubLoad] start n=3 pref=0 pending=29 status=0
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-19 15:13:54.490 NuvioTV[355:9555] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-19 15:13:54.491 NuvioTV[355:9555] [SubLoad] done n=3 pref=0 took=244ms err=0 pending=29
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-19 15:13:54.491 NuvioTV[355:9555] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+[MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+2026-10-19 15:13:54.560 NuvioTV[355:9555] [MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+[MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+[MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+[MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+[MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+[MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+[Loading] engine=mpv stage=started t=+4.23s
+2026-10-19 15:13:54.567 NuvioTV[355:9555] [MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+2026-10-19 15:13:54.576 NuvioTV[355:9555] [MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+2026-10-19 15:13:54.586 NuvioTV[355:9644] [MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+2026-10-19 15:13:54.623 NuvioTV[355:9644] [MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+2026-10-19 15:13:54.630 NuvioTV[355:9644] [MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+2026-10-19 15:13:54.827 NuvioTV[355:8820] [SeekProbe] restart gen=1 landed=2384.257
+[Harvest] path=vo gamma=pq matrix=dolbyvision switch=vo
+[mvk-warn] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support disabling primitive restart.
+2026-10-19 15:13:56.320 NuvioTV[355:9644] [Harvest] took=148.5ms size=3840x1600 fmt=bgr0 at=2385.6 src=mpv
+2026-10-19 15:13:56.330 NuvioTV[355:8277] [Harvest] slow (148.5ms > 60ms): interval now 30s for this file
+2026-10-19 15:13:56.339 NuvioTV[355:8277] [Harvest] stored n=1 bytes=9316 outcome=stored rss=767
+[Mem] +4s rss=767 MB mode=harvest store=1 harvest=1 decode=0
+2026-10-19 15:13:57.175 NuvioTV[355:8277] [MPVQueue] stats queued +4s
+[MPVStats] vo=gpu-next
+[MPVStats] +4s cache=18.2s net=27.3 MB/s dropped=vo:1 dec:0 underruns=0
+2026-10-19 15:13:57.175 NuvioTV[355:9556] [MPVQueue] stats ran lag=0ms
+2026-10-19 15:13:57.175 NuvioTV[355:9556] [MPVQueue] stats read cache done
+2026-10-19 15:13:57.175 NuvioTV[355:9556] [MPVQueue] stats read drops done
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/<redacted-id>/Library/Caches/top-shelf.json
+2026-10-19 15:13:58.434 NuvioTV[355:9556] [SubLoad] start n=10 pref=0 pending=22 status=0
+2026-10-19 15:13:59.125 NuvioTV[355:9554] [SubLoad] done n=10 pref=0 took=690ms err=0 pending=22
+2026-10-19 15:14:02.176 NuvioTV[355:8277] [MPVQueue] stats queued +9s
+[MPVStats] +9s cache=48.4s net=16.4 MB/s dropped=vo:1 dec:0 underruns=0
+2026-10-19 15:14:02.176 NuvioTV[355:9644] [MPVQueue] stats ran lag=0ms
+2026-10-19 15:14:02.176 NuvioTV[355:9644] [MPVQueue] stats read cache done
+2026-10-19 15:14:02.176 NuvioTV[355:9644] [MPVQueue] stats read drops done
+2026-10-19 15:14:05.225 NuvioTV[355:9554] [SubLoad] start n=20 pref=0 pending=12 status=0
+2026-10-19 15:14:06.089 NuvioTV[355:9644] [SubLoad] done n=20 pref=0 took=864ms err=0 pending=12
+2026-10-19 15:14:07.183 NuvioTV[355:8277] [MPVQueue] stats queued +14s
+2026-10-19 15:14:07.183 NuvioTV[355:8820] [MPVQueue] stats ran lag=0ms
+[MPVStats] +14s cache=49.4s net=3.0 MB/s dropped=vo:1 dec:0 underruns=0
+2026-10-19 15:14:07.186 NuvioTV[355:8820] [MPVQueue] stats read cache done
+2026-10-19 15:14:07.186 NuvioTV[355:8820] [MPVQueue] stats read drops done
+2026-10-19 15:14:11.982 NuvioTV[355:9554] [SubLoad] start n=30 pref=0 pending=2 status=0
+2026-10-19 15:14:12.681 NuvioTV[355:8277] [MPVQueue] stats queued +20s
+[MPVStats] +20s cache=51.7s net=3.5 MB/s dropped=vo:1 dec:0 underruns=0
+2026-10-19 15:14:12.681 NuvioTV[355:9644] [MPVQueue] stats ran lag=0ms
+2026-10-19 15:14:12.681 NuvioTV[355:9644] [MPVQueue] stats read cache done
+2026-10-19 15:14:12.681 NuvioTV[355:9644] [MPVQueue] stats read drops done
+2026-10-19 15:14:12.708 NuvioTV[355:9556] [SubLoad] done n=30 pref=0 took=726ms err=0 pending=2
+2026-10-19 15:14:14.270 NuvioTV[355:9644] [SubLoad] done n=32 pref=0 took=822ms err=0 pending=0
+2026-10-19 15:14:18.180 NuvioTV[355:8277] [MPVQueue] stats queued +25s
+[MPVStats] +25s cache=52.2s net=3.5 MB/s dropped=vo:2 dec:0 underruns=0
+2026-10-19 15:14:18.180 NuvioTV[355:9556] [MPVQueue] stats ran lag=0ms
+2026-10-19 15:14:18.182 NuvioTV[355:9556] [MPVQueue] stats read cache done
+2026-10-19 15:14:18.182 NuvioTV[355:9556] [MPVQueue] stats read drops done
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/<redacted-id>/Library/Caches/top-shelf.json
+2026-10-19 15:14:23.678 NuvioTV[355:8277] [MPVQueue] stats queued +31s
+[MPVStats] +31s cache=52.5s net=3.3 MB/s dropped=vo:2 dec:0 underruns=0
+2026-10-19 15:14:23.679 NuvioTV[355:9554] [MPVQueue] stats ran lag=0ms
+2026-10-19 15:14:23.679 NuvioTV[355:9554] [MPVQueue] stats read cache done
+2026-10-19 15:14:23.679 NuvioTV[355:9554] [MPVQueue] stats read drops done
+2026-10-19 15:14:26.811 NuvioTV[355:9644] [Harvest] took=139.6ms size=3840x1600 fmt=bgr0 at=2416.1 src=mpv
+2026-10-19 15:14:26.844 NuvioTV[355:8277] [Harvest] stored n=2 bytes=16345 outcome=stored rss=919
+2026-10-19 15:14:29.180 NuvioTV[355:8277] [MPVQueue] stats queued +36s
+2026-10-19 15:14:29.180 NuvioTV[355:9644] [MPVQueue] stats ran lag=0ms
+[MPVStats] +36s cache=52.4s net=3.3 MB/s dropped=vo:4 dec:0 underruns=0
+2026-10-19 15:14:29.180 NuvioTV[355:9644] [MPVQueue] stats read cache done
+2026-10-19 15:14:29.180 NuvioTV[355:9644] [MPVQueue] stats read drops done
+2026-10-19 15:14:34.585 NuvioTV[355:8277] [Scrub] begin base=2424.01 thr=160 curve=orivio
+[Transport] cache-state raw={"cache-end":2482.591979,"reader-pts":2428.000000,"cache-duration":54.591979,"eof":false,"underrun":false,"idle":false,"total-bytes":223152448,"fw-bytes":157268864,"raw-input-rate":2985632,"debug-low-level-seeks":2,"debug-byte-level-seeks":4,"debug-ts-last":2482.522000,"ts-per-stream":[{"type":"vide ranges=1 fallback=0 +41s
+2026-10-19 15:14:34.676 NuvioTV[355:8277] [MPVQueue] stats queued +42s
+[MPVStats] +42s cache=54.6s net=3.0 MB/s dropped=vo:4 dec:0 underruns=0
+2026-10-19 15:14:34.676 NuvioTV[355:8819] [MPVQueue] stats ran lag=0ms
+2026-10-19 15:14:34.676 NuvioTV[355:8819] [MPVQueue] stats read cache done
+2026-10-19 15:14:34.676 NuvioTV[355:8819] [MPVQueue] stats read drops done
+2026-10-19 15:14:34.871 NuvioTV[355:8277] [Scrub] stroke end intent=h travel=1736 vx=7745
+2026-10-19 15:14:35.539 NuvioTV[355:8277] [Scrub] stroke end intent=h travel=1736 vx=7334
+2026-10-19 15:14:36.205 NuvioTV[355:8277] [Scrub] stroke end intent=h travel=1736 vx=7349
+2026-10-19 15:14:40.178 NuvioTV[355:8277] [MPVQueue] stats queued +47s
+[MPVStats] +47s cache=55.0s net=3.9 MB/s dropped=vo:4 dec:0 underruns=0
+2026-10-19 15:14:40.182 NuvioTV[355:8820] [MPVQueue] stats ran lag=3ms
+2026-10-19 15:14:40.182 NuvioTV[355:8820] [MPVQueue] stats read cache done
+2026-10-19 15:14:40.182 NuvioTV[355:8820] [MPVQueue] stats read drops done
+2026-10-19 15:14:44.181 NuvioTV[355:8277] [Scrub] cancel why=idle
+2026-10-19 15:14:45.181 NuvioTV[355:8277] [MPVQueue] stats queued +52s
+[MPVStats] +52s cache=54.4s net=3.0 MB/s dropped=vo:4 dec:0 underruns=0
+2026-10-19 15:14:45.181 NuvioTV[355:9554] [MPVQueue] stats ran lag=0ms
+2026-10-19 15:14:45.182 NuvioTV[355:9554] [MPVQueue] stats read cache done
+2026-10-19 15:14:45.182 NuvioTV[355:9554] [MPVQueue] stats read drops done
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/<redacted-id>/Library/Caches/top-shelf.json
+2026-10-19 15:14:50.188 NuvioTV[355:8277] [MPVQueue] stats queued +57s
+2026-10-19 15:14:50.188 NuvioTV[355:9554] [MPVQueue] stats ran lag=0ms
+2026-10-19 15:14:50.189 NuvioTV[355:9554] [MPVQueue] stats read cache done
+2026-10-19 15:14:50.189 NuvioTV[355:9554] [MPVQueue] stats read drops done
+[MPVStats] +57s cache=50.9s net=0.8 MB/s dropped=vo:4 dec:0 underruns=0
+2026-10-19 15:14:55.617 NuvioTV[355:8277] [Scrub] begin base=2445.03 thr=160 curve=orivio
+2026-10-19 15:14:55.676 NuvioTV[355:8277] [MPVQueue] stats queued +63s
+[MPVStats] +63s cache=47.9s net=2.4 MB/s dropped=vo:4 dec:0 underruns=0
+2026-10-19 15:14:55.676 NuvioTV[355:9554] [MPVQueue] stats ran lag=0ms
+2026-10-19 15:14:55.676 NuvioTV[355:9554] [MPVQueue] stats read cache done
+2026-10-19 15:14:55.676 NuvioTV[355:9554] [MPVQueue] stats read drops done
+2026-10-19 15:14:55.892 NuvioTV[355:8277] [Scrub] stroke end intent=h travel=1736 vx=7402
+2026-10-19 15:14:56.561 NuvioTV[355:8277] [Scrub] stroke end intent=h travel=1736 vx=8043
+[Mem] +68s rss=814 MB mode=harvest store=2 harvest=2 decode=0
+2026-10-19 15:15:00.678 NuvioTV[355:8277] [MPVQueue] stats queued +68s
+[MPVStats] +68s cache=46.6s net=2.1 MB/s dropped=vo:4 dec:0 underruns=0
+2026-10-19 15:15:00.679 NuvioTV[355:8819] [MPVQueue] stats ran lag=0ms
+2026-10-19 15:15:00.679 NuvioTV[355:8819] [MPVQueue] stats read cache done
+2026-10-19 15:15:00.679 NuvioTV[355:8819] [MPVQueue] stats read drops done
+2026-10-19 15:15:04.654 NuvioTV[355:8277] [Scrub] cancel why=idle
+2026-10-19 15:15:06.180 NuvioTV[355:8277] [MPVQueue] stats queued +73s
+[MPVStats] +73s cache=45.0s net=1.8 MB/s dropped=vo:4 dec:0 underruns=0
+2026-10-19 15:15:06.180 NuvioTV[355:9644] [MPVQueue] stats ran lag=0ms
+2026-10-19 15:15:06.180 NuvioTV[355:9644] [MPVQueue] stats read cache done
+2026-10-19 15:15:06.180 NuvioTV[355:9644] [MPVQueue] stats read drops done
+2026-10-19 15:15:11.687 NuvioTV[355:8277] [MPVQueue] stats queued +79s
+2026-10-19 15:15:11.687 NuvioTV[355:9644] [MPVQueue] stats ran lag=0ms
+2026-10-19 15:15:11.687 NuvioTV[355:9644] [MPVQueue] stats read cache done
+2026-10-19 15:15:11.687 NuvioTV[355:9644] [MPVQueue] stats read drops done
+[MPVStats] +79s cache=41.5s net=1.1 MB/s dropped=vo:4 dec:0 underruns=0
+2026-10-19 15:15:17.184 NuvioTV[355:8277] [MPVQueue] stats queued +84s
+2026-10-19 15:15:17.184 NuvioTV[355:8819] [MPVQueue] stats ran lag=0ms
+2026-10-19 15:15:17.184 NuvioTV[355:8819] [MPVQueue] stats read cache done
+2026-10-19 15:15:17.184 NuvioTV[355:8819] [MPVQueue] stats read drops done
+[MPVStats] +84s cache=35.8s net=0.8 MB/s dropped=vo:4 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/<redacted-id>/Library/Caches/top-shelf.json
+2026-10-19 15:15:22.182 NuvioTV[355:8277] [MPVQueue] stats queued +89s
+2026-10-19 15:15:22.182 NuvioTV[355:9644] [MPVQueue] stats ran lag=0ms
+2026-10-19 15:15:22.182 NuvioTV[355:9644] [MPVQueue] stats read cache done
+2026-10-19 15:15:22.182 NuvioTV[355:9644] [MPVQueue] stats read drops done
+[MPVStats] +89s cache=27.1s net=0.7 MB/s dropped=vo:119 dec:0 underruns=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/<redacted-id>/Library/Caches/top-shelf.json
+[MPV] warn: Audio device underrun detected.
+2026-10-19 15:15:39.636 NuvioTV[355:9644] [MPV] warn: Audio device underrun detected.
+[Mem] +132s rss=811 MB mode=harvest store=2 harvest=2 decode=0
+[MPV] warn: 
+[MPV] warn: Audio/Video desynchronisation detected! Possible reasons include too slow
+[MPV] warn: hardware, temporary CPU spikes, broken drivers, and broken files. Audio
+[MPV] warn: position will not match to the video (see A-V status field).
+[MPV] warn: Consider trying `--profile=fast` and/or `--hwdec=auto` as they may help.
+[MPV] warn: 
+2026-10-19 15:16:21.049 NuvioTV[355:10494] [MPV] warn: 
+2026-10-19 15:16:21.049 NuvioTV[355:10494] [MPV] warn: Audio/Video desynchronisation detected! Possible reasons include too slow
+2026-10-19 15:16:21.049 NuvioTV[355:10494] [MPV] warn: hardware, temporary CPU spikes, broken drivers, and broken files. Audio
+2026-10-19 15:16:21.049 NuvioTV[355:10494] [MPV] warn: position will not match to the video (see A-V status field).
+2026-10-19 15:16:21.049 NuvioTV[355:10494] [MPV] warn: Consider trying `--profile=fast` and/or `--hwdec=auto` as they may help.
+2026-10-19 15:16:21.050 NuvioTV[355:10494] [MPV] warn: 
+[MPV] warn: Audio device underrun detected.
+2026-10-19 15:16:21.659 NuvioTV[355:9644] [MPV] warn: Audio device underrun detected.
+[Mem] +195s rss=801 MB mode=harvest store=2 harvest=2 decode=0
+[MPV] warn: Audio device underrun detected.
+2026-10-19 15:17:30.266 NuvioTV[355:11005] [MPV] warn: Audio device underrun detected.
+2026-10-19 15:17:38.695 NuvioTV[355:8277] [MenuProbe] menu began action=cancelMode leaving=0 window=1
+2026-10-19 15:17:38.696 NuvioTV[355:8277] [MenuProbe] menu ended swallow=1 sinceExit=-1ms window=1
+2026-10-19 15:17:38.696 NuvioTV[355:8277] [MenuProbe] perform action=cancelMode mode=scanning(rate: 3)
+2026-10-19 15:17:38.696 NuvioTV[355:8277] [MenuProbe] endScan from=2464.42 returnTo=2464.42 live=2519.64
+2026-10-19 15:17:38.696 NuvioTV[355:10790] [SeekProbe] seek gen=2 args=2464.420 absolute+exact status=0
+[MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+2026-10-19 15:17:38.715 NuvioTV[355:10790] [MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+[MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+2026-10-19 15:17:38.720 NuvioTV[355:9554] [MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+2026-10-19 15:17:38.725 NuvioTV[355:10790] [MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+[MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+[MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+[MPV] warn: Setting video-aspect-override to -1 is deprecated.
+[MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+[MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+2026-10-19 15:17:38.731 NuvioTV[355:9554] [MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+2026-10-19 15:17:38.735 NuvioTV[355:9554] [MPV] warn: Setting video-aspect-override to -1 is deprecated.
+2026-10-19 15:17:38.735 NuvioTV[355:9554] [MPV] warn: Use --video-aspect-override=no --video-aspect-mode=container instead.
+2026-10-19 15:17:38.735 NuvioTV[355:9554] [MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+2026-10-19 15:17:38.740 NuvioTV[355:10790] [MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+[MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+[MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+[MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+2026-10-19 15:17:38.745 NuvioTV[355:10790] [MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+2026-10-19 15:17:38.750 NuvioTV[355:10790] [MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+2026-10-19 15:17:38.754 NuvioTV[355:10790] [MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+[MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+[MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+[MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+2026-10-19 15:17:38.759 NuvioTV[355:10790] [MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+2026-10-19 15:17:38.764 NuvioTV[355:9554] [MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+2026-10-19 15:17:38.769 NuvioTV[355:10790] [MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+[MPV] warn: hevc: Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+2026-10-19 15:17:38.825 NuvioTV[355:10790] [SeekProbe] restart gen=2 landed=2464.462
+2026-10-19 15:17:40.054 NuvioTV[355:8277] [MenuProbe] menu began action=hideBar leaving=0 window=1
+2026-10-19 15:17:40.093 NuvioTV[355:8277] [MenuProbe] menu ended swallow=1 sinceExit=-1ms window=1
+2026-10-19 15:17:40.093 NuvioTV[355:8277] [MenuProbe] perform action=hideBar mode=idle
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/<redacted-id>/Library/Caches/top-shelf.json
+Launched application with com.youngchris29.NuvioTV bundle identifier.
+Waiting for the application to terminate...
+App terminated due to signal 15.
