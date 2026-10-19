@@ -1,6 +1,6 @@
 # DM draft: correction to the beta.19-rc9 DM (2026-10-19)
 
-**Status: DRAFT, NOT SENT.** Send only on Christian's go, through the ego-browser recipe (memory `reddit-chat-smash-fetch`), after a pre-send `fetch-dms.sh` check; if Steven has replied by then, fold this into that reply instead.
+**Status: SENT 2026-10-19T17:30:40.061Z** as one bubble on Christian's go, after a quiet pre-send fetch (17:30:01Z); verified in the room and by `fetch-dms.sh` (one copy). DM watermark now `2026-10-19T17:30:40.061Z`. Was: DRAFT, NOT SENT. Send only on Christian's go, through the ego-browser recipe (memory `reddit-chat-smash-fetch`), after a pre-send `fetch-dms.sh` check; if Steven has replied by then, fold this into that reply instead.
 
 Pre-send fetch 2026-10-19T17:19Z: Steven asked about the contradiction himself (16:16:22Z: rc8 said all four were fixed); the text below answers him and says he'll report on rc8 + rc9.
 
