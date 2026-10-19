@@ -8,10 +8,9 @@ History, run logs, releases and open action items: `docs/status.md` (moved out 2
 - `NuvioMobile/shared/`: Compose-free Kotlin; upstream ports land here. `NuvioMobile/iosApp/NuvioTV/`: SwiftUI tvOS frontend.
 
 ## Standing instructions
-- Never send a DM, post, comment, thread edit or GitHub reply without Christian's explicit go. Drafts go in `docs/comms-*.md`, marked NOT SENT.
-- Never cut an RC, tag or release unless told. "Merge, no cut yet" means merge, push, bump the pointer, stop.
-- Ask clarifying questions before writing a plan. Do not start building until the plan is approved.
-- Batch work uses model delegation: Sonnet for mechanical execution, Opus for specs, critique and review. Record rounds and findings in the batch doc.
+The shared rules (no sends without a go, no cuts unless told, ask before planning, model delegation) live in `~/.codex/AGENTS.md`, loaded globally by both tools. Project-specific additions:
+- Comms drafts go in `docs/comms-*.md`, marked NOT SENT.
+- Batch work records delegation rounds and findings in the batch doc.
 - Release notes and tester DMs name every new setting and its default.
 
 ## Build and gates (in `NuvioMobile/`)
@@ -30,7 +29,7 @@ History, run logs, releases and open action items: `docs/status.md` (moved out 2
 5. Tester DM through the copy rule, sent only on his go.
 
 ## Device testing profile (standing, 2026-10-02)
-All device testing runs in the app's **"Test" profile** ("Test 2" on the Living Room box), never the synced daily-use "Chris" profile: passes, repros, installing a tester's add-ons or collections. Name the profile before any device step; remove tester payloads afterwards. If a pass needs "Chris", say so and get his go first. Dev builds under `com.youngchris29.NuvioTV` share the account. Remote rig (`scripts/device/*.sh`, credentials in `~/.config/nuviotv-device/`): `docs/device-rig-2026-10-15.md`.
+All device testing runs in the app's **"Test" profile** ("Test 2" on the Living Room box), never the synced daily-use "Chris" profile: passes, repros, installing a tester's add-ons or collections. Name the profile before any device step; remove tester payloads afterwards. If a pass needs "Chris", say so and get his go first. Dev builds under `com.youngchris29.NuvioTV` share the account. Remote rig (`scripts/device/*.sh`, credentials in `~/.config/nuviotv-device/`): `docs/device-rig-2026-10-15.md`. Pre-flight before any pass or install: `scripts/device/ready.sh` (`--walk` adds the app/console/profile gate).
 
 ## Branch hygiene
 - Outer `origin` carries `main` plus 31 stale `claude/*` sweep branches that need cleanup: delete each once it is an ancestor of `main`. Steady state is `main` only.
