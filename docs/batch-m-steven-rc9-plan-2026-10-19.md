@@ -200,3 +200,12 @@ Scope as decided 2026-10-19:
 
   SD about 2 in every cell. The pre-Batch M tip measured 23 and 26 on deep walks with the ring on. The rule was mean ≤ rc7 + 1 (17.9); **the tip alone meets it**, so the cheaper tile ring (G7's focus state moved into child rows, colour sampling only when it's used) is the fix. Neither new knob earns a setting; they stay as launch-only knobs.
 - NuvioTVTests: 2006/0, then 2014/0 after r1.
+- **Gates on `86af6a69b`, all green:**
+  - Kotlin: jvm 1563/0, tvOS K/N 1585/0, composeApp 438/0.
+  - NuvioTVTests: 2014/0 (5 skipped).
+  - Release and Debug simulator builds (FA87).
+  - Debug device build.
+- **New UI legs (FA87):**
+  - **Pass:** `FolderClassicHeroUITests` (BUG-190) and `StripFitNoZoomUITests` (BUG-191).
+  - **Skipped, fixture prerequisites:** `DetailFocusReturnUITests` ×2 (the fixture title has no tappable cast or More Like This row; TMDB enrichment is off) and `PlayerPanelCloseUITests` ×2 (`PLAYER_BAR_PROBE` / `PLAYER_SMOKE_URL` not set).
+  - **Failed, harness limit:** `DiscoverGenreLocalizationUITests` failed with "focus never reached discover.genrePicker". The leg detects focus through `hasFocus`, which the tvOS 27 simulator never reports. BUG-189 is covered by `DiscoverGenreNamesTests`, plus a French Discover check on the device.
