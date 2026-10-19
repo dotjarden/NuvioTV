@@ -1,5 +1,7 @@
 # NuvioTV master plan, 2026-10-14: every open bug and planned feature, sequenced
 
+> **2026-10-19: sequence run through.** Batch 0, A, rc4, P4 ∥ D, B (both halves) and C shipped, then Batches E–K from Steven's rc5–rc7 verdicts; cut as beta.19-rc4 … rc9 (build 141). Not started from this plan: **P5** (§4.5 player half), the Codex round after 10-29, B13/B16/B18/B19/B20 leftovers (BUG-156 first-move hold, UX-16 speed A/B, BUG-155 (b)+(d), BUG-150, FEAT-76) and the 10-08/10-10 upstream ports (TorBox pagination, MDBList release-date sort, ytId streams). Live open list: `docs/beta-feedback-tracker.md` (reconciled with rc6–rc9 on 10-19).
+
 **Status: PLAN, awaiting Christian's go. Nothing built this session.** Written from a full read of the three feedback
 sources (Steven's DMs through 2026-10-10, the r/NuvioForks thread, GitHub #3/#4/#5), the upstream checks 10-08 → 10-14,
 the player revamp plan, the drafted post-player-revamp plan (`docs/post-player-revamp-batch-plan-2026-10-08.md`, now on
