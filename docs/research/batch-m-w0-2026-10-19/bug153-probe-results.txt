@@ -1,0 +1,27 @@
+tip-base-2 hitches=17 frames=1694 maxGap=93.5ms detailBodyEval=20
+tip-k1mount-1 hitches=15 frames=1821 maxGap=102.6ms detailBodyEval=20
+tip-k1mount-2 hitches=12 frames=1684 maxGap=99.3ms detailBodyEval=20
+tip-k2logo-1 hitches=23 frames=1229 maxGap=103.3ms detailBodyEval=40
+tip-k2logo-2 hitches=21 frames=1248 maxGap=115.7ms detailBodyEval=40
+tip-k3ring-1 hitches=14 frames=1734 maxGap=109.7ms detailBodyEval=20
+tip-k3ring-2 hitches=26 frames=1311 maxGap=102.8ms detailBodyEval=40
+tip-k4edge-1 hitches=15 frames=1688 maxGap=97.0ms detailBodyEval=20
+tip-k4edge-2 hitches=15 frames=1726 maxGap=109.3ms detailBodyEval=20
+tip-all-1 hitches=19 frames=1635 maxGap=101.6ms detailBodyEval=20
+tip-all-2 hitches=13 frames=1639 maxGap=116.8ms detailBodyEval=20
+rc7-base-1 hitches=17 frames=1679 maxGap=100.4ms detailBodyEval=20
+rc7-base-2 hitches=21 frames=1270 maxGap=119.0ms detailBodyEval=40
+rc7-base-3 hitches=16 frames=1650 maxGap=116.9ms detailBodyEval=20
+rc7-base-4 hitches=25 frames=1233 maxGap=100.8ms detailBodyEval=40
+tip-base-3 hitches=22 frames=1230 maxGap=154.6ms detailBodyEval=40
+tip-base-4 hitches=20 frames=1221 maxGap=103.9ms detailBodyEval=40
+tip-base-5 hitches=23 frames=1267 maxGap=108.1ms detailBodyEval=40
+tip-ring-1 hitches=23 frames=1232 maxGap=66.7ms detailBodyEval=40
+tip-ring-2 hitches=15 frames=1661 maxGap=72.5ms detailBodyEval=20
+tip-ring-3 hitches=26 frames=1257 maxGap=100.1ms detailBodyEval=40
+tip-ring-k3-1 hitches=19 frames=1251 maxGap=85.3ms detailBodyEval=40
+tip-ring-k3-2 hitches=16 frames=1645 maxGap=97.2ms detailBodyEval=20
+tip-ring-k3-3 hitches=17 frames=1653 maxGap=98.2ms detailBodyEval=20
+rc7-ring-1 hitches=17 frames=1276 maxGap=82.5ms detailBodyEval=40
+rc7-ring-2 hitches=15 frames=1669 maxGap=89.0ms detailBodyEval=20
+rc7-ring-3 hitches=21 frames=1236 maxGap=77.6ms detailBodyEval=40

@@ -158,3 +158,11 @@ Scope as decided 2026-10-19:
 ## OUTCOME
 
 ### Wave 0 (started 2026-10-19)
+- **BUG-153 A/B, measured on the rig** (Release builds; Test 2; The Boroughs Detail from the Library; a scripted walk of 8 Down + 8 Up at 0.7 s, starting 2.5 s after the page opens; `debug.detailScrollProbe` hitch counter, gaps over 25 ms). Knobs added in `782b31be6`. Raw numbers: `docs/research/batch-m-w0-2026-10-19/bug153-probe-results.txt`.
+  - **Two walk kinds.** The first Down either lands shallow (about 1,700 frames, `detailBodyEval=20`) or deep (about 1,250 frames, 40 evals, a ~766 pt first scroll). Compare within a kind.
+  - **Ring off (Test 2's own setting):** rc7 and the tip match. Shallow: rc7 17/16 vs tip 17 (knob runs 12–19). Deep: rc7 21/25 vs tip 22/22/20/23. No single knob clearly helps; the immediate trailer mount came out best (12/15 vs 17), within the noise.
+  - **Ring on (`-accent_focus_ring YES`, as on Steven's box), deep walk:** rc7 17/21, tip 23/26, tip + `debug.detailNoTileRing` 19. Shallow: all about 15–17.
+  - **Conclusion:** the regression shows only with the accent ring on, on deep walks where the Episodes, Season and Trailer rows are built. That points to G7's tile ring path (BUG-177: `DetailTileFocusLift`'s per-tile ring, lift, `onChange` and colour sample, plus the `@FocusState focusedTrailerIndex` on the whole `DetailView` body). Batch K's deferred mount is not the cause.
+  - **Fix direction for Agent A:**
+    - Make the tile ring cheap: no per-tile `ArtworkColorStore` sample on focus, one shared ring overlay per row, and the trailer focus state moved into a child view so a focus move doesn't re-evaluate `DetailView.body`.
+    - Keep `debug.detailNoTileRing` as the A/B, and re-measure ring-on deep walks against rc7's 17/21.
