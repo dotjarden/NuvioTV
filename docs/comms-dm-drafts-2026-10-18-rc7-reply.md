@@ -1,6 +1,6 @@
 # DM draft: reply to Steven's rc7 verdict + beta.19-rc8 (2026-10-18)
 
-**Status: DRAFT, NOT SENT.** SlopMonster lint 5/5 (512 words). The rc7 reply and the rc8 announcement folded into one message on Christian's call. Codex cleanse skipped (quota until 10-29).
+**Status: SENT 2026-10-19 02:59:51.233Z** as one bubble on Christian's go, verified in the room and by `fetch-dms.sh` (one copy); DM watermark `2026-10-19T02:59:51.233Z`. Was: DRAFT, NOT SENT. SlopMonster lint 5/5. Pre-send fetch 02:58Z found his 00:00:38Z note (the loading logo is always English); one line added for it. The rc7 reply and the rc8 announcement folded into one message on Christian's call. Codex cleanse skipped (quota until 10-29).
 
 Facts behind it:
 - rc8 = build 140, tag `tvos-v0.3.0-beta.19-rc8` (`09b901c2` on `tvos-shared-extraction`), outer pointer `934c0f2`. IPA 29,652,348 B at https://filebin.net/nuviotv-beta19-rc8-0ec9a1e5/NuvioTV-beta19-rc8.ipa (filebin, until 2026-10-26; gofile backup https://gofile.io/d/arQBG41O).
@@ -34,6 +34,6 @@ Also new in rc8:
 - Scrolling down the details page shows the title's logo at the top.
 - Trailers no longer freeze partway through, and going full screen picks up where the background trailer was.
 
-Collections with the Classic look when Classic is selected: good idea, it's a bigger change, so it'll come in the build after. Atmos is still on my list.
+Collections with the Classic look when Classic is selected: good idea, it's a bigger change, so it'll come in the build after. Atmos is still on my list. I just saw your note about the loading logo always being in English: it uses a logo source that only has the English version, so I'll look at using the one in your language there too.
 
 Your question about external players: the app's subtitle and language settings didn't carry over before; only the subtitles that come with the stream itself were sent. rc8 also sends the subtitles from your subtitle add-ons, with your preferred language first. The audio language can't be passed: Infuse, SenPlayer and Native Player don't offer a way to set it from another app, so their own settings decide that.
