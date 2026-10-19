@@ -203,3 +203,12 @@ Batch L: 1 build agent + 1 review round. P5: 1 critique, 3 build agents (A ∥ B
 
 ### Batch L (started 2026-10-19)
 - Clone `~/Claude/Projects/NuvioMobile-batch-l`, branch `claude/batch-l` off `2baa390f1`, MPVKit symlinked (stage by explicit paths).
+- Build (Sonnet agent): `cab68cd1d` L1, `2930c79a5` L2, plus the gate fix `c9e54872d` (the composeApp `ComposeResourcesStringProvider` `when` needed the five new keys). The fr/es/de status names are fork overrides written in-house; upstream ships only `values-it` for these keys.
+- Opus review r1: **CLEAN**, no findings. The season-pack worry is ruled out in code: `fetchStreams` resets the state on a new videoId before the watcher subscribes, so the hash match only ever sees next-episode listings. Notes only: no `torrent://` test case; a stale KDoc in `StringProvider.kt:253`.
+- Gates on `c9e54872d`, all green:
+  - `:shared:jvmTest` 1563/0, `:shared:tvosSimulatorArm64Test` 1585/0, `:composeApp:iosSimulatorArm64Test` 438/0.
+  - NuvioTVTests 1967/0 (5 skipped).
+  - Release + Debug simulator builds.
+  - Debug device build with the `com.youngchris29.NuvioTV` bundle-ID override.
+- Gate notes: the `generic/platform=tvOS Simulator` destination fails to link (it also builds x86_64, and SharedCore is arm64-only), so the sim builds ran on the FA87 destination. Tests use the `NuvioTVTests` scheme. The device build needs the per-target bundle-ID override.
+- Device pass: **not run.** `scripts/device/ready.sh` refused at ~14:45 ET: "Apple TV 'Living Room' is unavailable after a wake and 60s". Not retried, per the standing rule. The pass waits for the box to be awake.
