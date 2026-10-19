@@ -3044,7 +3044,7 @@
    "kind": "Bug",
    "priority": "P4",
    "stage": "Released",
-   "tester": "Awaiting tester",
+   "tester": "Confirmed by tester",
    "build": "beta.19-rc9",
    "reporter": "u/mrStevenx3",
    "first_seen": "2026-10-19",
