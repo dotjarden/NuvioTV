@@ -1,0 +1,100 @@
+[LaunchTrace] +0ms app_init
+[ExtPlayerProbe] canOpenURL(infuse://) = true
+2026-10-18 23:11:37.016 NuvioTV[5545:2537477] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ExtPlayerProbe] canOpenURL(vlc-x-callback://) = false
+[ExtPlayerProbe] canOpenURL(outplayer://) = false
+[ExtPlayerProbe] canOpenURL(open-vidhub://) = true
+[ExtPlayerProbe] canOpenURL(vidhub://) = false
+[ExtPlayerProbe] canOpenURL(senplayer://) = false
+[ExtPlayerProbe] canOpenURL(nativeplayer://) = false
+[ExtPlayerProbe] availablePlayers = ["infuse:Infuse", "vidhub:VidHub"]
+2026-10-18 23:11:37.017 NuvioTV[5545:2537477] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 23:11:37.017 NuvioTV[5545:2537477] -canOpenURL: failed for URL: "vidhub://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 23:11:37.017 NuvioTV[5545:2537477] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 23:11:37.018 NuvioTV[5545:2537477] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 23:11:37.018 NuvioTV[5545:2537477] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 23:11:37.019 NuvioTV[5545:2537477] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 23:11:37.019 NuvioTV[5545:2537477] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-18 23:11:37.019 NuvioTV[5545:2537477] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ProfileSelect] auto-enter profile 3
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-18 23:11:37.415 NuvioTV[5545:2537477] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+[LaunchTrace] +667ms home_appear
+2026-10-18 23:11:37.437 NuvioTV[5545:2537477] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-18 23:11:37.480 NuvioTV[5545:2537477] [HomeScrollProbe] REGIME-CHANGE from=M330c1p1r0z0t37hzrt4 to=L403c1p1r0z0t37hzrt4 fits=1
+[LaunchTrace] +1308ms artwork #1: mem=0 disk=1 net=0 fail=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/<redacted-id>/Library/Caches/top-shelf.json
+[LaunchTrace] +2888ms artwork #10: mem=0 disk=10 net=0 fail=0
+[LaunchTrace] +2890ms first_rows n=9 hero=8
+[LaunchTrace] +2890ms first_hero n=8
+2026-10-18 23:11:39.681 NuvioTV[5545:2537477] [HomeHero] logoInk sync-sample ms=0.46
+2026-10-18 23:11:39.683 NuvioTV[5545:2537477] [HomeScrollProbe] REGIME-CHANGE from=L403c1p1r0z0t37hzrt4 to=L403c1p0r0z0t37hzrt4 fits=0
+[LaunchTrace] +2989ms artwork #25: mem=0 disk=25 net=0 fail=0
+[LaunchTrace] +3067ms artwork #50: mem=0 disk=50 net=0 fail=0
+[LaunchTrace] +4136ms rows n=17
+[LaunchTrace] +4900ms rows n=25
+[LaunchTrace] +5457ms rows n=33
+[LaunchTrace] +6184ms rows n=41
+2026-10-18 23:12:05.981 NuvioTV[5545:2537477] [HomeScrollProbe] settle REARM-DIRECTION dir=1 row=upcoming pull=0 rearm=0 released=0 y=356 — the walk reversed; the pull-back brake belongs to the other direction
+2026-10-18 23:12:06.517 NuvioTV[5545:2537477] [HomeScrollProbe] settle VOID expected=439 landed=439 contentH=16272→16324
+2026-10-18 23:12:06.774 NuvioTV[5545:2537477] [TrailerPipeline] gates inlineTrailersEnabled=YES systemAutoplay=YES
+2026-10-18 23:12:07.933 NuvioTV[5545:2537477] [HomeScrollProbe] settle VOID expected=905 landed=905 contentH=16536→17256
+[LaunchTrace] +47499ms artwork #100: mem=0 disk=80 net=20 fail=0
+2026-10-18 23:12:26.539 NuvioTV[5545:2537818] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:12:26.539 NuvioTV[5545:2537818] [TrailerExtract] client=visionos NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:12:26.539 NuvioTV[5545:2537818] [TrailerExtract] client=android NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:12:26.539 NuvioTV[5545:2537818] [TrailerExtract] client=ios NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:12:27.390 NuvioTV[5545:2537972] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:12:27.390 NuvioTV[5545:2537972] [TrailerExtract] client=visionos NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:12:27.390 NuvioTV[5545:2537972] [TrailerExtract] client=android NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:12:27.390 NuvioTV[5545:2537972] [TrailerExtract] client=ios NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:12:28.373 NuvioTV[5545:2537972] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:12:28.373 NuvioTV[5545:2537972] [TrailerExtract] client=visionos NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:12:28.373 NuvioTV[5545:2537972] [TrailerExtract] client=android NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:12:28.373 NuvioTV[5545:2537972] [TrailerExtract] client=ios NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:12:34.997 NuvioTV[5545:2537502] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:12:34.997 NuvioTV[5545:2537502] [TrailerExtract] client=visionos NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:12:34.997 NuvioTV[5545:2537502] [TrailerExtract] client=android NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:12:34.998 NuvioTV[5545:2537502] [TrailerExtract] client=ios NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:12:35.904 NuvioTV[5545:2537971] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:12:35.904 NuvioTV[5545:2537971] [TrailerExtract] client=visionos NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:12:35.904 NuvioTV[5545:2537971] [TrailerExtract] client=android NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:12:35.904 NuvioTV[5545:2537971] [TrailerExtract] client=ios NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:12:36.781 NuvioTV[5545:2537502] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:12:36.781 NuvioTV[5545:2537502] [TrailerExtract] client=visionos NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:12:36.781 NuvioTV[5545:2537502] [TrailerExtract] client=android NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:12:36.781 NuvioTV[5545:2537502] [TrailerExtract] client=ios NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:13.756 NuvioTV[5545:2537477] [HomeScrollProbe] settle covered=1 skipped=1 row=-
+2026-10-18 23:13:13.832 NuvioTV[5545:2537971] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:13.832 NuvioTV[5545:2537971] [TrailerExtract] client=visionos NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:13.832 NuvioTV[5545:2537971] [TrailerExtract] client=android NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:13.832 NuvioTV[5545:2537971] [TrailerExtract] client=ios NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:14.307 NuvioTV[5545:2538062] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:14.307 NuvioTV[5545:2538062] [TrailerExtract] client=visionos NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:14.307 NuvioTV[5545:2538062] [TrailerExtract] client=android NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:14.307 NuvioTV[5545:2538062] [TrailerExtract] client=ios NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:14.595 NuvioTV[5545:2538374] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:14.596 NuvioTV[5545:2538374] [TrailerExtract] client=visionos NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:14.596 NuvioTV[5545:2538374] [TrailerExtract] client=android NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:14.596 NuvioTV[5545:2538374] [TrailerExtract] client=ios NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:15.273 NuvioTV[5545:2538063] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:15.273 NuvioTV[5545:2538063] [TrailerExtract] client=visionos NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:15.273 NuvioTV[5545:2538063] [TrailerExtract] client=android NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:15.273 NuvioTV[5545:2538063] [TrailerExtract] client=ios NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:42.903 NuvioTV[5545:2537502] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:42.903 NuvioTV[5545:2537502] [TrailerExtract] client=visionos NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:42.903 NuvioTV[5545:2537502] [TrailerExtract] client=android NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:42.903 NuvioTV[5545:2537502] [TrailerExtract] client=ios NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:50.207 NuvioTV[5545:2538576] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:50.207 NuvioTV[5545:2538576] [TrailerExtract] client=visionos NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:50.207 NuvioTV[5545:2538576] [TrailerExtract] client=android NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:50.207 NuvioTV[5545:2538576] [TrailerExtract] client=ios NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:51.054 NuvioTV[5545:2538576] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:51.054 NuvioTV[5545:2538576] [TrailerExtract] client=visionos NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:51.054 NuvioTV[5545:2538576] [TrailerExtract] client=android NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-18 23:13:51.054 NuvioTV[5545:2538576] [TrailerExtract] client=ios NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+Launched application with com.youngchris29.NuvioTV bundle identifier.
+Waiting for the application to terminate...
+App terminated due to signal 9.
