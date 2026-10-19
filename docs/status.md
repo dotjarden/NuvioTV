@@ -6,7 +6,7 @@ Later cuts not recorded in these notes: the submodule carries tags `tvos-v0.3.0-
 
 ## Releases
 
-**beta.19-rc9 CUT 2026-10-19:** build 141 `2baa390f`, tag `tvos-v0.3.0-beta.19-rc9`, outer pointer `73918d4`, litterbox `6ukggu` (72 h), 29,826,428 B. Carries Batches H, I, J, K and UX-16 over rc8. Cut by `scripts/cut-rc.sh` in one run (build 6 m 16 s). New setting: Home Screen › Synopsis Length (Standard, Classic only). DM drafted, NOT SENT (`docs/comms-dm-drafts-2026-10-19-beta19-rc9.md`); Steven's rc8 verdict still owed.
+**beta.19-rc9 CUT 2026-10-19:** build 141 `2baa390f`, tag `tvos-v0.3.0-beta.19-rc9`, outer pointer `73918d4`, litterbox `6ukggu` (72 h), 29,826,428 B. Carries Batches H, I, J, K and UX-16 over rc8. Cut by `scripts/cut-rc.sh` in one run (build 6 m 16 s). New setting: Home Screen › Synopsis Length (Standard, Classic only). DM SENT 2026-10-19T16:05:00.060Z (`docs/comms-dm-drafts-2026-10-19-beta19-rc9.md`); Steven's verdict now owed on rc9 (covers rc8).
 
 ## Upstream sync status (auto-checked daily against NuvioMedia/NuvioMobile)
 

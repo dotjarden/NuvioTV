@@ -1,6 +1,6 @@
 # DM draft: beta.19-rc9 to Steven (2026-10-19)
 
-**Status: DRAFT, NOT SENT.** Send only on Christian's go. IPA: litterbox, 72 h (until about 2026-10-22), 29,826,428 B. Cut 2026-10-19: build 141 `2baa390f`, tag `tvos-v0.3.0-beta.19-rc9` pushed, outer pointer `73918d4`. His rc8 verdict is still owed (DM watermark 2026-10-19T02:59:51.233Z). Fetch DMs right before sending and add a line for anything new. Per Christian 10-19: the DM says his rc8 report isn't in yet and that rc9 carries every rc8 fix, so he can test rc9 for all of them.
+**Status: SENT 2026-10-19T16:05:00.060Z** as one bubble on Christian's go, after a quiet pre-send fetch (16:04Z). Verified in the room and by `fetch-dms.sh` (one copy). DM watermark now `2026-10-19T16:05:00.060Z`. Was: DRAFT, NOT SENT. IPA: litterbox, 72 h (until about 2026-10-22), 29,826,428 B. Cut 2026-10-19: build 141 `2baa390f`, tag `tvos-v0.3.0-beta.19-rc9` pushed, outer pointer `73918d4`. His rc8 verdict is still owed (DM watermark 2026-10-19T02:59:51.233Z). Fetch DMs right before sending and add a line for anything new. Per Christian 10-19: the DM says his rc8 report isn't in yet and that rc9 carries every rc8 fix, so he can test rc9 for all of them.
 
 Facts behind it:
 - rc9 = build 141, tag `tvos-v0.3.0-beta.19-rc9`, from `tvos-shared-extraction` `fb55a50e8` + the build bump.
