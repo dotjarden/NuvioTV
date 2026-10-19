@@ -1,6 +1,6 @@
 # DM draft: beta.19-rc9 to Steven (2026-10-19)
 
-**Status: DRAFT, NOT SENT.** Send only on Christian's go. IPA: litterbox, 72 h (until about 2026-10-22), 29,826,428 B. Cut 2026-10-19: build 141 `2baa390f`, tag `tvos-v0.3.0-beta.19-rc9` pushed, outer pointer `73918d4`. His rc8 verdict is still owed (DM watermark 2026-10-19T02:59:51.233Z). Fetch DMs right before sending and add a line for anything new.
+**Status: DRAFT, NOT SENT.** Send only on Christian's go. IPA: litterbox, 72 h (until about 2026-10-22), 29,826,428 B. Cut 2026-10-19: build 141 `2baa390f`, tag `tvos-v0.3.0-beta.19-rc9` pushed, outer pointer `73918d4`. His rc8 verdict is still owed (DM watermark 2026-10-19T02:59:51.233Z). Fetch DMs right before sending and add a line for anything new. Per Christian 10-19: the DM says his rc8 report isn't in yet and that rc9 carries every rc8 fix, so he can test rc9 for all of them.
 
 Facts behind it:
 - rc9 = build 141, tag `tvos-v0.3.0-beta.19-rc9`, from `tvos-shared-extraction` `fb55a50e8` + the build bump.
@@ -18,7 +18,9 @@ Facts behind it:
 
 Hi Steven, rc9 is ready: https://litter.catbox.moe/6ukggu.ipa (build 141).
 
-From your rc7 and rc8 notes:
+I know you haven't had a chance to report back on rc8 yet, no worries. rc9 has every fix from rc8 too, so you can skip rc8 and test this one for all of them. Tell me anything you see.
+
+New since rc8, from your notes:
 - Collections with Classic Home: with the Rows layout, a collection now keeps Classic's look, and going back from a title puts you on the card you left.
 - The loading screen's title logo is now in your language, not always the English one.
 - Discover opens on a poster grid. Pick Movies or Series and a genre at the top. The Browse pill still gives you one row per genre.
