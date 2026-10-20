@@ -1,4 +1,6 @@
-# GitHub issue #6 reply (drafted 2026-10-20): BUG-172, native-player micro-stutter. NOT POSTED
+# GitHub issue #6 reply (drafted 2026-10-20): BUG-172, native-player micro-stutter. POSTED
+
+**Status: POSTED 2026-10-20 17:27:40Z** on Christian's go as https://github.com/youngchris29-art/NuvioTV/issues/6#issuecomment-6296975467 (`gh issue comment`), verified byte-identical through `gh issue view`. Was: NOT POSTED.
 
 First reply on youngchris29-art/NuvioTV #6 "Streaming jittering-stuttering" (megustalamangusta666-pixel, 2026-10-16: "Every 5-10 second there's a micro stutter with a freeze frame when using native player"; no build, device, title or stream type given). Unreproduced here. The ask is the five facts the tracker row lists, plus one lead worth checking: the Apple TV player is fed by the on-device remux in 6–16 s segments, so a hitch on that cadence could be a segment-boundary stall. Post only after Christian's go.
 

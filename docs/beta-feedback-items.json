@@ -2648,7 +2648,7 @@
    "kind": "Bug",
    "priority": "P2",
    "stage": "Open",
-   "tester": "Not started",
+   "tester": "Waiting on reporter",
    "build": "",
    "reporter": "GitHub (issue #6)",
    "first_seen": "2026-10-16",
