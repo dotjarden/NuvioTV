@@ -163,3 +163,4 @@ Plus a UI leg pressing Up right after Back.
 - **Review r3** (`935e75fb3` + `de4329fcd`): no defects, three P3s (a stale doc line, a target note, three dropped bound tests). All fixed in `34c538545`.
 - **Tip `34c538545`:** NuvioTVTests and the Release sim build re-run green. **Ready to merge on Christian's go.**
 - **Release notes:** Settings › Appearance › Rail Position is now **Centre / Corner**. Corner is a small Home tab in the top-left corner that unrolls into the full rail; it replaces rc8's Top, and a saved Top becomes Corner. Default Centre. No other new settings.
+- **MERGED 2026-10-20** on Christian's go (no cut): `tvos-shared-extraction` `86af6a69b` → `34c538545`, pushed. The branch is deleted (it was never on GitHub `origin`), the clone is deleted, and the outer pointer is bumped. The next rc carries Batches L, M and N.
