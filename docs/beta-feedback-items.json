@@ -1,6 +1,6 @@
 {
  "_about": "Machine-readable mirror of docs/beta-feedback-tracker.md for the NuvioTV Tester Feedback dashboard. One row per tracker ID. Maintained by the beta-feedback sweep (see docs/beta-feedback-sweep-instructions.md §3). Allowed values: stage = Open | Released | Closed, no fix; tester (when stage=Open) = Not started | Waiting on reporter | Reopened after fix | Researched, not built; tester (when stage=Released) = Confirmed by tester | Partly confirmed | Awaiting tester | In-house only | Closed unconfirmed; tester (when stage=Closed, no fix) = Not a bug / declined / superseded | Duplicate of <ID>.",
- "generated": "2026-10-20T19:40:00Z",
+ "generated": "2026-10-20T23:10:00Z",
  "source": "docs/beta-feedback-tracker.md",
  "rows": [
   {
@@ -2653,6 +2653,28 @@
    "reporter": "GitHub (issue #6)",
    "first_seen": "2026-10-16",
    "summary": "Native player: a micro-stutter with a freeze frame every 5–10 s (GitHub #6)."
+  },
+  {
+   "id": "BUG-197",
+   "kind": "Bug",
+   "priority": "P2",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "GitHub (erdist)",
+   "first_seen": "2026-10-20",
+   "summary": "Plugins settings: each repository is one focus row, so providers can't toggle individually (GitHub #7, patch attached)."
+  },
+  {
+   "id": "BUG-198",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "GitHub (erdist)",
+   "first_seen": "2026-10-20",
+   "summary": "Background trailer keeps playing after Play and into the player (GitHub #8)."
   },
   {
    "id": "FEAT-74",
