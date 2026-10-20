@@ -106,3 +106,4 @@ Mock: `docs/research/batch-o-corner-pill-mock-2026-10-20/corner-pill-mock.png`. 
   3. Selecting a tab from the open rail rebuilds the focused Button. This predates the batch (Batch N) and is harmless, because `selectItem` always exits the rail.
 - **Ready to merge** on Christian's go: tip `b40985264`.
 - **Release notes:** Settings › Appearance › Rail Position › Corner now shows only a Home icon in the top-left corner at rest, and opens into the same rail as Centre (icons, or icons and labels), growing down from the Home icon. No new settings.
+- **MERGED 2026-10-20** on Christian's go (no cut): `tvos-shared-extraction` `34c538545` → `b40985264` (3 commits), pushed. The branch is deleted (it was never on GitHub `origin`), the clone is deleted, and the outer pointer is bumped. The next rc carries Batches L, M, N and O.
