@@ -1,6 +1,6 @@
 # Batch P: Steven's rc10 verdict → the next rc (plan, 2026-10-20)
 
-**Status: DRAFT, awaiting Christian's approval.** Nothing built. The reply DM is drafted (`docs/comms-dm-drafts-2026-10-20-rc10-reply.md`, NOT SENT).
+**Status: APPROVED 2026-10-20 as recommended (D1–D7).** Wave 0 started the same day. The reply DM is drafted (`docs/comms-dm-drafts-2026-10-20-rc10-reply.md`, NOT SENT).
 
 Sources:
 - `docs/steven-beta19-rc10-verdict-2026-10-20.md` (verdict, 6 photos).
