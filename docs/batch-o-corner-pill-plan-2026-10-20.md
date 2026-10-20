@@ -74,3 +74,29 @@ Mock: `docs/research/batch-o-corner-pill-mock-2026-10-20/corner-pill-mock.png`. 
 ---
 
 ## OUTCOME
+- **Build** (one Opus agent, which also built and ran the sim tests itself): `b0f9bb7aa`.
+  - One column builder now serves both `pill` and the corner panel; the Centre path renders as before.
+  - Its deviations were all found in the sim recordings and fixed: a separate grow phase 0.08 s after the arm, a pill-shaped mask, and the Reduce Motion fades.
+  - Sim screenshots are in `docs/research/batch-o-corner-pill-mock-2026-10-20/sim-*.png` and match the mock.
+- **Strings:** `301c67d5d`, the new Rail Position copy in five locales.
+- **Review r1** FINDINGS, all fixed in `b40985264` (builds green, NuvioTVTests 2031/0, Rail12/12b pass):
+  - P2-1: an accent sliver under the resting glyph when Search is the selected tab.
+  - P2-2: Home's Button was still fading in at the first focus write. Now an identity insertion, plus a `[NavRail] focus write=… landed=…` log.
+  - P3-1: the mask and frame are now laid out full on the arm turn.
+  - P3-2: one value drives the glass, the oracle and the probe; the top is derived.
+  - P3-3: the old xcstrings key is removed.
+- **Gates** on `301c67d5d`: Kotlin trio, NuvioTVTests 2031/0, Release + Debug sim, Debug device. `b40985264` re-ran the builds, unit tests and Rail legs (agent), plus the Debug device build.
+- **Device pass** (2026-10-20 ~01:25–01:32 ET, Living Room ATV, **Test 2**, Debug; launch-only overrides). Shots in `docs/research/batch-o-device-2026-10-20/shots/`.
+  1. **Icons Only: PASS.**
+     - At rest: the bare Home glyph top-left with no box (`o-rest-icons`).
+     - Menu: the slim Centre-style pill, inset from both edges, Home focused (`o-open-icons`).
+     - Right: back to the bare glyph, with focus returned to the card.
+  2. **Labels Shown: PASS.** The 300-wide pill around icons and labels, like Centre (`o-open-labels`). At rest it is the Home glyph only (`o2-rest-home`).
+  3. **Opening from other tabs: PASS.**
+     - Settings (`o-open-settings`) and Profile (`o-open-profile`) open with that item focused.
+     - On the r1 build, **every focus write landed on write 1**: tab 0 (Home), 4 (Settings) and 5 (Profile).
+  4. **Hidden: PASS.** Nothing at rest; Menu opens the pill (`o2-hidden-open`); focus landed on write 1 both times, on the mounting path.
+- **Not checked on hardware:**
+  - Reduce Motion (a system setting the rig can't toggle).
+  - The glyph's shadow over a genuinely bright hero (Test 2's Home heroes were dark).
+  - The pill top at 38 on Steven's TV.
