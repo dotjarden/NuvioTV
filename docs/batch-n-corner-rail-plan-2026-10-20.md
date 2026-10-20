@@ -1,6 +1,6 @@
 # Batch N: FEAT-80 corner rail + two Batch M device-pass P3s (plan, 2026-10-20)
 
-**Status: PLAN, awaiting Christian's go. Nothing built.**
+**Status: APPROVED 2026-10-20; building.**
 
 Sources:
 - Steven's FEAT-80 answer (DM 2026-10-19 21:12–21:14Z, two mock-ups in `docs/research/steven-feat80-answer-2026-10-19/`).
@@ -128,3 +128,7 @@ Plus a UI leg pressing Up right after Back.
 - **Header overlap** in Corner (N1, above).
 - **N3 double move** if the engine's own move lands after the check; that's what the deferral is for.
 - **Free-team provisioning expires 10-22 00:23 EST**; the first device build after that re-signs.
+
+---
+
+## OUTCOME
