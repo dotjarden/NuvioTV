@@ -100,3 +100,9 @@ Mock: `docs/research/batch-o-corner-pill-mock-2026-10-20/corner-pill-mock.png`. 
   - Reduce Motion (a system setting the rig can't toggle).
   - The glyph's shadow over a genuinely bright hero (Test 2's Home heroes were dark).
   - The pill top at 38 on Steven's TV.
+- **Review r2 on `b40985264`: CLEAN.** It confirmed every r1 fix and found Centre, the Orivio rule, the Release/DEBUG split and Swift 6 all fine. Three optional P3s, **declined** with reasons:
+  1. A ~0.1 s sliver of Search's row at the bottom of the fading-in Home pill when the rail opens from rest on Search. Rare: the Search page hides the rail at rest, so it opens on the mounting path. A follow-up if anyone ever sees it.
+  2. Two stale doc comments about Home's fill timing. Cosmetic.
+  3. Selecting a tab from the open rail rebuilds the focused Button. This predates the batch (Batch N) and is harmless, because `selectItem` always exits the rail.
+- **Ready to merge** on Christian's go: tip `b40985264`.
+- **Release notes:** Settings › Appearance › Rail Position › Corner now shows only a Home icon in the top-left corner at rest, and opens into the same rail as Centre (icons, or icons and labels), growing down from the Home icon. No new settings.
