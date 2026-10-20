@@ -6,7 +6,7 @@ Facts behind it:
 - FEAT-80: Christian's call (2026-10-20): his own preference is the rail as it is now (16 pt in, glass around the icons). the flush Nuvio-style rail will be added as a Settings option. Icons Only losing its glass (Batch M D2) is still open.
 - BUG-153 and UX-16: nothing in rc10 was measured on his hardware. the next batch starts with a profile in his configuration, so the DM asks for a short video and his Appearance settings, and offers the accent-ring A/B to split BUG-153 from the rest.
 - FEAT-82, FEAT-61 (Medium+ lines), BUG-193 (synopsis blur), BUG-194 (two-step return) are small and go in the next batch. promised as "next build" only for those four. BUG-190 needs his photo first. FEAT-66 (logo on the right) is noted, not promised.
-- mpv DV / Atmos: mpv has no Dolby Vision output and decodes audio to PCM. the P5 branch (`claude/player-p5`, not merged) routes DV profile 5 MP4s to the Apple TV player with real DV and E-AC-3 passthrough. Promised softly ("should"), with the Animals ask.
+- mpv DV / Atmos: mpv is the fallback for what AVPlayer refuses (the router sends it AV1, audio that is only Opus, sources that cannot seek, AVI, DV P7 with two video tracks or unparseable RPUs, bitmap subtitles, and any native failure during playback). mpv has no Dolby Vision output and decodes audio to PCM. the P5 branch (`claude/player-p5`, not merged) routes DV profile 5 MP4s to the Apple TV player with real DV and E-AC-3 passthrough. Promised softly ("should"), with the Animals ask.
 - Not promised: UX-16 numbers, a date.
 
 ---
@@ -25,4 +25,4 @@ Two questions. Which screen was the "logo in the centre" photo? It didn't arrive
 
 Good to hear the card flicker is much rarer. I'm still chasing the rest of it.
 
-On the MPV player: it has no Dolby Vision output, so it converts DV to HDR, and it decodes the sound itself, which drops Atmos. I have a fix on the way: DV films in MP4 files, like Animals, should play on the Apple TV player in the next build, with real Dolby Vision and the sound passed straight to your receiver. When it lands, try Animals there and tell me whether Atmos lights up.
+On the MPV player, and why it's there at all. The Apple TV's own player only accepts a narrow set of files, so the app rebuilds what it can on the fly to feed it, and that is where Dolby Vision and Atmos come from. Anything the Apple player refuses goes to MPV instead: unusual codecs, image-based subtitles, files the rebuild can't handle, and any film that breaks partway through. MPV plays almost everything, but it has no Dolby Vision output, so it converts DV to HDR, and it decodes the sound itself, which drops Atmos. The fix is to send more files to the Apple player, not to improve MPV. DV films in MP4 files, like Animals, should play on the Apple TV player in the next build, with real Dolby Vision and the sound passed straight to your receiver. When it lands, try Animals there and tell me whether Atmos lights up.
