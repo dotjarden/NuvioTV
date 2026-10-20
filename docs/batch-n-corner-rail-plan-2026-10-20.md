@@ -160,3 +160,6 @@ Plus a UI leg pressing Up right after Back.
   - P3-2 at the largest poster size (Test 2 is Large).
   - A saved Top migrating, which is unit-tested and covered by the Rail12b leg.
 - **Gates** (on `935e75fb3`; `de4329fcd` re-ran NuvioTVTests and the device build): Kotlin trio green, NuvioTVTests green, Release + Debug sim, Debug device build.
+- **Review r3** (`935e75fb3` + `de4329fcd`): no defects, three P3s (a stale doc line, a target note, three dropped bound tests). All fixed in `34c538545`.
+- **Tip `34c538545`:** NuvioTVTests and the Release sim build re-run green. **Ready to merge on Christian's go.**
+- **Release notes:** Settings › Appearance › Rail Position is now **Centre / Corner**. Corner is a small Home tab in the top-left corner that unrolls into the full rail; it replaces rc8's Top, and a saved Top becomes Corner. Default Centre. No other new settings.
