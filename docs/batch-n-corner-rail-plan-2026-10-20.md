@@ -132,3 +132,31 @@ Plus a UI leg pressing Up right after Back.
 ---
 
 ## OUTCOME
+- **Build:**
+  - Agent B: `9cf6a1073` N2, `93a840ad9` N3.
+  - Agent A: `6b3e06ce5` N1. It also touched `HomeView.swift` (one probe line) and `ContentView.swift` (the `.id` remount key), neither of which Agent B edited.
+  - Strings: `1c6eab5c3` (Corner + the two rail copies, fr/es/de/it/vi).
+- **Reviews:**
+  - r1 FINDINGS: P2-1 (corner rail: the selected lower item was opacity 0 when focus was written), P2-2 (a pending replay was never cancelled), P2-3 (pending anchor), P3-1, P3-4. Fixed in `ad57ac694` + `5ce771af2`. P3-2 (large poster sizes on the folder page) and P3-3 (header overlap) became device checks.
+  - r2 **CLEAN**. Its P3-a (a clickpad roll counted as a swipe stood the replay down) is fixed in `2017cb1d4`.
+- **UI legs:**
+  - The two Corner legs failed at first. The fix in `935e75fb3` was a code bug (masked collapsed items were still in the accessibility tree; they now render as hidden labels with no ids) plus a test bug (Home's focused cell includes the button's 4 pt capsule outset).
+  - All three new legs then pass: Rail12, Rail12b and FolderClassicRowHeading.
+- **Device pass** (2026-10-20 ~23:20 ET, Living Room ATV, **Test 2**, Debug build; launch-only overrides: `-rail_position corner`, `-rail_visibility`, `-accent_focus_ring YES`, trailers off):
+  1. **Corner + Always Visible: PASS.** At rest, a small glass tab sits flush top-left with the Home icon inside the safe area. Menu unrolls the full column (labels shown, Test 2 avatar at the bottom), flush to the top and left edges, with the page dimmed. Right closes it back to the tab.
+  2. **P2-1 on hardware: PASS.** From the Settings tab, Menu opens the rail with **Settings focused**.
+  3. **Header overlap: PASS** on Home (Stage), Settings, Discover (pill band), Library (heading and pills) and the Detail hero. Search hides the rail at rest, as Centre does.
+     - Note for Steven: when Detail scrolls, content passes under the tab (the network chip's left edge). It is a fixed overlay, like any corner chrome.
+  4. **Hidden: PASS.** Nothing at rest; Menu opens the full column.
+  5. **N3: FAILED first, fixed in `de4329fcd`, then PASS.**
+     - The first run used the timestamp rule. The log showed `retired … input=up`, then **the engine's late landing moved focus the wrong way** (`PRESS 2→3 vfocus-down`, 117 ms later). The rule read that as "the engine made the viewer's move" and dropped the replay.
+     - The rewrite compares positions: the destination is the restore row's neighbour in the pressed direction, and nothing replays if focus is already there.
+     - Re-run: `restore replay up → upcoming`, and focus is on Upcoming, the row above Test Collection.
+     - NuvioTVTests 2028/0; the policy suite was rewritten to 9 cases, including the rig's wrong-way case.
+  6. **N2: PASS.** Classic + Rows, Test Collection, Down: the second row's heading "Popular (Series)" shows between the hero and the cards.
+- **Not checked on hardware:**
+  - Reduce Motion fade and Rail Labels Icons Only in Corner (sim legs only).
+  - VoiceOver over the masked items.
+  - P3-2 at the largest poster size (Test 2 is Large).
+  - A saved Top migrating, which is unit-tested and covered by the Rail12b leg.
+- **Gates** (on `935e75fb3`; `de4329fcd` re-ran NuvioTVTests and the device build): Kotlin trio green, NuvioTVTests green, Release + Debug sim, Debug device build.

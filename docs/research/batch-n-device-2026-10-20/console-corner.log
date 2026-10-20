@@ -1,0 +1,92 @@
+[LaunchTrace] +0ms app_init
+[ExtPlayerProbe] canOpenURL(infuse://) = true
+2026-10-19 23:20:37.055 NuvioTV[1000:176130] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ExtPlayerProbe] canOpenURL(vlc-x-callback://) = false
+[ExtPlayerProbe] canOpenURL(outplayer://) = false
+[ExtPlayerProbe] canOpenURL(open-vidhub://) = true
+[ExtPlayerProbe] canOpenURL(vidhub://) = false
+[ExtPlayerProbe] canOpenURL(senplayer://) = false
+[ExtPlayerProbe] canOpenURL(nativeplayer://) = false
+[ExtPlayerProbe] availablePlayers = ["infuse:Infuse", "vidhub:VidHub"]
+2026-10-19 23:20:37.055 NuvioTV[1000:176130] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-19 23:20:37.056 NuvioTV[1000:176130] -canOpenURL: failed for URL: "vidhub://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-19 23:20:37.056 NuvioTV[1000:176130] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-19 23:20:37.056 NuvioTV[1000:176130] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-19 23:20:37.060 NuvioTV[1000:176130] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-19 23:20:37.060 NuvioTV[1000:176130] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-19 23:20:37.061 NuvioTV[1000:176130] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-19 23:20:37.061 NuvioTV[1000:176130] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ProfileSelect] auto-enter profile 3
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-19 23:20:37.477 NuvioTV[1000:176130] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+[LaunchTrace] +705ms home_appear
+2026-10-19 23:20:37.506 NuvioTV[1000:176130] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-19 23:20:37.507 NuvioTV[1000:176130] [TrailerPipeline] trailerLocation stage=row
+[LaunchTrace] +1081ms artwork #1: mem=0 disk=1 net=0 fail=0
+[LaunchTrace] +1161ms artwork #10: mem=0 disk=10 net=0 fail=0
+2026-10-19 23:20:38.023 NuvioTV[1000:176130] [HomeHero] logoInk sync-sample ms=0.44
+2026-10-19 23:20:38.056 NuvioTV[1000:176130] [AmbientWash] render id=movie:tt3118958 src=1920x1080 ms=28.2 lum=0.17
+2026-10-19 23:20:38.056 NuvioTV[1000:176130] [AmbientWash] show id=movie:tt3118958 gen=1 late=0 ms=28.2 lum=0.17
+[LaunchTrace] +2109ms artwork #25: mem=1 disk=19 net=5 fail=0
+2026-10-19 23:20:38.915 NuvioTV[1000:176130] [TrailerPipeline] gates inlineTrailersEnabled=YES systemAutoplay=YES
+[LaunchTrace] +2111ms first_rows n=5 hero=8
+[LaunchTrace] +2111ms first_hero n=8
+[LaunchTrace] +2205ms artwork #50: mem=4 disk=41 net=5 fail=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/<redacted-id>/Library/Caches/top-shelf.json
+[LaunchTrace] +2972ms rows n=9
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/<redacted-id>/Library/Caches/top-shelf.json
+[LaunchTrace] +4714ms rows n=17
+[LaunchTrace] +7327ms rows n=25
+[LaunchTrace] +7760ms rows n=33
+[LaunchTrace] +8479ms rows n=41
+2026-10-19 23:22:16.463 NuvioTV[1000:176130] [NavRail] arm reason=menu origin=request tab=0
+2026-10-19 23:22:16.502 NuvioTV[1000:176130] [Rail] gate=on mode=uikit
+2026-10-19 23:23:22.042 NuvioTV[1000:176130] [Rail] gate=off mode=uikit
+2026-10-19 23:23:22.052 NuvioTV[1000:176130] [NavRail] exit via=right route=home result=focus
+2026-10-19 23:23:29.619 NuvioTV[1000:176130] [NavRail] arm reason=menu origin=request tab=0
+2026-10-19 23:23:29.653 NuvioTV[1000:176130] [Rail] gate=on mode=uikit
+2026-10-19 23:23:56.806 NuvioTV[1000:176130] [NavRail] select tab=4 from=0
+2026-10-19 23:23:56.807 NuvioTV[1000:176130] [Rail] gate=off mode=uikit
+2026-10-19 23:23:56.946 NuvioTV[1000:176130] [NavRail] exit via=select route=settings result=fallback
+2026-10-19 23:24:05.421 NuvioTV[1000:176130] [NavRail] arm reason=menu origin=request tab=4
+2026-10-19 23:24:05.475 NuvioTV[1000:176130] [Rail] gate=on mode=uikit
+2026-10-19 23:24:42.468 NuvioTV[1000:176130] [NavRail] select tab=1 from=4
+2026-10-19 23:24:42.469 NuvioTV[1000:176130] [Rail] gate=off mode=uikit
+2026-10-19 23:24:42.579 NuvioTV[1000:176130] [NavRail] exit via=select route=none result=fallback
+2026-10-19 23:24:43.654 NuvioTV[1000:176130] [KBFocus] chain=UIKeyboard→_UIKBCompatInputView→UIView→UIKBFocusVCView→_UISearchControllerTVKeyboardContainerView→_UISearchControllerView→UITransitionView→UIView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<SearchContainerRepresentable<ModifiedContent<ModifiedContent<_ViewModifier_Content<SearchModifier<TextField<EmptyView>>>, SubmitScopeModifier>, _PreferenceTransformModifier<ContentScrollViewPreferenceKey>>>>>→HostingView→UIViewControllerWrapperView→UINavigationTransitionView→UILayoutContainerView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<NavigationStackRepresentable>>→_UIHostingView<RootView>→UIViewControllerWrapperView→UITransitionView→UILayoutContainerView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<TVTabView<LazyMapSequence<_VariadicView_Children, TabItem>>>>→_UIHostingView<ModifiedContent<LazyView<ModifiedContent<ModifiedContent<ContentView, ProvidesFocusAppearance>, _PreferenceWritingModifier<PreferredColorSchemeKey>>>, RootModifier>>→UIDropShadowView→UITransitionView→UIWindow
+2026-10-19 23:24:43.655 NuvioTV[1000:176130] [KBFocus] keyboard=1
+2026-10-19 23:24:51.855 NuvioTV[1000:176130] [NavRail] focus landed on the hidden tab bar; revealing the rail
+2026-10-19 23:24:51.855 NuvioTV[1000:176130] [KBFocus] chain=UITabBarButton→UIScrollView→UIView→UITabBar→_UITabBarContainerView_TV→UILayoutContainerView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<TVTabView<LazyMapSequence<_VariadicView_Children, TabItem>>>>→_UIHostingView<ModifiedContent<LazyView<ModifiedContent<ModifiedContent<ContentView, ProvidesFocusAppearance>, _PreferenceWritingModifier<PreferredColorSchemeKey>>>, RootModifier>>→UIDropShadowView→UITransitionView→UIWindow
+2026-10-19 23:24:51.855 NuvioTV[1000:176130] [KBFocus] keyboard=0
+2026-10-19 23:24:51.863 NuvioTV[1000:176130] [NavRail] arm reason=hiddenBarRedirect origin=request tab=1
+2026-10-19 23:24:51.882 NuvioTV[1000:176130] [Rail] gate=on mode=uikit
+2026-10-19 23:25:10.277 NuvioTV[1000:176130] [NavRail] select tab=6 from=1
+2026-10-19 23:25:10.278 NuvioTV[1000:176130] [Rail] gate=off mode=uikit
+2026-10-19 23:25:10.372 NuvioTV[1000:176130] [NavRail] exit via=select route=discover result=fallback
+2026-10-19 23:25:10.378 NuvioTV[1000:176130] [DiscoverGrid] select type=movie catalog=aio-metadata:movie:tmdb.top genre=Adventure reason=sources
+2026-10-19 23:25:22.932 NuvioTV[1000:176130] [NavRail] arm reason=menu origin=request tab=6
+2026-10-19 23:25:22.965 NuvioTV[1000:176130] [Rail] gate=on mode=uikit
+2026-10-19 23:25:41.393 NuvioTV[1000:176130] [NavRail] select tab=2 from=6
+2026-10-19 23:25:41.394 NuvioTV[1000:176130] [Rail] gate=off mode=uikit
+2026-10-19 23:25:41.489 NuvioTV[1000:176130] [NavRail] exit via=select route=none result=fallback
+2026-10-19 23:25:49.860 NuvioTV[1000:176130] [NavRail] arm reason=menu origin=request tab=2
+2026-10-19 23:25:49.892 NuvioTV[1000:176130] [Rail] gate=on mode=uikit
+2026-10-19 23:26:09.611 NuvioTV[1000:176130] [Rail] gate=off mode=uikit
+2026-10-19 23:26:09.623 NuvioTV[1000:176130] [NavRail] exit via=right route=none result=fallback
+[LaunchTrace] +381158ms artwork #100: mem=4 disk=89 net=7 fail=0
+2026-10-19 23:26:58.817 NuvioTV[1000:177930] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-19 23:26:58.817 NuvioTV[1000:177930] [TrailerExtract] client=visionos video=PsvUvqXoTpE hls=true formats=0 adaptive=23 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+2026-10-19 23:26:58.821 NuvioTV[1000:177930] [TrailerExtract] client=android video=PsvUvqXoTpE hls=false formats=1 adaptive=25 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl,metadataFormats
+2026-10-19 23:26:58.824 NuvioTV[1000:177930] [TrailerExtract] client=ios video=PsvUvqXoTpE hls=false formats=0 adaptive=23 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl,metadataFormats
+2026-10-19 23:26:59.031 NuvioTV[1000:178509] [TrailerExtract] manifest client=visionos top variant 1920x1080
+2026-10-19 23:26:59.031 NuvioTV[1000:178509] [TrailerExtract] selection: manifest=1080 progressive=360 (manifests collected=1)
+2026-10-19 23:26:59.032 NuvioTV[1000:178509] [TrailerExtract] repack candidates: avcVideo=1080p avc1.640028 (visionos) m4aAudio=mp4a.40.2 (visionos) maxFps=0
+2026-10-19 23:26:59.363 NuvioTV[1000:177930] [TrailerExtract] repack decision: avc=1080p vs progressive=1080p -> ELIGIBLE
+2026-10-19 23:26:59.851 NuvioTV[1000:178507] [TrailerRepack] listener start port=8230 prefer=- gen=1 conns=0
+2026-10-19 23:26:59.853 NuvioTV[1000:178509] [TrailerRepack] listener ready port=8230 waiters=1 gen=1 conns=0
+2026-10-19 23:26:59.853 NuvioTV[1000:178509] [TrailerRepack] serving 1920x1080 avc1+mp4a (31+17 segments) at http://127.0.0.1:8230/<redacted-config>/master.m3u8 fps=24 itag=137 n=0
+Launched application with com.youngchris29.NuvioTV bundle identifier.
+Waiting for the application to terminate...
+App terminated due to signal 15.
