@@ -1,6 +1,6 @@
 # DM draft: beta.19-rc10 to Steven (2026-10-20)
 
-**Status: DRAFT, NOT SENT.** It goes out only on Christian's go, after a quiet pre-send fetch, with two photos sent through the Matrix media API after the text:
+**Status: SENT 2026-10-20T12:52:02.385Z** as one bubble on Christian's go, after a quiet pre-send fetch (12:50Z). The two photos followed as `m.image` through the Matrix media API at 12:52:42.183Z (`mxc://reddit.com/0w1nte42dmwh1`) and 12:52:46.001Z (`mxc://reddit.com/4xafmmi2dmwh1`). Verified in the room and by `fetch-dms.sh` (one copy each). DM watermark now `2026-10-20T12:52:46.001Z`. Was: DRAFT, NOT SENT. The photos, in order:
 1. `docs/research/batch-o-device-2026-10-20/shots/o-rest-icons.png`: Corner at rest, the bare Home icon.
 2. `docs/research/batch-o-device-2026-10-20/shots/o-open-labels.png`: Corner open, Labels Shown.
 
