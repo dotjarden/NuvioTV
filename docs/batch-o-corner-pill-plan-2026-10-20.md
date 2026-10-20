@@ -1,6 +1,6 @@
 # Batch O: Corner rail redesign (plan, 2026-10-20)
 
-**Status: PLAN, awaiting Christian's go. Nothing built.**
+**Status: APPROVED 2026-10-20 as mocked; building.**
 
 Christian, after Batch N's device pass:
 - He doesn't want the grey box around the resting Home icon.
@@ -70,3 +70,7 @@ Mock: `docs/research/batch-o-corner-pill-mock-2026-10-20/corner-pill-mock.png`. 
 - **Glass fading in and growing at once** may shimmer on hardware; the fallback is to fade in at full height under the mask.
 - **A bare glyph over a white poster** is the case for the shadow; the device pass checks a bright hero.
 - **Pill top at about 38 pt** puts the glass's top edge above the top safe area, as Centre's pill already sits outside the horizontal safe area. It's fine on overscan-off TVs; if it crops on Steven's TV, lower it.
+
+---
+
+## OUTCOME
