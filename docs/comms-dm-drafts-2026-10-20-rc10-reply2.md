@@ -1,6 +1,6 @@
-# DM draft: reply to Steven's 20:34Z message (video + photo), 2026-10-20. NOT SENT
+# DM draft: reply to Steven's 20:34Z message (video + photo), 2026-10-20. SENT
 
-**Status: NOT SENT.** Answers `docs/steven-beta19-rc10-reply-2026-10-20.md`. Send only on Christian's go, through the ego-browser recipe (memory `reddit-chat-smash-fetch`, the `rc10-reply-send.js` pattern), after a pre-send `fetch-dms.sh --since 2026-10-20T20:34:51.446Z`; if his newest bubble is newer than the watermark, stop and read it first. Move the watermark after.
+**Status: SENT 2026-10-20T21:44:28.479Z** as one bubble on Christian's go (pre-send fetch 21:43Z quiet; `~/Library/Logs/NuvioDM/rc10-reply2-send.js`, the rc10 send recipe gated on his image bubble being newest), verified in the room and by `fetch-dms.sh` (one copy). DM watermark now `2026-10-20T21:44:28.479Z`. Was: NOT SENT. Answers `docs/steven-beta19-rc10-reply-2026-10-20.md`. Send only on Christian's go, through the ego-browser recipe (memory `reddit-chat-smash-fetch`, the `rc10-reply-send.js` pattern), after a pre-send `fetch-dms.sh --since 2026-10-20T20:34:51.446Z`; if his newest bubble is newer than the watermark, stop and read it first. Move the watermark after.
 
 SlopMonster: the body below the line lints **5/5 CLEAN** (251 words) on the first pass. No cleanse pass: `codex exec` fails with "Your access token could not be refreshed. Please log out and sign in again" (needs an interactive `codex login`; quota reset 10-29).
 
