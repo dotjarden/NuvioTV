@@ -66,3 +66,37 @@ Wave 0 is the main session on the rig (no agents). Wave 1: one Opus critique, th
 - **Edge rail × Corner × Hidden** is six combinations; the UI leg must cover the rest glyph in each.
 - **BUG-194 touches the Detail focus restore** that Batch M just built; its UI leg must also keep the More Like This and collections returns (D7 of Batch M) green.
 - **The profile for the box expires 10-22 04:23Z**; Wave 0 after that needs a re-sign.
+
+---
+
+## OUTCOME
+
+### Wave 0 findings (2026-10-20, Living Room, Test 2 in Steven's configuration)
+
+Setup: `ready.sh` READY (after the box dropped off the LAN twice; the devicectl tunnel also dropped after each Instruments session and came back within a minute). Release builds of rc9 (141, `2baa390f`) and rc10 (142, `1bf7866a`) built from their tags in the P5 clone with the bundle-ID override. Test 2 set to his look through Settings: Poster Size **Medium+** (was Large), **Hide Titles ON**, **Card Depth ON** (Subtle / Soft), accent ring ON, No Zoom OFF, OLED True Black ON, Rail; `-home_layout stage -rail_position corner -rail_labels shown` by launch argument. Instruments only works when it **launches** the app itself (`xcrun xctrace record --device <udid> --template 'Animation Hitches' --launch -- com.youngchris29.NuvioTV <args>`); `--attach` by name or pid is refused over the tunnel. Traces live in `~/Library/Logs/nuviotv-traces/` (130 MB each, out of the repo); `docs/research/batch-p-wave0-2026-10-20/{walk-home.sh,walk-detail.sh,hitches.py,compare.py,timeprofile.py}` are the protocol and the parsers.
+
+**The walk** (`walk-home.sh`): 20 Down then 20 Up on the Stage Home at 0.6 s, identical on every run; the window 16–52 s of each recording holds exactly those 40 presses. Animation Hitches, app process only:
+
+| Run (rc10 unless noted) | Hitches | Hitch time | Longest | ≥ 100 ms |
+|---|---|---|---|---|
+| rc9, Stage, his config | 132 | 5.19 s | 150 ms | 19 |
+| **rc10, Stage, his config** | **153** | **5.72 s** | **167 ms** | **20** |
+| rc10, Stage, Row Edge Fade Off + inline trailers Off | 127 | 4.72 s | 133 ms | 12 |
+| **rc10, Classic, his config** | **97** | **1.79 s** | **83 ms** | **0** |
+
+Readings:
+1. **The rc9 → rc10 regression is real but small**: +16 % hitches, +10 % hitch time on the same walk. Nothing in Batches L–O doubled anything; his "even worse" is on top of a baseline that was already bad.
+2. **The baseline is the problem, and it is the Stage layout.** Stage hitches ~4 times per second during a walk, with 100–170 ms stalls on most presses; Classic does the same walk with a third of the hitch time and no stall over 83 ms. That is the "20 fps" he describes, and it matches his standing preference for Classic.
+3. **His look options are a sixth of it, not the cause.** Fade off + trailers off removes 26 hitches and 8 of the 20 long stalls; the floor stays at ~3 hitches per press. (Card Depth is profile-synced, not A/B'd by argument; the CG gradient time below is the likely place it would show.)
+4. **Where the time goes** (Time Profiler, rc10 Stage walk, 16–54 s, main thread 31 % busy, 11.6 k samples): AttributeGraph `propagate_dirty` / `UpdateStack::update` / `Subgraph::update` ≈ 2.0 k samples (SwiftUI re-evaluating a large dependency graph per press), Swift refcounting ≈ 0.5 k, `objc_msgSend` 0.65 k, **CoreGraphics `argb32_shade_axial_RGB` 369 + `argb32_image_mark` 153** (gradients and images rasterised on the CPU), **CoreFoundation `_CFStringCheckAndGetCharacterAtIndex` 357 + `characterAtIndex:` 190** (string scanning per press). App symbols nearest the top of the stacks after `atos`: `CachedImageLoader.load` and its completion (`CachedAsyncImage.swift:1375`, `:1417`; image work landing on main), `InlineTrailerCardModel.setPhase` / `beginMorph` / `InlineTrailerCard.expandingCard`, `StripPager.pages` closures, `CatalogRowView.body`, `ArtworkLetterbox.measuredZoom` (image analysis on main), `TitleHoldMenuModifier.body`, `AmbientWashModel.incomingOpacity.setter`, `WatchedBadgeReader.init` (rc6, small), `ArtworkCacheEntry.deinit`.
+5. The hitch narratives name both halves: "expensive app update(s)" (main-thread SwiftUI) and "expensive render, 35–36 offscreen passes" (masks, shadows and gradients per card and per row).
+
+**P1 scope (Wave 1, from the numbers):** the Stage Home's per-press cost, in this order: (a) take image decode, `ArtworkLetterbox.measuredZoom` and the `CachedImageLoader` completion off the main thread or off the press path; (b) cut the SwiftUI invalidation fan-out on a row move (what re-evaluates per press: `StripPager.pages`, `CatalogRowView.body`, the trailer card model; `.equatable()` / value snapshots on the row inputs); (c) the offscreen passes: Card Depth's edge + sheen and the fade mask drawn as layers per card (`drawingGroup` or pre-rendered images), and the string scanning on the press path. Target: Stage ≤ Classic's 1.8 s on the same walk, no stall ≥ 100 ms. Measure with the same protocol after each step.
+
+**BUG-153 (Detail ring), NOT REPRODUCED on this box.** `walk-detail.sh`: rail → Search → type → the Series row (the Top result tile prefers films: "Monstre", "Simpsons" and "Severance" all gave the film first) → Detail of the Severance series (2 seasons, Episodes / Season / Trailers rows) → 10 Down, 10 Up at 0.8 s. Animation Hitches, app process, ring ON vs ring OFF, same launch, same presses:
+- the 20 Detail presses (≈ 43–67 s of each run) produced **no hitch cluster in either run** (ring on: 0 between 37 s and 85 s; ring off: 2 in 45–64 s); the page scrolls clean here with or without the ring.
+- the clusters are elsewhere: **the Search results page while posters load** (ring on 28–36 s: 46 hitches, peak 17 in one second; ring off 30–40 s: 68) and the **full-screen trailer** the page opened on its own at the end of both walks (ring on 86–93 s, ring off 70–95 s, video on the compositor).
+- Reading: Batch M's "ring on = +0.6 ms" measurement stands for this page; his lag on Monstre with his add-ons (more trailer tiles, more episode rows, his network) is not on Test 2. BUG-153 waits on his video and Appearance settings (asked in the rc10 reply). **Found instead:** the Search results page hitches as hard as the Stage walk while its grid fills; worth a row of its own if he mentions it, and the same image-on-main fix (P1a) applies.
+- Side fact: a Detail walk that reaches the Trailers row and presses Up past the top opens the full-screen trailer with no Select, on both runs. Not in the verdict; check in the device pass whether a human remote does it too.
+
+**Wave 0 cost:** ~2 h on the rig, 9 traces (`~/Library/Logs/nuviotv-traces/`, ~1.2 GB, out of the repo). Test 2 keeps Steven's look settings (Medium+, Hide Titles, Card Depth); rc10 Release (build 142) is the build on the box. The P5 Debug build must be reinstalled for the P5 device pass.

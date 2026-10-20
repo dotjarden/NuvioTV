@@ -1,0 +1,59 @@
+[ProfileSelect] auto-enter profile 3
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-20 16:09:26.614 NuvioTV[319:4936] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+2026-10-20 16:09:26.626 NuvioTV[319:4936] [HomeScrollProbe] plan regime=M330c1p1r0z0t37hzrt4 linkFrame=506 viewport=493 fits=0 CAPPED — rows still short, belt remains in play
+2026-10-20 16:09:26.642 NuvioTV[319:4936] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-20 16:09:26.642 NuvioTV[319:4936] [TrailerPipeline] trailerLocation stage=row
+2026-10-20 16:09:26.642 NuvioTV[319:4936] [StageStrip] geometry rowH=458.5 P=498.5 H=541.5 stage=538.5 logo=150 synL=5 fits=1 posterH=330.0 font=system
+2026-10-20 16:09:26.691 NuvioTV[319:4936] [StageStrip] geometry rowH=532.0 P=572.0 H=615.0 stage=465.0 logo=110 synL=5 fits=1 posterH=403.3 font=system
+2026-10-20 16:09:26.836 NuvioTV[319:4936] [StageStrip] config P=572.0 H=615.0 rows=1 pageSeconds=0.5 fitRows=1
+2026-10-20 16:09:26.840 NuvioTV[319:4936] [StageStrip] observers started
+2026-10-20 16:09:26.840 NuvioTV[319:4936] [StageStrip] marker attached
+2026-10-20 16:09:26.848 NuvioTV[319:4936] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,526,360,247 label=- id=-
+2026-10-20 16:09:26.946 NuvioTV[319:4936] [StageStrip] baseline y=465.0 P=572.0 H=615.0 rows=1
+2026-10-20 16:09:27.057 NuvioTV[319:4936] [HomeHero] logoInk sync-sample ms=0.62
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-20 16:09:28.977 NuvioTV[319:4936] [TrailerPipeline] gates inlineTrailersEnabled=YES systemAutoplay=YES
+2026-10-20 16:09:29.014 NuvioTV[319:4936] [StageStrip] config P=572.0 H=615.0 rows=18 pageSeconds=0.5 fitRows=1
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-20 16:09:30.741 NuvioTV[319:4936] [StageStrip] config P=572.0 H=615.0 rows=26 pageSeconds=0.5 fitRows=1
+2026-10-20 16:09:31.519 NuvioTV[319:4936] [StageStrip] config P=572.0 H=615.0 rows=34 pageSeconds=0.5 fitRows=1
+2026-10-20 16:09:32.329 NuvioTV[319:4936] [StageStrip] config P=572.0 H=615.0 rows=42 pageSeconds=0.5 fitRows=1
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-20 16:09:36.057 NuvioTV[319:4936] [StageStrip] config P=572.0 H=615.0 rows=43 pageSeconds=0.5 fitRows=1
+2026-10-20 16:10:04.522 NuvioTV[319:4936] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,898,360,247 label=- id=-
+2026-10-20 16:10:04.534 NuvioTV[319:4936] [StageStrip] page to=1 key=upcoming seconds=0.5 gen=1
+2026-10-20 16:10:05.124 NuvioTV[319:4936] [StageStrip] swap phase=out id=series:tt32268630 sinceAct=590 pageEnd=551
+2026-10-20 16:10:05.184 NuvioTV[319:4936] [StageStrip] seg p=1 k=1 start=-23 dur=584 from=465.0 to=93.0 travel=-372.0
+2026-10-20 16:10:05.234 NuvioTV[319:4936] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,899,269,443 label=- id=-
+2026-10-20 16:10:05.243 NuvioTV[319:4936] [StageStrip] swap phase=cancel id=series:tt32268630 sinceAct=0 pageEnd=669
+2026-10-20 16:10:05.243 NuvioTV[319:4936] [StageStrip] page to=2 key=test-collection-1004 seconds=0.5 gen=2
+2026-10-20 16:10:05.243 NuvioTV[319:4936] [StageStrip] PRESS #1 0→1 moves=1 settle=561 travel=-372.0 afterRest=0 residual=fit src=vfocus-down key=upcoming close=row
+2026-10-20 16:10:05.945 NuvioTV[319:4936] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,1090,269,447 label=- id=-
+2026-10-20 16:10:05.945 NuvioTV[319:4936] [StageStrip] PRESS #2 1→2 moves=1 settle=moving travel=-364.5 afterRest=0 residual=moving src=row key=test-collection-1004 close=press
+2026-10-20 16:10:05.956 NuvioTV[319:4936] [StageStrip] page to=3 key=community.betterposters:movie:trakt-trending seconds=0.5 gen=3
+2026-10-20 16:10:06.560 NuvioTV[319:4936] [StageStrip] swap phase=in id=movie:tt22084616 sinceAct=603 pageEnd=533
+2026-10-20 16:10:06.618 NuvioTV[319:4936] [StageStrip] seg p=2 k=1 start=-27 dur=1301 from=93.0 to=-836.0 travel=-929.0
+2026-10-20 16:10:06.667 NuvioTV[319:4936] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,-31,269,443 label=- id=-
+2026-10-20 16:10:06.667 NuvioTV[319:4936] [StageStrip] PRESS #3 2→3 moves=0 settle=0 travel=0.0 afterRest=0 residual=fit src=vfocus-down key=community.betterposters:movie:trakt-trending close=press
+2026-10-20 16:10:06.681 NuvioTV[319:4936] [StageStrip] page to=2 key=test-collection-1004 seconds=0.5 gen=4
+2026-10-20 16:10:06.762 NuvioTV[319:4936] [StageStrip] swap phase=idle id=movie:tt22084616 sinceAct=80 pageEnd=43
+2026-10-20 16:10:07.381 NuvioTV[319:4936] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,143,360,247 label=- id=-
+2026-10-20 16:10:07.390 NuvioTV[319:4936] [StageStrip] page to=1 key=upcoming seconds=0.5 gen=5
+2026-10-20 16:10:07.390 NuvioTV[319:4936] [StageStrip] PRESS #4 3→2 moves=1 settle=moving travel=546.0 afterRest=0 residual=moving src=vfocus-up key=test-collection-1004 close=row
+2026-10-20 16:10:07.960 NuvioTV[319:4936] [StageStrip] swap phase=out id=series:tt32268630 sinceAct=570 pageEnd=554
+2026-10-20 16:10:08.020 NuvioTV[319:4936] [StageStrip] seg p=4 k=1 start=-16 dur=1268 from=-836.0 to=93.0 travel=929.0
+2026-10-20 16:10:08.126 NuvioTV[319:4936] [StageStrip] focus → UIKitFocusableViewResponderItem frame=140,154,360,247 label=- id=-
+2026-10-20 16:10:08.136 NuvioTV[319:4936] [StageStrip] swap phase=cancel id=series:tt32268630 sinceAct=0 pageEnd=730
+2026-10-20 16:10:08.136 NuvioTV[319:4936] [StageStrip] page to=0 key=continue-watching seconds=0.5 gen=6
+2026-10-20 16:10:08.136 NuvioTV[319:4936] [StageStrip] PRESS #5 2→1 moves=0 settle=0 travel=0.0 afterRest=0 residual=fit src=row key=upcoming close=row
+2026-10-20 16:10:08.710 NuvioTV[319:4936] [StageStrip] swap phase=in id=movie:tt3118958 sinceAct=573 pageEnd=553
+2026-10-20 16:10:08.770 NuvioTV[319:4936] [StageStrip] seg p=6 k=1 start=+33 dur=501 from=93.0 to=465.0 travel=372.0
+2026-10-20 16:10:08.920 NuvioTV[319:4936] [StageStrip] swap phase=idle id=movie:tt3118958 sinceAct=784 pageEnd=764
+2026-10-20 16:10:10.172 NuvioTV[319:4936] [StageStrip] PRESS #6 1→0 moves=1 settle=533 travel=372.0 afterRest=0 residual=fit src=row key=continue-watching close=idle
+Launched application with com.youngchris29.NuvioTV bundle identifier.
+Waiting for the application to terminate...
+App terminated due to signal 15.
