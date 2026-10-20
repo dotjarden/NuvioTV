@@ -97,6 +97,6 @@ The Batch P plan's D6 assumption "Rail Corner + Labels Shown" holds (he now runs
 - **BUG-196 (new, P4):** the Icons Only rail pill darkens about a second after it opens (Settings close-up; his report).
 - **BUG-188:** "going back from a collection to Home" is in his stutter list; not in the clip.
 
-## Reply owed (not drafted)
+## Reply (drafted 21:40Z, NOT SENT: `docs/comms-dm-drafts-2026-10-20-rc10-reply2.md`)
 
-Points to answer when Christian wants a reply: thanks for the video and settings; the ring result changes where we look (the page, not the ring); the Search black screen is filed; the grey rail on Home is understood and in the batch; the "title in the centre" photo is understood (Netflix folder, row 2) and in the batch; no numbers or date promised until Wave 0 has run on his configuration. Note the mismatch to clear: he believed the ring had already been turned off on trailers, episodes and seasons after his earlier feedback; it was kept after Batch M's measurement.
+Points it answers: thanks for the video and settings; the ring result changes where we look (the page, not the ring); the Search black screen is filed; the grey rail on Home is understood and in the batch; the "title in the centre" photo is understood (Netflix folder, row 2) and in the batch; no numbers or date promised until Wave 0 has run on his configuration. Note the mismatch to clear: he believed the ring had already been turned off on trailers, episodes and seasons after his earlier feedback; it was kept after Batch M's measurement.
