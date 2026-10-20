@@ -235,3 +235,30 @@ Scope as decided 2026-10-19:
 6. **BUG-189:** set the Apple TV language to French, or tell me and I'll relaunch with French: Discover's Genre and Browse pills and the standard genres read in French.
 7. **BUG-185, external player:** play with an external player (Infuse / SenPlayer / Native Player if installed), then come back: you land on the page you started from, with no loading-screen flash.
 8. **BUG-191:** only reproducible with a collection row directly above the last Home rows. Optional if your layout has one.
+
+### Device pass, rig part 2 (2026-10-19 ~21:40–22:20 ET, after Christian brought the box back on the network; **Test 2**, Debug `86af6a69b`)
+Walks used launch-only overrides (`-accent_focus_ring YES` to make focus visible, `-detail_trailer_autoplay NO`, `-detail_trailer_background NO`, `-home_layout`, `-folder_layout_default_classic rows`, `-AppleLanguages (fr)`), so none of them persist. Two synced Test 2 settings were changed for checks and **restored**: Show Hero off → on, and Poster › Corners Rounded → Square → Rounded.
+- **BUG-187: PASS.**
+  - The Boroughs → cast "Alfre Woodard" → Back lands on the Alfre Woodard card, with the rows intact.
+  - More Like This "Night Sky" → its Detail → Back lands on the Night Sky card.
+- **BUG-192: PASS.** Night Sky's long synopsis ends "…they coul…" with no "more".
+- **BUG-188: PASS (log).**
+  - Pop → `restore landed after=580`.
+  - Then, 30 ms later, the filler steal (`UIKitFocusableFillerItem` at y = −218), followed by `restore regrab … immediate=filler` 1 ms later; the old gap was about 205 ms. The landed card is correct.
+  - Observation, not a Batch M change: an Up pressed during the pop transition, before landing, retires the restore (`uncover-viewer`), but the Up itself is lost and focus stays on the folder card. The immediate regrab did not fire in that run.
+- **FEAT-61: PASS.**
+  - Settings › Home Screen has no Synopsis Length row; the pane was checked end to end.
+  - Classic with Show Hero OFF shows 3 synopsis lines at Test 2's poster size **Large**, the D8 fit fallback ("fewer at Large").
+  - With Show Hero on, the pinned CTA hero shows 1 line, the same as the rc7 build in the same configuration, so not a regression.
+- **BUG-190: PASS.** Classic Home with collections in Rows: Test Collection shows the focused title's backdrop, logo, meta and synopsis under the "Test Folder" header, and the panel follows focus.
+  - New P3: on the second row the row heading isn't visible between the hero and the cards (the first row's "Popular (Movies)" heading shows).
+- **BUG-189: PASS** under French.
+  - Pills read "Films", "Aventure", "Parcourir". The genre menu reads Tout, Action, Aventure, Animation, Comédie, Crime, Documentaire, Drame, Famille…
+  - "TMDB Popular" passes through: it's a non-standard catalog name.
+  - The rail rows read "Position de la barre latérale · Centré" / "Libellés de la barre latérale · Affichés".
+- **FEAT-82: PASS.** Corners = Square gives a square Play ("Lire S1E1"), square icon buttons and a square focused Play; the network chips stay capsules (D4).
+- **Earlier part:** BUG-185 and BUG-186 passed; BUG-153 was measured.
+- **Still for Christian:** BUG-185 external player hand-off (needs an installed external player), and BUG-191 (needs a collection row above the last Home rows).
+- **Rig notes:**
+  - Multi-step `atv.sh seq` calls were dropped for a stretch, so single `atv.sh press` calls were used.
+  - One overshot Menu reached the tvOS Home screen, and the next Select **opened the UHF app**. It was closed with nothing changed, and NuvioTV was relaunched.
