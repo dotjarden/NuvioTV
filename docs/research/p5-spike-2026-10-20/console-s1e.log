@@ -1,0 +1,330 @@
+[LaunchTrace] +0ms app_init
+[ExtPlayerProbe] canOpenURL(infuse://) = true
+[ExtPlayerProbe] canOpenURL(vlc-x-callback://) = false
+[ExtPlayerProbe] canOpenURL(outplayer://) = false
+[ExtPlayerProbe] canOpenURL(open-vidhub://) = true
+[ExtPlayerProbe] canOpenURL(vidhub://) = false
+[ExtPlayerProbe] canOpenURL(senplayer://) = false
+[ExtPlayerProbe] canOpenURL(nativeplayer://) = false
+2026-10-20 12:49:36.876 NuvioTV[642:163703] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-20 12:49:36.877 NuvioTV[642:163703] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-20 12:49:36.878 NuvioTV[642:163703] -canOpenURL: failed for URL: "vidhub://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-20 12:49:36.878 NuvioTV[642:163703] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-20 12:49:36.879 NuvioTV[642:163703] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ExtPlayerProbe] availablePlayers = ["infuse:Infuse", "vidhub:VidHub"]
+2026-10-20 12:49:36.880 NuvioTV[642:163703] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-20 12:49:36.881 NuvioTV[642:163703] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-20 12:49:36.881 NuvioTV[642:163703] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-20 12:49:36.882 NuvioTV[642:163703] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[ProfileSelect] auto-enter profile 3
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-20 12:49:37.295 NuvioTV[642:163703] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+[LaunchTrace] +718ms home_appear
+2026-10-20 12:49:37.320 NuvioTV[642:163703] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-20 12:49:37.320 NuvioTV[642:163703] [TrailerPipeline] trailerLocation stage=row
+[TopShelf] wrote 0 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +1740ms artwork #1: mem=0 disk=1 net=0 fail=0
+[LaunchTrace] +1817ms artwork #10: mem=0 disk=10 net=0 fail=0
+2026-10-20 12:49:38.515 NuvioTV[642:163703] [HomeHero] logoInk sync-sample ms=0.49
+2026-10-20 12:49:38.545 NuvioTV[642:163703] [AmbientWash] render id=movie:tt3118958 src=1920x1080 ms=29.5 lum=0.17
+2026-10-20 12:49:38.545 NuvioTV[642:163703] [AmbientWash] show id=movie:tt3118958 gen=1 late=0 ms=29.5 lum=0.17
+[LaunchTrace] +2904ms artwork #25: mem=1 disk=19 net=5 fail=0
+2026-10-20 12:49:39.512 NuvioTV[642:163703] [TrailerPipeline] gates inlineTrailersEnabled=YES systemAutoplay=YES
+[LaunchTrace] +2908ms first_rows n=9 hero=8
+[LaunchTrace] +2908ms first_hero n=8
+[LaunchTrace] +3028ms artwork #50: mem=4 disk=41 net=5 fail=0
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[LaunchTrace] +4274ms rows n=17
+[LaunchTrace] +5163ms rows n=25
+[LaunchTrace] +5686ms rows n=33
+[LaunchTrace] +6123ms rows n=41
+2026-10-20 12:49:47.752 NuvioTV[642:163703] [NavRail] arm reason=menu origin=request tab=0
+2026-10-20 12:49:47.785 NuvioTV[642:163703] [Rail] gate=on mode=uikit
+2026-10-20 12:49:47.918 NuvioTV[642:163703] [NavRail] focus write=1 tab=0 landed=1
+2026-10-20 12:49:49.987 NuvioTV[642:163703] [NavRail] select tab=1 from=0
+2026-10-20 12:49:49.988 NuvioTV[642:163703] [Rail] gate=off mode=uikit
+2026-10-20 12:49:50.095 NuvioTV[642:163703] [NavRail] exit via=select route=none result=fallback
+2026-10-20 12:49:51.134 NuvioTV[642:163703] [KBFocus] chain=UIKeyboard→_UIKBCompatInputView→UIView→UIKBFocusVCView→_UISearchControllerTVKeyboardContainerView→_UISearchControllerView→UITransitionView→UIView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<SearchContainerRepresentable<ModifiedContent<ModifiedContent<_ViewModifier_Content<SearchModifier<TextField<EmptyView>>>, SubmitScopeModifier>, _PreferenceTransformModifier<ContentScrollViewPreferenceKey>>>>>→HostingView→UIViewControllerWrapperView→UINavigationTransitionView→UILayoutContainerView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<NavigationStackRepresentable>>→_UIHostingView<RootView>→UIViewControllerWrapperView→UITransitionView→UILayoutContainerView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<TVTabView<LazyMapSequence<_VariadicView_Children, TabItem>>>>→_UIHostingView<ModifiedContent<LazyView<ModifiedContent<ModifiedContent<ContentView, ProvidesFocusAppearance>, _PreferenceWritingModifier<PreferredColorSchemeKey>>>, RootModifier>>→UIDropShadowView→UITransitionView→UIWindow
+2026-10-20 12:49:51.134 NuvioTV[642:163703] [KBFocus] keyboard=1
+[SearchPerf] fire q="Dune" inflight=0 keys=0 maxBody=0
+2026-10-20 12:49:53.415 NuvioTV[642:163703] [AmbientWash] render id=movie:tt1160419 src=256x144 ms=6.8 lum=0.17
+[SearchPerf] results q="Dune" first=113 last=646 cancelledFetches=0 legacy=0
+2026-10-20 12:49:53.688 NuvioTV[642:163703] [AmbientWash] show id=movie:tt1160419 gen=1 late=0 ms=6.8 lum=0.17
+2026-10-20 12:49:57.583 NuvioTV[642:163703] [KBFocus] chain=UIKitFocusableViewResponderItem→PlatformGroupContainer→HostingScrollView→PlatformContainer→PlatformGroupContainer→HostingScrollView→PlatformContainer→_UIHostingView<ModifiedContent<ModifiedContent<_ViewModifier_Content<SearchModifier<TextField<EmptyView>>>, SubmitScopeModifier>, _PreferenceTransformModifier<ContentScrollViewPreferenceKey>>>→UIView→UIView→_UISearchControllerView→UITransitionView→UIView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<SearchContainerRepresentable<ModifiedContent<ModifiedContent<_ViewModifier_Content<SearchModifier<TextField<EmptyView>>>, SubmitScopeModifier>, _PreferenceTransformModifier<ContentScrollViewPreferenceKey>>>>>→HostingView→UIViewControllerWrapperView→UINavigationTransitionView→UILayoutContainerView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<NavigationStackRepresentable>>→_UIHostingView<RootView>→UIViewControllerWrapperView→UITransitionView→UILayoutContainerView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<TVTabView<LazyMapSequence<_VariadicView_Children, TabItem>>>>→_UIHostingView<ModifiedContent<LazyView<ModifiedContent<ModifiedContent<ContentView, ProvidesFocusAppearance>, _PreferenceWritingModifier<PreferredColorSchemeKey>>>, RootModifier>>→UIDropShadowView→UITransitionView→UIWindow
+2026-10-20 12:49:57.584 NuvioTV[642:163703] [KBFocus] keyboard=0
+[LaunchTrace] +23050ms artwork #100: mem=4 disk=91 net=5 fail=0
+2026-10-20 12:50:00.625 NuvioTV[642:163952] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-20 12:50:00.625 NuvioTV[642:163952] [TrailerExtract] client=visionos video=w0HgHet0sxg hls=true formats=0 adaptive=28 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+2026-10-20 12:50:00.630 NuvioTV[642:163952] [TrailerExtract] client=android video=w0HgHet0sxg hls=false formats=1 adaptive=31 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl,metadataFormats
+2026-10-20 12:50:00.636 NuvioTV[642:163952] [TrailerExtract] client=ios video=w0HgHet0sxg hls=false formats=0 adaptive=28 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl,metadataFormats
+2026-10-20 12:50:00.896 NuvioTV[642:163727] [TrailerExtract] manifest client=visionos top variant 1920x1080
+2026-10-20 12:50:00.896 NuvioTV[642:163727] [TrailerExtract] selection: manifest=1080 progressive=360 (manifests collected=1)
+2026-10-20 12:50:00.897 NuvioTV[642:163727] [TrailerExtract] repack candidates: avcVideo=1080p avc1.640028 (visionos) m4aAudio=mp4a.40.2 (visionos) maxFps=0
+2026-10-20 12:50:01.215 NuvioTV[642:163727] [TrailerExtract] repack decision: avc=1080p vs progressive=1080p -> ELIGIBLE
+2026-10-20 12:50:01.599 NuvioTV[642:163827] [TrailerRepack] listener start port=8230 prefer=- gen=1 conns=0
+2026-10-20 12:50:01.600 NuvioTV[642:163827] [TrailerRepack] listener ready port=8230 waiters=1 gen=1 conns=0
+2026-10-20 12:50:01.601 NuvioTV[642:163827] [TrailerRepack] serving 1920x1080 avc1+mp4a (28+15 segments) at http://127.0.0.1:8230/<path redacted> fps=24 itag=137 n=0
+2026-10-20 12:50:04.323 NuvioTV[642:163703] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[SubtitleRepo] Fetching subtitles type=movie id=tt1160419 across 8 enabled addons
+[SubtitleRepo] Skip Comet: no subtitles resource2026-10-20 12:50:04.323 NuvioTV[642:163703] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-20 12:50:04.324 NuvioTV[642:163703] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-20 12:50:04.324 NuvioTV[642:163703] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+
+[SubtitleRepo] Skip Torrentio: no subtitles resource
+[SubtitleRepo] Skip AIOMetadata: no subtitles resource
+[SubtitleRepo] Skip AIO Streams: no subtitles resource
+[SubtitleRepo] Skip Cinemeta: no subtitles resource
+[SubtitleRepo] Skip Better Posters: no subtitles resource
+[SubtitleRepo] Querying Duck Streams: https://aiostreams-stable.forthewizards.uk/<path redacted>
+[SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/<path redacted>
+[SubtitleRepo] Duck Streams: 17 subtitles in 203.666875ms
+[SubtitleRepo] OpenSubtitles v3: 95 subtitles in 348.279291ms
+[SubtitleRepo] Subtitle fetch done: 112 total in 349.555083ms
+2026-10-20 12:50:08.755 NuvioTV[642:163703] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-20 12:50:08.755 NuvioTV[642:163703] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-20 12:50:08.755 NuvioTV[642:163703] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-20 12:50:08.756 NuvioTV[642:163703] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[PlayerRouter] self-check passed
+[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x14ad92100] [0m[0;33mstream 0, timescale not set
+[0m[PlayerRouter] probe took 1543ms cap=4000ms result=ok
+[PlayerRouter] native — DV P5 — Dune
+[Loading] engine=native stage=connecting t=+0.01s
+[NativePlayer] language plan: audio=["en-us", "en"] subs=off
+[NativePlayer] addon subtitles updated: 112
+[NativePlayer] artwork attached (80 KB)
+[NativePlayer] skip segments: 0 (none in intro DB for this title)
+[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x14d94f900] [0m[0;33mstream 0, timescale not set
+[0m[Remux] source <debrid url redacted>
+[Remux] subtitle streams (11): #8 mov_text [rus], #9 mov_text [rus], #10 mov_text [rus], #11 mov_text [rus], #12 mov_text [rus], #13 mov_text [rus], #14 mov_text [rus], #15 mov_text [ukr], #16 mov_text [ukr], #17 mov_text [eng], #18 mov_text [eng]
+[Remux] preferred-language audio pick → stream 7
+[Remux] audio streams (7): #1 eac3 6ch [rus], #2 ac3 6ch [rus], #3 eac3 8ch [rus], #4 eac3 8ch [rus], #5 ac3 6ch [ukr], #6 eac3 6ch [ukr], #7 eac3 6ch [eng] *selected
+[Remux] video extradata has no parameter sets (in-band layout) — extracting parameter sets from bitstream
+[Remux] rebuilt hvcC 123b from in-band parameter sets (vps=1 sps=1 pps=1, nal length 4)
+[Remux] signaling CODECS=dvh1.05.06 VIDEO-RANGE=PQ AUDIO=ec-3
+[Remux] audio tracks: #1 eac3 6ch rus | #2 ac3 6ch rus | #3 eac3 8ch rus | #4 eac3 8ch rus | #5 ac3 6ch ukr | #6 eac3 6ch ukr | #7* eac3 6ch eng
+[Remux] keyframe index: 2333 keyframes tb=1/24000 dur=9324.0s
+[1;35m[mp4 @ 0x149377000] [0m[0;33mtrack 0: codec frame size is not set
+[0m[Remux] segment map: 1165 segments, 9324.0s, target=10s
+[Remux] embedded subtitle sinks: 11 (#10→esub-2, #11→esub-3, #12→esub-4, #13→esub-5, #14→esub-6, #15→esub-7, #16→esub-8, #17→esub-9, #18→esub-10, #8→esub-0, #9→esub-1)
+[Loading] engine=native stage=preparing(dv) t=+1.59s
+[Remux] seg 1 done footprint=267MB
+[NativePlayer] addon subtitle fetch finished (112 found)
+[NativePlayer] subtitle renditions: 27 (11 embedded) — Russian, Russian 2, Russian 3, Russian 4, Russian 5, Russian 6, …
+[HLS] master iframes=0 independent=0
+[NativePlayer] serving http://127.0.0.1:8190/<path redacted>
+[Subs] style rule fg=#FFFFFFFF bg=#00000000 edge=uniform bold=0 size=78%
+[Loading] engine=native stage=buffering t=+2.11s
+[HLS] 200 master.m3u8 (4867b)
+[NativePlayer] bar visible=0
+[NativePlayer] avpvc speeds=0.5,0.75,1,1.25,1.5,1.75,2 menu=Sources delegate=1
+[HLS] 200 media.m3u8 (37420b)
+[HLS] 200 aud-7.m3u8 (39756b)
+[HLS] 200 init.mp4 (948b)
+[HLS] 200 seg-00001.m4s (161980b)
+[HLS] 200 aud-7-init.mp4 (730b)
+[HLS] 200 aud-7-00001.m4s (826476b)
+[HLS] 200 aud-7-00002.m4s (783468b)
+[NativePlayer] item readyToPlay
+[HLS] 200 seg-00002.m4s (14443570b)
+[NativePlayer] bar visible=1
+[Loading] engine=native stage=started t=+5.59s
+[HLS] 200 aud-7-00003.m4s (783468b)
+[HLS] 200 seg-00003.m4s (22146318b)
+[HLS] 200 aud-7-00004.m4s (783468b)
+[HLS] 200 seg-00004.m4s (22059486b)
+[TopShelf] wrote 9 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[NativePlayer] bar visible=0
+[HLS] 200 seg-00005.m4s (22022179b)
+[HLS] 200 aud-7-00005.m4s (829548b)
+[HLS] 200 seg-00006.m4s (11095799b)
+[HLS] 200 aud-7-00006.m4s (783468b)
+[HLS] 200 seg-00007.m4s (146466b)
+[HLS] 200 aud-7-00007.m4s (783468b)
+[HLS] 200 seg-00008.m4s (15622529b)
+[HLS] 200 aud-7-00008.m4s (783468b)
+[HLS] 200 seg-00009.m4s (21821888b)
+[HLS] 200 aud-7-00009.m4s (774252b)
+[TopShelf] wrote 9 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[HLS] 200 seg-00010.m4s (22362400b)
+[HLS] 200 aud-7-00010.m4s (792684b)
+[HLS] 200 seg-00011.m4s (22055122b)
+[HLS] 200 aud-7-00011.m4s (749676b)
+[HLS] 200 seg-00012.m4s (21389692b)
+[HLS] 200 aud-7-00012.m4s (792684b)
+[HLS] 200 seg-00013.m4s (22104014b)
+[HLS] 200 aud-7-00013.m4s (749676b)
+[HLS] 200 seg-00014.m4s (22159976b)
+[HLS] 200 aud-7-00014.m4s (792684b)
+[Remux] seg 15 done footprint=318MB
+[HLS] 200 seg-00015.m4s (21932629b)
+[HLS] 200 aud-7-00015.m4s (749676b)
+[HLS] 200 seg-00016.m4s (22043599b)
+[HLS] 200 aud-7-00016.m4s (792684b)
+[HLS] 200 seg-00017.m4s (21861487b)
+[HLS] 200 aud-7-00017.m4s (749676b)
+[HLS] 200 seg-00018.m4s (22267501b)
+[HLS] 200 aud-7-00018.m4s (792684b)
+[HLS] 200 seg-00019.m4s (21684210b)
+[StreamPicker] BUG-185 player close: setter → onDismiss 0 ms uiKitFallback=0
+[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x14d94f900] [0m[0;33mPacket corrupt (stream = 0, dts = 4005001).
+[0m[NativePlayer] bar visible=1
+[Remux] failed at cancelled — 167119c0-ce94-463e-ac1a-6cf4260c3587
+2026-10-20 12:53:05.104 NuvioTV[642:163703] [KBFocus] chain=UIKeyboard→_UIKBCompatInputView→UIView→UIKBFocusVCView→_UISearchControllerTVKeyboardContainerView→_UISearchControllerView→UITransitionView→UIView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<SearchContainerRepresentable<ModifiedContent<ModifiedContent<_ViewModifier_Content<SearchModifier<TextField<EmptyView>>>, SubmitScopeModifier>, _PreferenceTransformModifier<ContentScrollViewPreferenceKey>>>>>→HostingView→UIViewControllerWrapperView→UINavigationTransitionView→UILayoutContainerView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<NavigationStackRepresentable>>→_UIHostingView<RootView>→UIViewControllerWrapperView→UITransitionView→UILayoutContainerView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<TVTabView<LazyMapSequence<_VariadicView_Children, TabItem>>>>→_UIHostingView<ModifiedContent<LazyView<ModifiedContent<ModifiedContent<ContentView, ProvidesFocusAppearance>, _PreferenceWritingModifier<PreferredColorSchemeKey>>>, RootModifier>>→UIDropShadowView→UITransitionView→UIWindow
+2026-10-20 12:53:05.104 NuvioTV[642:163703] [KBFocus] keyboard=1
+2026-10-20 12:53:45.080 NuvioTV[642:163703] [KBFocus] chain=UIKitFocusableViewResponderItem→PlatformGroupContainer→HostingScrollView→PlatformContainer→PlatformGroupContainer→HostingScrollView→PlatformContainer→_UIHostingView<ModifiedContent<ModifiedContent<_ViewModifier_Content<SearchModifier<TextField<EmptyView>>>, SubmitScopeModifier>, _PreferenceTransformModifier<ContentScrollViewPreferenceKey>>>→UIView→UIView→_UISearchControllerView→UITransitionView→UIView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<SearchContainerRepresentable<ModifiedContent<ModifiedContent<_ViewModifier_Content<SearchModifier<TextField<EmptyView>>>, SubmitScopeModifier>, _PreferenceTransformModifier<ContentScrollViewPreferenceKey>>>>>→HostingView→UIViewControllerWrapperView→UINavigationTransitionView→UILayoutContainerView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<NavigationStackRepresentable>>→_UIHostingView<RootView>→UIViewControllerWrapperView→UITransitionView→UILayoutContainerView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<TVTabView<LazyMapSequence<_VariadicView_Children, TabItem>>>>→_UIHostingView<ModifiedContent<LazyView<ModifiedContent<ModifiedContent<ContentView, ProvidesFocusAppearance>, _PreferenceWritingModifier<PreferredColorSchemeKey>>>, RootModifier>>→UIDropShadowView→UITransitionView→UIWindow
+2026-10-20 12:53:45.080 NuvioTV[642:163703] [KBFocus] keyboard=0
+2026-10-20 12:53:47.788 NuvioTV[642:165099] [TrailerExtract] client=android_vr NO streamingData (playability=LOGIN_REQUIRED reason=Sign in to confirm you’re not a bot)
+2026-10-20 12:53:47.788 NuvioTV[642:165099] [TrailerExtract] client=visionos video=w0HgHet0sxg hls=true formats=0 adaptive=28 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+2026-10-20 12:53:47.794 NuvioTV[642:165099] [TrailerExtract] client=android video=w0HgHet0sxg hls=false formats=1 adaptive=31 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl,metadataFormats
+2026-10-20 12:53:47.799 NuvioTV[642:165099] [TrailerExtract] client=ios video=w0HgHet0sxg hls=false formats=0 adaptive=28 sdKeys=expiresInSeconds,adaptiveFormats,probeUrl,aspectRatio,serverAbrStreamingUrl,metadataFormats
+2026-10-20 12:53:47.894 NuvioTV[642:165336] [TrailerExtract] manifest client=visionos top variant 1920x1080
+2026-10-20 12:53:47.894 NuvioTV[642:165336] [TrailerExtract] selection: manifest=1080 progressive=360 (manifests collected=1)
+2026-10-20 12:53:47.894 NuvioTV[642:165336] [TrailerExtract] repack candidates: avcVideo=1080p avc1.640028 (visionos) m4aAudio=mp4a.40.2 (visionos) maxFps=0
+2026-10-20 12:53:48.200 NuvioTV[642:164466] [TrailerExtract] repack decision: avc=1080p vs progressive=1080p -> ELIGIBLE
+2026-10-20 12:53:48.569 NuvioTV[642:165332] [TrailerRepack] serving 1920x1080 avc1+mp4a (28+15 segments) at http://127.0.0.1:8230/<path redacted> fps=24 itag=137 n=0
+2026-10-20 12:53:51.817 NuvioTV[642:163703] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-20 12:53:51.817 NuvioTV[642:163703] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-20 12:53:51.818 NuvioTV[642:163703] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-20 12:53:51.818 NuvioTV[642:163703] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-20 12:53:56.287 NuvioTV[642:163703] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-20 12:53:56.287 NuvioTV[642:163703] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-20 12:53:56.287 NuvioTV[642:163703] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-20 12:53:56.288 NuvioTV[642:163703] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[PlayerRouter] self-check passed
+[PlayerRouter] probe took 1365ms cap=4000ms result=ok
+[PlayerRouter] native — DV P8.1 — Dune
+[Loading] engine=native stage=connecting t=+0.01s
+[NativePlayer] language plan: audio=["en-us", "en"] subs=off
+[NativePlayer] skip segments: 0 (none in intro DB for this title)
+[NativePlayer] addon subtitles updated: 112
+[NativePlayer] artwork attached (80 KB)
+[Remux] source <debrid url redacted>
+[Remux] subtitle streams (3): #3 subrip [ita], #4 subrip [ita], #5 subrip [eng]
+[Remux] preferred-language audio pick → stream 2
+[Remux] audio streams (2): #1 ac3 6ch [ita], #2 ac3 6ch [eng] *selected
+[Remux] signaling CODECS=hvc1.2.4.L150.90 SUPPLEMENTAL=dvh1.08.06/db1p VIDEO-RANGE=PQ AUDIO=ac-3
+[Remux] audio tracks: #1 ac3 6ch ita | #2* ac3 6ch eng
+[Loading] engine=native stage=preparing(dv) t=+1.07s
+[Remux] keyframe index: 2088 keyframes tb=1/1000 dur=9326.7s
+[Chapters] native n=19 origin=0.000 first="Capitolo 01"@0.000 last="Capitolo 19"@9326.359
+[1;35m[mp4 @ 0x14c517000] [0m[0;33mtrack 0: codec frame size is not set
+[0m[Remux] segment map: 1026 segments, 9326.7s, target=17s
+[Remux] embedded subtitle sinks: 3 (#3→esub-0, #4→esub-1, #5→esub-2)
+[Remux] seg 1 done footprint=215MB
+[NativePlayer] addon subtitle fetch finished (112 found)
+[NativePlayer] subtitle renditions: 19 (3 embedded) — Italiano Forced, Italiano, English, ENG (Duck Streams), ENG (Duck Streams) 2, ENG (Duck Streams) 3, …
+[HLS] master iframes=0 independent=0
+[NativePlayer] serving http://127.0.0.1:8190/<path redacted>
+[Subs] style rule fg=#FFFFFFFF bg=#00000000 edge=uniform bold=0 size=78%
+[Loading] engine=native stage=buffering t=+2.66s
+[NativePlayer] bar visible=0
+[HLS] 200 master.m3u8 (3173b)
+[NativePlayer] avpvc speeds=0.5,0.75,1,1.25,1.5,1.75,2 menu=Sources delegate=1
+[HLS] 200 media.m3u8 (33346b)
+[HLS] 200 aud-2.m3u8 (35404b)
+[HLS] 200 init.mp4 (3382b)
+[HLS] 200 seg-00001.m4s (155255b)
+[HLS] 200 aud-2-init.mp4 (726b)
+[HLS] 200 aud-2-00001.m4s (584300b)
+[HLS] 200 aud-2-00002.m4s (734828b)
+[HLS] 200 seg-00002.m4s (5206557b)
+[NativePlayer] item readyToPlay
+[Remux] reposition requested → segment 11
+[HLS] 503 aud-2-00003.m4s (10b)
+[Remux] repositioning: abandoning segment 4, jumping to 11
+[Remux] seeking to segment 11 (pts 108191)
+[1;35m[mp4 @ 0x14d8cb900] [0m[0;33mtrack 0: codec frame size is not set
+[0m[Remux] seg 11 done footprint=220MB
+[HLS] 200 seg-00011.m4s (4449178b)
+[HLS] 200 aud-2-00011.m4s (741996b)
+[HLS] 200 aud-2-00012.m4s (347756b)
+[HLS] 200 seg-00012.m4s (897559b)
+[HLS] 200 aud-2-00013.m4s (584300b)
+[HLS] 200 seg-00013.m4s (1601040b)
+[Remux] seg 15 done footprint=220MB
+[NativePlayer] bar visible=1
+[Loading] engine=native stage=started t=+4.45s
+[Remux] seg 30 done footprint=220MB
+[Remux] seg 45 done footprint=220MB
+[Remux] seg 60 done footprint=220MB
+[NativePlayer] bar visible=0
+[Remux] seg 75 done footprint=221MB
+[HLS] 200 aud-2-00014.m4s (403308b)
+[HLS] 200 seg-00014.m4s (1233035b)
+[Remux] seg 90 done footprint=221MB
+[Remux] seg 105 done footprint=222MB
+[Remux] seg 120 done footprint=222MB
+[Remux] seg 135 done footprint=225MB
+[HLS] 200 aud-2-00015.m4s (360300b)
+[HLS] 200 seg-00015.m4s (812635b)
+[Remux] seg 150 done footprint=228MB
+[Remux] seg 165 done footprint=228MB
+[Remux] seg 180 done footprint=229MB
+[Remux] seg 195 done footprint=229MB
+[Remux] seg 210 done footprint=229MB
+[HLS] 200 aud-2-00016.m4s (440940b)
+[HLS] 200 seg-00016.m4s (1946605b)
+[Remux] seg 225 done footprint=234MB
+[Remux] seg 240 done footprint=235MB
+[Remux] seg 255 done footprint=235MB
+[Remux] seg 270 done footprint=236MB
+[HLS] 200 aud-2-00017.m4s (444524b)
+[Remux] seg 285 done footprint=237MB
+[HLS] 200 seg-00017.m4s (1571357b)
+[Remux] seg 300 done footprint=237MB
+[Remux] seg 315 done footprint=238MB
+[Remux] seg 330 done footprint=238MB
+[TopShelf] wrote 9 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Remux] seg 345 done footprint=239MB
+[HLS] 200 aud-2-00018.m4s (360300b)
+[Remux] seg 360 done footprint=239MB
+[HLS] 200 seg-00018.m4s (1320507b)
+[Remux] seg 375 done footprint=240MB
+[Remux] seg 390 done footprint=240MB
+[Remux] seg 405 done footprint=241MB
+[Remux] seg 420 done footprint=241MB
+[HLS] 200 aud-2-00019.m4s (525164b)
+[HLS] 200 seg-00019.m4s (2327046b)
+[Remux] seg 435 done footprint=242MB
+[Remux] seg 450 done footprint=248MB
+[Remux] seg 465 done footprint=248MB
+[Remux] seg 480 done footprint=248MB
+[Remux] seg 495 done footprint=249MB
+[HLS] 200 aud-2-00020.m4s (541292b)
+[HLS] 200 seg-00020.m4s (1024121b)
+[Remux] seg 510 done footprint=250MB
+[Remux] seg 525 done footprint=250MB
+[Remux] seg 540 done footprint=250MB
+[Remux] seg 555 done footprint=251MB
+[Remux] seg 570 done footprint=251MB
+[Remux] seg 585 done footprint=252MB
+[HLS] 200 aud-2-00021.m4s (392556b)
+[HLS] 200 seg-00021.m4s (513977b)
+[Remux] seg 600 done footprint=253MB
+[Remux] seg 615 done footprint=253MB
+[Remux] seg 630 done footprint=253MB
+[Remux] seg 645 done footprint=254MB
+[HLS] 200 aud-2-00022.m4s (876396b)
+[Remux] seg 660 done footprint=254MB
+[HLS] 200 seg-00022.m4s (4695696b)
+[Remux] seg 675 done footprint=254MB
+[Remux] seg 690 done footprint=255MB
+[Remux] seg 705 done footprint=255MB
+[Remux] seg 720 done footprint=255MB
+[Remux] seg 735 done footprint=256MB
+[Remux] seg 750 done footprint=256MB
+[Remux] seg 765 done footprint=256MB
+[Remux] seg 780 done footprint=257MB
+[HLS] 200 aud-2-00023.m4s (516204b)
+[HLS] 200 seg-00023.m4s (1227358b)
+[Remux] seg 795 done footprint=257MB
+[Remux] seg 810 done footprint=257MB
+[Remux] seg 825 done footprint=258MB
+[StreamPicker] BUG-185 player close: setter → onDismiss 0 ms uiKitFallback=0
+[NativePlayer] bar visible=1
+[0;35m[matroska,webm @ 0x14d0ec900] [0m[0;33mSeek to desired resync point failed. Seeking to earliest point available instead.
+[0m[Remux] failed at cancelled — 6a776b39-95db-4cfe-ba2c-7e885045e564
+2026-10-20 12:56:26.867 NuvioTV[642:163703] [KBFocus] chain=UIKeyboard→_UIKBCompatInputView→UIView→UIKBFocusVCView→_UISearchControllerTVKeyboardContainerView→_UISearchControllerView→UITransitionView→UIView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<SearchContainerRepresentable<ModifiedContent<ModifiedContent<_ViewModifier_Content<SearchModifier<TextField<EmptyView>>>, SubmitScopeModifier>, _PreferenceTransformModifier<ContentScrollViewPreferenceKey>>>>>→HostingView→UIViewControllerWrapperView→UINavigationTransitionView→UILayoutContainerView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<NavigationStackRepresentable>>→_UIHostingView<RootView>→UIViewControllerWrapperView→UITransitionView→UILayoutContainerView→UIKitPlatformViewHost<PlatformViewControllerRepresentableAdaptor<TVTabView<LazyMapSequence<_VariadicView_Children, TabItem>>>>→_UIHostingView<ModifiedContent<LazyView<ModifiedContent<ModifiedContent<ContentView, ProvidesFocusAppearance>, _PreferenceWritingModifier<PreferredColorSchemeKey>>>, RootModifier>>→UIDropShadowView→UITransitionView→UIWindow
+2026-10-20 12:56:26.867 NuvioTV[642:163703] [KBFocus] keyboard=1
