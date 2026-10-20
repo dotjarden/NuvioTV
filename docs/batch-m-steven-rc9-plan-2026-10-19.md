@@ -262,3 +262,14 @@ Walks used launch-only overrides (`-accent_focus_ring YES` to make focus visible
 - **Rig notes:**
   - Multi-step `atv.sh seq` calls were dropped for a stretch, so single `atv.sh press` calls were used.
   - One overshot Menu reached the tvOS Home screen, and the next Select **opened the UHF app**. It was closed with nothing changed, and NuvioTV was relaunched.
+- **BUG-185 external player: PASS** (Christian at the TV, 2026-10-19): Back from the external player lands on the Detail page with no stream-list flash.
+- **MERGED 2026-10-19** on Christian's go after that check (no cut): `tvos-shared-extraction` `c9e54872d` → `86af6a69b` (18 commits), pushed. Branch deleted (it was never on GitHub `origin`); clones `NuvioMobile-batch-m` and the one-off `NuvioMobile-rc7-probe` deleted; outer pointer bumped. FEAT-80 stays out until Steven answers the 21:02Z question. BUG-191 was not checked on hardware (Test 2 has no collection row above its last rows; the UI leg passed).
+- **Release-notes lines, for the next rc:**
+  - Settings › Home Screen › Synopsis Length is **removed**: Classic shows up to 4 lines where they fit, fewer at the Large poster size.
+  - Corners = Square makes Detail's buttons square.
+  - Discover's genre names and the Genre/Browse pills follow the app language.
+  - Back from a cast member or a More Like This title returns to that card.
+  - Leaving a player, built-in or external, no longer flashes the logo or the loading screen.
+  - The player's top panel can no longer get stuck.
+  - Classic collections in Rows show the focused title's poster and synopsis.
+  - No new settings.
