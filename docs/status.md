@@ -2,9 +2,11 @@
 
 Moved out of `CLAUDE.md` (then titled "Nuvio tvOS — Claude Code project notes") on 2026-10-19 so that file holds rules only. Every entry below is the text as it stood in `CLAUDE.md` on 2026-10-18, verbatim, grouped under dated headings, newest first. New run logs, release records and batch outcomes go in the batch doc or here, not in `CLAUDE.md`.
 
-Later cuts not recorded in these notes: the submodule carries tags `tvos-v0.3.0-beta.19-rc6`, `-rc7`, `-rc8` and `-rc9` (see `git -C NuvioMobile tag`). The daily upstream-check logs are `docs/upstream-port-plan-YYYY-MM-DD.md`; the NuvioTV (Android TV) check is `docs/nuviotv-android-upstream-port-plan-YYYY-MM-DD.md`.
+Later cuts not recorded in these notes: the submodule carries tags `tvos-v0.3.0-beta.19-rc6`, `-rc7`, `-rc8`, `-rc9` and `-rc10` (see `git -C NuvioMobile tag`). The daily upstream-check logs are `docs/upstream-port-plan-YYYY-MM-DD.md`; the NuvioTV (Android TV) check is `docs/nuviotv-android-upstream-port-plan-YYYY-MM-DD.md`.
 
 ## Releases
+
+**beta.19-rc10 CUT 2026-10-20:** build 142 `1bf7866aa`, tag `tvos-v0.3.0-beta.19-rc10`, outer pointer `53159fb`, 29,940,249 B (sha256 `577d62e96a7f376e…`). Litterbox failed 3 times with an HTML page, so the links are filebin https://filebin.net/nuviotv-beta19-rc10-46655ff4/NuvioTV-beta19-rc10.ipa (until 2026-10-27) and the gofile backup https://gofile.io/d/2X9Rp5yW. Carries Batches L, M, N and O over rc9. Cut by `scripts/cut-rc.sh` in one run (build 7 m 46 s). Settings changes: Home Screen › Synopsis Length removed; Appearance › Rail Position is Centre / Corner (Corner replaces Top, default Centre). DM drafted, NOT SENT (`docs/comms-dm-drafts-2026-10-20-beta19-rc10.md`).
 
 **beta.19-rc9 CUT 2026-10-19:** build 141 `2baa390f`, tag `tvos-v0.3.0-beta.19-rc9`, outer pointer `73918d4`, litterbox `6ukggu` (72 h), 29,826,428 B. Carries Batches H, I, J, K and UX-16 over rc8. Cut by `scripts/cut-rc.sh` in one run (build 6 m 16 s). New setting: Home Screen › Synopsis Length (Standard, Classic only). DM SENT 2026-10-19T16:05:00.060Z (`docs/comms-dm-drafts-2026-10-19-beta19-rc9.md`); Steven's verdict now owed on rc9 (covers rc8).
 
