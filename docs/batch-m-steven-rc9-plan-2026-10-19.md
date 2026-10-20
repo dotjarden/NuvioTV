@@ -209,3 +209,29 @@ Scope as decided 2026-10-19:
   - **Pass:** `FolderClassicHeroUITests` (BUG-190) and `StripFitNoZoomUITests` (BUG-191).
   - **Skipped, fixture prerequisites:** `DetailFocusReturnUITests` ×2 (the fixture title has no tappable cast or More Like This row; TMDB enrichment is off) and `PlayerPanelCloseUITests` ×2 (`PLAYER_BAR_PROBE` / `PLAYER_SMOKE_URL` not set).
   - **Failed, harness limit:** `DiscoverGenreLocalizationUITests` failed with "focus never reached discover.genrePicker". The leg detects focus through `hasFocus`, which the tvOS 27 simulator never reports. BUG-189 is covered by `DiscoverGenreNamesTests`, plus a French Discover check on the device.
+
+### Device pass, rig part (2026-10-19 ~21:00 ET, Living Room ATV, **Test 2**, Debug build `86af6a69b`)
+- **BUG-185: PASS.** Back from the built-in player logged `setter → onDismiss 25 ms uiKitFallback=0`: the Transaction alone makes the cover close instant. The next frame is Home, where the title was opened, with progress updated (1h24m left), and no logo flash.
+- **BUG-186: PASS (no wedge).**
+  - Down opened the top panel (Info tab); a Menu 0.1 s later, during the present, had no effect.
+  - The next Menu closed the panel and playback continued.
+  - That's the "one extra press" case, not the stuck state.
+- **BUG-153:** measured earlier on Release builds (W1 re-measure): the tip matches rc7 with the ring on.
+- **Stopped there.** The box dropped off devicectl once mid-walk (the console stream died, `CoreDeviceError 3`). After the reconnect:
+  - focus on the Detail cast row isn't readable on hardware, since the BUG-187 probe is a hidden label;
+  - screenshots timed out with video on screen (the Detail trailer).
+  - So BUG-187, BUG-192, BUG-188, BUG-190, FEAT-61, BUG-189 and FEAT-82 go to Christian's hands-on checks below.
+  - BUG-191 (UI leg passed) and the BUG-188 viewer-Up note also need his config.
+- Logs: `docs/research/batch-m-device-2026-10-19/` (redacted).
+
+**Checks for Christian at the TV (Test 2, this dev build), about 10 minutes:**
+1. **BUG-187:** Detail of a series → a cast member → Back: you land on that cast card, not on Play. Repeat with a More Like This poster → Back.
+2. **BUG-192:** on a Cinematic Detail with a long synopsis, there's no "more"; the synopsis still lights up and opens the full text.
+3. **FEAT-82:** Settings › Appearance › Poster › Corners = Square: Detail's Play / Trailer / icon buttons are square. Back to Rounded: capsules.
+4. **FEAT-61 + BUG-190:** Settings › Home Screen has no Synopsis Length row. Switch Home to Classic:
+   - the hero synopsis shows up to 4 lines (fewer at Large);
+   - open a collection with Rows layout: the focused card's poster, title and synopsis show under the collection logo.
+5. **BUG-188:** new Home, open a collection, then Back: the card you land on doesn't flicker. Also press Up right after landing; focus must go up, not snap back.
+6. **BUG-189:** set the Apple TV language to French, or tell me and I'll relaunch with French: Discover's Genre and Browse pills and the standard genres read in French.
+7. **BUG-185, external player:** play with an external player (Infuse / SenPlayer / Native Player if installed), then come back: you land on the page you started from, with no loading-screen flash.
+8. **BUG-191:** only reproducible with a collection row directly above the last Home rows. Optional if your layout has one.
