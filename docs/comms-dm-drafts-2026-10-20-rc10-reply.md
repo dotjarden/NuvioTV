@@ -1,4 +1,6 @@
-# DM draft: reply to Steven's beta.19-rc10 verdict (2026-10-20). NOT SENT
+# DM draft: reply to Steven's beta.19-rc10 verdict (2026-10-20). SENT
+
+**Status: SENT 2026-10-20T19:40:02.013Z** as one bubble on Christian's go (pre-send fetch 19:38Z quiet; `~/Library/Logs/NuvioDM/rc10-reply-send.js`, the rc10 send recipe), verified in the room and by `fetch-dms.sh` (one copy, shown as `youngchris2989 (me)`). DM watermark now `2026-10-20T19:40:02.013Z`. Was: NOT SENT.
 
 Answers `docs/steven-beta19-rc10-verdict-2026-10-20.md`. Send only on Christian's go, through the ego-browser recipe (memory `reddit-chat-smash-fetch`), after a pre-send `fetch-dms.sh --since 2026-10-20T17:40:28.256Z`. move the watermark after. SlopMonster lint on the body below the line. Codex cleanse skipped (quota out until 10-29).
 
