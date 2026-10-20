@@ -3192,6 +3192,28 @@
    "reporter": "u/mrStevenx3",
    "first_seen": "2026-10-20",
    "summary": "Back from an actor's biography lands on the cast card in two visible moves."
+  },
+  {
+   "id": "BUG-195",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-20",
+   "summary": "Opening Search from Home shows a black screen for about 0.9 s before the Search page draws (rc10 reply video)."
+  },
+  {
+   "id": "BUG-196",
+   "kind": "Bug",
+   "priority": "P4",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-20",
+   "summary": "In Icons Only, the rail pill darkens about a second after it opens (rc10 reply video)."
   }
  ]
 }
