@@ -25,6 +25,14 @@ Read with `scripts/reddit/fetch-dms.sh --since 2026-10-21T07:48:19.967Z`: eight 
 | FEAT-81 / UX-17 | "What I'm looking forward to most: a redesign of the description page in the style of Fusion; a redesign of Home in the style of Wako / Netflix. If you plan to do these, stop optimising what's there." | 💬 the strategic ask | FEAT-81, UX-17 → his priority; Christian's call |
 | Classic titles too high | video: "titles are positioned too high and drop down one notch each time on the standard home screen" | 🆕 from the video | **BUG-209** P3 (pending the video read) |
 
+### Later the same day (18:08Z–18:30Z, one photo `photo-2-axientt66vwh1.jpeg`)
+
+| Item | His words | Tracker |
+|---|---|---|
+| Classic hero on a collection tile | "a display issue when I open the Amazon Prime collection, before it returns to normal" (video 58–60 s, `prime-open-3fps.jpg` row 5): the previous title's logo and synopsis (Masterplan) stay drawn under the collection's logo for ~0.7 s after the Prime tile takes focus, then clear. | **BUG-210** P3 |
+| Catalog name twice on Classic | "The catalog name appears twice when you set the classic home screen. You need to remove it and replace it with the larger icon." Photo: Netflix tile focused, the hero shows the NETFLIX logo with "Services de Streaming" under it AND "Services de Streaming" as the row heading. | **BUG-211** P3 (his ask: drop the name line under the logo, larger logo) |
+| Striped tile | In the same photo the focused Netflix tile renders as vertical colour stripes (a corrupted texture) while the three other tiles are fine. | **BUG-212** P2 |
+
 ## Reading
 
 1. **The two big positives are structural:** Edge in Centre is approved; Home is felt smoother; Search opens directly after the first visit. Those were the three rc11 bets.

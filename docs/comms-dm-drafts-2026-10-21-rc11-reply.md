@@ -1,6 +1,6 @@
 # DM draft: reply to Steven's rc11 verdict (2026-10-21) — NOT SENT
 
-**Status: DRAFT, NOT SENT.** Send only on Christian's go, one bubble, after a quiet pre-send fetch (watermark `2026-10-21T07:48:19.967Z`; his verdict runs 14:57Z–16:52Z). Triage: `docs/steven-beta19-rc11-verdict-2026-10-21.md`.
+**Status: DRAFT, NOT SENT.** Send only on Christian's go, one bubble, after a quiet pre-send fetch (watermark `2026-10-21T07:48:19.967Z`; his verdict runs 14:57Z–16:52Z, follow-ups 18:08Z–18:30Z). Triage: `docs/steven-beta19-rc11-verdict-2026-10-21.md`.
 
 Facts behind it:
 - Edge in Centre approved; Corner's spec (flush top and left, expands downward) is S1 of the public beta plan, promised as "next build" in the rc11 DM already.
@@ -12,6 +12,7 @@ Facts behind it:
 - Classic row headings dropping a notch (BUG-209): seen in his video; filed.
 - First Down too abrupt (BUG-153): filed for the easing pass.
 - The redesigns (FEAT-81 Fusion Detail, UX-17 Wako/Netflix Home) are Christian's strategic call; the DM says they are heard and not when.
+- His 18:08Z–18:30Z follow-ups (BUG-210 old hero text, BUG-211 catalog name twice, BUG-212 striped tile): filed, the striped tile named as the first to chase.
 - No numbers, no dates, no promises beyond what rc11's DM already made (the corner rail, Card Depth).
 
 SlopMonster: the body below lints 5/5 CLEAN (351 words); cleanse skipped (Codex quota until 10-29).
@@ -32,6 +33,6 @@ Search coming back empty: in your photo the people row arrived and the title row
 
 The text you see for a second when Search opens after a relaunch is the field drawn early, so the screen is not black while the system keyboard loads. I can make that first-open look quieter.
 
-In your video I can see the row heading landing high and dropping a notch on Classic; filed, along with the first Down being too abrupt.
+In your video I can see the row heading landing high and dropping a notch on Classic; filed, along with the first Down being too abrupt. Your later messages too: the old title's text staying under the Prime Video logo for a moment, the catalog name shown twice under the logo and as the row heading, and the striped Netflix tile in your photo. All three are filed; the striped tile is the one I want to find first.
 
 The two redesigns you describe, Fusion for the description page and Wako or Netflix for Home, are heard. That is a decision about where the app goes next, and I will come back to you on it rather than promise it here.

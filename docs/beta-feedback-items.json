@@ -3335,6 +3335,39 @@
    "reporter": "u/mrStevenx3",
    "first_seen": "2026-10-21",
    "summary": "Classic Home: titles positioned too high, dropping one notch each press (his rc11 video)."
+  },
+  {
+   "id": "BUG-210",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-21",
+   "summary": "Classic Home: the previous title's logo and synopsis stay under a collection's logo for ~0.7 s when its tile takes focus (video)."
+  },
+  {
+   "id": "BUG-211",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-21",
+   "summary": "Classic Home: the catalog name appears twice on a collection tile (under the logo and as the row heading); he wants the line dropped and the logo larger."
+  },
+  {
+   "id": "BUG-212",
+   "kind": "Bug",
+   "priority": "P2",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-21",
+   "summary": "Classic Home: the focused Netflix collection tile rendered as vertical colour stripes, a corrupted texture (photo)."
   }
  ]
 }
