@@ -40,3 +40,28 @@ Probe lines (`-debug.detailFocusProbe YES`, batch Debug build 911dae1ef + probe 
 - The BUG-194 probe label is invisible on hardware; the pass added `[DetailPop] live|rung applied|end` NSLog lines under the same flag.
 - The submodule's `DerivedDataDevice` had package artifacts resolved into a deleted clone; `-clonedSourcePackagesDirPath` at the batch clone's `SourcePackages` fixed the baseline build.
 - 21:3xZ: pyatv Companion lost the box ("Host is down") while the devicectl tunnel kept answering; `ready.sh` refused (re-pair with `pair.py`). Device steps stopped there per the standing rule.
+
+## Part 2 (2026-10-20 21:50–22:15Z, Companion came back on its own; no re-pair was needed)
+
+| Item | Result | Evidence |
+|---|---|---|
+| FEAT-35 re-walk (fixed build) | PASS: Dune from Search opens on Play, the teaser unfocused. | `80-fix-dune-detail` |
+| FEAT-82 re-walk (fixed build) | PASS: three equal icon squares (≈129 × 90 pt platters, equal widths, 5 pt taller than Play's platter), normal gaps. | `80-crop-buttons` |
+| BUG-195 `[SearchOpen]` | Measured twice: tab select → `appear` +66 / +83 ms → `firstBody` +68 / +110 ms → `keyboard` **+1.13 / +1.13 s**. The page's body exists within 0.1 s; the search keyboard reports focus 1 s later. The black ~0.9 s is the keyboard mount, not the page. | `console-fix.log` lines |
+| FEAT-61, Open Sans | PASS: `-ui_font openSans` gives **five** synopsis lines at Medium+ on the Home hero (the slot fits five of the narrower Open Sans lines; the system font gives four). | `90-opensans-home` |
+| BUG-190 Stage folder title | PASS: the folder name sits as a small heading above the focused title's logo slot (empty when the title has no logo), on row 1 and row 2 alike. | `96-folder-page`, `97-folder-logo`, `98-folder-row2` |
+| Glass, light tint (white 0.12) | **PICK.** On the rebuilt Debug build the collapsed Icons Only pill reads as a visible mid-grey glass over the dark hero and the sunset hero alike: pill luminance `YAVG` 75.9 / 78.6 against 55.1 (`regular`) and 49.6 (black tint). (`92`/`94` were shot on the pre-tint build and are pixel-identical to the black tint, 49.6.) | `100-lighttint-dark`, `101-lighttint-bright`, `glass-sheet-tints` |
+
+**Hitch walk, Release build of the fixed tree (`3cf873994`), his config, same `walk-home.sh`, Animation Hitches, each run over its own 40-press window (single runs; ±10–15 % is noise on this protocol):**
+
+| Run | Hitches | Hitch time | Longest | ≥ 100 ms |
+|---|---|---|---|---|
+| rc9 (Wave 0, 20–58 s) | 145 | 5.46 s | 150 ms | 19 |
+| rc10 (Wave 0, 20–56 s) | 172 | 6.19 s | 167 ms | 20 |
+| **Batch P, his config (14–50 s)** | **146** | **5.87 s** | **133 ms** | **23** |
+| rc10, fade off + trailers off (Wave 0, 20–55 s) | 147 | 5.12 s | 133 ms | 12 |
+| **Batch P, fade off + trailers off (15–52 s)** | **157** | **6.07 s** | **150 ms** | **24** |
+
+Reading: the P1 trio (letterbox analysis off main, publish guards, URL memo) made **no measurable difference** on this walk. The count is back at rc9's level in his config and worse in the fade-off variant; hitch time and the number of ≥ 100 ms stalls are unchanged or worse. The Stage floor of ~3.5 hitches per press stands, which matches Wave 0's profile: the bulk was AttributeGraph re-evaluation and CPU rasterisation (gradients, masks, offscreen passes), with image-on-main a small slice. The rest of P1 (strip pager fan-out, the string-scanning caller, the mask / page-opacity / Card Depth A/B flags) is where the time is. The two Batch P traces are `~/Library/Logs/nuviotv-traces/batchp-home-hitches*.trace`.
+
+Rig notes, part 2: the box dropped off Wi-Fi three times in 25 minutes (Companion "Host is down" / `_hidC failed`, xctrace "Timed out waiting for device to boot"); each time it came back within a minute and `ready.sh` reported READY. A single retry worked twice. Record with the walk started 15 s after `xctrace record --launch`; the presses then fall in ~14–50 s.
