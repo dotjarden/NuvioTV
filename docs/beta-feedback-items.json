@@ -2659,22 +2659,22 @@
    "kind": "Bug",
    "priority": "P2",
    "stage": "Open",
-   "tester": "Not started",
+   "tester": "In-house only",
    "build": "",
    "reporter": "GitHub (erdist)",
    "first_seen": "2026-10-20",
-   "summary": "Plugins settings: each repository is one focus row, so providers can't toggle individually (GitHub #7, patch attached)."
+   "summary": "Plugins settings: each repository is one focus row, so providers can't toggle individually (GitHub #7). Confirmed by code; erdist's patch reviewed, applies cleanly, lands in Batch P Wave 2 with two tweaks."
   },
   {
    "id": "BUG-198",
    "kind": "Bug",
    "priority": "P3",
    "stage": "Open",
-   "tester": "Not started",
+   "tester": "In-house only",
    "build": "",
    "reporter": "GitHub (erdist)",
    "first_seen": "2026-10-20",
-   "summary": "Background trailer keeps playing after Play and into the player (GitHub #8)."
+   "summary": "Background trailer keeps playing under the series Play cover and the player (GitHub #8). Confirmed by code: the trailer gate never reads seriesPlay; films stop. One-line fix queued for Batch P Wave 2."
   },
   {
    "id": "FEAT-74",
