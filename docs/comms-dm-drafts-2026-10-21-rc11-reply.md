@@ -1,6 +1,6 @@
-# DM draft: reply to Steven's rc11 verdict (2026-10-21) — NOT SENT
+# DM draft: reply to Steven's rc11 verdict (2026-10-21) — SENT
 
-**Status: DRAFT, NOT SENT.** Send only on Christian's go, one bubble, after a quiet pre-send fetch (watermark `2026-10-21T07:48:19.967Z`; his verdict runs 14:57Z–16:52Z, follow-ups 18:08Z–18:30Z). Triage: `docs/steven-beta19-rc11-verdict-2026-10-21.md`.
+**Status: SENT 2026-10-21T18:42:25Z** as one bubble on Christian's go (the pre-send fetch found his three 18:08–18:30Z follow-ups, triaged and folded in first; `~/Library/Logs/NuvioDM/rc11-reply-send.js`, gated on his 18:30Z image being the newest bubble), verified by the script's walk and by `fetch-dms.sh`. Was: DRAFT, NOT SENT. Send rule (watermark `2026-10-21T07:48:19.967Z`; his verdict runs 14:57Z–16:52Z, follow-ups 18:08Z–18:30Z). Triage: `docs/steven-beta19-rc11-verdict-2026-10-21.md`.
 
 Facts behind it:
 - Edge in Centre approved; Corner's spec (flush top and left, expands downward) is S1 of the public beta plan, promised as "next build" in the rc11 DM already.
