@@ -20,3 +20,8 @@ Build: `claude/wave3` `b79ea5606` Debug (`-player.nativeDolbyVision YES`, Rail C
 - A Companion `seq` that lands on the rail's profile row and Selects opens the profile picker with **Chris** focused: always screenshot before a Select in the rail; recovered with Right → Test 2.
 - The Comet NF DV MP4 is one row ABOVE the K83 PL MKV when Comet is the expanded group; the picker remembers expansion across visits, so "5 Downs" is not stable. Screenshot, then count.
 - The plugin fixture must be restarted per session (`python3 scripts/device/fixtures/plugin-repo-fixture.py 8768`).
+
+## Session 2 (2026-10-21 19:37Z–19:44Z): up-skip walk attempt
+- `ready.sh` READY (build 143 on the box, profile expires 2026-10-22T04:23Z). Installed `claude/up-skip-rebased` `0c05b6ab2` Debug (6 s), launched with `-debug.homeScrollProbe YES` (`console-upskip.log`): auto-entered profile 3 = Test 2, Stage Home, Rail Corner. Walked 14 rows (`31`, `32`), Menu to top: **the folder for the walk is row 3, "Test Collection" → "Test Folder"** (`33-upskip-row3`; row key `test-collection-1004`, hero = Shawshank).
+- **Box dropped off the network at 19:43Z** (devicectl 4016, ping lost) before the first folder pop: the FIFTH drop today, and the first with **no 4K stream in the session** (Home walk + five `devicectl` screenshots only). The drop is not tied to playback. Up-skip walk still NOT RUN.
+- The `claude/wave3` tip `823450355` Debug device build (BUG-208 Search fix) is built in the wave3 clone, not yet installed.
