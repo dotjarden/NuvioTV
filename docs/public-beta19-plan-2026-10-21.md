@@ -19,6 +19,7 @@ Over beta.18: Stage Home + strip, Search & Discover on the Stage, Library L1, th
 | S5 | **BUG-66 (P1): the tab bar stops auto-minimising.** Only Tabs mode; the T1 knobs from the rc1 batch were never device-checked. Re-verify on rc11 in Tabs mode over a long session; keep whichever candidate fix the check favours, or close as not reproducible on current builds with the probe numbers. | S | Wave 3 |
 | S6 | **Knobs and leftovers:** delete the page-opacity and edge-mask knobs; the destructive row's label contrast on the white focus platter; focus after Remove Repository; the "Installed …" status line after removal; the Search placeholder's look on a real TV (Christian's eyes). | S | Wave 3 |
 | S7 | **Whatever rc11's verdict, the soak and the design review surface** at P1 / P2. | — | Wave 4 |
+| S8 | **BUG-199 (new, 2026-10-21): the native remux fails mid-play on a Netflix WEB-DL DV MP4** (`pts < dts` at segment 7 on packets with no pts) and hands over to mpv, so the film restarts seconds in. Fix the remux's pts/dts handling for these packets, or route the class to mpv from the probe. S4's re-test found it; S4 itself is done (four short presses on mpv, no eject). | M | Wave 3 |
 
 Not in beta.19 (next cycle): FEAT-66 collection logo on the right, FEAT-81 Detail redesign, FEAT-73 one Discover catalog, BUG-181 Animals thumbnails / Atmos, BUG-180 menu animation, BUG-178 the shadow, FEAT-3 TestFlight, Watch Party (upstream, deferred).
 

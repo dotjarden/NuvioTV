@@ -1922,11 +1922,11 @@
    "kind": "Bug",
    "priority": "P1",
    "stage": "Open",
-   "tester": "Reopened after fix",
+   "tester": "In-house only",
    "build": "",
    "reporter": "u/mrStevenx3",
    "first_seen": "2026-10-16",
-   "summary": "Exiting the player suspends the app to the tvOS home screen (real remote)."
+   "summary": "Exiting the player suspends the app to the tvOS home screen (real remote). rc11 rig re-test: four short presses on mpv, no eject; proposed close pending Steven."
   },
   {
    "id": "BUG-166",
@@ -3236,6 +3236,17 @@
    "reporter": "u/mrStevenx3",
    "first_seen": "2026-10-20",
    "summary": "In Icons Only, the rail pill darkens about a second after it opens (rc10 reply video)."
+  },
+  {
+   "id": "BUG-199",
+   "kind": "Bug",
+   "priority": "P2",
+   "stage": "Open",
+   "tester": "In-house only",
+   "build": "",
+   "reporter": "rig (interactive)",
+   "first_seen": "2026-10-21",
+   "summary": "Native player: the P5 remux fails mid-play on a Netflix WEB-DL Dolby Vision MP4 (pts < dts at segment 7) and hands over to mpv, so the film restarts a few seconds in."
   }
  ]
 }
