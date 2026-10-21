@@ -1,4 +1,6 @@
-# GitHub #7 (BUG-197) and #8 (BUG-198) replies — drafted 2026-10-21 — NOT POSTED
+# GitHub #7 (BUG-197) and #8 (BUG-198) replies — drafted 2026-10-21 — POSTED
+
+**Status: POSTED 2026-10-21 04:20:52Z / 04:20:53Z** on Christian's go: #7 https://github.com/youngchris29-art/NuvioTV/issues/7#issuecomment-6307958234, #8 https://github.com/youngchris29-art/NuvioTV/issues/8#issuecomment-6307958484 (`gh issue comment --body-file`), both verified byte-identical through `gh issue view`. Was: NOT POSTED.
 
 Both issues are erdist's, filed 2026-10-20 on youngchris29-art/NuvioTV. Triage is in `docs/beta-feedback-tracker.md` (BUG-197, BUG-198). Post only on Christian's go, with `gh issue comment <n> --repo youngchris29-art/NuvioTV --body-file <file>`, then verify through `gh issue view`.
 
