@@ -1,6 +1,6 @@
 {
  "_about": "Machine-readable mirror of docs/beta-feedback-tracker.md for the NuvioTV Tester Feedback dashboard. One row per tracker ID. Maintained by the beta-feedback sweep (see docs/beta-feedback-sweep-instructions.md §3). Allowed values: stage = Open | Released | Closed, no fix; tester (when stage=Open) = Not started | Waiting on reporter | Reopened after fix | Researched, not built; tester (when stage=Released) = Confirmed by tester | Partly confirmed | Awaiting tester | In-house only | Closed unconfirmed; tester (when stage=Closed, no fix) = Not a bug / declined / superseded | Duplicate of <ID>.",
- "generated": "2026-10-20T19:40:00Z",
+ "generated": "2026-10-21T23:15:00Z",
  "source": "docs/beta-feedback-tracker.md",
  "rows": [
   {
@@ -1922,19 +1922,19 @@
    "kind": "Bug",
    "priority": "P1",
    "stage": "Open",
-   "tester": "Reopened after fix",
+   "tester": "In-house only",
    "build": "",
    "reporter": "u/mrStevenx3",
    "first_seen": "2026-10-16",
-   "summary": "Exiting the player suspends the app to the tvOS home screen (real remote)."
+   "summary": "Exiting the player suspends the app to the tvOS home screen (real remote). rc11 rig re-test: four short presses on mpv, no eject; proposed close pending Steven."
   },
   {
    "id": "BUG-166",
    "kind": "Bug",
    "priority": "P2",
    "stage": "Released",
-   "tester": "Confirmed by tester",
-   "build": "beta.19-rc5",
+   "tester": "Reopened after fix",
+   "build": "beta.19-rc11",
    "reporter": "u/mrStevenx3",
    "first_seen": "2026-10-16",
    "summary": "Dolby Vision profile 5 on mpv plays green/magenta (renderer off)."
@@ -2471,9 +2471,9 @@
    "id": "FEAT-61",
    "kind": "Feature request",
    "priority": "P3",
-   "stage": "Open",
-   "tester": "Reopened after fix",
-   "build": "",
+   "stage": "Released",
+   "tester": "Confirmed by tester",
+   "build": "beta.19-rc11",
    "reporter": "u/mrStevenx3",
    "first_seen": "2026-10-06",
    "summary": "Classic Home: no-bounce + longer synopsis + Rows collections."
@@ -2653,6 +2653,28 @@
    "reporter": "GitHub (issue #6)",
    "first_seen": "2026-10-16",
    "summary": "Native player: a micro-stutter with a freeze frame every 5–10 s (GitHub #6)."
+  },
+  {
+   "id": "BUG-197",
+   "kind": "Bug",
+   "priority": "P2",
+   "stage": "Released",
+   "tester": "Awaiting tester",
+   "build": "beta.19-rc11",
+   "reporter": "GitHub (erdist)",
+   "first_seen": "2026-10-20",
+   "summary": "Plugins settings: each repository is one focus row, so providers can't toggle individually (GitHub #7). Confirmed by code; erdist's patch reviewed, applies cleanly, lands in Batch P Wave 2 with two tweaks."
+  },
+  {
+   "id": "BUG-198",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Released",
+   "tester": "Awaiting tester",
+   "build": "beta.19-rc11",
+   "reporter": "GitHub (erdist)",
+   "first_seen": "2026-10-20",
+   "summary": "Background trailer keeps playing under the series Play cover and the player (GitHub #8). Confirmed by code: the trailer gate never reads seriesPlay; films stop. One-line fix queued for Batch P Wave 2."
   },
   {
    "id": "FEAT-74",
@@ -2878,12 +2900,12 @@
    "id": "UX-16",
    "kind": "UX feedback",
    "priority": "P2",
-   "stage": "Open",
-   "tester": "Reopened after fix",
-   "build": "",
+   "stage": "Released",
+   "tester": "Partly confirmed",
+   "build": "beta.19-rc11",
    "reporter": "u/mrStevenx3",
    "first_seen": "2026-10-06",
-   "summary": "Stage feel + ambient wash + collection logo placement (Steven, rc3)."
+   "summary": "Stage feel + ambient wash + collection logo placement (Steven, rc3). rc11: Stage hitch time −19 %, long stalls halved; Card Depth cost next."
   },
   {
    "id": "BUG-1",
@@ -3032,9 +3054,9 @@
    "id": "FEAT-80",
    "kind": "Feature request",
    "priority": "P4",
-   "stage": "Open",
-   "tester": "Reopened after fix",
-   "build": "",
+   "stage": "Released",
+   "tester": "Partly confirmed",
+   "build": "beta.19-rc11",
    "reporter": "u/mrStevenx3",
    "first_seen": "2026-10-18",
    "summary": "Sidebar top-left + icons-only option"
@@ -3109,9 +3131,9 @@
    "id": "BUG-190",
    "kind": "Bug",
    "priority": "P3",
-   "stage": "Open",
-   "tester": "Reopened after fix",
-   "build": "",
+   "stage": "Released",
+   "tester": "Awaiting tester",
+   "build": "beta.19-rc11",
    "reporter": "u/mrStevenx3",
    "first_seen": "2026-10-19",
    "summary": "Classic collection rows page: no poster or synopsis"
@@ -3153,9 +3175,9 @@
    "id": "FEAT-82",
    "kind": "Feature request",
    "priority": "P3",
-   "stage": "Open",
+   "stage": "Released",
    "tester": "Reopened after fix",
-   "build": "",
+   "build": "beta.19-rc11",
    "reporter": "u/mrStevenx3",
    "first_seen": "2026-10-19",
    "summary": "Square Detail buttons with square posters"
@@ -3175,9 +3197,9 @@
    "id": "BUG-193",
    "kind": "Bug",
    "priority": "P3",
-   "stage": "Open",
-   "tester": "Not started",
-   "build": "",
+   "stage": "Released",
+   "tester": "Confirmed by tester",
+   "build": "beta.19-rc11",
    "reporter": "u/mrStevenx3",
    "first_seen": "2026-10-20",
    "summary": "The full-synopsis screen's blurred backdrop and its open animation look low quality."
@@ -3186,9 +3208,9 @@
    "id": "BUG-194",
    "kind": "Bug",
    "priority": "P3",
-   "stage": "Open",
-   "tester": "Not started",
-   "build": "",
+   "stage": "Released",
+   "tester": "Reopened after fix",
+   "build": "beta.19-rc11",
    "reporter": "u/mrStevenx3",
    "first_seen": "2026-10-20",
    "summary": "Back from an actor's biography lands on the cast card in two visible moves."
@@ -3197,9 +3219,9 @@
    "id": "BUG-195",
    "kind": "Bug",
    "priority": "P3",
-   "stage": "Open",
-   "tester": "Not started",
-   "build": "",
+   "stage": "Released",
+   "tester": "Partly confirmed",
+   "build": "beta.19-rc11",
    "reporter": "u/mrStevenx3",
    "first_seen": "2026-10-20",
    "summary": "Opening Search from Home shows a black screen for about 0.9 s before the Search page draws (rc10 reply video)."
@@ -3208,12 +3230,199 @@
    "id": "BUG-196",
    "kind": "Bug",
    "priority": "P4",
+   "stage": "Released",
+   "tester": "Confirmed by tester",
+   "build": "beta.19-rc11",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-20",
+   "summary": "In Icons Only, the rail pill darkens about a second after it opens (rc10 reply video)."
+  },
+  {
+   "id": "BUG-199",
+   "kind": "Bug",
+   "priority": "P2",
+   "stage": "Open",
+   "tester": "In-house only",
+   "build": "",
+   "reporter": "rig (interactive)",
+   "first_seen": "2026-10-21",
+   "summary": "Native player: the P5 remux fails mid-play on a Netflix WEB-DL Dolby Vision MP4 (pts < dts at segment 7) and hands over to mpv, so the film restarts a few seconds in."
+  },
+  {
+   "id": "BUG-200",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "GitHub (erdist)",
+   "first_seen": "2026-10-21",
+   "summary": "Detail page Production and Cast rows enlarge only the artwork on focus; reporter says it is hard to navigate with Accent Ring off and No Zoom disabled, fine with the ring on."
+  },
+  {
+   "id": "BUG-201",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "GitHub (erdist)",
+   "first_seen": "2026-10-21",
+   "summary": "Settings, Subtitles & Audio, Text Color swatches barely read when focused, unlike the Appearance theme swatches."
+  },
+  {
+   "id": "FEAT-83",
+   "kind": "Feature request",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "GitHub (erdist)",
+   "first_seen": "2026-10-21",
+   "summary": "Hold Select on a season or episode cover to open a watched/unwatched side menu, like the one Continue Watching items have on Home."
+  },
+  {
+   "id": "BUG-205",
+   "kind": "Bug",
+   "priority": "P4",
    "stage": "Open",
    "tester": "Not started",
    "build": "",
    "reporter": "u/mrStevenx3",
-   "first_seen": "2026-10-20",
-   "summary": "In Icons Only, the rail pill darkens about a second after it opens (rc10 reply video)."
+   "first_seen": "2026-10-21",
+   "summary": "Detail: the Watched icon returns to its rest colour later than the other icon buttons after focus moves away."
+  },
+  {
+   "id": "BUG-206",
+   "kind": "Bug",
+   "priority": "P2",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-21",
+   "summary": "Cinematic Detail choppier again on rc11 (Classic Detail smooth); regression since rc7 in his config."
+  },
+  {
+   "id": "BUG-207",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-21",
+   "summary": "Stream picker: scrolling the stream list is not smooth."
+  },
+  {
+   "id": "BUG-208",
+   "kind": "Bug",
+   "priority": "P2",
+   "stage": "Open",
+   "tester": "In-house only",
+   "build": "",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-21",
+   "summary": "Search sometimes returns no results (Cinemeta 504 on uncached queries; People hid the failed state). Fixed in Wave 3: catalog retry, failure shown with Retry, debounce re-armed."
+  },
+  {
+   "id": "BUG-209",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-21",
+   "summary": "Classic Home: titles positioned too high, dropping one notch each press (his rc11 video)."
+  },
+  {
+   "id": "BUG-210",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-21",
+   "summary": "Classic Home: the previous title's logo and synopsis stay under a collection's logo for ~0.7 s when its tile takes focus (video)."
+  },
+  {
+   "id": "BUG-211",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-21",
+   "summary": "Classic Home: the catalog name appears twice on a collection tile (under the logo and as the row heading); he wants the line dropped and the logo larger."
+  },
+  {
+   "id": "BUG-212",
+   "kind": "Bug",
+   "priority": "P2",
+   "stage": "Closed, no fix",
+   "tester": "Not a bug / declined / superseded",
+   "build": "",
+   "reporter": "u/mrStevenx3",
+   "first_seen": "2026-10-21",
+   "summary": "Striped Netflix collection tile = its own animated GIF cover mid-frame (BUG-133, 2026-10-02); not a bug, correction owed in the next DM."
+  },
+  {
+   "id": "BUG-213",
+   "kind": "Bug",
+   "priority": "P2",
+   "stage": "Open",
+   "tester": "",
+   "build": "",
+   "reporter": "GitHub (erdist)",
+   "first_seen": "2026-10-21",
+   "summary": "GitHub #10: the TMDB / MDBList / debrid API key field and its Save button share one List row, so the field cannot be focused on the simulator; planned as W3-7 (two rows + focus hand-off)."
+  },
+  {
+   "id": "BUG-214",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "",
+   "build": "",
+   "reporter": "GitHub (erdist)",
+   "first_seen": "2026-10-21",
+   "summary": "GitHub #10: OLED True Black is not applied to the Add-ons screen (no app background on its ScrollView); W3-8."
+  },
+  {
+   "id": "BUG-215",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "",
+   "build": "",
+   "reporter": "GitHub (erdist)",
+   "first_seen": "2026-10-21",
+   "summary": "GitHub #10: a focused Settings row's lift is cut off at the List's left edge; cause unproven (root is whole on the box), sim step 0 first; W3-9."
+  },
+  {
+   "id": "FEAT-84",
+   "kind": "Feature",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "",
+   "build": "",
+   "reporter": "GitHub (erdist)",
+   "first_seen": "2026-10-21",
+   "summary": "GitHub #10: language pickers A–Z with the shared 78-code list, Fallback Audio Language and Fallback Subtitle Language rows (default None), Off stays Off; W3-10."
+  },
+  {
+   "id": "BUG-216",
+   "kind": "Bug",
+   "priority": "P4",
+   "stage": "Open",
+   "tester": "",
+   "build": "",
+   "reporter": "In-house (critique)",
+   "first_seen": "2026-10-21",
+   "summary": "FolderTile may lift only the artwork in the default focus cell (ring off, zoom on), the BUG-200 class; to verify after W3-4."
   }
  ]
 }
