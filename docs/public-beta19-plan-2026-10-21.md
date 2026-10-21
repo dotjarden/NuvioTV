@@ -1,4 +1,4 @@
-# Public beta.19 plan (2026-10-21) — DRAFT, awaiting Christian's approval
+# Public beta.19 plan (2026-10-21) — APPROVED by Christian 2026-10-21 ("Phase 0 is Steven's rc11 verdict; start Wave 3 when it is in")
 
 **Goal.** Ship `tvos-v0.3.0-beta.19` publicly: the first public build since beta.18 (build 132, 2026-10-01). Everything between is eleven rc builds that only Steven has had. The release goes out only when the gate below passes; there is no date. Distribution stays the sideloaded IPA on GitHub (both repos), as beta.18 did.
 
