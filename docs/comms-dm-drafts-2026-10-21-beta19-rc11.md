@@ -1,6 +1,6 @@
-# DM draft: beta.19-rc11 to Steven (2026-10-21) — NOT SENT
+# DM draft: beta.19-rc11 to Steven (2026-10-21) — SENT
 
-**Status: DRAFT, NOT SENT.** Send only on Christian's go, as one bubble, after a quiet pre-send fetch. Links filled from the cut log (`docs/research/cut-rc11-2026-10-21.log`). Pre-draft fetch 2026-10-21T07:29Z: no new message since the watermark `2026-10-20T21:44:28.479Z`.
+**Status: SENT 2026-10-21T07:48:19.967Z** as one bubble on Christian's go (pre-send fetch 07:47Z quiet; `~/Library/Logs/NuvioDM/rc11-send.js`, gated on our rc10 reply being the newest bubble), verified in the room by the script's walk and by `fetch-dms.sh` (`youngchris2989 (me)`). DM watermark now `2026-10-21T07:48:19.967Z`. Christian's addition before the send: the corner-rail line (he knows it is not yet what Steven asked for and is working on it for the next build). Was: DRAFT, NOT SENT. Links filled from the cut log (`docs/research/cut-rc11-2026-10-21.log`). Pre-draft fetch 2026-10-21T07:29Z: no new message since the watermark `2026-10-20T21:44:28.479Z`.
 
 Facts behind it:
 - **rc11:** build 143 `6baddab4`, tag `tvos-v0.3.0-beta.19-rc11`, from `tvos-shared-extraction` `b97c7385e` (Player P5 `44200c23a`, Batch P Wave 1 `3cf873994`, Wave 2 `d2c99e30c`, the translation pass) plus the build bump. Outer pointer `b31a30f`.
@@ -19,7 +19,7 @@ Facts behind it:
 - **Still open from his rc10 report**, not in rc11, so the DM doesn't promise them: BUG-153 / UX-16's remaining Home cost (Card Depth is the next target), FEAT-66 (collection logo on the right), BUG-181 Animals thumbnails, BUG-180's menu animation, BUG-178 the shadow, FEAT-81 the Detail redesign, FEAT-73 one general catalog in Discover.
 - **Checked against the rc10 DM's fixed list:** none of the still-open lines repeats a shipped fix.
 
-SlopMonster: the body below lints 5/5 CLEAN (376 words). Cleanse skipped (Codex quota out until 10-29).
+SlopMonster: the body below lints 5/5 CLEAN (376 words, 5/5 again after the rail line). Cleanse skipped (Codex quota out until 10-29).
 
 ---
 
@@ -30,6 +30,7 @@ Thanks for the rc10 report and the second video. This one is bigger than usual, 
 From your notes:
 - Settings › Appearance › Rail Style: Floating keeps the pill a little in from the edge (that stays the default), Edge sets it flat against the left of the screen. Works in Centre and Corner.
 - With Icons Only the collapsed pill no longer goes near-black over a dark hero. It is a lighter glass now.
+- I know the corner rail still isn't quite what you asked for. I'm working on getting it right for you in the next build.
 - Detail's buttons with Square corners are square and all the same size.
 - Four synopsis lines at Medium+, five with your font. Tell me if that is too many.
 - The synopsis screen sits on the page's own backdrop instead of the blur.
