@@ -1,4 +1,4 @@
-# GitHub issue #5 reply (drafted 2026-10-16) — FEAT-56, SenPlayer built — NOT POSTED
+# GitHub issue #5 reply (drafted 2026-10-16) — FEAT-56, SenPlayer built — NOT POSTED — SUPERSEDED 2026-10-21 by `docs/comms-github-issue5-reply-2026-10-21.md`
 
 Second reply on youngchris29-art/NuvioTV #5 (`4rtz1z`). Follows the 2026-10-06 comment that promised SenPlayer "in a coming build" and asked for his SenPlayer version (no answer yet). Batch D built it (`docs/batch-d-plan-2026-10-15.md`): a SenPlayer entry on the Infuse/Outplayer x-callback shape (`url`, `position` in seconds, `filename` + `name`, `sub`, `x-success`/`x-error`), the `senplayer` query scheme, and a return session so a position SenPlayer sends back is recorded. On the Living Room Apple TV the scheme probe answers (declared, not installed); SenPlayer itself is not installed there, so the hand-off, start position, subtitle and return position are untested on hardware. The parameter names come from the Outplayer/VidHub shape and SenPlayer's changelog, not from documentation.
 
