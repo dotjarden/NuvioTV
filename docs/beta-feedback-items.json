@@ -1,6 +1,6 @@
 {
  "_about": "Machine-readable mirror of docs/beta-feedback-tracker.md for the NuvioTV Tester Feedback dashboard. One row per tracker ID. Maintained by the beta-feedback sweep (see docs/beta-feedback-sweep-instructions.md §3). Allowed values: stage = Open | Released | Closed, no fix; tester (when stage=Open) = Not started | Waiting on reporter | Reopened after fix | Researched, not built; tester (when stage=Released) = Confirmed by tester | Partly confirmed | Awaiting tester | In-house only | Closed unconfirmed; tester (when stage=Closed, no fix) = Not a bug / declined / superseded | Duplicate of <ID>.",
- "generated": "2026-10-20T23:10:00Z",
+ "generated": "2026-10-21T12:10:00Z",
  "source": "docs/beta-feedback-tracker.md",
  "rows": [
   {
@@ -3251,6 +3251,39 @@
   {
    "id": "BUG-200",
    "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "GitHub (erdist)",
+   "first_seen": "2026-10-21",
+   "summary": "Detail page Production and Cast rows enlarge only the artwork when an item is focused, not the item itself, which makes navigating harder."
+  },
+  {
+   "id": "BUG-201",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "GitHub (erdist)",
+   "first_seen": "2026-10-21",
+   "summary": "Settings, Subtitles & Audio, Text Color swatches barely read when focused, unlike the Appearance theme swatches."
+  },
+  {
+   "id": "FEAT-83",
+   "kind": "Feature request",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "GitHub (erdist)",
+   "first_seen": "2026-10-21",
+   "summary": "Hold Select on a season or episode cover to open a watched/unwatched side menu, like the one Continue Watching items have on Home."
+  },
+  {
+   "id": "BUG-205",
+   "kind": "Bug",
    "priority": "P4",
    "stage": "Open",
    "tester": "Not started",
@@ -3260,7 +3293,7 @@
    "summary": "Detail: the Watched icon returns to its rest colour later than the other icon buttons after focus moves away."
   },
   {
-   "id": "BUG-201",
+   "id": "BUG-206",
    "kind": "Bug",
    "priority": "P2",
    "stage": "Open",
@@ -3271,7 +3304,7 @@
    "summary": "Cinematic Detail choppier again on rc11 (Classic Detail smooth); regression since rc7 in his config."
   },
   {
-   "id": "BUG-202",
+   "id": "BUG-207",
    "kind": "Bug",
    "priority": "P3",
    "stage": "Open",
@@ -3282,7 +3315,7 @@
    "summary": "Stream picker: scrolling the stream list is not smooth."
   },
   {
-   "id": "BUG-203",
+   "id": "BUG-208",
    "kind": "Bug",
    "priority": "P2",
    "stage": "Open",
@@ -3293,7 +3326,7 @@
    "summary": "Search sometimes returns no results and has to be run again (photo: Avatar, empty results, People row only)."
   },
   {
-   "id": "BUG-204",
+   "id": "BUG-209",
    "kind": "Bug",
    "priority": "P3",
    "stage": "Open",
