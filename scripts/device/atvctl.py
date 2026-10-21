@@ -19,7 +19,7 @@ import asyncio
 import os
 import sys
 import time
-from ipaddress import IPv4Address
+from ipaddress import ip_address
 
 import pyatv
 from pyatv.conf import AppleTV, ManualService
@@ -52,7 +52,7 @@ def load_env():
 
 async def run(steps):
     env = load_env()
-    conf = AppleTV(IPv4Address(env["ATV_ADDRESS"]), env["ATV_NAME"])
+    conf = AppleTV(ip_address(env["ATV_ADDRESS"]), env["ATV_NAME"])  # IPv4 or IPv6 (a link-local v6 keeps its %scope)
     svc = ManualService(env["ATV_ID"], Protocol.Companion, env["port"], {})
     svc.credentials = env["creds"]
     conf.add_service(svc)
