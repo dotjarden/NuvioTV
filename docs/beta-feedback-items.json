@@ -1,6 +1,6 @@
 {
  "_about": "Machine-readable mirror of docs/beta-feedback-tracker.md for the NuvioTV Tester Feedback dashboard. One row per tracker ID. Maintained by the beta-feedback sweep (see docs/beta-feedback-sweep-instructions.md §3). Allowed values: stage = Open | Released | Closed, no fix; tester (when stage=Open) = Not started | Waiting on reporter | Reopened after fix | Researched, not built; tester (when stage=Released) = Confirmed by tester | Partly confirmed | Awaiting tester | In-house only | Closed unconfirmed; tester (when stage=Closed, no fix) = Not a bug / declined / superseded | Duplicate of <ID>.",
- "generated": "2026-10-20T23:10:00Z",
+ "generated": "2026-10-21T12:10:00Z",
  "source": "docs/beta-feedback-tracker.md",
  "rows": [
   {
@@ -3247,6 +3247,39 @@
    "reporter": "rig (interactive)",
    "first_seen": "2026-10-21",
    "summary": "Native player: the P5 remux fails mid-play on a Netflix WEB-DL Dolby Vision MP4 (pts < dts at segment 7) and hands over to mpv, so the film restarts a few seconds in."
+  },
+  {
+   "id": "BUG-200",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "GitHub (erdist)",
+   "first_seen": "2026-10-21",
+   "summary": "Detail page Production and Cast rows enlarge only the artwork when an item is focused, not the item itself, which makes navigating harder."
+  },
+  {
+   "id": "BUG-201",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "GitHub (erdist)",
+   "first_seen": "2026-10-21",
+   "summary": "Settings, Subtitles & Audio, Text Color swatches barely read when focused, unlike the Appearance theme swatches."
+  },
+  {
+   "id": "FEAT-83",
+   "kind": "Feature request",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "Not started",
+   "build": "",
+   "reporter": "GitHub (erdist)",
+   "first_seen": "2026-10-21",
+   "summary": "Hold Select on a season or episode cover to open a watched/unwatched side menu, like the one Continue Watching items have on Home."
   }
  ]
 }
