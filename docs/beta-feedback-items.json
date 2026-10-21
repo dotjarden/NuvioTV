@@ -3362,12 +3362,12 @@
    "id": "BUG-212",
    "kind": "Bug",
    "priority": "P2",
-   "stage": "Open",
-   "tester": "Not started",
+   "stage": "Closed, no fix",
+   "tester": "Not a bug / declined / superseded",
    "build": "",
    "reporter": "u/mrStevenx3",
    "first_seen": "2026-10-21",
-   "summary": "Classic Home: the focused Netflix collection tile rendered as vertical colour stripes, a corrupted texture (photo)."
+   "summary": "Striped Netflix collection tile = its own animated GIF cover mid-frame (BUG-133, 2026-10-02); not a bug, correction owed in the next DM."
   }
  ]
 }

@@ -31,7 +31,7 @@ Read with `scripts/reddit/fetch-dms.sh --since 2026-10-21T07:48:19.967Z`: eight 
 |---|---|---|
 | Classic hero on a collection tile | "a display issue when I open the Amazon Prime collection, before it returns to normal" (video 58–60 s, `prime-open-3fps.jpg` row 5): the previous title's logo and synopsis (Masterplan) stay drawn under the collection's logo for ~0.7 s after the Prime tile takes focus, then clear. | **BUG-210** P3 |
 | Catalog name twice on Classic | "The catalog name appears twice when you set the classic home screen. You need to remove it and replace it with the larger icon." Photo: Netflix tile focused, the hero shows the NETFLIX logo with "Services de Streaming" under it AND "Services de Streaming" as the row heading. | **BUG-211** P3 (his ask: drop the name line under the logo, larger logo) |
-| Striped tile | In the same photo the focused Netflix tile renders as vertical colour stripes (a corrupted texture) while the three other tiles are fine. | **BUG-212** P2 |
+| Striped tile | In the same photo the focused Netflix tile renders as vertical colour stripes (a corrupted texture) while the three other tiles are fine. | ~~BUG-212~~ closed: the Netflix cover's own GIF animation (BUG-133, 10-02); correction owed in the next DM |
 
 ## Reading
 
