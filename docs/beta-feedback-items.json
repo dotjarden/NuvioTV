@@ -3319,11 +3319,11 @@
    "kind": "Bug",
    "priority": "P2",
    "stage": "Open",
-   "tester": "Not started",
+   "tester": "In-house only",
    "build": "",
    "reporter": "u/mrStevenx3",
    "first_seen": "2026-10-21",
-   "summary": "Search sometimes returns no results and has to be run again (photo: Avatar, empty results, People row only)."
+   "summary": "Search sometimes returns no results (Cinemeta 504 on uncached queries; People hid the failed state). Fixed in Wave 3: catalog retry, failure shown with Retry, debounce re-armed."
   },
   {
    "id": "BUG-209",
