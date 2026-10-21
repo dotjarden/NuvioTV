@@ -3368,6 +3368,61 @@
    "reporter": "u/mrStevenx3",
    "first_seen": "2026-10-21",
    "summary": "Striped Netflix collection tile = its own animated GIF cover mid-frame (BUG-133, 2026-10-02); not a bug, correction owed in the next DM."
+  },
+  {
+   "id": "BUG-213",
+   "kind": "Bug",
+   "priority": "P2",
+   "stage": "Open",
+   "tester": "",
+   "build": "",
+   "reporter": "GitHub (erdist)",
+   "first_seen": "2026-10-21",
+   "summary": "GitHub #10: the TMDB / MDBList / debrid API key field and its Save button share one List row, so the field cannot be focused on the simulator; planned as W3-7 (two rows + focus hand-off)."
+  },
+  {
+   "id": "BUG-214",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "",
+   "build": "",
+   "reporter": "GitHub (erdist)",
+   "first_seen": "2026-10-21",
+   "summary": "GitHub #10: OLED True Black is not applied to the Add-ons screen (no app background on its ScrollView); W3-8."
+  },
+  {
+   "id": "BUG-215",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "",
+   "build": "",
+   "reporter": "GitHub (erdist)",
+   "first_seen": "2026-10-21",
+   "summary": "GitHub #10: a focused Settings row's lift is cut off at the List's left edge; cause unproven (root is whole on the box), sim step 0 first; W3-9."
+  },
+  {
+   "id": "FEAT-84",
+   "kind": "Feature",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "",
+   "build": "",
+   "reporter": "GitHub (erdist)",
+   "first_seen": "2026-10-21",
+   "summary": "GitHub #10: language pickers A–Z with the shared 78-code list, Fallback Audio Language and Fallback Subtitle Language rows (default None), Off stays Off; W3-10."
+  },
+  {
+   "id": "BUG-216",
+   "kind": "Bug",
+   "priority": "P4",
+   "stage": "Open",
+   "tester": "",
+   "build": "",
+   "reporter": "In-house (critique)",
+   "first_seen": "2026-10-21",
+   "summary": "FolderTile may lift only the artwork in the default focus cell (ring off, zoom on), the BUG-200 class; to verify after W3-4."
   }
  ]
 }
