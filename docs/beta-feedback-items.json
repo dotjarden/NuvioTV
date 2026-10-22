@@ -3478,6 +3478,28 @@
    "reporter": "In-house (design review)",
    "first_seen": "2026-10-22",
    "summary": "Cinematic Detail's metadata and ratings lines have no contrast floor over bright backdrops (Simpsons yellow, a white trailer frame)."
+  },
+  {
+   "id": "UX-19",
+   "kind": "UX feedback",
+   "priority": "P2",
+   "stage": "Open",
+   "tester": "",
+   "build": "",
+   "reporter": "In-house (design review)",
+   "first_seen": "2026-10-22",
+   "summary": "The Stage hero shows a text title, once the raw IMDb id, instead of the logo while its trailer plays."
+  },
+  {
+   "id": "BUG-222",
+   "kind": "Bug",
+   "priority": "P3",
+   "stage": "Open",
+   "tester": "",
+   "build": "",
+   "reporter": "In-house (rig)",
+   "first_seen": "2026-10-22",
+   "summary": "The Watch Trailer button disappears on repeat visits to the same title within one session (to confirm)."
   }
  ]
 }
