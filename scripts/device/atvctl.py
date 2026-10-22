@@ -19,7 +19,7 @@ import asyncio
 import os
 import sys
 import time
-from ipaddress import IPv4Address
+from ipaddress import ip_address
 
 import pyatv
 from pyatv.conf import AppleTV, ManualService
@@ -47,12 +47,51 @@ def load_env():
     with open(env["ATV_CREDENTIALS_FILE"]) as f:
         env["creds"] = f.read().strip()
     env["port"] = int(os.environ.get("ATV_PORT_OVERRIDE", env["ATV_COMPANION_PORT"]))
+    env["ATV_ADDRESS"] = reachable_address(env["ATV_ADDRESS"], env["port"], env.get("ATV_HOST", ""))
     return env
+
+
+def reachable_address(address, port, host):
+    """2026-10-21: the Living Room box drops its IPv4 path several times a day while IPv6 stays up
+    (no A record from Bonjour, ping dead, ping6 10 ms; devicectl keeps working over IPv6). When the
+    configured address does not accept a TCP connect within 1 s, fall back to the box's link-local
+    IPv6 (with its %scope, which Python's IPv6Address keeps) resolved from ATV_HOST or
+    "<ATV_NAME>.local". Prints the fallback once per call on stderr so a walk's log shows it."""
+    import socket
+    try:
+        with socket.create_connection((address, port), timeout=1.0):
+            return address
+    except OSError:
+        pass
+    name = host or None
+    if not name:
+        return address
+    try:
+        infos = socket.getaddrinfo(name, port, socket.AF_INET6, socket.SOCK_STREAM)
+    except OSError:
+        return address
+    link_local = [i[4] for i in infos if i[4][0].lower().startswith("fe80")]
+    candidates = link_local + [i[4] for i in infos if not i[4][0].lower().startswith("fe80")]
+    for sockaddr in candidates:
+        addr = sockaddr[0]
+        scope = sockaddr[3] if len(sockaddr) > 3 else 0
+        if addr.lower().startswith("fe80") and "%" not in addr and scope:
+            try:
+                addr = f"{addr}%{socket.if_indextoname(scope)}"
+            except OSError:
+                addr = f"{addr}%{scope}"
+        try:
+            with socket.create_connection((addr, port), timeout=1.5):
+                sys.stderr.write(f"[atvctl] IPv4 {address} unreachable; using IPv6 {addr}\n")
+                return addr
+        except OSError:
+            continue
+    return address
 
 
 async def run(steps):
     env = load_env()
-    conf = AppleTV(IPv4Address(env["ATV_ADDRESS"]), env["ATV_NAME"])
+    conf = AppleTV(ip_address(env["ATV_ADDRESS"]), env["ATV_NAME"])  # IPv4 or IPv6 (a link-local v6 keeps its %scope)
     svc = ManualService(env["ATV_ID"], Protocol.Companion, env["port"], {})
     svc.credentials = env["creds"]
     conf.add_service(svc)

@@ -1,0 +1,14 @@
+[ProfileSelect] auto-enter profile 3
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-22 12:10:43.635 NuvioTV[1050:270292] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+2026-10-22 12:10:43.654 NuvioTV[1050:270292] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-22 12:10:43.654 NuvioTV[1050:270292] [TrailerPipeline] trailerLocation stage=row
+2026-10-22 12:10:44.181 NuvioTV[1050:270292] [HomeHero] logoInk sync-sample ms=0.48
+2026-10-22 12:10:45.042 NuvioTV[1050:270292] [TrailerPipeline] gates inlineTrailersEnabled=YES systemAutoplay=YES
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+SwiftUICore/DynamicContainer.swift:651: Fatal error
+Launched application with com.youngchris29.NuvioTV bundle identifier.
+Waiting for the application to terminate...
+App terminated due to signal 5.

@@ -32,10 +32,10 @@ The shared rules (no sends without a go, no cuts unless told, ask before plannin
 All device testing runs in the app's **"Test" profile** ("Test 2" on the Living Room box), never the synced daily-use "Chris" profile: passes, repros, installing a tester's add-ons or collections. Name the profile before any device step; remove tester payloads afterwards. If a pass needs "Chris", say so and get his go first. Dev builds under `com.youngchris29.NuvioTV` share the account. Remote rig (`scripts/device/*.sh`, credentials in `~/.config/nuviotv-device/`): `docs/device-rig-2026-10-15.md`. Pre-flight before any pass or install: `scripts/device/ready.sh` (`--walk` adds the app/console/profile gate).
 
 ## Branch hygiene
-- Outer `origin` carries `main` plus 31 stale `claude/*` sweep branches that need cleanup: delete each once it is an ancestor of `main`. Steady state is `main` only.
+- Outer `origin` carries `main`; cloud sweeps leave `claude/*` branches behind: delete each once it is an ancestor of `main` (one left 2026-10-22: `claude/kind-hypatia-d0wvc0`, not yet in `main`). Steady state is `main` only.
 - Submodule `origin` holds `tvos-shared-extraction` and `cmp-rewrite` (stale mirror). Fork tags are `tvos-*`; never push upstream's `0.x` tags.
 - Never `git worktree add`/`remove` on the submodule (`core.worktree` resolves back to `.git/modules/NuvioMobile`); a stray one is removed with `rm -rf` + `git worktree prune`. Isolated work goes in a clone `~/Claude/Projects/NuvioMobile-<task>`, landed with `git fetch <clone> <branch>:<branch>`; in a clone MPVKit is a symlink over the gitlink, so stage by explicit paths, never `git add -A`.
-- Side clones now: `NuvioMobile-home-split`, `-player`, `-player-p4`, `-up-skip`; delete each once its branch is fast-forwarded in.
+- Side clones now: none (the Wave 3 clones were deleted 2026-10-22 after the merge); delete each once its branch is fast-forwarded in.
 - Commit the `docs/*.md` the checks and sweeps write.
 
 ## Reddit DM check (standing, 2026-10-08)
