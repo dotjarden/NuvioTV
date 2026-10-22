@@ -266,3 +266,11 @@ Harvest Only (the default)**.
 - A `walk.sh` with named routes (`home`, `settings:player`, `settings:developer`, `picker`) built from
   the row counts above, each ending in a screenshot assert.
 - Re-test the 0 ms Menu eject with a physical remote's shortest tap; if it reproduces, it is an app bug.
+
+## 2026-10-22 additions (Wave 3 / open-items session)
+
+- **IPv4 flaps.** The box loses its IPv4 path several times a day while IPv6 stays up (no A record, `ping` dead, `ping6 fe80::…%en0` 10 ms; devicectl keeps working). `atvctl.py` (`seq` / `press` / `hold`) now falls back to the link-local IPv6 when the v4 connect fails, printing `[atvctl] IPv4 … unreachable; using IPv6 …`. `atv.sh`'s atvremote path (`features`, `launch`, `raw`) and `ready.sh`'s Companion check are still v4-only, so a flap reads as "pairing is broken"; a conf copy with the v6 address (`NUVIOTV_DEVICE_CONF=<dir>`) works for `seq`.
+- **Wake prompt.** A box woken with the TV off shows tvOS's own "who's watching" picker under the screensaver; the Companion cannot clear it and the app launches behind it. Siri Remote only. The box runs as the Christian tvOS user.
+- **Profile.** The app can auto-enter **Chris**; launch Debug builds with `-debug.rememberLastProfile NO`, screenshot the picker, Right → Test 2, and require `[ProfileSelect] selecting profile 3` before any press. Release builds ignore the override: read the line and the Home content.
+- **Screenshot before presses.** Instruments' `--launch` does not guarantee the app is in front: a 40-press walk once ran in another app. `docs/research/wave3c-r0-2026-10-21/walks.sh` is launch → screenshot → (human read) → walk. After each Instruments session the devicectl tunnel is gone for up to a minute and `xctrace` "times out waiting for device to boot": 45 s gap, three attempts.
+- **Instruments launch args** for Steven's device-local settings are listed in memory `rig-lessons-2026-10-21`; `-debug.playerRouterHosts YES` reveals full hosts in Release `[PlayerRouter]` lines (redacted otherwise, since Wave 3c).
