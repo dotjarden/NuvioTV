@@ -21,8 +21,8 @@ CONF="${NUVIOTV_DEVICE_CONF:-$HOME/.config/nuviotv-device}"; source "$CONF/atv.e
 R=docs/research/wave3c-r0-2026-10-21
 A=scripts/device/atv.sh
 PHASE="$1"; NAME="$2"; shift 2
-TR="$HOME/Library/Logs/nuviotv-traces/r0-$NAME.trace"
-LOG="$HOME/Library/Logs/nuviotv-traces/r0-$NAME.log"
+TR="$HOME/Library/Logs/nuviotv-traces/${TRACE_PREFIX:-r0}-$NAME.trace"
+LOG="$HOME/Library/Logs/nuviotv-traces/${TRACE_PREFIX:-r0}-$NAME.log"
 STEVEN=(-detail_trailer_autoplay NO -detail_trailer_background NO -sidebar_style rail -rail_visibility hidden
         -rail_position corner -rail_labels shown -rail_style floating -ui_font system -accent_focus_ring YES
         -focus_ring_poster_color YES -depth_rail_poster_color YES -no_zoom_on_focus NO -row_edge_fade off
@@ -30,6 +30,10 @@ STEVEN=(-detail_trailer_autoplay NO -detail_trailer_background NO -sidebar_style
 case "$PHASE" in
   launch)
     rm -rf "$TR"
+    # 02:11Z: an Instruments --launch over a RUNNING instance came up behind the tvOS Home screen (the
+    # Companion's LaunchApp then relaunches WITHOUT the args). Kill the app first, give tvOS a beat.
+    PID="$(xcrun devicectl device info processes --device "$ATV_UDID" 2>/dev/null | grep "NuvioTV.app/NuvioTV " | awk '{print $1}' | head -1)"
+    if [ -n "$PID" ]; then xcrun devicectl device process signal --device "$ATV_UDID" --pid "$PID" --signal SIGKILL >/dev/null 2>&1; sleep 6; fi
     LIMIT="${LIMIT:-110s}"
     xcrun xctrace record --device "$ATV_UDID" --template 'Animation Hitches' --time-limit "$LIMIT" \
       --output "$TR" --launch -- com.youngchris29.NuvioTV "${STEVEN[@]}" "$@" > "$LOG" 2>&1 &
