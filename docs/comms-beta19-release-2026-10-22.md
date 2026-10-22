@@ -47,9 +47,9 @@ Same install as always: download NuvioTV.ipa, sideload with Sideloadly or atvloa
 If something broke for you since beta 18, say so here or open an issue at https://github.com/youngchris29-art/NuvioTV/issues.
 ```
 
-## 3. Steven DM, one bubble (NOT SENT)
+## 3. Steven DM, one bubble — SENT 2026-10-22T21:47:26Z
 
-**NOT SENT.** One bubble in his Reddit chat room. Before sending, run `scripts/reddit/fetch-dms.sh --since 2026-10-22T12:21:38.223Z --summary` and fold in anything new.
+**SENT 2026-10-22T21:47:26Z** on Christian's go (pre-send fetch 21:46:31Z quiet: nothing after his own 12:21Z message; `~/Library/Logs/NuvioDM/beta19-send.js`, gated on the newest bubble being that message; verified by the send walk: `youngchris2989 said 1 minute ago, Hi Steven, beta 19 is public …`). Watermark → the send time. One bubble in his Reddit chat room. Before sending, run `scripts/reddit/fetch-dms.sh --since 2026-10-22T12:21:38.223Z --summary` and fold in anything new.
 
 Facts behind it: no DM since the reply sent at 02:12Z (`docs/comms-dm-drafts-2026-10-21-rc11-reply2.md`), and the rc12 draft went unsent because rc12 was never cut · items from `docs/comms-dm-drafts-2026-10-22-beta19-rc12.md`, checked against the submodule log: Corner rail `b840a3bb0`, icon size `dc1f23a22`, Back from an actor `0bed3fa4e` (verified on the box), plain Cinematic action row `79e1a33cb`, Classic heading and logo `BUG-209` / `BUG-211` with `BUG-210` not reproduced, Search retry `BUG-208`, stream row dwell of 500 ms in `StreamPickerView.swift` · the cheaper Card Depth was pulled by `7239c706c` (`BUG-221`), and the last DM had called it in testing · open asks: mpv at once or after seconds, the `BUG-165` short Back · the README note is in `README.md` and `NuvioMobile/README.md`.
 
@@ -74,7 +74,7 @@ Two things if you have a minute. When an HDR film plays in mpv, is mpv there fro
 For your own build, the README now covers the local.properties file.
 ```
 
-## 4. GitHub #5, SenPlayer (NOT POSTED)
+## 4. GitHub #5, SenPlayer — POSTED 2026-10-22T21:45:52Z (https://github.com/youngchris29-art/NuvioTV/issues/5#issuecomment-6352014389, left open)
 
 **NOT POSTED.** Comment on youngchris29-art/NuvioTV #5: `gh issue comment 5 --repo youngchris29-art/NuvioTV --body-file <file>`, then check it with `gh issue view`. Leave the issue open until the reporter answers.
 
@@ -90,7 +90,7 @@ With SenPlayer installed on the Apple TV it shows up under Settings > Player > D
 I built it against the parameter names Outplayer and VidHub use, since SenPlayer doesn't publish its scheme, and I don't have SenPlayer on my own Apple TV to check it end to end. Once you've tried it, tell me whether it started at your resume point, whether the subtitle showed, and whether your position carried back to NuvioTV when you exited. If it all works, say so and I'll close this. If any of it misses, I'll adjust the handoff.
 ```
 
-## 5. GitHub #7 and #8, shipped (NOT POSTED)
+## 5. GitHub #7 and #8, shipped — POSTED 2026-10-22T21:45:53Z / 21:45:54Z (#7 issuecomment-6352014716, #8 issuecomment-6352014942), both CLOSED
 
 **NOT POSTED.** One comment each on youngchris29-art/NuvioTV, posted with `gh issue comment <n> --repo youngchris29-art/NuvioTV --body-file <file>` and checked with `gh issue view`. Close each after posting with `gh issue close <n> --repo youngchris29-art/NuvioTV`.
 
@@ -112,7 +112,7 @@ Fixed in beta 19, which is out now: https://github.com/youngchris29-art/NuvioTV/
 Play on a series now stops the background trailer the same way Play on a film does, so with Trailer Sound on you no longer hear it under the episode. I'll close this one. If a trailer still plays on after Play, reopen it with the title you used.
 ```
 
-## 6. GitHub #9 and #10, in beta 19 (NOT POSTED)
+## 6. GitHub #9 and #10, in beta 19 — POSTED 2026-10-22T21:45:55Z / 21:45:56Z (#9 issuecomment-6352015165, CLOSED; #10 issuecomment-6352015427, open)
 
 **NOT POSTED.** One comment each, posted the same way. #9 offers a close with the release. #10 waits on the reporter's hardware check of the key fields.
 
