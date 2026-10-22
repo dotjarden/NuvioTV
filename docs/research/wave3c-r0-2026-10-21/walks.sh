@@ -40,6 +40,10 @@ case "$PHASE" in
     echo $! > "$R/launch-$NAME.pid"
     sleep 15
     if grep -q "Timed out waiting for device" "$LOG"; then echo "LAUNCH FAILED (Instruments timed out)"; tail -2 "$LOG"; exit 2; fi
+    # 13:12Z: Instruments' launch can leave the app BEHIND the tvOS Home screen. The Companion's
+    # LaunchApp fronts the SAME process (pid unchanged, launch args and the recording kept), so
+    # always front it once before the screenshot.
+    timeout 40 "$A" launch com.youngchris29.NuvioTV >/dev/null 2>&1; sleep 4
     SHOT_SMALL=1 scripts/device/shot.sh "$R/launch-$NAME" | tail -1
     echo "LAUNCHED $(date -u +%H:%M:%SZ) — read the screenshot before 'walk'" ;;
   walk)
