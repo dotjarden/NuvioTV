@@ -15,8 +15,8 @@ The shared rules (no sends without a go, no cuts unless told, ask before plannin
 
 ## Build and gates (in `NuvioMobile/`)
 - Kotlin: `./gradlew :shared:jvmTest :shared:tvosSimulatorArm64Test :composeApp:iosSimulatorArm64Test`
-- Sim builds (Debug + Release): `xcodebuild -project iosApp/iosApp.xcodeproj -scheme NuvioTV -configuration Release -destination 'generic/platform=tvOS Simulator' -derivedDataPath iosApp/build/DerivedData`
-- NuvioTVTests + UI legs on the fixture sim (`FA87E9B6-…`): `xcodebuild test … -derivedDataPath iosApp/build/DerivedDataUITests -collect-test-diagnostics never`, Bash sandbox OFF (sandboxed: exit 70 "Failed to prevent system sleep"; without the flag UI legs hang ~10 min).
+- Sim builds (Debug + Release): `xcodebuild -project iosApp/iosApp.xcodeproj -scheme NuvioTV -configuration Release -destination 'platform=tvOS Simulator,id=FA87E9B6-F28D-4DF9-84E4-A5A4C5DBFC4E' -derivedDataPath iosApp/build/DerivedData` (the FA87 id, never `generic/platform=tvOS Simulator`: Release has no `ONLY_ACTIVE_ARCH`, so the generic destination links x86_64 against the arm64-only SharedCore and fails; 2026-10-22).
+- NuvioTVTests + UI legs on the fixture sim (`FA87E9B6-…`): `xcodebuild test -scheme NuvioTVTests` (unit) / `-scheme NuvioTVUITests -only-testing:NuvioTVUITests/<Class>` (legs) `… -derivedDataPath iosApp/build/DerivedDataUITests -collect-test-diagnostics never` (the `NuvioTV` scheme has no testables: "not configured for the test action"), Bash sandbox OFF (sandboxed: exit 70 "Failed to prevent system sleep"; without the flag UI legs hang ~10 min).
 - Device build: `-destination 'generic/platform=tvOS' -derivedDataPath iosApp/build/DerivedDataDevice -allowProvisioningUpdates` (7-day free-team profile; delete stale `youngchris29` profiles when it expires), install with `devicectl`.
 - Gated = all of the above green on the tip plus the relevant UI legs, then a device pass in the Test profile.
 - Keep only those three dirs plus `tvos-ipa` under `iosApp/build/`; delete one-off build dirs and `.xcresult` bundles once their gate is recorded.
