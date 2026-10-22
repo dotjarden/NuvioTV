@@ -60,3 +60,19 @@ Remove the picker-rows add-on and any dummy key; leave Test 2 in Steven's config
 | home-classic-nodepth (run 1) | 72 | 1318 | 50.0 | Classic, `-debug.homeNoCardDepth YES` |
 
 Only three of thirteen recordings held a complete walk: Instruments times out "waiting for device to boot" on roughly two runs in three right after a previous session (a 45 s gap and three attempts are now the runner's defaults), and the Companion over IPv4 failed mid-walk (`_hidC failed`) on the Stage runs while the box's IPv4 flapped. The other nine (Classic Detail, rc7 Cinematic Detail, the second Classic pair, the four Stage runs, the picker) are rerunning over IPv6 (`NUVIOTV_DEVICE_CONF=/tmp/nuviotv-device-v6`). `summary-attempt1.txt`, `summary-attempt2.txt` hold the first two passes.
+
+## Release walks, complete set (build `823450355` Release, Steven's settings, Test 2; 2026-10-22 02:00Z–04:10Z, one at a time behind a screenshot)
+
+Whole-run Animation Hitches totals (the app idles at Home outside the walk; the attended runs' walk windows vary, so totals are the comparable number):
+
+| Run | Hitches | App ms | Max ms |
+|---|---|---|---|
+| Home Classic, depth on, run 1 / run 2 | 96 / 96 | 1685 / 1818 | 33 / 67 |
+| Home Classic, depth off (`-debug.homeNoCardDepth YES`), run 1 / run 2 | 72 / 46 | 1318 / 834 | 50 / 50 |
+| Home Stage, depth on, run 1 / run 2 | 144 / 161 | 5005 / 5022 | 117 / 134 |
+| Home Stage, depth off, run 1 / run 2 | 144 / 154 | 4271 / 4421 | 100 / 100 |
+| Detail Cinematic (Severance, 10 down / 10 up; incl. the Search typing) | 65 | 1552 | 167 |
+| Detail Classic (same walk) | 86 | 2686 | 284 |
+| Stream picker, 30 down / 30 up at 0.35 s (Comet + Torrentio + the 48-row stub) | 63 | 1251 | 67 |
+
+Readings: **Card Depth** costs about 25–50 hitches and 0.4–1.0 s per Classic walk, and ~0.6 s of hitch time (not count) on Stage, consistent with Wave 2 (on 146 / 4.76 s, off 120 / 3.89 s); these are the R1 before-baselines for the three render variants. **Detail:** the rig does not see Classic Detail smoother than Cinematic; the opposite on this walk. The rc7 comparison (below) decides whether Cinematic regressed since his "smooth" verdict. **Picker:** 63 hitches over 60 moves is the before-baseline for W3-16.
