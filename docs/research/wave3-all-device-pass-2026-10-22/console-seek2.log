@@ -1,0 +1,133 @@
+[ProfileSelect] auto-enter profile 3
+[ProfileSelect] selecting profile 3
+[ProfileSelect] selectProfile returned — requesting full pull
+[ProfileSelect] full pull requested — tap complete
+2026-10-22 11:06:01.123 NuvioTV[941:245451] [NavRail] hidden tab bar made unfocusable (hidden=0 alpha=1.00 frame={{0, 0}, {1920, 68}})
+2026-10-22 11:06:01.140 NuvioTV[941:245451] [TrailerPipeline] trailerLocation heroMode=NO
+2026-10-22 11:06:01.174 NuvioTV[941:245451] [HomeScrollProbe] REGIME-CHANGE from=M330c1p1r0z0t37hzrt4 to=P351c0p1r0z0t37hzrt4 fits=1
+[TopShelf] wrote 8 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+2026-10-22 11:06:02.640 NuvioTV[941:245451] [TrailerPipeline] gates inlineTrailersEnabled=YES systemAutoplay=YES
+2026-10-22 11:06:02.676 NuvioTV[941:245451] [HomeHero] logoInk sync-sample ms=0.16
+2026-10-22 11:06:02.686 NuvioTV[941:245451] [HomeScrollProbe] REGIME-CHANGE from=P351c0p1r0z0t37hzrt4 to=P351c0p0r0z0t37hzrt4 fits=1
+2026-10-22 11:06:22.665 NuvioTV[941:245451] [NavRail] arm reason=left origin=UIKitFocusableViewResponderItem tab=0
+2026-10-22 11:06:22.718 NuvioTV[941:245451] [Rail] gate=on mode=uikit
+2026-10-22 11:06:22.848 NuvioTV[941:245451] [NavRail] focus write=1 tab=0 landed=1
+2026-10-22 11:06:54.317 NuvioTV[941:245451] [NavRail] select tab=1 from=0
+2026-10-22 11:06:54.317 NuvioTV[941:245451] [Rail] gate=off mode=uikit
+2026-10-22 11:06:54.417 NuvioTV[941:245451] [NavRail] exit via=select route=none result=fallback
+2026-10-22 11:06:55.449 NuvioTV[941:245451] [KBFocus] keyboard=1
+2026-10-22 11:07:04.417 NuvioTV[941:245451] [KBFocus] keyboard=0
+2026-10-22 11:07:20.619 NuvioTV[941:246147] [TrailerExtract] client=android_vr video=ZkN2M4ODdys hls=false formats=1 adaptive=22 sdKeys=expiresInSeconds,formats,adaptiveFormats
+2026-10-22 11:07:20.621 NuvioTV[941:246147] [TrailerExtract] client=visionos video=ZkN2M4ODdys hls=true formats=0 adaptive=23 sdKeys=expiresInSeconds,adaptiveFormats,hlsManifestUrl,aspectRatio,serverAbrStreamingUrl
+2026-10-22 11:07:20.622 NuvioTV[941:246147] [TrailerExtract] client=android video=ZkN2M4ODdys hls=false formats=1 adaptive=25 sdKeys=expiresInSeconds,formats,adaptiveFormats,serverAbrStreamingUrl,metadataFormats
+2026-10-22 11:07:20.623 NuvioTV[941:246147] [TrailerExtract] client=ios video=ZkN2M4ODdys hls=false formats=0 adaptive=23 sdKeys=expiresInSeconds,adaptiveFormats,aspectRatio,serverAbrStreamingUrl,metadataFormats
+2026-10-22 11:07:20.801 NuvioTV[941:246093] [TrailerExtract] manifest client=visionos top variant 1920x1080
+2026-10-22 11:07:20.801 NuvioTV[941:246093] [TrailerExtract] selection: manifest=1080 progressive=360 (manifests collected=1)
+2026-10-22 11:07:20.802 NuvioTV[941:246093] [TrailerExtract] repack candidates: avcVideo=1080p avc1.640028 (android_vr) m4aAudio=mp4a.40.2 (android_vr) maxFps=0
+2026-10-22 11:07:21.129 NuvioTV[941:246093] [TrailerExtract] repack decision: avc=1080p vs progressive=1080p -> ELIGIBLE
+2026-10-22 11:07:21.481 NuvioTV[941:246142] [TrailerRepack] listener start port=8230 prefer=- gen=1 conns=0
+2026-10-22 11:07:21.482 NuvioTV[941:245882] [TrailerRepack] listener ready port=8230 waiters=1 gen=1 conns=0
+2026-10-22 11:07:21.483 NuvioTV[941:245882] [TrailerRepack] serving 1920x1080 avc1+mp4a (15+8 segments) at http://127.0.0.1:8230/1ffbc5a2bbf5613ad8e3ee4034421fe5/master.m3u8 fps=24 itag=137 n=0
+2026-10-22 11:07:24.478 NuvioTV[941:245451] -canOpenURL: failed for URL: "vlc-x-callback://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-22 11:07:24.478 NuvioTV[941:245451] -canOpenURL: failed for URL: "outplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-22 11:07:24.479 NuvioTV[941:245451] -canOpenURL: failed for URL: "senplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+2026-10-22 11:07:24.479 NuvioTV[941:245451] -canOpenURL: failed for URL: "nativeplayer://" - error: "The operation couldn’t be completed. (OSStatus error -10814.)"
+[SubtitleRepo] WARN Addon repository not ready after 8000ms — fetching with current snapshot
+[SubtitleRepo] Fetching subtitles type=movie id=tt31049299 across 9 enabled addons
+[SubtitleRepo] Skip Comet: no subtitles resource
+[SubtitleRepo] Skip Torrentio: no subtitles resource
+[SubtitleRepo] Skip AIOMetadata: no subtitles resource
+[SubtitleRepo] Skip AIO Streams: no subtitles resource
+[SubtitleRepo] Skip Cinemeta: no subtitles resource
+[SubtitleRepo] Skip Better Posters: no subtitles resource
+[SubtitleRepo] Skip Picker Rows fixture: no manifest
+[SubtitleRepo] Querying OpenSubtitles v3: https://opensubtitles-v3.strem.io/subtitles/movie/tt31049299.json
+[SubtitleRepo] Querying Duck Streams: https://aiostreams-stable.forthewizards.uk/stremio/<redacted-config>/<redacted-jwt>/subtitles/movie/tt31049299.json
+[SubtitleRepo] OpenSubtitles v3: 80 subtitles in 180.592250ms
+[SubtitleRepo] Duck Streams: 2 subtitles in 206.305416ms
+[SubtitleRepo] Subtitle fetch done: 82 total in 8.212431500s
+[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x14040a400] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x14040a400] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x14040a400] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x14040a400] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x14040a400] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x14040a400] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x14040a400] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x14040a400] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x14040a400] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x14040a400] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x14040a400] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x14040a400] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x14040a400] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x14040a400] [0m[0;33mstream 0, timescale not set
+[0m[PlayerRouter] probe took 2052ms cap=4000ms result=ok
+[PlayerRouter] native — HDR10 — Animals
+[Loading] engine=native stage=connecting t=+0.01s
+[NativePlayer] language plan: audio=["en-us", "en"] subs=off
+[NativePlayer] addon subtitles updated: 82
+[NativePlayer] artwork attached (113 KB)
+[NativePlayer] skip segments: 1
+[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x140174f00] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x140174f00] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x140174f00] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x140174f00] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x140174f00] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x140174f00] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x140174f00] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x140174f00] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x140174f00] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x140174f00] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x140174f00] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x140174f00] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x140174f00] [0m[0;33mUDTA parsing failed retrying raw
+[0m[0;35m[mov,mp4,m4a,3gp,3g2,mj2 @ 0x140174f00] [0m[0;33mstream 0, timescale not set
+[0m[Remux] subtitle streams (39): #3 mov_text [eng], #4 mov_text [eng], #5 mov_text [eng], #6 mov_text [spa], #7 mov_text [spa], #8 mov_text [fre], #9 mov_text [fre], #10 mov_text [por], #11 mov_text [por], #12 mov_text [ara], #13 mov_text [cat], #14 mov_text [cze], #15 mov_text [cze], #16 mov_text [dan], #17 mov_text [ger], #18 mov_text [gre], #19 mov_text [baq], #20 mov_text [fin], #21 mov_text [glg], #22 mov_text [hin], #23 mov_text [hrv], #24 mov_text [hun], #25 mov_text [ind], #26 mov_text [ita], #27 mov_text [jpn], #28 mov_text [kor], #29 mov_text [may], #30 mov_text [nob], #31 mov_text [dut], #32 mov_text [pol], #33 mov_text [rum], #34 mov_text [rus], #35 mov_text [swe], #36 mov_text [tha], #37 mov_text [tur], #38 mov_text [ukr], #39 mov_text [vie], #40 mov_text [chi], #41 mov_text [chi]
+[1;35m[mp4 @ 0x1401d8900] [0m[0;33mtrack 0: codec frame size is not set
+[0m[Remux] preferred-language audio pick → stream 1
+[Remux] audio streams (2): #1 eac3 6ch [eng] *selected, #2 eac3 6ch [eng]
+[Remux] signaling CODECS=hvc1.2.4.L150.90 VIDEO-RANGE=PQ AUDIO=ec-3
+[Remux] audio tracks: #1* eac3 6ch eng | #2 eac3 6ch eng
+[Remux] keyframe index: 4330 keyframes tb=1/16000 dur=6491.0s
+[Chapters] native n=8 origin=-0.083 first="Chapter 1"@0.083 last="Chapter 8"@4980.083
+[Remux] segment map: 1082 segments, 6491.0s, target=7s
+[Remux] embedded subtitle sinks: 39 (#10→esub-7, #11→esub-8, #12→esub-9, #13→esub-10, #14→esub-11, #15→esub-12, #16→esub-13, #17→esub-14, #18→esub-15, #19→esub-16, #20→esub-17, #21→esub-18, #22→esub-19, #23→esub-20, #24→esub-21, #25→esub-22, #26→esub-23, #27→esub-24, #28→esub-25, #29→esub-26, #30→esub-27, #31→esub-28, #32→esub-29, #33→esub-30, #34→esub-31, #35→esub-32, #36→esub-33, #37→esub-34, #38→esub-35, #39→esub-36, #3→esub-0, #40→esub-37, #41→esub-38, #4→esub-1, #5→esub-2, #6→esub-3, #7→esub-4, #8→esub-5, #9→esub-6)
+[Loading] engine=native stage=preparing t=+1.84s
+[Remux] seg 1 done footprint=227MB ptsNets=0
+[NativePlayer] addon subtitle fetch finished (82 found)
+[NativePlayer] subtitle renditions: 55 (39 embedded) — English (Forced), English, English (SDH), Spanish, Spanish 2, French, …
+[NativePlayer] serving http://127.0.0.1:8190/67e9aae4dc0e43afb998811ddda47341/master.m3u8
+[Subs] style rule fg=#FFFFFFFF bg=#00000000 edge=uniform bold=0 size=78%
+[Loading] engine=native stage=buffering t=+2.37s
+[NativePlayer] bar visible=0
+[NativePlayer] avpvc speeds=0.5,0.75,1,1.25,1.5,1.75,2 menu=Sources delegate=1
+[NativePlayer] item readyToPlay
+[NativePlayer] bar visible=1
+[Loading] engine=native stage=started t=+4.18s
+[TopShelf] wrote 9 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Remux] grid probe: first 1000 video durations {672:665 656:334 677:1} unit=672 clamps=0 nets=0
+[NativePlayer] bar visible=0
+[Remux] seg 15 done footprint=274MB ptsNets=0
+[Remux] seg 30 done footprint=282MB ptsNets=0
+[Remux] seg 45 done footprint=285MB ptsNets=0
+[TopShelf] wrote 9 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Remux] seg 60 done footprint=287MB ptsNets=0
+[Remux] seg 75 done footprint=292MB ptsNets=0
+[Remux] seg 90 done footprint=301MB ptsNets=0
+[NativePlayer] bar visible=1
+[Remux] seg 105 done footprint=304MB ptsNets=0
+[NativePlayer] bar visible=0
+[NativePlayer] pause card shown after 8.0s
+[Remux] seg 120 done footprint=307MB ptsNets=0
+[NativePlayer] pause card hidden reason=press
+[Remux] seg 135 done footprint=311MB ptsNets=0
+[NativePlayer] pause card shown after 1.6s
+[Remux] seg 150 done footprint=314MB ptsNets=0
+[NativePlayer] pause card hidden reason=press
+[TopShelf] wrote 9 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+[Remux] seg 165 done footprint=333MB ptsNets=0
+[Remux] seg 180 done footprint=336MB ptsNets=0
+[Remux] seg 195 done footprint=338MB ptsNets=0
+[TopShelf] wrote 9 items to /private/var/mobile/Containers/Shared/AppGroup/522ACBF5-7C86-4F24-BA59-FB0873B4C28A/Library/Caches/top-shelf.json
+Launched application with com.youngchris29.NuvioTV bundle identifier.
+Waiting for the application to terminate...
+App terminated due to signal 15.

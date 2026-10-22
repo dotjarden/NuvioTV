@@ -1,7 +1,8 @@
 #!/bin/bash
 # NuvioTV device rig: launch the Debug device build with its console streamed to a log file.
 #   console.sh start [log-path] [-- app args…]   # launches com.youngchris29.NuvioTV with --console
-#   console.sh stop                              # ends the stream (the app keeps running)
+#   console.sh stop                              # ends the stream AND THE APP (SIGTERM to the devicectl
+#                                                # stream ends the launched process: "App terminated due to signal 15")
 #   console.sh tail [n]                          # last n lines of the current log
 #   console.sh grep <pattern>                    # grep the current log
 # Recipe from the 09-30 device walks: devicectl process launch --terminate-existing --console
