@@ -3438,13 +3438,13 @@
   {
    "id": "BUG-219",
    "kind": "Bug",
-   "priority": "P4",
+   "priority": "P2",
    "stage": "Open",
    "tester": "",
    "build": "",
    "reporter": "In-house (device pass)",
    "first_seen": "2026-10-22",
-   "summary": "Settings: Back from a pushed page (e.g. a language page) lands at the top of the pane, not on the row you came from."
+   "summary": "Back from a pushed Settings page (the language lists) lands on the pane's first realised row, not the row that pushed it (confirmed on the Apple TV 10-22)."
   },
   {
    "id": "BUG-220",
@@ -3467,6 +3467,17 @@
    "reporter": "In-house (rig)",
    "first_seen": "2026-10-22",
    "summary": "The merged Wave 3 tip crashes seconds after Home on the Apple TV with Card Depth on (raster-cache rendering); never shipped, fix on claude/bug221."
+  },
+  {
+   "id": "UX-18",
+   "kind": "UX feedback",
+   "priority": "P2",
+   "stage": "Open",
+   "tester": "",
+   "build": "",
+   "reporter": "In-house (design review)",
+   "first_seen": "2026-10-22",
+   "summary": "Cinematic Detail's metadata and ratings lines have no contrast floor over bright backdrops (Simpsons yellow, a white trailer frame)."
   }
  ]
 }

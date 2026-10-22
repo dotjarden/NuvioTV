@@ -36,4 +36,7 @@ One read-only critique per surface against `docs/design/hig-hybrid-contract.md` 
 
 ## Log
 
-(filled as the session runs)
+- 17:00Z the first Release of `fccfabb3b` crashed on Home within seconds (BUG-221, see the tracker); the review resumed 18:50Z on the hotfix Release (`7239c706`, `tvos-shared-extraction` tip after the merge).
+- Captured, look A: `a01` Stage rest, `a02` Stage after Down ×3 (Trending Movies), `a05`–`a09` the five rail variants, `a10`/`a10b` Always Visible at rest and at row 2, `a11-search-cold` (field + keyboard + recents at once), `a12-search-results` (Animals), `a13-detail-film-cinematic` (3 s after open; the backdrop is a video frame: the trailer was already running as the page background). After one Down the trailer took the screen full-bleed (`-detail_trailer_autoplay NO` / `-detail_trailer_background NO` did not apply; `-rail_labels icons` and `-no_zoom_on_focus YES` did). Menu from the full-screen trailer popped the whole Detail page and Search focus landed on the keyboard, not the card (finding, to confirm by hand).
+- Mistake 18:55Z: a chained Left/Down/Select sequence sent after a relaunch without reading a screenshot first ran in the Apple TV app (the launch had not brought NuvioTV forward). Backed out with Menu ×2 + Home; nothing played or bought. The rule stands: screenshot and read before the first press after every launch.
+- Launch args: `rail_visibility` = `hidden` | `browsing` | `always`; `rail_labels` = `shown` | `icons`; `rail_style` = `floating` | `edge`; `rail_position` = `centre` | `corner` (the first batch used `hidden` for labels and `visible` for visibility, both invalid, redone).
