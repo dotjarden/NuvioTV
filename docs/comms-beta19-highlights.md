@@ -49,7 +49,7 @@ beta 19 is the first public build since beta 18. Home opens in the new Stage lay
 ### Settings and appearance
 
 - Settings is regrouped: Playback is now Player, and an explainer sits beside the list. API key fields and Save are separate rows, OLED True Black reaches Add-ons, and the subtitle color swatches show focus.
-- **Typeface** (Appearance, System by default, or Open Sans) changes the app's font. **Depth Takes Poster Color** (Appearance, off) tints Card Depth edges with the poster's color. **Row Edge Fade** (Appearance, Off by default) now reaches every row.
+- **Depth Takes Poster Color** (Appearance, off) tints Card Depth edges with the poster's color. **Row Edge Fade** (Appearance, Off by default) now reaches every row.
 - French, German, Italian, Spanish and Vietnamese cover every screen.
 
-Known: the Watch Trailer button can vanish on a repeat visit to a title. The top of the description page can stay black for a few seconds after the full-screen trailer. With Trakt as the Watch Progress Source, a short session may not resume after a relaunch.
+Known: on some Apple TVs the top tab bar stays pinned after a tab switch (the Rail does not have this). The Watch Trailer button can vanish on a repeat visit to a title. The top of the description page can stay black for a few seconds after the full-screen trailer. With Trakt as the Watch Progress Source, a short session may not resume after a relaunch.
