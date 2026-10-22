@@ -280,3 +280,6 @@ Harvest Only (the default)**.
 ### 2026-10-22, later: `console.sh stop` kills the app
 `console.sh stop` SIGTERMs the `devicectl … launch --console` stream, and the launched app goes with it (`App terminated due to signal 15` at the end of the log). The header comment that said the app keeps running was wrong and is corrected. Consequences: a pass that stops the stream mid-flow leaves the box on tvOS Home (the 10-22 tear-down's Remove dialog was lost this way), and any presses sent afterwards land in whatever tvOS shows — screenshot first. To keep the app alive after the stream, launch it again without `--console` (`atv.sh launch com.youngchris29.NuvioTV`), which keeps the profile and state the stopped instance persisted.
 
+### 2026-10-22: the build and simulator locks live in the outer repo now
+`scripts/build/with-lock.sh` (machine-wide build lock, `~/Claude/Projects/.build.lock`) and `scripts/build/with-sim-lock.sh` (the FA87 simulator lock, `~/Claude/Projects/.sim-FA87.lock`) replace the copies that lived under each clone's gitignored `iosApp/build/` and vanished with the Wave 3 clones. Usage from any clone: `"$OUTER/scripts/build/with-sim-lock.sh" "$OUTER/scripts/build/with-lock.sh" xcodebuild test …` for a simulator session, `with-lock.sh` alone for a build. The sim lock always wraps the build lock, never the reverse.
+
