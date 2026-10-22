@@ -222,3 +222,13 @@ Windows come from `DETAIL_T0` minus the trace `start-date`. The push is the ~6 s
 
 - Replace "BUG-206 CONFIRMED as a regression (5 vs 65)" with the §1 table: the rc7 run is void, and the rc11-class Cinematic walk is 21 hitches / 367 ms plus a 35-hitch push.
 - The device `[BUG41]` `HitchCounter` (`-debug.detailScrollProbe YES`) counts **main-thread** vsync gaps. It cannot see these GPU-bound hitches; use Animation Hitches.
+
+## 9. Knob A/B on the box (2026-10-22 14:26Z–, Release `all-rel-app` = `claude/wave3-all` `93034835e`, Steven's settings, Test 2, Cinematic Detail walk via Search → Severance; whole-run hitches; per-frame stats over each run's own walk band)
+
+| Run | Hitches / app ms | GPU ms med / p90 / max | offscreen med / p90 | frames > 14 ms GPU |
+|---|---|---|---|---|
+| baseline | 98 / 2085 | 12.7 / 28.7 / 52.6 | 5 / 29 | (933 frames) |
+| `-debug.detailTileRingNoShadow YES` | **65 / 1602** | 12.0 / **18.8** / 64.0 | 4 / 27 | (706) |
+| `-debug.detailNoTileRing YES` (partial revert) | 82 / 1902 | 12.9 / 22.6 / 58.3 | 8 / 32 | (934) |
+
+Reading so far: **the rc8 tile-lift shadow (BUG-177, S1) is the single biggest cost on the walk** — a third of the hitches and a 10 ms drop in the GPU p90 from one Release knob, with the median unchanged (the base fill stays ~12 ms). The partial ring revert helps less than the shadow alone. Remaining knobs below.
