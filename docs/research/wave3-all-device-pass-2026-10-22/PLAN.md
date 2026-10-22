@@ -1,0 +1,24 @@
+# Device pass: `claude/wave3-all` (Wave 3 + 3b + 3c + late fixes), 2026-10-22 — checklist
+
+Build: Debug `6b1d836f1` (`~/Claude/Projects/NuvioMobile-wave3c/iosApp/build/DerivedDataDevice/.../NuvioTV.app`) for the probes; Release (`~/Claude/Projects/NuvioMobile-wave3/iosApp/build/all-rel-app/NuvioTV.app`) for the R1 walks. Test 2, Steven's config (launch args as in `../wave3c-r0-2026-10-21/walks.sh`, `-debug.rememberLastProfile NO`, picker by screenshot). Every press behind a screenshot. 4K last.
+
+| # | Item | Steps | Pass |
+|---|---|---|---|
+| 1 | W3-11 Corner rail | Hidden at rest: Left from the first card → rail; shots at rest, mid-unroll (burst), open; Labels Shown then `-rail_labels icons`; over a dark hero and a bright one (Spider-Man) | glass flush top-left, only the height grows, items unmoved, no flicker on the burst |
+| 2 | W3-13 Card Depth (R1) | Release: `walks.sh launch/walk` ×2 each with `-debug.cardDepthRender 0`, `1`, `2` on Classic (then Stage once each); pixel-compare a focused Subtle/Full card vs today | the variant inside the depth-off baseline's noise wins; rail looks identical |
+| 3 | BUG-200 cast + chip | Spider-Man Detail: Cast and Production rows focused with ring on, ring off (`-accent_focus_ring NO`), No Zoom (`-no_zoom_on_focus YES`) | whole tile lifts, no square platter corners on the avatar, chip ×1.12, no neighbour overlap |
+| 4 | FEAT-82 glyphs | Spider-Man Detail (film) + a series with Shuffle; action row at rest, crops; measure the 4 provisional glyphs (Start Over on a title with progress, Shuffle off/on, In Library) | trailer / watched / add at 25 ± 1 pt; numbers for the table |
+| 5 | BUG-194 re-grab | `-debug.detailFocusProbe YES`: cast → biography → Back ×5 + a burst | `stray … regrab=1` then `rung applied … via=regrab-1` within ms, `away` ≤ ~50, no `force=0`, no Play highlight |
+| 6 | FEAT-83 hold menus | hold Select on an episode card (mark → unmark), a season poster, a season chip; where focus lands; an unreleased season | menu entries right, focus stays on the held card, nothing left marked in Test 2 |
+| 7 | BUG-201 swatches | Settings › Subtitles & Audio › Text Color: Left/Right across the four; focused vs selected | ring + lift on the focused swatch; four targets |
+| 8 | BUG-213 key rows | Sources › TMDB key (or MDBList): field row focusable alone, Select opens the keyboard, Save (dummy key) → focus on Remove, Remove → focus on the field; remove the dummy | hand-offs both ways |
+| 9 | BUG-214 / language pages OLED | Add-ons, the five language pages, Custom Posters with OLED on | pure black |
+| 10 | BUG-215 clip | Settings root + Sources, Default and Minimal | focused row uncut (expected: not reproduced) |
+| 11 | FEAT-84 pages | Audio Language page opens on the checked row; from Zulu the first Up moves one row; Fallback rows present, subtitle fallback hidden while Off | |
+| 12 | BUG-209 slide | Classic, Hide Titles, `-debug.homeScrollProbe YES`: 8 Downs + burst | `slide apply … via=immediate anim=track`, single landing |
+| 13 | W3-16 picker | Release: picker walk with `-debug.cardDepthRender 0`; a long name on the bottom row expands and stays on screen | hitches < 63 baseline; reveal fires |
+| 14 | W3-17 glyphs | a watched film + Library saved, White accent: Right from Watched ×3 burst; Shuffle on/off symbol | no colour lag; the off state visible |
+| 15 | W3-18 placeholder | cold launch → Search | magnifier only until the field mounts, no jump |
+| 16 | BUG-199b seek (4K, LAST) | Animals Comet NF DV MP4 native: resume + two seeks | `seeking to segment N`, no `landed … aborting` |
+
+Tear-down: remove the dummy key, the picker-rows add-on, leave Test 2 in Steven's config, redact logs before staging.
