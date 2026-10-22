@@ -128,9 +128,18 @@ git submodule update --init --recursive
 # 2. One-time: build the tvOS QuickJS runtime into your local Maven
 ../scaffolding/build-quickjs-tvos.sh
 
-# 3. Open the Xcode project, then build & run the NuvioTV scheme on an Apple TV
+# 3. One-time: create NuvioMobile/local.properties (git ignores it, so a fresh clone has none).
+#    Without it the server address is blank and sign-in talks to localhost.
+cat > local.properties <<'EOT'
+SUPABASE_URL=https://api.nuvio.tv
+SUPABASE_ANON_KEY=sb_publishable_1Clq8rlTVACkdcZuqr6_AD__xUUC_EN
+EOT
+
+# 4. Open the Xcode project, then build & run the NuvioTV scheme on an Apple TV
 open iosApp/iosApp.xcodeproj
 ```
+
+Both `local.properties` values are Nuvio's public ones (see [`docs/nuvio-cloud-api-reference.md`](docs/nuvio-cloud-api-reference.md)). The same file can carry a TMDB key (free with a TMDB account) and the ids for Trakt, Simkl, MDBList and IntroDB; without them those parts of the app stay empty.
 
 Building the app runs the Gradle task that produces `SharedCore` and links it into the tvOS target. Setup and architecture details live in [`docs/tvos-port-plan.md`](docs/tvos-port-plan.md) and [`scaffolding/README.md`](scaffolding/README.md).
 
