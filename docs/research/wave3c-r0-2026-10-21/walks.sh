@@ -63,7 +63,10 @@ case "$PHASE" in
     esac
     while kill -0 "$(cat "$R/launch-$NAME.pid")" 2>/dev/null; do sleep 5; done
     tail -2 "$LOG"
-    python3 -I docs/research/batch-p-wave0-2026-10-20/hitches.py "$TR" ;;
+    python3 -I docs/research/batch-p-wave0-2026-10-20/hitches.py "$TR"
+    # Instruments leaves a 1–5 GB $TMPDIR/instruments*.ktrace behind after EVERY recording (131 GB
+    # found on 2026-10-22): sweep them once the trace is saved.
+    rm -rf "${TMPDIR:-/tmp}"/instruments*.ktrace ;;
   abort)
     kill "$(cat "$R/launch-$NAME.pid")" 2>/dev/null; sleep 2; rm -rf "$TR"; echo "aborted $NAME" ;;
 esac
