@@ -50,3 +50,13 @@ Remove the picker-rows add-on and any dummy key; leave Test 2 in Steven's config
 - **BUG-209 (heading lands high, drops a notch) before-state** on the rc11-class build: eight Downs at 0.6 s on Classic with Hide Titles logged one `slide apply … via=quiet` (the quiet-settle release) and no `via=immediate`; the after-check on the wave3c build looks for `via=immediate anim=track exempt=1` per Down.
 - **Not run this session:** W3-17's A/B burst (the rig's screenshot burst is ~1.3 s per frame, too coarse for a sub-second colour lag); W3-18's cold-start recording (same); the picker stub add-on (the box cannot reach the Mac's IPv4 while its own IPv4 is down; retry when `ping 192.168.1.86` answers).
 - **Picker stub add-on installed in Test 2** (`37-addon-installed`: "Installed Picker Rows fixture."; the fixture runs on the Mac at port 8769 and serves 48 rows for every title). Test 2 also has Comet (debrid) and Torrentio installed, so the picker has real rows too. Remove the fixture at tear-down.
+
+## Release walks (build `823450355` Release, Steven's settings, Test 2) — partial, 2026-10-22 00:00Z–01:33Z
+
+| Run | Hitches | App ms | Max ms | Note |
+|---|---|---|---|---|
+| detail-cinematic (Severance, 10 down / 10 up) | 65 | 1552 | 166.8 | two 167 ms stalls at 7.9 s and 8.6 s (GPU work), one 100 ms at 5.3 s |
+| home-classic-depth (run 2) | 96 | 1818 | 66.7 | Classic, Card Depth on |
+| home-classic-nodepth (run 1) | 72 | 1318 | 50.0 | Classic, `-debug.homeNoCardDepth YES` |
+
+Only three of thirteen recordings held a complete walk: Instruments times out "waiting for device to boot" on roughly two runs in three right after a previous session (a 45 s gap and three attempts are now the runner's defaults), and the Companion over IPv4 failed mid-walk (`_hidC failed`) on the Stage runs while the box's IPv4 flapped. The other nine (Classic Detail, rc7 Cinematic Detail, the second Classic pair, the four Stage runs, the picker) are rerunning over IPv6 (`NUVIOTV_DEVICE_CONF=/tmp/nuviotv-device-v6`). `summary-attempt1.txt`, `summary-attempt2.txt` hold the first two passes.
