@@ -3434,6 +3434,17 @@
    "reporter": "u/mrStevenx3",
    "first_seen": "2026-10-21",
    "summary": "Steven built his own app from the fork and cannot sign in: his build posts to https://localhost/auth/v1/signup (connection refused) because the gitignored local.properties is missing, so SUPABASE_URL is blank. Not a fork bug; fix = create NuvioMobile/local.properties with the public Nuvio Cloud URL + publishable key. Reply owed. (Filed as BUG-217, renumbered.)"
+  },
+  {
+   "id": "BUG-219",
+   "kind": "Bug",
+   "priority": "P4",
+   "stage": "Open",
+   "tester": "",
+   "build": "",
+   "reporter": "In-house (device pass)",
+   "first_seen": "2026-10-22",
+   "summary": "Settings: Back from a pushed page (e.g. a language page) lands at the top of the pane, not on the row you came from."
   }
  ]
 }
