@@ -3208,12 +3208,12 @@
    "id": "BUG-194",
    "kind": "Bug",
    "priority": "P3",
-   "stage": "Released",
+   "stage": "Open",
    "tester": "Reopened after fix",
    "build": "beta.19-rc11",
    "reporter": "u/mrStevenx3",
    "first_seen": "2026-10-20",
-   "summary": "Back from an actor's biography lands on the cast card in two visible moves."
+   "summary": "Back from an actor takes two visible moves: the card lands ~570 ms after Back, the engine's late restoration pulls focus to Play, the rung pulls it back; rc11's \"fix\" was a misread of the studios row. Re-grab fix on claude/wave3-all, device check owed."
   },
   {
    "id": "BUG-195",
@@ -3425,7 +3425,7 @@
    "summary": "FolderTile may lift only the artwork in the default focus cell (ring off, zoom on), the BUG-200 class; to verify after W3-4."
   },
   {
-   "id": "BUG-217",
+   "id": "BUG-218",
    "kind": "Bug",
    "priority": "P3",
    "stage": "Open",
@@ -3433,7 +3433,7 @@
    "build": "beta.19-rc11",
    "reporter": "u/mrStevenx3",
    "first_seen": "2026-10-21",
-   "summary": "Steven built his own app from the fork and cannot sign in to his Nuvio account (error photo unread)."
+   "summary": "Steven built his own app from the fork and cannot sign in: his build posts to https://localhost/auth/v1/signup (connection refused) because the gitignored local.properties is missing, so SUPABASE_URL is blank. Not a fork bug; fix = create NuvioMobile/local.properties with the public Nuvio Cloud URL + publishable key. Reply owed. (Filed as BUG-217, renumbered.)"
   }
  ]
 }
