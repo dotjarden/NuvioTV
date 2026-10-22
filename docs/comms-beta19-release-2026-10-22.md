@@ -4,9 +4,9 @@
 
 Lint: the file lint (`python3 scripts/deslop/deslop.py docs/comms-beta19-release-2026-10-22.md`) skips fenced blocks, so each body was also scored on its own from a plain copy. Every body scores 5/5. Word counts are `wc -w` of the body.
 
-## 1. Reddit "Latest build" block for the post body (NOT POSTED)
+## 1. Reddit "Latest build" block for the post body — APPLIED 2026-10-22T21:49:05Z
 
-**NOT POSTED.** Goes into the body of r/NuvioForks post `1wtmutc` in place of the beta 18 block. The paste copy, with nothing else in it, is `docs/comms-reddit-beta19-block.md`. Apply on Christian's go from `NuvioMobile/` with `python3 scripts/update-reddit-beta-post.py --changelog ../docs/comms-reddit-beta19-block.md --dry-run`, then without `--dry-run`, keep the four image lines, and screenshot the post afterwards.
+**APPLIED 2026-10-22T21:49:05Z** on Christian's go through the logged-in old.reddit session (`/api/editusertext` with `richtext_json` built by `scripts/reddit/md-to-rtjson.py`, 26 nodes, the four screenshots as `img` nodes; re-fetch: the beta 19 block present, beta 18's gone, media 4, 5454 chars; scripts in `~/Library/Logs/NuvioDM/beta19-reddit-*.js`). Goes into the body of r/NuvioForks post `1wtmutc` in place of the beta 18 block. The paste copy, with nothing else in it, is `docs/comms-reddit-beta19-block.md`. Apply on Christian's go from `NuvioMobile/` with `python3 scripts/update-reddit-beta-post.py --changelog ../docs/comms-reddit-beta19-block.md --dry-run`, then without `--dry-run`, keep the four image lines, and screenshot the post afterwards.
 
 Facts behind it: shape copied from the beta 18 block in `docs/comms-reddit-beta18-changelog.md`, with the opening and closing lines the script anchors on (`BLOCK_START`, `BLOCK_END`) · features, setting paths and defaults from `docs/comms-beta19-highlights.md` · 78 languages counted in `PlayerLanguageOptionCodes.kt` · About line = 0.3.0 (144) plus the tag.
 
@@ -27,9 +27,9 @@ What's new in beta 19 (first public build since beta 18; Home and the descriptio
 Settings -> About should read 0.3.0 (144), beta tag tvos-v0.3.0-beta.19.
 ```
 
-## 2. Reddit announcement comment on the thread (NOT POSTED)
+## 2. Reddit announcement comment on the thread — POSTED 2026-10-22T21:49:07Z as `19ri44khett34` (https://www.reddit.com/r/NuvioForks/comments/1wtmutc/comment/19ri44khett34/)
 
-**NOT POSTED.** Top-level comment on post `1wtmutc`, after the block swap.
+**POSTED 2026-10-22T21:49:07Z** on Christian's go (`/api/comment` with the session modhash; id `t1_19ri44khett34`). Top-level comment on post `1wtmutc`, after the block swap.
 
 Facts behind it: release URL and asset from the brief and `README.md` · eleven release candidates = builds 133 to 143 (`docs/status.md`) · features from `docs/comms-beta19-highlights.md` · install and About lines follow the beta 18 comment in `docs/comms-reddit-beta18-comment.md` · the 7 day signature from the README's free Apple ID note · no names, no dates, no debrid brand names.
 
