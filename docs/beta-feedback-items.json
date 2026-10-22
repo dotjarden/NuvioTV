@@ -3445,6 +3445,17 @@
    "reporter": "In-house (device pass)",
    "first_seen": "2026-10-22",
    "summary": "Settings: Back from a pushed page (e.g. a language page) lands at the top of the pane, not on the row you came from."
+  },
+  {
+   "id": "BUG-220",
+   "kind": "Bug",
+   "priority": "P4",
+   "stage": "Open",
+   "tester": "",
+   "build": "",
+   "reporter": "In-house (device pass)",
+   "first_seen": "2026-10-22",
+   "summary": "A short mpv session's resume position is gone after a relaunch when progress is stored on Trakt (to confirm)."
   }
  ]
 }
