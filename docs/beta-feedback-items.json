@@ -3456,6 +3456,17 @@
    "reporter": "In-house (device pass)",
    "first_seen": "2026-10-22",
    "summary": "A short mpv session's resume position is gone after a relaunch when progress is stored on Trakt (to confirm)."
+  },
+  {
+   "id": "BUG-221",
+   "kind": "Bug",
+   "priority": "P1",
+   "stage": "Open",
+   "tester": "",
+   "build": "",
+   "reporter": "In-house (rig)",
+   "first_seen": "2026-10-22",
+   "summary": "The merged Wave 3 tip crashes seconds after Home on the Apple TV with Card Depth on (raster-cache rendering); never shipped, fix on claude/bug221."
   }
  ]
 }
