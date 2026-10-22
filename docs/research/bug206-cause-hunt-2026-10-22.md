@@ -231,4 +231,9 @@ Windows come from `DETAIL_T0` minus the trace `start-date`. The push is the ~6 s
 | `-debug.detailTileRingNoShadow YES` | **65 / 1602** | 12.0 / **18.8** / 64.0 | 4 / 27 | (706) |
 | `-debug.detailNoTileRing YES` (partial revert) | 82 / 1902 | 12.9 / 22.6 / 58.3 | 8 / 32 | (934) |
 
-Reading so far: **the rc8 tile-lift shadow (BUG-177, S1) is the single biggest cost on the walk** — a third of the hitches and a 10 ms drop in the GPU p90 from one Release knob, with the median unchanged (the base fill stays ~12 ms). The partial ring revert helps less than the shadow alone. Remaining knobs below.
+| `-debug.detailNoCompactLogo YES` | 97 / 2152 | 12.8 / 27.9 / 53.4 | 5 / 28 | no change |
+| `-debug.detailTopScrimStep YES -debug.detailEdgeEffectShown YES` (rc7's scrim) | 98 / 2169 | 12.8 / 26.2 / 61.9 | 6 / 29 | no change |
+| `-debug.homeNoCardDepth YES` (every surface) | 91 / 2085 | 12.7 / 26.9 / 63.9 | 9 / 26 | small |
+| `-debug.detailScrollAB 4` (action buttons `.bordered`, no `GlassEffectContainer`) | **51 / 1285** | **10.7 / 16.5** / 52.8 | 5 / **16** | **the biggest single cost** |
+
+**Reading (14:58Z):** two knobs account for the page's extra cost on this walk, and they add up to most of it: (1) **the Liquid Glass action row** (`.glass` buttons inside a `GlassEffectContainer`, rc8's teaser-glass work): leg 4 halves the hitch count, takes 2 ms off the GPU median and 12 ms off the p90, and cuts the offscreen passes per frame from 29 to 16 at p90; (2) **the tile-lift shadow** (BUG-177, rc8): a third of the hitches and 10 ms off the p90 on its own. The compact logo, the scrim ramp and Card Depth (on Detail) are not it. Both were in rc8, which is where Steven first said "smooth" (rc7) turned into "choppier". **Not measured together** (no combined knob): expected to land near the depth-off Classic floor. Fix candidates, for Christian's call: (a) Detail's action buttons `.bordered` (the leg-4 look) and the tile lift without its shadow; (b) keep the glass row, drop the shadow only; (c) keep both and accept the page as GPU-bound. Steven's own "sidebar off + depth off = much smoother" fits the glass row too (the rail is glass).
