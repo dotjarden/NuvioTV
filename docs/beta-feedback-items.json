@@ -1,6 +1,6 @@
 {
   "_about": "Machine-readable mirror of docs/beta-feedback-tracker.md for the NuvioTV Tester Feedback dashboard. One row per tracker ID. Maintained by the beta-feedback sweep (see docs/beta-feedback-sweep-instructions.md §3). Allowed values: stage = Open | Released | Closed, no fix; tester (when stage=Open) = Not started | Waiting on reporter | Reopened after fix | Researched, not built; tester (when stage=Released) = Confirmed by tester | Partly confirmed | Awaiting tester | In-house only | Closed unconfirmed; tester (when stage=Closed, no fix) = Not a bug / declined / superseded | Duplicate of <ID>.",
-  "generated": "2026-10-23T16:45:00Z",
+  "generated": "2026-10-23T19:25:00Z",
   "source": "docs/beta-feedback-tracker.md",
   "rows": [
     {
@@ -3521,7 +3521,7 @@
       "build": "",
       "reporter": "GitHub (erdist)",
       "first_seen": "2026-10-23",
-      "summary": "Up Next in Continue Watching after an episode ends (reporter's patch); ADOPTED 2026-10-23, patch review next."
+      "summary": "Up Next in Continue Watching after an episode ends (erdist's patch, reviewed): on the tip 2026-10-23, not cut; unaired episodes dropped until they air."
     }
   ]
 }

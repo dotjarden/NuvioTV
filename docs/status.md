@@ -7,6 +7,7 @@ Later cuts not recorded in these notes: the submodule carries tags `tvos-v0.3.0-
 ## Releases
 
 - **beta.19** — RELEASED 2026-10-22 (build 144, `0cf4a29eb`, tag `tvos-v0.3.0-beta.19`, both repos, Latest): the first public build since beta.18; rc1–rc11 + Wave 3 + BUG-221 + D9 + Wave 4a; notes `docs/comms-beta19-highlights.md`; README + 15 screenshots; comms SENT 2026-10-22 21:47–21:49Z on Christian's go (`docs/comms-beta19-release-2026-10-22.md`: Steven DM, Reddit block + comment `19ri44khett34`, GitHub #5 / #7 / #8 / #9 / #10, #7 / #8 / #9 closed).
+- **FEAT-85 Up Next LANDED 2026-10-23 ~19:25Z, NOT cut:** `tvos-shared-extraction` `1b2fc99f3` (erdist's patch reviewed, device PASS Test 2); #11 reply drafted NOT SENT; D12 open.
 - **Wave 4 LANDED 2026-10-23 ~16:40Z, NOT cut:** `tvos-shared-extraction` `769e2c55e` (BUG-223 seed hold, BUG-215 clip, D-5/D-7/D-8, harness follow-ups: every touched leg green); device PASS Test 2 (`docs/research/wave4-device-2026-10-23/`); BUG-222 not reproduced; FEAT-85 adopt decided. Open: D-3, D-4, BUG-220, Card Depth cache, FEAT-85 patch.
 - **After beta.19, NOT cut (2026-10-22 ~23:55Z):** UI legs landed (`b9dda53c6`: verified routes, opt-in gates, DEBUG TMDB seam; full FA87 run 247 / 15 / 98, report `docs/research/ui-legs-full-run-2026-10-22/README.md`); BUG-190 reopened + fixed (`0c5f852c6`, device PASS Test 2); D16 leg to the rc8 rule; `tvos-shared-extraction` = `78b83c261`, outer pointer bumped.
 
