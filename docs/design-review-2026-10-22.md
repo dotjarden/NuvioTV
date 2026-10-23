@@ -42,3 +42,6 @@ The Cinematic action row is Liquid Glass (`a13`): on the box it is the larger ha
 - Every surface was captured on the Release build after BUG-221's fix; the first Release of `fccfabb3b` crashed on Home (see the tracker).
 - `@AppStorage<Bool>` ignores `YES` / `NO` launch arguments and honours `1` / `0` (`scripts/device` note in memory `rig-lessons-2026-10-21`). The first half of the session ran the Bool settings at Test 2's stored values; the cited shots are from the numeric-arg launches except the rail set (String args, unaffected).
 - The critique is the session's own read (Opus-class), not a separate agent's; Christian's walkthrough on the TV is the second eye the plan asks for.
+
+
+**Status 2026-10-23 ~00:30Z (Wave 4 held until the watch ends):** D-5, D-7 and D-8 are fixed on the parked `claude/wave4` (`f2b6c5c0b`, `09ab38b69`, `a86d7caab`; gate green, not merged). D-4 is diagnosed (the hero surface is revealed on the resume remount before its first frame; gate the reveal on `isReadyForDisplay`, device-verified) and D-3 needs per-row geometry near the band or a scroll inset; both wait for Wave 4. D-6 and D-9 unchanged.

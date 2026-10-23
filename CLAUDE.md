@@ -35,7 +35,7 @@ All device testing runs in the app's **"Test" profile** ("Test 2" on the Living 
 - Outer `origin` carries `main`; cloud sweeps leave `claude/*` branches behind: delete each once it is an ancestor of `main` (one left 2026-10-22: `claude/kind-hypatia-d0wvc0`, not yet in `main`). Steady state is `main` only.
 - Submodule `origin` holds `tvos-shared-extraction` and `cmp-rewrite` (stale mirror). Fork tags are `tvos-*`; never push upstream's `0.x` tags.
 - Never `git worktree add`/`remove` on the submodule (`core.worktree` resolves back to `.git/modules/NuvioMobile`); a stray one is removed with `rm -rf` + `git worktree prune`. Isolated work goes in a clone `~/Claude/Projects/NuvioMobile-<task>`, landed with `git fetch <clone> <branch>:<branch>`; in a clone MPVKit is a symlink over the gitlink, so stage by explicit paths, never `git add -A`.
-- Side clones now: none (the Wave 3 clones were deleted 2026-10-22 after the merge); delete each once its branch is fast-forwarded in.
+- Side clones now: `NuvioMobile-harness` (`claude/harness-w4`, UI-test harness follow-ups, PARKED 2026-10-23 while Wave 4 is held); the main checkout also carries the parked local branch `claude/wave4` (`a86d7caab`). Delete each once its branch is fast-forwarded in.
 - Commit the `docs/*.md` the checks and sweeps write.
 
 ## Reddit DM check (standing, 2026-10-08)
