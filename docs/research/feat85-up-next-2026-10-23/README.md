@@ -3,8 +3,9 @@
 2026-10-23. Christian adopted the reporter's request: Home's Continue Watching row offers the next episode once one is finished, as the phone app does. This reverses the earlier "tvOS deliberately has no Up Next row" decision.
 
 - Branch: `claude/feat85-up-next` in the clone `~/Claude/Projects/NuvioMobile-feat85`, cut from `tvos-shared-extraction` `769e2c55e`.
-- Tip: `509ad38f4`. Not pushed, not merged.
-- Review of `096a000a2` came back NOT CLEAN (four P2s, two P3s). The coordinator's device check of that build in Test 2 passed: cards appear, the hold menu is right, Go to Details is right, Remove is immediate. The six fixes below are not device-checked yet.
+- Tip: `28806f7d6`. Not pushed, not merged.
+- Review of `096a000a2` came back NOT CLEAN (four P2s, two P3s). The coordinator's device check of that build in Test 2 passed: cards appear, the hold menu is right, Go to Details is right, Remove is immediate.
+- Re-review of `509ad38f4` came back NOT CLEAN (one P2, three P3s); fixed in round 2 below. Neither round's fixes are device-checked yet.
 
 | Commit | What |
 |---|---|
@@ -18,6 +19,10 @@
 | `7f21be867` | review P2-4: Mark Episode Watched moves Up Next on under Trakt |
 | `ba7f672f4` | review P3-1: a pipeline's first refresh skips the debounce |
 | `509ad38f4` | review P3-2: the seed scan is reused when its inputs did not change |
+| `24d980533` | round 2 P2-1: an unaired verdict is cached only until the release instant |
+| `621069baf` | round 2 P3-1: only the delayed Trakt refetch runs after a mark |
+| `a591544f2` | round 2 P3-2: unmarking drops the temporary Trakt mark seed |
+| `28806f7d6` | round 2 P3-3: `NextUpEngine` under test, `NextUpRefreshPacing` extracted, comment fixed |
 
 ## What the patch did
 
@@ -55,7 +60,7 @@
 - **P2-1, Remove on a progress card.** Example: E3 finished, E4 half watched, user removes E4. `clearProgress` dropped E4 only, and about 1.5 s later "Up Next · S01E04" appeared. Remove on a series' progress card now also adds the synced dismiss key for the seed its removal would uncover (`nextUpSeedAfterRemoval`), before the clear. So the series leaves the row.
   - Which phone behaviour this matches: the phone's Remove calls `removeProgress(contentId)`, which drops every progress row of the series. Its watched history survives (finishing E3 wrote it), and by its code the phone can rebuild the same Up Next from that history.
   - Copying the phone would therefore not reliably empty the row, and it would delete the whole series' playback history remotely under a tracker. I kept tvOS's episode-level clear and added the dismissal. Both devices then hide that Up Next (the key is synced), and the series returns once a later episode is finished or any episode is played.
-- **P2-2, unaired episodes.** The next episode's `MetaVideo` is looked up (`nextUpVideoFor`, mobile's `videoForSeriesAction` order). One that has not aired by today gets no card on tvOS; the Upcoming row already lists it with its date. This is one switch: `ContinueWatchingUnairedNextUpPolicy` in `ContinueWatchingNextUp.kt`.
+- **P2-2, unaired episodes.** The next episode's `MetaVideo` is looked up (`nextUpVideoFor`, mobile's `videoForSeriesAction` order). One that has not aired gets no card on tvOS (by release instant since round 2); the Upcoming row already lists it with its date. This is one switch: `ContinueWatchingUnairedNextUpPolicy` in `ContinueWatchingNextUp.kt`.
   - `Drop` (now): no card.
   - `LabelAirDate` (for Christian to choose later): keeps the card, which should then read "Airs <date>" and open Detail on press. Flipping the constant alone keeps the card with today's badge and stream-picker press. The badge and the Detail route are Swift work in `ContinueWatchingRow` / `HomeRowActions`, plus a way to carry the air date to Swift (for example a videoId → date map like the dismiss-key map). That work has to land with the flip.
 - **P2-3, profile switch.**
@@ -75,20 +80,56 @@
 
 Kept from the patch: the seed rules, the dismiss key (`nextUpDismissKey(seriesId, seedSeason, seedEpisode)`, the same key mobile writes), the synthetic-entry approach, the 20-series cap, the 1.5 s debounce, the triggers, the badge text and the Remove routing.
 
+## Review round 2 fixes (on `509ad38f4`)
+
+- **P2-1, unaired verdict cached all day.** The air check compared the exact release instant, but the "no card" result was cached under a key that only changes with the local date. Two cases stayed hidden until local midnight:
+  - a show out at 2026-10-24T01:00Z, checked at 20:00 EDT on the 23rd;
+  - a date-only "released today" checked on a UTC+ morning, before the parsed instant.
+
+  The fix: `nextUpAirCheck` returns the release instant with an unaired verdict, and the cached result is used only until then. The first refresh after it resolves the series again. A refresh needs a trigger; there is no timer at the release instant.
+- **`available = false` (decision).** Round 1's check used `MetaVideo.isReleasedBy`, which also drops an aired episode whose `available` flag is false. Mobile surfaces such an episode (`shouldSurfaceNextEpisode`), and `seriesPrimaryAction` has already applied the flag when picking the episode. So the check now reads the release date only and matches mobile. If an aired-but-unavailable episode turns out to open an empty picker on device, a one-line change in `nextUpAirCheck` drops it again.
+- **P3-1, Trakt refetch.** The immediate forced refetch ran before `markWatched` had pushed the history. While it was still in flight, Trakt's in-flight guard turned the useful 5 s call into a no-op. Only the delayed call is made now.
+- **P3-2, unmark.** `WatchedRepository.unmarkWatched` (every overload funnels into the collection one) now calls `ContinueWatchingNextUp.onUnmarkedWatched`. That drops the matching Trakt mark seeds: the episode, or every mark for the show on a whole-show unmark.
+- **P3-3, tests and comment.**
+  - The stateful half of `ContinueWatchingNextUp` is now an internal `NextUpEngine` with its outside world injected; the object is just the production wiring. Behaviour is unchanged.
+  - `NextUpEngineTest` (9 cases) covers:
+    - the result cache;
+    - the unaired drop inside the resolve and its recheck at the release instant (dated, and date-only in whatever zone the run uses);
+    - the generation guard across a reset during a fetch;
+    - stage-1 hits and misses, including the Trakt minute bucket;
+    - the dismissal written before `clearProgress`;
+    - a plain Up Next Remove;
+    - `noteMarkedWatched` source gating and its single delayed refetch;
+    - mark and unmark moving Up Next under Trakt.
+  - Swift: the first-refresh rule is `NextUpRefreshPacing` (`NextUpRefreshPacingTests`, 4 cases).
+  - The comment now says the fast path works because the attach-time replays are queued FIFO on `Dispatchers.Main` ahead of the task's first run, not because they share one main-actor turn.
+  - The view model is no longer held strongly across the resolve.
+
 ## Design as landed (ten lines)
 
 1. Triggers: progress, active-source, Trakt days-cap, watched-history and CW-preference emissions. Each calls `HomeViewModel.scheduleNextUpRefresh()`: the first refresh of a pipeline runs at once, later ones after a 1.5 s debounce.
 2. `ContinueWatchingNextUp.resolveEntries` moves to `Dispatchers.Default` and runs one refresh at a time.
-3. Stage 1 seeds: the latest finished episode per series (furthest or latest, from the synced preference), from progress plus history. Under Trakt, history is replaced by marks made from Continue Watching in the last 30 minutes. A series with an in-progress episode at least as recent is dropped. Stage 1 is reused while its inputs are unchanged.
+3. Stage 1 seeds: the latest finished episode per series (furthest or latest, from the synced preference), from progress plus history. Under Trakt, history is replaced by marks made from Continue Watching in the last 30 minutes (an unmark drops its mark). A series with an in-progress episode at least as recent is dropped. Stage 1 is reused while its inputs are unchanged.
 4. Stage 2: drop provider-hidden shows, anything outside the Trakt window and dismissed keys. At most 20 seeds, newest first.
 5. Each seed resolves through the memo (keyed by profile, source, seed, prefs and date), or else through `MetaDetailsRepository.fetch(cacheResult = false)` (four at a time) followed by the shared `seriesPrimaryAction` with the seed's content ref.
-6. No card when: the action is a resume, there is no next episode, the next episode is the seed itself, there is no matching video, or the episode has not aired (`UnairedNextUpPolicy.Drop`). Otherwise the card is a position-0 `WatchProgressEntry` with source `nuvio_next_up`, dated from the seed.
+6. No card when: the action is a resume, there is no next episode, the next episode is the seed itself, there is no matching video, or the episode's release instant is still ahead (`UnairedNextUpPolicy.Drop`; that verdict is reused only until the instant). Otherwise the card is a position-0 `WatchProgressEntry` with source `nuvio_next_up`, dated from the seed.
 7. Home merges the cards into the provider-aware row: one card per series, the newer one wins, in-progress wins a tie.
 8. A card plays through the existing `ResumeTarget` / stream picker path from 0. Its progress then replaces the card.
 9. Remove dismisses an Up Next card, or on a series' progress card dismisses the Up Next it uncovers. Keys are profile-synced, and playing any episode of the series clears them (existing `WatchProgressRepository.upsert` rule).
 10. Nothing persisted. The memo, keys and Trakt marks are in memory, reset on a profile switch and wiped with the account.
 
 ## Gates
+
+Round 2 (tip `28806f7d6`):
+
+| Gate | Result |
+|---|---|
+| `:shared:jvmTest` | 1640 tests, 0 failures (`ContinueWatchingNextUpTest` 30, `NextUpEngineTest` 9) |
+| `:shared:tvosSimulatorArm64Test` | 1660 tests, 0 failures |
+| `:composeApp:iosSimulatorArm64Test` | 438 tests, 0 failures |
+| Release sim build (FA87 id) | BUILD SUCCEEDED |
+| NuvioTVTests | 2324 executed, 5 skipped, 0 failures (`NextUpRefreshPacingTests` 4/4) |
+| UI: `BatchAHomeReturnUITests` + `HomeBodyCountUITests` | 11/11 passed |
 
 Round 1 (tip `509ad38f4`, after the review fixes):
 
@@ -133,7 +174,8 @@ Round 1 re-check (fixes since the passed check of `096a000a2`):
 - P2-1: finish E3, play part of E4, back out, then Remove the E4 progress card. The series leaves the row and no "Up Next · S01E04" appears after 2 s. Finishing E4 later brings the series back as Up Next E5.
 - P2-2: a caught-up show whose next episode has not aired gets no card. Upcoming still lists the episode.
 - P2-3: switch profiles (Test → another and back). The other profile shows none of Test's Up Next cards, and Test's return straight away.
-- P2-4 (only if the Test profile has Trakt connected and set as source): Mark Episode Watched on an Up Next card moves it to the next episode within about 2 s, and it stays there after the next Trakt sync.
+- P2-4 (only if the Test profile has Trakt connected and set as source): Mark Episode Watched on an Up Next card moves it to the next episode within about 2 s, and it stays there after the next Trakt sync. Unmarking that episode (Detail's episode hold menu) within 30 minutes moves the card back.
+- Round 2 P2-1 (when a followed show airs during the session, otherwise skip): before the release time there is no card; after it, any Home trigger brings the card the same evening.
 - P3-1: launch to Home with a caught-up profile. The Continue Watching row and the hero panel show their final first card without a visible swap after about 1.5 s.
 
 Fixture note: Up Next now builds cards from finished episodes. Any fixture or tester profile with a finished episode (the rig's Test / Test 2 profiles, a DEBUG Continue Watching seed with `positionMin` near `durationMin`) now grows Up Next cards in Continue Watching. Walks that count CW cards or expect a fixed first card need that in mind. The FA87 guest fixture has no watch history, so the UI legs are unaffected.
