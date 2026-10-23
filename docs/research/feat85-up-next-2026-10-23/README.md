@@ -3,9 +3,10 @@
 2026-10-23. Christian adopted the reporter's request: Home's Continue Watching row offers the next episode once one is finished, as the phone app does. This reverses the earlier "tvOS deliberately has no Up Next row" decision.
 
 - Branch: `claude/feat85-up-next` in the clone `~/Claude/Projects/NuvioMobile-feat85`, cut from `tvos-shared-extraction` `769e2c55e`.
-- Tip: `28806f7d6`. Not pushed, not merged.
+- Tip: `1b2fc99f3`. Not pushed, not merged.
 - Review of `096a000a2` came back NOT CLEAN (four P2s, two P3s). The coordinator's device check of that build in Test 2 passed: cards appear, the hold menu is right, Go to Details is right, Remove is immediate.
-- Re-review of `509ad38f4` came back NOT CLEAN (one P2, three P3s); fixed in round 2 below. Neither round's fixes are device-checked yet.
+- Re-review of `509ad38f4` came back NOT CLEAN (one P2, three P3s); fixed in round 2 below.
+- Pass 3 on `28806f7d6` came back NOT CLEAN (one P2, three P3s); fixed in pass 3 below, the final round. None of the fixes since `096a000a2` are device-checked yet.
 
 | Commit | What |
 |---|---|
@@ -23,6 +24,10 @@
 | `621069baf` | round 2 P3-1: only the delayed Trakt refetch runs after a mark |
 | `a591544f2` | round 2 P3-2: unmarking drops the temporary Trakt mark seed |
 | `28806f7d6` | round 2 P3-3: `NextUpEngine` under test, `NextUpRefreshPacing` extracted, comment fixed |
+| `fc47ecbb9` | pass 3 P2-1: with "Show unaired next up" off, "no card" is rechecked at the next release |
+| `7d044c917` | pass 3 P3-1: a refresh reads its inputs inside the lock, after the generation |
+| `415d5e522` | pass 3 P3-2: the reset test re-resolves for the same profile |
+| `1b2fc99f3` | pass 3 P3-3: `NextUpRefreshScheduler` extracted; its ordering rule is under test |
 
 ## What the patch did
 
@@ -105,20 +110,45 @@ Kept from the patch: the seed rules, the dismiss key (`nextUpDismissKey(seriesId
   - The comment now says the fast path works because the attach-time replays are queued FIFO on `Dispatchers.Main` ahead of the task's first run, not because they share one main-actor turn.
   - The view model is no longer held strongly across the resolve.
 
+## Review pass 3 fixes (on `28806f7d6`)
+
+- **P2-1, unaired cache with "Show unaired next up" off.** With the preference off, `seriesPrimaryAction` itself returns nothing for a caught-up show whose next episode has not aired. The air check was never reached, and the "no card" stuck under the date key until local midnight.
+  - That result now carries a recheck instant: the earliest future release among the main-season episodes after the seed (`nextFutureReleaseAfterSeed`).
+  - Engine tests: with the preference off, the verdict is reused before the instant and resolved again after it; an aired next episode still gets its card.
+  - `seriesPrimaryAction` reads the real clock, so that test uses a far-future date to check the recheck rather than the card after it.
+- **P3-1, generation guard.** `currentInputs()` was read before the `withContext` hop and the refresh lock, while the generation was read only after the lock. A refresh queued behind a slow one could therefore carry the outgoing profile's inputs past a `reset()`.
+  - `NextUpEngine.resolve` now takes the inputs as a function and reads them inside the lock, after the generation.
+  - Test: a refresh queued across a reset reads the new profile and leaves only its dismiss key.
+- **P3-2, reset test.** The "nothing cached" check now re-resolves for the same profile. A different profile could never hit the old key anyway.
+- **P3-3, scheduling order under test.** The refresh scheduling is now `NextUpRefreshScheduler` (debounce injectable); `HomeViewModel` keeps only the refresh body.
+  - `NextUpRefreshPacingTests` checks that one trigger plus replays queued FIFO on the main queue behind it runs exactly one refresh before the debounce. Without the yield that test fails with two runs.
+  - It also checks that later triggers wait the debounce and coalesce, and that a reset cancels the pending refresh and restores the fast path.
+
 ## Design as landed (ten lines)
 
 1. Triggers: progress, active-source, Trakt days-cap, watched-history and CW-preference emissions. Each calls `HomeViewModel.scheduleNextUpRefresh()`: the first refresh of a pipeline runs at once, later ones after a 1.5 s debounce.
-2. `ContinueWatchingNextUp.resolveEntries` moves to `Dispatchers.Default` and runs one refresh at a time.
+2. `ContinueWatchingNextUp.resolveEntries` moves to `Dispatchers.Default`. `NextUpEngine` runs one refresh at a time and reads the repositories' state inside its lock, after the generation.
 3. Stage 1 seeds: the latest finished episode per series (furthest or latest, from the synced preference), from progress plus history. Under Trakt, history is replaced by marks made from Continue Watching in the last 30 minutes (an unmark drops its mark). A series with an in-progress episode at least as recent is dropped. Stage 1 is reused while its inputs are unchanged.
 4. Stage 2: drop provider-hidden shows, anything outside the Trakt window and dismissed keys. At most 20 seeds, newest first.
 5. Each seed resolves through the memo (keyed by profile, source, seed, prefs and date), or else through `MetaDetailsRepository.fetch(cacheResult = false)` (four at a time) followed by the shared `seriesPrimaryAction` with the seed's content ref.
-6. No card when: the action is a resume, there is no next episode, the next episode is the seed itself, there is no matching video, or the episode's release instant is still ahead (`UnairedNextUpPolicy.Drop`; that verdict is reused only until the instant). Otherwise the card is a position-0 `WatchProgressEntry` with source `nuvio_next_up`, dated from the seed.
+6. No card when: the action is a resume, there is no next episode, the next episode is the seed itself, there is no matching video, or the episode's release instant is still ahead (`UnairedNextUpPolicy.Drop`). Either kind of "no card" for an unaired episode, from the air check or from `seriesPrimaryAction` with "Show unaired next up" off, is reused only until the release instant. Otherwise the card is a position-0 `WatchProgressEntry` with source `nuvio_next_up`, dated from the seed.
 7. Home merges the cards into the provider-aware row: one card per series, the newer one wins, in-progress wins a tie.
 8. A card plays through the existing `ResumeTarget` / stream picker path from 0. Its progress then replaces the card.
 9. Remove dismisses an Up Next card, or on a series' progress card dismisses the Up Next it uncovers. Keys are profile-synced, and playing any episode of the series clears them (existing `WatchProgressRepository.upsert` rule).
 10. Nothing persisted. The memo, keys and Trakt marks are in memory, reset on a profile switch and wiped with the account.
 
 ## Gates
+
+Pass 3 (tip `1b2fc99f3`, final):
+
+| Gate | Result |
+|---|---|
+| `:shared:jvmTest` | 1644 tests, 0 failures (`ContinueWatchingNextUpTest` 31, `NextUpEngineTest` 12) |
+| `:shared:tvosSimulatorArm64Test` | 1664 tests, 0 failures |
+| `:composeApp:iosSimulatorArm64Test` | 438 tests, 0 failures |
+| Release sim build (FA87 id) | BUILD SUCCEEDED |
+| NuvioTVTests | 2324 executed, 5 skipped, 0 failures (`NextUpRefreshPacingTests` 4/4, now scheduler tests) |
+| UI: `BatchAHomeReturnUITests` + `HomeBodyCountUITests` | 11/11 passed |
 
 Round 2 (tip `28806f7d6`):
 
