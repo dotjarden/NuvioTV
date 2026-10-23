@@ -49,3 +49,5 @@ The Cinematic action row is Liquid Glass (`a13`): on the box it is the larger ha
 **Status 2026-10-23 ~16:45Z:** D-5, D-7, D-8 MERGED (`769e2c55e`, not cut) and device-checked in Test 2 (`docs/research/wave4-device-2026-10-23/README.md`). D-3 and D-4 still open.
 
 **Status 2026-10-23 ~19:35Z:** D-4 not reproduced on the Wave 4 tip in Test 2 (still up after the cover, no resume gap; `docs/research/wave4-device-2026-10-23/README.md`); stays P3 on the D9 shots. D-3 in progress (agent).
+
+**Status 2026-10-23 ~22:15Z:** D-3 MERGED (`61fd98c1c`, not cut) and device-checked in Test 2 (The Simpsons: hidden with the Parental Guide heading in the band, back at the next rest); lead-only limit recorded as D13. D-4 not reproduced (stays P3 on the D9 shots).

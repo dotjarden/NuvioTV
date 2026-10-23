@@ -21,3 +21,12 @@ Rig notes: the DEBUG collections seed and the deep link work on the box; Select 
 | D-4 | Sheriff Country Detail with both trailer settings on: let the cover auto-play, Menu, shots at +2.3 s and +7.6 s | **NOT REPRODUCED**: the still is up at both marks, no black; the background trailer did not resume after the cover (`bridge phase=idle` at 06.06, no hero `attach` after it), so there was no resume gap to see. The D9 sighting (look B, 2–6 s black) stays the only evidence; D-4 stays open at P3 with its diagnosis in the plan | `d4-after-cover-2s` |
 
 The `atv.sh press menu` single press did not register during a full-screen trailer; `atv.sh seq menu` did.
+
+## Evening (Debug builds of the two branches, Test 2)
+
+| Item | Check | Result | Shot |
+|---|---|---|---|
+| D-3 (`cdc48237d`) | The Simpsons Cinematic by deep link, TMDB on, trailers off, Down one rest at a time | **PASS**: Down 1–2 the hero is not gone yet (no logo, by FEAT-60); Down 3 rests the Parental Guide heading at ~54 pt, inside the band, and the compact logo is gone; Down 4 (cast) clears it and the logo is back, over the season labels (the lead-only limit) | `d3-pg-in-band-logo-hidden`, `d3-next-rest-logo-shown` |
+| BUG-220 (`a89835ee`) | Pass A: Lizzie Borden 1080p on the native player ~2 min, Menu, console | **NOT DRIVABLE on this profile**: no Trakt line at all during the play or the exit, so Test 2 has no Trakt connection now and the queue path never runs (stops from profiles without Trakt are sent but not queued). The local position moved 1h 29m → 1h 23m left. Companion Menu did exit the native player this time. Pass A/B stay owed to a Test-profile session with Trakt connected (a PIN sign-in Christian would have to do) | `bug220-after-native-exit` |
+
+Rig notes: `devicectl install` failed once with error 12040 (developer disk image) and once with a tunnel error; the retry worked each time. A fresh clone needs `iosApp/build/logs/` before the device build log can be written.
