@@ -217,7 +217,7 @@ Fixture note: Up Next now builds cards from finished episodes. Any fixture or te
 3. **Settings rows.** Should tvOS show the two synced Up Next toggles in Settings? That would need two new catalog strings.
 4. **Localization.** The `Up Next · %@` key needs adding to the catalog.
 
-## GitHub #11 reply (NOT SENT)
+## GitHub #11 reply (SENT 2026-10-24 ~00:55Z on Christian's go: https://github.com/youngchris29-art/NuvioTV/issues/11#issuecomment-6377636903)
 
 Copy rule: `deslop.py` 5/5 CLEAN, 111 words. Revised after review round 1: unaired episodes now stay in Upcoming, so the line about "Show unaired next up" was dropped. The rival-model cleanse (`cleanse.sh`) exited 1 with no output (Codex quota is out until 10-29), so it was not cleansed.
 
