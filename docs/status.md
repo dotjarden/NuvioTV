@@ -7,6 +7,7 @@ Later cuts not recorded in these notes: the submodule carries tags `tvos-v0.3.0-
 ## Releases
 
 - **beta.19** — RELEASED 2026-10-22 (build 144, `0cf4a29eb`, tag `tvos-v0.3.0-beta.19`, both repos, Latest): the first public build since beta.18; rc1–rc11 + Wave 3 + BUG-221 + D9 + Wave 4a; notes `docs/comms-beta19-highlights.md`; README + 15 screenshots; comms SENT 2026-10-22 21:47–21:49Z on Christian's go (`docs/comms-beta19-release-2026-10-22.md`: Steven DM, Reddit block + comment `19ri44khett34`, GitHub #5 / #7 / #8 / #9 / #10, #7 / #8 / #9 closed).
+- **D8 executed 2026-10-24 ~01:35Z:** BUG-62 / 97 / 120 closed no-response; #4 closed on Christian's go. GitHub open: #5, #10 (comment at the next cut), #11 (replied).
 - **GitHub table swept 2026-10-24 ~01:20Z:** #6 re-ask posted (BUG-172), #3 closed (BUG-66 closed on Christian's clean beta.19 Tabs evening). Open: #4, #5, #10 (comment when BUG-215's fix ships), #11 replied.
 - **Open-items plan 2026-10-21 CLOSED OUT 2026-10-24 ~00:55Z:** D12 b–d + D13 kept as landed, BUG-220 closed on unit + sim proof, FEAT-85 reply posted on #11 (Christian's go). Nothing cut since beta.19; watch to 10-25 ~21:31Z.
 - **Card Depth cache LANDED 2026-10-24 ~00:35Z, NOT cut:** `tvos-shared-extraction` `888961236` (BUG-221 root cause = GeometryReader size read in the overlay; bitmaps back; device PASS Release Test 2). BUG-224 filed (MKV remux CPU). All plan engineering items on the tip.

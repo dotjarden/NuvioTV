@@ -1,6 +1,6 @@
 {
   "_about": "Machine-readable mirror of docs/beta-feedback-tracker.md for the NuvioTV Tester Feedback dashboard. One row per tracker ID. Maintained by the beta-feedback sweep (see docs/beta-feedback-sweep-instructions.md §3). Allowed values: stage = Open | Released | Closed, no fix; tester (when stage=Open) = Not started | Waiting on reporter | Reopened after fix | Researched, not built; tester (when stage=Released) = Confirmed by tester | Partly confirmed | Awaiting tester | In-house only | Closed unconfirmed; tester (when stage=Closed, no fix) = Not a bug / declined / superseded | Duplicate of <ID>.",
-  "generated": "2026-10-24T01:20:00Z",
+  "generated": "2026-10-24T01:35:00Z",
   "source": "docs/beta-feedback-tracker.md",
   "rows": [
     {
@@ -667,12 +667,12 @@
       "id": "BUG-62",
       "kind": "Bug",
       "priority": "P2",
-      "stage": "Open",
+      "stage": "Closed",
       "tester": "Waiting on reporter",
       "build": "",
       "reporter": "u/StudioKentin",
       "first_seen": "2026-08-13",
-      "summary": "QUESTIONS RE-ASKED PUBLICLY (p6fempv): Christian's beta.15 announcement reply tells u/StudioKentin \"the questions from the 13th still stand whenever you get a moment…"
+      "summary": "QUESTIONS RE-ASKED PUBLICLY (p6fempv): Christian's beta.15 announcement reply tells u/StudioKentin \"the questions from the 13th still stand whenever you get a moment…; closed no-response 2026-10-24 (D8), reopens on any reply."
     },
     {
       "id": "BUG-63",
@@ -1052,12 +1052,12 @@
       "id": "BUG-97",
       "kind": "Bug",
       "priority": "P1",
-      "stage": "Open",
+      "stage": "Closed",
       "tester": "Waiting on reporter",
       "build": "",
       "reporter": "u/napes22",
       "first_seen": "2026-09-05",
-      "summary": "first report): \"I keep getting playback failed on all streams."
+      "summary": "first report): \"I keep getting playback failed on all streams; closed no-response 2026-10-24 (D8), reopens on any reply."
     },
     {
       "id": "BUG-98",
@@ -1283,12 +1283,12 @@
       "id": "BUG-120",
       "kind": "Bug",
       "priority": "P2",
-      "stage": "Open",
+      "stage": "Closed",
       "tester": "Waiting on reporter",
       "build": "",
       "reporter": "GitHub (mikeyunk)",
       "first_seen": "2026-09-29",
-      "summary": "The Xperience addon does not work."
+      "summary": "The Xperience addon does not work; closed no-response 2026-10-24 (D8), #4 closed, reopens on any reply."
     },
     {
       "id": "BUG-121",
