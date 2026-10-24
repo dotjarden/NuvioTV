@@ -30,3 +30,12 @@ The `atv.sh press menu` single press did not register during a full-screen trail
 | BUG-220 (`a89835ee`) | Pass A: Lizzie Borden 1080p on the native player ~2 min, Menu, console | **NOT DRIVABLE on this profile**: no Trakt line at all during the play or the exit, so Test 2 has no Trakt connection now and the queue path never runs (stops from profiles without Trakt are sent but not queued). The local position moved 1h 29m → 1h 23m left. Companion Menu did exit the native player this time. Pass A/B stay owed to a Test-profile session with Trakt connected (a PIN sign-in Christian would have to do) | `bug220-after-native-exit` |
 
 Rig notes: `devicectl install` failed once with error 12040 (developer disk image) and once with a tunnel error; the retry worked each time. A fresh clone needs `iosApp/build/logs/` before the device build log can be written.
+
+## Night: Card Depth raster cache (Release `9adbb299`, Test 2)
+
+| Item | Check | Result | Shot |
+|---|---|---|---|
+| Card Depth cache (BUG-221 class) | Release build, Card Depth already ON in Test 2 (synced): Stage Home for several minutes incl. the Appearance walk and the Up Next publish; Classic Home (`-home_layout classic`) 30 s with Down/Right/Up moves | **PASS**: no crash on either layout (the 10-22 rendering died within ~2 s of Home); rails on the unfocused cards, none on the focused one; `devicectl` crash logs for today hold no NuvioTV crash | `carddepth-release-stage-home`, `carddepth-release-classic-30s` |
+| Observation | the only NuvioTV report on the box today: `NuvioTV.cpu_resource-2026-10-23-165533.ips`, bug_type 202 "cpu usage": 90 s CPU over 147 s (61 %) during the 20:53–20:55Z native playback of the Lizzie Borden 7.9 GB x264 MKV (the remux path) | filed as BUG-224 (P4, in-house): the native MKV remux's steady CPU draw on the box | — |
+
+The TV had woken into tvOS's own user picker (remote-only) and cleared it by itself ~20 min later; `-debug.rememberLastProfile` is DEBUG-only, so the Release build auto-entered the last profile (Test 2).

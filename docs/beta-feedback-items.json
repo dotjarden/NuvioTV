@@ -1,6 +1,6 @@
 {
   "_about": "Machine-readable mirror of docs/beta-feedback-tracker.md for the NuvioTV Tester Feedback dashboard. One row per tracker ID. Maintained by the beta-feedback sweep (see docs/beta-feedback-sweep-instructions.md §3). Allowed values: stage = Open | Released | Closed, no fix; tester (when stage=Open) = Not started | Waiting on reporter | Reopened after fix | Researched, not built; tester (when stage=Released) = Confirmed by tester | Partly confirmed | Awaiting tester | In-house only | Closed unconfirmed; tester (when stage=Closed, no fix) = Not a bug / declined / superseded | Duplicate of <ID>.",
-  "generated": "2026-10-23T22:15:00Z",
+  "generated": "2026-10-24T00:35:00Z",
   "source": "docs/beta-feedback-tracker.md",
   "rows": [
     {
@@ -3466,7 +3466,7 @@
       "build": "beta.19",
       "reporter": "In-house (rig)",
       "first_seen": "2026-10-22",
-      "summary": "The merged Wave 3 tip crashes seconds after Home on the Apple TV with Card Depth on (raster-cache rendering); never shipped, fix on claude/bug221."
+      "summary": "Merged Wave 3 tip crashed on Home with Card Depth on (raster cache); live layers shipped in beta.19; root cause found and the cache revived on the tip 2026-10-24, not cut."
     },
     {
       "id": "UX-18",
@@ -3522,6 +3522,17 @@
       "reporter": "GitHub (erdist)",
       "first_seen": "2026-10-23",
       "summary": "Up Next in Continue Watching after an episode ends (erdist's patch, reviewed): on the tip 2026-10-23, not cut; unaired episodes dropped until they air."
+    },
+    {
+      "id": "BUG-224",
+      "kind": "Bug",
+      "priority": "P4",
+      "stage": "Open",
+      "tester": "",
+      "build": "",
+      "reporter": "In-house (box report)",
+      "first_seen": "2026-10-24",
+      "summary": "Native player MKV remux draws ~60 % CPU for the whole playback (tvOS cpu_resource report); measure on Release."
     }
   ]
 }
