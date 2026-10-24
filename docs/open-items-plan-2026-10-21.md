@@ -1,5 +1,7 @@
 # Open items to public beta.19 — consolidated plan (2026-10-21 evening) — APPROVED 2026-10-21 — **beta.19 RELEASED 2026-10-22 (build 144)** (Christian: "complete the plan"; D1 yes, D2 after beta.19, D3 keep Square, D5 magnifier only; D4, D6, D7, D8 at their defaults)
 
+> **PLAN COMPLETE — declared by Christian 2026-10-24 ~01:45Z.** Every row is landed, decided, closed or posted (tip `888961236`, nothing cut since beta.19). Carried forward, outside this plan: the 72-hour watch to 2026-10-25 ~21:31Z (scheduled sweeps), Steven's owed items, #5 / #6 reporters' answers, the #10 comment and FEAT-85's ship at the next cut (only on his go), BUG-224 (P4).
+
 One plan over everything still open: the Wave 3 work waiting on the box, Steven's rc11 verdict, the GitHub #9 / #10 addendum drafted in the other session (`docs/wave3-github-9-10-plan-2026-10-21.md`, NOT APPROVED there either), the older GitHub issues, and the public beta gate. It replaces nothing: the public beta plan (`docs/public-beta19-plan-2026-10-21.md`, APPROVED) stays the frame; this file is the work order inside it.
 
 ## 0. Where things stand
