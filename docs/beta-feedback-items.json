@@ -1,6 +1,6 @@
 {
   "_about": "Machine-readable mirror of docs/beta-feedback-tracker.md for the NuvioTV Tester Feedback dashboard. One row per tracker ID. Maintained by the beta-feedback sweep (see docs/beta-feedback-sweep-instructions.md §3). Allowed values: stage = Open | Released | Closed, no fix; tester (when stage=Open) = Not started | Waiting on reporter | Reopened after fix | Researched, not built; tester (when stage=Released) = Confirmed by tester | Partly confirmed | Awaiting tester | In-house only | Closed unconfirmed; tester (when stage=Closed, no fix) = Not a bug / declined / superseded | Duplicate of <ID>.",
-  "generated": "2026-10-23T12:20:00Z",
+  "generated": "2026-10-24T12:20:00Z",
   "source": "docs/beta-feedback-tracker.md",
   "rows": [
     {
@@ -667,12 +667,12 @@
       "id": "BUG-62",
       "kind": "Bug",
       "priority": "P2",
-      "stage": "Open",
+      "stage": "Closed",
       "tester": "Waiting on reporter",
       "build": "",
       "reporter": "u/StudioKentin",
       "first_seen": "2026-08-13",
-      "summary": "QUESTIONS RE-ASKED PUBLICLY (p6fempv): Christian's beta.15 announcement reply tells u/StudioKentin \"the questions from the 13th still stand whenever you get a moment…"
+      "summary": "QUESTIONS RE-ASKED PUBLICLY (p6fempv): Christian's beta.15 announcement reply tells u/StudioKentin \"the questions from the 13th still stand whenever you get a moment…; closed no-response 2026-10-24 (D8), reopens on any reply."
     },
     {
       "id": "BUG-63",
@@ -711,12 +711,12 @@
       "id": "BUG-66",
       "kind": "Bug",
       "priority": "P1",
-      "stage": "Open",
-      "tester": "Reopened after fix",
-      "build": "",
+      "stage": "Released",
+      "tester": "Closed unconfirmed",
+      "build": "beta.19",
       "reporter": "u/mrStevenx3",
       "first_seen": "2026-08-20",
-      "summary": "The top tab bar stops auto-minimizing and stays permanently visible after the app has been running a while."
+      "summary": "The top tab bar stops auto-minimizing and stays permanently visible after a while; closed 2026-10-24 after a clean beta.19 Tabs long evening, #3 closed."
     },
     {
       "id": "BUG-67",
@@ -1052,12 +1052,12 @@
       "id": "BUG-97",
       "kind": "Bug",
       "priority": "P1",
-      "stage": "Open",
+      "stage": "Closed",
       "tester": "Waiting on reporter",
       "build": "",
       "reporter": "u/napes22",
       "first_seen": "2026-09-05",
-      "summary": "first report): \"I keep getting playback failed on all streams."
+      "summary": "first report): \"I keep getting playback failed on all streams; closed no-response 2026-10-24 (D8), reopens on any reply."
     },
     {
       "id": "BUG-98",
@@ -1240,11 +1240,11 @@
       "kind": "Bug",
       "priority": "P2",
       "stage": "Released",
-      "tester": "Awaiting tester",
+      "tester": "Closed unconfirmed",
       "build": "beta.18",
       "reporter": "GitHub (dotjarden)",
       "first_seen": "2026-09-13",
-      "summary": "Home's pinned hero can regain focus while its shelf scroll view retains the previous offset, leaving the native tab bar above the screen and unreachable with Up."
+      "summary": "Home's pinned hero can strand the native tab bar off-screen; fixed from the input side in rc13, #3 closed 2026-10-24 with the Menu question never answered."
     },
     {
       "id": "BUG-117",
@@ -1283,12 +1283,12 @@
       "id": "BUG-120",
       "kind": "Bug",
       "priority": "P2",
-      "stage": "Open",
+      "stage": "Closed",
       "tester": "Waiting on reporter",
       "build": "",
       "reporter": "GitHub (mikeyunk)",
       "first_seen": "2026-09-29",
-      "summary": "The Xperience addon does not work."
+      "summary": "The Xperience addon does not work; closed no-response 2026-10-24 (D8), #4 closed, reopens on any reply."
     },
     {
       "id": "BUG-121",
@@ -2647,12 +2647,12 @@
       "id": "BUG-172",
       "kind": "Bug",
       "priority": "P2",
-      "stage": "Open",
-      "tester": "Waiting on reporter",
-      "build": "",
+      "stage": "Released",
+      "tester": "Confirmed by tester",
+      "build": "beta.19",
       "reporter": "GitHub (issue #6)",
       "first_seen": "2026-10-16",
-      "summary": "Native player: a micro-stutter with a freeze frame every 5–10 s (GitHub #6)."
+      "summary": "Native player: micro-stutter with a freeze frame every 5-10 s (GitHub #6); reporter confirmed beta.19 fixed it on a huge Dolby Vision file via TorBox."
     },
     {
       "id": "BUG-197",
@@ -3400,7 +3400,7 @@
       "build": "",
       "reporter": "GitHub (erdist)",
       "first_seen": "2026-10-21",
-      "summary": "GitHub #10: a focused Settings row is clipped at the List edge; reopened 2026-10-23 with the detail the close asked for - Settings page, Default style, simulator only, screenshot attached."
+      "summary": "Settings root (Default style, simulator): the focused row's lift clipped at the list edge; fixed on the tip 2026-10-23, not cut."
     },
     {
       "id": "FEAT-84",
@@ -3450,12 +3450,12 @@
       "id": "BUG-220",
       "kind": "Bug",
       "priority": "P4",
-      "stage": "Open",
+      "stage": "Fixed",
       "tester": "",
       "build": "",
       "reporter": "In-house (device pass)",
       "first_seen": "2026-10-22",
-      "summary": "A short mpv session's resume position is gone after a relaunch when progress is stored on Trakt (to confirm)."
+      "summary": "Trakt source: a short session's resume position gone after relaunch (dropped scrobble stop); write-ahead pending stops on the tip 2026-10-23, not cut; closed 2026-10-24 on unit + sim proof."
     },
     {
       "id": "BUG-221",
@@ -3466,7 +3466,7 @@
       "build": "beta.19",
       "reporter": "In-house (rig)",
       "first_seen": "2026-10-22",
-      "summary": "The merged Wave 3 tip crashes seconds after Home on the Apple TV with Card Depth on (raster-cache rendering); never shipped, fix on claude/bug221."
+      "summary": "Merged Wave 3 tip crashed on Home with Card Depth on (raster cache); live layers shipped in beta.19; root cause found and the cache revived on the tip 2026-10-24, not cut."
     },
     {
       "id": "UX-18",
@@ -3493,13 +3493,13 @@
     {
       "id": "BUG-222",
       "kind": "Bug",
-      "priority": "P3",
+      "priority": "P4",
       "stage": "Open",
       "tester": "",
       "build": "",
       "reporter": "In-house (rig)",
       "first_seen": "2026-10-22",
-      "summary": "The Watch Trailer button disappears on repeat visits to the same title within one session (to confirm)."
+      "summary": "Watch Trailer button missing on repeat visits (one D9 sighting); not reproduced in 6 visits with the probe on, likely a one-off YouTube refusal."
     },
     {
       "id": "BUG-223",
@@ -3510,18 +3510,29 @@
       "build": "",
       "reporter": "In-house (UI legs)",
       "first_seen": "2026-10-22",
-      "summary": "Hero off: the focus panel presents a Continue Watching item before the held rows open (test31D); regression or stale contract, to classify."
+      "summary": "Hero off: the focus panel seeded Continue Watching before the catalog rows published, then jumped; fixed on the tip 2026-10-23, not cut."
     },
     {
       "id": "FEAT-85",
       "kind": "Feature",
       "priority": "P3",
       "stage": "Open",
-      "tester": "Not started",
+      "tester": "Replied",
       "build": "",
       "reporter": "GitHub (erdist)",
       "first_seen": "2026-10-23",
-      "summary": "GitHub #11: Continue Watching drops a series once an episode is finished; asks for the next episode offered as an Up Next card, as the phone does. Patch attached."
+      "summary": "Up Next in Continue Watching after an episode ends (erdist's patch, reviewed): on the tip 2026-10-23, not cut; unaired episodes dropped until they air; replied on #11 2026-10-24."
+    },
+    {
+      "id": "BUG-224",
+      "kind": "Bug",
+      "priority": "P4",
+      "stage": "Open",
+      "tester": "",
+      "build": "",
+      "reporter": "In-house (box report)",
+      "first_seen": "2026-10-24",
+      "summary": "Native player MKV remux draws ~60 % CPU for the whole playback (tvOS cpu_resource report); measure on Release."
     }
   ]
 }
