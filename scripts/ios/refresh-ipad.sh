@@ -162,6 +162,23 @@ fi
 if [ ! -f local.properties ] && [ -n "${LOCAL_PROPERTIES_SRC:-}" ] && [ -f "$LOCAL_PROPERTIES_SRC" ]; then
   cp "$LOCAL_PROPERTIES_SRC" local.properties
 fi
+# Always the "full" flavor: the default "appstore" flavor has no P2P engine and refuses
+# torrent streams ("This stream type is not supported"). Set it both ways so a fresh
+# local.properties cannot fall back.
+export NUVIO_IOS_DISTRIBUTION=full
+if ! grep -q '^NUVIO_IOS_DISTRIBUTION=full' local.properties 2>/dev/null; then
+  sed -i '' '/^NUVIO_IOS_DISTRIBUTION=/d' local.properties 2>/dev/null
+  printf '\nNUVIO_IOS_DISTRIBUTION=full\n' >> local.properties
+fi
+# The full flavor links the Nuvio Engine xcframework; upstream's script fetches the version
+# this tag pins (checksum-verified) into ../nuvio-engine beside the clone, once per version.
+if [ -x scripts/prepare-ios-dependencies.sh ]; then
+  if ! ./scripts/prepare-ios-dependencies.sh >>"$LOG" 2>&1; then
+    log "FAILED: prepare-ios-dependencies.sh (Nuvio Engine download)"
+    notify "Nuvio iPad refresh failed" "Could not fetch the Nuvio Engine framework for $TARGET; see $LOG"
+    save_state failed; exit 1
+  fi
+fi
 
 # 5. Drop our old profiles so Xcode mints fresh 7-day ones -------------------------------
 for dir in "$HOME/Library/Developer/Xcode/UserData/Provisioning Profiles" "$HOME/Library/MobileDevice/Provisioning Profiles"; do
