@@ -1,6 +1,6 @@
-# GitHub replies owed on #6 and #10 (drafted 2026-10-25 evening sweep) — NOT SENT
+# GitHub replies owed on #6 and #10 (drafted 2026-10-25 evening sweep) — POSTED 2026-10-25 on Christian's go
 
-Two drafts, one per issue. Nothing posted; each goes out only on Christian's go, through the copy rule (SlopMonster lint to 5/5 first). Facts come from the issue threads and tracker rows BUG-172, BUG-213, BUG-215.
+**Status: both POSTED 2026-10-25 evening on Christian's go** — #6: https://github.com/youngchris29-art/NuvioTV/issues/6#issuecomment-6404806403 (issue then closed as completed); #10: https://github.com/youngchris29-art/NuvioTV/issues/10#issuecomment-6404806700. Posted verbatim plus the Claude Code attribution footer. Was: NOT SENT. Facts come from the issue threads and tracker rows BUG-172, BUG-213, BUG-215.
 
 ## #6 "Streaming jittering-stuttering" — acknowledge and close (BUG-172)
 
@@ -27,4 +27,4 @@ Items 2 and 4 shipped in beta 19; if anything about the language pickers or the 
 ## Not drafted
 
 - **Steven's standing DM answers** (mpv at once or later, the short-Back check, whether the local.properties note fixed his build): the cloud sweep can't read Reddit DMs, so I have not seen his exact questions. Draft in an interactive session that has the chat open.
-- **#5 reply 2 and #11 first reply** are listed as owed in older sweep lines, but both were already posted (#5 on 2026-10-22 21:45Z, #11 on 2026-10-24 ~00:55Z). The sweep text is stale there; #5 now waits on the reporter and #11 on a cut.
+- **#5 reply 2 and #11 first reply** are listed as owed in older sweep lines, but both were already posted (#5 on 2026-10-22 21:45Z, #11 on 2026-10-24 ~00:55Z). The sweep text was stale there (corrected 2026-10-25); #5 now waits on the reporter and #11 on a cut.
