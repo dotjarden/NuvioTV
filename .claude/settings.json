@@ -18,7 +18,37 @@
       "Bash(python3 scripts/deslop/deslop.py *)",
       "Bash(python3 scripts/deslop/test_deslop.py)",
       "Bash(.claude/skills/codex-review/tools/review.sh *)",
-      "Bash(bash .claude/skills/codex-review/tools/review.sh *)"
+      "Bash(bash .claude/skills/codex-review/tools/review.sh *)",
+      "Bash(cd NuvioMobile && graphify query *)",
+      "Bash(cd NuvioMobile && graphify explain *)",
+      "Bash(cd NuvioMobile && graphify path *)",
+      "Bash(cd NuvioMobile && graphify affected *)",
+      "Bash(cd NuvioMobile && graphify update *)",
+      "Bash(scripts/graph-impact.sh *)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Grep",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "GRAPHIFY_OUT=NuvioMobile/graphify-out graphify hook-guard search",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "matcher": "Read|Glob",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "GRAPHIFY_OUT=NuvioMobile/graphify-out graphify hook-guard read",
+            "timeout": 10
+          }
+        ]
+      }
     ]
   }
 }

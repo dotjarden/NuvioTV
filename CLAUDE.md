@@ -44,6 +44,13 @@ Upstream's iOS app (`NuvioMedia/NuvioMobile`, the `iosApp` scheme) runs on Chris
 ## Reddit DM check (standing, 2026-10-08)
 DMs are the sweep's third source (`docs/beta-feedback-sweep-instructions.md` §1b): local only via `scripts/reddit/fetch-dms.sh --since <watermark> --summary`; the tracker header holds the watermark. The sweep never sends a DM.
 
+## Knowledge graph (graphify, standing, 2026-10-26)
+`NuvioMobile/graphify-out/` (gitignored; tree-sitter code graph of the submodule, no LLM, `graphify` CLI via uv) is the first stop for any codebase question, run from the submodule: `cd NuvioMobile && graphify query "<question>"` / `explain "<symbol>"` / `path "<A>" "<B>"` / `affected "<symbol>"` (those forms are pre-allowed in `.claude/settings.json`). The PreToolUse hook there nudges toward the graph before Bash/Grep/Read/Glob and carries `GRAPHIFY_OUT=NuvioMobile/graphify-out` inline because it runs at this root; never export that variable in a shell, it breaks graphify inside `NuvioMobile/`. Same-named Swift/Kotlin symbols are refused as ambiguous: pass `<file path>::Symbol`.
+- Freshness: local git hooks in the submodule (post-commit/checkout/merge/rewrite) rebuild the graph; after a fast-forward from a clone or `git pull`, run `graphify update .` in `NuvioMobile/` (free). Never `/graphify .` on this outer folder: the semantic pass over `docs/` is a paid subagent fan-out; point it at a curated subset if ever.
+- Upstream port triage: before dismissing a `cmp-rewrite` hunk in `shared/`, `graphify explain "<symbol>"` lists every `composeApp`/`appleMain`/`NuvioTV` consumer (the grep-before-dismissing rule, now one call).
+- Review loop and cuts: `scripts/graph-impact.sh <base-sha>` maps a batch's diff to communities; put its table in the batch doc and the review brief, and read "graph is stale" as an update reminder, not a finding.
+- Labels: communities were named once by `graphify label .` (claude-cli, subscription). `--resolution` / `--exclude-hubs` change membership and invalidate labels, so re-cluster deliberately and relabel after.
+
 ## Codex review (standing, 2026-10-01)
 `.claude/skills/codex-review/tools/review.sh --repo NuvioMobile --base <sha-before-the-work>` (exit 0 CLEAN / 3 findings / 2 no verdict). Run unsandboxed, never piped; loop review → fix → re-review on the same `--base` until CLEAN, documenting declines. Codex quota resets 2026-10-29; until then an Opus read-only review agent stands in.
 
