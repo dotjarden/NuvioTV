@@ -1,6 +1,6 @@
 {
   "_about": "Machine-readable mirror of docs/beta-feedback-tracker.md for the NuvioTV Tester Feedback dashboard. One row per tracker ID. Maintained by the beta-feedback sweep (see docs/beta-feedback-sweep-instructions.md §3). Allowed values: stage = Open | Released | Closed, no fix; tester (when stage=Open) = Not started | Waiting on reporter | Reopened after fix | Researched, not built; tester (when stage=Released) = Confirmed by tester | Partly confirmed | Awaiting tester | In-house only | Closed unconfirmed; tester (when stage=Closed, no fix) = Not a bug / declined / superseded | Duplicate of <ID>.",
-  "generated": "2026-10-24T01:35:00Z",
+  "generated": "2026-10-25T23:40:00Z",
   "source": "docs/beta-feedback-tracker.md",
   "rows": [
     {
@@ -711,12 +711,12 @@
       "id": "BUG-66",
       "kind": "Bug",
       "priority": "P1",
-      "stage": "Fixed",
-      "tester": "Reopened after fix",
-      "build": "",
+      "stage": "Released",
+      "tester": "Closed unconfirmed",
+      "build": "beta.19",
       "reporter": "u/mrStevenx3",
       "first_seen": "2026-08-20",
-      "summary": "The top tab bar stops auto-minimizing and stays permanently visible after the app has been running a while; closed 2026-10-24 after a clean beta.19 Tabs long evening, #3 closed."
+      "summary": "The top tab bar stops auto-minimizing and stays permanently visible after a while; closed 2026-10-24 after a clean beta.19 Tabs long evening, #3 closed."
     },
     {
       "id": "BUG-67",
@@ -1240,11 +1240,11 @@
       "kind": "Bug",
       "priority": "P2",
       "stage": "Released",
-      "tester": "Awaiting tester",
+      "tester": "Closed unconfirmed",
       "build": "beta.18",
       "reporter": "GitHub (dotjarden)",
       "first_seen": "2026-09-13",
-      "summary": "Home's pinned hero can regain focus while its shelf scroll view retains the previous offset, leaving the native tab bar above the screen and unreachable with Up."
+      "summary": "Home's pinned hero can strand the native tab bar off-screen; fixed from the input side in rc13, #3 closed 2026-10-24 with the Menu question never answered."
     },
     {
       "id": "BUG-117",
@@ -2647,12 +2647,12 @@
       "id": "BUG-172",
       "kind": "Bug",
       "priority": "P2",
-      "stage": "Open",
-      "tester": "Waiting on reporter",
-      "build": "",
+      "stage": "Released",
+      "tester": "Confirmed by tester",
+      "build": "beta.19",
       "reporter": "GitHub (issue #6)",
       "first_seen": "2026-10-16",
-      "summary": "Native player: a micro-stutter with a freeze frame every 5–10 s (GitHub #6); fragment-start timestamp defect gone on beta.19 (box 10-21); re-asked on #6 2026-10-24."
+      "summary": "Native player: micro-stutter with a freeze frame every 5-10 s (GitHub #6); reporter confirmed beta.19 fixed it on a huge Dolby Vision file via TorBox."
     },
     {
       "id": "BUG-197",
@@ -3400,7 +3400,7 @@
       "build": "",
       "reporter": "GitHub (erdist)",
       "first_seen": "2026-10-21",
-      "summary": "Settings root (Default style, simulator): the focused row's lift clipped at the list edge; fixed on the tip 2026-10-23, not cut."
+      "summary": "Settings root (Default style, simulator): the focused row's lift clipped at the list edge; fixed on the tip 2026-10-23, not cut; replied on #10 2026-10-25."
     },
     {
       "id": "FEAT-84",
