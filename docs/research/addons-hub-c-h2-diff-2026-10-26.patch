@@ -1,0 +1,1451 @@
+diff --git a/iosApp/NuvioTV/DesignSystem/QRCode.swift b/iosApp/NuvioTV/DesignSystem/QRCode.swift
+new file mode 100644
+index 000000000..edbda3d8e
+--- /dev/null
++++ b/iosApp/NuvioTV/DesignSystem/QRCode.swift
+@@ -0,0 +1,21 @@
++import CoreImage
++import UIKit
++
++/// Add-ons hub C, H2: renders a string as a sharp QR code (the Detail sheet's Configure section).
++/// The body of `QrSignInViewModel.makeQrImage`, lifted unchanged so a second screen can use it;
++/// the two older private copies (`QrSignInView`, `RemoteSetupView`) are deliberately left alone.
++enum QRCode {
++    /// A QR image for `string` at error-correction level M, upscaled by `scale` with a
++    /// nearest-neighbour affine transform so the modules stay crisp. nil when the filter or the
++    /// image cannot be produced.
++    static func image(for string: String, scale: CGFloat = 14) -> UIImage? {
++        guard let filter = CIFilter(name: "CIQRCodeGenerator") else { return nil }
++        filter.setValue(Data(string.utf8), forKey: "inputMessage")
++        filter.setValue("M", forKey: "inputCorrectionLevel")
++        guard let output = filter.outputImage else { return nil }
++        // The raw QR is ~30pt; scale it up sharply (nearest-neighbor via affine transform).
++        let scaled = output.transformed(by: CGAffineTransform(scaleX: scale, y: scale))
++        guard let cgImage = CIContext().createCGImage(scaled, from: scaled.extent) else { return nil }
++        return UIImage(cgImage: cgImage)
++    }
++}
+diff --git a/iosApp/NuvioTV/Screens/Addons/AddonCardView.swift b/iosApp/NuvioTV/Screens/Addons/AddonCardView.swift
+new file mode 100644
+index 000000000..a1a365c5a
+--- /dev/null
++++ b/iosApp/NuvioTV/Screens/Addons/AddonCardView.swift
+@@ -0,0 +1,166 @@
++import SharedCore
++import SwiftUI
++
++/// Add-ons hub C, H2: one installed add-on on the Sources hub. A single focus section: Left/Right
++/// stay inside the card (name area, On/Off, Up, Down, Remove), Up/Down move between cards.
++/// Identifiers address the card by POSITION only; the focus keys (`card:`, `toggle:`, `up:`,
++/// `down:`, `remove:` plus the manifest URL) are internal `@FocusState` values and never exposed.
++struct AddonCardView: View {
++    let addon: ManagedAddon
++    let index: Int
++    let count: Int
++    let isReadOnly: Bool
++    let focus: FocusState<String?>.Binding
++    let onOpen: () -> Void
++    let onToggle: () -> Void
++    let onMoveUp: () -> Void
++    let onMoveDown: () -> Void
++    let onRemove: () -> Void
++
++    var body: some View {
++        HStack(spacing: Theme.Spacing.lg) {
++            nameArea
++            Spacer(minLength: Theme.Spacing.md)
++            controls
++        }
++        .padding(Theme.Spacing.lg)
++        .background(Theme.Palette.surface, in: RoundedRectangle(cornerRadius: Theme.Radius.card, style: .continuous))
++        .focusSection()
++    }
++
++    private var nameArea: some View {
++        Button(action: onOpen) {
++            HStack(spacing: Theme.Spacing.lg) {
++                // The component's `failure:` builder (BUG-41) supplies the puzzle-piece fallback
++                // for a missing or broken logo.
++                CachedAsyncImage(string: addon.manifest?.logoUrl) {
++                    Image(systemName: "puzzlepiece.extension")
++                        .font(Theme.Font.body)
++                        .rowTextColor(secondary: true)
++                        .frame(maxWidth: .infinity, maxHeight: .infinity)
++                        .background(Theme.Palette.surfaceElevated)
++                }
++                .frame(width: 44, height: 44)
++                .clipShape(RoundedRectangle(cornerRadius: Theme.Radius.chip))
++
++                VStack(alignment: .leading, spacing: Theme.Spacing.xxs) {
++                    Text(AddonsViewModel.displayTitle(addon))
++                        .font(Theme.Font.sectionTitle).rowTextColor().lineLimit(1)
++                    Text(metaLine)
++                        .font(Theme.Font.meta).rowTextColor(secondary: true).lineLimit(1)
++                    Text(AddonsViewModel.host(of: addon.manifestUrl))
++                        .font(Theme.Font.caption).rowTextColor(secondary: true).lineLimit(1)
++                    if let manifest = addon.manifest {
++                        Text("Catalogs: \(manifest.catalogs.count)")
++                            .font(Theme.Font.caption).rowTextColor(secondary: true)
++                    }
++                }
++                Spacer(minLength: Theme.Spacing.md)
++                AddonStatusPill(status: AddonsViewModel.status(of: addon))
++                    .accessibilityIdentifier("addons_hub_status_\(index)")
++            }
++            .padding(Theme.Spacing.md)
++            .frame(maxWidth: .infinity, alignment: .leading)
++        }
++        .buttonStyle(.settingsRow)
++        .focused(focus, equals: "card:\(addon.manifestUrl)")
++        .accessibilityIdentifier("addons_hub_card_\(index)")
++    }
++
++    /// "v1.2.3 · Streams · Catalogs", or "Loading…" until the manifest arrives.
++    private var metaLine: String {
++        guard let manifest = addon.manifest else { return String(localized: "Loading…") }
++        let labels = AddonsViewModel.resourceLabels(of: manifest)
++        return (["v\(manifest.version)"] + labels).joined(separator: " · ")
++    }
++
++    private var controls: some View {
++        HStack(spacing: Theme.Spacing.sm) {
++            Button(action: onToggle) {
++                SettingsSwitchGlyph(isOn: addon.enabled)
++                    .padding(.horizontal, Theme.Spacing.xs)
++            }
++            .buttonStyle(.chip)
++            .focused(focus, equals: "toggle:\(addon.manifestUrl)")
++            .accessibilityLabel(addon.enabled ? Text("On") : Text("Off"))
++            .accessibilityValue(addon.enabled ? "enabled" : "disabled")
++            .accessibilityIdentifier("addons_hub_card_\(index)_toggle")
++
++            glyphButton("chevron.up", key: "up", label: "Move up", id: "up", disabled: index == 0, action: onMoveUp)
++            glyphButton("chevron.down", key: "down", label: "Move down", id: "down", disabled: index == count - 1, action: onMoveDown)
++
++            Button(action: onRemove) {
++                ErrorGlyph(systemName: "trash")
++                    .padding(.horizontal, Theme.Spacing.sm)
++            }
++            .buttonStyle(.chip)
++            .focused(focus, equals: "remove:\(addon.manifestUrl)")
++            .accessibilityLabel("Remove")
++            .accessibilityIdentifier("addons_hub_card_\(index)_remove")
++        }
++        .disabled(isReadOnly)
++    }
++
++    private func glyphButton(
++        _ symbol: String, key: String, label: LocalizedStringKey, id: String,
++        disabled: Bool, action: @escaping () -> Void
++    ) -> some View {
++        Button(action: action) {
++            Image(systemName: symbol)
++                .font(Theme.Font.body)
++                .padding(.horizontal, Theme.Spacing.sm)
++        }
++        .buttonStyle(.chip)
++        .disabled(disabled)
++        .focused(focus, equals: "\(key):\(addon.manifestUrl)")
++        .accessibilityLabel(label)
++        .accessibilityIdentifier("addons_hub_card_\(index)_\(id)")
++    }
++}
++
++/// The card's state pill: "Active", "Disabled", "Refreshing" (with a spinner) or "Unavailable".
++/// Inside the name button, so on focus it sits on the near-white platter: the resting dark pill
++/// swaps to a light-grey one then (read from `settingsRowIsFocused`, the kit's focus signal).
++private struct AddonStatusPill: View {
++    let status: AddonsViewModel.AddonStatus
++    @Environment(\.settingsRowIsFocused) private var onPlatter
++
++    private var word: String {
++        switch status {
++        case .active: return String(localized: "Active")
++        case .disabled: return String(localized: "Disabled")
++        case .refreshing: return String(localized: "Refreshing")
++        case .unavailable: return String(localized: "Unavailable")
++        }
++    }
++
++    private var fill: Color {
++        if status == .unavailable { return Theme.Palette.error.opacity(0.18) }
++        return onPlatter ? Color.black.opacity(0.1) : Theme.Palette.surfaceElevated
++    }
++
++    var body: some View {
++        HStack(spacing: Theme.Spacing.xs) {
++            if status == .refreshing { ProgressView().controlSize(.small) }
++            Text(word).font(Theme.Font.caption).rowTextColor()
++        }
++        .padding(.horizontal, Theme.Spacing.sm)
++        .padding(.vertical, Theme.Spacing.xxs)
++        .background(Capsule().fill(fill))
++        .accessibilityElement(children: .ignore)
++        .accessibilityLabel(word)
++    }
++}
++
++/// A glyph in the error tint at rest that joins the platter's dark label colour on focus (an
++/// explicit tint would stay red-on-white; the kit's `rowAccentTint` is accent-only).
++private struct ErrorGlyph: View {
++    let systemName: String
++    @Environment(\.settingsRowIsFocused) private var focused
++
++    var body: some View {
++        Image(systemName: systemName)
++            .font(Theme.Font.body)
++            .foregroundStyle(focused ? Theme.Palette.onFocusPlatter : Theme.Palette.error)
++    }
++}
+diff --git a/iosApp/NuvioTV/Screens/Addons/AddonDetailSheet.swift b/iosApp/NuvioTV/Screens/Addons/AddonDetailSheet.swift
+new file mode 100644
+index 000000000..6570d25a5
+--- /dev/null
++++ b/iosApp/NuvioTV/Screens/Addons/AddonDetailSheet.swift
+@@ -0,0 +1,188 @@
++import SharedCore
++import SwiftUI
++
++/// Add-ons hub C, H2: the sheet opened by pressing an add-on's name area. Reads the add-on LIVE
++/// from `model` (a refresh started here updates the sheet in place) and falls back to the
++/// snapshot it was opened with, so the sheet never blanks mid-removal. Remove hands back to the
++/// hub, which dismisses the sheet before it raises the confirm alert (an alert cannot present
++/// over a sheet).
++struct AddonDetailSheet: View {
++    @ObservedObject var model: AddonsViewModel
++    let snapshot: ManagedAddon
++    let isReadOnly: Bool
++    let onRemove: () -> Void
++
++    @State private var showsConfigure = false
++    /// The rendered QR and the URL it was built for; rebuilt only when that URL changes.
++    @State private var qrImage: UIImage?
++    @State private var qrFor: String?
++
++    private var addon: ManagedAddon {
++        model.addons.first { $0.manifestUrl == snapshot.manifestUrl } ?? snapshot
++    }
++
++    var body: some View {
++        let addon = addon
++        ScrollView {
++            VStack(alignment: .leading, spacing: Theme.Spacing.lg) {
++                Text(AddonsViewModel.displayTitle(addon)).font(Theme.Font.screenTitle)
++                if let manifest = addon.manifest {
++                    if !manifest.description.isEmpty {
++                        Text(manifest.description).font(Theme.Font.body).lineLimit(6)
++                    }
++                    Text(versionLine(manifest)).font(Theme.Font.meta)
++                    Text(AddonsViewModel.resourceLabels(of: manifest).joined(separator: " · ")).font(Theme.Font.meta)
++                    catalogList(manifest)
++                } else {
++                    Text("Loading…").font(Theme.Font.meta).foregroundStyle(Theme.Palette.textSecondary)
++                }
++                Text(Self.locationLine(addon.manifestUrl))
++                    .font(Theme.Font.caption).foregroundStyle(Theme.Palette.textSecondary)
++                    .accessibilityIdentifier("addons_hub_detail_location")
++                buttons(addon)
++                if showsConfigure, addon.manifest?.behaviorHints.configurable == true {
++                    configureSection(addon)
++                }
++            }
++            .padding(Theme.Spacing.screen)
++            .frame(maxWidth: .infinity, alignment: .leading)
++        }
++        .accessibilityIdentifier("addons_hub_detail_sheet")
++        .task(id: qrKey(addon)) {
++            let key = qrKey(addon)
++            guard !key.isEmpty, key != qrFor else { return }
++            qrImage = Self.makeQR(key)
++            qrFor = key
++        }
++    }
++
++    /// The configure URL while the QR is wanted, else "" (nothing to build).
++    private func qrKey(_ addon: ManagedAddon) -> String {
++        showsConfigure && addon.manifest?.behaviorHints.configurable == true
++            ? Self.configureUrl(addon.manifestUrl) : ""
++    }
++
++    /// Review r1: the module count comes from a scale-1 render; the final scale is the largest
++    /// whole number that fits 320 pt (minimum 1), so every module lands on whole pixels.
++    private static func makeQR(_ url: String) -> UIImage? {
++        guard let raw = QRCode.image(for: url, scale: 1), let width = raw.cgImage?.width, width > 0 else { return nil }
++        return QRCode.image(for: url, scale: CGFloat(max(1, 320 / width)))
++    }
++
++    private func versionLine(_ manifest: AddonManifest) -> String {
++        String(localized: "Version \(manifest.version)") + " · " + manifest.types.joined(separator: ", ")
++    }
++
++    @ViewBuilder
++    private func catalogList(_ manifest: AddonManifest) -> some View {
++        if !manifest.catalogs.isEmpty {
++            VStack(alignment: .leading, spacing: Theme.Spacing.xxs) {
++                Text("Catalogs").font(Theme.Font.cardTitle)
++                ForEach(Array(manifest.catalogs.prefix(12).enumerated()), id: \.offset) { _, catalog in
++                    Text(catalog.name).font(Theme.Font.caption)
++                }
++                if manifest.catalogs.count > 12 {
++                    Text("+\(manifest.catalogs.count - 12) more")
++                        .font(Theme.Font.caption).foregroundStyle(Theme.Palette.textSecondary)
++                }
++            }
++        }
++    }
++
++    private func buttons(_ addon: ManagedAddon) -> some View {
++        HStack(spacing: Theme.Spacing.md) {
++            Button {
++                model.refresh(manifestUrl: addon.manifestUrl)
++            } label: {
++                Label("Refresh", systemImage: "arrow.clockwise").padding(.horizontal, Theme.Spacing.sm)
++            }
++            .buttonStyle(.borderedProminent)
++            .accessibilityIdentifier("addons_hub_detail_refresh")
++
++            Button(action: onRemove) {
++                Label("Remove", systemImage: "trash").padding(.horizontal, Theme.Spacing.sm)
++            }
++            .buttonStyle(.bordered)
++            .disabled(isReadOnly)
++            .accessibilityIdentifier("addons_hub_detail_remove")
++
++            if addon.manifest?.behaviorHints.configurable == true {
++                Button {
++                    showsConfigure.toggle()
++                } label: {
++                    Label("Configure", systemImage: "qrcode").padding(.horizontal, Theme.Spacing.sm)
++                }
++                .buttonStyle(.bordered)
++                .accessibilityIdentifier("addons_hub_detail_configure")
++            }
++        }
++        .focusSection()
++    }
++
++    @ViewBuilder
++    private func configureSection(_ addon: ManagedAddon) -> some View {
++        let url = Self.configureUrl(addon.manifestUrl)
++        VStack(alignment: .leading, spacing: Theme.Spacing.md) {
++            Text("Scan to configure this add-on on your phone.").font(Theme.Font.body)
++            if qrFor == url, let image = qrImage {
++                // The frame is the image's own whole-pixel size (at most 320 pt): no resampling.
++                Image(uiImage: image)
++                    .interpolation(.none)
++                    .resizable()
++                    .frame(width: image.size.width, height: image.size.height)
++                    .accessibilityIdentifier("addons_hub_detail_qr")
++            }
++            // The QR carries the full URL (that is its job); the caption shows the host only, the
++            // key stays off the screen.
++            Text(AddonsViewModel.host(of: url) + "/…/configure")
++                .font(Theme.Font.caption).foregroundStyle(Theme.Palette.textSecondary)
++        }
++    }
++
++    /// Where the add-on lives, without its key. Debrid keys live in the PATH of most add-on URLs
++    /// (`/torbox=KEY/manifest.json`) as well as the query, so the path is never shown: the file
++    /// name appears only when it is exactly `manifest.json`, otherwise just "host/…". "(key
++    /// hidden)" is appended whenever anything was dropped (path segments, query or userinfo). A
++    /// `#fragment` is stripped first; a bare host renders as the host alone.
++    static func locationLine(_ manifestUrl: String) -> String {
++        let host = AddonsViewModel.host(of: manifestUrl)
++        let noFragment = manifestUrl.split(separator: "#", maxSplits: 1, omittingEmptySubsequences: false)
++            .first.map(String.init) ?? manifestUrl
++        let hasQuery = noFragment.contains("?")
++        let withoutQuery = noFragment.split(separator: "?", maxSplits: 1, omittingEmptySubsequences: false)
++            .first.map(String.init) ?? noFragment
++        var rest = Substring(withoutQuery)
++        if let sep = rest.range(of: "://"), sep.lowerBound < (rest.firstIndex(of: "/") ?? rest.endIndex) {
++            rest = rest[sep.upperBound...]
++        }
++        let authorityEnd = rest.firstIndex(of: "/") ?? rest.endIndex
++        let hasUserinfo = rest[..<authorityEnd].contains("@")
++        let segments = rest[authorityEnd...].split(separator: "/").map(String.init)
++        let hidden = hasQuery || hasUserinfo || segments.count > 1
++            || (segments.count == 1 && segments[0] != "manifest.json")
++        let base: String
++        if segments.isEmpty {
++            base = host
++        } else if segments.last == "manifest.json" {
++            base = segments.count == 1 ? "\(host)/manifest.json" : "\(host)/…/manifest.json"
++        } else {
++            base = "\(host)/…"
++        }
++        return hidden ? base + " " + String(localized: "(key hidden)") : base
++    }
++
++    /// The manifest URL with a trailing `/manifest.json` (before any query) swapped for
++    /// `/configure`, query kept. A URL without that suffix gets `/configure` appended to its path.
++    static func configureUrl(_ manifestUrl: String) -> String {
++        let split = manifestUrl.firstIndex(of: "?")
++        let path = split.map { String(manifestUrl[..<$0]) } ?? manifestUrl
++        let query = split.map { String(manifestUrl[$0...]) } ?? ""
++        let trimmed: String
++        if path.hasSuffix("/manifest.json") {
++            trimmed = String(path.dropLast("/manifest.json".count))
++        } else {
++            trimmed = path.hasSuffix("/") ? String(path.dropLast()) : path
++        }
++        return trimmed + "/configure" + query
++    }
++}
+diff --git a/iosApp/NuvioTV/Screens/Addons/AddonInstallSheet.swift b/iosApp/NuvioTV/Screens/Addons/AddonInstallSheet.swift
+new file mode 100644
+index 000000000..c625e58e1
+--- /dev/null
++++ b/iosApp/NuvioTV/Screens/Addons/AddonInstallSheet.swift
+@@ -0,0 +1,76 @@
++import SwiftUI
++
++/// Add-ons hub C, H2: the install flow, moved verbatim out of the old Add-ons screen into a sheet
++/// (H3 polishes it). Today's field, Install button, DEBUG quick-install chip, spinner and status
++/// line are unchanged. New: a title, the identifiers the hub's UI legs address, and a self-dismiss
++/// 1.2 s after a typed `.installed` outcome (never the localized status text) so the viewer lands back on the list with the new card.
++struct AddonInstallSheet: View {
++    @ObservedObject var model: AddonsViewModel
++    @State private var newUrl = ""
++    @Environment(\.dismiss) private var dismiss
++
++    var body: some View {
++        VStack(alignment: .leading, spacing: Theme.Spacing.md) {
++            Text("Install add-on").font(Theme.Font.screenTitle)
++            Text("Paste the manifest URL from your streaming addon's config page (e.g. your TorBox or Torrentio URL with your API key). It ends in /manifest.json.")
++                .font(Theme.Font.body).foregroundStyle(.secondary)
++                .frame(maxWidth: 1200, alignment: .leading)
++
++            HStack(spacing: Theme.Spacing.md) {
++                Image(systemName: "link").foregroundStyle(.secondary)
++                TextField("https://\u{2026}/manifest.json", text: $newUrl)
++                    .textFieldStyle(.plain)
++                    .font(Theme.Font.screenTitle.weight(.regular))
++                    .accessibilityIdentifier("addons_hub_install_field")
++            }
++            .padding(20)
++            .glassEffect(.regular, in: RoundedRectangle(cornerRadius: 12))
++
++            HStack(spacing: 20) {
++                // Not `.disabled` while installing: that disabled the button the user had just
++                // pressed and focus jumped away. Guarded in the action instead.
++                Button {
++                    guard !model.isInstalling else { return }
++                    model.install(newUrl)
++                    newUrl = ""
++                } label: {
++                    Label("Install", systemImage: "plus.circle.fill")
++                        .padding(.horizontal, 16).padding(.vertical, 6)
++                }
++                .buttonStyle(.borderedProminent)
++                .accessibilityIdentifier("addons_hub_install_button")
++
++                #if DEBUG
++                if DebugConfig.hasManifestURL {
++                    Button {
++                        guard !model.isInstalling else { return }
++                        model.install(DebugConfig.manifestURL)
++                    } label: {
++                        Label("Quick install (from DebugConfig)", systemImage: "wrench.and.screwdriver")
++                            .padding(.horizontal, 16).padding(.vertical, 6)
++                    }
++                    .buttonStyle(.chip)
++                }
++                #endif
++
++                if model.isInstalling { ProgressView() }
++                if let status = model.statusMessage {
++                    Text(status).font(Theme.Font.body).foregroundStyle(.secondary)
++                        .accessibilityIdentifier("addons_hub_install_status")
++                }
++            }
++        }
++        .padding(Theme.Spacing.screen)
++        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
++        .focusSection()
++        // Cancelled with the sheet (or by a newer outcome), so an early dismissal followed by a
++        // reopen never closes the new sheet. H3 refines this; 1.2 s is long enough to read the
++        // confirmation.
++        .task(id: model.installOutcome) {
++            guard case .installed = model.installOutcome else { return }
++            try? await Task.sleep(nanoseconds: 1_200_000_000)
++            guard !Task.isCancelled else { return }
++            dismiss()
++        }
++    }
++}
+diff --git a/iosApp/NuvioTV/Screens/Addons/SourcesHubView.swift b/iosApp/NuvioTV/Screens/Addons/SourcesHubView.swift
+new file mode 100644
+index 000000000..aaa17b055
+--- /dev/null
++++ b/iosApp/NuvioTV/Screens/Addons/SourcesHubView.swift
+@@ -0,0 +1,481 @@
++import SharedCore
++import SwiftUI
++
++/// Where a summary card pushes. `catalogs` is the Home Screen pane for now (H4 swaps in the
++/// catalog order page).
++enum HubRoute: Hashable {
++    case catalogs, services, plugins
++}
++
++/// Add-ons hub C, H2: the Sources hub page body, called by `AddonsView`. A summary row (Add-ons,
++/// Catalogs, Debrid, Plugins), an action row (Install, Refresh all, Manage from phone) and the
++/// installed add-on cards. `AddonsView` owns every store (started and stopped on the stack) and
++/// the remove confirmation; this view observes them. The Services pane's disconnect alerts hang
++/// off the pushed pane itself, with their state kept here.
++///
++/// Plural wording below is deliberately inflection-free ("Repositories: 1 · Providers: 7");
++/// H5's catalog pass may add proper plural rules.
++struct SourcesHubView: View {
++    @ObservedObject var model: AddonsViewModel
++    @ObservedObject var settings: SettingsViewModel
++    @ObservedObject var debrid: DebridViewModel
++    @ObservedObject var plugins: PluginsViewModel
++    @ObservedObject var badges: BadgeSettingsViewModel
++    @ObservedObject var trakt: TraktViewModel
++    @ObservedObject var simkl: SimklViewModel
++    @Binding var path: [HubRoute]
++    @Binding var pendingRemoval: ManagedAddon?
++    @Binding var removal: RemovalIntent?
++
++    @FocusState private var focusedControl: String?
++    @Namespace private var focusNamespace
++    @State private var showInstall = false
++    @State private var detailTarget: DetailTarget?
++    /// The add-on whose Remove was pressed in the Detail sheet; promoted to `pendingRemoval` once
++    /// the sheet has finished dismissing (an alert cannot present over a sheet).
++    @State private var pendingFromSheet: ManagedAddon?
++    /// Set when an install succeeds while the sheet is up; the sheet's dismissal then focuses the
++    /// new card.
++    @State private var focusNewCardAfterInstall = false
++    @State private var toast: String?
++    /// Counts toasts shown; the timed clear keys on it, not on the text, so a repeat of the same
++    /// text keeps its full time.
++    @State private var toastSerial = 0
++    // The Services pane's disconnect confirmations, hosted on the pushed pane (SettingsView hosts
++    // them for its own copy).
++    @State private var confirmingTraktDisconnect = false
++    @State private var confirmingSimklDisconnect = false
++    @State private var debridDisconnectId: String?
++
++    struct DetailTarget: Identifiable {
++        let addon: ManagedAddon
++        var id: String { addon.manifestUrl }
++    }
++
++    struct RemovalIntent {
++        let url: String
++        let name: String
++        let nextUrl: String?
++        let previousUrl: String?
++    }
++
++    var body: some View {
++        let summary = AddonsViewModel.summary(
++            addons: model.addons,
++            catalogs: settings.catalogs,
++            debridConnectedNames: debrid.providers.filter { debrid.isConnected($0.id) }.map(\.displayName),
++            pluginsEnabled: plugins.pluginsEnabled,
++            pluginRepositories: plugins.repositories.count,
++            pluginProviders: plugins.scrapers.count
++        )
++        ScrollViewReader { proxy in
++            ScrollView(.vertical) {
++                LazyVStack(alignment: .leading, spacing: Theme.Spacing.sectionGap) {
++                    Text("Add-ons")
++                        .font(Theme.Font.screenTitle)
++                        .foregroundStyle(Theme.Palette.textPrimary)
++                        .accessibilityIdentifier("addons_hub_title")
++                    summaryRow(summary, proxy: proxy)
++                    actionRow
++                    installedSection
++                }
++                .padding(Theme.Spacing.screen)
++                .frame(maxWidth: .infinity, alignment: .leading)
++            }
++            // Entry focus: Down from the tab bar lands on the Add-ons summary card.
++            .focusScope(focusNamespace)
++            .reportsScrollToTabBar(tab: "Add-ons")
++            .accessibilityIdentifier("addons_hub_root")
++        }
++        .overlay(alignment: .bottom) { toastView }
++        .sheet(isPresented: $showInstall, onDismiss: focusAfterInstall) { AddonInstallSheet(model: model) }
++        .sheet(item: $detailTarget, onDismiss: {
++            // The sheet is gone: now the confirm alert can present.
++            if let addon = pendingFromSheet {
++                pendingFromSheet = nil
++                pendingRemoval = addon
++            }
++        }) { target in
++            AddonDetailSheet(model: model, snapshot: target.addon, isReadOnly: model.isReadOnly) {
++                requestRemoval(target.addon, fromSheet: true)
++            }
++        }
++        .navigationDestination(for: HubRoute.self) { route in destination(route) }
++        .onChange(of: model.refreshOutcomeSerial) { _, _ in
++            guard let outcome = model.lastRefreshOutcome else { return }
++            showToast(outcome.failed == 0
++                ? String(localized: "Refreshed \(outcome.succeeded).")
++                : String(localized: "Refreshed \(outcome.succeeded), \(outcome.failed) failed."))
++        }
++        .onChange(of: model.installOutcome) { _, outcome in
++            guard let outcome else { return }
++            // The install sheet shows its own status line, so no toast while it is up.
++            if showInstall {
++                if case .installed = outcome { focusNewCardAfterInstall = true }
++                return
++            }
++            switch outcome {
++            case .installed(let name, _): showToast(String(localized: "Installed \(name)."))
++            // Fixed text only: the detailed message can embed the full manifest URL (with a
++            // debrid key), so it stays in the install sheet's status line.
++            case .failed: showToast(String(localized: "Couldn't install that add-on."))
++            }
++        }
++        .onChange(of: model.addons.map(\.manifestUrl)) { _, urls in handleRemoval(urls) }
++    }
++
++    // MARK: - Summary row
++
++    private func summaryRow(_ summary: AddonsViewModel.HubSummary, proxy: ScrollViewProxy) -> some View {
++        HStack(spacing: Theme.Spacing.lg) {
++            HubCard(
++                title: String(localized: "Add-ons"),
++                value: Text(String(localized: "\(summary.addonsInstalled) installed · \(summary.addonsOn) on")),
++                loading: !model.isInitialized,
++                id: "addons_hub_summary_addons",
++                defaultFocusScope: focusNamespace
++            ) {
++                proxy.scrollTo("addons_hub_installed", anchor: .top)
++                guard let first = model.addons.first else { return }
++                DispatchQueue.main.async { focusedControl = "card:" + first.manifestUrl }
++            } accessory: {
++                HStack(spacing: Theme.Spacing.xs) {
++                    ForEach(Array(AddonsViewModel.logoUrls(of: model.addons, limit: 5).enumerated()), id: \.offset) { _, url in
++                        CachedAsyncImage(string: url)
++                            .frame(width: 44, height: 44)
++                            .clipShape(RoundedRectangle(cornerRadius: Theme.Radius.chip))
++                    }
++                }
++            }
++            HubCard(
++                title: String(localized: "Catalogs"),
++                value: Text(String(localized: "\(summary.catalogsOn) of \(summary.catalogsTotal) on Home")),
++                id: "addons_hub_summary_catalogs"
++            ) {
++                path.append(.catalogs) // H4: swap for the catalog order page.
++            }
++            HubCard(
++                title: String(localized: "Debrid"),
++                value: Text(summary.debridConnected.isEmpty
++                    ? String(localized: "Not connected")
++                    : String(localized: "\(summary.debridConnected.joined(separator: ", ")) connected")),
++                id: "addons_hub_summary_debrid"
++            ) {
++                path.append(.services)
++            }
++            if let plugin = summary.plugins {
++                HubCard(
++                    title: String(localized: "Plugins"),
++                    value: Text(String(localized: "Repositories: \(plugin.repositories) · Providers: \(plugin.providers)")),
++                    id: "addons_hub_summary_plugins"
++                ) {
++                    path.append(.plugins)
++                }
++            }
++        }
++        .focusSection()
++    }
++
++    // MARK: - Action row
++
++    private var actionRow: some View {
++        HStack(spacing: Theme.Spacing.lg) {
++            HubCard(
++                title: String(localized: "Install add-on"),
++                value: Text("From a manifest URL"),
++                systemImage: "plus.circle.fill",
++                id: "addons_hub_action_install"
++            ) {
++                showInstall = true
++            }
++            .focused($focusedControl, equals: "action:install")
++
++            HubCard(
++                title: String(localized: "Refresh all"),
++                value: refreshSubtitle,
++                systemImage: "arrow.clockwise",
++                loading: model.isRefreshingAny,
++                id: "addons_hub_action_refresh"
++            ) {
++                let enabled = model.addons.filter { $0.enabled }.count
++                showToast(enabled == 0
++                    ? String(localized: "Nothing to refresh.")
++                    : String(localized: "Refreshing add-ons (\(enabled))…"))
++                model.refreshAll()
++            }
++
++            if DebugConfig.showsPhoneManagement {
++                HubCard(
++                    title: String(localized: "Manage from phone"),
++                    value: Text("Coming in a later beta"),
++                    systemImage: "iphone",
++                    id: "addons_hub_action_phone"
++                ) {}
++            }
++        }
++        .focusSection()
++    }
++
++    /// "Updated <relative>" as a live `Text`: the relative style ticks by itself, and nothing is
++    /// allocated per render.
++    private var refreshSubtitle: Text {
++        guard let stamp = model.lastRefreshedAt else { return Text("Not refreshed yet") }
++        return Text("Updated \(stamp, style: .relative)")
++    }
++
++    // MARK: - Installed section
++
++    private var installedSection: some View {
++        VStack(alignment: .leading, spacing: Theme.Spacing.md) {
++            HStack {
++                Text("Installed add-ons").font(Theme.Font.screenTitle)
++                    .accessibilityIdentifier("addons_hub_installed_title")
++                if !model.isInitialized { ProgressView() }
++            }
++            if model.isInitialized && model.addons.isEmpty {
++                Text("No add-ons installed. Install one to get started.")
++                    .font(Theme.Font.body).foregroundStyle(Theme.Palette.textSecondary)
++                    .accessibilityIdentifier("addons_hub_empty")
++            }
++            if model.isReadOnly {
++                Text("This profile uses the primary profile's add-ons. Manage them there.")
++                    .font(Theme.Font.body).foregroundStyle(Theme.Palette.textSecondary)
++                    .accessibilityIdentifier("addons_hub_readonly")
++            }
++            ForEach(Array(model.addons.enumerated()), id: \.element.manifestUrl) { index, addon in
++                AddonCardView(
++                    addon: addon,
++                    index: index,
++                    count: model.addons.count,
++                    isReadOnly: model.isReadOnly,
++                    focus: $focusedControl,
++                    onOpen: { detailTarget = DetailTarget(addon: addon) },
++                    onToggle: { model.setEnabled(addon, !addon.enabled) },
++                    onMoveUp: { move(addon, index: index, by: -1) },
++                    onMoveDown: { move(addon, index: index, by: 1) },
++                    onRemove: { requestRemoval(addon, fromSheet: false) }
++                )
++            }
++        }
++        .id("addons_hub_installed")
++    }
++
++    // MARK: - Reorder and removal
++
++    /// Moves the card, then puts focus back on the same control of the moved card. A move that
++    /// lands at an end disables that control, so focus goes to the card's name area instead. The
++    /// landing is decided from the add-on's NEW index (the repository's list, else this model's),
++    /// not the render index the press started from.
++    private func move(_ addon: ManagedAddon, index: Int, by delta: Int) {
++        let count = model.addons.count
++        guard AddonsViewModel.moveTarget(index: index, by: delta, count: count) != nil else { return }
++        model.move(manifestUrl: addon.manifestUrl, by: delta)
++        DispatchQueue.main.async {
++            let repoList = (AddonRepository.shared.uiState.value_ as? AddonsUiState)?.addons ?? []
++            let list = repoList.isEmpty ? model.addons : repoList
++            let newIndex = list.firstIndex { $0.manifestUrl == addon.manifestUrl } ?? (index + delta)
++            let atEnd = delta < 0 ? newIndex <= 0 : newIndex >= list.count - 1
++            let key = atEnd ? "card" : (delta < 0 ? "up" : "down")
++            focusedControl = "\(key):\(addon.manifestUrl)"
++        }
++    }
++
++    /// Raises the shared confirm alert (owned by `AddonsView`). From the Detail sheet the sheet
++    /// closes first and the sheet's `onDismiss` promotes the stash: an alert cannot present over
++    /// a sheet.
++    private func requestRemoval(_ addon: ManagedAddon, fromSheet: Bool) {
++        let urls = model.addons.map(\.manifestUrl)
++        let at = urls.firstIndex(of: addon.manifestUrl)
++        removal = RemovalIntent(
++            url: addon.manifestUrl,
++            name: AddonsViewModel.displayTitle(addon),
++            nextUrl: at.flatMap { $0 + 1 < urls.count ? urls[$0 + 1] : nil },
++            previousUrl: at.flatMap { $0 > 0 ? urls[$0 - 1] : nil }
++        )
++        if fromSheet {
++            pendingFromSheet = addon
++            detailTarget = nil
++        } else {
++            pendingRemoval = addon
++        }
++    }
++
++    /// Once a requested removal has left the list: toast it, and focus the card that took its
++    /// place (the previous one at the end, the Install card when the list is empty).
++    private func handleRemoval(_ urls: [String]) {
++        guard let intent = removal, !urls.contains(intent.url) else { return }
++        removal = nil
++        showToast(String(localized: "Removed \(intent.name)."))
++        let target = [intent.nextUrl, intent.previousUrl].compactMap { $0 }.first(where: urls.contains)
++        DispatchQueue.main.async { focusedControl = target.map { "card:" + $0 } ?? "action:install" }
++    }
++
++    /// After the install sheet closes following a successful install: focus the new card (the
++    /// last one), else the Install action card.
++    private func focusAfterInstall() {
++        guard focusNewCardAfterInstall else { return }
++        focusNewCardAfterInstall = false
++        DispatchQueue.main.async {
++            focusedControl = model.addons.last.map { "card:" + $0.manifestUrl } ?? "action:install"
++        }
++    }
++
++    // MARK: - Destinations
++
++    @ViewBuilder
++    private func destination(_ route: HubRoute) -> some View {
++        switch route {
++        case .catalogs: // H4: the catalog order page replaces this.
++            SettingsPaneScaffold(category: .homeScreen) { HomeScreenSettingsPane(model: settings) }
++        case .services:
++            SettingsPaneScaffold(category: .services) {
++                ServicesSettingsPane(
++                    trakt: trakt,
++                    simkl: simkl,
++                    debrid: debrid,
++                    confirmingTraktDisconnect: $confirmingTraktDisconnect,
++                    confirmingSimklDisconnect: $confirmingSimklDisconnect,
++                    debridDisconnectId: $debridDisconnectId
++                )
++            }
++            // On the pushed pane, not the stack root: a covered root's presentation can be dropped,
++            // which would leave Disconnect dead. Same actions as `SettingsView`.
++            .alert("Disconnect Trakt?", isPresented: $confirmingTraktDisconnect) {
++                Button("Disconnect", role: .destructive) { trakt.disconnect() }
++                Button("Cancel", role: .cancel) {}
++            } message: {
++                Text("Scrobbling stops and this Apple TV's Trakt access token is revoked. Your Trakt history is untouched.")
++            }
++            .alert("Disconnect Simkl?", isPresented: $confirmingSimklDisconnect) {
++                Button("Disconnect", role: .destructive) { simkl.disconnect() }
++                Button("Cancel", role: .cancel) {}
++            } message: {
++                Text("Scrobbling stops and this Apple TV's Simkl authorization is cleared. Your Simkl history is untouched.")
++            }
++            .alert(
++                "Disconnect debrid provider?",
++                isPresented: Binding(get: { debridDisconnectId != nil }, set: { if !$0 { debridDisconnectId = nil } })
++            ) {
++                Button("Disconnect", role: .destructive) {
++                    if let id = debridDisconnectId { debrid.disconnect(id) }
++                    debridDisconnectId = nil
++                }
++                Button("Cancel", role: .cancel) {}
++            } message: {
++                Text("Removes this provider's key from this profile. Streams will no longer resolve through it.")
++            }
++        case .plugins:
++            SettingsPaneScaffold(category: .sources) {
++                SourcesSettingsPane(model: settings, plugins: plugins, badges: badges)
++            }
++        }
++    }
++
++    // MARK: - Toast
++
++    @ViewBuilder
++    private var toastView: some View {
++        if let toast {
++            Text(toast)
++                .font(Theme.Font.body)
++                .foregroundStyle(Theme.Palette.textPrimary)
++                .padding(.horizontal, Theme.Spacing.lg)
++                .padding(.vertical, Theme.Spacing.md)
++                .background(Theme.Surface.overlay, in: Capsule())
++                .padding(.bottom, Theme.Spacing.xl)
++                .transition(.move(edge: .bottom).combined(with: .opacity))
++                .accessibilityIdentifier("addons_hub_toast")
++        }
++    }
++
++    private func showToast(_ message: String) {
++        toastSerial += 1
++        let serial = toastSerial
++        withAnimation { toast = message }
++        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
++            if toastSerial == serial { withAnimation { toast = nil } }
++        }
++    }
++}
++
++/// A summary or action card: title, value line and an optional accessory (the logo strip), on the
++/// kit's `.settingsRow` platter (white on focus, text through `rowTextColor`). `loading` swaps a
++/// spinner in for the accessory (or, with no accessory, shows it beside the title). `value` is a
++/// `Text` so a card can carry a live relative date.
++private struct HubCard<Accessory: View>: View {
++    let title: String
++    let value: Text
++    var systemImage: String?
++    var loading = false
++    let id: String
++    var defaultFocusScope: Namespace.ID?
++    let action: () -> Void
++    @ViewBuilder let accessory: () -> Accessory
++    /// Stand-in scope for `prefersDefaultFocus` when this card is not the page's default.
++    @Namespace private var fallbackNamespace
++
++    init(
++        title: String, value: Text, systemImage: String? = nil, loading: Bool = false, id: String,
++        defaultFocusScope: Namespace.ID? = nil,
++        action: @escaping () -> Void, @ViewBuilder accessory: @escaping () -> Accessory
++    ) {
++        self.title = title
++        self.value = value
++        self.systemImage = systemImage
++        self.loading = loading
++        self.id = id
++        self.defaultFocusScope = defaultFocusScope
++        self.action = action
++        self.accessory = accessory
++    }
++
++    var body: some View {
++        Button(action: action) {
++            VStack(alignment: .leading, spacing: Theme.Spacing.sm) {
++                HStack(spacing: Theme.Spacing.xs) {
++                    if let systemImage { Image(systemName: systemImage).font(Theme.Font.cardTitle) }
++                    Text(title).font(Theme.Font.cardTitle)
++                    if loading && Accessory.self == EmptyView.self { ProgressView().controlSize(.small) }
++                }
++                .rowTextColor(secondary: true)
++                value.font(Theme.Font.sectionTitle).lineLimit(2).rowTextColor()
++                if loading && Accessory.self != EmptyView.self {
++                    ProgressView()
++                } else {
++                    accessory()
++                }
++            }
++            .padding(Theme.Spacing.lg)
++            .frame(maxWidth: .infinity, minHeight: 180, alignment: .topLeading)
++            // Sim look (H2 run 1): with the platter-free row style the unfocused cards read as
++            // loose text columns; a `surface` card at rest keeps the plan's "summary cards".
++            .background(HubCardSurface())
++        }
++        .buttonStyle(.settingsRow)
++        .prefersDefaultFocus(defaultFocusScope != nil, in: defaultFocusScope ?? fallbackNamespace)
++        .accessibilityIdentifier(id)
++    }
++}
++
++/// The card's resting fill. A child of the button's LABEL on purpose: the row style publishes
++/// `settingsRowIsFocused` into the label's environment only, so a read on the card itself would
++/// always be false and the fill would sit on the white platter. Clear while focused.
++private struct HubCardSurface: View {
++    @Environment(\.settingsRowIsFocused) private var rowFocused
++
++    var body: some View {
++        RoundedRectangle(cornerRadius: Theme.Radius.card, style: .continuous)
++            .fill(rowFocused ? Color.clear : Theme.Palette.surface)
++    }
++}
++
++extension HubCard where Accessory == EmptyView {
++    fileprivate init(
++        title: String, value: Text, systemImage: String? = nil, loading: Bool = false, id: String,
++        defaultFocusScope: Namespace.ID? = nil,
++        action: @escaping () -> Void
++    ) {
++        self.init(title: title, value: value, systemImage: systemImage, loading: loading, id: id,
++                  defaultFocusScope: defaultFocusScope, action: action, accessory: { EmptyView() })
++    }
++}
+diff --git a/iosApp/NuvioTV/Screens/AddonsView.swift b/iosApp/NuvioTV/Screens/AddonsView.swift
+index d1240ec52..17e09be41 100644
+--- a/iosApp/NuvioTV/Screens/AddonsView.swift
++++ b/iosApp/NuvioTV/Screens/AddonsView.swift
+@@ -1,38 +1,64 @@
+ import SwiftUI
+ import SharedCore
+ 
+-/// Add-ons manager. Paste a Stremio-compatible manifest URL (e.g. your TorBox or Torrentio addon URL
+-/// with your debrid key embedded) to install a streaming source, then manage installed addons.
++/// Add-ons hub C, H2: the Sources hub. The body is `SourcesHubView` (summary cards, install and
++/// refresh actions, the installed add-on cards). This view keeps what must sit beside the
++/// NavigationStack: the stores the hub and its pushed panes read (all six, started and stopped on
++/// the stack the way `SettingsView` does, so a push never stops them), the pushed-pane path and
++/// the remove confirmation (raised by a card's trash control or the Detail sheet).
+ struct AddonsView: View {
+     @StateObject private var model = AddonsViewModel()
+-    @State private var newUrl = ""
++    @StateObject private var settings = SettingsViewModel()
++    @StateObject private var debrid = DebridViewModel()
++    @StateObject private var plugins = PluginsViewModel()
++    @StateObject private var badges = BadgeSettingsViewModel()
++    @StateObject private var trakt = TraktViewModel()
++    @StateObject private var simkl = SimklViewModel()
++    @State private var path: [HubRoute] = []
+     /// Addon pending a remove confirmation (drives the alert below).
+     @State private var addonPendingRemoval: ManagedAddon?
++    /// The neighbours of the card whose removal was requested, so focus can follow the removal.
++    /// Owned here so the alert's Cancel can clear it (a later sync removal must not toast or
++    /// move focus).
++    @State private var removal: SourcesHubView.RemovalIntent?
+ 
+     var body: some View {
+-        NavigationStack {
+-            ScrollView(.vertical) {
+-                LazyVStack(alignment: .leading, spacing: 40) {
+-                    installSection
+-                        .focusSection()
+-                    installedSection
+-                        .focusSection()
+-                }
+-                .padding(60)
+-                .frame(maxWidth: .infinity, alignment: .leading)
+-            }
+-            .reportsScrollToTabBar(tab: "Add-ons")
+-            // FEAT-30 / H9: Menu summons the rail in Rail mode (a second Menu, with focus in the
+-            // rail, exits as before). No modifier at all in tabs mode.
+-            .railMenuReveal()
+-            // BUG-214: the app background every other screen draws (`SettingsView` does the same
+-            // on its root). `Theme.Palette.background` is what OLED True Black swaps to pure
+-            // black; without it OLED never reached this screen.
+-            .background(Theme.Palette.background.ignoresSafeArea())
+-            .navigationTitle("Add-ons")
++        NavigationStack(path: $path) {
++            SourcesHubView(
++                model: model, settings: settings, debrid: debrid, plugins: plugins,
++                badges: badges, trakt: trakt, simkl: simkl,
++                path: $path, pendingRemoval: $addonPendingRemoval, removal: $removal
++            )
++                // FEAT-30 / H9: Menu summons the rail in Rail mode (a second Menu, with focus in the
++                // rail, exits as before). No modifier at all in tabs mode.
++                .railMenuReveal()
++                // BUG-214: the app background every other screen draws (`SettingsView` does the same
++                // on its root). `Theme.Palette.background` is what OLED True Black swaps to pure
++                // black; without it OLED never reached this screen.
++                .background(Theme.Palette.background.ignoresSafeArea())
++                // Sim look (H2 run 2): the stack's large title stays pinned and overlaps the card
++                // row once the page scrolls to the add-on cards, so the hub draws its own title
++                // inside the content, as the Settings panes do (`settings_pane_title`).
++        }
++        // On the stack, not the root view: pushing a pane must NOT stop the stores.
++        .onAppear {
++            model.start()
++            settings.start()
++            debrid.start()
++            plugins.start()
++            badges.start()
++            trakt.start()
++            simkl.start()
++        }
++        .onDisappear {
++            model.stop()
++            settings.stop()
++            debrid.stop()
++            plugins.stop()
++            badges.stop()
++            trakt.stop()
++            simkl.stop()
+         }
+-        .onAppear { model.start() }
+-        .onDisappear { model.stop() }
+         .alert(
+             "Remove \(addonPendingRemoval.map { model.displayName($0) } ?? "")?",
+             isPresented: Binding(
+@@ -44,114 +70,13 @@ struct AddonsView: View {
+                 if let addon = addonPendingRemoval { model.remove(addon) }
+                 addonPendingRemoval = nil
+             }
+-            Button("Cancel", role: .cancel) {}
++            Button("Cancel", role: .cancel) {
++                // Review r1: a cancelled removal must not leave its intent behind.
++                removal = nil
++                addonPendingRemoval = nil
++            }
+         } message: {
+             Text("Its catalogs and streams will no longer appear.")
+         }
+     }
+-
+-    private var installSection: some View {
+-        VStack(alignment: .leading, spacing: 16) {
+-            Text("Install from manifest URL").font(Theme.Font.screenTitle)
+-            Text("Paste the manifest URL from your streaming addon's config page (e.g. your TorBox or Torrentio URL with your API key). It ends in /manifest.json.")
+-                .font(Theme.Font.body).foregroundStyle(.secondary)
+-                .frame(maxWidth: 1200, alignment: .leading)
+-
+-            HStack(spacing: 16) {
+-                Image(systemName: "link").foregroundStyle(.secondary)
+-                TextField("https://\u{2026}/manifest.json", text: $newUrl)
+-                    .textFieldStyle(.plain)
+-                    .font(Theme.Font.screenTitle.weight(.regular))
+-            }
+-            .padding(20)
+-            .glassEffect(.regular, in: RoundedRectangle(cornerRadius: 12))
+-
+-            HStack(spacing: 20) {
+-                // Not `.disabled` while installing: that disabled the button the user had just
+-                // pressed and focus jumped away. Guarded in the action instead.
+-                Button {
+-                    guard !model.isInstalling else { return }
+-                    model.install(newUrl)
+-                    newUrl = ""
+-                } label: {
+-                    Label("Install", systemImage: "plus.circle.fill")
+-                        .padding(.horizontal, 16).padding(.vertical, 6)
+-                }
+-                .buttonStyle(.borderedProminent)
+-
+-                #if DEBUG
+-                if DebugConfig.hasManifestURL {
+-                    Button {
+-                        guard !model.isInstalling else { return }
+-                        model.install(DebugConfig.manifestURL)
+-                    } label: {
+-                        Label("Quick install (from DebugConfig)", systemImage: "wrench.and.screwdriver")
+-                            .padding(.horizontal, 16).padding(.vertical, 6)
+-                    }
+-                    .buttonStyle(.chip)
+-                }
+-                #endif
+-
+-                if model.isInstalling { ProgressView() }
+-                if let status = model.statusMessage {
+-                    Text(status).font(Theme.Font.body).foregroundStyle(.secondary)
+-                }
+-            }
+-        }
+-    }
+-
+-    private var installedSection: some View {
+-        VStack(alignment: .leading, spacing: 16) {
+-            Text("Installed").font(Theme.Font.screenTitle)
+-
+-            if model.addons.isEmpty {
+-                Text("No addons installed yet.").foregroundStyle(.secondary)
+-            }
+-
+-            ForEach(Array(model.addons.enumerated()), id: \.offset) { _, addon in
+-                AddonRow(
+-                    title: model.displayName(addon),
+-                    subtitle: addon.manifestUrl,
+-                    enabled: addon.enabled,
+-                    onToggle: { model.setEnabled(addon, !addon.enabled) },
+-                    onRemove: { addonPendingRemoval = addon }
+-                )
+-            }
+-        }
+-    }
+-}
+-
+-/// A focusable add-on card. Select toggles enabled/disabled; long-press (context menu) removes.
+-private struct AddonRow: View {
+-    let title: String
+-    let subtitle: String
+-    let enabled: Bool
+-    let onToggle: () -> Void
+-    let onRemove: () -> Void
+-
+-    var body: some View {
+-        Button(action: onToggle) {
+-            HStack(spacing: 24) {
+-                Image(systemName: enabled ? "checkmark.circle.fill" : "circle")
+-                    .font(Theme.Font.body)
+-                    .rowAccentTint(enabled)
+-                VStack(alignment: .leading, spacing: 4) {
+-                    Text(title).font(Theme.Font.sectionTitle).lineLimit(1)
+-                    Text(subtitle).font(Theme.Font.caption).rowTextColor(secondary: true).lineLimit(1)
+-                }
+-                Spacer(minLength: 0)
+-                Text(enabled ? String(localized: "Enabled") : String(localized: "Disabled"))
+-                    .font(Theme.Font.body)
+-                    .rowTextColor(secondary: true)
+-            }
+-            .padding(20)
+-            .frame(maxWidth: .infinity)
+-        }
+-        .buttonStyle(.settingsRow)
+-        .contextMenu {
+-            Button(role: .destructive, action: onRemove) {
+-                Label("Remove Add-on", systemImage: "trash")
+-            }
+-        }
+-    }
+ }
+diff --git a/iosApp/NuvioTV/Screens/AddonsViewModel.swift b/iosApp/NuvioTV/Screens/AddonsViewModel.swift
+index 4aa421f3b..6e976c0b1 100644
+--- a/iosApp/NuvioTV/Screens/AddonsViewModel.swift
++++ b/iosApp/NuvioTV/Screens/AddonsViewModel.swift
+@@ -40,6 +40,14 @@ final class AddonsViewModel: ObservableObject {
+         let failed: Int
+     }
+ 
++    /// Review r1: a typed install result. The serial increments per outcome, so two identical
++    /// outcomes in a row (the same failure twice) still compare unequal and fire `onChange`; the UI
++    /// never has to read the localized `statusMessage` to know what happened.
++    nonisolated enum InstallOutcome: Equatable {
++        case installed(name: String, serial: Int)
++        case failed(message: String, serial: Int)
++    }
++
+     /// Card state, in priority order: refreshing, unavailable, disabled, active.
+     nonisolated enum AddonStatus: Equatable {
+         case active, disabled, refreshing, unavailable
+@@ -54,6 +62,11 @@ final class AddonsViewModel: ObservableObject {
+     /// it is not persisted and a refresh the repository ran by itself never sets it.
+     @Published private(set) var lastRefreshedAt: Date?
+     @Published private(set) var lastRefreshOutcome: RefreshOutcome?
++    /// Increments each time `lastRefreshOutcome` is published, so an identical outcome twice in a
++    /// row still changes something the hub can observe.
++    @Published private(set) var refreshOutcomeSerial = 0
++    @Published private(set) var installOutcome: InstallOutcome?
++    private var installSerial = 0
+     @Published private(set) var isInitialized = false
+     @Published private(set) var isReadOnly = false
+ 
+@@ -104,15 +117,15 @@ final class AddonsViewModel: ObservableObject {
+             case .empty:
+                 return
+             case .unsupportedScheme:
+-                statusMessage = String(localized: "Enter a valid addon URL (http or https).")
++                publishInstallFailure(String(localized: "Enter a valid addon URL (http or https)."))
+                 return
+             }
+         } catch {
+-            statusMessage = String(localized: "Enter a valid addon URL (http or https).")
++            publishInstallFailure(String(localized: "Enter a valid addon URL (http or https)."))
+             return
+         }
+         if addons.contains(where: { AddonManifestURL.isSameManifest($0.manifestUrl, url) }) {
+-            statusMessage = String(localized: "That addon is already installed.")
++            publishInstallFailure(String(localized: "That addon is already installed."))
+             return
+         }
+         isInstalling = true
+@@ -123,18 +136,27 @@ final class AddonsViewModel: ObservableObject {
+             Task { @MainActor in
+                 self.isInstalling = false
+                 if let error {
+-                    self.statusMessage = String(localized: "Couldn't install: \(error.localizedDescription)")
++                    self.publishInstallFailure(String(localized: "Couldn't install: \(error.localizedDescription)"))
+                 } else if let failure = result as? AddAddonResultError {
+-                    self.statusMessage = String(localized: "Couldn't install: \(failure.message)")
++                    self.publishInstallFailure(String(localized: "Couldn't install: \(failure.message)"))
+                 } else if let success = result as? AddAddonResultSuccess {
++                    self.installSerial += 1
+                     self.statusMessage = String(localized: "Installed \(success.manifest.name).")
++                    self.installOutcome = .installed(name: success.manifest.name, serial: self.installSerial)
+                 } else {
+-                    self.statusMessage = String(localized: "Couldn't install that URL.")
++                    self.publishInstallFailure(String(localized: "Couldn't install that URL."))
+                 }
+             }
+         }
+     }
+ 
++    /// Sets the status line and the typed outcome together; the serial makes a repeat observable.
++    private func publishInstallFailure(_ message: String) {
++        installSerial += 1
++        statusMessage = message
++        installOutcome = .failed(message: message, serial: installSerial)
++    }
++
+     func remove(_ addon: ManagedAddon) {
+         AddonRepository.shared.removeAddon(manifestUrl: addon.manifestUrl)
+     }
+@@ -187,6 +209,7 @@ final class AddonsViewModel: ObservableObject {
+             guard !Task.isCancelled, let self else { return }
+             let outcome = Self.refreshOutcome(addons: latest, refreshedUrls: refreshedUrls)
+             self.lastRefreshOutcome = outcome
++            self.refreshOutcomeSerial += 1
+             if outcome.succeeded > 0 { self.lastRefreshedAt = Date() }
+             self.isRefreshingAny = false
+         }
+@@ -197,10 +220,12 @@ final class AddonsViewModel: ObservableObject {
+         Self.displayTitle(addon)
+     }
+ 
+-    /// Hub C, H1: the shared `displayTitle` (user-set name, else manifest name, else the URL's
+-    /// last path segment).
++    /// Hub C, H1: the shared `displayTitle` (user-set name, else manifest name). With neither, the
++    /// host: the shared fallback is the URL's last path segment, which can be a key.
+     nonisolated static func displayTitle(_ addon: ManagedAddon) -> String {
+-        addon.displayTitle
++        let userSet = addon.userSetName?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
++        if addon.manifest == nil && userSet.isEmpty { return host(of: addon.manifestUrl) }
++        return addon.displayTitle
+     }
+ 
+     /// Hub C, H1: the destination index for moving the card at `index` by `delta`, or nil when
+diff --git a/iosApp/NuvioTV/Screens/DebugConfig.swift b/iosApp/NuvioTV/Screens/DebugConfig.swift
+index 3642a24c3..1a685adc8 100644
+--- a/iosApp/NuvioTV/Screens/DebugConfig.swift
++++ b/iosApp/NuvioTV/Screens/DebugConfig.swift
+@@ -10,6 +10,10 @@ enum DebugConfig {
+     /// e.g. "https://torrentio.strem.fun/...|torbox=YOUR_KEY/manifest.json"
+     static let manifestURL = ""
+ 
++    /// Add-ons hub C, H2: shows the "Manage from phone" card on the Sources hub. Off until H6 ships
++    /// the phone-management flow (the card then only reads "Coming in a later beta").
++    static let showsPhoneManagement = false
++
+     static var hasManifestURL: Bool {
+         #if DEBUG
+         return !manifestURL.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+diff --git a/iosApp/NuvioTVTests/AddonsHubSummaryTests.swift b/iosApp/NuvioTVTests/AddonsHubSummaryTests.swift
+index ed844d221..9905d4d72 100644
+--- a/iosApp/NuvioTVTests/AddonsHubSummaryTests.swift
++++ b/iosApp/NuvioTVTests/AddonsHubSummaryTests.swift
+@@ -154,4 +154,40 @@ final class AddonsHubSummaryTests: XCTestCase {
+         ]
+         XCTAssertEqual(AddonsViewModel.logoUrls(of: list, limit: 2), ["https://a/l.png", "https://e/l.png"])
+     }
++
++    /// Review r1: two identical outcomes in a row carry different serials, so `onChange` (which
++    /// compares with `==`) fires for the second one. Uses the real view model: an unsupported
++    /// scheme fails in the synchronous validation path, with no network.
++    @MainActor
++    func testRepeatedInstallFailuresGetDifferentSerials() {
++        let model = AddonsViewModel()
++        model.install("ftp://x.y/a")
++        guard case .failed(let firstMessage, let firstSerial)? = model.installOutcome else {
++            return XCTFail("first install did not fail: \(String(describing: model.installOutcome))")
++        }
++        model.install("ftp://x.y/a")
++        guard case .failed(let secondMessage, let secondSerial)? = model.installOutcome else {
++            return XCTFail("second install did not fail: \(String(describing: model.installOutcome))")
++        }
++        XCTAssertEqual(firstMessage, secondMessage)
++        XCTAssertNotEqual(firstSerial, secondSerial)
++    }
++
++    /// Review r2: with no manifest and no user-set name the title is the host, never the URL's
++    /// last path segment (which can be a key).
++    func testDisplayTitleFallsBackToTheHostWithoutAManifest() {
++        let keyed = ManagedAddon(
++            manifestUrl: "https://torbox.example.com/torbox=SECRETKEY/manifest.json", manifest: nil,
++            userSetName: nil, enabled: true, isRefreshing: false, errorMessage: nil
++        )
++        XCTAssertEqual(AddonsViewModel.displayTitle(keyed), "torbox.example.com")
++        let named = ManagedAddon(
++            manifestUrl: keyed.manifestUrl, manifest: nil,
++            userSetName: "Mine", enabled: true, isRefreshing: false, errorMessage: nil
++        )
++        XCTAssertEqual(AddonsViewModel.displayTitle(named), "Mine")
++        XCTAssertEqual(
++            AddonsViewModel.displayTitle(addon("a", manifest: manifest("a", catalogs: 0), enabled: true)), "a"
++        )
++    }
+ }
+diff --git a/iosApp/NuvioTVUITests/AddonsHubUITests.swift b/iosApp/NuvioTVUITests/AddonsHubUITests.swift
+new file mode 100644
+index 000000000..5f43b51bf
+--- /dev/null
++++ b/iosApp/NuvioTVUITests/AddonsHubUITests.swift
+@@ -0,0 +1,104 @@
++import XCTest
++
++/// Add-ons hub C (H2 seed of H5's `AddonsHubUITests`): the hub is up with its summary and action
++/// cards and the installed list on the FA87 fixture (Chris, which has add-ons), the first add-on
++/// card takes focus and its four controls are reachable by Right. Prints `[HubLeg]` lines and
++/// dwells 2 s per state so a screenshot from outside the runner can read each one.
++///
++/// Launch: `-home_layout classic -debug.rememberLastProfile NO -debug.trailerForceNoTrailer YES`;
++/// the Chris tile is the shared verified step. No Select on a card control (nothing is changed on
++/// the fixture: no toggle, no move, no remove, no install).
++final class AddonsHubUITests: XCTestCase {
++    let remote = XCUIRemote.shared
++
++    private func pause(_ s: TimeInterval) { Thread.sleep(forTimeInterval: s) }
++    private func element(_ app: XCUIApplication, _ id: String) -> XCUIElement { app.descendants(matching: .any)[id] }
++    private func say(_ text: String) { print("[HubLeg] \(text)") }
++
++    /// Identifiers only: a card's label carries the add-on host, which stays out of the logs.
++    private func focusDump(_ app: XCUIApplication) -> String {
++        let nodes = app.descendants(matching: .any).matching(NSPredicate(format: "hasFocus == true")).allElementsBoundByIndex
++        return nodes.isEmpty ? "<none>" : nodes.map { "[id=\($0.identifier)]" }.joined(separator: " ")
++    }
++
++    @discardableResult
++    private func moveFocus(_ direction: XCUIRemote.Button, until target: XCUIElement, max: Int) -> Bool {
++        for _ in 0..<max {
++            if target.exists && target.hasFocus { return true }
++            remote.press(direction)
++            pause(0.4)
++        }
++        return target.exists && target.hasFocus
++    }
++
++    private func openTab(_ app: XCUIApplication, named title: String) {
++        let tabNames = ["Home", "Search", "Discover", "Library", "Add-ons", "Settings", "Profile"]
++        for _ in 0..<40 {
++            if tabNames.contains(where: { app.buttons[$0].exists && app.buttons[$0].hasFocus }) { break }
++            remote.press(.up)
++            pause(0.35)
++        }
++        let tab = app.buttons[title]
++        if !moveFocus(.right, until: tab, max: 7) { _ = moveFocus(.left, until: tab, max: 8) }
++        XCTAssertTrue(tab.hasFocus, "the \(title) tab never took focus; focused: \(focusDump(app))")
++        remote.press(.select)
++        pause(2)
++    }
++
++    func testHubCardsAndFirstAddonCard() throws {
++        let app = XCUIApplication()
++        app.launchArguments = ["-home_layout", "classic", "-debug.rememberLastProfile", "NO",
++                               "-debug.trailerForceNoTrailer", "YES", "-detail_trailer_autoplay", "NO"]
++        app.launch()
++        let chris = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "Chris")).firstMatch
++        XCTAssertTrue(chris.waitForExistence(timeout: 90), "profile picker never appeared")
++        if chris.exists { DetailEntryRoute.selectChrisTile(self, app, timeout: 5) }
++        pause(10)
++
++        openTab(app, named: "Add-ons")
++        XCTAssertTrue(element(app, "addons_hub_root").waitForExistence(timeout: 10), "addons_hub_root never appeared; focused: \(focusDump(app))")
++        for id in ["addons_hub_summary_addons", "addons_hub_summary_catalogs", "addons_hub_summary_debrid",
++                   "addons_hub_action_install", "addons_hub_action_refresh", "addons_hub_installed_title"] {
++            XCTAssertTrue(element(app, id).waitForExistence(timeout: 5), "\(id) missing")
++        }
++        say("hub up; plugins card: \(element(app, "addons_hub_summary_plugins").exists); phone card: \(element(app, "addons_hub_action_phone").exists)")
++        pause(2)
++
++        // Focus into the page: the first summary card, then the action row, then card 0.
++        if !element(app, "addons_hub_summary_addons").hasFocus { remote.press(.down); pause(0.8) }
++        say("after Down: \(focusDump(app))")
++        pause(2)
++        remote.press(.down); pause(0.8)
++        say("action row: \(focusDump(app))")
++        pause(2)
++        let card0 = element(app, "addons_hub_card_0")
++        XCTAssertTrue(card0.waitForExistence(timeout: 15), "no addons_hub_card_0 on the fixture (does Chris have add-ons?); empty=\(element(app, "addons_hub_empty").exists)")
++        remote.press(.down); pause(0.8)
++        XCTAssertTrue(moveFocus(.down, until: card0, max: 3), "card 0 never took focus; focused: \(focusDump(app))")
++        say("card 0: exists=\(card0.exists) hasFocus=\(card0.hasFocus) enabled=\(card0.isEnabled)")
++        pause(2)
++        // The single-card fixture: Up and Down are disabled (no neighbour) and so skipped by
++        // focus; Right from Toggle lands on Remove.
++        for control in ["toggle", "remove"] {
++            remote.press(.right); pause(0.6)
++            let node = element(app, "addons_hub_card_0_\(control)")
++            say("Right -> \(control): exists=\(node.exists) enabled=\(node.isEnabled) hasFocus=\(node.hasFocus)")
++            XCTAssertTrue(node.exists && node.hasFocus, "\(control) never took focus; focused: \(focusDump(app))")
++            pause(1.5)
++        }
++        for control in ["up", "down"] {
++            let node = element(app, "addons_hub_card_0_\(control)")
++            XCTAssertTrue(node.exists, "\(control) control missing")
++            XCTAssertFalse(node.isEnabled, "\(control) should be disabled on the single-card fixture")
++        }
++        // Up on the remove control must stay inside the installed list or go to the action row,
++        // never leave the hub.
++        remote.press(.up); pause(0.8)
++        let actions = ["addons_hub_action_install", "addons_hub_action_refresh", "addons_hub_action_phone"]
++        let focusedAction = actions.first { element(app, $0).exists && element(app, $0).hasFocus }
++        say("Up from controls: focused action card: \(focusedAction ?? "<none>")")
++        XCTAssertNotNil(focusedAction, "focus after the final Up is not an addons_hub_action_* card; focused: \(focusDump(app))")
++        XCTAssertTrue(element(app, "addons_hub_root").exists, "the hub went away")
++        pause(2)
++    }
++}

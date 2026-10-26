@@ -11,15 +11,24 @@ Measure with Animation Hitches over 30 Down + 30 Up at 0.35 s before and after t
 Permissive CORS; no catalogs.
 
     python3 scripts/device/fixtures/picker-rows-addon.py [port] [--rows N] [--media URL]
+        [--id <manifest id>] [--name <display name>] [--manifest-delay <seconds>]
     -> http://<mac-lan-ip>:<port>/manifest.json   (default port 8769, 48 rows)
+
+`--id` / `--name` let two instances run as two distinct add-ons (Add-ons hub H5 device pass:
+install, reorder, remove); `--manifest-delay` holds the manifest response for N seconds so the
+install sheet's Checking phase can be watched (Menu during Checking must not close the sheet).
 """
 import json
 import sys
+import time
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 PORT = 8769
 ROWS = 48
 MEDIA = "http://192.168.1.127:8011/fixture-short.mp4"
+ADDON_ID = "org.nuviotv.fixture.pickerrows"
+NAME = "Picker Rows fixture"
+MANIFEST_DELAY = 0.0
 args = sys.argv[1:]
 if args and args[0].isdigit():
     PORT = int(args.pop(0))
@@ -29,11 +38,17 @@ while args:
         ROWS = int(args.pop(0))
     elif flag == "--media" and args:
         MEDIA = args.pop(0)
+    elif flag == "--id" and args:
+        ADDON_ID = args.pop(0)
+    elif flag == "--name" and args:
+        NAME = args.pop(0)
+    elif flag == "--manifest-delay" and args:
+        MANIFEST_DELAY = float(args.pop(0))
 
 MANIFEST = {
-    "id": "org.nuviotv.fixture.pickerrows",
+    "id": ADDON_ID,
     "version": "1.0.0",
-    "name": "Picker Rows fixture",
+    "name": NAME,
     "description": f"W3-16 device fixture: {ROWS} Torrentio-shaped streams for every title.",
     "resources": ["stream"],
     "types": ["movie", "series"],
@@ -87,6 +102,8 @@ class Handler(BaseHTTPRequestHandler):
     def do_GET(self):  # noqa: N802
         path = self.path.split("?", 1)[0]
         if path == "/manifest.json":
+            if MANIFEST_DELAY > 0:
+                time.sleep(MANIFEST_DELAY)
             return self._send(MANIFEST)
         if path.startswith("/stream/") and path.endswith(".json"):
             return self._send(STREAMS)
@@ -97,5 +114,6 @@ class Handler(BaseHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    print(f"[picker-rows-addon] serving on 0.0.0.0:{PORT}, rows={ROWS}, media={MEDIA}", flush=True)
+    print(f"[picker-rows-addon] serving on 0.0.0.0:{PORT}, rows={ROWS}, media={MEDIA}, id={ADDON_ID}, "
+          f"name={NAME!r}, manifest-delay={MANIFEST_DELAY}s", flush=True)
     HTTPServer(("0.0.0.0", PORT), Handler).serve_forever()

@@ -1,0 +1,703 @@
+diff --git a/iosApp/NuvioTV/Screens/Addons/CatalogOrderView.swift b/iosApp/NuvioTV/Screens/Addons/CatalogOrderView.swift
+new file mode 100644
+index 000000000..bcd0370e5
+--- /dev/null
++++ b/iosApp/NuvioTV/Screens/Addons/CatalogOrderView.swift
+@@ -0,0 +1,273 @@
++import SharedCore
++import SwiftUI
++
++/// Add-ons hub C, H4: the catalogs page. Switch each Home catalog on or off and set the order of
++/// the Home rows, in the shape of the hub's add-on cards. Pushed from the hub's Catalogs card and,
++/// per D3, from the Home Screen settings pane's "Catalogs" link row (same page, same model).
++///
++/// "Match add-ons order" is a ONE-SHOT action, not the "Follow add-ons order" switch the plan
++/// sketched: the shared `HomeCatalogSettingsRepository` has no such preference (catalog order is
++/// stored per catalog and SYNCED through `HomeCatalogSettingsSyncService`), and a new synced
++/// preference needs mobile parity. The action reorders once through `moveByIndex`, collections
++/// kept in place, after a confirmation (the order syncs to every device on the profile). A
++/// persistent switch stays an open decision for Christian.
++///
++/// The page lists EVERY Home row in its true order, collections included, each with On/Off and
++/// the Up/Down chips (the old Home Screen rows had them). A collection pinned to the top of Home
++/// has its chips disabled: the repository re-pins it, so a press would change nothing.
++///
++/// Identifiers address rows by POSITION (`addons_hub_catalog_<i>`, `_toggle`, `_up`, `_down`);
++/// the focus keys (`card:`, `up:`, `down:` plus the catalog key) are internal `@FocusState`
++/// values.
++struct CatalogOrderView: View {
++    @ObservedObject var model: SettingsViewModel
++
++    @FocusState private var focus: String?
++    @Namespace private var focusNamespace
++    @State private var toast: String?
++    @State private var toastSerial = 0
++    @State private var confirmingMatch = false
++
++    private var rows: [HomeCatalogSettingsItem] { model.catalogs }
++
++    var body: some View {
++        let rows = self.rows
++        let orderedKeys = rows.map(\.key)
++        let pinnedKeys = Set(rows.filter(\.isPinnedToTop).map(\.key))
++        ScrollView(.vertical) {
++            LazyVStack(alignment: .leading, spacing: Theme.Spacing.lg) {
++                Text("Catalogs")
++                    .font(Theme.Font.screenTitle)
++                    .foregroundStyle(Theme.Palette.textPrimary)
++                    .accessibilityIdentifier("addons_hub_catalogs_title")
++                Text("Switch each catalog on or off and set the order of your Home rows. Collections appear where Home shows them.")
++                    .font(Theme.Font.body)
++                    .foregroundStyle(Theme.Palette.textSecondary)
++
++                if model.catalogs.isEmpty {
++                    Text("No catalogs yet. Install an add-on with catalogs first.")
++                        .font(Theme.Font.body)
++                        .foregroundStyle(Theme.Palette.textSecondary)
++                        .accessibilityIdentifier("addons_hub_catalogs_empty")
++                } else {
++                    actionRow
++                }
++
++                ForEach(Array(rows.enumerated()), id: \.element.key) { index, item in
++                    CatalogRow(
++                        item: item,
++                        index: index,
++                        canMoveUp: Self.canMove(index: index, direction: -1, orderedKeys: orderedKeys, pinnedKeys: pinnedKeys),
++                        canMoveDown: Self.canMove(index: index, direction: 1, orderedKeys: orderedKeys, pinnedKeys: pinnedKeys),
++                        focus: $focus,
++                        onToggle: { model.toggleCatalog(item) },
++                        onMoveUp: { move(item, by: -1) },
++                        onMoveDown: { move(item, by: 1) }
++                    )
++                }
++            }
++            .padding(Theme.Spacing.screen)
++            .frame(maxWidth: .infinity, alignment: .leading)
++        }
++        .background(Theme.Palette.background.ignoresSafeArea())
++        .focusScope(focusNamespace)
++        .overlay(alignment: .bottom) { toastView }
++        .alert("Match add-ons order?", isPresented: $confirmingMatch) {
++            Button("Match") {
++                let moves = model.matchCatalogsToAddonOrder()
++                showToast(moves > 0
++                    ? String(localized: "Catalogs now follow your add-ons order.")
++                    : String(localized: "Already in add-ons order."))
++            }
++            Button("Cancel", role: .cancel) {}
++        } message: {
++            Text("Your Home rows will be reordered to follow your add-ons, on every device signed in to this profile.")
++        }
++        .accessibilityIdentifier("addons_hub_catalogs_root")
++    }
++
++    // MARK: - Action row
++
++    private var actionRow: some View {
++        HStack(spacing: Theme.Spacing.md) {
++            Button {
++                confirmingMatch = true
++            } label: {
++                HStack(spacing: Theme.Spacing.xs) {
++                    Image(systemName: "arrow.up.arrow.down")
++                    Text("Match add-ons order")
++                }
++                .font(Theme.Font.body)
++                .padding(.horizontal, Theme.Spacing.sm)
++            }
++            .buttonStyle(.chip)
++            .prefersDefaultFocus(true, in: focusNamespace)
++            .accessibilityIdentifier("addons_hub_catalogs_match")
++            Spacer(minLength: 0)
++        }
++        .focusSection()
++    }
++
++    // MARK: - Reorder
++
++    /// Whether the row at `index` can move one step in `direction` and change what the page shows:
++    /// the neighbour must exist and must not be pinned to the top (the repository re-pins pinned
++    /// collections), and a pinned row itself never moves.
++    nonisolated static func canMove(index: Int, direction: Int, orderedKeys: [String], pinnedKeys: Set<String>) -> Bool {
++        guard orderedKeys.indices.contains(index), !pinnedKeys.contains(orderedKeys[index]) else { return false }
++        let target = index + direction
++        guard orderedKeys.indices.contains(target) else { return false }
++        return !pinnedKeys.contains(orderedKeys[target])
++    }
++
++    /// The focus key to restore after `key` moved by `direction`, from the list AFTER the move:
++    /// the same chip (`up:` / `down:`) while the row can still move further that way, else the
++    /// row's name area (`card:`), since a disabled chip cannot hold focus.
++    nonisolated static func moveLanding(key: String, direction: Int, orderedKeys: [String], pinnedKeys: Set<String>) -> String {
++        guard let index = orderedKeys.firstIndex(of: key),
++              canMove(index: index, direction: direction, orderedKeys: orderedKeys, pinnedKeys: pinnedKeys)
++        else { return "card:\(key)" }
++        return "\(direction < 0 ? "up" : "down"):\(key)"
++    }
++
++    /// Moves the row, then puts focus back on the same control of the moved row. The landing is
++    /// decided from the item's NEW position, read on the next runloop (the repository's list, else
++    /// this model's), not the position the press started from.
++    private func move(_ item: HomeCatalogSettingsItem, by delta: Int) {
++        let visible = rows
++        guard let from = visible.firstIndex(where: { $0.key == item.key }),
++              Self.canMove(index: from, direction: delta, orderedKeys: visible.map(\.key),
++                           pinnedKeys: Set(visible.filter(\.isPinnedToTop).map(\.key))) else { return }
++        if delta < 0 { model.moveUp(item) } else { model.moveDown(item) }
++        DispatchQueue.main.async {
++            let repoItems = (HomeCatalogSettingsRepository.shared.uiState.value_ as? HomeCatalogSettingsUiState)?.items ?? []
++            let list = repoItems.isEmpty ? model.catalogs : repoItems
++            focus = Self.moveLanding(
++                key: item.key, direction: delta, orderedKeys: list.map(\.key),
++                pinnedKeys: Set(list.filter(\.isPinnedToTop).map(\.key))
++            )
++        }
++    }
++
++    // MARK: - Toast
++
++    @ViewBuilder
++    private var toastView: some View {
++        if let toast {
++            Text(toast)
++                .font(Theme.Font.body)
++                .foregroundStyle(Theme.Palette.textPrimary)
++                .padding(.horizontal, Theme.Spacing.lg)
++                .padding(.vertical, Theme.Spacing.md)
++                .background(Theme.Surface.overlay, in: Capsule())
++                .padding(.bottom, Theme.Spacing.xl)
++                .transition(.move(edge: .bottom).combined(with: .opacity))
++                .accessibilityIdentifier("addons_hub_catalogs_toast")
++        }
++    }
++
++    private func showToast(_ message: String) {
++        toastSerial += 1
++        let serial = toastSerial
++        withAnimation { toast = message }
++        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
++            if toastSerial == serial { withAnimation { toast = nil } }
++        }
++    }
++}
++
++/// One catalog: a single focus section like `AddonCardView`. Left/Right stay inside the row (name
++/// area, On/Off, Up, Down), Up/Down move between rows.
++private struct CatalogRow: View {
++    let item: HomeCatalogSettingsItem
++    let index: Int
++    let canMoveUp: Bool
++    let canMoveDown: Bool
++    let focus: FocusState<String?>.Binding
++    let onToggle: () -> Void
++    let onMoveUp: () -> Void
++    let onMoveDown: () -> Void
++
++    var body: some View {
++        HStack(spacing: Theme.Spacing.lg) {
++            nameArea
++            Spacer(minLength: Theme.Spacing.md)
++            controls
++        }
++        .padding(Theme.Spacing.lg)
++        .background(Theme.Palette.surface, in: RoundedRectangle(cornerRadius: Theme.Radius.card, style: .continuous))
++        .focusSection()
++    }
++
++    /// The caption: the add-on for a catalog, "Pinned collection" / "Collection" for a collection.
++    private var subtitle: String {
++        if item.isCollection {
++            return item.isPinnedToTop ? String(localized: "Pinned collection") : String(localized: "Collection")
++        }
++        return item.addonName
++    }
++
++    /// Select on the name area toggles, like the old Home Screen row.
++    private var nameArea: some View {
++        Button(action: onToggle) {
++            VStack(alignment: .leading, spacing: Theme.Spacing.xxs) {
++                Text(item.displayTitle)
++                    .font(Theme.Font.sectionTitle).rowTextColor().lineLimit(1)
++                Text(subtitle)
++                    .font(Theme.Font.caption).rowTextColor(secondary: true).lineLimit(1)
++                if !item.enabled {
++                    DisabledOnHomeLabel()
++                }
++            }
++            .padding(Theme.Spacing.md)
++            .frame(maxWidth: .infinity, alignment: .leading)
++        }
++        .buttonStyle(.settingsRow)
++        .focused(focus, equals: "card:\(item.key)")
++        .accessibilityIdentifier("addons_hub_catalog_\(index)")
++    }
++
++    private var controls: some View {
++        HStack(spacing: Theme.Spacing.sm) {
++            Button(action: onToggle) {
++                SettingsSwitchGlyph(isOn: item.enabled)
++                    .padding(.horizontal, Theme.Spacing.xs)
++            }
++            .buttonStyle(.chip)
++            .accessibilityLabel(item.enabled ? Text("On") : Text("Off"))
++            .accessibilityValue(item.enabled ? "enabled" : "disabled")
++            .accessibilityIdentifier("addons_hub_catalog_\(index)_toggle")
++
++            glyphButton("chevron.up", key: "up", label: "Move up", id: "up", disabled: !canMoveUp, action: onMoveUp)
++            glyphButton("chevron.down", key: "down", label: "Move down", id: "down", disabled: !canMoveDown, action: onMoveDown)
++        }
++    }
++
++    private func glyphButton(
++        _ symbol: String, key: String, label: LocalizedStringKey, id: String,
++        disabled: Bool, action: @escaping () -> Void
++    ) -> some View {
++        Button(action: action) {
++            Image(systemName: symbol)
++                .font(Theme.Font.body)
++                .padding(.horizontal, Theme.Spacing.sm)
++        }
++        .buttonStyle(.chip)
++        .disabled(disabled)
++        .focused(focus, equals: "\(key):\(item.key)")
++        .accessibilityLabel(label)
++        .accessibilityIdentifier("addons_hub_catalog_\(index)_\(id)")
++    }
++}
++
++/// "Disabled on Home" in the error tint at rest, joining the platter's dark label colour on focus
++/// (an explicit red would stay red-on-white).
++private struct DisabledOnHomeLabel: View {
++    @Environment(\.settingsRowIsFocused) private var focused
++
++    var body: some View {
++        Text("Disabled on Home")
++            .font(Theme.Font.caption)
++            .foregroundStyle(focused ? Theme.Palette.onFocusPlatter : Theme.Palette.error)
++    }
++}
+diff --git a/iosApp/NuvioTV/Screens/Addons/SourcesHubView.swift b/iosApp/NuvioTV/Screens/Addons/SourcesHubView.swift
+index 6c419e46f..753a2e938 100644
+--- a/iosApp/NuvioTV/Screens/Addons/SourcesHubView.swift
++++ b/iosApp/NuvioTV/Screens/Addons/SourcesHubView.swift
+@@ -1,8 +1,7 @@
+ import SharedCore
+ import SwiftUI
+ 
+-/// Where a summary card pushes. `catalogs` is the Home Screen pane for now (H4 swaps in the
+-/// catalog order page).
++/// Where a summary card pushes. `catalogs` is the catalog order page.
+ enum HubRoute: Hashable {
+     case catalogs, services, plugins
+ }
+@@ -159,7 +158,7 @@ struct SourcesHubView: View {
+                 value: Text(String(localized: "\(summary.catalogsOn) of \(summary.catalogsTotal) on Home")),
+                 id: "addons_hub_summary_catalogs"
+             ) {
+-                path.append(.catalogs) // H4: swap for the catalog order page.
++                path.append(.catalogs)
+             }
+             HubCard(
+                 title: String(localized: "Debrid"),
+@@ -339,8 +338,8 @@ struct SourcesHubView: View {
+     @ViewBuilder
+     private func destination(_ route: HubRoute) -> some View {
+         switch route {
+-        case .catalogs: // H4: the catalog order page replaces this.
+-            SettingsPaneScaffold(category: .homeScreen) { HomeScreenSettingsPane(model: settings) }
++        case .catalogs:
++            CatalogOrderView(model: settings)
+         case .services:
+             SettingsPaneScaffold(category: .services) {
+                 ServicesSettingsPane(
+diff --git a/iosApp/NuvioTV/Screens/Settings/HomeScreenSettingsPane.swift b/iosApp/NuvioTV/Screens/Settings/HomeScreenSettingsPane.swift
+index 02195c16d..d576f5624 100644
+--- a/iosApp/NuvioTV/Screens/Settings/HomeScreenSettingsPane.swift
++++ b/iosApp/NuvioTV/Screens/Settings/HomeScreenSettingsPane.swift
+@@ -77,9 +77,9 @@ struct HomeScreenSettingsPane: View {
+ 
+     /// 2026-08-30 fix: replaces the `isExpanded` that used to live inside the now-deleted
+     /// `HeroSourcesGroup`/`HomeCatalogsGroup`. Plain `@State`, same behavior as before — no
+-    /// persistence, so both sections start collapsed on every (re)visit to Settings.
++    /// persistence, so Hero Sources starts collapsed on every (re)visit to Settings (the catalog list moved
++    /// to the Add-ons hub).
+     @State private var heroSourcesExpanded = false
+-    @State private var catalogsExpanded = false
+ 
+     /// Home Stage & Strip (H1): the layout this pane is configuring, resolved through
+     /// `HomeLayout.resolve` so an unset or unknown stored value reads as Stage, the same as every
+@@ -276,33 +276,14 @@ struct HomeScreenSettingsPane: View {
+                     descriptionID: .homeCatalogType
+                 )
+ 
+-                // Focus note (2026-08-30): same hoist as Hero Sources above — "Catalogs" is a
+-                // header row followed, only while expanded, by one `CatalogSettingRow` per
+-                // catalog, each its own `SettingsSection` child / List row. This is the group the
+-                // device video (2026-08-29) caught rendering blank: `HomeCatalogsGroup` put its
+-                // rows' text and reorder chips straight into a shared List row, where none of them
+-                // ever got the system's focused-row label inversion, and (independently) none of
+-                // them could ever actually receive focus for the reason in the file header
+-                // comment. `CatalogSettingRow` is also reshaped below — see its own comment — so a
+-                // single row can stay reachable without needing three separate focus targets.
+-                SettingsDisclosureRow(
++                // Add-ons hub C, H4 (D3): the catalog list moved to the Add-ons hub; the page is the
++                // same `CatalogOrderView`, pushed from here.
++                SettingsLinkRow(
+                     title: String(localized: "Catalogs"),
+-                    subtitle: catalogsSummary,
+-                    isExpanded: catalogsExpanded && !model.catalogs.isEmpty,
++                    subtitle: String(localized: "\(catalogsSummary) \u{00B7} managed in Add-ons"),
+                     descriptionID: .homeCatalogs
+                 ) {
+-                    catalogsExpanded.toggle()
+-                }
+-
+-                if catalogsExpanded && !model.catalogs.isEmpty {
+-                    ForEach(model.catalogs, id: \.key) { item in
+-                        CatalogSettingRow(
+-                            item: item,
+-                            onToggle: { model.toggleCatalog(item) },
+-                            onUp: { model.moveUp(item) },
+-                            onDown: { model.moveDown(item) }
+-                        )
+-                    }
++                    CatalogOrderView(model: model)
+                 }
+             }
+         }
+@@ -315,10 +296,7 @@ struct HomeScreenSettingsPane: View {
+             if !enabled { heroSourcesExpanded = false }
+         }
+         .onChange(of: model.catalogs.isEmpty) { _, isEmpty in
+-            if isEmpty {
+-                heroSourcesExpanded = false
+-                catalogsExpanded = false
+-            }
++            if isEmpty { heroSourcesExpanded = false }
+         }
+         // The Hero Sources group can also vanish alone: every remaining catalog being a
+         // collection removes just that header while the pane and Catalogs group stay.
+@@ -663,55 +641,3 @@ private struct HeroSourceRowLabel: View {
+             .opacity(dimmed && !isFocused ? Self.inertRowOpacity : 1)
+     }
+ }
+-
+-/// A Home-catalog row: title + add-on, with an enable/disable indicator and reorder via long-press
+-/// context menu.
+-///
+-/// 2026-08-30 fix, full redesign: the previous shape put three independent focus targets (an
+-/// enable toggle chip plus up/down reorder chips) inside one row. Hoisting `CatalogSettingRow`
+-/// itself out to be its own List row (see the call site above) fixes reachability for the row as a
+-/// whole, but three chips *within* one row would just recreate the identical one-focus-target trap
+-/// one level down — a List row still exposes only one focus target, so at most one of those three
+-/// chips could ever be focused. Rather than hoist the chips too (which would triple the row count
+-/// and make "enable" and "reorder" show up as separate list entries), the whole row is now ONE
+-/// `Button` whose primary action is the enable toggle, with reorder moved to a long-press
+-/// `.contextMenu` (same pattern as the Library tab's remove-from-library menu, see
+-/// `LibraryView.swift`). Down/up navigation between catalogs — the reorder gesture people actually
+-/// reach for while scanning a list — now just works, and Select+hold reaches the rarer reorder
+-/// action without needing its own focus target.
+-private struct CatalogSettingRow: View {
+-    let item: HomeCatalogSettingsItem
+-    let onToggle: () -> Void
+-    let onUp: () -> Void
+-    let onDown: () -> Void
+-
+-    var body: some View {
+-        Button(action: onToggle) {
+-            // D11 V1/V2 (Gate 2 sim pass): the kit row chrome (rest platter, kit insets) and the
+-            // kit's capsule switch glyph in place of the old checkmark circle, so an expanded
+-            // catalog reads like every toggle row around it. Still one Button (the reorder
+-            // context menu needs it); the glyph is decorative, state stays in the accessibility
+-            // value below.
+-            SettingsRowChrome {
+-                SettingsRowLabel(title: item.displayTitle, subtitle: item.addonName, descriptionID: .homeCatalog)
+-                    .opacity(item.enabled ? 1 : 0.55)
+-            } trailing: {
+-                SettingsSwitchGlyph(isOn: item.enabled)
+-            }
+-        }
+-        .contextMenu {
+-            Button {
+-                onUp()
+-            } label: {
+-                Label(String(localized: "Move Up"), systemImage: "chevron.up")
+-            }
+-            Button {
+-                onDown()
+-            } label: {
+-                Label(String(localized: "Move Down"), systemImage: "chevron.down")
+-            }
+-        }
+-        .accessibilityLabel(item.displayTitle)
+-        .accessibilityValue(item.enabled ? Text("Enabled") : Text("Disabled"))
+-    }
+-}
+diff --git a/iosApp/NuvioTV/Screens/Settings/SettingsDescriptions.swift b/iosApp/NuvioTV/Screens/Settings/SettingsDescriptions.swift
+index 360eea04f..e7330efef 100644
+--- a/iosApp/NuvioTV/Screens/Settings/SettingsDescriptions.swift
++++ b/iosApp/NuvioTV/Screens/Settings/SettingsDescriptions.swift
+@@ -106,7 +106,6 @@ enum SettingsDescriptionID: String, CaseIterable {
+     case homeTrailerStartDelayStage = "home.trailerStartDelayStage"
+     case homeCatalogType = "home.catalogType"
+     case homeCatalogs = "home.catalogs"
+-    case homeCatalog = "home.catalog"
+ 
+     // MARK: Detail Page (names follow DetailSettingsKeys; the pane itself is W2-B)
+     case detailLayout = "detail.layout"
+@@ -315,7 +314,6 @@ enum SettingsDescriptions {
+         case .homeTrailerStartDelayStage: return LocalizedStringResource("Sets how long a trailer preview waits before it starts. Automatic waits until the row stops moving, then one second. Default: Automatic.")
+         case .homeCatalogType: return LocalizedStringResource("Adds the type to row names, so a row reads Popular - Movies instead of just Popular. On by default.")
+         case .homeCatalogs: return LocalizedStringResource("Opens the list of catalogs that make up your Home rows. Switch each on or off and move them up or down to set the order.")
+-        case .homeCatalog: return LocalizedStringResource("Turns this row on or off on Home. Use the arrows to move it up or down.")
+ 
+         // Detail Page
+         case .detailLayout: return LocalizedStringResource("Cinematic puts the title over a full-width backdrop. Classic keeps the earlier page layout. Default: Cinematic.")
+diff --git a/iosApp/NuvioTV/Screens/SettingsViewModel.swift b/iosApp/NuvioTV/Screens/SettingsViewModel.swift
+index 3f7449754..88f8c2c21 100644
+--- a/iosApp/NuvioTV/Screens/SettingsViewModel.swift
++++ b/iosApp/NuvioTV/Screens/SettingsViewModel.swift
+@@ -168,6 +168,14 @@ final class SettingsViewModel: ObservableObject {
+     private var episodeShuffleWatcher: FlowWatcher?
+     private var debridSourcesWatcher: FlowWatcher?
+     private var enabledAddons: [ManagedAddon] = []
++    /// Add-ons hub C, H4: the display titles of the enabled add-ons in installed order, the same
++    /// string the catalog items carry as `addonName` (`HomeCatalogDefinitions`). Set wherever
++    /// `enabledAddons` is set.
++    @Published private(set) var addonOrder: [String] = []
++    /// The same enabled add-ons' manifest ids, in the same order: catalog keys are
++    /// `"<manifest.id>:<type>:<catalogId>"`, so this is the reliable match (titles can repeat or
++    /// be renamed by the user).
++    @Published private(set) var addonIds: [String] = []
+ 
+     func start() {
+         guard playerWatcher == nil else { return }
+@@ -292,6 +300,8 @@ final class SettingsViewModel: ObservableObject {
+             guard let self, let state = emitted as? AddonsUiState else { return }
+             let enabled = AddonModelsKt.enabledAddons(state.addons)
+             self.assign(\.enabledAddons, enabled)
++            self.assign(\.addonOrder, enabled.map(\.displayTitle))
++            self.assign(\.addonIds, enabled.compactMap { $0.manifest?.id })
+             // FEAT-10: keep the Search Sources rows in step with the installed addons.
+             self.assign(\.searchSourceOptions, SearchRepository.shared.searchCatalogOptions(addons: enabled))
+             // "Home Rows blank" bug (docs/steven-batch-plan-2026-08-29.md, "data clobber"):
+@@ -846,6 +856,74 @@ final class SettingsViewModel: ObservableObject {
+         refreshHome()
+     }
+ 
++    /// Add-ons hub C, H4: one-shot "Match add-ons order". Reorders the catalogs to follow the
++    /// installed add-ons' order through `moveByIndex`, which indexes ALL ordered keys, collections
++    /// included, so the plan is computed over every key and never moves a collection. Reads the
++    /// repository's current items (as `move` does), else this model's. Returns the number of moves
++    /// made (0 when Home already follows the add-ons).
++    @discardableResult
++    func matchCatalogsToAddonOrder() -> Int {
++        let repoItems = (HomeCatalogSettingsRepository.shared.uiState.value_ as? HomeCatalogSettingsUiState)?.items ?? []
++        let items = repoItems.isEmpty ? catalogs : repoItems
++        let current = items.map(\.key)
++        let desired = Self.catalogOrderFollowingAddons(items: items, addonIds: addonIds, addonTitles: addonOrder)
++        let moves = Self.movesToReach(current: current, desired: desired)
++        for (from, to) in moves {
++            HomeCatalogSettingsRepository.shared.moveByIndex(fromIndex: Int32(from), toIndex: Int32(to))
++        }
++        if !moves.isEmpty { refreshHome() }
++        return moves.count
++    }
++
++    /// The manifest id at the front of a catalog key `"<manifest.id>:<type>:<catalogId>"`: the key
++    /// minus its last two components. nil for keys that do not have that shape (collections).
++    nonisolated static func idPrefix(of key: String) -> String? {
++        let parts = key.components(separatedBy: ":")
++        guard parts.count >= 3 else { return nil }
++        return parts.dropLast(2).joined(separator: ":")
++    }
++
++    /// The keys in the order "follow the add-ons" wants: collections keep their current positions;
++    /// the other items are stably sorted by their add-on's position (matched by manifest id, else
++    /// by title; unknown add-ons last, ties by current order).
++    nonisolated static func catalogOrderFollowingAddons(
++        items: [HomeCatalogSettingsItem], addonIds: [String], addonTitles: [String]
++    ) -> [String] {
++        func rank(_ item: HomeCatalogSettingsItem) -> Int {
++            if let id = idPrefix(of: item.key), let byId = addonIds.firstIndex(of: id) { return byId }
++            return addonTitles.firstIndex(of: item.addonName) ?? Int.max
++        }
++        let movable = items.enumerated()
++            .filter { !$0.element.isCollection }
++            .sorted { lhs, rhs in
++                let l = rank(lhs.element)
++                let r = rank(rhs.element)
++                return l != r ? l < r : lhs.offset < rhs.offset
++            }
++            .map(\.element.key)
++        var queue = movable[...]
++        return items.map { item in
++            if item.isCollection { return item.key }
++            return queue.popFirst() ?? item.key
++        }
++    }
++
++    /// The `moveByIndex(from, to)` steps that turn `current` into `desired`: a selection pass that,
++    /// for each index, moves the wanted key from where it now sits. `[]` when equal or when the key
++    /// sets differ.
++    nonisolated static func movesToReach(current: [String], desired: [String]) -> [(from: Int, to: Int)] {
++        guard current != desired, current.count == desired.count, Set(current) == Set(desired),
++              Set(current).count == current.count else { return [] }
++        var working = current
++        var moves: [(from: Int, to: Int)] = []
++        for index in desired.indices where working[index] != desired[index] {
++            guard let from = working.firstIndex(of: desired[index]) else { continue }
++            working.insert(working.remove(at: from), at: index)
++            moves.append((from: from, to: index))
++        }
++        return moves
++    }
++
+     /// Re-apply the new catalog preferences to Home so the change is visible when the user returns.
+     private func refreshHome() {
+         HomeRepository.shared.refresh(addons: enabledAddons, force: true)
+diff --git a/iosApp/NuvioTVTests/AddonsHubSummaryTests.swift b/iosApp/NuvioTVTests/AddonsHubSummaryTests.swift
+index 987a38d16..8a1c37a4c 100644
+--- a/iosApp/NuvioTVTests/AddonsHubSummaryTests.swift
++++ b/iosApp/NuvioTVTests/AddonsHubSummaryTests.swift
+@@ -202,4 +202,66 @@ final class AddonsHubSummaryTests: XCTestCase {
+         XCTAssertEqual(AddonInstallSheet.installPhase(isInstalling: false, outcome: failed), .failed(message: "nope"))
+         XCTAssertEqual(AddonInstallSheet.installPhase(isInstalling: false, outcome: nil), .idle)
+     }
++
++    /// H4: collections keep their index; the rest sort stably by add-on position, matched by the
++    /// manifest id in the key (`<manifest.id>:<type>:<catalogId>`), else by title.
++    func testCatalogOrderFollowsAddonsAndPinsCollections() {
++        func item(_ key: String, addon: String, collection: Bool = false) -> HomeCatalogSettingsItem {
++            HomeCatalogSettingsItem(
++                key: key, defaultTitle: key, addonName: addon, customTitle: "", enabled: true,
++                heroSourceEnabled: true, order: 0, isCollection: collection, collectionId: nil, isPinnedToTop: false
++            )
++        }
++        let items = [
++            item("b:movie:b1", addon: "B"), item("a:movie:a1", addon: "A"), item("a:series:a2", addon: "A"),
++            item("collection_shelf", addon: "Collections", collection: true), item("b:movie:b2", addon: "B"),
++        ]
++        XCTAssertEqual(
++            SettingsViewModel.catalogOrderFollowingAddons(items: items, addonIds: ["a", "b"], addonTitles: ["A", "B"]),
++            ["a:movie:a1", "a:series:a2", "b:movie:b1", "collection_shelf", "b:movie:b2"]
++        )
++        // Two add-ons sharing a title: the id still tells them apart.
++        let twins = [item("b:movie:x", addon: "Same"), item("a:movie:y", addon: "Same")]
++        XCTAssertEqual(
++            SettingsViewModel.catalogOrderFollowingAddons(items: twins, addonIds: ["a", "b"], addonTitles: ["Same", "Same"]),
++            ["a:movie:y", "b:movie:x"]
++        )
++        // No id match: falls back to the title; unknown add-ons go last.
++        let legacy = [item("zzz", addon: "Gone"), item("k", addon: "B"), item("j", addon: "A")]
++        XCTAssertEqual(
++            SettingsViewModel.catalogOrderFollowingAddons(items: legacy, addonIds: [], addonTitles: ["A", "B"]),
++            ["j", "k", "zzz"]
++        )
++    }
++
++    func testIdPrefixDropsTypeAndCatalogId() {
++        XCTAssertEqual(SettingsViewModel.idPrefix(of: "com.x.addon:movie:top"), "com.x.addon")
++        XCTAssertEqual(SettingsViewModel.idPrefix(of: "a:b:movie:top"), "a:b")
++        XCTAssertNil(SettingsViewModel.idPrefix(of: "collection_shelf"))
++    }
++
++    /// Where focus lands after a move, from the list after the move.
++    func testMoveLanding() {
++        let none = Set<String>()
++        // Row 0 moved down in [a b c]: now [b a c], a sits at 1 and can go further down.
++        XCTAssertEqual(CatalogOrderView.moveLanding(key: "a", direction: 1, orderedKeys: ["b", "a", "c"], pinnedKeys: none), "down:a")
++        // Last row moved down: [b c a], a is at the end.
++        XCTAssertEqual(CatalogOrderView.moveLanding(key: "a", direction: 1, orderedKeys: ["b", "c", "a"], pinnedKeys: none), "card:a")
++        // A middle row moved up in [a b c d]: [a c b d], c at 1 can still go up.
++        XCTAssertEqual(CatalogOrderView.moveLanding(key: "c", direction: -1, orderedKeys: ["a", "c", "b", "d"], pinnedKeys: none), "up:c")
++        // Moved up to the top: [c a b d].
++        XCTAssertEqual(CatalogOrderView.moveLanding(key: "c", direction: -1, orderedKeys: ["c", "a", "b", "d"], pinnedKeys: none), "card:c")
++        // Up to just under a pinned collection: it cannot go further.
++        XCTAssertEqual(CatalogOrderView.moveLanding(key: "c", direction: -1, orderedKeys: ["p", "c", "a"], pinnedKeys: ["p"]), "card:c")
++        // Gone from the list: the name area.
++        XCTAssertEqual(CatalogOrderView.moveLanding(key: "z", direction: 1, orderedKeys: ["a"], pinnedKeys: none), "card:z")
++    }
++
++    func testMovesToReachAFinalOrder() {
++        let moves = SettingsViewModel.movesToReach(current: ["c", "a", "b"], desired: ["a", "b", "c"])
++        XCTAssertEqual(moves.map(\.from), [1, 2])
++        XCTAssertEqual(moves.map(\.to), [0, 1])
++        XCTAssertTrue(SettingsViewModel.movesToReach(current: ["a", "b"], desired: ["a", "b"]).isEmpty)
++        XCTAssertTrue(SettingsViewModel.movesToReach(current: ["a", "b"], desired: ["a", "x"]).isEmpty)
++    }
+ }
+diff --git a/iosApp/NuvioTVUITests/AddonsHubUITests.swift b/iosApp/NuvioTVUITests/AddonsHubUITests.swift
+index 61637f906..6755f0f08 100644
+--- a/iosApp/NuvioTVUITests/AddonsHubUITests.swift
++++ b/iosApp/NuvioTVUITests/AddonsHubUITests.swift
+@@ -140,4 +140,68 @@ final class AddonsHubUITests: XCTestCase {
+         say("sheet closed: \(focusDump(app))")
+         pause(2)
+     }
++
++    /// H4: the Catalogs summary card opens the catalogs page; the first row's name area, On/Off,
++    /// Up (disabled on the first row) and Down are reachable by Right; Menu returns to the hub with the
++    /// Catalogs card focused. Never Select on a control: nothing changes on the fixture.
++    func testCatalogsPageOpensFromTheHub() throws {
++        let app = XCUIApplication()
++        app.launchArguments = ["-home_layout", "classic", "-debug.rememberLastProfile", "NO",
++                               "-debug.trailerForceNoTrailer", "YES", "-detail_trailer_autoplay", "NO"]
++        app.launch()
++        let chris = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "Chris")).firstMatch
++        XCTAssertTrue(chris.waitForExistence(timeout: 90), "profile picker never appeared")
++        if chris.exists { DetailEntryRoute.selectChrisTile(self, app, timeout: 5) }
++        pause(10)
++
++        openTab(app, named: "Add-ons")
++        XCTAssertTrue(element(app, "addons_hub_root").waitForExistence(timeout: 10), "addons_hub_root never appeared; focused: \(focusDump(app))")
++        let card = element(app, "addons_hub_summary_catalogs")
++        XCTAssertTrue(card.waitForExistence(timeout: 5), "addons_hub_summary_catalogs missing")
++        // Run 1: the page's default focus can already sit on the Add-ons summary card after the tab
++        // Select, so an unconditional Down fell through to the action row. Go Down only while no
++        // summary card has focus, then Right along the row.
++        let summaryIds = ["addons_hub_summary_addons", "addons_hub_summary_catalogs", "addons_hub_summary_debrid", "addons_hub_summary_plugins"]
++        for _ in 0..<4 where !summaryIds.contains(where: { element(app, $0).hasFocus }) {
++            remote.press(.down); pause(0.8)
++        }
++        if !moveFocus(.right, until: card, max: 3) { _ = moveFocus(.left, until: card, max: 4) }
++        XCTAssertTrue(card.hasFocus, "the Catalogs summary card never took focus; focused: \(focusDump(app))")
++        pause(1)
++
++        remote.press(.select); pause(1.5)
++        XCTAssertTrue(element(app, "addons_hub_catalogs_root").waitForExistence(timeout: 5), "the catalogs page did not open; focused: \(focusDump(app))")
++        XCTAssertTrue(element(app, "addons_hub_catalogs_title").exists, "catalogs title missing")
++        let row0 = element(app, "addons_hub_catalog_0")
++        XCTAssertTrue(row0.waitForExistence(timeout: 10), "no addons_hub_catalog_0 on the fixture; empty=\(element(app, "addons_hub_catalogs_empty").exists)")
++        XCTAssertTrue(moveFocus(.down, until: row0, max: 4), "catalog row 0 never took focus; focused: \(focusDump(app))")
++        let rowCount = app.descendants(matching: .any)
++            .matching(NSPredicate(format: "identifier MATCHES %@", "addons_hub_catalog_[0-9]+")).count
++        say("catalogs page shows \(rowCount) rows")
++        say("catalog row 0 focused")
++        pause(1.5)
++
++        remote.press(.right); pause(0.6)
++        let toggle = element(app, "addons_hub_catalog_0_toggle")
++        XCTAssertTrue(toggle.exists && toggle.hasFocus, "the toggle never took focus; focused: \(focusDump(app))")
++        remote.press(.right); pause(0.6)
++        let up = element(app, "addons_hub_catalog_0_up")
++        let down = element(app, "addons_hub_catalog_0_down")
++        XCTAssertTrue(up.exists, "up control missing")
++        XCTAssertFalse(up.isEnabled, "up should be disabled on the first row")
++        XCTAssertTrue(down.exists, "down control missing")
++        if down.isEnabled {
++            XCTAssertTrue(down.hasFocus, "down never took focus; focused: \(focusDump(app))")
++        } else {
++            XCTAssertTrue(toggle.hasFocus, "focus left the toggle on a one-catalog fixture; focused: \(focusDump(app))")
++        }
++        pause(1.5)
++
++        remote.press(.menu); pause(1.5)
++        XCTAssertFalse(element(app, "addons_hub_catalogs_root").exists, "the catalogs page is still up after Menu")
++        XCTAssertTrue(element(app, "addons_hub_root").exists, "the hub is not showing")
++        XCTAssertTrue(card.exists && card.hasFocus, "focus did not return to the Catalogs card; focused: \(focusDump(app))")
++        say("back on the hub: \(focusDump(app))")
++        pause(2)
++    }
+ }
