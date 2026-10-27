@@ -1,6 +1,6 @@
 {
   "_about": "Machine-readable mirror of docs/beta-feedback-tracker.md for the NuvioTV Tester Feedback dashboard. One row per tracker ID. Maintained by the beta-feedback sweep (see docs/beta-feedback-sweep-instructions.md §3). Allowed values: stage = Open | Released | Closed, no fix; tester (when stage=Open) = Not started | Waiting on reporter | Reopened after fix | Researched, not built; tester (when stage=Released) = Confirmed by tester | Partly confirmed | Awaiting tester | In-house only | Closed unconfirmed; tester (when stage=Closed, no fix) = Not a bug / declined / superseded | Duplicate of <ID>.",
-  "generated": "2026-10-25T23:40:00Z",
+  "generated": "2026-10-27T12:25:00Z",
   "source": "docs/beta-feedback-tracker.md",
   "rows": [
     {
@@ -3533,6 +3533,94 @@
       "reporter": "In-house (box report)",
       "first_seen": "2026-10-24",
       "summary": "Native player MKV remux draws ~60 % CPU for the whole playback (tvOS cpu_resource report); measure on Release."
+    },
+    {
+      "id": "BUG-225",
+      "kind": "Bug",
+      "priority": "P3",
+      "stage": "Open",
+      "tester": "Not started",
+      "build": "",
+      "reporter": "GitHub (erdist)",
+      "first_seen": "2026-10-27",
+      "summary": "Episode rating badges never show on a self-built app: both ratings service URLs are unpublished and IMDb-id titles are never resolved to a TMDB id."
+    },
+    {
+      "id": "FEAT-86",
+      "kind": "Feature request",
+      "priority": "P3",
+      "stage": "Open",
+      "tester": "Not started",
+      "build": "",
+      "reporter": "GitHub (erdist)",
+      "first_seen": "2026-10-27",
+      "summary": "Group plugin streams by repository (shared option tvOS never exposed) plus one All Providers switch per repository."
+    },
+    {
+      "id": "FEAT-87",
+      "kind": "Feature request",
+      "priority": "P3",
+      "stage": "Open",
+      "tester": "Not started",
+      "build": "",
+      "reporter": "GitHub (erdist)",
+      "first_seen": "2026-10-27",
+      "summary": "Detail page: a Trailer Start Delay setting (Default/3/5/10/15/30s) gating both the background trailer and the full-screen auto-play."
+    },
+    {
+      "id": "BUG-226",
+      "kind": "Bug",
+      "priority": "P3",
+      "stage": "Open",
+      "tester": "Not started",
+      "build": "",
+      "reporter": "GitHub (erdist)",
+      "first_seen": "2026-10-27",
+      "summary": "Trailer sound plays over the still backdrop: the BUG-59 reveal gate conceals the surface but never mutes the player."
+    },
+    {
+      "id": "BUG-227",
+      "kind": "Bug",
+      "priority": "P2",
+      "stage": "Open",
+      "tester": "Not started",
+      "build": "",
+      "reporter": "GitHub (erdist)",
+      "first_seen": "2026-10-27",
+      "summary": "MPV with a WebVTT track duplicates one more copy of each subtitle line on every backward seek; sub-clear-on-seek is never set."
+    },
+    {
+      "id": "BUG-228",
+      "kind": "Bug",
+      "priority": "P1",
+      "stage": "Open",
+      "tester": "Not started",
+      "build": "",
+      "reporter": "GitHub (erdist)",
+      "first_seen": "2026-10-27",
+      "summary": "Up Next reports no stream found although 17-24 playable streams loaded: the binge-group-only default rejects all plugin streams."
+    },
+    {
+      "id": "FEAT-88",
+      "kind": "Feature request",
+      "priority": "P3",
+      "stage": "Open",
+      "tester": "Not started",
+      "build": "",
+      "reporter": "GitHub (erdist)",
+      "first_seen": "2026-10-27",
+      "summary": "tvOS exposes none of the three next-episode auto-play settings the phone app has, so BUG-228 cannot be worked around."
+    },
+    {
+      "id": "BUG-229",
+      "kind": "Bug",
+      "priority": "P3",
+      "stage": "Open",
+      "tester": "Not started",
+      "build": "",
+      "reporter": "GitHub (erdist)",
+      "first_seen": "2026-10-27",
+      "summary": "Up Next never arms when playback starts before the episode fetch finishes: nextVideo resolved once from an empty episode list."
     }
   ]
 }
