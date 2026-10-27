@@ -1,13 +1,34 @@
 # macOS
 .DS_Store
 
-# Claude Code — personal local settings (permissions etc.), not shared
+# Claude Code — personal local settings, worktree snapshots, session launchers, tool caches
 .claude/settings.local.json
-
-# Claude Code — generated worktree snapshots (machine-specific gitdir paths, ~150MB)
 .claude/worktrees/
-
-# Claude Code — session-generated preview launcher (points at ephemeral scratchpad paths)
 .claude/launch.json
+.agents/
+.impeccable/
 __pycache__/
 scripts/device/.venv/
+
+# docs/ is working material (plans, reviews, comms drafts, evidence, sweep notes) and stays local.
+# Only the allowlist below is tracked: the files the README, the scripts and the scheduled
+# upstream check read. Add a new tracked doc here deliberately; never `git add docs`.
+docs/**
+!docs/status.md
+!docs/upstream-check-latest.md
+!docs/nuvio-cloud-api-reference.md
+!docs/tvos-port-plan.md
+!docs/device-rig-2026-10-15.md
+!docs/ios-release-watch.md
+!docs/design/
+!docs/design/**
+
+# Marketing output (release videos, explainers) lives outside the repo: ~/Claude/Projects/nuvio-marketing
+marketing/
+
+# Phase-0 scaffolding templates were retired 2026-10-27; only the quickjs build inputs stay tracked
+scaffolding/tvosApp/
+scaffolding/test-plugin/
+scaffolding/gradle/
+scaffolding/kotlin/
+skills-lock.json

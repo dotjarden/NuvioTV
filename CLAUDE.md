@@ -1,6 +1,6 @@
 # Nuvio tvOS — Claude Code rules
 
-History, run logs, releases and open action items: `docs/status.md` (moved out 2026-10-19). Daily upstream-check logs: `docs/upstream-port-plan-YYYY-MM-DD.md`. Keep this file rules-only.
+History, run logs, releases and open action items: `docs/status.md` (moved out 2026-10-19). Daily upstream check: `docs/upstream-check-latest.md` (tracked, overwritten daily); its dated reports stay local. Keep this file rules-only.
 
 ## Repo layout
 - Outer repo (this folder): fork wrapper on `main` — docs, scripts, the `NuvioMobile` submodule.
@@ -9,7 +9,8 @@ History, run logs, releases and open action items: `docs/status.md` (moved out 2
 
 ## Standing instructions
 The shared rules (no sends without a go, no cuts unless told, ask before planning, model delegation) live in `~/.codex/AGENTS.md`, loaded globally by both tools. Project-specific additions:
-- Comms drafts go in `docs/comms-*.md`, marked NOT SENT.
+- Comms drafts go in `docs/comms-*.md`, marked NOT SENT (local only, never tracked).
+- `docs/` is gitignored except an allowlist in `.gitignore` (status, the rolling upstream check, the README's two reference docs, the rig doc, the iPad release watch, `docs/design/`). Plans, reviews, specs, comms, evidence, sweeps and dashboards never enter the repo; add a tracked doc only by editing the allowlist. `marketing/` lives at `~/Claude/Projects/nuvio-marketing` (not git). Working material removed on 2026-10-27 is archived at `~/Claude/Archive/nuvio-2026-10-27/`.
 - Batch work records delegation rounds and findings in the batch doc.
 - Release notes and tester DMs name every new setting and its default.
 
@@ -32,7 +33,7 @@ The shared rules (no sends without a go, no cuts unless told, ask before plannin
 All device testing runs in the app's **"Test" profile** ("Test 2" on the Living Room box), never the synced daily-use "Chris" profile: passes, repros, installing a tester's add-ons or collections. Name the profile before any device step; remove tester payloads afterwards. If a pass needs "Chris", say so and get his go first. Dev builds under `com.youngchris29.NuvioTV` share the account. Remote rig (`scripts/device/*.sh`, credentials in `~/.config/nuviotv-device/`): `docs/device-rig-2026-10-15.md`. Pre-flight before any pass or install: `scripts/device/ready.sh` (`--walk` adds the app/console/profile gate).
 
 ## Branch hygiene
-- Outer `origin` carries `main`; cloud sweeps leave `claude/*` branches behind: delete each once it is an ancestor of `main` (one left 2026-10-22: `claude/kind-hypatia-d0wvc0`, not yet in `main`). Steady state is `main` only.
+- Outer `origin` carries `main` only. The cloud sweeps no longer commit or branch (2026-10-27); any `claude/*` branch that appears is a stray to delete once it is an ancestor of `main`.
 - Submodule `origin` holds `tvos-shared-extraction` and `cmp-rewrite` (stale mirror). Fork tags are `tvos-*`; never push upstream's `0.x` tags.
 - Never `git worktree add`/`remove` on the submodule (`core.worktree` resolves back to `.git/modules/NuvioMobile`); a stray one is removed with `rm -rf` + `git worktree prune`. Isolated work goes in a clone `~/Claude/Projects/NuvioMobile-<task>`, landed with `git fetch <clone> <branch>:<branch>`; in a clone MPVKit is a symlink over the gitlink, so stage by explicit paths, never `git add -A`.
 - Side clones now: none for landing work (the Card Depth clone was deleted 2026-10-24 after its merge); delete each once its branch is fast-forwarded in. `~/Claude/Projects/NuvioMobile-ios-sideload` is NOT one of these: it is the standing upstream checkout for the iPad sideload (see below), detached at a release tag, never committed or pushed.
@@ -41,8 +42,8 @@ All device testing runs in the app's **"Test" profile** ("Test 2" on the Living 
 ## iPad sideload (standing, 2026-10-25)
 Upstream's iOS app (`NuvioMedia/NuvioMobile`, the `iosApp` scheme) runs on Christian's iPad from a side clone at `~/Claude/Projects/NuvioMobile-ios-sideload`, built with his free team and installed as `com.nuvio.media.Nuvio` (app + Downloads widget). `scripts/ios/refresh-ipad.sh` (hourly 10:00–22:00 via `~/Library/LaunchAgents/com.youngchris29.nuvio-ipad.plist`, real work at most once a day) checks out the newest release tag, re-points signing, fetches the pinned Nuvio Engine xcframework into `~/Claude/Projects/nuvio-engine` (upstream's `scripts/prepare-ios-dependencies.sh`), mints fresh 7-day profiles, builds the **full** flavor (`NUVIO_IOS_DISTRIBUTION=full`; the default `appstore` flavor has no P2P engine and shows "This stream type is not supported" on every torrent stream) and installs when a new release exists or the profile has under 2 days left. `scripts/ios/check-release.sh` watches releases, notifies, and appends notes to `docs/ios-release-watch.md` (commit it like the other check docs). Config and state: `~/.config/nuvio-ipad/` (never in git; the clone's `local.properties` is a copy of the submodule's). The iPad must be unlocked on the same Wi-Fi for the install; the job retries each hourly slot. Manual: `scripts/ios/refresh-ipad.sh --dry-run` to see the decision, `--force` to rebuild now.
 
-## Reddit DM check (standing, 2026-10-08)
-DMs are the sweep's third source (`docs/beta-feedback-sweep-instructions.md` §1b): local only via `scripts/reddit/fetch-dms.sh --since <watermark> --summary`; the tracker header holds the watermark. The sweep never sends a DM.
+## Beta-feedback sweeps (standing, rewritten 2026-10-27)
+The tracker is the database of the Tester Feedback dashboard artifact `https://claude.ai/artifact/UcBu7mTfKqyiW9dnywnYXX` (`items/<ID>`, `meta/sweep`, `meta/procedure`, `log/`, `marks/`), read and written with `ArtifactData`; no files, no commits, no sweep branches. The procedure is `meta/procedure`; its editing copy is the local, gitignored `docs/beta-feedback-sweep-instructions.md` (edit, then write it back). Runs: two cloud routines (morning 12:00 UTC, evening 23:00 UTC) and the local DM check (`nuviotv-reddit-dm-check`, `scripts/reddit/fetch-dms.sh --since <meta/sweep.dm_last_checked> --summary` from this checkout; the dedicated clone is gone). The old file dashboard (artifact `0d62393a…`) is retired and never republished. No run sends a DM or posts anywhere. Interactive triage writes the same database (`updated_by: interactive`).
 
 ## Knowledge graph (graphify, standing, 2026-10-26)
 `NuvioMobile/graphify-out/` (gitignored; tree-sitter code graph of the submodule, no LLM, `graphify` CLI via uv) is the first stop for any codebase question, run from the submodule: `cd NuvioMobile && graphify query "<question>"` / `explain "<symbol>"` / `path "<A>" "<B>"` / `affected "<symbol>"` (those forms are pre-allowed in `.claude/settings.json`). The PreToolUse hook there nudges toward the graph before Bash/Grep/Read/Glob and carries `GRAPHIFY_OUT=NuvioMobile/graphify-out` inline because it runs at this root; never export that variable in a shell, it breaks graphify inside `NuvioMobile/`. Same-named Swift/Kotlin symbols are refused as ambiguous: pass `<file path>::Symbol`.

@@ -2,7 +2,11 @@
 
 Moved out of `CLAUDE.md` (then titled "Nuvio tvOS — Claude Code project notes") on 2026-10-19 so that file holds rules only. Every entry below is the text as it stood in `CLAUDE.md` on 2026-10-18, verbatim, grouped under dated headings, newest first. New run logs, release records and batch outcomes go in the batch doc or here, not in `CLAUDE.md`.
 
-Later cuts not recorded in these notes: the submodule carries tags `tvos-v0.3.0-beta.19-rc6`, `-rc7`, `-rc8`, `-rc9` and `-rc10` (see `git -C NuvioMobile tag`). The daily upstream-check logs are `docs/upstream-port-plan-YYYY-MM-DD.md`; the NuvioTV (Android TV) check is `docs/nuviotv-android-upstream-port-plan-YYYY-MM-DD.md`.
+Later cuts not recorded in these notes: the submodule carries tags `tvos-v0.3.0-beta.19-rc6`, `-rc7`, `-rc8`, `-rc9` and `-rc10` (see `git -C NuvioMobile tag`). The daily upstream check is recorded in `docs/upstream-check-latest.md` (since 2026-10-27; the dated `docs/upstream-port-plan-YYYY-MM-DD.md` reports are local only).
+
+## Repo cleanup 2026-10-27
+
+The outer repo was reduced to code and build inputs: `docs/` is gitignored except an allowlist (see `.gitignore`), `marketing/` and the Phase-0 scaffolding templates left the repo, and the beta-feedback tracker (`docs/beta-feedback-tracker.md`, `docs/beta-feedback-items.json`, the file dashboard and the sweep instructions) moved into the Tester Feedback dashboard's database (`https://claude.ai/artifact/UcBu7mTfKqyiW9dnywnYXX`): 337 items, 299 update-log entries, the header state as `meta/sweep`, the procedure as `meta/procedure`. Both cloud sweeps and the local DM check write that database and never commit. Everything removed from the working tree is archived at `~/Claude/Archive/nuvio-2026-10-27/` (docs, marketing, the old task prompts); the marketing branch's files are at `~/Claude/Projects/nuvio-marketing/`. Git history was not rewritten, so the old files remain reachable at `c8a28c1` and earlier. The daily upstream check now overwrites `docs/upstream-check-latest.md`; its dated reports stay local. Full report: `docs/repo-cleanup-report-2026-10-27.md` (local).
 
 ## Releases
 

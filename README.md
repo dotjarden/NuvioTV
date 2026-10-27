@@ -170,8 +170,8 @@ Building the app runs the Gradle task that produces `SharedCore` and links it in
   - `NuvioMobile/iosApp/NuvioTopShelf/` contains the tvOS **Top Shelf** extension.
   - `NuvioMobile/iosApp/iosApp.xcodeproj` is the Xcode project. Build the **`NuvioTV`** scheme.
 - `design/` contains brand assets (logo, marks, previews).
-- `docs/` contains the port plan, feature-parity roadmap and scouting or migration reports.
-- `scaffolding/` contains Phase 0 templates plus the tvOS QuickJS build script and patch.
+- `docs/` holds the port plan, the cloud API reference, the project status and the daily upstream-check record; working notes stay out of the repo.
+- `scaffolding/` contains the tvOS QuickJS build script and patch that `shared/build.gradle.kts` relies on.
 
 ## Built With
 
