@@ -1,4 +1,4 @@
-# Upstream port batch — 2026-10-26 (plan, NOT STARTED)
+# Upstream port batch — 2026-10-26 (LANDED 2026-10-26, NOT cut)
 
 Source: `docs/upstream-port-plan-2026-10-26.md` addendum. Baseline upstream `7de46ead`, fork submodule `773e48732`. Four `shared/`-only ports, no new setting, no UI. Budget ~3 h wall, one session.
 
@@ -79,4 +79,48 @@ Then from `~/Claude/Projects/NuvioTV`: `scripts/graph-impact.sh <BASE>` (run aga
 5. No cut. Release-note line for the next cut: "Stream language filters now recognise ITA/ENG/FRENCH/GER-style words in release names and no longer read title words (The French Dispatch) as a language. No new settings."
 
 ## Run log
-(empty)
+
+**Landed 2026-10-26:** `tvos-shared-extraction` 773e48732 -> **410e21e22** (pushed; clone and branch deleted). Orchestrated by Fable per this file; workers Sonnet (T1–T3), Haiku (T0, T4, T5), reviewer Opus read-only (Codex quota out until 10-29). No cut, no DM, no release notes sent.
+
+Commits on the tip (BASE 773e48732):
+- 3167d1920 `port(streams): compile badge rules once per change (upstream a0735005d)` — `git apply --3way` clean.
+- 3a2b9e399 `port(trakt): paging failure tests, undecodable page fails the list (upstream TraktProgressPagingTest, 2e79b3df9)` — tests only; the fork already fails the list (hidden shows: decode failure -> null list; history: `TraktProgressFetchException`), so no production change.
+- 07542b254 `port(debrid): language aliases from release-name words + strip title words (upstream 6eb35df0, 4b79c43c)` — `parsedTitle` and resolve `title` both exist on the fork model, both stripped as upstream; no fallback.
+- 78b91a99f `port(debrid): cache stream filter regexes and reuse stream facts (upstream def203a96)` — `hasToken` receiver `lowercase()` dropped as upstream did (all 28 callers in `shared/` already lowercase); `applyPassthroughPreferences` untouched; atomicfu already a `shared` dependency.
+- 410e21e22 `test(trakt): name the paging tests for what they check (review r1)`.
+
+Test classes added / extended:
+- `DebridStreamPresentationLanguageTest` (new, 8): the six upstream language cases, the tvOS passthrough case (`allStreams = true`, no resolver, `Movie.2024.1080p.ITA.ENG` passes `requiredLanguages = [IT]`, `…FRENCH` dropped), and `formats filtered debrid streams with the facts computed while filtering`.
+- `StreamBadgePresentationTest` (new, 1): `applies new rules after reusing the previous ones`.
+- `TraktProgressFetchFailureTest` (+2, now 7): `nullPageResultFailsTheHiddenShowList`, `pageStatusErrorMessageNamesTheEndpoint`. Skipped: `historyKeepsTheNewestEpisodePerShow` (per-show dedup is inline in private `fetchRecentEpisodeHistoryEntries`; not testable without a refactor). Known gap: the undecodable-body paths (`fetchHiddenShowIds` inline decode, `fetchRecentEpisodeHistoryEntries` throw) have no seam in the fork, so they stay untested until a `readAllTraktPages`-style helper is ported.
+
+Gates (T5 on 78b91a99f, re-run on 410e21e22 after the test-only rename):
+- `./gradlew :shared:jvmTest :shared:tvosSimulatorArm64Test :composeApp:iosSimulatorArm64Test` PASS — jvmTest 1740 tests / 0 failures / 0 errors (201 suites). First T5 run hit a transient Gradle build-cache store error in `compileKotlinTvosSimulatorArm64` ("Could not get file mode for …/ir/fileEntries.knf"); the retry passed with no change.
+- `xcodebuild … NuvioTV Debug` (FA87 sim) BUILD SUCCEEDED; `… Release` BUILD SUCCEEDED.
+- `git diff --stat 773e48732 -- iosApp` empty: no Swift changed, NuvioTVTests / UI legs not run.
+
+Review loop (Opus read-only over `git diff 773e48732`, same base both rounds):
+- Round 1: FINDINGS (3 low). (1) `undecodablePageFailsTheList` was a tautology (local `Json` decode inside the test lambda; repository decoder never ran) -> renamed `nullPageResultFailsTheHiddenShowList`, garbage-decode dropped, comment names the missing seam. (2) `errorStatusOnFirstHistoryPageFails` never walked history (called `requireTraktProgressPageSuccess` directly) -> renamed `pageStatusErrorMessageNamesTheEndpoint`, comment fixed. (3) **DECLINED:** on the fork-only passthrough `allStreams` path `languageSearchText` strips no title (passthrough streams carry no `clientResolve`, so no `parsedTitle` / resolve `title`), so a release name like `The.French.Dispatch.2021.1080p` now reads `FR` there. Upstream's own torbox-cache streams without `clientResolve` have the same gap; a fix needs the meta title plumbed into `StreamItem`, which is behaviour upstream did not add. Recorded as a known limit of the passthrough language filter.
+- Round 2: CLEAN (only 410e21e22 changed since round 1, one test file).
+
+Decisions outside the plan text:
+- Plan paths said `~/Claude/Projects/NuvioTV`; the outer repo is `~/Claude/Projects/Nuvio tvOS` (space). Every brief carried that correction verbatim.
+- The clone's `MPVKit` came out as an empty directory (local clone drops the gitlink content); T0 replaced it with a symlink to the submodule's `MPVKit`, never staged.
+- T1, T3, T4 ran concurrently in one clone with per-file ownership and `git commit -- <paths>`; no collisions. Gradle's test task overwrote T4's XML when T3 ran, so T4's class pass was first inferred from the green build and then confirmed by T5's full run (1 / 0 / 0).
+- `scripts/graph-impact.sh` takes NuvioMobile refs, not a repo path, so it ran after the fetch into the submodule, before the branch was deleted.
+
+### Graph impact: 773e48732..HEAD
+- graph built at `3707f08a`, submodule HEAD `410e21e2`  **(graph is stale: run `graphify update .` in NuvioMobile/)**
+- 6 changed file(s), 6 communities touched
+
+| Community | Symbols touched / in community | Files |
+|---|---|---|
+| Debrid Stream Audio Tags | 31 / 139 | `shared/src/commonMain/kotlin/com/nuvio/app/features/debrid/DebridStreamPresentation.kt` |
+| Debrid Settings Tests | 18 / 68 | `shared/src/commonMain/kotlin/com/nuvio/app/features/debrid/DebridStreamFormatter.kt`, `shared/src/commonMain/kotlin/com/nuvio/app/features/debrid/DebridStreamPresentation.kt` |
+| Trakt API Models | 7 / 25 | `shared/src/commonTest/kotlin/com/nuvio/app/features/trakt/TraktProgressFetchFailureTest.kt` |
+| Stream Badge Presentation | 5 / 44 | `shared/src/commonMain/kotlin/com/nuvio/app/features/streams/StreamBadgePresentation.kt` |
+| Debrid Stream Tests | 1 / 86 | `shared/src/commonMain/kotlin/com/nuvio/app/features/debrid/DebridStreamFormatter.kt` |
+| Kotlin Test Utilities | 1 / 219 | `shared/src/commonTest/kotlin/com/nuvio/app/features/trakt/TraktProgressFetchFailureTest.kt` |
+
+Not in the graph (2): `shared/src/commonTest/kotlin/com/nuvio/app/features/debrid/DebridStreamPresentationLanguageTest.kt`, `shared/src/commonTest/kotlin/com/nuvio/app/features/streams/StreamBadgePresentationTest.kt`
+
