@@ -2,36 +2,36 @@
 
 Overwritten by the `nuvio-upstream-check` scheduled task on every run. The dated reports it also writes (`docs/upstream-port-plan-YYYY-MM-DD.md`, `docs/nuviotv-android-upstream-port-plan-YYYY-MM-DD.md`) stay local and are gitignored; this file is the only tracked record and carries the baselines the next run starts from.
 
-- **Run:** 2026-10-27
-- **NuvioMobile baseline** (`NuvioMedia/NuvioMobile` `cmp-rewrite`): `61658f366` — dated report `docs/upstream-port-plan-2026-10-27.md`
-- **NuvioTV Android baseline** (`NuvioMedia/NuvioTV` `dev`): `c3f68d84a` — dated report `docs/nuviotv-android-upstream-port-plan-2026-10-27.md`
+- **Run:** 2026-10-28
+- **NuvioMobile baseline** (`NuvioMedia/NuvioMobile` `cmp-rewrite`): `86e0d5bb4` — dated report `docs/upstream-port-plan-2026-10-28.md`
+- **NuvioTV Android baseline** (`NuvioMedia/NuvioTV` `dev`): `d14832e1c` — dated report `docs/nuviotv-android-upstream-port-plan-2026-10-28.md`
 
-## NuvioMobile — 2026-10-27
+## NuvioMobile — 2026-10-28
 
-Upstream `NuvioMedia/NuvioMobile` (`cmp-rewrite`): `7de46ead` (last plan, 2026-10-26 addendum) -> `61658f366`. 5 non-merge commits, **0 under `shared/`**. Fork tip checked: submodule `410e21e22`, outer `340b1d2`.
-**New baseline: `61658f366`.**
-
-The debrid language fixes (`6eb35df0`, `4b79c43c`), regex/badge caches and Trakt tests recommended on 10-26 already landed in the fork (410e21e22); they are closed.
+Upstream `NuvioMedia/NuvioMobile` (`cmp-rewrite`): `61658f366` (last plan, 2026-10-27) -> `86e0d5bb4`. 1 non-merge commit, **0 under `shared/`**. Fork tip checked: submodule `410e21e22`, outer `89dfbe1`.
+**New baseline: `86e0d5bb4`.**
 
 ## Candidates for the tvOS fork
 
-1. **LOW-MED, optional UI batch — player chapters** (`9b95ce843`, kernexshadow): progress-bar chapter marks, current chapter name above the bar, a Chapters side panel, prev/next chapter. All in `composeApp` (`PlayerChapters.kt` model + `normalize/indexAt/nextStartMs/previousStartMs` helpers, `MatroskaChapterParser.kt`, `PlayerChaptersPanel.kt`); upstream iOS shows none ("mpv bridge does not expose them"). The fork's `iosApp/NuvioTV` player already references chapters (`MPVPlayerView.swift`, `NativePlayerScreen.swift`, `NativePlaybackCoordinator.swift`, `RemuxSession.swift`), so check what exists before porting. Worth taking: the pure helpers (`PlayerChapters.kt` 44 lines + `PlayerChaptersTest.kt`) as a `shared/` model if the Swift side lacks equivalents (the 3 s previous-chapter restart threshold matches mpv). The Matroska range-request parser is for ExoPlayer; tvOS uses mpv's `chapter-list`, N/A. Needs a Swift panel and focus work; if added, any new setting must be named with its default in release notes. ~0.5 day, only if the fork's chapter UI is thinner than this.
-2. **N/A — servers title lookup between episodes** (`2c69902b1`, `ServerMatcher.kt`, `Emby/Jellyfin/MediaBrowserProvider`): the fork has no `ServerMatcher` (confirmed 10-26).
+1. **N/A — skip drag handling while controls are locked** (`45af99c41`, tapframe, fixes upstream #2410): removes 6 lines from `composeApp` `PlayerSurfaceGestures.kt` and extends `PlayerSurfaceGesturesTest.kt`. Compose touch-gesture logic for the mobile player; the tvOS player is remote-driven with no drag surface. No action.
 
 ## Not applicable
-`5b60b7780` (Portuguese strings), `894afaecc` (Vietnamese), `af58a32b0` / `61658f366` (version bump 0.6.5-beta, `store.json`, `Version.xcconfig`).
+Nothing else moved.
 
-## Open items carried (see 2026-10-24 and 2026-10-26 plans)
-Player badges + pack choice, mpv `hwdec-software-fallback=300`, optional Home-hero ratings `showOnHero` (default Off), MDBList lists/sort, TorBox pagination.
+## Open items carried (see 2026-10-24, 2026-10-26 and 2026-10-27 plans)
+Player badges + pack choice, mpv `hwdec-software-fallback=300`, optional Home-hero ratings `showOnHero` (default Off), MDBList lists/sort, TorBox pagination, optional player chapters batch (check the fork's chapter UI first).
 
-## NuvioTV Android — 2026-10-27
+## NuvioTV Android — 2026-10-28
 
-Upstream `NuvioMedia/NuvioTV` (`dev`): `ef1b8cb19` (last plan 2026-10-26) -> `c3f68d84a`. 13 commits, 6 files changed per the GitHub compare API.
-**New baseline: `c3f68d84a`.**
+Upstream `NuvioMedia/NuvioTV` (`dev`): `c3f68d84a` (last plan 2026-10-27) -> `d14832e1c`. 30 commits (GitHub compare API).
+**New baseline: `d14832e1c`.**
 
 ## Candidates for the tvOS fork
 
-None. Contents: French / other string updates and merges (`4a9678d29`, `d9fb4ae16`, `80d084627`, `51f0ce7c5`, `a5402a777`, `abf8b1a27`), a README-style message edit (`bb171ab8d`), and `7837fb1c2` "Fix subtitle lift after player controls hide" (PR #4266, Compose subtitle offset on Android). The tvOS subtitle layout is the fork's own SwiftUI/mpv stack; no action.
+1. **MED, port the idea — no resume progress for live streams** (`b4e47d6d6`, `583eae818`; PR #4227): mpv can seek inside its HLS cache so a live stream reports seekable, its duration keeps growing past the short-clip guard, and the saved position later seeks beyond the live window. Fix: a pure `LivePlaybackUiPolicy.nextDurationGrowth()` sampled once per tick (skipping readings before mpv reports the requested media) plus a "don't save resume" guard (`LivePlaybackUiPolicy.kt` 28 lines + `LivePlaybackUiPolicyTest.kt`). The fork uses mpv for some streams, so the same hazard can apply; check how `iosApp/NuvioTV` playback progress saving decides a stream is live (graphify `explain` on the progress writer) and port the duration-growth heuristic if it only relies on `seekable`. Swift, ~0.5 day, unit-testable.
+2. **LOW-MED, optional — player badge codec detection + filename matching** (`13683564d`; `PlayerMediaInfo.kt` +46, `PlayerBadges.kt`, `PlaybackMatchText.kt`): improves codec badges and falls back to the file name. Folds into the carried "player badges + pack choice" item; read the diff when that is scheduled.
+3. **LOW — Montenegrin subtitle language** (`7eb388a83`): OpenSubtitles returns `mne`/`me`, ISO 639-3 is `cnr`; all map to `sr-ME`. The fork has no `mne`/`cnr` handling (grep of `shared/` and `iosApp/NuvioTV`). Three-line map entry in the subtitle language normaliser if one exists; ~15 min.
+4. **N/A:** libass video-effect work (`cc9bdb19e`, `d5da6bcaa`, `a8813ffb1`, `f60dab973`, `7070a646a`, `2bc54ec8f`, `6e2e5f961`, `205c314ef`, `3315ef13b`, `8d771aa2c`, `7dc661731`: ASS render mode, overlay alignment, audio-delay propagation to libass; Android AAR), `11b3c9d9c` (updater dex), Hebrew/Turkish strings (`6da2237ef`, `b032356f2`, `5e7a3fd6a`, `173da9d00`) and merges. The tvOS subtitle stack is the fork's own.
 
 ## Open items carried (see 2026-10-26 plan)
 Simkl/MDBList playback-tracking perf (diff `MdbListProgressProjection.kt` first), Trakt refresh cancellation guard, libmpv no-retry on permanent HTTP errors.
