@@ -4,6 +4,12 @@ Moved out of `CLAUDE.md` (then titled "Nuvio tvOS — Claude Code project notes"
 
 Later cuts not recorded in these notes: the submodule carries tags `tvos-v0.3.0-beta.19-rc6`, `-rc7`, `-rc8`, `-rc9` and `-rc10` (see `git -C NuvioMobile tag`). The daily upstream check is recorded in `docs/upstream-check-latest.md` (since 2026-10-27; the dated `docs/upstream-port-plan-YYYY-MM-DD.md` reports are local only).
 
+## Stream picker "Readable rows" 2026-10-28
+
+Batch landed on `tvos-shared-extraction` at `3937a6e08` (13 commits over `410e21e22`), NOT cut. Four-line rows (headline with HDR mark, add-on name and size; video facts; audio, language and cached facts; a file line on 0.5 s focus dwell), quality tier headers (4K, 1440p, 1080p, 720p, SD, Other), and a new setting **Group Sources By** (default Quality, profile-local, not synced; Add-on is the other choice). Monochrome outline text chips, a cached glyph for the app's own debrid streams, and a parsed-facts cache that survives add-on republishes. **Show Add-on Logo** now controls only the logo; the add-on name always shows on headline rows. Reviewed CLEAN (Opus stand-in, r5), all gates green, device pass in Test 2.
+
+Stream picker: next batch is Direction C (best pick + tiers); see the 2026-10-27 canvas.
+
 ## Repo cleanup 2026-10-27
 
 The outer repo was reduced to code and build inputs: `docs/` is gitignored except an allowlist (see `.gitignore`), `marketing/` and the Phase-0 scaffolding templates left the repo, and the beta-feedback tracker (`docs/beta-feedback-tracker.md`, `docs/beta-feedback-items.json`, the file dashboard and the sweep instructions) moved into the Tester Feedback dashboard's database (`https://claude.ai/artifact/UcBu7mTfKqyiW9dnywnYXX`): 337 items, 299 update-log entries, the header state as `meta/sweep`, the procedure as `meta/procedure`. Both cloud sweeps and the local DM check write that database and never commit. Everything removed from the working tree is archived at `~/Claude/Archive/nuvio-2026-10-27/` (docs, marketing, the old task prompts); the marketing branch's files are at `~/Claude/Projects/nuvio-marketing/`. Git history was not rewritten, so the old files remain reachable at `c8a28c1` and earlier. The daily upstream check now overwrites `docs/upstream-check-latest.md`; its dated reports stay local. Full report: `docs/repo-cleanup-report-2026-10-27.md` (local).
