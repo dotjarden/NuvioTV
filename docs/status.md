@@ -4,11 +4,17 @@ Moved out of `CLAUDE.md` (then titled "Nuvio tvOS — Claude Code project notes"
 
 Later cuts not recorded in these notes: the submodule carries tags `tvos-v0.3.0-beta.19-rc6`, `-rc7`, `-rc8`, `-rc9` and `-rc10` (see `git -C NuvioMobile tag`). The daily upstream check is recorded in `docs/upstream-check-latest.md` (since 2026-10-27; the dated `docs/upstream-port-plan-YYYY-MM-DD.md` reports are local only).
 
+## Stream picker "Best pick + tiers" (Direction C) 2026-10-28
+
+Batch landed on `tvos-shared-extraction` at `3a6d50950` (11 commits over `3937a6e08`), NOT cut. The source list opens on a best-pick card (the walk's own order: resolution, then HDR, then cached, then size; failed links skipped; "Best So Far" while add-ons answer, one upgrade per answer), three quick picks (Best 1080p, Best direct link, Show all N), and each quality or add-on group folded to its first two sources with an "N more" row; the Readable rows list is one press away under Show all. New setting **Source List Opens With** (Settings › Sources › Source List: Best Pick default / Full List, profile-local). DEBUG knob `-debug.sourceListOpensWith FULL|BEST`. Review: Opus stand-in r1–r3 CLEAN (Codex login expired). Gates: Kotlin ×3, NuvioTVTests 2524/0, four picker legs, Debug + Release sim. Device pass driven in Test 2 (steps 1, 2, 4–11 PASS; 3, 5 hide case, 9 walk-exhaust and 12 diagnostics not run); evidence local. Comms drafts local, NOT SENT. Follow-ups (local batch doc): card vs walk pool under mobile-synced source settings (C-28), resolver-id test seam.
+
+Stream picker: Direction C landed; the canvas's planned sequence is complete.
+
 ## Stream picker "Readable rows" 2026-10-28
 
 Batch landed on `tvos-shared-extraction` at `3937a6e08` (13 commits over `410e21e22`), NOT cut. Four-line rows (headline with HDR mark, add-on name and size; video facts; audio, language and cached facts; a file line on 0.5 s focus dwell), quality tier headers (4K, 1440p, 1080p, 720p, SD, Other), and a new setting **Group Sources By** (default Quality, profile-local, not synced; Add-on is the other choice). Monochrome outline text chips, a cached glyph for the app's own debrid streams, and a parsed-facts cache that survives add-on republishes. **Show Add-on Logo** now controls only the logo; the add-on name always shows on headline rows. Reviewed CLEAN (Opus stand-in, r5), all gates green, device pass in Test 2.
 
-Stream picker: next batch is Direction C (best pick + tiers); see the 2026-10-27 canvas.
+Stream picker: Direction C followed on 2026-10-28 (see above).
 
 ## Repo cleanup 2026-10-27
 
